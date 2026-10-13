@@ -1,0 +1,51 @@
+[
+  {
+    "id": "global",
+    "name": "로블록스 해외",
+    "file": "roblox-global.json",
+    "expectedCategories": 3,
+    "expectedGames": 30
+  },
+  {
+    "id": "korea",
+    "name": "로블록스 국내",
+    "file": "roblox-korea.json",
+    "expectedCategories": 2,
+    "expectedGames": 20
+  },
+  {
+    "id": "maple",
+    "name": "메이플스토리 월드",
+    "file": "maple-worlds.json",
+    "expectedCategories": 2,
+    "expectedGames": 20
+  },
+  {
+    "id": "minecraft",
+    "name": "마인크래프트",
+    "file": "minecraft.json",
+    "expectedCategories": 3,
+    "expectedGames": 30
+  },
+  {
+    "id": "sc1",
+    "name": "스타크래프트 1 유즈맵",
+    "file": "starcraft1.json",
+    "expectedCategories": 2,
+    "expectedGames": 20
+  },
+  {
+    "id": "sc2",
+    "name": "스타크래프트 2 아케이드",
+    "file": "starcraft2.json",
+    "expectedCategories": 2,
+    "expectedGames": 20
+  },
+  {
+    "id": "wc3",
+    "name": "워크래프트 3 유즈맵",
+    "file": "warcraft3.json",
+    "expectedCategories": 2,
+    "expectedGames": 20
+  }
+]

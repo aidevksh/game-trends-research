@@ -5,9 +5,10 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ["roblox-global.json", "roblox-korea.json", "maple-worlds.json"]
-MARKET_IDS = ["global", "korea", "maple"]
-MARKET_NAMES = ["로블록스 해외", "로블록스 국내", "메이플스토리 월드"]
+MARKETS = json.loads((ROOT / 'research' / 'markets.json').read_text(encoding='utf-8-sig'))
+FILES = [m['file'] for m in MARKETS]
+MARKET_IDS = [m['id'] for m in MARKETS]
+MARKET_NAMES = [m['name'] for m in MARKETS]
 
 
 def read(name):
@@ -38,7 +39,7 @@ def game_identity(game):
     maple = re.search(r'/play/([a-f0-9]{32})', url)
     if maple:
         return 'maple:' + maple.group(1)
-    return url.rstrip('/') or game["name"]
+    return ('id:' + str(game['id'])) if game.get('id') else (url.rstrip('/') or game["name"])
 
 
 def link(url, title):
@@ -77,8 +78,9 @@ def metrics(game):
     data = game.get("metrics", {})
     labels = {"playing": "전 세계 동접", "ccu": "전 세계 동접", "visits": "누적 방문", "likes": "좋아요", "favorites": "즐겨찾기", "totalPlayCount": "누적 플레이", "totalUserCount": "누적 이용자", "totalPlayerCount": "누적 이용자", "totalPlayers": "누적 이용자", "koreaChartPosition": "한국 차트 노출", "snapshotAt": "조회", "capturedAt": "조회", "source": "지표 출처", "voteRatio": "좋아요 비율", "upVotes": "좋아요", "downVotes": "싫어요", "positiveVotePercent": "좋아요 비율(%)", "approvalPct": "좋아요 비율(%)", "dislikes": "싫어요", "asOf": "조회", "measuredAt": "조회", "lastUpdated": "월드 갱신일", "metricLabel": "지표 범위", "unitNote": "지표 범위", "rolimonsGlobalRank": "Rolimon’s 전체 추적 순서", "rolimonsCCU": "보조 동접(Rolimon’s)", "koreanEvidence": "국내 근거", "observedDate": "조회 날짜", "scope": "지표 범위", "chartPosition": "한국 차트 노출", "chartPanel": "차트 구간"}
     values = []
+    labels.update({'archiveDownloads':'배포본 누적 다운로드','resourceUploaded':'배포 등록일','rating':'평가','ratingCount':'평가 수','downloads':'누적 다운로드','lastUpdate':'업데이트','lastUpdated':'콘텐츠 갱신일','mapVersion':'배포본 버전','patch':'권장 패치','updatedAt':'리소스 갱신일','sourceUpdatedAt':'근거 갱신일','historicalPopularity':'역사적 인기 근거','activityEvidence':'활동 근거','scopeNote':'지표 범위','recommendedVersion':'권장 게임 버전','metricScope':'지표 범위','ftbInstalls':'FTB 집계 설치','ftbPlays':'FTB 집계 실행'})
     for key, value in data.items():
-        if value is None or key in ("universeId", "placeId", "officialCcuIsRestricted"):
+        if value is None or key in ("universeId", "placeId", "projectId", "officialCcuIsRestricted"):
             continue
         if key.endswith("URL") or key.endswith("Url"):
             values.append(f'<span>{link(value, "지표 원문")}</span>')
@@ -98,9 +100,14 @@ def game_card(game, category, market_id):
     sources = ''.join(f'<li>{link(s.get("url"), s.get("title", "근거"))}<span class="source-note">{e(s.get("type"))} · {e(s.get("note"))} · 확인 {e(s.get("accessed", "2026-10-13"))}</span></li>' for s in evidence)
     search = ' '.join([txt(game.get(k)) for k in ("name", "description", "features", "popularityFactors", "monetization")] + [txt(category.get("name")), MARKET_NAMES[MARKET_IDS.index(market_id)]]).lower()
     status = game.get("operatingStatus", game.get("operationStatus", game.get("status", "")))
+    availability = game.get('availability', {})
+    availability_labels={'edition':'에디션','delivery':'플레이 방식','compatibility':'호환 확인','server':'서버','version':'버전','region':'지역','platform':'대상 플랫폼'}
+    delivery_text=' · '.join(f'{availability_labels.get(k,k)}: {txt(v)}' for k,v in availability.items()) if isinstance(availability,dict) else txt(availability)
+    delivery = '<p class="delivery">' + e(delivery_text) + '</p>' if availability else ''
     return f'''<article class="game-card" data-search="{e(search)}" data-name="{e(game.get('name'))}" data-evidence="{'verified' if mon.get('productEvidence', False) else 'limited'}">
       <div class="game-heading"><span class="rank" aria-label="선정 목록 {e(game.get('rank'))}번">{int(game.get('rank', 0)):02d}</span><div><h4>{link(game.get("url"), game.get("name"))}</h4><p class="game-desc">{e(game.get("description"))}</p></div></div>
       {f'<p class="operation">운영 상태 · {e(status)}</p>' if status else ''}
+      {delivery}
       {metrics(game)}
       <div class="game-body"><div><h5>특징</h5>{bullets(game.get("features"))}</div><div><h5>인기 요소 <span class="analysis-tag">해석</span></h5>{bullets(game.get("popularityFactors"))}</div><div class="payment"><h5>과금 탐색</h5><p>{e(summary)}</p>{f'<div class="verified"><b>확인된 정보</b>{bullets(verified)}</div>' if verified else '<span class="pill muted">개별 상품 확인 제한</span>'}{f'<p class="unverified"><b>미확인 범위</b> {e(unverified)}</p>' if unverified else ''}</div></div>
       <details class="game-sources"><summary>출처와 확인 범위 · {len(evidence)}개</summary><ul>{sources}</ul></details>
@@ -124,7 +131,7 @@ def main():
             navigator.append(f'<a href="#{cid}"><span>{e(MARKET_NAMES[mi])}</span>{e(category["name"])}</a>')
             cards = ''.join(game_card(g, category, mid) for g in category["games"])
             market_categories.append(f'''<section id="{cid}" class="category" data-market="{mid}" data-category="{cid}">
-              <div class="category-header"><div><p class="eyebrow">{e(MARKET_NAMES[mi])} / CATEGORY {ci+1:02d}</p><h3>{e(category["name"])}</h3><p class="category-basis">{e(category.get("selectionBasis"))}</p></div><span class="count-badge">Top {len(category["games"])}<small>선정 목록</small></span></div>
+              <div class="category-header"><div><p class="eyebrow">{e(MARKET_NAMES[mi])} / CATEGORY {ci+1:02d}</p><h3>{e(category["name"])}</h3><p class="category-basis">{e(category.get("selectionBasis"))}</p></div><span class="count-badge">{e(category.get('listLabel', f'Top {len(category["games"])}'))}<small>선정 목록</small></span></div>
               <div class="common-box"><h4>카테고리 공통점 <span class="analysis-tag">해석</span></h4>{bullets(category.get("commonalities"))}</div>
               <div class="games">{cards}</div>
               <div class="category-ideas"><div class="section-heading"><h4>이 카테고리에서 만들어 볼 게임</h4><span>원작의 규칙을 참고한 독립 아이디어 · {len(category.get("recommendations", []))}개</span></div><div class="ideas-grid">{recommendations(category, mid)}</div></div>
@@ -134,9 +141,13 @@ def main():
     picks_html = ''.join(f'''<article class="pick"><p class="eyebrow">우선순위 {e(x["priority"])} · {e(x["engine"])}</p><h3>{e(x["name"])}</h3><p>{e(x["pitch"])}</p><dl><dt>MVP 범위</dt><dd>{e(x["scope"])}</dd><dt>구현 추정</dt><dd>{e(x["effort"])}</dd><dt>과금 제안</dt><dd>{e(x["monetization"])}</dd></dl><p><strong>선정 이유</strong> {e(x["reason"])}</p><p class="validation"><strong>먼저 확인할 것</strong> {e(x["validation"])}</p><p class="reference">설계 참고 · {e(x["references"])}</p></article>''' for x in overview["firstBuilds"])
     platforms_html = ''.join(f'<article class="platform-card"><h3>{e(x["name"])}</h3><p><strong>제작</strong> {e(x["build"])}</p><p><strong>수익화</strong> {e(x["payment"])}</p><p><strong>구현 포인트</strong> {e(x["implementation"])}</p><div class="link-row">'+''.join(link(s["url"],s["title"]) for s in x["links"])+ '</div></article>' for x in overview["platforms"])
     plans_html = ''.join(f'<article class="plan-step"><span>{e(x["step"])}</span><div><h3>{e(x["title"])}</h3><p>{e(x["body"])}</p></div></article>' for x in overview["buildPlan"])
+    comparison = overview.get('comparison', [])
+    comparison_html = '<div class="table-scroll"><table class="comparison-table"><thead><tr><th>조사 대상</th><th>인기 근거와 한계</th><th>배포·과금 확인</th><th>제작 관점</th></tr></thead><tbody>' + ''.join(f'<tr><th scope="row">{e(x["name"])}</th><td>{e(x["evidence"])}</td><td>{e(x["distribution"])}</td><td>{e(x["takeaway"])}<div class="link-row">'+''.join(link(s['url'],s['title']) for s in x.get('links',[]))+'</div></td></tr>' for x in comparison) + '</tbody></table></div>' if comparison else ''
+    market_options = ''.join(f'<option value="{e(m["id"])}">{e(m["name"])}</option>' for m in MARKETS)
     replacements = {
         "TITLE": e(overview["title"]), "SUBTITLE": e(overview["subtitle"]), "DATE": e(overview["date"]),
         "GAME_COUNT": str(len(games)), "UNIQUE_COUNT": str(unique), "CATEGORY_COUNT": str(category_count), "REC_COUNT": str(rec_count),
+        "MARKET_COUNT": str(len(markets)), "MARKET_OPTIONS": market_options, "COMPARISON": comparison_html,
         "METHODS": bullets(overview["methodology"]), "INSIGHTS": insight_html, "PICKS": picks_html, "PLATFORMS": platforms_html,
         "PLANS": plans_html, "PROMPT": e(overview["starterPrompt"]), "CATEGORY_OPTIONS": ''.join(options), "NAVIGATOR": ''.join(navigator), "RESEARCH": ''.join(sections)
     }

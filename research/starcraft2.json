@@ -1,0 +1,1043 @@
+{
+  "market": "스타크래프트 II 유즈맵",
+  "scope": "SC2 Arcade의 독립 커뮤니티 지도 경험 20개를 2개 제작 카테고리로 조사했다. 지역판·원본/리메이크·PTR·튜토리얼·의존 모드·공식 협동전 지휘관을 별도 게임으로 세지 않았다. 현행 활동이 확인된 사례와 역사적 인기·설계 사례를 표시해 비교한다.",
+  "methodology": [
+    "조사일 2026-10-13 KST. 각 카테고리의 '인기작 리서치 Top 10(선정 목록)'은 근거를 가진 비교 표본이고 번호는 편집 순서다. 전체 SC2 장르 모집단의 동접·매출 순위가 아니다.",
+    "Blizzard 공식 추천·프리미엄 발표, 제작자 직접 문서·패치·후원 캠페인, 실제 SC2 Arcade 지도 DB에 보존된 설명을 우선했다. 커뮤니티 위키·운영 tracker는 역할·판본·활동 확인의 보완 자료로 사용하며 출처 종류를 구분했다.",
+    "SC2Arcade 공개 API가 2026년 6월 폐쇄되었고 공개 페이지는 이번 직접 조회에서 403/503을 반환했다. 제한을 우회하지 않았으며 검색 색인에 보존된 등록·버전·갱신일은 라이브 관측과 구분했다. 실시간 전체 로비·동접·게임별 이용자 순위는 확보하지 못했다.",
+    "StarBattle.pro의 2026-10-12 제출 경기와 일부 제작자의 2026 패치는 현행 활동 근거다. 제출 리플레이·게시물·패치·다운로드 숫자를 전체 이용자·동접으로 바꾸지 않았다.",
+    "오래된 인기·기능 자료는 연도를 명시하고 현재 플레이 가능·최신 버전·서버별 배포를 미확인으로 남겼다. 페이지가 지금 검색된다는 사실만으로 Battle.net에서 지금 호스팅된다고 판단하지 않았다.",
+    "맵 안의 광물·골드·카드·영웅 '구매'와 실제 돈 결제를 분리했다. 승인된 Direct Strike·ARK Star의 2018 USD $4.99는 역사적 가격이며 2026 현행 상품·가격으로 제시하지 않았다. 확인되지 않은 일반 맵의 유료 상품·후원·가격은 미확인이다.",
+    "Blizzard Custom Game Acceptable Use Policy의 별도 서면 승인 조건과 후원의 인게임 이익 제한을 고려한다. 과거 프리미엄·후원 사례의 존재를 현재 일반 제작자 판매 허용으로 해석하지 않는다. 법률 판단이나 개별 계약 검토는 수행하지 않았다.",
+    "인기 요소·공통점·추천은 분석 가설이다. 원작 명칭·모델·음원·코드의 복제를 권하지 않으며 추천은 독립 엔진 원작과 무료 SC2 규칙 프로토타입을 구분한다. 기간은 1인·AI 보조·주 20시간·해당 도구 기본 경험의 MVP 추정이고 신규 엔진 학습·온라인 운영은 별도다."
+  ],
+  "categories": [
+    {
+      "id": "sc2-strategy",
+      "name": "편성·자동 전투·디펜스",
+      "selectionBasis": "Blizzard의 역사적 인기·추천 자료, 제작자 패치·후원 페이지, SC2Arcade 검색 색인에 보존된 실제 Arcade 지도 등록을 결합한 대표 10작. 자료 신뢰도와 설계 비교를 고려한 편집 순서이며 2026 전체 장르 인기순·동접순 Top 10이 아니다. 원본과 지역판·PTR·같은 게임의 변형을 여러 게임으로 세지 않는다.",
+      "commonalities": [
+        "분석: 생산·조작의 복잡함을 편성·배치·경제·상성 선택으로 줄이고 전투 결과를 자동으로 보여 주는 루프가 반복된다(Direct Strike·Nexus Wars·SC Tavern Battle).",
+        "분석: 지금 전력을 늘릴지 다음 웨이브 수익을 늘릴지의 긴장감이 비교적 적은 콘텐츠로 많은 결정을 만든다(Squadron TD·Marine Arena).",
+        "분석: 조합·제한된 무작위 후보·미로는 작은 유닛·타워 집합의 재플레이 범위를 확장한다(Gem TD·Element TD). Star Battle처럼 실시간 함선 조작을 중심에 둔 예외도 있어 전부 오토배틀러로 부르지는 않는다.",
+        "과금 관측: 승인된 프리미엄, 외부 개발 후원, 과거 후원 perk, 상세 상품 미확인이 섞여 있다. SC2 Arcade 전체를 '수익화 없음' 또는 'VIP 판매 가능'으로 묶을 수 없다."
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "name": "Direct Strike",
+          "url": "https://dsstats.pax77.org/",
+          "description": "유닛을 편성·배치하면 웨이브로 출격해 상대 기지를 미는 줄다리기 전략 맵. Desert Strike HotS의 후속작이며 원본과 별개 게임으로 중복 계산하지 않았다.",
+          "features": [
+            "배치·상성·경제 투자를 통한 자동 전투",
+            "무료 기본판과 여러 지휘관 모드",
+            "프리미엄 호스트의 특수 모드에 무료 사용자도 참가 가능"
+          ],
+          "popularityFactors": [
+            "분석: 실시간 생산·조작 부담을 편성 선택으로 줄여 SC2 유닛 상성을 비교하기 좋다.",
+            "분석: 배치 수정 → 다음 웨이브 결과가 선택의 효과를 반복해서 보여 준다."
+          ],
+          "operatingStatus": "Blizzard의 2018 프리미엄 발표·2020 인기 지도 소개 확인. 현행 프리미엄 판매 화면은 미확인.",
+          "availability": "SC2 Arcade의 커뮤니티 게임. 유료 공식 협동전 지휘관 상품과 별개의 맵 과금 사례.",
+          "monetization": {
+            "summary": "무료 기본판 + Blizzard가 승인해 판매한 선택형 프리미엄 업그레이드. 신규 모드·스테이징 영역·일꾼 외형을 제공한 역사적 사례다.",
+            "verified": [
+              "2018 공식 발표: Direct Strike 프리미엄 USD $4.99, 수익 일부가 제작자 Tya에게 배분.",
+              "프리미엄의 Sabotage·Switch 등 4개 신규 모드와 외형을 명시.",
+              "프리미엄 호스트가 만든 해당 모드에 기본 무료판 사용자도 참여할 수 있다고 명시."
+            ],
+            "unverified": "2026 판매 가능 여부·국가별 가격·현재 프리미엄 구성·개별 구매 완료 화면 미확인. 다른 SC2 제작자에게 동일 판매 권한이 자동 부여된다는 근거가 아니다.",
+            "productEvidence": true,
+            "products": [
+              {
+                "name": "Direct Strike Premium",
+                "type": "Blizzard 승인 프리미엄 업그레이드",
+                "price": "USD $4.99 (2018 발표)",
+                "status": "역사적 판매 확인; 현행 판매 미확인",
+                "source": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "url": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star",
+              "title": "Direct Strike 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "2018 Blizzard 공식 발표의 원래 게임·모드·결제 범위를 요약. 2018 USD 가격을 2026 현재 가격으로 표시하지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://news.blizzard.com/en-gb/article/23463124/starcraft-ii-10th-anniversary-game-updates",
+              "title": "Blizzard 10주년: Direct Strike·Squadron TD",
+              "type": "1차: 2020 공식 인기 사례",
+              "note": "2020에 인기 지도라고 소개한 사실이며 2026 동접 순위 근거는 아님.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://dsstats.pax77.org/",
+              "title": "Direct Strike 현행 팬 프로젝트",
+              "type": "커뮤니티 운영 자료",
+              "note": "현재 Direct Strike 분석·리플레이 창구. 동적 지표가 빈 상태여서 이용 규모를 채우지 않았다. gameplay·프리미엄의 근거는 별도 Blizzard 공식 출처다.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 2,
+          "name": "Squadron Tower Defense",
+          "url": "https://news.blizzard.com/en-gb/article/23463124/starcraft-ii-10th-anniversary-game-updates",
+          "description": "방어 구조물·전투 유닛을 배치하고 경제와 적 증원 투자를 조절하며 팀의 보안 시스템을 지키는 경쟁 디펜스.",
+          "features": [
+            "유닛 배치와 웨이브 방어",
+            "경제 성장과 상대에게 보내는 추가 적",
+            "빌더·변이 규칙으로 달라지는 팀 조합"
+          ],
+          "popularityFactors": [
+            "분석: 지금 방어할지 미래 수익을 늘릴지가 매 웨이브의 판단이 된다.",
+            "분석: 서로 다른 빌더와 팀 협동으로 같은 라운드에도 선택이 달라진다."
+          ],
+          "operatingStatus": "제작자 2026-06 Patch 13.02 PTR 안내 확인(EU·NA). 정식 본편의 현재 버전·로비 수는 미확인.",
+          "availability": "EU·NA PTR 존재를 제작자가 안내. 본편 로비에 대한 당일 직접 테스트 없음.",
+          "monetization": {
+            "summary": "제작자 Patreon을 통한 외부 회원제 후원 창구가 확인된다. 맵 플레이나 전투 기능을 구매하는 상품은 이번 자료에서 확인하지 못했다.",
+            "verified": [
+              "제작자 Patreon은 Squadron Tower Defense 개발 후원이라고 설명하며 유료 회원을 표시한다.",
+              "공개 패치 안내는 EU·NA PTR 테스트를 안내한다."
+            ],
+            "unverified": "회원 등급별 가격·보상, 유료 가입과 맵 안 혜택의 관계, 현재 맵 내 판매 상품 미확인. 후원 유료 회원을 게임 내 유료 VIP로 바꿔 표현하지 않는다.",
+            "productEvidence": true,
+            "products": [
+              {
+                "name": "Squadron TD Patreon 회원제 후원",
+                "type": "외부 개발 후원",
+                "price": "등급별 가격 미확인",
+                "status": "제작자 후원 페이지 확인; 인게임 보상 미확인",
+                "source": "https://www.patreon.com/SquadronTD/about"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "url": "https://news.blizzard.com/en-gb/article/23463124/starcraft-ii-10th-anniversary-game-updates",
+              "title": "Squadron Tower Defense 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "2020 공식 소개에서 구조물·자원 관리·친구와 방어하는 대표 인기 디펜스로 소개.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://www.patreon.com/SquadronTD/posts/patch-13-02-159975152",
+              "title": "제작자 Patch 13.02 PTR 안내",
+              "type": "1차: 제작자 패치",
+              "note": "2026년 6월 EU·NA의 Squadron Tower Defense PTR 공개 테스트를 명시. PTR은 별도 게임으로 세지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://www.patreon.com/SquadronTD/about",
+              "title": "Parasite Squadron TD 후원 페이지",
+              "type": "1차: 제작자 후원",
+              "note": "조회 결과 유료 회원이 있는 외부 후원 페이지 확인. 회원 숫자는 동접·게임 이용자 수로 사용하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 3,
+          "name": "SC Tavern Battle",
+          "url": "https://sc2arcade.com/map/3/158320/",
+          "description": "카드를 사서 얻은 부대를 편성하고 상대와 전투하는 SC2식 오토체스·카드 편성 게임.",
+          "features": [
+            "카드 구매와 유닛 배치",
+            "AI·샌드박스 지원",
+            "영어·한국어·중국어 지역화"
+          ],
+          "popularityFactors": [
+            "분석: 카드 선택과 부대 조합으로 조작량보다 의사결정을 강조한다.",
+            "분석: AI·샌드박스가 사람을 기다리지 않고 규칙을 연습하는 진입로를 제공한다."
+          ],
+          "operatingStatus": "색인 DB: 아시아(Region 3), v0.144, 2026-04-15 갱신. 당일 클라이언트 호스팅·전체 로비 수 미확인.",
+          "availability": "아시아판 Region 3 / map ID 158320을 기준으로 기록. EU판은 업데이트 시점이 달라 같은 버전이라고 단정하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/3/158320/",
+              "title": "SC Tavern Battle 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "DB가 보존한 저자 Armeria·ForAD, 게시자 LAF의 설명: Arena, 최대 12명, AI·언어 지원. 페이지의 갱신일은 현재 플레이 가능 여부와 구분.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://sc2arcade.com/map/2/235767/",
+              "title": "SC Tavern Battle EU 등록·모드",
+              "type": "2차: 지역별 등록",
+              "note": "EU판의 Standard·Auto·Sandbox 등 모드 확인. 지역판은 동일 게임의 중복 항목으로 세지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 4,
+          "name": "Nexus Wars - Updated",
+          "url": "https://sc2arcade.com/map/2/212445",
+          "description": "각 플레이어가 자동 출격 건물을 짓고 두 팀이 상대 Nexus를 파괴하는 줄다리기 전략 맵.",
+          "features": [
+            "4 대 4 자동 출격·상성 대응",
+            "경제 건물과 병력 건물의 투자 선택",
+            "긴급 핵과 방어 포탑"
+          ],
+          "popularityFactors": [
+            "분석: 병력을 직접 생산·이동시키는 부담을 건물 선택으로 압축한다.",
+            "분석: 경제에 쓴 자원이 당장 전선의 약점이 될 수 있어 팀 역할을 나누게 한다."
+          ],
+          "operatingStatus": "색인 DB: EU v2.96 표기, 2022-07-15 갱신. 본문 패치 표기의 버전 번호와 일치하지 않아 클라이언트 최신 버전은 확정하지 않음.",
+          "availability": "Region 2 / map ID 212445. 원본·WoL·Updated 등 이름이 비슷한 판본을 혼합하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/2/212445",
+              "title": "Nexus Wars - Updated 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "저자 NaughtyBear의 Updated판을 선택. 8인·두 팀·건물 자동 생성·Nexus 파괴 승리 규칙을 DB에 보존한 게임 설명에서 확인. 원본 Nexus Wars를 추가 한 게임으로 세지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 5,
+          "name": "Marine Arena Updated",
+          "url": "https://sc2arcade.com/map/2/253601/",
+          "description": "해병과 용병을 계속 출격시키고 영웅·엘리트·업그레이드를 선택해 마지막 Command Center 팀으로 남는 병력 아레나.",
+          "features": [
+            "처치로 얻은 광물로 병력·영웅 강화",
+            "용병 상성과 부대 조작",
+            "2 대 2 대 2 대 2 등 팀 생존"
+          ],
+          "popularityFactors": [
+            "분석: 전투에서 번 자원을 바로 다음 병력으로 전환해 전선의 변화를 확인하기 쉽다.",
+            "분석: 같은 해병 기반에서도 용병·영웅 선택으로 다른 전투 방식을 만든다."
+          ],
+          "operatingStatus": "색인 DB: EU v1.21, 2026-03-04 갱신. 실제 현재 로비·후원 기능 구현 여부는 미확인.",
+          "availability": "Region 2 / map ID 253601. 오래된 Marine Arena 파일 배포판과 현행 Updated판을 구분.",
+          "monetization": {
+            "summary": "기본 맵 설명에 후원 방법을 준비 중이라는 문구가 있다. 실제 결제 상품·현재 운영되는 후원 등급은 확인하지 못했다.",
+            "verified": [
+              "공개 게임 설명에 '후원 방법 준비 중'이라는 계획 문구 존재.",
+              "병력·영웅·엘리트 구매는 처치로 얻은 인게임 광물로 설명된다."
+            ],
+            "unverified": "후원 기능 실제 출시 여부·현금 상품·현재 금액·기능 혜택 미확인.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/2/253601/",
+              "title": "Marine Arena Updated 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "저자 idontlag, Arena, 최대 8명. 게임 설명의 'Way to donate coming soon'은 예정 문구로만 기록하며 실제 후원 판매가 있다고 간주하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 6,
+          "name": "Castlefight SCII",
+          "url": "https://sc2arcade.com/map/1/260938/reviews",
+          "description": "전투 유닛을 만들어 내는 건물을 선택해 상대 성을 압박하는 종족·상성 중심 줄다리기 게임.",
+          "features": [
+            "건물 선택과 자동 부대 출격",
+            "1 대 1부터 5 대 5까지의 모드",
+            "서로 다른 유닛·지원 건물 조합"
+          ],
+          "popularityFactors": [
+            "분석: 자동 출격 결과를 보고 다음 건물로 대응하는 선택이 반복된다.",
+            "분석: 같은 전선에서 팀원들의 다른 종족·조합이 새로운 상황을 만든다."
+          ],
+          "operatingStatus": "색인 DB: 북미 v1.20, 2026-08-13 갱신. 현재 게임 내 호스팅 미검증.",
+          "availability": "Region 1 / map ID 260938. WC3 원작 파일·맵을 SC2 버전 자료로 대체하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/1/260938/reviews",
+              "title": "Castlefight SCII 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "DB가 보존한 제작자 Epie·Apiesmal 소개 및 게임 모드. 원형 WC3 Castle Fight와 SC2판은 플랫폼별 구현으로 구분. 리뷰의 긍정 평가를 전체 이용자 인과·순위로 사용하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 7,
+          "name": "Gem Tower Defense RMK",
+          "url": "https://sc2arcade.com/map/1/293032/",
+          "description": "매 라운드 무작위 보석 5개 중 하나를 남기고 기존 보석과 조합하며 미로를 만들어 적을 막는 디펜스.",
+          "features": [
+            "5개 후보에서 한 보석 선택",
+            "이전 보석과 조합하는 누적 빌드",
+            "미로 배치와 난이도 상승 웨이브"
+          ],
+          "popularityFactors": [
+            "분석: 운이 준 후보를 어떻게 활용하느냐가 매 판 다른 전략을 만든다.",
+            "분석: 미로 동선과 조합 레시피가 작은 자산 수로 많은 판단을 제공한다."
+          ],
+          "operatingStatus": "색인 DB: 북미 v9.20, 2024-12-02 갱신. 현재 로비·동접 미확인.",
+          "availability": "Region 1 / map ID 293032. 독립 웹 게임·Dota·WC3 Gem TD의 수치·상품을 사용하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/1/293032/",
+              "title": "Gem Tower Defense RMK 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "저자 Brownin의 RMK판, TD, 최대 8명. 원본·리메이크 중 이 RMK판만 선정해 같은 게임을 반복 집계하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 8,
+          "name": "Element Tower Defense (SC2)",
+          "url": "https://forums.eletd.com/topic/95210-sc2-element-td-150/",
+          "description": "원소를 해금하고 원소 조합에 따른 타워를 선택해 웨이브를 방어하는 전략 디펜스의 SC2판.",
+          "features": [
+            "원소 해금과 조합 타워",
+            "배치·타워 상성 선택",
+            "SC2 전용 밸런스 패치"
+          ],
+          "popularityFactors": [
+            "분석: 적은 원소를 여러 조합으로 확장해 반복 플레이마다 다른 선택을 제공한다.",
+            "분석: 원소·타워 관계를 이해하는 학습이 숫자 강화와 다른 성취를 준다."
+          ],
+          "operatingStatus": "역사적 설계 사례. 제작자 Karawasa의 SC2 v1.50 발표는 2015-10-22. 2026 서버별 이용 가능·업데이트 미확인.",
+          "availability": "SC2판만 조사. 기존 지역 배포 안내는 역사 자료이며 한국 현재 플레이 가능 여부는 미확인.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://forums.eletd.com/topic/95210-sc2-element-td-150/",
+              "title": "Element Tower Defense (SC2) 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "제작자 Karawasa의 SC2 v1.50 원소 조합 타워 패치가 원본 자료. Steam의 Element TD·Element TD 2 상품은 별도 제품으로 제외.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://forums.eletd.com/topic/2659-how-to-download-element-td-on-starcraft-ii/",
+              "title": "SC2판 배포·접근 안내",
+              "type": "1차 커뮤니티: 공식 포럼",
+              "note": "2011 안내에서는 북미·EU·SEA 배포를 안내하며 한국·대만 부재를 적었음. 이 오래된 지역 안내를 2026 현행 상태로 단정하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 9,
+          "name": "KeyStone Card Game",
+          "url": "https://www.indiegogo.com/zh/projects/billbaranowski/keystone-card-game-the-2nd-expansion?snapshotPhase=CrowdfundingEnded",
+          "description": "덱에 든 카드를 사용해 부대와 효과를 전장에 적용하는 수집·덱 구성·실시간 전투 혼합 카드 게임.",
+          "features": [
+            "카드 수집·덱 구성",
+            "카드로 부대와 효과를 선택",
+            "PvE Nemesis와 난이도별 상대 덱"
+          ],
+          "popularityFactors": [
+            "분석: 전장에 나온 유닛이 카드의 결과를 보여 줘 수치 설명을 전투로 연결한다.",
+            "분석: 덱 구성과 PvE 상대가 같은 카드의 새로운 활용을 만든다."
+          ],
+          "operatingStatus": "제작자 2018 확장 후원·2020 Nemesis 발표 확인. 현재 유지보수·서버별 로비·판매는 미확인.",
+          "availability": "SC2 Arcade 게임. 제작자의 독립 Steam 후속작 상품은 SC2 게임의 과금으로 합산하지 않음.",
+          "monetization": {
+            "summary": "무료 Arcade 플레이를 제작자가 안내하며 외부 크라우드펀딩으로 확장을 개발한 사례. 종료된 캠페인은 인게임 perk·베타 테스터 perk 구매를 명시한다.",
+            "verified": [
+              "종료된 제작자 캠페인에서 기본 플레이를 무료라고 안내.",
+              "인게임 perk 제공을 위해 SC2 Account ID가 필요하다고 명시.",
+              "베타 테스터 perk는 Discord Account ID 제공 절차를 명시."
+            ],
+            "unverified": "2026 동일 perk 판매·가격·현재 지급 여부·구체적인 성능 혜택·Blizzard의 개별 승인 여부 미확인. 역사적 후원 약속을 현재 정책상 허용으로 판단하지 않는다.",
+            "productEvidence": true,
+            "products": [
+              {
+                "name": "KeyStone 확장 후원 perk",
+                "type": "종료 크라우드펀딩의 인게임 perk·베타 참여",
+                "price": "현행 가격 미확인",
+                "status": "2018 캠페인 명시; 현재 판매·지급 미확인",
+                "source": "https://www.indiegogo.com/zh/projects/billbaranowski/keystone-card-game-the-2nd-expansion?snapshotPhase=CrowdfundingEnded"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "url": "https://www.indiegogo.com/zh/projects/billbaranowski/keystone-card-game-the-2nd-expansion?snapshotPhase=CrowdfundingEnded",
+              "title": "KeyStone Card Game 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Bill Baranowski의 종료된 공식 Indiegogo: 무료 Arcade 게임, 확장 개발 후원, 인게임 perk·베타 테스터 perk 안내. 후원 기록을 현재 상점으로 간주하지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://www.reddit.com/r/starcraft/comments/ht5vqy/",
+              "title": "제작자 KeyStone Nemesis 발표",
+              "type": "1차: 제작자 직접 게시",
+              "note": "2020 제작자가 새로운 PvE 모드·난이도·커뮤니티 후원 개발을 설명. 일반 이용자 댓글은 기능 확정 근거로 삼지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 10,
+          "name": "Star Battle Reloaded",
+          "url": "https://starbattle.pro/",
+          "description": "각 플레이어가 우주함선을 조종하고 역할·업그레이드·전장 선택으로 싸우는 팀 함선 전투 게임.",
+          "features": [
+            "함선별 능력·팀 역할과 업그레이드",
+            "공개 경기·인하우스 커뮤니티 리그",
+            "전장 선택·커뮤니티 전장 편집"
+          ],
+          "popularityFactors": [
+            "분석: 함선 하나에 집중해 유닛 전체 생산보다 팀 전투와 위치 판단에 집중할 수 있다.",
+            "분석: 경기 기록·리그·사용자 전장 제작이 장기 숙련과 커뮤니티 재참여를 돕는다."
+          ],
+          "operatingStatus": "현행 활동 확인: 운영 tracker에 2026-10-12 제출 경기 표시. 2026-07-04 v5.0 패치 확인.",
+          "availability": "SC2 Arcade EU map ID 235210을 운영 자료가 연결. 당일 게임 클라이언트 실행은 수행하지 않음.",
+          "monetization": {
+            "summary": "공식 v5.0 패치 노트에 Tier 3 후원 보상인 Umojan Dreadnought 스킨이 명시된다. 공식 상점 검색 색인도 이 스킨의 영구 해금과 별도 사이트 도구 멤버십을 소개한다. 사이트 지원과 게임 외형 보상을 구분한다.",
+            "verified": [
+              "2026-07-04 v5.0 Rewards에 Umojan Dreadnought를 Tier 3 후원 보상으로 명시.",
+              "공식 /shop 공개 검색 색인에 Dreadnought Umojan Skin [T3] 영구 해금·운영자 수동 지급 안내. 사이트 Supporter Tools는 별도 상품."
+            ],
+            "unverified": "상점 직접 열람은 로그인 리다이렉트/403으로 제한되었다. 현재 체크아웃 가격·판매 가능 여부·전체 보상·Blizzard 개별 승인/계약은 미확인. 후원 보상 사례의 존재를 일반 제작자의 판매 허용으로 해석하지 않는다.",
+            "productEvidence": true,
+            "products": [
+              {
+                "name": "Dreadnought Umojan Skin [T3]",
+                "type": "후원 등급 보상·상점 소개 외형",
+                "price": "현재 체크아웃 가격 미확인; 검색 색인 가격은 이 보고서에서 생략",
+                "status": "공식 패치·공개 검색 색인에 보상/상품 소개 확인; 현행 구매 미검증",
+                "source": "https://starbattle.pro/shop"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "url": "https://starbattle.pro/",
+              "title": "Star Battle Reloaded 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "운영 리플레이 tracker의 최근 경기 확인. 리플레이 제출·인하우스 등급 데이터이며 전체 로비·동접·순이용자 수가 아니다.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://starbattle.pro/patch-notes/v5.0",
+              "title": "Star Battle Reloaded v5.0",
+              "type": "1차: 운영 패치 노트",
+              "note": "2026-07-04 v5.0 패치의 전장·함선 기능과 Rewards의 Tier 3 후원 스킨 확인. 직접 HTTP 조회 제한이 있어 공개 검색 색인의 공식 본문을 보완 자료로 사용.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://starbattle.pro/resources",
+              "title": "Star Battle 커뮤니티 자료",
+              "type": "1차: 운영 자료",
+              "note": "게임 공식 위키·리그·SC2Arcade의 EU map ID 235210 링크를 안내.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://starbattle.pro/shop",
+              "title": "Star Battle Reloaded 공식 상점의 공개 검색 색인",
+              "type": "1차 사이트의 검색 색인·라이브 상점 미검증",
+              "note": "Tier 3 Dreadnought 스킨·계정 영구 해금·수동 지급과 사이트 도구 상품을 구분. 직접 열람은 로그인/403 제한; 현재 판매·최종 가격을 보장하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {
+            "observedDate": "2026-10-13 KST",
+            "source": "StarBattle.pro 제출 리플레이 tracker",
+            "scope": "2026-10-12 경기 목록 확인. 제출 표본이며 전체 동접·전체 경기 수·순이용자 아님."
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "고철 라인 군단전",
+          "pitch": "고철 로봇 3종의 위치와 생산 투자를 바꾸며 한 줄 전선을 밀어내는 짧은 자동 전투.",
+          "mvp": [
+            "맵 1개·로봇 3종·공격 상성 3각 구조",
+            "준비 20초 → 자동 전투 40초의 6웨이브",
+            "봇 상대 솔로·배치 변경·경기 결과",
+            "네트워크·덱 수집·랭크·계정 서버는 첫 MVP에서 제외"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "1인·AI 보조·주 20시간·웹 또는 Godot 기본 경험 기준 솔로 MVP 3~5주(60~100시간). 신규 엔진 학습·온라인 대전은 추가 일정.",
+          "monetization": "독립 웹/Godot 원작으로 출시한다면 고정 가격 외형·유료 완결판을 검토한다. SC2 안의 프로토타입은 무료로 검증하며, 별도 서면 승인 없이 유료 기능·VIP·거래를 제안하지 않는다.",
+          "why": "Direct Strike·Nexus Wars의 편성 → 결과 → 대응을 로봇 3종으로 줄이고 SC Tavern Battle처럼 먼저 봇 상대를 제공한다.",
+          "risks": "상성 하나가 정답이면 선택이 사라진다. 경제 수치·배치·클리어 시간을 직접 테스트하고 Blizzard 이름·모델·음원을 독립 게임에 가져오지 않는다.",
+          "buildNext": "고정 3개 적 편성에 대응하는 10분 프로토타입을 만들고, 서로 다른 2가지 편성으로 승리 가능한지 검증한다. 이후 1 대 1 온라인은 별도 단계.",
+          "platform": "독립 웹/Godot 원작 · SC2 무료 규칙 프로토타입",
+          "priority": "전략 첫 후보"
+        },
+        {
+          "name": "세 가지 보석 실험실",
+          "pitch": "매 웨이브 후보 3개에서 하나를 골라 3색 보석 조합과 미로를 완성하는 소형 퍼즐 디펜스.",
+          "mvp": [
+            "8×8 보드·원소 3종·조합 6개",
+            "후보 3개에서 하나 선택·길 막힘 방지",
+            "적 4종·10웨이브·점수 저장",
+            "재도전 시드 공유·조합 도움말"
+          ],
+          "difficulty": "중간",
+          "effort": "1인·AI 보조·주 20시간·웹/Godot 기본 경험 기준 3~5주(60~100시간). 경로 탐색·조합 UI·난이도 테스트 포함.",
+          "monetization": "독립 엔진에서는 유료 완결판 또는 보드·발사체 외형을 고정 가격으로 검토. 유료 무작위 보석 추첨은 초기 제외. SC2판은 무료 검증하며 거래·유료 혜택은 별도 승인 범위다.",
+          "why": "Gem TD의 제한된 후보 선택·미로와 Element TD의 원소 조합을 작은 데이터 표로 압축한다.",
+          "risks": "미로가 완전히 막히는 예외·경로 변경 비용·조합 설명이 병목이다. 랜덤 후보와 과금 확률상품을 혼동하지 않게 설계한다.",
+          "buildNext": "원소 2종·조합 1개·5웨이브를 먼저 구현하고, 모든 배치 변경에서 적의 유효 경로가 유지되는지 확인한 뒤 3색으로 확장.",
+          "platform": "독립 웹/Godot 원작 · SC2 무료 프로토타입",
+          "priority": "작은 콘텐츠로 깊이를 만드는 후보"
+        }
+      ],
+      "listLabel": "대표 10선"
+    },
+    {
+      "id": "sc2-coop",
+      "name": "협동 생존·RPG·소셜 파티",
+      "selectionBasis": "협동 임무·저장 성장·역할 추리·스포츠·짧은 미니게임의 대표 사례 10작. 역사적 Blizzard 추천과 제작자 직접 발표, 현행 지역판 업데이트 자료를 구분했다. 최신 활동 확인이 없는 게임은 역사적 설계 사례로 표시하며 현재의 완전한 인기순위로 주장하지 않는다. 공식 협동전 지휘관·의존 모드·튜토리얼을 게임 수 채우기에 사용하지 않았다.",
+      "commonalities": [
+        "분석: 한 플레이어의 선택이 동료의 생존·정보·목표에 영향을 미치게 하면 같은 공간에서도 새로운 상황이 생긴다(Mafia·NOTD·UAR·Zealot Hockey).",
+        "분석: 생존 게임은 임무·성장·역할 해금을, 파티는 짧은 규칙 교체·즉각적인 실패를 다음 판의 동기로 삼는다. 이 둘은 같은 체류시간·같은 장르라고 가정하지 않는다.",
+        "분석: 저장되는 성장은 잔존 동기가 되지만 세이브 호환·신규자 격차·인원 부족을 만들어 작은 개발자의 운영 부담을 키운다(Mineralz·UAR·SC Universe).",
+        "분석: SC Universe 규모의 3인칭 RPG나 수십 병과를 복제하기보다 방 하나·역할 둘·4분 임무 또는 한 이동 규칙이 1인 AI 보조 MVP에 맞는다. ARK Star는 완결된 소형 전술 경험이라는 다른 방향을 보여 준다."
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "name": "SC2 Mafia (-Mafia-)",
+          "url": "https://sc2mafia.fandom.com/wiki/StarCraft_II_Mafia_Wiki",
+          "description": "낮에는 대화·투표, 밤에는 비밀 역할 행동으로 마피아를 찾아내는 빠른 소셜 추리 게임.",
+          "features": [
+            "비밀 역할과 진영별 승리 목표",
+            "낮의 토론·처형 투표와 밤의 능력",
+            "여러 역할·설정 조합과 커뮤니티 진행"
+          ],
+          "popularityFactors": [
+            "분석: 맵을 반복 제작하지 않아도 플레이어의 거짓말과 판단이 매번 새 사건을 만든다.",
+            "분석: 역할 조합이 다음 판의 다른 입장·목적을 제공한다."
+          ],
+          "operatingStatus": "Dark.Revenant 원형의 커뮤니티 문서 확인. 2025 북미 맵 비노출 신고가 있어 현재 서버별 공개·호스팅은 미확인.",
+          "availability": "Dark.Revenant 계열 -Mafia-를 기준으로 조사. Forum Mafia 웹 게임은 별도 제품이라 집계하지 않음.",
+          "monetization": {
+            "summary": "커뮤니티 문서에는 기부 등급과 후원 관련 업적이 기록되어 있다. 현재 유료 역할·승률 강화·상점 상품과 가격을 확인하지 못했다.",
+            "verified": [
+              "커뮤니티 업적 문서에 기부 등급별 업적 명칭이 있다.",
+              "기본 접근은 SC2 Starter Edition으로도 가능하다고 커뮤니티 가이드가 안내한다."
+            ],
+            "unverified": "후원 상품의 현행 판매·가격·혜택, 맵의 서버별 접근 상태 미확인. 업적 기록이 현재 기능 판매나 개별 승인이라는 뜻은 아니다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2mafia.fandom.com/wiki/StarCraft_II_Mafia_Wiki",
+              "title": "SC2 Mafia (-Mafia-) 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Dark.Revenant가 만든 SC2 Arcade 게임과 역할·무료 Starter 접근 안내를 커뮤니티가 문서화. 동명의 TwelveYrOld 재업로드판이나 Mafia Assets 의존 모드를 별도 게임으로 세지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://sc2mafia.fandom.com/wiki/Achievements",
+              "title": "Mafia 기부 관련 업적 문서",
+              "type": "커뮤니티: 후원 흔적",
+              "note": "Donor·Patron·Benefactor·Cardinal 등 기부 업적이 기록됨. 문서 시점·실제 현행 결제·가격·기능 혜택은 검증하지 못함.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://us.forums.blizzard.com/en/sc2/t/all-the-popular-arcade-maps-have-disappeared/31034",
+              "title": "2025 Arcade 지도 비노출 신고",
+              "type": "공식 포럼의 사용자 신고",
+              "note": "이전 비노출 신고·일부 복구 응답이 존재. 모든 지역의 현재 제거·복구 상태로 일반화하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 2,
+          "name": "Night of the Dead (NOTD)",
+          "url": "https://news.blizzard.com/en-us/article/8649257/arcade-highlight-night-of-the-dead",
+          "description": "군인 역할을 나눠 무기·재능을 성장시키며 좀비와 임무를 상대하는 최대 8인 협동 생존 맵.",
+          "features": [
+            "역할별 클래스·두 갈래 재능",
+            "무기 확보와 협동 임무",
+            "플레이로 클래스 해금·진행 저장"
+          ],
+          "popularityFactors": [
+            "분석: 정찰·치료·공격 등 서로 필요한 역할이 자연스러운 협력을 만든다.",
+            "분석: 생존과 캐릭터 성장 목표가 실패 이후의 다음 시도 이유를 제공한다."
+          ],
+          "operatingStatus": "역사적 Blizzard 추천 사례. Updated판 공개 개발 저장소가 있으나 2026 서버별 호스팅·최신 버전은 미확인.",
+          "availability": "SC2 원형·Updated 계열을 하나의 조사 게임으로 취급. 동명의 독립 Steam 생존 게임이나 WC3판과 구분.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://news.blizzard.com/en-us/article/8649257/arcade-highlight-night-of-the-dead",
+              "title": "Night of the Dead (NOTD) 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Blizzard Arcade Highlight가 원 제작자 Daren 'Ability' Yoong과 클래스·재능·협동 생존을 소개한 1차 자료. 현재 동접 순위로 해석하지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://github.com/LeoTheCatMeow/Night-of-the-Dead-Updated",
+              "title": "Night of the Dead Updated 저장소",
+              "type": "1차: 개발 자료",
+              "note": "실제 .SC2Map 구성과 에디터 설치·개발 안내 존재. 저장소의 존재가 현행 Battle.net 게시·운영을 보장하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 3,
+          "name": "Undead Assault Reborn",
+          "url": "https://uar.fandom.com/wiki/Undead_Assault_Reborn_Wikia",
+          "description": "분대가 좀비 지역에서 시민을 지키고 임무를 완수하며 경험치를 저장해 병과를 해금하는 협동 생존 게임.",
+          "features": [
+            "분대 협력·시민 보호·지역 정리",
+            "병과별 장비·기술·탄약 관리",
+            "다음 판으로 이어지는 경험치·병과 해금"
+          ],
+          "popularityFactors": [
+            "분석: 치료·공병·화력처럼 다른 역할이 개인 생존과 팀 성공을 연결한다.",
+            "분석: 저장되는 진행은 한 판의 실패에도 장기 성장을 남긴다."
+          ],
+          "operatingStatus": "커뮤니티 자료가 EU판이라고 명시. 2026년 7~9월 팬 데이터베이스·공병 가이드 갱신 확인; 맵 클라이언트 최신 버전 미확인.",
+          "availability": "문서에서 EU만 제공이라고 표시한 SC2 Arcade UAR판. 타 UA 계열의 인원·저장 데이터·상품을 섞지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://uar.fandom.com/wiki/Undead_Assault_Reborn_Wikia",
+              "title": "Undead Assault Reborn 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "커뮤니티 위키: EU판, 최대 12인, 임무·진행 저장·병과 해금 설명. UA3·Chronicles·Apocalypse를 같은 플랫폼의 추가 3개 게임으로 끼워 넣지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://uar.cedricdessalles.dev/guide",
+              "title": "UAR 현행 빠른 가이드",
+              "type": "커뮤니티: 2026 플레이 규칙 자료",
+              "note": "Znimu 제작 맵의 비공식 참고 자료임을 스스로 표시. 탄약·병과·등급·팀 구성 설명을 맵 제작자 공식 발표와 구분.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://uar.cedricdessalles.dev/changelog/2026-07",
+              "title": "UAR 팬 데이터베이스 2026-07 변경",
+              "type": "커뮤니티: 참고 도구 유지보수",
+              "note": "2026 최근 리플레이 업로드·모드·병과 정보를 다루는 커뮤니티 활동 근거. 이 도구의 릴리스 수를 게임 이용자 수로 사용하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 4,
+          "name": "Mineralz Evolution",
+          "url": "https://sc2arcade.com/map/1/147118/reviews",
+          "description": "자원을 채굴해 팀 기지를 발전시키고 밤마다 밀려오는 저그와 보스를 버티는 기지 성장형 협동 생존.",
+          "features": [
+            "채굴과 기지 경제 성장",
+            "방벽·방어 건물과 야간 웨이브",
+            "팀 기반 방어와 저장 성장·업적"
+          ],
+          "popularityFactors": [
+            "분석: 낮의 준비와 밤의 공격이 반복돼 경제와 방어 사이의 선택을 만든다.",
+            "분석: 팀이 하나의 기지를 꾸리는 결과가 개인의 채굴 행동을 공동 목표로 연결한다."
+          ],
+          "operatingStatus": "색인 DB: 북미 Vindicator판 v0.124, 2018-07-19 갱신. 현재 로비·클라이언트 동작 미확인.",
+          "availability": "Region 1 / map ID 147118. Mineralz·Evolution·FredXoR·Evolution 2 등 판본 중 Vindicator판 하나만 집계.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/1/147118/reviews",
+              "title": "Mineralz Evolution 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "Vindicator의 8인 협동판 등록과 게임 설명, 채굴·기지·성장 관련 커뮤니티 플레이 기록. 리뷰에 언급된 저장 파일 조작 안내는 실행·재배포하지 않음. FredXoR판 수치와 혼합하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 5,
+          "name": "Zombie World Liberty (Beta)",
+          "url": "https://sc2arcade.com/map/2/243909/reviews",
+          "description": "적을 처치해 영웅 레벨·프레스티지를 높이고 새 영웅을 선택하는 소규모 반복 생존·성장 맵.",
+          "features": [
+            "최대 4인 영웅 생존",
+            "처치·레벨·프레스티지 반복",
+            "새 영웅 선택과 성장 조합"
+          ],
+          "popularityFactors": [
+            "분석: 처치 → 성장 → 더 오래 생존 → 다음 영웅이라는 목표를 짧게 설명할 수 있다.",
+            "분석: 서로 다른 영웅이 같은 전투 공간에서 다음 빌드의 실험 이유를 제공한다."
+          ],
+          "operatingStatus": "색인 DB: EU v0.197, 2026-04-01 갱신. 실제 현재 플레이 가능·과금 화면 미확인.",
+          "availability": "Region 2 / map ID 243909. 다른 Zombie World 제목·판본의 후원 정책을 이 맵에 적용하지 않음.",
+          "monetization": {
+            "summary": "소개는 영웅 구매를 언급하지만 실제 돈을 쓰는 상품·가격을 확인하지 못했다. 게임 내 획득 재화와 실제 결제를 구분해 과금 정책을 유보한다.",
+            "verified": [
+              "영웅 레벨·프레스티지와 새로운 영웅 구매라는 진행 설명이 존재."
+            ],
+            "unverified": "영웅 구매에 실제 결제가 필요한지, 현행 유료 상품·외부 후원·가격 미확인. 리뷰의 평가만으로 무료 또는 P2W라고 단정하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/2/243909/reviews",
+              "title": "Zombie World Liberty (Beta) 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "제작자 tksjjrocks의 설명과 최대 4명·성장·프레스티지 정보 확인. 소개의 'purchase new heroes'만으로 현금 구매라고 번역하지 않음. 리뷰의 무료·P2W 주장도 현재 상품 확정 근거로 사용하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 6,
+          "name": "Zealot Hockey",
+          "url": "https://sc2arcade.com/map/2/158158/",
+          "description": "Zealot을 조종해 퍽을 빼앗고 슛·체크로 상대 골문을 공략하는 팀 아이스하키 맵.",
+          "features": [
+            "좌클릭 퍽 탈취·충전 슛",
+            "체크 이동 능력과 팀 포지션",
+            "제한시간 내 더 많은 골로 승리"
+          ],
+          "popularityFactors": [
+            "분석: 익숙한 스포츠 목표가 RTS 빌드 지식 없이도 참여할 동기를 준다.",
+            "분석: 적은 조작으로 위치·패스·슛 타이밍의 숙련을 만들 수 있다."
+          ],
+          "operatingStatus": "색인 DB: EU v0.156, 2026-05-11 갱신. 설명에 EU·NA·KR 커뮤니티 채널 존재; 실제 지역별 최신판 동작 미확인.",
+          "availability": "Region 2 / map ID 158158. 문서에 14 로비 슬롯이 있으나 관전자 포함 가능성을 고려해 14인 스포츠라고 단정하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://sc2arcade.com/map/2/158158/",
+              "title": "Zealot Hockey 게임 자료",
+              "type": "2차: 색인에 보존된 Arcade DB·제작자 설명",
+              "note": "제작자 Leeroy와 공동 제작·업데이트 팀, 퍽·슛·체크 조작·최대 14 로비 슬롯을 DB에 보존. 슬롯 수를 실제 경기 선수 수로 곧바로 표시하지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://zealothockey.wordpress.com/2014/05/26/pink-voids-guide-to-proper-goalkeeping/",
+              "title": "Zealot Hockey 커뮤니티 골키퍼 가이드",
+              "type": "커뮤니티: 플레이 가이드",
+              "note": "위치·체크·골키퍼 역할을 설명하는 실전 참고 자료. 현재 게임 가격·인기 순위 근거로 사용하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 7,
+          "name": "Raynor Party",
+          "url": "https://news.blizzard.com/en-gb/article/9975228/custom-map-spotlight",
+          "description": "여러 미니게임을 연속으로 경쟁하는 4~8인 파티형 Arcade 맵.",
+          "features": [
+            "서로 다른 미니게임의 연속 플레이",
+            "Free Play·점수 모드",
+            "SC2 테마를 활용한 파티 경쟁"
+          ],
+          "popularityFactors": [
+            "분석: 여러 짧은 규칙이 한 게임의 숙련 격차를 바꾸고 쉽게 다음 라운드로 넘어가게 한다.",
+            "분석: 같은 친구들과 경쟁 종목을 교체하면서 새 상황을 만든다."
+          ],
+          "operatingStatus": "역사적 Blizzard Featured 지도. blinn·seiken 제작, grand 게시의 소개는 확인했으나 2026 지역별 호스팅·최신 버전은 미확인.",
+          "availability": "SC2 커뮤니티 미니게임 맵. WC3 Uther Party·Mario Party 자체를 추가 SC2 게임으로 세지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://news.blizzard.com/en-gb/article/9975228/custom-map-spotlight",
+              "title": "Raynor Party 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Blizzard가 제목·제작자·추천 인원·미니게임·Free Play·점수 모드를 소개한 공식 자료. 현대 커뮤니티 전체 인기 순위로 표시하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 8,
+          "name": "Photon Cycles",
+          "url": "https://www.hiveworkshop.com/threads/photon-cycles-a-luminous-lightbikes-game.193693/",
+          "description": "빛의 장벽을 남기며 달리는 탈것을 조종해 상대의 충돌을 유도하는 단순 규칙의 생존 파티 맵.",
+          "features": [
+            "마우스 방향 전환·좌클릭 부스트",
+            "자신과 상대의 궤적이 장애물로 남는 규칙",
+            "생존·처치·지속시간 등의 승리 모드와 관전"
+          ],
+          "popularityFactors": [
+            "분석: 한 가지 이동 규칙에서 공간 차단·경로 예측의 전략이 나온다.",
+            "분석: 실패 원인이 눈으로 보여 짧은 재도전과 친구 경쟁에 맞는다."
+          ],
+          "operatingStatus": "역사적 제작자 발표: 2011 NA·EU 배포와 v0.36 업데이트. 2026 현행 지역·Photon Cycles Reworked판 동작은 미확인.",
+          "availability": "원형 SC2 Photon Cycles 한 게임만 조사. Coregames·독립 웹 후속작·Reworked를 추가 게임으로 중복 집계하지 않음.",
+          "monetization": {
+            "summary": "개별 유료 상품·가격은 공개 자료에서 확인하지 못했다. 맵 안의 광물·골드·카드 구매를 실제 돈 결제로 해석하지 않는다.",
+            "verified": [
+              "확인한 공개 게임 설명에는 유료 상품명·실제 결제 가격이 제시되어 있지 않다."
+            ],
+            "unverified": "현행 인게임 유료 상품·외부 후원·멤버십·후원 혜택의 존재 여부와 가격 미확인. 미확인은 무과금 보증을 뜻하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/photon-cycles-a-luminous-lightbikes-game.193693/",
+              "title": "Photon Cycles 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "JademusSreg가 HIVE에서는 Owenalacaster라는 이름을 쓴다고 동일 스레드에서 밝힌 제작자 직접 소개. 최대 12 슬롯·마우스 조작·승리 모드·지역을 확인. 기존 게임 파일·코드는 재배포하지 않음.",
+              "accessed": "2026-10-13 KST"
+            },
+            {
+              "url": "https://news.blizzard.com/en-gb/article/10022830/arcade-highlight-kobold-tribes",
+              "title": "Blizzard 제작자 인터뷰의 Photon Cycles 언급",
+              "type": "1차: 역사적 소개",
+              "note": "Kobold Tribes 제작자가 좋아하는 Arcade로 Photon Cycles와 제작자를 언급. 현재 이용자 규모의 근거는 아님.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 9,
+          "name": "SC Universe: Beyond Koprulu",
+          "url": "https://www.indiegogo.com/en/projects/ryanwinzen/starcraft-universe-official-release",
+          "description": "SC2 엔진에서 3인칭 캐릭터 전투·장비·여행·함선 관리를 구현한 커뮤니티 RPG의 본편 Arcade 경험.",
+          "features": [
+            "3인칭 캐릭터 역할·전투·성장",
+            "함선 운용과 목적지 탐험",
+            "멀티플레이 본편과 별도 튜토리얼"
+          ],
+          "popularityFactors": [
+            "분석: 익숙한 RTS 엔진을 캐릭터 모험으로 바꾸는 차별성이 강한 입문 소재가 된다.",
+            "분석: 클래스·장비·탐험 목표가 동료와 진행을 나눠 경험할 이유를 만든다."
+          ],
+          "operatingStatus": "역사적 공개 베타·출시 후원 사례. 제작자 캠페인 자료는 읽었으나 2026 Battle.net 공개·세이브 호환·개발 상태 미확인.",
+          "availability": "Beyond Koprulu 본편 Arcade 경험 한 개만 선정. Prologue 1·2·3와 World of Warcraft·공식 협동전 지휘관은 집계에서 제외.",
+          "monetization": {
+            "summary": "제작자 외부 크라우드펀딩으로 출시·개발을 지원한 역사적 사례. 이를 일반 SC2 RPG의 월 구독이나 유료 게임 판매로 분류하지 않는다.",
+            "verified": [
+              "제작자 Indiegogo에 개발·공식 출시 지원 캠페인이 존재.",
+              "캠페인은 Battle.net의 본편·튜토리얼 경험과 개발 계획을 안내한다."
+            ],
+            "unverified": "2026 후원 모집·가격·보상·현행 맵 내 아이템·구독·기능 상품 미확인. 과거 캠페인의 보상이 현재 지급되거나 승인됐다고 확정하지 않는다.",
+            "productEvidence": false,
+            "products": []
+          },
+          "evidence": [
+            {
+              "url": "https://www.indiegogo.com/en/projects/ryanwinzen/starcraft-universe-official-release",
+              "title": "SC Universe: Beyond Koprulu 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Ryan Winzen의 공식 프로젝트 캠페인이 Beyond Koprulu 멀티플레이 본편과 Prologue 1~3 튜토리얼을 분리해 안내. 본편 한 개로 집계하며 튜토리얼·자산 모드를 나눠 수를 채우지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        },
+        {
+          "rank": 10,
+          "name": "ARK Star",
+          "url": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star",
+          "description": "장비를 발견·제작하고 프로토스 분대를 성장시키며 이동·능력을 선택하는 턴제 전술 RPG.",
+          "features": [
+            "분대 기반 턴제 전술",
+            "장비 탐색·제작·레벨·재능",
+            "단독 전술 모험 중심의 작은 완결 경험"
+          ],
+          "popularityFactors": [
+            "분석: 고속 RTS 조작 대신 차례별 선택과 캐릭터 성장을 제공한다.",
+            "분석: 완결된 전술 모험은 계속 업데이트하는 경제·대전 서비스와 다른 제작 범위를 보여 준다."
+          ],
+          "operatingStatus": "역사적 승인 프리미엄 Arcade 사례. 2018 공식 발표 확인; 현재 판매·실행 가능 여부 미확인.",
+          "availability": "커뮤니티 제작의 프리미엄 Arcade 지도. 공식 협동전 지휘관·Nova 임무·에디터 의존 모드와 구분.",
+          "monetization": {
+            "summary": "Blizzard와 협업해 전체 경험을 일회 구매로 제공한 승인 프리미엄 Arcade의 역사적 사례.",
+            "verified": [
+              "2018 공식 발표에 ARK Star 전체 경험 USD $4.99를 명시.",
+              "수익 일부가 제작자 Pirate에게 배분된다고 명시.",
+              "구매 보너스로 초상화를 제공한다고 발표."
+            ],
+            "unverified": "2026 현행 판매·국가별 가격·플레이 가능·버전 미확인. 승인된 두 맵 사례를 일반 커뮤니티 맵의 자유 판매 권한으로 해석하지 않는다.",
+            "productEvidence": true,
+            "products": [
+              {
+                "name": "ARK Star 전체 경험",
+                "type": "Blizzard 승인 프리미엄 Arcade 일회 구매",
+                "price": "USD $4.99 (2018 발표)",
+                "status": "역사적 판매 확인; 현재 판매 미확인",
+                "source": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "url": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star",
+              "title": "ARK Star 게임 자료",
+              "type": "게임별 1차·커뮤니티 자료",
+              "note": "Blizzard 2018 발표: 커뮤니티 제작자 Daniel 'Pirate' Altman, 턴제 RPG, 장비·성장·유료 전체 경험. 다른 공식 캠페인 구매를 ARK Star 과금으로 합산하지 않음.",
+              "accessed": "2026-10-13 KST"
+            }
+          ],
+          "metrics": {}
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "4분 우주 수리반",
+          "pitch": "둘 또는 혼자 작은 우주선의 고장·침입을 해결하고 4분 뒤 안전하게 도킹하는 협동 게임.",
+          "mvp": [
+            "실내 맵 1개·선택 역할 2개",
+            "고장 6종·침입 적 2종·출구 1개",
+            "혼자도 해결 가능한 역할 교환·짝 플레이",
+            "한 회차 4분·임시 업그레이드 3개·결과 기록"
+          ],
+          "difficulty": "중간",
+          "effort": "1인·AI 보조·주 20시간·Godot 기본 경험 기준 로컬 협동 MVP 4~6주(80~120시간). 온라인 동기화와 저장 성장 시스템은 별도.",
+          "monetization": "독립 웹/Godot 원작으로 출시한다면 고정 가격 외형·유료 완결판을 검토한다. SC2 안의 프로토타입은 무료로 검증하며, 별도 서면 승인 없이 유료 기능·VIP·거래를 제안하지 않는다.",
+          "why": "NOTD·UAR의 역할 협력과 SC Universe의 함선 위기를 한 공간·두 역할로 줄여 대규모 RPG 제작을 피한다.",
+          "risks": "두 번째 사람이 없으면 플레이가 막히지 않아야 한다. 이동·고장 정보·부활 규칙을 단순화하고 초기 장기 경험치 저장·많은 병과는 제외한다.",
+          "buildNext": "고장 2종만 가진 솔로 4분 시나리오로 목적 이해를 테스트하고, 완주율·혼동 구간을 본 뒤 2인 역할 분담을 추가.",
+          "platform": "독립 Godot 원작 · SC2 무료 미션 프로토타입",
+          "priority": "협동 원형 검증"
+        },
+        {
+          "name": "빛 꼬리 택배",
+          "pitch": "작은 보드에서 빛 꼬리를 남기는 배송 드론이 경로를 막고 목표 지점에 먼저 배달하는 이동 파티.",
+          "mvp": [
+            "2D 보드 1개·턴 또는 고정 틱 이동",
+            "드론 2명·봇 1종·기본 이동과 부스트",
+            "꼬리 수명 5초·배달 목적지 3개",
+            "90초 라운드·3점 승리·동일 기기 플레이"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "1인·AI 보조·주 20시간·웹/Godot 기본 경험 기준 동일 기기 MVP 2~4주(40~80시간). 원격 온라인 대전·모바일 조작은 추가 범위.",
+          "monetization": "독립판에서 드론·빛 꼬리 외형 또는 유료 완결판 검토. 속도·충돌 판정은 결제에 따라 바꾸지 않는다. SC2 프로토타입에는 일반 유료 VIP나 아이템 판매를 넣지 않는다.",
+          "why": "Photon Cycles의 한 가지 공간 차단 규칙과 Zealot Hockey의 분명한 점수 목표를 원작 배송 콘셉트로 결합한다.",
+          "risks": "동시 이동·충돌 판정이 직관적이어야 한다. 실시간 온라인부터 시작하면 지연·매칭 문제가 제작 범위를 키운다.",
+          "buildNext": "봇과 90초 한 판을 만들고 꼬리 수명·보드 크기만 바꿔 재도전 욕구를 확인. 재미가 확인된 뒤 4인·원격 플레이 검토.",
+          "platform": "독립 웹/Godot 원작 · SC2 무료 미니게임",
+          "priority": "가장 작은 파티 MVP"
+        }
+      ],
+      "listLabel": "대표 10선"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sc2arcade.com/info/update-june-2026.html",
+      "title": "SC2Arcade 2026년 6월 운영·API 변경",
+      "type": "1차: 운영자 정책",
+      "note": "공개 API 폐쇄·내부 API 제3자 사용 제한·익명 45일 로비 범위. 403/503을 우회하지 않고 실시간 수치 확보의 한계로 기록.",
+      "accessed": "2026-10-13 KST"
+    },
+    {
+      "url": "https://us.forums.blizzard.com/en/sc2/t/starcraft-ii-editor-map-publishing-update-feb-24-2026/30688",
+      "title": "SC2 지도 게시 재개 2026-02-24",
+      "type": "1차: Blizzard 공식 공지",
+      "note": "2025-04-21 게시 중단 이후 2026-02-24 게시 재개. 일부 자료의 2026년 3월 소식 날짜와 실제 재개일을 구분.",
+      "accessed": "2026-10-13 KST"
+    },
+    {
+      "url": "https://www.blizzard.com/en-us/legal/2749df07-2b53-4990-b75e-a7cb3610318b/custom-game-acceptable-use-policy",
+      "title": "Blizzard Custom Game Acceptable Use Policy",
+      "type": "1차: 플랫폼 정책",
+      "note": "별도 서면 승인 없는 수익·판매·구매 거래 및 후원 이익 제한의 원문. 역사적 개별 프리미엄 사례를 일반 판매 허용으로 확장하지 않음.",
+      "accessed": "2026-10-13 KST"
+    }
+  ],
+  "crossCategoryInsights": [
+    "분석: SC2 유즈맵의 재사용 자산 위에서 강한 차별성을 만든 것은 편성·상성·역할·공간·정보의 규칙이었다. 독립 게임에서는 이 규칙을 참고하되 자산과 IP를 새로 만들어야 한다.",
+    "분석: 사람을 기다리지 않아도 시작할 수 있는 봇·솔로·샌드박스는 작은 커뮤니티와 새 게임의 초기 인원 문제를 완화한다. 온라인 인원 자체를 재미의 전제로 만들기 전에 단독 플레이 루프를 검증한다.",
+    "관측: 맵 무료 접근·외부 개발 후원·승인 프리미엄·제작자 독립 후속작 판매는 서로 다른 수익 구조다. 하나의 게임 내 현금 상점처럼 합쳐 비교하면 잘못된 결론이 된다.",
+    "분석: 소규모 MVP는 한 라인·3유닛·10웨이브 또는 방 하나·2역할·4분을 목표로 삼고 저장 성장·다중 지역 배포·실시간 PvP는 재미가 확인된 후 확장한다."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "market": "Minecraft 성장·생존·RPG 확장",
+  "observed": "2026-10-13 KST",
+  "meaning": "플랫폼/프로젝트별 누적 다운로드·FTB 설치/플레이 표시. 고유사용자·동접·매출·동일 모집단 순위 아님. 다른 배포 경로를 합산하지 않음.",
+  "records": [
+    {
+      "id": "minecraft:modpack:skyfactory-4",
+      "name": "SkyFactory 4",
+      "url": "https://www.curseforge.com/minecraft/modpacks/skyfactory-4",
+      "metrics": {
+        "downloads": 14139313,
+        "projectId": 296062,
+        "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+        "measuredAt": "2026-10-13 KST 조회값",
+        "lastUpdated": "2021-12-13"
+      },
+      "edition": "Java Edition",
+      "compatibility": "공식 배포4.2.4·Java1.12.2(2021-12-13); 현행 Minecraft26.x용 팩이 아님. 지정 런처/로더·서버 파일 구성에 맞춰 별도 프로필 사용."
+    },
+    {
+      "id": "minecraft:mod:cobblemon",
+      "name": "Cobblemon",
+      "url": "https://modrinth.com/mod/cobblemon",
+      "metrics": {
+        "downloads": 36343371,
+        "projectId": "MdwFAVRL",
+        "metricLabel": "Modrinth Cobblemon 모드 프로젝트 누적 다운로드 · 버전/재설치 합산 · 사용자가 아님",
+        "measuredAt": "2026-10-13 KST API 조회값",
+        "lastUpdated": "2026-10-11"
+      },
+      "edition": "Java Edition",
+      "compatibility": "공개 버전 API:1.8.2·Java1.21.1·Fabric 또는 NeoForge 각각2026-10-11 배포. 에디션/로더별 파일과 의존성 일치 필요."
+    },
+    {
+      "id": "minecraft:modpack:rlcraft",
+      "name": "RLCraft",
+      "url": "https://www.curseforge.com/minecraft/modpacks/rlcraft",
+      "metrics": {
+        "downloads": 30327680,
+        "projectId": 285109,
+        "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+        "measuredAt": "2026-10-13 KST 조회값",
+        "lastUpdated": "2023-06-27"
+      },
+      "edition": "Java Edition",
+      "compatibility": "공식 공개 메인 파일2.9.3·Java1.12.2·Forge2860 필요(2023-06-27). 최신26.x용이 아니며 임의 성능 모드 추가 시 호환 문제가 있을 수 있음."
+    },
+    {
+      "id": "minecraft:modpack:vault-hunters-third",
+      "name": "Vault Hunters Third Edition",
+      "url": "https://www.curseforge.com/minecraft/modpacks/vault-hunters-1-18-2",
+      "metrics": {
+        "downloads": 5930507,
+        "projectId": 711537,
+        "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+        "measuredAt": "2026-10-13 KST 조회값",
+        "lastUpdated": "2026-07-30"
+      },
+      "edition": "Java Edition",
+      "compatibility": "공식3.21.7·Java1.18.2·Forge. 클라이언트2026-07-28/서버파일07-30. 공식 설치 안내 Java17·권장RAM8GB; 최신 본편 자동 호환 아님."
+    },
+    {
+      "id": "minecraft:modpack:ftb-stoneblock-3",
+      "name": "FTB StoneBlock 3",
+      "url": "https://www.feed-the-beast.com/modpacks/100-ftb-stoneblock-3",
+      "metrics": {
+        "downloads": 1467600,
+        "projectId": 1091305,
+        "ftbInstalls": 2509826,
+        "ftbPlays": 14389698,
+        "metricLabel": "CF 특정 프로젝트 다운로드 + FTB App 설치/플레이 표시는 다른 집계. 합산/고유사용자/동접 해석 금지",
+        "measuredAt": "2026-10-13 KST 조회값",
+        "lastUpdated": "FTB2026-06-11 / CF2025-05-30"
+      },
+      "edition": "Java Edition",
+      "compatibility": "FTB 공식:1.11.6·Java1.18.2·Forge(2026-06-11). CurseForge 프로젝트에는1.11.5(2025-05-30)가 메인 파일로 표시되어 배포 경로별 버전을 구분."
+    },
+    {
+      "id": "minecraft:modpack:atm10",
+      "name": "All the Mods 10 — ATM10",
+      "url": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10",
+      "metrics": {
+        "downloads": 22297501,
+        "projectId": 925200,
+        "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+        "measuredAt": "2026-10-13 KST 조회값",
+        "lastUpdated": "2026-09-22"
+      },
+      "edition": "Java Edition",
+      "compatibility": "공식8.2·Java1.21.1·NeoForge(2026-09-22). 수백 모드의 의존성·메모리 요구가 있어 별도 지정 프로필 필요; 본편26.x용 아님."
+    }
+  ],
+  "versionChecks": [
+    {
+      "id": "minecraft:mod:pixelmon",
+      "version": "9.4.1",
+      "minecraft": "1.21.1",
+      "loader": "NeoForge21.1.248",
+      "release": "2026-09-17",
+      "source": "https://pixelmonmod.com/downloads.php"
+    },
+    {
+      "id": "minecraft:map:oneblock-ijaminecraft",
+      "version": "3.10.0",
+      "minecraft": "26.1",
+      "release": "2026-03-30",
+      "source": "https://ijaminecraft.com/map/oneblock/"
+    },
+    {
+      "id": "minecraft:mod:cobblemon",
+      "version": "1.8.2",
+      "minecraft": "1.21.1",
+      "loaders": [
+        "Fabric",
+        "NeoForge"
+      ],
+      "release": "2026-10-11",
+      "source": "https://api.modrinth.com/v2/project/cobblemon/version"
+    }
+  ]
+}

@@ -1,0 +1,1070 @@
+{
+  "market": "스타크래프트 1 유즈맵",
+  "scope": "StarCraft/Brood War UMS의 공개 대표·보존 배포본 20개. 국제 제작자 커뮤니티 SEN 자료 중심이며 한국 현재 유즈맵 인기 순위가 아니다. 일반 밀리맵·모드 에셋·서로 다른 버전 중복은 제외했다.",
+  "methodology": [
+    "2026-10-13(KST)에 공개 배포 페이지·제작자 게시글과 SEN 목록을 읽었다. 맵 바이너리·게임 클라이언트를 내려받거나 실행하지 않았다.",
+    "SEN 공개 목록의 디펜스84·전략43·RPG105·Bound56·퍼즐25·보드2개의 등록 항목을 후보 탐색에 사용했다. 중복 버전·설명 없는 리소스·밀리형 후보는 제외하고 설계 대표성이 다른 20개를 선택했다. 목록 후보를 모두 독립 게임 수로 계산하지 않았다.",
+    "Top10이 아니라 대표·보존 10선이다. 선택한 10개 내부에서 해당 배포본의 SEN 누적 다운로드순으로 표시했다. 사이트 다운로드는 현재 플레이·사람 수·국내 인기·매출이 아니다.",
+    "주된 배포본은 2008~2020 등록 자료다. 후속 업데이트·제작 중단·베타와 버전 차이는 확인된 경우 표시했다. 자료가 지금 열리는 것과 지금 게임이 활성 운영되는 것은 다르다.",
+    "SEN 등록일은 최초/수정 배포 등록값이며 최신 패치일로 사용하지 않았다. Remastered·클래식·EUD 호환성은 맵마다 다르고 실제 실행은 미검증이다.",
+    "게임 내 구매·돈·가스·카드·광물은 실제 현금 과금 증거로 사용하지 않았다. 공개 배포 페이지에서 개별 유료 상품과 결제 가격을 찾지 못한 경우 미확인으로 표시한다.",
+    "인기 요소와 공통점은 공개 게임 구조에 대한 설계 해석이다. 최신 흥행을 확인하지 못한 보존작의 인과적 인기 이유를 입증한 것은 아니다.",
+    "추천은 원본 맵의 그래픽·캐릭터·음원·트리거를 복제하지 않는 독립 기획이다. SC1 내부 무료 프로토타입과 독립적인 웹/엔진 신작의 과금 제안을 구분한다. 일정은 1인·AI 보조·기본 엔진 경험·주20시간 기준 MVP 추정이다."
+  ],
+  "categories": [
+    {
+      "id": "sc1-1",
+      "name": "디펜스·자동전투·외교 전략",
+      "listLabel": "대표·보존 10선",
+      "selectionBasis": "SEN의 디펜스·전략 공개 목록에서 다운로드·설명 충실도·서로 다른 규칙을 기준으로 10개를 선정. 선정된 배포본 내부에서 다운로드 내림차순. 최신 플랫폼 장르 Top10은 아니다.",
+      "commonalities": [
+        "한정 자원을 병력·경제·업그레이드에 배분하고 다음 전투 결과를 보는 반복이 공통적이다.",
+        "같은 RTS 유닛도 카드 보상·자동 전투·외교·영토·역할 분담으로 다른 게임 규칙이 된다.",
+        "자유 이동·수천 유닛·다국가 외교까지 복제하면 MVP가 커진다. 고정 슬롯·한 레인·AI 상대 하나로 줄이는 편이 구현 가능하다.",
+        "공개 배포·누적 다운로드는 보존과 관심의 흔적이며 현재 동접·현행 과금의 증거가 아니다."
+      ],
+      "games": [
+        {
+          "name": "Dirty Marine Defense v1.3",
+          "url": "https://staredit.net/sc1db/file/3744/",
+          "description": "마린을 겹쳐 배치해 밀려오는 웨이브를 방어하는 팀 디펜스.",
+          "features": [
+            "중첩 마린을 이용한 방어",
+            "등록 소개에 웨이브·디펜스 명시",
+            "6인 방어팀이 배포본 진영에 표시됨"
+          ],
+          "popularityFactors": [
+            "작은 전투 유닛을 다수 운용하는 밀도감과 팀 방어가 설계상 재도전 동기를 만듦",
+            "소개가 짧아 세부 난도·라운드 규칙은 미확인"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 895,
+            "resourceUploaded": "2017-07-09",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3744/",
+              "title": "Dirty Marine Defense v1.3 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3744,
+          "rank": 1
+        },
+        {
+          "name": "Civilization World 7.9.6",
+          "url": "https://staredit.net/sc1db/file/120/",
+          "description": "부족에서 출발해 시대·기술·경제를 발전시키는 문명형 전략맵.",
+          "features": [
+            "시대 발전·기술 연구·불가사의",
+            "농업·사냥·채굴·교역",
+            "정부 선택으로 경제 운영"
+          ],
+          "popularityFactors": [
+            "기술·경제·영토의 여러 성장 축이 장기 목표를 제공함",
+            "제작자가 과거 1,000명 이상 참여한 리그를 회고하지만 현재 활동 규모는 알 수 없음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 796,
+            "resourceUploaded": "2008-03-17",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/120/",
+              "title": "Civilization World 7.9.6 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 120,
+          "rank": 2
+        },
+        {
+          "name": "Diplomacy or War",
+          "url": "https://staredit.net/sc1db/file/3864/",
+          "description": "유럽 국가를 맡아 동맹과 전쟁으로 세력을 확장하는 외교 전략맵.",
+          "features": [
+            "국가별 진영 선택",
+            "동맹·군사 운영",
+            "소개에서 도시 수입과 유닛 균형 조정 설명"
+          ],
+          "popularityFactors": [
+            "같은 맵에서도 동맹과 배신이 다른 이야기를 만듦",
+            "플레이어 협상이 고정 콘텐츠 밖의 변주를 담당함"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "제작자 게시글에 2020-02-09 개발 중단 명시 · 보관된 배포본",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 773,
+            "resourceUploaded": "2017-10-20",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3864/",
+              "title": "Diplomacy or War 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3864,
+          "rank": 3
+        },
+        {
+          "name": "Amazing TD Topaz",
+          "url": "https://staredit.net/sc1db/file/3743/",
+          "description": "기존 타워 디펜스 구조를 재구성한 최대 8인 방어맵.",
+          "features": [
+            "라운드별 가스로 미사일 터렛 건설",
+            "중첩 가능한 벙커",
+            "은폐 적·건물별 보상과 유닛 변환"
+          ],
+          "popularityFactors": [
+            "라운드마다 자원 사용과 은폐 대응을 결정해야 다음 판 빌드를 바꿀 이유가 생김",
+            "익숙한 건물을 다른 역할로 사용하는 규칙이 작은 에셋으로 변주를 만듦"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 719,
+            "resourceUploaded": "2017-07-04",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3743/",
+              "title": "Amazing TD Topaz 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3743,
+          "rank": 4
+        },
+        {
+          "name": "Desert Strike Classic 2020 (v5.0 배포본)",
+          "url": "https://staredit.net/sc1db/file/4820/",
+          "description": "건물 구성과 자동 생성 병력을 통해 상대 진영을 밀어내는 팀 전략맵.",
+          "features": [
+            "선정 배포본은 Classic v5.0",
+            "후속 계열 소개: 모드 선택·분할 생성·중앙 보상. 선정 v5.0과 동일한 기능인지는 미검증",
+            "종족 유닛·특수 능력·경제 투자 선택"
+          ],
+          "popularityFactors": [
+            "조작보다 생산 선택과 상성 읽기에 집중할 수 있음",
+            "팀의 빌드가 합쳐져 자동 전투의 다음 결과를 기대하게 만듦"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "2020 v5.0 배포본 보존 · 2022 후속 공지와 판본을 구분 · 현재 실행 미검증",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 715,
+            "resourceUploaded": "2020-03-08",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4820/",
+              "title": "Desert Strike Classic 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://staredit.net/topic/17904/",
+              "title": "Desert Strike Classic 제작자 소개",
+              "type": "1차·제작자 게시글",
+              "note": "현재 게시글은 2022 후속 버전 소개로 수정되어 있다. 계열 구조 참고용이며 선정 2020 v5.0 배포본의 기능·현재 버전과 동일하다고 단정하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4820,
+          "rank": 5
+        },
+        {
+          "name": "Siege Defense",
+          "url": "https://staredit.net/sc1db/file/4380/",
+          "description": "세 방향에서 오는 적을 탱크와 구매 유닛으로 막는 미로형 디펜스.",
+          "features": [
+            "1~4인·21개 레벨",
+            "탱크로 방어 경로 구성",
+            "제한된 업그레이드·보스와 특수 유닛"
+          ],
+          "popularityFactors": [
+            "경로 설계와 세 방향의 우선순위가 단순 화력 성장과 다른 판단을 요구함",
+            "혼자 또는 소수 인원으로 구성할 수 있는 방어 목표가 테스트 범위를 줄임"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "2019 소개에 베타 표시 · 현재 완성·운영 상태 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 659,
+            "resourceUploaded": "2019-03-29",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4380/",
+              "title": "Siege Defense 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4380,
+          "rank": 6
+        },
+        {
+          "name": "BlackJack Defense Deluxe",
+          "url": "https://staredit.net/sc1db/file/3605/",
+          "description": "21을 넘지 않는 카드 선택의 결과로 방어 유닛을 얻는 팀 디펜스.",
+          "features": [
+            "Hit/Stand로 패를 결정",
+            "패의 값에 따라 유닛 보상 차등",
+            "10레벨마다 보스·시간 내 잔여 적에 따라 목숨 감소"
+          ],
+          "popularityFactors": [
+            "추가 카드를 받을지 멈출지의 짧은 위험 선택이 반복됨",
+            "카드 결과가 곧 전투력으로 보여 결과를 이해하기 쉬움"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 626,
+            "resourceUploaded": "2017-02-06",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3605/",
+              "title": "BlackJack Defense Deluxe 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3605,
+          "rank": 7
+        },
+        {
+          "name": "RISK: Europe",
+          "url": "https://staredit.net/sc1db/file/4377/",
+          "description": "유럽 영토를 두고 병력을 이동시키는 점령 전략맵.",
+          "features": [
+            "유럽 지역 테마",
+            "옵저버 위치로 공격 지점 지정",
+            "주변 병력 또는 전체 병력을 모아 명령하는 Masser"
+          ],
+          "popularityFactors": [
+            "영토 변화가 승패 방향을 한눈에 보여 줌",
+            "다수 유닛을 묶어 지휘하는 도구가 조작 부담을 줄임"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 579,
+            "resourceUploaded": "2019-02-28",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4377/",
+              "title": "RISK: Europe 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4377,
+          "rank": 8
+        },
+        {
+          "name": "Double Defense",
+          "url": "https://staredit.net/sc1db/file/4437/",
+          "description": "짝과 협력해 20개 레벨을 생존하는 방어맵.",
+          "features": [
+            "20개 생존 레벨",
+            "팀별 좌·우 역할이 배포본 진영에 표시됨",
+            "제작자가 팀워크와 숨겨진 레벨을 소개"
+          ],
+          "popularityFactors": [
+            "한 사람의 방어만으로 해결하지 않는 역할 분담이 협동 동기를 만듦",
+            "명확한 레벨 수와 비밀 도전이 완주·발견 목표를 제공함"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 512,
+            "resourceUploaded": "2019-07-27",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4437/",
+              "title": "Double Defense 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4437,
+          "rank": 9
+        },
+        {
+          "name": "Sorcerers III",
+          "url": "https://staredit.net/sc1db/file/5152/",
+          "description": "영웅과 마법을 골라 사당을 지키거나 파괴하는 공격·방어 팀 대전.",
+          "features": [
+            "10종 영웅·서로 다른 주문과 역할",
+            "1v1~4v4 등 팀 구성",
+            "사당 파괴 또는 45분 방어·공격 영웅 처치로 승리"
+          ],
+          "popularityFactors": [
+            "영웅 선택과 팀 역할이 같은 지형에서 다른 전략을 만듦",
+            "공격팀·수비팀의 서로 다른 목표가 비대칭 대전 구조를 만듦"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 417,
+            "resourceUploaded": "2020-11-22",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/5152/",
+              "title": "Sorcerers III 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 5152,
+          "rank": 10
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "3분 정원 호위대",
+          "pitch": "생산 건물 3종을 배치하면 정원 생물들이 자동으로 출발해 한 줄 길에서 싸우는 짧은 전략 게임.",
+          "mvp": [
+            "1개 레인·유닛 6종·고정 6웨이브",
+            "AI 상대 1종·3분 종료·승패 재시작",
+            "경제 투자와 병력 투자의 2가지 선택"
+          ],
+          "difficulty": "중간",
+          "effort": "1인·AI 보조·주 20시간·엔진 기본 경험 기준 3~5주(60~100시간) MVP 추정.",
+          "monetization": "SC1 내부 실험은 별도 유료 기능 없이 테스트. 독립적인 웹/Godot 신작으로 만들 경우 정원 테마·유닛 외형 확정 구매를 후속 검토.",
+          "why": "Desert Strike의 자동 전투·경제 선택을 전투 규모와 유닛 종류가 작은 원작 게임으로 압축.",
+          "risks": "유닛 상성이 한 선택으로 고정되면 재미가 줄어듦. 처음에는 AI 상대만 만들고 실시간 대전 동기화는 후속 단계.",
+          "buildNext": "건물 하나에서 유닛이 생성되고 상대 유닛을 만나 승패가 나는 단일 웨이브부터 구현."
+        },
+        {
+          "name": "두 방향 온실 방어",
+          "pitch": "좌우에서 오는 벌레를 8개 고정 슬롯의 도구로 막는 짧은 협동 디펜스.",
+          "mvp": [
+            "두 경로·도구 4종·적 3종·보스 1종",
+            "12웨이브·라운드 사이 교체 선택",
+            "싱글플레이 완주 후 2인 역할 분담 추가"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "1인·AI 보조·주 20시간 기준 2~4주(40~80시간) MVP 추정.",
+          "monetization": "SC1 내부에는 구매 혜택을 붙이지 않는 프로토타입. 독립 신작은 도구 외형과 온실 장식의 확정 구매를 후속 검토.",
+          "why": "Siege Defense의 방향별 판단과 Double Defense의 역할 분담을 고정 슬롯으로 단순화.",
+          "risks": "자유 미로와 경로 찾기를 처음부터 넣으면 구현·밸런스 범위가 커짐. 기본 경로 2개로 시작.",
+          "buildNext": "두 경로의 적이 서로 다른 속도로 오도록 만들어 방어 우선순위 선택이 생기는지 확인."
+        }
+      ]
+    },
+    {
+      "id": "sc1-2",
+      "name": "협동 모험·퍼즐·조작 도전",
+      "listLabel": "대표·보존 10선",
+      "selectionBasis": "SEN의 RPG·퍼즐·Bound·보드/기타 배포본에서 성장·방 진행·비대칭 추격·재시도의 다른 구조를 가진 10개를 선정. 고유 작품의 대표 배포본 하나만 포함하고 선정 목록 내부 다운로드순으로 표시.",
+      "commonalities": [
+        "방·열쇠·위험 패턴처럼 작은 규칙을 반복해 콘텐츠를 늘린다.",
+        "협동 정보 교환·추격 역할·거래 상대는 다른 플레이어를 콘텐츠로 만든다.",
+        "조작 퍼즐은 반응 지연과 입력 방식에 민감하다. 원본 플랫폼의 호환 조건도 설계 범위에 들어간다.",
+        "현재 서비스 규모보다 제한된 RTS 입력을 다른 장르로 바꾼 설계 실험의 가치가 큰 보존 표본이다."
+      ],
+      "games": [
+        {
+          "name": "Morrowind RPG",
+          "url": "https://staredit.net/sc1db/file/2932/",
+          "description": "탐험·아이템·주문과 스토리를 결합한 멀티플레이 RPG 배포본.",
+          "features": [
+            "3종 클래스·6개 주문",
+            "32개 아이템·30개 패시브 스킬",
+            "메인 이야기·대화·보스·지도 탐험"
+          ],
+          "popularityFactors": [
+            "성장 선택과 숨겨진 아이템 탐색이 서로 다른 목표를 제공함",
+            "익숙한 모험 세계관이 관심을 끌 수 있으나 현재 인기·권리 허가를 뜻하지 않음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 보관본 · 과거 댓글에 다운로드 실패·0바이트 제보 있음 · 현재 파일 전달·실행 미검증",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 2077,
+            "resourceUploaded": "2013-10-29",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/2932/",
+              "title": "Morrowind RPG 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 2932,
+          "rank": 1
+        },
+        {
+          "name": "PORTAL (SEN 콘테스트 맵)",
+          "url": "https://staredit.net/sc1db/file/3002/",
+          "description": "포털을 쏘아 시험실을 통과하는 짧은 싱글플레이 퍼즐 실험작.",
+          "features": [
+            "1인 플레이·최대 4인 관전",
+            "일주일 제작 콘테스트 출품작",
+            "제작자 기록 기준 SEN Rampage Contest #2 1위"
+          ],
+          "popularityFactors": [
+            "한 가지 이동 규칙을 여러 퍼즐에 적용하는 구조가 분량 대비 변주를 만듦",
+            "대회 수상은 과거 설계 평가 근거이며 현재 플레이어 인기를 뜻하지 않음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "2015 등록된 짧은 대회 실험작 · 후속 완성본 여부 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 1061,
+            "resourceUploaded": "2015-01-20",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3002/",
+              "title": "PORTAL (SEN 콘테스트 맵) 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3002,
+          "rank": 2
+        },
+        {
+          "name": "Spellsword (업그레이드 수정 배포본)",
+          "url": "https://staredit.net/sc1db/file/3865/",
+          "description": "주문·제작·보스를 중심으로 하는 RPG의 업그레이드 수정 배포본.",
+          "features": [
+            "주문과 아이템 제작",
+            "게임 내 무작위 선택 요소·보스",
+            "소개에서 일부 유닛·2번 플레이어 이탈 버그 언급"
+          ],
+          "popularityFactors": [
+            "전투를 마친 뒤 장비를 만들고 다시 도전하는 루프가 연결됨",
+            "유닛 능력을 주문처럼 사용하는 방식이 제한된 엔진의 변형 사례가 됨"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 1007,
+            "resourceUploaded": "2017-11-04",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/3865/",
+              "title": "Spellsword (업그레이드 수정 배포본) 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 3865,
+          "rank": 3
+        },
+        {
+          "name": "D e L i R u S",
+          "url": "https://staredit.net/sc1db/file/2984/",
+          "description": "무기 없이 도망치며 여러 구역의 퍼즐을 푸는 협동 공포맵.",
+          "features": [
+            "제작자 소개 기준 4인·6개 구역",
+            "7종 적·인벤토리·3개 난도",
+            "3개 결말과 숨겨진 아케이드·전투 무기 없음"
+          ],
+          "popularityFactors": [
+            "시야 제한과 무기 부재가 행동 선택을 탈출과 탐색에 집중시킴",
+            "협동 퍼즐·다른 결말이 재방문할 설계상의 이유를 제공함"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 993,
+            "resourceUploaded": "2014-08-29",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/2984/",
+              "title": "D e L i R u S 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://staredit.net/topic/16533/",
+              "title": "D e L i R u S 제작자 Showcase",
+              "type": "1차·제작자 게시글",
+              "note": "2014 제작자 본문에서 인원·구역·적·난도·무기 부재·결말 확인. 공개 HTML을 읽음.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 2984,
+          "rank": 4
+        },
+        {
+          "name": "Temple Puzzle",
+          "url": "https://staredit.net/sc1db/file/1249/",
+          "description": "두 사람이 52개 방을 탐색하며 열쇠 네 개와 신전을 찾는 퍼즐맵.",
+          "features": [
+            "2인 협동",
+            "52개 방·열쇠 4개",
+            "소개에서 방 재진입 오류 수정과 일부 퍼즐 완화 명시"
+          ],
+          "popularityFactors": [
+            "두 사람이 서로 단서를 확인하는 구조가 대화를 게임 내용으로 만듦",
+            "방·열쇠처럼 작은 규칙을 재사용해 콘텐츠를 확장할 수 있음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 939,
+            "resourceUploaded": "2009-02-05",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/1249/",
+              "title": "Temple Puzzle 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 1249,
+          "rank": 5
+        },
+        {
+          "name": "Dungeon Escape",
+          "url": "https://staredit.net/sc1db/file/662/",
+          "description": "몬스터·함정·아이템·비밀·보스로 구성된 싱글플레이 방 탈출 모험.",
+          "features": [
+            "싱글플레이",
+            "방 단위 진행 시스템",
+            "퍼즐·비밀·보스가 함께 존재"
+          ],
+          "popularityFactors": [
+            "방 하나를 완료할 때마다 다음 목표가 명확해짐",
+            "보상과 비밀을 배치해 단순 통과 이상의 탐색 동기를 제공함"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 810,
+            "resourceUploaded": "2008-08-11",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/662/",
+              "title": "Dungeon Escape 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 662,
+          "rank": 6
+        },
+        {
+          "name": "Tower of Dream",
+          "url": "https://staredit.net/sc1db/file/2830/",
+          "description": "포로가 된 병사가 수수께끼의 장소를 탐색하는 싱글플레이 액션 퍼즐 RPG.",
+          "features": [
+            "싱글플레이·반응 속도 중심 퍼즐",
+            "이야기의 정체를 알아가는 탐색",
+            "제작자가 Battle.net 반응 지연 때문에 싱글플레이 권장"
+          ],
+          "popularityFactors": [
+            "방 단위 퍼즐과 이야기 궁금증이 다음 구역으로 이동할 이유를 만듦",
+            "큰 성장 경제 없이도 반응 조작과 발견으로 진행 목표를 만들 수 있음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "싱글플레이 권장 배포본 · Battle.net에서의 반응 퍼즐 지연을 제작자가 경고",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 766,
+            "resourceUploaded": "2013-01-30",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/2830/",
+              "title": "Tower of Dream 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 2830,
+          "rank": 7
+        },
+        {
+          "name": "Monopoly! 1.04",
+          "url": "https://staredit.net/sc1db/file/4406/",
+          "description": "부동산 구매·거래·임대료를 턴제로 재현한 보드게임형 유즈맵.",
+          "features": [
+            "주사위·부동산·경매·교역·담보·파산",
+            "중앙 시민으로 턴 조작",
+            "개별 인벤토리에서 거래와 집 관리·제작자 예상 약 1시간"
+          ],
+          "popularityFactors": [
+            "다른 플레이어와의 거래가 같은 보드에 서로 다른 결과를 만듦",
+            "실제 보드의 규칙을 기존 RTS 입력 도구에 옮긴 UI 설계 사례가 됨"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 546,
+            "resourceUploaded": "2019-06-26",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4406/",
+              "title": "Monopoly! 1.04 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4406,
+          "rank": 8
+        },
+        {
+          "name": "Destination Bound",
+          "url": "https://staredit.net/sc1db/file/4029/",
+          "description": "반복되는 장애물을 피해 길을 통과하는 Bound 계열 조작 도전맵.",
+          "features": [
+            "제작자 표시 난도 7/10",
+            "2017 완성·2018 등록 배포본",
+            "제작자 소개에서 비정형 장애물의 배치와 창의성 강조"
+          ],
+          "popularityFactors": [
+            "짧은 실패와 다시 시도하는 조작 학습을 작은 규칙으로 구현할 수 있음",
+            "제작자는 당시 커뮤니티 쇠퇴를 회고하므로 현재 흥행작이라고 볼 근거는 없음"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 545,
+            "resourceUploaded": "2018-02-22",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4029/",
+              "title": "Destination Bound 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4029,
+          "rank": 9
+        },
+        {
+          "name": "Cat n Mouse Ruins 1.4",
+          "url": "https://staredit.net/sc1db/file/4434/",
+          "description": "고양이와 쥐 역할을 나눠 추격·생존하는 비대칭 팀맵의 복원 배포본.",
+          "features": [
+            "배포본 기준 쥐 6인·고양이 2인 진영",
+            "구조·사망과 추격 관련 수정 기록",
+            "2009 베타를 2019년에 보완·제목은 1.0이지만 등록 설명·파일은 1.4"
+          ],
+          "popularityFactors": [
+            "쫓는 역할과 도망치는 역할의 서로 다른 목표가 적은 규칙으로 이야기를 만듦",
+            "다른 이용자를 구조하는 상황이 협동 판단을 만든다는 설계 해석"
+          ],
+          "monetization": {
+            "summary": "공개 맵 배포 페이지를 확인했다. 개별 유료 상품·입장료·게임 내 결제 가격은 확인하지 못했다.",
+            "verified": [
+              "게임 구조·배포본 설명을 공개 열람할 수 있음"
+            ],
+            "unverified": [
+              "배포·설명 확인만으로 모든 버전이 무과금이라 단정하지 않음. 후원·외부 판매·현행 상점은 미확인. 게임 내 광물·가스·골드·보드게임 돈은 실제 결제의 증거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "operatingStatus": "역사적 공개 배포본 · 최근 활동과 최신 클라이언트 실행은 미확인",
+          "availability": {
+            "edition": "StarCraft / Brood War UMS",
+            "delivery": "선정 리소스의 .scm/.scx 배포본",
+            "compatibility": "최신 Remastered/클래식 실행 미검증. EUD·패치·반응 지연 조건은 배포본 설명을 확인해야 함."
+          },
+          "metrics": {
+            "archiveDownloads": 348,
+            "resourceUploaded": "2019-07-18",
+            "observedDate": "2026-10-13 KST 조회",
+            "scope": "SEN 해당 배포본 누적 다운로드. 현재 동접·플레이 횟수·한국 인기 순위 아님."
+          },
+          "evidence": [
+            {
+              "url": "https://staredit.net/sc1db/file/4434/",
+              "title": "Cat n Mouse Ruins 1.4 공개 배포본·등록 설명",
+              "type": "맵 리소스·제작자/업로더 설명",
+              "note": "파일 식별·게임 구조·누적 다운로드·등록일을 확인. 원본 맵 파일 다운로드와 게임 실행은 하지 않음. 등록일은 최신 패치일이 아님.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "resourceId": 4434,
+          "rank": 10
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "6방 빛 신호 탈출",
+          "pitch": "두 사람이 서로 다른 방의 색·순서를 알려 주고 장치를 눌러 출구를 여는 짧은 퍼즐 게임.",
+          "mvp": [
+            "2인·방 6개·장치 3종",
+            "두 플레이어에게 서로 다른 단서 표시",
+            "실패 후 같은 방 재시작·전체 완주 10분"
+          ],
+          "difficulty": "중간",
+          "effort": "1인·AI 보조·주 20시간 기준 3~5주(60~100시간) MVP 추정.",
+          "monetization": "원본 유즈맵에서는 유료 기능을 제안하지 않음. 자체 코드·아트의 독립 게임이면 기본 데모와 추가 퍼즐 팩의 확정 판매를 검토.",
+          "why": "Temple Puzzle의 협동 단서와 Dungeon Escape의 방 단위 진행을 작은 독립 퍼즐로 재구성.",
+          "risks": "설명 없이 풀 수 있는 단서 설계가 핵심. 온라인 구현 전 같은 화면/로컬 테스트로 퍼즐을 검증.",
+          "buildNext": "첫 방 하나를 만들어 친구 두 명이 말로 설명해서 풀 수 있는지 관찰."
+        },
+        {
+          "name": "30초 빛바닥 달리기",
+          "pitch": "빛이 켜지는 바닥의 순서를 읽고 안전한 칸으로 이동해 30초 코스를 통과하는 조작 도전.",
+          "mvp": [
+            "싱글플레이·짧은 코스 3개·위험 패턴 4종",
+            "즉시 재시작·개인 최고 기록",
+            "스테이지당 안전한 연습 구간 1개"
+          ],
+          "difficulty": "낮음",
+          "effort": "1인·AI 보조·주 20시간 기준 1~2주(20~40시간) MVP 추정.",
+          "monetization": "무료 프로토타입으로 조작 검증. 독립 웹 게임의 배포 플랫폼이 정해진 뒤 외형·추가 코스 또는 플랫폼 광고를 검토.",
+          "why": "Destination Bound의 반복 학습과 Tower of Dream의 반응 퍼즐을 작고 명료한 규칙으로 옮김.",
+          "risks": "클라이언트 지연·모바일 입력이 난도에 영향을 줌. 경고 시간과 판정 범위를 플레이 테스트로 조정.",
+          "buildNext": "바닥 한 패턴의 경고 → 위험 → 안전을 구현하고 10회 시도에서 실패 이유를 관찰."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://staredit.net/sc1db/",
+      "title": "SEN SC1 Database",
+      "note": "제작자/업로더의 공개 리소스 저장소. 플랫폼 전수 인기 순위가 아님.",
+      "accessed": "2026-10-13"
+    }
+  ]
+}

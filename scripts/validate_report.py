@@ -3,7 +3,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 import json
 import re
-from build_report import FILES, game_identity
+from build_report import FILES, MARKETS, game_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -35,10 +35,12 @@ class ReportParser(HTMLParser):
 
 def main():
     all_games, recommendations = [], []
-    for filename in FILES:
+    for config in MARKETS:
+        filename = config['file']
         data = json.loads((ROOT / 'research' / filename).read_text(encoding='utf-8-sig'))
         assert data.get('scope') and data.get('methodology'), f'Missing research method: {filename}'
         market_ids = []
+        assert len(data['categories']) == config['expectedCategories'], filename
         for category in data['categories']:
             assert 10 <= len(category['games']) <= 20, category['name']
             assert category.get('commonalities') and category.get('selectionBasis')
@@ -51,28 +53,29 @@ def main():
             for game in category['games']:
                 for field in ('name', 'url', 'description', 'features', 'popularityFactors', 'monetization', 'evidence'):
                     assert game.get(field), f'Missing {field}: {game.get("name")}'
-                assert game['url'].startswith(('https://www.roblox.com/games/', 'https://maplestoryworlds.nexon.com/'))
+                assert game['url'].startswith(('https://', 'http://')), game['name']
                 assert game['monetization'].get('summary') and game['monetization'].get('unverified')
-                assert any(s['url'] == game['url'] for s in game['evidence']), f'No official game source: {game["name"]}'
+                assert any(s['url'] == game['url'] for s in game['evidence']), f'No game source: {game["name"]}'
                 for source in game['evidence']:
                     assert source.get('title') and source.get('note') and source.get('accessed')
                     assert source['url'].startswith(('https://', 'http://'))
                 market_ids.append(game_identity(game))
                 all_games.append(game)
         assert len(market_ids) == len(set(market_ids)), f'Duplicate game inside market: {filename}'
+        assert len(market_ids) == config['expectedGames'], filename
     content = (ROOT / 'docs' / 'index.html').read_text(encoding='utf-8')
     assert not re.search(r'\{\{[A-Z_]+\}\}', content), 'Unresolved template placeholder'
     assert '�' not in content, 'Unicode replacement character'
     parser = ReportParser()
     parser.feed(content)
-    assert parser.cards == len(all_games) == 70
-    assert parser.categories == 7
-    assert parser.ideas == len(recommendations) == 18
+    assert parser.cards == len(all_games) == sum(m['expectedGames'] for m in MARKETS)
+    assert parser.categories == sum(m['expectedCategories'] for m in MARKETS)
+    assert parser.ideas == len(recommendations)
     assert not parser.external_assets, 'Report requires network assets'
     assert set(parser.anchors) <= parser.ids, 'Broken internal anchors'
     license_text = (ROOT / 'LICENSE').read_text(encoding='utf-8')
     assert 'Apache License' in license_text and 'Version 2.0, January 2004' in license_text
-    print(f'PASS: 7 categories / 70 entries / {len(set(map(game_identity, all_games)))} unique games / 18 recommendations; fields, provenance, anchors, offline assets, license checked.')
+    print(f'PASS: {parser.categories} categories / {parser.cards} entries / {len(set(map(game_identity, all_games)))} unique games / {parser.ideas} recommendations; fields, provenance, anchors, offline assets, license checked.')
 
 
 if __name__ == '__main__':

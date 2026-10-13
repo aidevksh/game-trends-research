@@ -2,14 +2,16 @@
   "date": "2026-10-13",
   "language": "ko",
   "title": "게임 트렌드에서 작은 게임으로",
-  "subtitle": "로블록스 해외 · 한국 인기 · 메이플스토리 월드",
+  "subtitle": "로블록스 · 메이플스토리 월드 · 마인크래프트 · 스타1·2 · 워크3",
   "methodology": [
     "‘해외’는 Roblox 전 세계 인기작을 뜻한다. 해외 이용자만 따로 분리한 통계는 아니다. ‘국내’는 한국 개발작이 아니라 한국에서 인기 근거가 확인되는 게임을 뜻한다.",
     "장르는 제작 관점에서 연구자가 재분류했다. Top 10은 각 장르의 전체 모집단을 조사한 공식 순위가 아니라, 공개 인기 지표와 대표성을 바탕으로 선정한 10개 작품이다. 선정 후보 안에서만 순서를 정한다.",
-    "Roblox의 현재 동시 접속자는 순간값이고 방문 수는 누적 방문이다. 메이플스토리 월드의 누적 이용자 수·좋아요와 직접 비교하지 않는다. 한국 차트 노출과 전 세계 동접도 구분한다.",
-    "설명·특징은 공식 소개와 상품 정보를 요약했다. 인기 요소와 공통점, 추천 아이디어는 그 관찰에 대한 연구자 해석이며 인과관계나 흥행 보장이 아니다.",
+    "Roblox 동접·누적 방문, 메이플 월드 누적 이용자, 유즈맵 배포본 다운로드, Minecraft 서버 모드·공식 상품 출시는 서로 다른 지표다. 전 세계 접속자와 한국 차트도 구분하며 플랫폼 간 합산 인기 점수를 만들지 않는다.",
+    "설명·특징은 공식 게임 소개·제작자 자료·공개 배포본을 요약했다. 인기 요소·공통점·추천은 구조에 대한 해석이며 인과관계나 흥행 보장이 아니다. 유즈맵의 역사적 대표성과 현재 활동을 구분한다.",
     "패스 API의 판매 상태·기본 가격은 조회 시점의 공개 정보다. 지역별 가격, 실험, 할인, 게임 내부 상점은 다를 수 있다. 개별 상품이 확인되지 않았다는 표시는 무료 게임이라는 뜻이 아니다.",
-    "일정은 1인 개발자, AI 코딩 보조, 하루 3~4시간, 기본 엔진 사용법을 아는 조건의 작은 MVP 추정이다. 학습·아트·심사·마케팅·장기 운영은 별도다."
+    "일정은 1인 개발자, AI 코딩 보조, 하루 3~4시간, 기본 엔진 사용법을 아는 조건의 작은 MVP 추정이다. 학습·아트·심사·마케팅·장기 운영은 별도다.",
+    "Minecraft는 Java/Bedrock과 서버 내 모드/다운로드 월드를 나누고, 서버 공통 등급 상품을 개별 모드 전용 상품처럼 표시하지 않는다. 공식 출시 사례가 현재 인기 Top10이라는 뜻은 아니다.",
+    "스타1은 보존 배포본 중심, 스타2는 제작자 자료와 확인 가능한 활동 사례 중심, 워크3는 현재 업데이트와 역사적 대표 배포본을 함께 다룬다. 공식 전수 동접 순위를 확인하지 못해 대표 10선으로 표시하고 실제 게임 실행은 검증하지 않았다."
   ],
   "insights": [
     {
@@ -20,39 +22,46 @@
         "Blox Fruits",
         "Tower of Hell",
         "DOORS",
-        "메이플랜드"
+        "메이플랜드",
+        "Minecraft BedWars",
+        "Double Defense",
+        "Temple Puzzle"
       ]
     },
     {
       "title": "반복되는 규칙에 변주를 얹는다",
-      "body": "큰 게임의 콘텐츠 양을 복제하기보다 재사용할 수 있는 라운드, 방, 성장 표를 만든다. 맵 조합·적 배치·도구 선택이 같은 규칙을 다르게 경험하게 한다.",
+      "body": "수집·라운드·방·웨이브처럼 반복할 수 있는 규칙을 만들고 배치·선택·상대로 변주한다. 유즈맵은 기존 유닛과 입력을 다른 장르로 바꾼 사례이고, Minecraft 모드는 같은 블록 세계에 다른 승리 조건을 붙인다.",
       "implication": "처음에는 맵 1개와 변주 3개, 콘텐츠는 데이터 표로 관리한다.",
       "examples": [
         "99 Nights in the Forest",
         "Natural Disaster Survival",
-        "Obby Creator"
+        "Obby Creator",
+        "Siege Defense",
+        "Minecraft Build Battle"
       ]
     },
     {
       "title": "친구가 또 하나의 콘텐츠다",
-      "body": "경쟁 순위, 역할 분담, 타인의 수집품·아바타 구경은 고정 스테이지 밖에서 이야기를 만든다. 다만 거래 경제와 대규모 MMO는 작은 MVP보다 훨씬 많은 운영이 필요하다.",
+      "body": "대전 상대, 역할 분담, 단서 교환, 거래 상대는 고정 스테이지 밖에서 이야기를 만든다. 협동 탈출이나 팀 방어는 작은 콘텐츠에서도 친구가 필요한 이유를 만든다. 동기화·이탈 처리도 MVP에 포함한다.",
       "implication": "2~4인 역할 하나 또는 주간 기록 하나만 먼저 구현한다.",
       "examples": [
         "Brookhaven",
         "Adopt Me!",
         "RIVALS",
-        "Guts & Blackpowder"
+        "Guts & Blackpowder",
+        "Temple Puzzle",
+        "Desert Strike Classic"
       ]
     },
     {
-      "title": "과금은 서로 다른 욕구를 판다",
-      "body": "확인된 상품은 외형·표현, 영구 편의, 진행 가속, 반복 소비로 나뉜다. 성장 장르의 가속 상품과 경쟁 장르의 외형 상품은 플레이에 미치는 영향이 다르다.",
-      "implication": "추천 MVP는 기본 재미를 검증한 뒤 외형·감정 표현의 확정 구매부터 붙인다.",
+      "title": "과금은 배포 방식과 함께 읽는다",
+      "body": "Roblox의 상품 구매, 메이플 월드의 World Coin, Minecraft의 서버 공통 상품·월드 구매, 유즈맵의 후원·승인된 역사적 프리미엄은 서로 다른 구조다. 지도에 적힌 골드나 유닛 구매만으로 실제 현금 과금을 추정할 수 없다.",
+      "implication": "원본 플랫폼의 프로토타입과 자체 코드·아트의 독립 신작을 정하고 과금 범위를 설계한다.",
       "examples": [
         "Blox Fruits",
-        "Pet Simulator 99",
-        "DOORS",
-        "Tower of Hell"
+        "아르테일",
+        "Minecraft 서버 공통 랭크",
+        "Direct Strike Premium (2018 사례)"
       ]
     }
   ],
@@ -151,6 +160,78 @@
           "url": "https://maplestoryworlds-creators.nexon.com/en/docs/?postId=1302"
         }
       ]
+    },
+    {
+      "name": "마인크래프트",
+      "build": "Bedrock은 JavaScript/TypeScript Script API로 커스텀 규칙을 구현한다. Java 서버 모드는 다른 개발 경로이므로 조사한 모드의 코드가 그대로 Bedrock에 적용된다고 가정하지 않는다.",
+      "payment": "서버 공통 등급·외형 상품과 Bedrock Marketplace의 월드 구매를 구분한다. Marketplace 판매는 파트너 프로그램 경로를 따르고, 서버 상품은 Usage Guidelines의 조건을 확인한다.",
+      "implementation": "한 모드·한 맵으로 시작하고 플레이어 상태·리셋·인벤토리·재입장을 검증한다. 자체 서버는 배포 외에도 호스팅·업데이트·운영 범위를 가진다.",
+      "links": [
+        {
+          "title": "Bedrock Script API",
+          "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/introduction?view=minecraft-bedrock-stable"
+        },
+        {
+          "title": "Marketplace 파트너",
+          "url": "https://www.minecraft.net/en-us/partner"
+        },
+        {
+          "title": "서버 과금 가이드",
+          "url": "https://www.minecraft.net/en-us/usage-guidelines"
+        }
+      ]
+    },
+    {
+      "name": "스타크래프트 1 유즈맵",
+      "build": "Blizzard가 2019년 StarEdit 배포·지원 종료를 공지하고 SCMDraft 2 사용을 권장했다. 기본 트리거와 별도 EUD 도구의 경로를 구분한다.",
+      "payment": "공통 Blizzard 정책은 별도 서면 승인 없는 영리 판매·구매 기능을 제한하고, 개발 후원에 인게임 특전을 붙이지 못하도록 정한다. 제안은 무료 규칙 프로토타입과 독립 신작을 구분한다.",
+      "implementation": "지도 편집과 게임 실행을 포함한 반복 작업이 필요하다. 먼저 기존 유닛·조건·웨이브만으로 작동하는 작은 맵을 검증하고 EUD 확장은 후속으로 둔다.",
+      "links": [
+        {
+          "title": "공식 편집기 안내",
+          "url": "https://us.forums.blizzard.com/en/starcraft/t/staredit-deprecation-in-patch-1-23-0/223"
+        },
+        {
+          "title": "Blizzard 공통 정책",
+          "url": "https://www.blizzard.com/en-us/legal/2749df07-2b53-4990-b75e-a7cb3610318b/custom-game-acceptable-use-policy"
+        }
+      ]
+    },
+    {
+      "name": "스타크래프트 2 아케이드",
+      "build": "Galaxy Editor의 데이터 편집과 트리거를 함께 사용한다. 코드 생성만으로 지도·데이터·UI를 모두 완성했다고 보지 않는다.",
+      "payment": "Direct Strike·ARK Star의 2018 승인 프리미엄은 개별 사례다. 당시 가격·수익 배분 발표를 2026 현행 판매나 일반 제작자의 판매 권한으로 확대하지 않는다.",
+      "implementation": "Blizzard가 2026-02-24 지도 게시 재개를 공지했다. 이번 보고서는 제작자 자료·활동 기록을 읽었으며 실제 Battle.net 게시·모든 지역 실행을 테스트하지 않았다.",
+      "links": [
+        {
+          "title": "Galaxy Editor 기능",
+          "url": "https://news.blizzard.com/en-gb/article/23482838/starcraft-ii-5-0-patch-notes"
+        },
+        {
+          "title": "2026 게시 재개",
+          "url": "https://us.forums.blizzard.com/en/sc2/t/starcraft-ii-editor-map-publishing-update-feb-24-2026/30688"
+        },
+        {
+          "title": "프리미엄 사례",
+          "url": "https://news.blizzard.com/en-us/article/21700687/new-in-the-arcade-direct-strike-and-ark-star"
+        }
+      ]
+    },
+    {
+      "name": "워크래프트 3 유즈맵",
+      "build": "World Editor의 지형·오브젝트·트리거를 조합한다. 맵의 스크립트 언어와 패치에 맞춰 코딩하며, 공식 1.31 문서에 Lua 지원 경로가 안내되어 있다.",
+      "payment": "블리자드 공통 정책과 실제 맵의 후원·상품 근거를 별도로 확인한다. 다운로드 수가 많다고 유료 상품이 존재하거나 제작자에게 매출이 생겼다고 추정하지 않는다.",
+      "implementation": "권장 패치·클래식/Reforged 조건을 배포본마다 확인한다. 영웅·장비·직업 수를 줄이고 작은 보스전 또는 10웨이브 방어로 시작한다.",
+      "links": [
+        {
+          "title": "World Editor 안내",
+          "url": "https://news.blizzard.com/en-us/article/23395649/revisiting-the-warcraft-iii-editor"
+        },
+        {
+          "title": "Lua·지도 폴더 기능",
+          "url": "https://us.forums.blizzard.com/en/warcraft3/t/1-31-0-patch-notes/5721"
+        }
+      ]
     }
   ],
   "buildPlan": [
@@ -175,5 +256,79 @@
       "body": "최고 기록 또는 도감 한 종류만 저장한다. 확정 외형 구매부터 시작하고 취소·중복 영수증·재접속 때 지급을 검증한다."
     }
   ],
-  "starterPrompt": "Roblox Studio / Luau로 ‘60초 릴레이 타워’의 첫 프로토타입을 만들어 줘. 최대 2인, 맵 1개, 제한시간 60초, 체크포인트 4개. 서버가 라운드 상태와 승패를 결정하고 클라이언트는 입력·화면만 처리해. 시작 → 플레이 → 결과 → 재시작 상태를 구현해. 먼저 폴더 구조와 기능별 완료 조건을 제시하고 라운드 상태 머신 하나부터 작성해. 저장·결제·다른 맵은 다음 단계로 남겨. 플레이어가 중도 이탈하거나 동시에 완주할 때의 동작도 설명해."
+  "starterPrompt": "Roblox Studio / Luau로 ‘60초 릴레이 타워’의 첫 프로토타입을 만들어 줘. 최대 2인, 맵 1개, 제한시간 60초, 체크포인트 4개. 서버가 라운드 상태와 승패를 결정하고 클라이언트는 입력·화면만 처리해. 시작 → 플레이 → 결과 → 재시작 상태를 구현해. 먼저 폴더 구조와 기능별 완료 조건을 제시하고 라운드 상태 머신 하나부터 작성해. 저장·결제·다른 맵은 다음 단계로 남겨. 플레이어가 중도 이탈하거나 동시에 완주할 때의 동작도 설명해.",
+  "comparison": [
+    {
+      "name": "로블록스 해외·국내",
+      "evidence": "전 세계 동접과 누적 방문. 국내는 대한민국/컴퓨터 차트와 한국 검색어의 별도 관심 근거.",
+      "distribution": "플랫폼 안에서 경험을 게시하고 공개 패스·개발자 상품을 탐색. API 기준 가격과 최종 결제 가격 구분.",
+      "takeaway": "라운드·수집·팀 역할 하나를 먼저 검증. 기존 이용자에게 게시하는 흐름이 연결되어 있음.",
+      "links": [
+        {
+          "title": "Roblox 과금 문서",
+          "url": "https://create.roblox.com/docs/production/monetization"
+        }
+      ]
+    },
+    {
+      "name": "메이플스토리 월드",
+      "evidence": "한국 카탈로그의 대표 월드·전 지역 누적 이용자. 업데이트 중단 후 플레이 유지 사례를 별도 표시.",
+      "distribution": "Maker에서 월드를 게시. World Coin 상품·이용권·현행 가격 확인 범위 분리.",
+      "takeaway": "2D 리소스와 짧은 성장/전략 루프를 활용. 장기 MMO 경제는 후속 범위.",
+      "links": [
+        {
+          "title": "Creator Center",
+          "url": "https://maplestoryworlds-creators.nexon.com/ko/docs"
+        }
+      ]
+    },
+    {
+      "name": "마인크래프트",
+      "evidence": "운영자 공식 게임 모드와 공식 월드 출시·상품 자료. 장르별 전수 인기 순위는 미확인.",
+      "distribution": "Java/Bedrock·서버/월드가 구분됨. 서버 상품은 공통 BM, Marketplace는 월드 구매와 파트너 배포.",
+      "takeaway": "서버 운영 없이 테스트 가능한 작은 월드부터. 기존 블록·몹 위에 승리 규칙 하나를 얹기.",
+      "links": [
+        {
+          "title": "Bedrock 제작",
+          "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/introduction?view=minecraft-bedrock-stable"
+        }
+      ]
+    },
+    {
+      "name": "스타1 유즈맵",
+      "evidence": "SEN 보존 배포본 설명·등록일·누적 다운로드. 한국 현재 동접·활성 순위는 미확인.",
+      "distribution": "맵 파일과 필요한 게임 클라이언트·패치를 함께 확인. 실제 실행·최신 EUD 호환은 미검증.",
+      "takeaway": "디펜스·카드·자동 전투·퍼즐의 설계 참고에 유용. 독립 신작 MVP의 규칙을 찾는 표본.",
+      "links": [
+        {
+          "title": "공식 제작 도구 안내",
+          "url": "https://us.forums.blizzard.com/en/starcraft/t/staredit-deprecation-in-patch-1-23-0/223"
+        }
+      ]
+    },
+    {
+      "name": "스타2 아케이드",
+      "evidence": "제작자 소개·공식 추천·일부 2026 활동. SC2Arcade 공개 API 폐쇄로 전체 라이브 순위 미확인.",
+      "distribution": "Arcade 게시 및 지역별 지도. 2018 승인 프리미엄은 역사적 예외로 표시.",
+      "takeaway": "다채로운 규칙 구현 사례. 원본 맵 제작과 독립 엔진 신작의 작업·상업화 범위를 구분.",
+      "links": [
+        {
+          "title": "2026 게시 재개",
+          "url": "https://us.forums.blizzard.com/en/sc2/t/starcraft-ii-editor-map-publishing-update-feb-24-2026/30688"
+        }
+      ]
+    },
+    {
+      "name": "워크3 유즈맵",
+      "evidence": "제작자·Hive 배포본의 다운로드·평가·갱신. 현재 업데이트 맵과 제작 중단 보존본을 분리.",
+      "distribution": "World Editor와 맵 파일 배포. 맵마다 권장 패치·클라이언트가 다름.",
+      "takeaway": "영웅 성장·아이템 조합·팀 방어가 독립 게임 규칙의 좋은 연구 표본.",
+      "links": [
+        {
+          "title": "공식 World Editor",
+          "url": "https://news.blizzard.com/en-us/article/23395649/revisiting-the-warcraft-iii-editor"
+        }
+      ]
+    }
+  ]
 }

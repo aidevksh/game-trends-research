@@ -1,0 +1,147 @@
+{
+  "asOf": "2026-10-13 KST 조회",
+  "source": "Staredit Network 공개 리소스",
+  "metricDefinition": "개별 보관 배포본의 사이트 누적 다운로드. 플레이어·동접 아님.",
+  "selected": [
+    {
+      "name": "Dirty Marine Defense v1.3",
+      "resourceId": 3744,
+      "url": "https://staredit.net/sc1db/file/3744/",
+      "downloads": 895,
+      "resourceUploaded": "2017-07-09"
+    },
+    {
+      "name": "Amazing TD Topaz",
+      "resourceId": 3743,
+      "url": "https://staredit.net/sc1db/file/3743/",
+      "downloads": 719,
+      "resourceUploaded": "2017-07-04"
+    },
+    {
+      "name": "Siege Defense",
+      "resourceId": 4380,
+      "url": "https://staredit.net/sc1db/file/4380/",
+      "downloads": 659,
+      "resourceUploaded": "2019-03-29"
+    },
+    {
+      "name": "BlackJack Defense Deluxe",
+      "resourceId": 3605,
+      "url": "https://staredit.net/sc1db/file/3605/",
+      "downloads": 626,
+      "resourceUploaded": "2017-02-06"
+    },
+    {
+      "name": "Desert Strike Classic 2020 (v5.0 배포본)",
+      "resourceId": 4820,
+      "url": "https://staredit.net/sc1db/file/4820/",
+      "downloads": 715,
+      "resourceUploaded": "2020-03-08"
+    },
+    {
+      "name": "Diplomacy or War",
+      "resourceId": 3864,
+      "url": "https://staredit.net/sc1db/file/3864/",
+      "downloads": 773,
+      "resourceUploaded": "2017-10-20"
+    },
+    {
+      "name": "Civilization World 7.9.6",
+      "resourceId": 120,
+      "url": "https://staredit.net/sc1db/file/120/",
+      "downloads": 796,
+      "resourceUploaded": "2008-03-17"
+    },
+    {
+      "name": "RISK: Europe",
+      "resourceId": 4377,
+      "url": "https://staredit.net/sc1db/file/4377/",
+      "downloads": 579,
+      "resourceUploaded": "2019-02-28"
+    },
+    {
+      "name": "Double Defense",
+      "resourceId": 4437,
+      "url": "https://staredit.net/sc1db/file/4437/",
+      "downloads": 512,
+      "resourceUploaded": "2019-07-27"
+    },
+    {
+      "name": "Sorcerers III",
+      "resourceId": 5152,
+      "url": "https://staredit.net/sc1db/file/5152/",
+      "downloads": 417,
+      "resourceUploaded": "2020-11-22"
+    },
+    {
+      "name": "Morrowind RPG",
+      "resourceId": 2932,
+      "url": "https://staredit.net/sc1db/file/2932/",
+      "downloads": 2077,
+      "resourceUploaded": "2013-10-29"
+    },
+    {
+      "name": "Spellsword (업그레이드 수정 배포본)",
+      "resourceId": 3865,
+      "url": "https://staredit.net/sc1db/file/3865/",
+      "downloads": 1007,
+      "resourceUploaded": "2017-11-04"
+    },
+    {
+      "name": "Tower of Dream",
+      "resourceId": 2830,
+      "url": "https://staredit.net/sc1db/file/2830/",
+      "downloads": 766,
+      "resourceUploaded": "2013-01-30"
+    },
+    {
+      "name": "PORTAL (SEN 콘테스트 맵)",
+      "resourceId": 3002,
+      "url": "https://staredit.net/sc1db/file/3002/",
+      "downloads": 1061,
+      "resourceUploaded": "2015-01-20"
+    },
+    {
+      "name": "D e L i R u S",
+      "resourceId": 2984,
+      "url": "https://staredit.net/sc1db/file/2984/",
+      "downloads": 993,
+      "resourceUploaded": "2014-08-29"
+    },
+    {
+      "name": "Temple Puzzle",
+      "resourceId": 1249,
+      "url": "https://staredit.net/sc1db/file/1249/",
+      "downloads": 939,
+      "resourceUploaded": "2009-02-05"
+    },
+    {
+      "name": "Dungeon Escape",
+      "resourceId": 662,
+      "url": "https://staredit.net/sc1db/file/662/",
+      "downloads": 810,
+      "resourceUploaded": "2008-08-11"
+    },
+    {
+      "name": "Destination Bound",
+      "resourceId": 4029,
+      "url": "https://staredit.net/sc1db/file/4029/",
+      "downloads": 545,
+      "resourceUploaded": "2018-02-22"
+    },
+    {
+      "name": "Monopoly! 1.04",
+      "resourceId": 4406,
+      "url": "https://staredit.net/sc1db/file/4406/",
+      "downloads": 546,
+      "resourceUploaded": "2019-06-26"
+    },
+    {
+      "name": "Cat n Mouse Ruins 1.4",
+      "resourceId": 4434,
+      "url": "https://staredit.net/sc1db/file/4434/",
+      "downloads": 348,
+      "resourceUploaded": "2019-07-18"
+    }
+  ]
+}

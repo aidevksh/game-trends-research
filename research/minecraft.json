@@ -1,0 +1,2562 @@
+{
+  "market": "Minecraft",
+  "scope": "Minecraft 본편 위의 서로 다른 플레이 경험30개: 서버형 경쟁 모드10 + Bedrock 어드벤처 월드10 + 성장·생존·RPG 확장10(서버2·Java맵1·모드2·모드팩5). Minecraft Dungeons/Legends 같은 별도 게임·스킨팩·범용 라이브러리 모드는 제외. 각 항목의 에디션·서버/맵/모드/모드팩 배포 단위를 명시.",
+  "methodology": [
+    "확인일 2026-10-13(KST). 운영 서버 공식 카탈로그·2026 패치·도움말·상점과 Minecraft/제작자 공식 월드 소개를 읽었다. 실제 접속·구매·플레이·지역별 기기별 체크아웃은 수행하지 않았다.",
+    "카테고리별 최신 전체 인기 순위·매출·동접이 공개되지 않아 각 10개는 대표 발견작 선정 목록이다. 번호는 비교를 위한 연구자 배열이며 정량 인기 순위가 아니다. 현재 카탈로그 존재·2026 운영 패치·공식 출시/제작자 쇼케이스를 대체 근거로 사용했다.",
+    "서버 전체 접속자·플레이어의 승리 전적·상품 페이지의 의미가 표시되지 않은 수치를 개별 게임 인기도로 사용하지 않았다. 해외 운영 서버의 존재가 한국 인기 순위라는 뜻도 아니다.",
+    "모드 단위로 센다: Hypixel 4모드는 같은 종합 카탈로그 URL을 공유하지만 규칙·이름·id가 다르다. CubeCraft의 Java/Bedrock 버전과 같은 월드의 새 확장팩/범용 Add-On을 별개 항목으로 중복 세지 않았다.",
+    "어드벤처10은 유명한 IP 기반 전문 제작자 사례가 많은 목적 표본이다. 2021~2024 출시작도 포함하며 현재 전체 시장 Top10·소규모 제작자의 성공률을 대표하지 않는다. 인기 요소는 설계상 가설이고 팬덤·미션·협력의 실제 리텐션 효과를 측정한 결과가 아니다.",
+    "Marketplace 동적 상품 본문이 일부 조회 환경에서 표시되지 않았다. 가격은 공식 검색 색인의 정확한 월드 상품/연관 상품 또는 제작자 공식 가격 표시를 사용했으며 서로 다른 근거를 각 항목에 밝혔다. 현금 환산·매출·실제 결제 가격으로 추정하지 않았다.",
+    "서버 공통 랭크를 각 모드의 개별 과금으로 오해하지 않도록 분리했다. 별도의 스킨팩·Add-On·홍보용 무료 아바타 아이템을 어드벤처 월드의 가격이나 기능으로 옮기지 않았다. 인게임 Bux·Souls·캠프 보상도 현금 상품이라는 근거 없이 유료라 단정하지 않았다.",
+    "무료 콘텐츠도 Minecraft 본편 또는 일부 콘솔 온라인 구독은 별도일 수 있다. Java/Bedrock·운영 서버/설치 월드는 제작·배포 경로가 달라 하나의 호환 플랫폼으로 취급하지 않았다.",
+    "추천은 기존 블록·Minecraft 제작 기본 지식을 가진 1인+AI, 주20시간의 작은 MVP 추정이다. 에디션 학습·출시 운영·이용자 확보·상용 안정화는 별도. 유명 서버에 임의 업로드할 수 없으며 Marketplace 판매는 파트너 요건과 개별 검토를 거친다.",
+    "유명 IP 작품의 콘텐츠를 복제하는 추천이 아니다. 목표·선택·보상·짧은 반복 구조를 분석해 오리지널 테마로 축소했다. 개인 서버 과금은 Minecraft 이용 가이드라인의 플레이 경험·경쟁 공정성 조건을 확인해야 한다.",
+    "성장·생존·RPG 확장은 서버/맵/모드/모드팩을 구분했다. 모드는 직접 추가되는 플레이 규칙, 모드팩은 여러 모드와 설정·진행의 묶음이며 기존 전문 서버에 자동 입점하는 플랫폼이 아니다. 공개 다운로드를 확인했어도 모든 실행 환경을 테스트한 것은 아니다.",
+    "확장 사례의 CurseForge/Modrinth 누적 다운로드·FTB App 설치/플레이 수는 서로 다른 프로젝트·배포 경로의 표시값이다. 업데이트·재설치 중복과 장기 누적의 영향을 받으며 합산 사용자·DAU·동접·매출이나 같은 모집단의 순위로 비교하지 않았다. 날짜·버전은 실제 배포에 맞췄고 원본/스핀오프/판본을 합치지 않았다."
+  ],
+  "categories": [
+    {
+      "id": "minecraft-server-rounds",
+      "name": "서버형 경쟁·라운드 미니게임",
+      "listLabel": "대표 10선",
+      "selectionBasis": "공식 현행 게임 목록 또는 2026 운영 패치에서 실제 개별 모드가 확인된 10개. Hypixel4·CubeCraft3·The Hive3으로 호스트를 분산하고 거점·생존·결투·건축·추리·경주를 비교. 배열은 선정 순서이며 장르별 인기 1~10위가 아님.",
+      "commonalities": [
+        "목표물·탈락·완주·투표처럼 설명이 짧은 승패 규칙과 자동 다음 라운드가 반복 진입을 돕는다(해석).",
+        "블록 배치·지형·이동·관찰 등 Minecraft의 기존 조작을 새 목표에 연결한다. 같은 맵도 팀·키트·무작위 사건·역할에 따라 다른 선택이 생긴다(해석).",
+        "로비·친구·파티·전적·치장 등 공통 네트워크 기반이 게임 바깥의 재방문 접점이다. 소규모 제작자는 콘텐츠 외에 접속·초기화·관리도 구현해야 한다.",
+        "관찰된 상품은 주로 서버 공통 랭크·번들이다. 네트워크 전체 상품의 존재만으로 특정 모드의 매출·성장 아이템·전투 유료 우위를 주장할 수 없다."
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "id": "minecraft-hypixel-bedwars",
+          "name": "Hypixel Bed Wars",
+          "url": "https://hypixel.net/play/",
+          "description": "섬마다 있는 침대를 지키고 상대의 재생성을 끊은 뒤 살아남는 팀 대전.",
+          "features": [
+            "자원 수집과 상점 장비·팀 업그레이드",
+            "침대 방어와 섬 사이 이동 경로 건축",
+            "침대 파괴 이후 탈락 위험이 커지는 경기 구조"
+          ],
+          "popularityFactors": [
+            "공격·자원·건축 역할이 나뉘어 친구와 협력하기 쉬움(해석)",
+            "위기 상황과 마지막 생존 역전이 반복 플레이를 유도(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편 별도 구매 후 서버 미니게임 접속은 무료. Hypixel 공통 유료 랭크와 Gold를 판매하며 모드 전용 결제와 구분해야 한다.",
+            "verified": [
+              "공식 카탈로그의 무료 미니게임 설명",
+              "공식 상점의 랭크·Gold 상품 카테고리"
+            ],
+            "unverified": [
+              "현재 랭크별 가격·이 모드 전용 상품·전체 인게임 결제창 미확인. 공통 랭크의 모든 혜택을 특정 모드에 적용한다고 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "Hypixel 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "Java PC/Mac. 서버 지원 버전은 접속 전 재확인."
+          },
+          "operatingStatus": "공식 현행 게임 카탈로그 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://hypixel.net/play/",
+              "title": "Hypixel 공식 게임 카탈로그",
+              "type": "공식",
+              "note": "Bed Wars·SkyWars·Duels·Build Battle의 서로 다른 규칙을 소개. 서버 전체 접속자나 플레이어 전적을 개별 모드 인기 순위로 사용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+              "title": "Hypixel 공식 접속 안내",
+              "type": "공식",
+              "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.hypixel.net/",
+              "title": "Hypixel 공식 상점",
+              "type": "공식",
+              "note": "서버 공통 랭크·Gold·기타 상품 카테고리 확인. SkyBlock Gems는 선정한 네 모드의 상품으로 간주하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "minecraft-hypixel-skywars",
+          "name": "Hypixel SkyWars",
+          "url": "https://hypixel.net/play/",
+          "description": "각자 혹은 팀의 섬에서 시작해 전투·낙사로 상대를 제거하는 마지막 생존 경쟁.",
+          "features": [
+            "분리된 섬과 중앙으로 향하는 이동·전투",
+            "솔로·팀 경기",
+            "처치로 얻은 Souls로 키트·퍼크 해금"
+          ],
+          "popularityFactors": [
+            "지형과 이동 판단이 전투의 변수를 만듦(해석)",
+            "생존 결과와 키트 해금이 짧은 경기 뒤 다음 목표를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편 별도 구매 후 서버 미니게임 접속은 무료. Hypixel 공통 유료 랭크와 Gold를 판매하며 모드 전용 결제와 구분해야 한다.",
+            "verified": [
+              "공식 카탈로그의 무료 미니게임 설명",
+              "공식 상점의 랭크·Gold 상품 카테고리"
+            ],
+            "unverified": [
+              "현재 랭크별 가격·이 모드 전용 상품·전체 인게임 결제창 미확인. 공통 랭크의 모든 혜택을 특정 모드에 적용한다고 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "Hypixel 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "Java PC/Mac. 서버 지원 버전은 접속 전 재확인."
+          },
+          "operatingStatus": "공식 현행 게임 카탈로그 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://hypixel.net/play/",
+              "title": "Hypixel 공식 게임 카탈로그",
+              "type": "공식",
+              "note": "Bed Wars·SkyWars·Duels·Build Battle의 서로 다른 규칙을 소개. 서버 전체 접속자나 플레이어 전적을 개별 모드 인기 순위로 사용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+              "title": "Hypixel 공식 접속 안내",
+              "type": "공식",
+              "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.hypixel.net/",
+              "title": "Hypixel 공식 상점",
+              "type": "공식",
+              "note": "서버 공통 랭크·Gold·기타 상품 카테고리 확인. SkyBlock Gems는 선정한 네 모드의 상품으로 간주하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "minecraft-hypixel-duels",
+          "name": "Hypixel Duels",
+          "url": "https://hypixel.net/play/",
+          "description": "정해진 장비와 규칙을 골라 소규모로 실력을 겨루는 대전 모드 모음.",
+          "features": [
+            "SkyWars·UHC·OP 등 서로 다른 결투 규칙",
+            "경기별 팀 규모·장비 선택",
+            "공식 일간 전적 순위표"
+          ],
+          "popularityFactors": [
+            "장기 경제 시스템 없이 전투 연습에 바로 들어갈 수 있음(해석)",
+            "여러 규칙이 같은 조작 기반에서 다른 숙련 목표를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편 별도 구매 후 서버 미니게임 접속은 무료. Hypixel 공통 유료 랭크와 Gold를 판매하며 모드 전용 결제와 구분해야 한다.",
+            "verified": [
+              "공식 카탈로그의 무료 미니게임 설명",
+              "공식 상점의 랭크·Gold 상품 카테고리"
+            ],
+            "unverified": [
+              "현재 랭크별 가격·이 모드 전용 상품·전체 인게임 결제창 미확인. 공통 랭크의 모든 혜택을 특정 모드에 적용한다고 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "Hypixel 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "Java PC/Mac. 서버 지원 버전은 접속 전 재확인."
+          },
+          "operatingStatus": "공식 현행 게임 카탈로그 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://hypixel.net/play/",
+              "title": "Hypixel 공식 게임 카탈로그",
+              "type": "공식",
+              "note": "Bed Wars·SkyWars·Duels·Build Battle의 서로 다른 규칙을 소개. 서버 전체 접속자나 플레이어 전적을 개별 모드 인기 순위로 사용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+              "title": "Hypixel 공식 접속 안내",
+              "type": "공식",
+              "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.hypixel.net/",
+              "title": "Hypixel 공식 상점",
+              "type": "공식",
+              "note": "서버 공통 랭크·Gold·기타 상품 카테고리 확인. SkyBlock Gems는 선정한 네 모드의 상품으로 간주하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "minecraft-hypixel-buildbattle",
+          "name": "Hypixel Build Battle",
+          "url": "https://hypixel.net/play/",
+          "description": "제한 시간 안에 주제에 맞춰 짓고 서로의 작품을 투표하는 건축 경쟁.",
+          "features": [
+            "시간 제한과 공통 건축 주제",
+            "다른 플레이어의 작품을 돌아보며 투표",
+            "Guess the Build처럼 건축을 맞히는 변형"
+          ],
+          "popularityFactors": [
+            "전투를 어려워하는 이용자도 익숙한 블록으로 참여 가능(해석)",
+            "작품 공개와 웃긴 해석이 친구·영상 공유 소재를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편 별도 구매 후 서버 미니게임 접속은 무료. Hypixel 공통 유료 랭크와 Gold를 판매하며 모드 전용 결제와 구분해야 한다.",
+            "verified": [
+              "공식 카탈로그의 무료 미니게임 설명",
+              "공식 상점의 랭크·Gold 상품 카테고리"
+            ],
+            "unverified": [
+              "현재 랭크별 가격·이 모드 전용 상품·전체 인게임 결제창 미확인. 공통 랭크의 모든 혜택을 특정 모드에 적용한다고 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "Hypixel 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "Java PC/Mac. 서버 지원 버전은 접속 전 재확인."
+          },
+          "operatingStatus": "공식 현행 게임 카탈로그 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://hypixel.net/play/",
+              "title": "Hypixel 공식 게임 카탈로그",
+              "type": "공식",
+              "note": "Bed Wars·SkyWars·Duels·Build Battle의 서로 다른 규칙을 소개. 서버 전체 접속자나 플레이어 전적을 개별 모드 인기 순위로 사용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+              "title": "Hypixel 공식 접속 안내",
+              "type": "공식",
+              "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.hypixel.net/",
+              "title": "Hypixel 공식 상점",
+              "type": "공식",
+              "note": "서버 공통 랭크·Gold·기타 상품 카테고리 확인. SkyBlock Gems는 선정한 네 모드의 상품으로 간주하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "minecraft-cubecraft-eggwars",
+          "name": "CubeCraft EggWars",
+          "url": "https://www.cubecraft.net/threads/cubecap-september-2026.418528/",
+          "description": "재생성 거점인 알을 방어하고 자원을 모아 상대 팀의 거점을 공격하는 섬 대전.",
+          "features": [
+            "알 방어·파괴와 전투",
+            "자원 생성기와 장비 상점",
+            "Java/Bedrock 운영 패치에서 전용 상점·팀 기능 확인"
+          ],
+          "popularityFactors": [
+            "지켜야 할 목표물이 단순해 팀 전략을 이해하기 쉬움(해석)",
+            "같은 자원을 방어·장비·진출에 나누는 선택이 매 판 변주를 만듦(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편은 별도. Java는 웹 상점, Bedrock은 Minecoins를 사용하는 인게임 상점에서 공통 랭크·번들을 구매하는 구조.",
+            "verified": [
+              "공식 웹 상점의 Java/Bedrock 구매 경로 구분",
+              "공식 Bedrock 안내의 Minecoins 결제·순환 번들"
+            ],
+            "unverified": [
+              "현재 게임별 전용 상품·가격·확률형 여부·개별 랭크의 전투 영향 미확인. 서버 전체 상품을 해당 모드 독립 매출로 계산할 수 없음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition / Bedrock Edition",
+            "delivery": "CubeCraft 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "에디션·기기별 지원 버전과 콘솔 온라인 조건 확인 필요. Java와 Bedrock 간 동일 경기 접속을 가정하지 않음."
+          },
+          "operatingStatus": "2026년 9월 공식 패치에서 Java/Bedrock 모드 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://www.cubecraft.net/threads/eggwars-update.191772/",
+              "title": "CubeCraft 운영자 EggWars 업데이트",
+              "type": "공식",
+              "note": "2017년 운영자 설명의 알·상점·자원 생성기·리스폰 구조를 기본 규칙 근거로 사용. 과거 타이머·가격을 현행 수치로 옮기지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.cubecraft.net/threads/cubecap-september-2026.418528/",
+              "title": "CubeCraft 공식 2026년 9월 운영 패치",
+              "type": "공식",
+              "note": "Team CubeCraft 게시물에서 EggWars·Lucky Islands·BlockWars의 Java/Bedrock 수정과 BlockWars CTF Bedrock 수정 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.cubecraft.net/",
+              "title": "CubeCraft 공식 상점",
+              "type": "공식",
+              "note": "Java Edition 상점과 Bedrock 인게임 상점의 차이를 명시. 서버 공통 랭크·상품 구조 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://help.cubecraft.net/en/article/how-can-i-buy-itemsbundles-on-bedrock-edition-ygj948/",
+              "title": "CubeCraft Bedrock 상품 구매 안내",
+              "type": "공식",
+              "note": "Minecoins를 쓰는 인게임 상점과 순환 번들 설명. 개별 게임 상품 가격이나 결제창은 확인하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "id": "minecraft-cubecraft-lucky-islands",
+          "name": "CubeCraft Lucky Islands",
+          "url": "https://www.cubecraft.net/threads/%F0%9F%8D%80lucky-islands-update-37-new-blocks.410452/",
+          "description": "랜덤 블록에서 나온 장비·위험·이벤트에 대응하며 섬에서 싸우는 PvP.",
+          "features": [
+            "이익·위험·희귀 결과가 섞인 Lucky Block",
+            "솔로·팀 맵과 섬 지형",
+            "2026년 공식 업데이트의 새 블록·맵 추가"
+          ],
+          "popularityFactors": [
+            "예측 불가능한 사건이 숙련도 외의 재미와 이야기거리를 만듦(해석)",
+            "랜덤 상황 대응이 같은 맵의 반복 피로를 줄일 수 있음(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편은 별도. Java는 웹 상점, Bedrock은 Minecoins를 사용하는 인게임 상점에서 공통 랭크·번들을 구매하는 구조.",
+            "verified": [
+              "공식 웹 상점의 Java/Bedrock 구매 경로 구분",
+              "공식 Bedrock 안내의 Minecoins 결제·순환 번들"
+            ],
+            "unverified": [
+              "현재 게임별 전용 상품·가격·확률형 여부·개별 랭크의 전투 영향 미확인. 서버 전체 상품을 해당 모드 독립 매출로 계산할 수 없음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition / Bedrock Edition",
+            "delivery": "CubeCraft 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "에디션·기기별 지원 버전과 콘솔 온라인 조건 확인 필요. Java와 Bedrock 간 동일 경기 접속을 가정하지 않음."
+          },
+          "operatingStatus": "2026-05 신규 블록·09월 운영 패치 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://www.cubecraft.net/threads/%F0%9F%8D%80lucky-islands-update-37-new-blocks.410452/",
+              "title": "CubeCraft 공식 Lucky Islands 2026 업데이트",
+              "type": "공식",
+              "note": "2026-05-29 개발자 게시물: Java/Bedrock의 새 랜덤 블록과 솔로·팀 맵 소개.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.cubecraft.net/threads/cubecap-september-2026.418528/",
+              "title": "CubeCraft 공식 2026년 9월 운영 패치",
+              "type": "공식",
+              "note": "Team CubeCraft 게시물에서 EggWars·Lucky Islands·BlockWars의 Java/Bedrock 수정과 BlockWars CTF Bedrock 수정 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.cubecraft.net/",
+              "title": "CubeCraft 공식 상점",
+              "type": "공식",
+              "note": "Java Edition 상점과 Bedrock 인게임 상점의 차이를 명시. 서버 공통 랭크·상품 구조 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://help.cubecraft.net/en/article/how-can-i-buy-itemsbundles-on-bedrock-edition-ygj948/",
+              "title": "CubeCraft Bedrock 상품 구매 안내",
+              "type": "공식",
+              "note": "Minecoins를 쓰는 인게임 상점과 순환 번들 설명. 개별 게임 상품 가격이나 결제창은 확인하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "id": "minecraft-cubecraft-blockwars-ctf",
+          "name": "CubeCraft BlockWars CTF",
+          "url": "https://www.cubecraft.net/threads/official-blockwars-guide.208805/",
+          "description": "블록 방어선을 만들고 상대 깃발을 가져오는 팀 기반 깃발 쟁탈전.",
+          "features": [
+            "깃발 방어와 운반·회수",
+            "팀 건축·키트와 역할 조합",
+            "2026 패치에서 BlockWars 및 Bedrock CTF 기능 수정 확인"
+          ],
+          "popularityFactors": [
+            "건축을 공격·방어 규칙에 직접 연결해 Minecraft 조작을 활용(해석)",
+            "깃발 탈취·귀환 과정이 관전 가능한 승부 장면을 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편은 별도. Java는 웹 상점, Bedrock은 Minecoins를 사용하는 인게임 상점에서 공통 랭크·번들을 구매하는 구조.",
+            "verified": [
+              "공식 웹 상점의 Java/Bedrock 구매 경로 구분",
+              "공식 Bedrock 안내의 Minecoins 결제·순환 번들"
+            ],
+            "unverified": [
+              "현재 게임별 전용 상품·가격·확률형 여부·개별 랭크의 전투 영향 미확인. 서버 전체 상품을 해당 모드 독립 매출로 계산할 수 없음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition 확인 · Java CTF 현행 제공 미검증",
+            "delivery": "CubeCraft 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "2026 공식 패치는 Bedrock CTF를 명시. Java는 BlockWars 일반 수정까지만 확인; CTF 선택 가능 여부와 최신 지원 버전 재확인 필요."
+          },
+          "operatingStatus": "2026년 9월 BlockWars 양 에디션·CTF Bedrock 패치 확인. Java CTF 세부 제공 상태는 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://www.cubecraft.net/threads/official-blockwars-guide.208805/",
+              "title": "CubeCraft 공식 BlockWars 가이드",
+              "type": "공식",
+              "note": "2018년 기본 CTF 규칙·방어 건축·깃발 운반 설명. 현재 제공은 2026 공식 패치로 별도 대조.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.cubecraft.net/threads/cubecap-september-2026.418528/",
+              "title": "CubeCraft 공식 2026년 9월 운영 패치",
+              "type": "공식",
+              "note": "Team CubeCraft 게시물에서 EggWars·Lucky Islands·BlockWars의 Java/Bedrock 수정과 BlockWars CTF Bedrock 수정 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.cubecraft.net/",
+              "title": "CubeCraft 공식 상점",
+              "type": "공식",
+              "note": "Java Edition 상점과 Bedrock 인게임 상점의 차이를 명시. 서버 공통 랭크·상품 구조 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://help.cubecraft.net/en/article/how-can-i-buy-itemsbundles-on-bedrock-edition-ygj948/",
+              "title": "CubeCraft Bedrock 상품 구매 안내",
+              "type": "공식",
+              "note": "Minecoins를 쓰는 인게임 상점과 순환 번들 설명. 개별 게임 상품 가격이나 결제창은 확인하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "id": "minecraft-hive-deathrun",
+          "name": "The Hive DeathRun",
+          "url": "https://playhive.com/game/dr",
+          "description": "Runner가 코스를 달리는 동안 Death가 함정을 작동시키는 비대칭 장애물 경주.",
+          "features": [
+            "Runner와 Death의 역할 분리",
+            "파쿠르·장애물과 타이밍 함정",
+            "공식 게임 페이지의 플레이어 전적 순위표"
+          ],
+          "popularityFactors": [
+            "공격·회피 타이밍만으로 다른 역할의 재미를 만듦(해석)",
+            "완주·실패 장면이 짧고 이해하기 쉬워 친구 경기와 영상에 적합(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편·일부 기기 온라인 구독은 별도. 서버 공통 영구 랭크 Hive+ 1,690 / Ultimate 3,420 Minecoins가 공식 도움말에 표시된다.",
+            "verified": [
+              "공식 랭크 문서의 Minecoins 가격과 영구 이용",
+              "공통 XP 보너스·맵 투표·파티/친구/커스텀 서버 한도·치장 혜택"
+            ],
+            "unverified": [
+              "가격은 문서 표시값이며 지역·계정별 실제 결제창 미검증. 해당 모드 전용 상품·전체 상점 목록 미확인."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "The Hive 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "에디션·기기별 지원 버전과 콘솔 온라인 조건 확인 필요. Java와 Bedrock 간 동일 경기 접속을 가정하지 않음."
+          },
+          "operatingStatus": "공식 현행 개별 게임 페이지 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://playhive.com/game/dr",
+              "title": "The Hive DeathRun 공식 페이지",
+              "type": "공식",
+              "note": "Runner/Death 역할과 함정 경주 설명. 플레이어 전적 순위는 게임 인기도 지표가 아님.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/how-to-join/",
+              "title": "The Hive 공식 접속 안내",
+              "type": "공식",
+              "note": "Bedrock Featured Server이며 Servers 탭에서 접속. 본편·일부 콘솔의 온라인 구독 조건 명시.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/premium-ranks/",
+              "title": "The Hive 공식 프리미엄 랭크",
+              "type": "공식",
+              "note": "문서 표시 가격 Hive+ 1,690 / Ultimate 3,420 Minecoins와 영구 랭크·XP·맵 투표·파티 한도 등 공통 혜택. 실제 계정별 결제창 미검증.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "id": "minecraft-hive-hide-and-seek",
+          "name": "The Hive Hide and Seek",
+          "url": "https://playhive.com/game/hide",
+          "description": "플레이어가 주변 블록으로 위장하고 술래가 제한된 공간에서 찾아내는 숨바꼭질.",
+          "features": [
+            "블록으로 위장해 맵에 섞이기",
+            "발견된 숨는 쪽이 술래로 전환",
+            "2026 도전 과제·레벨·위험을 감수하는 도발 추가"
+          ],
+          "popularityFactors": [
+            "평범한 블록이 플레이어일 수 있다는 추리와 장난의 재미(해석)",
+            "공격 조작보다 관찰·위치 선택이 중요해 친구 그룹 참여에 유리(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편·일부 기기 온라인 구독은 별도. 서버 공통 영구 랭크 Hive+ 1,690 / Ultimate 3,420 Minecoins가 공식 도움말에 표시된다.",
+            "verified": [
+              "공식 랭크 문서의 Minecoins 가격과 영구 이용",
+              "공통 XP 보너스·맵 투표·파티/친구/커스텀 서버 한도·치장 혜택"
+            ],
+            "unverified": [
+              "가격은 문서 표시값이며 지역·계정별 실제 결제창 미검증. 해당 모드 전용 상품·전체 상점 목록 미확인."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "The Hive 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "에디션·기기별 지원 버전과 콘솔 온라인 조건 확인 필요. Java와 Bedrock 간 동일 경기 접속을 가정하지 않음."
+          },
+          "operatingStatus": "2026-08 공식 대규모 업데이트 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://playhive.com/game/hide",
+              "title": "The Hive Hide and Seek 공식 페이지",
+              "type": "공식",
+              "note": "블록 위장과 숨는 쪽/술래 전환 규칙.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://playhive.com/2026/08/07/hide-and-seek-mischief-update/",
+              "title": "The Hive Hide and Seek 2026 업데이트",
+              "type": "공식",
+              "note": "2026-08-07 미니 허브·도전 과제·레벨·도발 요소 추가.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/how-to-join/",
+              "title": "The Hive 공식 접속 안내",
+              "type": "공식",
+              "note": "Bedrock Featured Server이며 Servers 탭에서 접속. 본편·일부 콘솔의 온라인 구독 조건 명시.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/premium-ranks/",
+              "title": "The Hive 공식 프리미엄 랭크",
+              "type": "공식",
+              "note": "문서 표시 가격 Hive+ 1,690 / Ultimate 3,420 Minecoins와 영구 랭크·XP·맵 투표·파티 한도 등 공통 혜택. 실제 계정별 결제창 미검증.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "id": "minecraft-hive-murder-mystery",
+          "name": "The Hive Murder Mystery",
+          "url": "https://playhive.com/game/murder",
+          "description": "살인자·보안관·시민 역할로 나뉘어 정체를 숨기거나 범인을 막는 사회적 추리.",
+          "features": [
+            "비공개 역할과 제한 시간",
+            "보안관의 대응과 시민 생존",
+            "2026 조사 도구·함정·게임 내 Bux 상점 추가"
+          ],
+          "popularityFactors": [
+            "같은 행동도 역할에 따라 달리 보이는 사회적 긴장감(해석)",
+            "추리·도주·처치가 한 경기에서 서로 다른 참여 동기를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "Minecraft 본편·일부 기기 온라인 구독은 별도. 서버 공통 영구 랭크 Hive+ 1,690 / Ultimate 3,420 Minecoins가 공식 도움말에 표시된다.",
+            "verified": [
+              "공식 랭크 문서의 Minecoins 가격과 영구 이용",
+              "공통 XP 보너스·맵 투표·파티/친구/커스텀 서버 한도·치장 혜택"
+            ],
+            "unverified": [
+              "가격은 문서 표시값이며 지역·계정별 실제 결제창 미검증. 해당 모드 전용 상품·전체 상점 목록 미확인.",
+              "2026 소개에서 Bux는 맵에서 획득하는 재화로 설명. 이를 현금·Minecoins 결제 상품이라 보지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "The Hive 운영 서버 안의 개별 게임 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "에디션·기기별 지원 버전과 콘솔 온라인 조건 확인 필요. Java와 Bedrock 간 동일 경기 접속을 가정하지 않음."
+          },
+          "operatingStatus": "2026-06 공식 업데이트 확인 · Bux 유료 판매는 확인하지 못함",
+          "metrics": {
+            "metricLabel": "공식 현행 카탈로그·운영 패치에 따른 발견·선정 근거. 개별 동접/매출 순위 없음.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://playhive.com/game/murder",
+              "title": "The Hive Murder Mystery 공식 페이지",
+              "type": "공식",
+              "note": "살인자·보안관·시민의 목적과 레벨 보상 소개.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://playhive.com/2026/06/09/murder-mystery-deadly-dealings/",
+              "title": "The Hive Murder Mystery 2026 업데이트",
+              "type": "공식",
+              "note": "2026-06-09 조사 도구·맵 상점·Bux 등 규칙 추가. Bux는 게임 내 획득 설명이며 유료 재화로 단정하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/how-to-join/",
+              "title": "The Hive 공식 접속 안내",
+              "type": "공식",
+              "note": "Bedrock Featured Server이며 Servers 탭에서 접속. 본편·일부 콘솔의 온라인 구독 조건 명시.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.playhive.com/premium-ranks/",
+              "title": "The Hive 공식 프리미엄 랭크",
+              "type": "공식",
+              "note": "문서 표시 가격 Hive+ 1,690 / Ultimate 3,420 Minecoins와 영구 랭크·XP·맵 투표·파티 한도 등 공통 혜택. 실제 계정별 결제창 미검증.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "등대의 마지막 불씨",
+          "pitch": "2팀이 작은 섬의 불씨를 지키며 한 번의 점령 기회를 만드는 6~8분 경기. Bed Wars·EggWars의 거점 목표를 작은 맵으로 축소.",
+          "mvp": [
+            "Java 서버 또는 Bedrock 전용 중 한 에디션 선택",
+            "2팀×2명·맵1개·불씨1개씩",
+            "자원2종·장비3종·점령/승패/라운드 초기화",
+            "재접속·팀 인원 감소 처리"
+          ],
+          "difficulty": "중 · 서버 상태 처리 필요",
+          "effort": "1인+AI·주20시간 기준 4~6주 MVP 추정",
+          "monetization": "무료 테스트 후 경기 승패에 영향 없는 승리 연출·칭호만 검토. 운영 서버 비용과 Minecraft 가이드라인 조건을 먼저 확인.",
+          "why": "Bed Wars·EggWars의 보호할 목표물과 자원 선택을 살리면서 키트·맵·경제·매칭을 크게 줄일 수 있다.",
+          "risks": "멀티 동기화·그리핑·초기화 누락·공정성. 유명 네트워크의 매칭·유저가 자동 제공되지 않으므로 첫 테스트는 친구 방으로 시작.",
+          "buildNext": "두 명이 접속해 목표물 하나를 점령하고 10초 안에 완전 초기화하는 세로 단면부터 구현."
+        },
+        {
+          "name": "함정지기의 90초 회랑",
+          "pitch": "3명의 주자와 1명의 함정지기가 한 코스의 제한된 스위치를 두고 겨루는 짧은 경주.",
+          "mvp": [
+            "코스1개·체크포인트3개",
+            "함정4종·쿨다운·눈에 보이는 발동 예고",
+            "90초 라운드와 역할 교대",
+            "완주 기록·실패 후 즉시 재도전"
+          ],
+          "difficulty": "하~중 · 콘텐츠 수량 제한",
+          "effort": "1인+AI·주20시간 기준 2~4주 MVP 추정",
+          "monetization": "작은 방은 무료. 맵 패키지 판매는 배포 경로별 요건 확인; 서버형은 결과에 영향 없는 발자국·완주 연출 검토.",
+          "why": "DeathRun의 역할 차이와 Lucky Islands의 사건 대응을 적은 규칙·콘텐츠로 경험하게 한다.",
+          "risks": "함정 타이밍·네트워크 지연·반복 코스 피로. 무작위 즉사보다 눈에 보이는 신호와 실패 복구를 우선.",
+          "buildNext": "체크포인트 하나와 함정 하나를 만들어 주자·조작자 양쪽 화면에서 타이밍과 리셋을 검증."
+        },
+        {
+          "name": "엉뚱한 건축 주문서",
+          "pitch": "2~6명이 이상한 의뢰를 작은 구획에 짓고 서로의 작품을 감상·투표하는 파티 게임.",
+          "mvp": [
+            "주제20개·구획 자동 생성",
+            "3분 건축·30초 감상",
+            "자기 작품 제외 투표·공동 우승 처리",
+            "라운드 뒤 구획 원상복구"
+          ],
+          "difficulty": "하~중 · 최초 프로토타입 추천",
+          "effort": "1인+AI·주20시간 기준 2~3주 MVP 추정",
+          "monetization": "초기 친구 방은 무료. 공개 서버 성장 후 칭호·개인 구획 장식 판매를 검토하되 투표·건축 시간 우대는 피함.",
+          "why": "Build Battle의 제작→공개→반응 구조는 기존 블록 조작을 이용해 아트 제작 부담을 줄인다.",
+          "risks": "부적절한 건축·투표 담합·건축 영역 탈출. 첫 공개 범위를 초대 친구로 제한하고 신고·관리 기능을 확장.",
+          "buildNext": "주제 하나와 구획 두 개로 건축→감상→투표→초기화 순환을 끝까지 연결."
+        }
+      ]
+    },
+    {
+      "id": "minecraft-adventure-worlds",
+      "name": "다운로드형 스토리·탐험 어드벤처",
+      "listLabel": "대표 10선",
+      "selectionBasis": "Minecraft 및 제작자 공식 소개로 규칙과 배포 월드가 확인되는 Bedrock 어드벤처10개. 제작자 쇼케이스·공식 DLC 사례·현재 확인 가능한 상품을 대상으로 RPG·능력·허브·수집·테마 체험을 비교. 출시 인지도와 현재 운영/구매 확인 범위를 분리하며 전체 시장 인기 순위가 아님.",
+      "commonalities": [
+        "유명 세계관이 탐험할 이유를 제공하고 NPC·퀘스트·수집 목표가 자유로운 Minecraft 이동을 진행 가능한 이야기로 바꾼다(해석).",
+        "지역·직업·능력·체험을 작은 단위로 나눠 다음 목표를 보인다. 허브와 수집품은 독립 미니게임을 연결하는 구조다(해석).",
+        "월드 다운로드가 하나의 콘텐츠 패키지이며 서버형 랭크 BM과 다르다. 확인된 구매형과 Camp Enderwood 무료 사례가 공존한다.",
+        "전문 IP 파트너 제작작이 많은 표본이라 1인 개발 기간·마케팅 효과를 그대로 일반화할 수 없다. 추천 MVP는 장면·대사·맵 수와 커스텀 물리를 줄여야 한다.",
+        "구입한 맵도 본편 업데이트·기기 성능·멀티 상태의 영향을 받는다. 출시 이후 버전 호환과 진행 막힘 대응을 제품 범위로 잡아야 한다."
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "id": "minecraft-world-dungeons-dragons",
+          "name": "Dungeons & Dragons",
+          "url": "https://www.minecraft.net/en-us/article/dungeons-dragons-dlc",
+          "description": "D&D 직업과 능력 판정을 Minecraft 안의 이야기 중심 액션 RPG로 만든 월드.",
+          "features": [
+            "4개 직업의 스킬·능력치 성장",
+            "Forgotten Realms의 지역과 몬스터를 활용한 이야기",
+            "주사위 능력 판정과 전투·대화 선택"
+          ],
+          "popularityFactors": [
+            "기존 팬덤과 익숙한 직업 선택이 첫 목표를 제시(해석)",
+            "다른 직업·판정 결과가 같은 이야기의 재방문 동기를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 제작자 공식 상품 페이지에 1,510 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "제작자 공식 상품 페이지: 1,510 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인",
+              "2023 출시 안내에 Switch/PlayStation 제외·모바일 RAM 제한이 있었음. 현재 제한 유지 여부 미확인; 모든 Bedrock 기기 지원이라 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/dungeons-dragons-dlc",
+              "title": "Dungeons & Dragons Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2023-09-26 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://everbloomgames.com/minecraft-maps/dnd/",
+              "title": "Everbloom Games Dungeons & Dragons 공식 상품",
+              "type": "공식",
+              "note": "1,510 Minecoins·어드벤처 맵·싱글/멀티 지원 표시. 2025 A New Quest와 별개인 2023 원본 월드.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "minecraft-world-jurassic-adventures",
+          "name": "Jurassic World Adventures",
+          "url": "https://www.minecraft.net/en-us/article/new-jurassic-world-adventures",
+          "description": "현대 세계에서 야생 공룡을 연구·구조하며 탐험하는 오픈월드 어드벤처.",
+          "features": [
+            "5명 중 캐릭터 선택",
+            "공룡 구조·표본 수집·밀렵꾼 대응",
+            "친숙한 장소와 새로운 지역 탐험"
+          ],
+          "popularityFactors": [
+            "거대한 공룡과 구조 임무가 탐험 목적을 분명히 함(해석)",
+            "기존 영화 세계와 차량·야생 지역이 체험 장면을 다양화(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 공식 상품 검색 색인에 1,510 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "공식 상품 검색 색인: 1,510 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인"
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/new-jurassic-world-adventures",
+              "title": "Jurassic World Adventures Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2023-12-08 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/pdp/syclone-studios/jurassic-world-adventures/518b5011-bff4-46a1-a7a2-750818f75157",
+              "title": "Jurassic World Adventures 공식 상품",
+              "type": "공식",
+              "note": "공식 검색 색인에 1 World·5 Skins·1,510 Minecoins 표시. 동적 본문/인게임 실제 구매창은 미검증.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.syclonestudios.com/minecraft/maps",
+              "title": "Syclone Studios 공식 맵 목록",
+              "type": "공식",
+              "note": "Transformers와 Jurassic World Adventures를 판매용 Bedrock 어드벤처 맵으로 소개. Transformers의 제작자 출시 연도 표시는 Minecraft 공식 출시 기사와 달라 공식 기사 2024년을 채택.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "minecraft-world-transformers",
+          "name": "Transformers",
+          "url": "https://www.minecraft.net/en-us/article/transformers-dlc",
+          "description": "Autobot으로 변신·사격하며 지구와 Cybertron을 오가는 이야기형 액션 월드.",
+          "features": [
+            "4명의 Autobot 중 선택",
+            "로봇·차량 형태와 블래스터 전투",
+            "싱글·친구 협력 스토리 미션"
+          ],
+          "popularityFactors": [
+            "한 캐릭터의 형태 전환이 이동과 전투를 연결(해석)",
+            "유명 캐릭터 선택·협력 전투가 팬덤의 참여 이유를 만듦(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 공식 연관 상품 검색 색인의 Transformers 월드에 1,510 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "공식 연관 상품 검색 색인의 Transformers 월드: 1,510 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인",
+              "2026 출시 Transformers Add-On과 다른 2024 이야기 월드를 조사. Add-On 전용 기능·가격을 본 월드에 귀속하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/transformers-dlc",
+              "title": "Transformers Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2024-09-24 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.syclonestudios.com/minecraft/maps",
+              "title": "Syclone Studios 공식 맵 목록",
+              "type": "공식",
+              "note": "Transformers와 Jurassic World Adventures를 판매용 Bedrock 어드벤처 맵으로 소개. Transformers의 제작자 출시 연도 표시는 Minecraft 공식 출시 기사와 달라 공식 기사 2024년을 채택.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/fr-ca/marketplace/pdp/syclone-studios/jurassic-world-adventures/518b5011-bff4-46a1-a7a2-750818f75157",
+              "title": "Minecraft 공식 Syclone 연관 상품 목록",
+              "type": "공식",
+              "note": "'같은 제작자의 다른 콘텐츠'에 Transformers 월드 1,510 Minecoins 표시. 2026 Transformers Add-On은 별개 상품.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "minecraft-world-starwars-path-jedi",
+          "name": "Star Wars: Path of the Jedi",
+          "url": "https://www.minecraft.net/en-us/article/star-wars-returns-new-mission",
+          "description": "Padawan 수련에서 Jedi 임무로 나아가며 광선검·Force를 쓰는 이야기형 월드.",
+          "features": [
+            "수련·행성 탐험과 미션",
+            "광선검과 Droid 꾸미기",
+            "다른 Jedi·괴물과의 전투"
+          ],
+          "popularityFactors": [
+            "상징적인 무기와 수련 서사가 성장 역할을 쉽게 전달(해석)",
+            "임무와 새로운 장소가 자유 탐험의 다음 목표를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "공식 Marketplace 배포 월드라는 점은 확인. 개별 상품의 현재 유료/무료 구분·Minecoins 가격·구매창은 확인하지 못했다.",
+            "verified": [
+              "Minecraft 공식 출시 소개와 해당 월드 Marketplace 연결"
+            ],
+            "unverified": [
+              "현재 구매 가격·상품 구성·인게임 추가 결제·구독 포함 여부 미확인. 출시 기사의 무료 아바타 홍보품을 월드 무료 정책으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 2023-11-07 출시 소개 확인 · 현재 개별 상품·기기별 제공은 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/star-wars-returns-new-mission",
+              "title": "Star Wars: Path of the Jedi Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2023-11-07 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/pdp?id=abac29cb-2229-4423-94a7-db2383ad4089",
+              "title": "Path of the Jedi 공식 Marketplace 연결",
+              "type": "공식",
+              "note": "공식 출시 기사의 정확한 상품 UUID 연결. 조회 환경에서 동적 상품 본문·가격은 미노출.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "minecraft-world-avatar-legends",
+          "name": "Avatar Legends",
+          "url": "https://www.minecraft.net/en-us/article/new-avatar-adventure",
+          "description": "Avatar가 되어 네 원소의 기술을 배우고 여러 지역의 임무·대결을 진행하는 액션 월드.",
+          "features": [
+            "네 원소 기술과 새로운 스킬 해금",
+            "Avatar·Korra 인물 및 네 국가 탐험",
+            "퀘스트와 대결·캐릭터 스킨"
+          ],
+          "popularityFactors": [
+            "원소별 능력이 전투와 캐릭터 정체성을 동시에 제공(해석)",
+            "배우는 순서·기술 해금이 탐험 뒤 성장 목표를 남김(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 공식 상품 검색 색인에 1,340 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "공식 상품 검색 색인: 1,340 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인"
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/new-avatar-adventure",
+              "title": "Avatar Legends Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2022-12-06 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/pdp/gamemode-one/avatar-legends/adf08b99-bba0-4469-99c2-44e1a8239fb9",
+              "title": "Avatar Legends 공식 상품",
+              "type": "공식",
+              "note": "공식 검색 색인에 1 World·55 Skins·1,340 Minecoins 표시. 결제창·기기별 제공 범위는 미검증.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "id": "minecraft-world-sonic",
+          "name": "Sonic the Hedgehog",
+          "url": "https://www.minecraft.net/en-us/article/sonic-hedgehog-dlc-here",
+          "description": "달리기·링 수집·보스를 Minecraft의 3D 코스와 반복 가능한 액트로 재구성한 월드.",
+          "features": [
+            "Green Hill·Chemical Plant 테마 코스",
+            "링 수집·빠른 이동과 적·보스",
+            "절차적으로 생성하는 액트와 기록 도전"
+          ],
+          "popularityFactors": [
+            "수집과 속도 기록이 같은 코스를 반복할 이유를 제공(해석)",
+            "익숙한 캐릭터와 장소가 비팬보다 팬의 첫 진입을 도울 수 있음(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 공식 연관 상품 검색 색인의 Sonic the Hedgehog 월드에 1,340 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "공식 연관 상품 검색 색인의 Sonic the Hedgehog 월드: 1,340 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인",
+              "Sonic Add-On·텍스처팩·The Hive 무료 스킨팩과 구분. 해당 상품들의 규칙·무료 정책을 본 월드로 옮기지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/sonic-hedgehog-dlc-here",
+              "title": "Sonic the Hedgehog Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2021-06-22 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/de-de/marketplace/pdp/gamemode-one/sonic-add--on/f3e0a4be-8858-44d3-9ae8-91643db1b3f6",
+              "title": "Minecraft 공식 Gamemode One 연관 상품 목록",
+              "type": "공식",
+              "note": "별개 Sonic Add-On 상품의 '같은 제작자의 다른 콘텐츠'에 Sonic the Hedgehog 월드 1,340 Minecoins를 표시. Add-On 자체 설명·가격을 월드 규칙으로 섞지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/creator",
+              "title": "Minecraft 공식 Creator Showcase",
+              "type": "공식",
+              "note": "현행 제작자 사례에 Sonic 월드를 소개. 쇼케이스 노출이 현재 플레이 순위를 뜻하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "id": "minecraft-world-spongebob",
+          "name": "SpongeBob SquarePants",
+          "url": "https://www.minecraft.net/en-us/article/spongebob-dlc-arrives-minecraft",
+          "description": "Bikini Bottom의 이웃을 도우며 경주·퍼즐·건축·전투 임무를 즐기는 어드벤처.",
+          "features": [
+            "도시 탐험과 숨은 수집품",
+            "6개 서로 다른 성격의 퀘스트",
+            "캐릭터를 돕는 미니게임과 목표"
+          ],
+          "popularityFactors": [
+            "하나의 친숙한 허브가 여러 미니게임의 발견 경로가 됨(해석)",
+            "전투·퍼즐·건축을 섞어 친구의 서로 다른 취향을 수용(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 공식 상품 검색 색인에 1,340 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "공식 상품 검색 색인: 1,340 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인",
+              "2022 월드 DLC이며 별개 2024 SpongeBob Add-On을 조사한 것이 아님. 당시 무료 Character Creator 아이템은 월드 무료라는 근거가 아님."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/spongebob-dlc-arrives-minecraft",
+              "title": "SpongeBob SquarePants Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2022-07-26 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/pdp/spark-universe/spongebob-squarepants/c1c33c20-774d-467e-ac3d-b14b1bccb1a8",
+              "title": "SpongeBob SquarePants 공식 월드 상품",
+              "type": "공식",
+              "note": "공식 검색 색인에 1 World·40 Skins·1,340 Minecoins 표시. 별도 SpongeBob Add-On과 구분.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "id": "minecraft-world-disney-adventure",
+          "name": "Disney Worlds of Adventure",
+          "url": "https://www.minecraft.net/en-us/article/disney-worlds-adventure",
+          "description": "6개 Disney 이야기를 작은 모험·퍼즐·수집 임무로 연결한 월드.",
+          "features": [
+            "Aladdin·Little Mermaid·Lion King 등 6개 이야기",
+            "보석 조각 수집과 퀘스트",
+            "하늘·수중·미로 등 각 장소별 다른 이동·퍼즐"
+          ],
+          "popularityFactors": [
+            "여러 팬 취향을 한 패키지에서 선택하게 함(해석)",
+            "짧은 이야기 단위로 다음 지역을 열어 탐험 진행을 보여줌(해석)"
+          ],
+          "monetization": {
+            "summary": "공식 Marketplace 배포 월드라는 점은 확인. 개별 상품의 현재 유료/무료 구분·Minecoins 가격·구매창은 확인하지 못했다.",
+            "verified": [
+              "Minecraft 공식 출시 소개와 해당 월드 Marketplace 연결"
+            ],
+            "unverified": [
+              "현재 구매 가격·상품 구성·인게임 추가 결제·구독 포함 여부 미확인. 출시 기사의 무료 아바타 홍보품을 월드 무료 정책으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 2023-08-22 출시 소개 확인 · 현재 개별 상품·기기별 제공은 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/disney-worlds-adventure",
+              "title": "Disney Worlds of Adventure Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2023-08-22 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/pdp?id=46913ebe-392d-454a-8b26-78d513e8bd1d",
+              "title": "Disney Worlds of Adventure 공식 Marketplace 연결",
+              "type": "공식",
+              "note": "공식 출시 기사에서 연결하는 정확한 월드 상품. 동적 상품 가격과 실제 구매창 미노출.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "id": "minecraft-world-universal",
+          "name": "Universal Studios Experience",
+          "url": "https://www.minecraft.net/en-us/article/universal-studios-experience-dlc",
+          "description": "영화 테마파크를 탐험하며 어트랙션·미니게임과 허브 수집 임무를 수행하는 월드.",
+          "features": [
+            "Kong·Jurassic World·JAWS·ET 등의 테마 장소",
+            "지구본에서 사라진 글자를 찾는 공통 퀘스트",
+            "추격·잠입·보물찾기·레이싱"
+          ],
+          "popularityFactors": [
+            "전시 공간이 플레이할 수 있는 기억과 행동으로 전환(해석)",
+            "허브 수집 목표가 독립된 체험들을 연결하고 완주 목표를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "월드 콘텐츠 구매형. 제작자 공식 상품 페이지에 1,510 Minecoins 표시. Bedrock 본편은 별도이며 이 표시값은 실제 계정 결제창을 검증한 가격이 아니다.",
+            "verified": [
+              "제작자 공식 상품 페이지: 1,510 Minecoins",
+              "동일 이름의 월드 콘텐츠를 확인; 다른 스킨팩·Add-On 가격과 구분"
+            ],
+            "unverified": [
+              "인게임 추가 구매·할인·지역·환불·구독 포함 여부·현재 기기별 체크아웃 미확인",
+              "제작자 FAQ에 버전 미표시 호환·로딩 안내가 있어 배포 뒤 유지보수 사례로 참고. 현재 장애 발생 여부는 실플레이 미검증."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/universal-studios-experience-dlc",
+              "title": "Universal Studios Experience Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2024-02-13 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://everbloomgames.com/minecraft-maps/universal-studios-experience/",
+              "title": "Everbloom Games Universal Studios Experience 공식 상품",
+              "type": "공식",
+              "note": "1,510 Minecoins·어드벤처 맵·싱글/멀티 지원 표시.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://everbloomgames.com/minecraft-maps/universal-studios-experience/faq/",
+              "title": "Universal Studios Experience 제작자 FAQ",
+              "type": "공식",
+              "note": "업데이트 이후 빈 월드 로드 문제·멀티 접속 주의 안내가 있으나 게시 시점/버전 미표시. 현재 동일 문제가 지속된다고 단정하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "id": "minecraft-world-camp-enderwood",
+          "name": "Camp Enderwood",
+          "url": "https://www.minecraft.net/en-us/article/welcome-camp-enderwood",
+          "description": "캠프 활동으로 보상을 모으고 원하면 수상한 숲을 탐험하는 무료 어드벤처 허브.",
+          "features": [
+            "파쿠르·양궁·수집 등 캠프 활동",
+            "Marshmallow를 모아 S'more 만들기",
+            "선택적으로 도전하는 기묘한 숲 탐험"
+          ],
+          "popularityFactors": [
+            "공포를 선택형으로 두어 가벼운 활동과 긴장감을 함께 수용(해석)",
+            "여러 활동의 보상을 하나의 수집 목표로 합침(해석)"
+          ],
+          "monetization": {
+            "summary": "공식 소개와 현재 공식 카탈로그 색인에서 무료 DLC로 표시. Minecraft Bedrock 본편과 일부 기기의 온라인 구독은 별도.",
+            "verified": [
+              "공식 출시 소개의 무료 다운로드와 장난감 구매 불필요",
+              "공식 미니게임 카탈로그 검색 색인의 Free 표시"
+            ],
+            "unverified": [
+              "월드 내 별도 상품·현재 기기별 실제 다운로드·전체 서비스 제공 지역 미확인",
+              "실물 액션 피규어의 스캔 코드는 아바타 치장과 관련; 무료 DLC 플레이에 피규어 구매가 필요하다는 뜻이 아님."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Bedrock Edition",
+            "delivery": "Marketplace 다운로드 어드벤처 월드/DLC · 서버 모드/Java 모드팩 아님",
+            "compatibility": "출시 소개 기준 Bedrock 본편 필요. 2026 실제 다운로드·기기별 지원·최신 버전 호환은 구매 전 재확인."
+          },
+          "operatingStatus": "공식 상품/제작자 가격 표시 확인 · 실구매·실플레이·현재 모든 기기 호환 미검증",
+          "metrics": {
+            "metricLabel": "공식 출시·제작자 사례의 대표 설계 선정. 현재 판매량·동접·매출·장르 Top10 자료 없음.",
+            "measuredAt": "2026-10-13 KST 조회",
+            "source": "Minecraft 공식 / 제작자 공식"
+          },
+          "evidence": [
+            {
+              "url": "https://www.minecraft.net/en-us/article/welcome-camp-enderwood",
+              "title": "Camp Enderwood Minecraft 공식 출시 소개",
+              "type": "공식",
+              "note": "2023-01-31 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.minecraft.net/en-us/marketplace/category/mini-games",
+              "title": "Minecraft 공식 미니게임 카탈로그",
+              "type": "공식",
+              "note": "현재 검색 색인의 대표 미니게임 목록에 Camp Enderwood·Free 표시. 전체 장르 인기 Top10이나 플레이량 순위를 주장하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "세 속성의 작은 유적",
+          "pitch": "불·바람·빛 도구 세 가지를 번갈아 써서 방 5개를 통과하는 20분 퍼즐 어드벤처.",
+          "mvp": [
+            "Bedrock 월드1개·방5개",
+            "속성 도구3종과 명확한 상호작용 표식",
+            "대사 NPC2명·수집품6개·엔딩1개",
+            "싱글부터 검증 후 2인 협력 확장"
+          ],
+          "difficulty": "중 · 상태 저장·퍼즐 검증",
+          "effort": "1인+AI·주20시간 기준 3~5주 MVP 추정",
+          "monetization": "무료 공개 샘플로 포트폴리오를 만든 뒤 유료 월드 검토. Marketplace 판매는 파트너 신청·심사를 통과하거나 파트너와 협업해야 한다.",
+          "why": "Avatar Legends의 능력 습득·D&D의 선택을 전투 없는 작은 규칙과 공간으로 축소할 수 있다.",
+          "risks": "퍼즐 진행 막힘·친구가 먼저 가져간 아이템·Bedrock 업데이트 호환. 유명 캐릭터·설정·스킨은 사용하지 않고 독자 테마 제작.",
+          "buildNext": "속성 도구 하나가 문 하나를 열고 상태가 다시 로드되는 방 한 개를 제작."
+        },
+        {
+          "name": "밤안개 캠프의 잃어버린 우편",
+          "pitch": "캠프의 3가지 활동으로 물건을 모으고 선택형 밤 탐험에서 마지막 편지를 찾는 편안한 모험.",
+          "mvp": [
+            "캠프 허브·밤 숲 구역1개씩",
+            "양궁·파쿠르·채집 각 1개",
+            "우편 수집5개와 NPC 대사",
+            "선택형 긴장 구간·과한 공포 없이 복귀 가능"
+          ],
+          "difficulty": "하~중 · 첫 어드벤처 추천",
+          "effort": "1인+AI·주20시간 기준 2~4주 MVP 추정",
+          "monetization": "첫 챕터 무료, 후속 월드 판매는 Marketplace 요건 충족 후 검토. 장비 성능 결제보다 새 이야기·지역 패키지로 구성.",
+          "why": "Camp Enderwood와 SpongeBob의 허브·작은 활동·통합 수집 목표를 소규모 오리지널 세계에 적용한다.",
+          "risks": "대사·건축·활동별 테스트의 콘텐츠 부담. 마을 전체보다 한 캠프와 10~15분 완주 경로부터 시작.",
+          "buildNext": "활동 하나에서 받은 물건이 NPC에게 전달되고 편지 수집 상태가 저장되는 흐름 제작."
+        },
+        {
+          "name": "우편 드론의 고장 난 박람회",
+          "pitch": "작은 박람회의 3개 체험을 복구하며 부품을 모으는 탐험형 미니게임 패키지.",
+          "mvp": [
+            "허브1개·체험3개: 레일 타기/잠입/표적 맞히기",
+            "각 체험에서 부품1개 획득",
+            "수집 후 허브의 마지막 장치 가동",
+            "자동 리셋·짧은 안내·엔딩"
+          ],
+          "difficulty": "중 · 콘텐츠 3종에 범위 고정",
+          "effort": "1인+AI·주20시간 기준 4~6주 MVP 추정",
+          "monetization": "체험판은 무료. 파트너 입점 후 완성 월드 구매형 검토; IP 라이선스 비용 없이 독자 캐릭터·장소 사용.",
+          "why": "Universal·Disney·Transformers의 장소별 체험과 허브의 통합 목표를 큰 테마파크 없이 구현할 수 있다.",
+          "risks": "코스·미니게임을 늘리면 제작량이 급증. 차량 물리·음성 연기·거대 오픈월드 대신 기존 이동과 레일을 우선.",
+          "buildNext": "허브에서 체험 하나에 입장해 부품을 얻고 돌아오는 5분 흐름을 제작."
+        }
+      ]
+    },
+    {
+      "id": "minecraft-growth-survival",
+      "name": "성장·생존·RPG 확장",
+      "listLabel": "대표 10선",
+      "selectionBasis": "서버RPG2·설치맵1·수집모드2·생존/RPG 모드팩5로 10개 실제 제공 경험을 선정. 공식 운영/배포와 일부 누적 다운로드를 장기 발견 근거로 사용하며 배열은 분류별 비교 순서다. 서로 다른 형식·배포 경로를 동일 인기 순위로 정렬하지 않음. 현재 공식 원본 맵 제공을 검증하지 못한 Noobcrew SkyBlock 대신 제공 중인 SkyFactory4를 선택.",
+      "commonalities": [
+        "소량 자원/작은 거점에서 시작해 생산·공간·장비·능력을 확장한다. 행동 결과가 오래 남아 다음 접속의 목표를 만든다(해석).",
+        "준비→외부 탐험/도전→자원·전리품 회수→거점 강화가 순환한다. 수집 도감과 장비 조합은 효율 외의 개인 목표를 제공한다(해석).",
+        "자동화·나무·농장·퀘스트는 반복 채집의 다음 단계를 보이게 한다. 새 시스템을 한꺼번에 늘리기보다 단계별 해금·안내가 중요하다(해석).",
+        "서버RPG는 운영자 상점·계정 진행·커뮤니티를 포함한다. 다운로드 맵/모드/모드팩은 무료 배포와 사용자가 선택한 서버의 BM을 분리해야 한다.",
+        "오래된 버전의 큰 누적 다운로드가 지금 동접이나 최신 업데이트를 뜻하지 않는다. Minecraft/로더/클라이언트/서버 버전 고정과 저장 데이터 호환이 유지보수의 핵심이다.",
+        "대형 팩의 성공 요인은 콘텐츠뿐 아니라 모드 조합·규칙 조정·퀘스트·충돌 해결이다. 1인 MVP는 모드 수보다 한 개의 완성된 성장 순환을 우선한다."
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "id": "minecraft:hypixel:skyblock",
+          "name": "Hypixel SkyBlock",
+          "url": "https://hypixel.net/forums/skyblock-patch-notes.158/",
+          "description": "개인 섬의 생산·수집에서 공용 지역 탐험과 지속 성장으로 확장하는 서버 RPG.",
+          "features": [
+            "개인 섬·협력 자원 수집과 농장 확장",
+            "수집·장비·반복 활동의 장기 목표",
+            "2026 패치의 Loadouts·전용 리소스팩과 새 지역"
+          ],
+          "popularityFactors": [
+            "작은 섬을 크게 만드는 가시적 진전과 다양한 성장 축(해석)",
+            "개인 생산과 공용 탐험이 혼자/친구 플레이를 연결(해석)"
+          ],
+          "monetization": {
+            "summary": "본편 별도. 공통 랭크 외에 SkyBlock 전용 Gems를 판매한다. 2026-04-15 공식 가격 공지의 700 Gems USD6·1,800 Gems USD15, Booster Cookie 325 Gems 유지.",
+            "verified": [
+              "공식 도움말의 Gems→Community Shop 구매 구조",
+              "2026 가격 변경 공지와 Booster Cookie 재화 가격"
+            ],
+            "unverified": [
+              "지역·계정별 실제 결제·세금·현재 전체 아이템 목록·Cookie 효과/거래 조건 미검증. 치장 전용 BM으로 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "Hypixel 운영 서버의 개별 지속 성장 모드 · 다운로드 맵/모드팩 아님",
+            "compatibility": "2026-07-08 공지는1.21.9/1.21.10 지원 종료·26.2 권장·리소스팩 필수. 최신 전체 허용 버전은 접속 전 확인; 2019의1.8.9 안내는 사용하지 않음."
+          },
+          "operatingStatus": "2026년 9월 공식 운영 패치 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 제공·현재 운영/배포 확인에 따른 대표 선정. 개별 동접·이용자·매출 순위 미확인.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://hypixel.net/threads/new-prototype-game-hypixel-skyblock.2061182/",
+              "title": "Hypixel SkyBlock 운영자 최초 소개",
+              "type": "제작자·운영자 공식",
+              "note": "2019년 섬 확장·자원 수집·농장·협력의 기본 구조 설명. 당시 접속 버전·Prototype 상태·미출시 예고는 현재 사실로 옮기지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://hypixel.net/forums/skyblock-patch-notes.158/",
+              "title": "Hypixel SkyBlock 공식 현행 패치 목록",
+              "type": "제작자·운영자 공식",
+              "note": "2026년 7~9월 공식 운영 패치를 확인. Alpha 서버에서 테스트하는 예고를 본 서버 출시 기능으로 자동 간주하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://hypixel.net/threads/hypixel-skyblock-0-26-skyblock-resource-pack-loadouts-security-quest-and-more.6117801/",
+              "title": "Hypixel SkyBlock 0.26 공식 2026 패치",
+              "type": "제작자·운영자 공식",
+              "note": "2026-07-08 Minecraft 1.21.9/1.21.10 지원 종료·26.2 권장·전용 리소스팩 로드 필수 공지. 10월 전체 최신 지원표를 뜻하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019604800-How-to-Use-the-Hypixel-Store",
+              "title": "Hypixel 공식 상점 이용 안내",
+              "type": "제작자·운영자 공식",
+              "note": "SkyBlock Gems는 Community Shop 전용 프리미엄 재화임을 명시. Hypixel Gold·공통 랭크와 구분.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://hypixel.net/threads/skyblock-gem-price-increase-april-2026.6084009/",
+              "title": "Hypixel SkyBlock Gems 2026 가격 정책",
+              "type": "제작자·운영자 공식",
+              "note": "운영자 공지의 2026-04-15 변경: 700 Gems USD6, 1,800 USD15 등. Booster Cookie 325 Gems 유지. 실제 지역·계정 결제창 미검증.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+              "title": "Hypixel 공식 접속 안내",
+              "type": "공식",
+              "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "id": "minecraft:server:wynncraft",
+          "name": "Wynncraft",
+          "url": "https://wynncraft.com/",
+          "description": "직업·퀘스트·장비 조합·레이드·거래·길드 활동을 갖춘 Java MMORPG 서버.",
+          "features": [
+            "직업과 스킬·능력 조합의 전투",
+            "퀘스트·비밀·보스·레이드 탐험",
+            "플레이어 거래·길드 영토·주거 확장"
+          ],
+          "popularityFactors": [
+            "모험 중 발견과 장비 조합이 전투 밖 목표를 제공(해석)",
+            "시장·길드·협력 도전이 장기 커뮤니티 접점을 만듦(해석)"
+          ],
+          "monetization": {
+            "summary": "Java 본편 필요. 공식 상점에 영구 랭크 VIP USD14.99~CHAMPION USD170.99, 치장 Crates 5개 USD4.99 등이 표시. 저장·캐릭터·거래·주거 혜택과 치장을 함께 제공.",
+            "verified": [
+              "상점의 1회 구매 영구 랭크·혜택·표시 가격",
+              "치장 Crates의 등급별 희귀 확률 차이와 일부 등급 보장"
+            ],
+            "unverified": [
+              "실제 지역·계정 결제·세금·전체 확률표·Silverbull 구독의 현재 세부 가격/혜택은 미확인. 치장만 판매하는 서버로 단정하지 않음."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "운영자 서버 접속형 MMORPG · 맵 다운로드/별도 모드 설치 불필요",
+            "compatibility": "공식 FAQ:Java1.21.4 이상·Bedrock 미지원. 최신 지원 범위·서버 리소스팩 조건은 접속 전 확인."
+          },
+          "operatingStatus": "공식 현행 접속·Fruma 확장 소개 확인 · 실접속 미검증",
+          "metrics": {
+            "metricLabel": "공식 제공·현재 운영/배포 확인에 따른 대표 선정. 개별 동접·이용자·매출 순위 미확인.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://wynncraft.com/",
+              "title": "Wynncraft 운영자 공식 소개",
+              "type": "제작자·운영자 공식",
+              "note": "Java 서버의 직업·퀘스트·전투·거래·길드·레이드, 별도 모드 불필요 설명. 'largest'·'millions' 홍보 문구를 비교 순위로 사용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://wynncraft.com/community/faq",
+              "title": "Wynncraft 공식 FAQ",
+              "type": "제작자·운영자 공식",
+              "note": "Java 전용·1.21.4 이상 지원 안내, Bedrock 불가·맵 다운로드 불가·접속 주소 확인.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.wynncraft.com/category/241622",
+              "title": "Wynncraft 공식 영구 랭크 상품",
+              "type": "제작자·운영자 공식",
+              "note": "상점 표시 VIP USD14.99~CHAMPION USD170.99. 1회 구매 영구 랭크와 저장·캐릭터·거래·치장 등 혜택. 실결제 미검증.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://store.wynncraft.com/category/790106",
+              "title": "Wynncraft 공식 치장 Crates 상품",
+              "type": "제작자·운영자 공식",
+              "note": "5 Crates USD4.99 등 표시. 치장 보상·등급별 희귀 확률 차이·일부 등급 보장 설명. 전체 확률표는 미확인.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "id": "minecraft:map:oneblock-ijaminecraft",
+          "name": "OneBlock by IJAMinecraft",
+          "url": "https://ijaminecraft.com/map/oneblock/",
+          "description": "허공의 무한 블록을 캐며 단계별 자원을 얻고 작은 섬을 생존 거점으로 키우는 맵.",
+          "features": [
+            "하나의 블록에서 자원·상자·몹 생성",
+            "10단계 테마 변화와 거점·농장 확장",
+            "멀티 플레이 시 모든 플레이어가 하나의 무한 블록 공유"
+          ],
+          "popularityFactors": [
+            "행동 하나로 자원→제작→공간 확장이 명확하게 이어짐(해석)",
+            "단계 전환·뜻밖의 상자가 단조로운 채집에 다음 기대를 만듦(해석)"
+          ],
+          "monetization": {
+            "summary": "제작자가 공식 홈페이지에서 무료 다운로드로 제공. Java 본편은 별도이며 맵의 재업로드·수정본 공개 배포는 허용하지 않는다고 FAQ에 명시.",
+            "verified": [
+              "제작자 무료 맵·데이터팩 배포 정책",
+              "공식 Java 월드 ZIP·설치 안내"
+            ],
+            "unverified": [
+              "외부 OneBlock 서버·Bedrock의 동명 상품 가격은 이 맵의 과금 정책이 아님. 별도 인게임 상품은 확인하지 못함."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 생존 월드/맵 · Java saves 또는 자신이 운영하는 서버에 넣어 플레이",
+            "compatibility": "공식 현재 대표 파일:맵3.10.0·Java26.1(2026-03-30). 과거 지원 버전도 제공하지만 다운로드한 맵 버전과 본편 일치 필요; Bedrock 불가."
+          },
+          "operatingStatus": "2026 공식 다운로드·설치 안내 확인 · 실제 다운로드 파일 실행 미검증",
+          "metrics": {
+            "metricLabel": "공식 제공·현재 운영/배포 확인에 따른 대표 선정. 개별 동접·이용자·매출 순위 미확인.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://ijaminecraft.com/map/oneblock/",
+              "title": "IJAMinecraft OneBlock 공식 맵·다운로드",
+              "type": "제작자·운영자 공식",
+              "note": "무한 블록·단계별 자원/상자/몹·10단계·멀티 공유 블록. Java 26.1용3.10.0(2026-03-30) 표시. Bedrock 미지원·재업로드 제한 명시.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://ijaminecraft.com/",
+              "title": "IJAMinecraft 제작자 공식 배포 정책",
+              "type": "제작자·운영자 공식",
+              "note": "제작한 맵·데이터팩을 무료 다운로드로 제공하며 OneBlock을 대표 작품으로 소개.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://ijaminecraft.com/en/tutorial/minecraft-oneblock-installation",
+              "title": "OneBlock 제작자 공식 설치 안내",
+              "type": "제작자·운영자 공식",
+              "note": "ZIP 월드를 Java saves 또는 직접 운영 서버에 설치. 받은 맵과 Minecraft 버전 일치 필요.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "id": "minecraft:modpack:skyfactory-4",
+          "name": "SkyFactory 4",
+          "url": "https://www.curseforge.com/minecraft/modpacks/skyfactory-4",
+          "description": "하늘섬에서 자원 나무·기술·마법을 확장하며 생산을 자동화하는 생존 모드팩.",
+          "features": [
+            "자원 나무를 통한 선택형 생산 성장",
+            "여러 시작 세계와 자동화·기술·마법",
+            "선택형 Prestige와 도전 과제 기반 해금"
+          ],
+          "popularityFactors": [
+            "희소한 시작에서 자급자족 시스템을 만드는 성취(해석)",
+            "작업을 설비로 대체하며 목표가 생산 효율과 새 해금으로 이동(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 무료 다운로드 콘텐츠이며 Minecraft Java 본편은 별도. 외부 유료 서버·호스팅·후원·런처 상품은 콘텐츠 자체의 필수 구매와 구분.",
+            "verified": [
+              "제작자 공개 프로젝트·다운로드 파일 확인",
+              "제작자 후원(Donate) 링크 확인"
+            ],
+            "unverified": [
+              "개별 서버의 운영·상점·추가 상품 정책은 조사하지 않음. 무료 배포가 완전한 무과금 서버 경험이나 재배포 허락을 뜻하지 않음.",
+              "후원 금액·보상 상품·현재 운영 서버 과금은 미확인. 오래된 공개 파일의 유지보수 보장은 없음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 모드팩 · 여러 모드/설정/진행 규칙의 묶음 · 지정된 서버 전용 상품 아님",
+            "compatibility": "공식 배포4.2.4·Java1.12.2(2021-12-13); 현행 Minecraft26.x용 팩이 아님. 지정 런처/로더·서버 파일 구성에 맞춰 별도 프로필 사용."
+          },
+          "operatingStatus": "2021 공개 파일의 다운로드·서버팩 유지 확인 · 최근 갱신 작품으로 표시하지 않음",
+          "metrics": {
+            "downloads": 14139313,
+            "projectId": 296062,
+            "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+            "measuredAt": "2026-10-13 KST 조회값",
+            "lastUpdated": "2021-12-13"
+          },
+          "evidence": [
+            {
+              "url": "https://www.curseforge.com/minecraft/modpacks/skyfactory-4",
+              "title": "SkyFactory4 제작자 공식 CurseForge 프로젝트",
+              "type": "제작자 공식 프로젝트 (CurseForge)",
+              "note": "darkosto 프로젝트296062. 다운로드14,139,313·4.2.4·Minecraft1.12.2·2021-12-13. 자원 나무·자동화·선택형 Prestige·후원 링크.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+              "title": "CurseForge 공식 Minecraft 배포 안내",
+              "type": "배포 플랫폼 공식",
+              "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "id": "minecraft:mod:pixelmon",
+          "name": "Pixelmon",
+          "url": "https://pixelmonmod.com/downloads.php",
+          "description": "Minecraft 생존 세계에 Pokémon의 포획·육성·배틀·교환·번식을 추가하는 모드.",
+          "features": [
+            "야생 개체 발견·포획·팀 육성",
+            "턴제 배틀·교환·번식",
+            "모드 설정·추가 콘텐츠로 개인/서버 세계 확장"
+          ],
+          "popularityFactors": [
+            "탐험에서 새 수집 대상과 성장 목표를 동시에 발견(해석)",
+            "Minecraft 건축 거점과 팀 육성이 서로 다른 플레이 취향을 연결(해석)"
+          ],
+          "monetization": {
+            "summary": "모드 기본 배포는 무료·본편 별도. 제작자 문서에 개발 후원으로 얻는 선택형 치장이 있다. 커뮤니티 서버의 유료 랭크·개체 판매는 Pixelmon 자체 정책과 별개.",
+            "verified": [
+              "제작자 공식 소개의 무료 모드·공개 다운로드",
+              "제작자 치장/후원 정책의 선택형 보상 존재"
+            ],
+            "unverified": [
+              "현재 후원 금액·전체 치장·실결제창 미확인. 모드의 자체 유료 Pokémon·전투 상품은 확인하지 못함."
+            ],
+            "productEvidence": true
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 게임플레이 모드 · 단독 포획/육성 경험을 제공 · 완성 모드팩/특정 서버와 구분",
+            "compatibility": "공식 최신 표시:Pixelmon9.4.1·Java1.21.1·NeoForge21.1.248(2026-09-17). Forge 과거 브랜치와 혼용하지 않음."
+          },
+          "operatingStatus": "2026-09 공식 배포 파일 확인 · 개인/서버 환경 실제 실행 미검증",
+          "metrics": {
+            "metricLabel": "공식 제공·현재 운영/배포 확인에 따른 대표 선정. 개별 동접·이용자·매출 순위 미확인.",
+            "measuredAt": "2026-10-13 KST 조회"
+          },
+          "evidence": [
+            {
+              "url": "https://pixelmonmod.com/downloads.php",
+              "title": "Pixelmon 제작자 공식 다운로드",
+              "type": "제작자·운영자 공식",
+              "note": "Pixelmon9.4.1(2026-09-17), Java1.21.1·NeoForge21.1.248 배포 파일 표시. 다른 Minecraft 버전의 과거 브랜치와 분리.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://pixelmonmod.com/wiki/Pixelmon",
+              "title": "Pixelmon 제작자 공식 소개",
+              "type": "제작자·운영자 공식",
+              "note": "포획·훈련·배틀·교환·번식, 무료 모드 배포와 선택형 후원 치장 설명. 외부 커뮤니티 서버의 상품은 모드 자체 상품이 아님.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.pixelmonmod.com/wiki/Pixelmon_Wiki%3ATerms_of_Service",
+              "title": "Pixelmon 제작자 후원·치장 정책",
+              "type": "제작자·운영자 공식",
+              "note": "치장은 개발 후원의 혜택이라는 정책 확인. 기부 가격·전체 현재 치장 목록·실제 결제창 미확인.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "id": "minecraft:mod:cobblemon",
+          "name": "Cobblemon",
+          "url": "https://modrinth.com/mod/cobblemon",
+          "description": "Pokémon을 찾고 팀을 육성·배틀하며 Minecraft 세계를 함께 탐험하는 모드.",
+          "features": [
+            "포획·야생 배틀·레벨과 기술 성장",
+            "동행·개체 상태/팀 UI",
+            "데이터팩·리소스팩의 개체/세계 확장 지원"
+          ],
+          "popularityFactors": [
+            "발견→포획→육성→다음 탐험의 반복 목표(해석)",
+            "동행과 거점 생활이 단순 도감 수집에 애착 요소를 더함(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 다운로드 모드·본편 별도. 조사한 공식 소개/프로젝트에서 필수 유료 구매나 공식 인게임 상품은 확인하지 못했다. 개별 서버 상점은 별도.",
+            "verified": [
+              "제작자 공식 프로젝트·버전 파일의 공개 다운로드",
+              "공개 API의 후원 링크 목록은 조회 시 비어 있음"
+            ],
+            "unverified": [
+              "후원 링크 없음이 모든 수익·제휴·개별 서버 과금의 부재를 뜻하지 않음. 별도 제작자 상품 가격 미확인."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 게임플레이 모드 · 특정 서버/공식 보조 모드팩과 별개",
+            "compatibility": "공개 버전 API:1.8.2·Java1.21.1·Fabric 또는 NeoForge 각각2026-10-11 배포. 에디션/로더별 파일과 의존성 일치 필요."
+          },
+          "operatingStatus": "2026-10-11 공식 최신 버전 배포 확인 · 실행 미검증",
+          "metrics": {
+            "downloads": 36343371,
+            "projectId": "MdwFAVRL",
+            "metricLabel": "Modrinth Cobblemon 모드 프로젝트 누적 다운로드 · 버전/재설치 합산 · 사용자가 아님",
+            "measuredAt": "2026-10-13 KST API 조회값",
+            "lastUpdated": "2026-10-11"
+          },
+          "evidence": [
+            {
+              "url": "https://www.cobblemon.com/en",
+              "title": "Cobblemon 제작자 공식 소개",
+              "type": "제작자·운영자 공식",
+              "note": "Pokémon 수집·야생 배틀·성장·동행, 팀 UI와 데이터/리소스팩 확장. Java1.21.1용 Fabric/NeoForge 소개.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://modrinth.com/mod/cobblemon",
+              "title": "Cobblemon 제작자 공식 Modrinth 프로젝트",
+              "type": "제작자 공식 프로젝트 (Modrinth)",
+              "note": "MdwFAVRL 프로젝트. 제작자 사이트·공식 위키·소스 연결과 공개 다운로드. 버전 목록은 공개 API로 대조.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://api.modrinth.com/v2/project/cobblemon",
+              "title": "Cobblemon 공개 프로젝트 API",
+              "type": "플랫폼 공식 공개 API",
+              "note": "2026-10-13 조회: 프로젝트 downloads36,343,371, MPL-2.0, updated2026-10-11. 후원 URL 목록은 비어 있음. 고유 이용자 수 아님.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://api.modrinth.com/v2/project/cobblemon/version",
+              "title": "Cobblemon 공개 버전 API",
+              "type": "플랫폼 공식 공개 API",
+              "note": "최상단1.8.2 Fabric/NeoForge 각각 2026-10-11 배포·Minecraft1.21.1 대상 확인. 예전1.7.3을 현재 최신판으로 쓰지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "id": "minecraft:modpack:rlcraft",
+          "name": "RLCraft",
+          "url": "https://www.curseforge.com/minecraft/modpacks/rlcraft",
+          "description": "위험한 탐험과 생존·장비 성장의 난도를 높인 하드코어 RPG 모드팩.",
+          "features": [
+            "생존·전투·탐험에 맞춰 여러 모드 규칙 조정",
+            "장비·성장과 위험한 몬스터/환경",
+            "클라이언트 팩·별도 서버팩 배포"
+          ],
+          "popularityFactors": [
+            "실패 경험 뒤 더 나은 생존 방법을 배우는 숙련 반복(해석)",
+            "안전한 거점과 위험한 외부 탐험의 대비가 장비 성장 가치를 만듦(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 무료 다운로드 콘텐츠이며 Minecraft Java 본편은 별도. 외부 유료 서버·호스팅·후원·런처 상품은 콘텐츠 자체의 필수 구매와 구분.",
+            "verified": [
+              "제작자 공개 프로젝트·다운로드 파일 확인",
+              "제작자 프로젝트에서 굿즈·제휴 호스팅 안내 확인"
+            ],
+            "unverified": [
+              "개별 서버의 운영·상점·추가 상품 정책은 조사하지 않음. 무료 배포가 완전한 무과금 서버 경험이나 재배포 허락을 뜻하지 않음.",
+              "굿즈·호스팅은 모드팩 필수 이용권이 아님. 원본과 별개 RLCraft Dregora의 상품/다운로드는 합산하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 생존/RPG 모드팩 · 원본 RLCraft · Dregora 스핀오프 제외",
+            "compatibility": "공식 공개 메인 파일2.9.3·Java1.12.2·Forge2860 필요(2023-06-27). 최신26.x용이 아니며 임의 성능 모드 추가 시 호환 문제가 있을 수 있음."
+          },
+          "operatingStatus": "2023 원본 공개 파일·서버팩 제공 확인 · 최근 갱신/최신 본편 호환 보장 아님",
+          "metrics": {
+            "downloads": 30327680,
+            "projectId": 285109,
+            "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+            "measuredAt": "2026-10-13 KST 조회값",
+            "lastUpdated": "2023-06-27"
+          },
+          "evidence": [
+            {
+              "url": "https://www.curseforge.com/minecraft/modpacks/rlcraft",
+              "title": "RLCraft 제작자 공식 CurseForge 프로젝트",
+              "type": "제작자 공식 프로젝트 (CurseForge)",
+              "note": "Shivaxi 프로젝트285109. 다운로드30,327,680·2.9.3·Java1.12.2 Forge·2023-06-27. 원본 RLCraft이며 Dregora 스핀오프를 합산하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+              "title": "CurseForge 공식 Minecraft 배포 안내",
+              "type": "배포 플랫폼 공식",
+              "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "id": "minecraft:modpack:vault-hunters-third",
+          "name": "Vault Hunters Third Edition",
+          "url": "https://www.curseforge.com/minecraft/modpacks/vault-hunters-1-18-2",
+          "description": "거점에서 준비하고 Vault를 탐험해 전리품·능력·유물을 모으는 액션 RPG 모드팩.",
+          "features": [
+            "Vault 탐험과 전용 장비·능력 성장",
+            "거점·농장과 탐험 준비의 연결",
+            "유물 수집·최종 도전·추가 엔드게임"
+          ],
+          "popularityFactors": [
+            "전리품 선택과 능력 해금이 한 번 더 탐험할 이유를 제공(해석)",
+            "거점 생산이 전투 밖에도 탐험 성공에 기여하는 목표가 됨(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 무료 다운로드 콘텐츠이며 Minecraft Java 본편은 별도. 외부 유료 서버·호스팅·후원·런처 상품은 콘텐츠 자체의 필수 구매와 구분.",
+            "verified": [
+              "제작자 공개 프로젝트·다운로드 파일 확인",
+              "제작자 공식 프로젝트의 선택형 제휴 서버 호스팅 안내"
+            ],
+            "unverified": [
+              "개별 서버의 운영·상점·추가 상품 정책은 조사하지 않음. 무료 배포가 완전한 무과금 서버 경험이나 재배포 허락을 뜻하지 않음.",
+              "호스팅을 구매해야 개인 월드를 할 수 있다는 뜻은 아님. Second Edition·Sky Vaults 등 별도 제공형의 지표/상품은 합산하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 액션RPG 모드팩 · Third Edition 지정 · 특정 유료 서버 상품 아님",
+            "compatibility": "공식3.21.7·Java1.18.2·Forge. 클라이언트2026-07-28/서버파일07-30. 공식 설치 안내 Java17·권장RAM8GB; 최신 본편 자동 호환 아님."
+          },
+          "operatingStatus": "2026-07 공식 클라이언트·서버팩 갱신 확인 · 실행 미검증",
+          "metrics": {
+            "downloads": 5930507,
+            "projectId": 711537,
+            "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+            "measuredAt": "2026-10-13 KST 조회값",
+            "lastUpdated": "2026-07-30"
+          },
+          "evidence": [
+            {
+              "url": "https://www.curseforge.com/minecraft/modpacks/vault-hunters-1-18-2",
+              "title": "Vault Hunters Third Edition 제작자 공식 프로젝트",
+              "type": "제작자 공식 프로젝트 (CurseForge)",
+              "note": "Iskall85Team 프로젝트711537. 다운로드5,930,507·3.21.7·1.18.2 Forge·클라이언트2026-07-28/서버07-30. Second Edition과 분리.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://wiki.vaulthunters.gg/Modpack_Install",
+              "title": "Vault Hunters 공식 설치 안내",
+              "type": "제작자·운영자 공식",
+              "note": "Third Edition의 Java17·Minecraft1.18.2·권장메모리8GB 설치 안내. 팩 본문에 남은 오래된 Twitch 로그인 설명을 최신 요구사항으로 인용하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+              "title": "CurseForge 공식 Minecraft 배포 안내",
+              "type": "배포 플랫폼 공식",
+              "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "id": "minecraft:modpack:ftb-stoneblock-3",
+          "name": "FTB StoneBlock 3",
+          "url": "https://www.feed-the-beast.com/modpacks/100-ftb-stoneblock-3",
+          "description": "돌로 둘러싸인 지하에서 채굴·자동화·마법으로 기지를 성장시키는 모드팩.",
+          "features": [
+            "지하 거점과 원형으로 뻗는 세계",
+            "기술·마법·자원 생산 확장",
+            "목표를 돕는 퀘스트·구조물·보스"
+          ],
+          "popularityFactors": [
+            "제한된 시작 환경이 작은 자원 확보도 큰 진전으로 보이게 함(해석)",
+            "채굴 경로와 생산 시설이 플레이어의 공간 계획을 게임 목표로 바꿈(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 무료 다운로드 콘텐츠이며 Minecraft Java 본편은 별도. 외부 유료 서버·호스팅·후원·런처 상품은 콘텐츠 자체의 필수 구매와 구분.",
+            "verified": [
+              "제작자 공개 프로젝트·다운로드 파일 확인",
+              "FTB App 설치 제공과 FTB 공식 CurseForge 공개 파일 확인"
+            ],
+            "unverified": [
+              "개별 서버의 운영·상점·추가 상품 정책은 조사하지 않음. 무료 배포가 완전한 무과금 서버 경험이나 재배포 허락을 뜻하지 않음.",
+              "FTB Worlds/제휴 호스팅·굿즈는 별도 서비스. FTB App와 CurseForge 배포 버전·설치·다운로드 지표를 합산하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 기술/마법 생존 모드팩 · FTB App 또는 공식 CurseForge 배포",
+            "compatibility": "FTB 공식:1.11.6·Java1.18.2·Forge(2026-06-11). CurseForge 프로젝트에는1.11.5(2025-05-30)가 메인 파일로 표시되어 배포 경로별 버전을 구분."
+          },
+          "operatingStatus": "FTB App2026-06 버전·CF 별도 파일 제공 확인 · 실행 미검증",
+          "metrics": {
+            "downloads": 1467600,
+            "projectId": 1091305,
+            "ftbInstalls": 2509826,
+            "ftbPlays": 14389698,
+            "metricLabel": "CF 특정 프로젝트 다운로드 + FTB App 설치/플레이 표시는 다른 집계. 합산/고유사용자/동접 해석 금지",
+            "measuredAt": "2026-10-13 KST 조회값",
+            "lastUpdated": "FTB2026-06-11 / CF2025-05-30"
+          },
+          "evidence": [
+            {
+              "url": "https://www.feed-the-beast.com/modpacks/100-ftb-stoneblock-3",
+              "title": "FTB StoneBlock3 제작자 공식 페이지",
+              "type": "제작자·운영자 공식",
+              "note": "FTB App 기준1.11.6·1.18.2 Forge·2026-06-11 갱신. Installs2,509,826·Plays14,389,698. 고유 사용자·동접으로 해석하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/modpacks/ftb-stoneblock-3",
+              "title": "FTB StoneBlock3 제작자 CurseForge 프로젝트",
+              "type": "제작자 공식 프로젝트 (CurseForge)",
+              "note": "FTB 프로젝트1091305의 별도 배포:1.11.5·2025-05-30·다운로드1,467,600. FTB App의1.11.6/설치/플레이 지표와 합산하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+              "title": "CurseForge 공식 Minecraft 배포 안내",
+              "type": "배포 플랫폼 공식",
+              "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "id": "minecraft:modpack:atm10",
+          "name": "All the Mods 10 — ATM10",
+          "url": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10",
+          "description": "기술·마법·탐험 모드를 퀘스트와 엔드게임 목표로 묶은 대형 모드팩.",
+          "features": [
+            "약500개 모드의 탐험·기술·마법 선택지",
+            "퀘스트가 많은 기능의 다음 목표를 안내",
+            "제작자 설정·스크립트로 연결된 진행과 엔드게임"
+          ],
+          "popularityFactors": [
+            "각자 선호하는 작업을 선택하면서 공통 목표를 추구 가능(해석)",
+            "자동화·장비·마법을 연결하는 긴 성장 경로가 반복 탐험 동기를 제공(해석)"
+          ],
+          "monetization": {
+            "summary": "공개 무료 다운로드 콘텐츠이며 Minecraft Java 본편은 별도. 외부 유료 서버·호스팅·후원·런처 상품은 콘텐츠 자체의 필수 구매와 구분.",
+            "verified": [
+              "제작자 공개 프로젝트·다운로드 파일 확인",
+              "제작자 프로젝트의 선택형 후원(Donate) 링크 확인"
+            ],
+            "unverified": [
+              "개별 서버의 운영·상점·추가 상품 정책은 조사하지 않음. 무료 배포가 완전한 무과금 서버 경험이나 재배포 허락을 뜻하지 않음.",
+              "후원 금액·보상·외부 서버 상품 미확인. 제작자 '2026 top pack' 홍보 문구는 검증된 시장1위 지표가 아님."
+            ],
+            "productEvidence": false
+          },
+          "availability": {
+            "edition": "Java Edition",
+            "delivery": "설치형 대형 모드팩 · ATM10 일반판 · ATM11/To the Sky/다른 변형과 구분",
+            "compatibility": "공식8.2·Java1.21.1·NeoForge(2026-09-22). 수백 모드의 의존성·메모리 요구가 있어 별도 지정 프로필 필요; 본편26.x용 아님."
+          },
+          "operatingStatus": "2026-09 공식 팩·서버파일·저장소 갱신 확인 · 실행 미검증",
+          "metrics": {
+            "downloads": 22297501,
+            "projectId": 925200,
+            "metricLabel": "CurseForge 특정 프로젝트 누적 다운로드 · 재다운로드/업데이트 포함 가능 · 사용자/동접/매출 아님",
+            "measuredAt": "2026-10-13 KST 조회값",
+            "lastUpdated": "2026-09-22"
+          },
+          "evidence": [
+            {
+              "url": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10",
+              "title": "All the Mods10 제작자 공식 CurseForge 프로젝트",
+              "type": "제작자 공식 프로젝트 (CurseForge)",
+              "note": "ATMTeam 프로젝트925200. 다운로드22,297,501·8.2·Java1.21.1 NeoForge·2026-09-22. 약500개 모드·퀘스트/엔드게임 소개를 전체 시장1위 주장으로 옮기지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://github.com/AllTheMods/ATM-10",
+              "title": "ATM10 제작자 공식 저장소",
+              "type": "제작자·운영자 공식",
+              "note": "공식1.21.1 팩의 설정·데이터팩·KubeJS·변경 이력·이슈 추적. ATM11·ATM10 To the Sky 등 다른 프로젝트를 같은 항목 지표로 합산하지 않음.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+              "title": "CurseForge 공식 Minecraft 배포 안내",
+              "type": "배포 플랫폼 공식",
+              "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+              "accessed": "2026-10-13"
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "작은 하늘의 광석 정원",
+          "pitch": "좁은 하늘섬에서 광석을 기르는 화분과 작은 자동 설비를 만들어 새 공간을 여는 30분 생존 성장 맵.",
+          "mvp": [
+            "Bedrock 전용 월드+작은 추가 기능으로 시작",
+            "생산 자원3종·화분3종·설비2종",
+            "자원 투입→시간 경과→회수→섬3단계 확장",
+            "혼자 플레이·저장/로드·30분 완주 목표"
+          ],
+          "difficulty": "중 · 성장 수치·저장 상태",
+          "effort": "1인+AI·주20시간 기준 3~5주 MVP 추정",
+          "monetization": "무료 샘플로 검증 후 새 섬/테마 월드 패키지 검토. Marketplace 판매는 파트너·심사 조건 필요. 성장 대기 시간을 결제로 건너뛰는 구조는 초기 범위에서 제외.",
+          "why": "OneBlock·SkyFactory4·StoneBlock3의 희소 시작→생산 선택→공간 확장을 수백 모드 없이 작은 자원 그래프로 재현할 수 있다.",
+          "risks": "무한 자원 복제·성장 막힘·로드 후 생산 시간 오류. Java 기존 팩을 그대로 합치지 않고 독자 규칙/설정/모델 제작.",
+          "buildNext": "자원 하나를 화분에 넣고 세 번 수확해 옆 섬을 여는 5분 순환부터 구현."
+        },
+        {
+          "name": "안개섬의 동물 수첩",
+          "pitch": "작은 섬의 독자 생물8종을 관찰·친해지며 거점의 생활 능력을 늘리는 수집 모험.",
+          "mvp": [
+            "Bedrock 월드·섬1개·오리지널 생물8종",
+            "먹이/관찰 조건과 도감",
+            "동행 보너스3종·거점 전시 공간",
+            "전투·교배·온라인 교환은 후속 범위"
+          ],
+          "difficulty": "중 · 생물 행동·콘텐츠 제작",
+          "effort": "1인+AI·주20시간 기준 4~6주 MVP 추정",
+          "monetization": "완성 맵 구매형을 검토. 도감 능력·희귀 생물 확률을 파는 대신 이후 독자 지역/이야기 패키지에 비용 부과.",
+          "why": "Pixelmon·Cobblemon의 탐험→발견→육성→다음 탐험을 복잡한 턴제 대전 없이 애착과 도감으로 축소한다.",
+          "risks": "8종 아트/애니메이션도 제작량이 큼. Pokémon 이름·모델·스킬·UI를 복제하지 않고 기존 제작 자산을 독자적으로 설계.",
+          "buildNext": "생물 한 종류가 먹이에 반응하고 도감 등록 뒤 거점에 나타나는 흐름 완성."
+        },
+        {
+          "name": "한 번 더, 지하 금고",
+          "pitch": "작은 거점에서 준비한 뒤 7분 안에 방5개를 탐험하고 전리품을 들고 귀환하는 싱글 RPG.",
+          "mvp": [
+            "Minecraft 작은 맵 또는 독자2D 게임 중 하나 선택",
+            "방5개·적3종·장비6개·능력 선택3종",
+            "시간 제한·귀환/실패 결과·거점 업그레이드2종",
+            "경제·거래·대규모 멀티·무한 던전은 후속 범위"
+          ],
+          "difficulty": "중 · 위험/보상과 전투 밸런스",
+          "effort": "1인+AI·주20시간 기준 4~6주 MVP 추정",
+          "monetization": "싱글 완성판 또는 새 챕터 구매형. 추출 성공률·회수량 판매보다 추가 장소/이야기를 판매하는 구조 제안.",
+          "why": "Vault Hunters의 준비·탐험·전리품 성장과 RLCraft/Wynncraft의 위험한 외부·안전 거점 대비를 짧은 완결 순환으로 줄인다.",
+          "risks": "장비 조합·난이도·전리품 가치가 연결되어 AI 생성 코드를 통한 무작정 기능 추가가 균형을 깨기 쉬움. 저장·실패 복구도 우선 검증.",
+          "buildNext": "한 방에 들어가 아이템을 얻고 제한 시간 전에 돌아와 업그레이드하는 3분 경험 제작."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://hypixel.net/threads/new-prototype-game-hypixel-skyblock.2061182/",
+      "title": "Hypixel SkyBlock 운영자 최초 소개",
+      "type": "제작자·운영자 공식",
+      "note": "2019년 섬 확장·자원 수집·농장·협력의 기본 구조 설명. 당시 접속 버전·Prototype 상태·미출시 예고는 현재 사실로 옮기지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://hypixel.net/forums/skyblock-patch-notes.158/",
+      "title": "Hypixel SkyBlock 공식 현행 패치 목록",
+      "type": "제작자·운영자 공식",
+      "note": "2026년 7~9월 공식 운영 패치를 확인. Alpha 서버에서 테스트하는 예고를 본 서버 출시 기능으로 자동 간주하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://hypixel.net/threads/hypixel-skyblock-0-26-skyblock-resource-pack-loadouts-security-quest-and-more.6117801/",
+      "title": "Hypixel SkyBlock 0.26 공식 2026 패치",
+      "type": "제작자·운영자 공식",
+      "note": "2026-07-08 Minecraft 1.21.9/1.21.10 지원 종료·26.2 권장·전용 리소스팩 로드 필수 공지. 10월 전체 최신 지원표를 뜻하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://hypixel.net/threads/skyblock-gem-price-increase-april-2026.6084009/",
+      "title": "Hypixel SkyBlock Gems 2026 가격 정책",
+      "type": "제작자·운영자 공식",
+      "note": "운영자 공지의 2026-04-15 변경: 700 Gems USD6, 1,800 USD15 등. Booster Cookie 325 Gems 유지. 실제 지역·계정 결제창 미검증.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://support.hypixel.net/hc/en-us/articles/360019604800-How-to-Use-the-Hypixel-Store",
+      "title": "Hypixel 공식 상점 이용 안내",
+      "type": "제작자·운영자 공식",
+      "note": "SkyBlock Gems는 Community Shop 전용 프리미엄 재화임을 명시. Hypixel Gold·공통 랭크와 구분.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://wynncraft.com/",
+      "title": "Wynncraft 운영자 공식 소개",
+      "type": "제작자·운영자 공식",
+      "note": "Java 서버의 직업·퀘스트·전투·거래·길드·레이드, 별도 모드 불필요 설명. 'largest'·'millions' 홍보 문구를 비교 순위로 사용하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://wynncraft.com/community/faq",
+      "title": "Wynncraft 공식 FAQ",
+      "type": "제작자·운영자 공식",
+      "note": "Java 전용·1.21.4 이상 지원 안내, Bedrock 불가·맵 다운로드 불가·접속 주소 확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://store.wynncraft.com/category/241622",
+      "title": "Wynncraft 공식 영구 랭크 상품",
+      "type": "제작자·운영자 공식",
+      "note": "상점 표시 VIP USD14.99~CHAMPION USD170.99. 1회 구매 영구 랭크와 저장·캐릭터·거래·치장 등 혜택. 실결제 미검증.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://store.wynncraft.com/category/790106",
+      "title": "Wynncraft 공식 치장 Crates 상품",
+      "type": "제작자·운영자 공식",
+      "note": "5 Crates USD4.99 등 표시. 치장 보상·등급별 희귀 확률 차이·일부 등급 보장 설명. 전체 확률표는 미확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://ijaminecraft.com/map/oneblock/",
+      "title": "IJAMinecraft OneBlock 공식 맵·다운로드",
+      "type": "제작자·운영자 공식",
+      "note": "무한 블록·단계별 자원/상자/몹·10단계·멀티 공유 블록. Java 26.1용3.10.0(2026-03-30) 표시. Bedrock 미지원·재업로드 제한 명시.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://ijaminecraft.com/",
+      "title": "IJAMinecraft 제작자 공식 배포 정책",
+      "type": "제작자·운영자 공식",
+      "note": "제작한 맵·데이터팩을 무료 다운로드로 제공하며 OneBlock을 대표 작품으로 소개.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://ijaminecraft.com/en/tutorial/minecraft-oneblock-installation",
+      "title": "OneBlock 제작자 공식 설치 안내",
+      "type": "제작자·운영자 공식",
+      "note": "ZIP 월드를 Java saves 또는 직접 운영 서버에 설치. 받은 맵과 Minecraft 버전 일치 필요.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/modpacks/skyfactory-4",
+      "title": "SkyFactory4 제작자 공식 CurseForge 프로젝트",
+      "type": "제작자 공식 프로젝트 (CurseForge)",
+      "note": "darkosto 프로젝트296062. 다운로드14,139,313·4.2.4·Minecraft1.12.2·2021-12-13. 자원 나무·자동화·선택형 Prestige·후원 링크.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://pixelmonmod.com/downloads.php",
+      "title": "Pixelmon 제작자 공식 다운로드",
+      "type": "제작자·운영자 공식",
+      "note": "Pixelmon9.4.1(2026-09-17), Java1.21.1·NeoForge21.1.248 배포 파일 표시. 다른 Minecraft 버전의 과거 브랜치와 분리.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://pixelmonmod.com/wiki/Pixelmon",
+      "title": "Pixelmon 제작자 공식 소개",
+      "type": "제작자·운영자 공식",
+      "note": "포획·훈련·배틀·교환·번식, 무료 모드 배포와 선택형 후원 치장 설명. 외부 커뮤니티 서버의 상품은 모드 자체 상품이 아님.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.pixelmonmod.com/wiki/Pixelmon_Wiki%3ATerms_of_Service",
+      "title": "Pixelmon 제작자 후원·치장 정책",
+      "type": "제작자·운영자 공식",
+      "note": "치장은 개발 후원의 혜택이라는 정책 확인. 기부 가격·전체 현재 치장 목록·실제 결제창 미확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.cobblemon.com/en",
+      "title": "Cobblemon 제작자 공식 소개",
+      "type": "제작자·운영자 공식",
+      "note": "Pokémon 수집·야생 배틀·성장·동행, 팀 UI와 데이터/리소스팩 확장. Java1.21.1용 Fabric/NeoForge 소개.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://modrinth.com/mod/cobblemon",
+      "title": "Cobblemon 제작자 공식 Modrinth 프로젝트",
+      "type": "제작자 공식 프로젝트 (Modrinth)",
+      "note": "MdwFAVRL 프로젝트. 제작자 사이트·공식 위키·소스 연결과 공개 다운로드. 버전 목록은 공개 API로 대조.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://api.modrinth.com/v2/project/cobblemon",
+      "title": "Cobblemon 공개 프로젝트 API",
+      "type": "플랫폼 공식 공개 API",
+      "note": "2026-10-13 조회: 프로젝트 downloads36,343,371, MPL-2.0, updated2026-10-11. 후원 URL 목록은 비어 있음. 고유 이용자 수 아님.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://api.modrinth.com/v2/project/cobblemon/version",
+      "title": "Cobblemon 공개 버전 API",
+      "type": "플랫폼 공식 공개 API",
+      "note": "최상단1.8.2 Fabric/NeoForge 각각 2026-10-11 배포·Minecraft1.21.1 대상 확인. 예전1.7.3을 현재 최신판으로 쓰지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/modpacks/rlcraft",
+      "title": "RLCraft 제작자 공식 CurseForge 프로젝트",
+      "type": "제작자 공식 프로젝트 (CurseForge)",
+      "note": "Shivaxi 프로젝트285109. 다운로드30,327,680·2.9.3·Java1.12.2 Forge·2023-06-27. 원본 RLCraft이며 Dregora 스핀오프를 합산하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/modpacks/vault-hunters-1-18-2",
+      "title": "Vault Hunters Third Edition 제작자 공식 프로젝트",
+      "type": "제작자 공식 프로젝트 (CurseForge)",
+      "note": "Iskall85Team 프로젝트711537. 다운로드5,930,507·3.21.7·1.18.2 Forge·클라이언트2026-07-28/서버07-30. Second Edition과 분리.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://wiki.vaulthunters.gg/Modpack_Install",
+      "title": "Vault Hunters 공식 설치 안내",
+      "type": "제작자·운영자 공식",
+      "note": "Third Edition의 Java17·Minecraft1.18.2·권장메모리8GB 설치 안내. 팩 본문에 남은 오래된 Twitch 로그인 설명을 최신 요구사항으로 인용하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.feed-the-beast.com/modpacks/100-ftb-stoneblock-3",
+      "title": "FTB StoneBlock3 제작자 공식 페이지",
+      "type": "제작자·운영자 공식",
+      "note": "FTB App 기준1.11.6·1.18.2 Forge·2026-06-11 갱신. Installs2,509,826·Plays14,389,698. 고유 사용자·동접으로 해석하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/modpacks/ftb-stoneblock-3",
+      "title": "FTB StoneBlock3 제작자 CurseForge 프로젝트",
+      "type": "제작자 공식 프로젝트 (CurseForge)",
+      "note": "FTB 프로젝트1091305의 별도 배포:1.11.5·2025-05-30·다운로드1,467,600. FTB App의1.11.6/설치/플레이 지표와 합산하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10",
+      "title": "All the Mods10 제작자 공식 CurseForge 프로젝트",
+      "type": "제작자 공식 프로젝트 (CurseForge)",
+      "note": "ATMTeam 프로젝트925200. 다운로드22,297,501·8.2·Java1.21.1 NeoForge·2026-09-22. 약500개 모드·퀘스트/엔드게임 소개를 전체 시장1위 주장으로 옮기지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://github.com/AllTheMods/ATM-10",
+      "title": "ATM10 제작자 공식 저장소",
+      "type": "제작자·운영자 공식",
+      "note": "공식1.21.1 팩의 설정·데이터팩·KubeJS·변경 이력·이슈 추적. ATM11·ATM10 To the Sky 등 다른 프로젝트를 같은 항목 지표로 합산하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.curseforge.com/minecraft/search?page=1&search=Mods&sortBy=relevancy",
+      "title": "CurseForge 공식 Minecraft 배포 안내",
+      "type": "배포 플랫폼 공식",
+      "note": "Minecraft 모드·모드팩 탐색과 무료 다운로드 안내. 후원·굿즈·외부 서버 호스팅·플랫폼 구독이 개별 팩의 필수 구매라는 의미는 아님.",
+      "accessed": "2026-10-13"
+    }
+    ,
+    {
+      "url": "https://hypixel.net/play/",
+      "title": "Hypixel 공식 게임 카탈로그",
+      "type": "공식",
+      "note": "Bed Wars·SkyWars·Duels·Build Battle의 서로 다른 규칙을 소개. 서버 전체 접속자나 플레이어 전적을 개별 모드 인기 순위로 사용하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://support.hypixel.net/hc/en-us/articles/360019495360-How-to-Join-the-Hypixel-Server",
+      "title": "Hypixel 공식 접속 안내",
+      "type": "공식",
+      "note": "Java Edition PC/Mac 계정과 mc.hypixel.net 접속 방식 확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://store.hypixel.net/",
+      "title": "Hypixel 공식 상점",
+      "type": "공식",
+      "note": "서버 공통 랭크·Gold·기타 상품 카테고리 확인. SkyBlock Gems는 선정한 네 모드의 상품으로 간주하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://store.cubecraft.net/",
+      "title": "CubeCraft 공식 상점",
+      "type": "공식",
+      "note": "Java Edition 상점과 Bedrock 인게임 상점의 차이를 명시. 서버 공통 랭크·상품 구조 확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://help.cubecraft.net/en/article/how-can-i-buy-itemsbundles-on-bedrock-edition-ygj948/",
+      "title": "CubeCraft Bedrock 상품 구매 안내",
+      "type": "공식",
+      "note": "Minecoins를 쓰는 인게임 상점과 순환 번들 설명. 개별 게임 상품 가격이나 결제창은 확인하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.cubecraft.net/threads/cubecap-september-2026.418528/",
+      "title": "CubeCraft 공식 2026년 9월 운영 패치",
+      "type": "공식",
+      "note": "Team CubeCraft 게시물에서 EggWars·Lucky Islands·BlockWars의 Java/Bedrock 수정과 BlockWars CTF Bedrock 수정 확인.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.cubecraft.net/threads/eggwars-update.191772/",
+      "title": "CubeCraft 운영자 EggWars 업데이트",
+      "type": "공식",
+      "note": "2017년 운영자 설명의 알·상점·자원 생성기·리스폰 구조를 기본 규칙 근거로 사용. 과거 타이머·가격을 현행 수치로 옮기지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.cubecraft.net/threads/%F0%9F%8D%80lucky-islands-update-37-new-blocks.410452/",
+      "title": "CubeCraft 공식 Lucky Islands 2026 업데이트",
+      "type": "공식",
+      "note": "2026-05-29 개발자 게시물: Java/Bedrock의 새 랜덤 블록과 솔로·팀 맵 소개.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.cubecraft.net/threads/official-blockwars-guide.208805/",
+      "title": "CubeCraft 공식 BlockWars 가이드",
+      "type": "공식",
+      "note": "2018년 기본 CTF 규칙·방어 건축·깃발 운반 설명. 현재 제공은 2026 공식 패치로 별도 대조.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://support.playhive.com/how-to-join/",
+      "title": "The Hive 공식 접속 안내",
+      "type": "공식",
+      "note": "Bedrock Featured Server이며 Servers 탭에서 접속. 본편·일부 콘솔의 온라인 구독 조건 명시.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://support.playhive.com/premium-ranks/",
+      "title": "The Hive 공식 프리미엄 랭크",
+      "type": "공식",
+      "note": "문서 표시 가격 Hive+ 1,690 / Ultimate 3,420 Minecoins와 영구 랭크·XP·맵 투표·파티 한도 등 공통 혜택. 실제 계정별 결제창 미검증.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://playhive.com/2026/08/07/hide-and-seek-mischief-update/",
+      "title": "The Hive Hide and Seek 2026 업데이트",
+      "type": "공식",
+      "note": "2026-08-07 미니 허브·도전 과제·레벨·도발 요소 추가.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://playhive.com/2026/06/09/murder-mystery-deadly-dealings/",
+      "title": "The Hive Murder Mystery 2026 업데이트",
+      "type": "공식",
+      "note": "2026-06-09 조사 도구·맵 상점·Bux 등 규칙 추가. Bux는 게임 내 획득 설명이며 유료 재화로 단정하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://playhive.com/game/dr",
+      "title": "The Hive DeathRun 공식 페이지",
+      "type": "공식",
+      "note": "Runner/Death 역할과 함정 경주 설명. 플레이어 전적 순위는 게임 인기도 지표가 아님.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://playhive.com/game/hide",
+      "title": "The Hive Hide and Seek 공식 페이지",
+      "type": "공식",
+      "note": "블록 위장과 숨는 쪽/술래 전환 규칙.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://playhive.com/game/murder",
+      "title": "The Hive Murder Mystery 공식 페이지",
+      "type": "공식",
+      "note": "살인자·보안관·시민의 목적과 레벨 보상 소개.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/pdp/syclone-studios/jurassic-world-adventures/518b5011-bff4-46a1-a7a2-750818f75157",
+      "title": "Jurassic World Adventures 공식 상품",
+      "type": "공식",
+      "note": "공식 검색 색인에 1 World·5 Skins·1,510 Minecoins 표시. 동적 본문/인게임 실제 구매창은 미검증.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/pdp/gamemode-one/avatar-legends/adf08b99-bba0-4469-99c2-44e1a8239fb9",
+      "title": "Avatar Legends 공식 상품",
+      "type": "공식",
+      "note": "공식 검색 색인에 1 World·55 Skins·1,340 Minecoins 표시. 결제창·기기별 제공 범위는 미검증.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/pdp/spark-universe/spongebob-squarepants/c1c33c20-774d-467e-ac3d-b14b1bccb1a8",
+      "title": "SpongeBob SquarePants 공식 월드 상품",
+      "type": "공식",
+      "note": "공식 검색 색인에 1 World·40 Skins·1,340 Minecoins 표시. 별도 SpongeBob Add-On과 구분.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.syclonestudios.com/minecraft/maps",
+      "title": "Syclone Studios 공식 맵 목록",
+      "type": "공식",
+      "note": "Transformers와 Jurassic World Adventures를 판매용 Bedrock 어드벤처 맵으로 소개. Transformers의 제작자 출시 연도 표시는 Minecraft 공식 출시 기사와 달라 공식 기사 2024년을 채택.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/de-de/marketplace/pdp/gamemode-one/sonic-add--on/f3e0a4be-8858-44d3-9ae8-91643db1b3f6",
+      "title": "Minecraft 공식 Gamemode One 연관 상품 목록",
+      "type": "공식",
+      "note": "별개 Sonic Add-On 상품의 '같은 제작자의 다른 콘텐츠'에 Sonic the Hedgehog 월드 1,340 Minecoins를 표시. Add-On 자체 설명·가격을 월드 규칙으로 섞지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/fr-ca/marketplace/pdp/syclone-studios/jurassic-world-adventures/518b5011-bff4-46a1-a7a2-750818f75157",
+      "title": "Minecraft 공식 Syclone 연관 상품 목록",
+      "type": "공식",
+      "note": "'같은 제작자의 다른 콘텐츠'에 Transformers 월드 1,510 Minecoins 표시. 2026 Transformers Add-On은 별개 상품.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://everbloomgames.com/minecraft-maps/dnd/",
+      "title": "Everbloom Games Dungeons & Dragons 공식 상품",
+      "type": "공식",
+      "note": "1,510 Minecoins·어드벤처 맵·싱글/멀티 지원 표시. 2025 A New Quest와 별개인 2023 원본 월드.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/dungeons-dragons-dlc",
+      "title": "Dungeons & Dragons Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2023-09-26 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/new-jurassic-world-adventures",
+      "title": "Jurassic World Adventures Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2023-12-08 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/transformers-dlc",
+      "title": "Transformers Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2024-09-24 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/pdp?id=abac29cb-2229-4423-94a7-db2383ad4089",
+      "title": "Path of the Jedi 공식 Marketplace 연결",
+      "type": "공식",
+      "note": "공식 출시 기사의 정확한 상품 UUID 연결. 조회 환경에서 동적 상품 본문·가격은 미노출.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/star-wars-returns-new-mission",
+      "title": "Star Wars: Path of the Jedi Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2023-11-07 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/new-avatar-adventure",
+      "title": "Avatar Legends Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2022-12-06 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/creator",
+      "title": "Minecraft 공식 Creator Showcase",
+      "type": "공식",
+      "note": "현행 제작자 사례에 Sonic 월드를 소개. 쇼케이스 노출이 현재 플레이 순위를 뜻하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/sonic-hedgehog-dlc-here",
+      "title": "Sonic the Hedgehog Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2021-06-22 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/spongebob-dlc-arrives-minecraft",
+      "title": "SpongeBob SquarePants Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2022-07-26 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/pdp?id=46913ebe-392d-454a-8b26-78d513e8bd1d",
+      "title": "Disney Worlds of Adventure 공식 Marketplace 연결",
+      "type": "공식",
+      "note": "공식 출시 기사에서 연결하는 정확한 월드 상품. 동적 상품 가격과 실제 구매창 미노출.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/disney-worlds-adventure",
+      "title": "Disney Worlds of Adventure Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2023-08-22 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://everbloomgames.com/minecraft-maps/universal-studios-experience/",
+      "title": "Everbloom Games Universal Studios Experience 공식 상품",
+      "type": "공식",
+      "note": "1,510 Minecoins·어드벤처 맵·싱글/멀티 지원 표시.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://everbloomgames.com/minecraft-maps/universal-studios-experience/faq/",
+      "title": "Universal Studios Experience 제작자 FAQ",
+      "type": "공식",
+      "note": "업데이트 이후 빈 월드 로드 문제·멀티 접속 주의 안내가 있으나 게시 시점/버전 미표시. 현재 동일 문제가 지속된다고 단정하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/universal-studios-experience-dlc",
+      "title": "Universal Studios Experience Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2024-02-13 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/marketplace/category/mini-games",
+      "title": "Minecraft 공식 미니게임 카탈로그",
+      "type": "공식",
+      "note": "현재 검색 색인의 대표 미니게임 목록에 Camp Enderwood·Free 표시. 전체 장르 인기 Top10이나 플레이량 순위를 주장하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/article/welcome-camp-enderwood",
+      "title": "Camp Enderwood Minecraft 공식 출시 소개",
+      "type": "공식",
+      "note": "2023-01-31 출시 소개의 실제 월드 규칙 확인. 현재 판매·모든 기기 호환·업데이트 보장을 의미하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/usage-guidelines",
+      "title": "Minecraft 공식 이용 가이드라인",
+      "type": "공식",
+      "note": "개인 서버 유료 혜택은 다른 플레이어 경험·경쟁 우위를 해치지 않아야 한다는 조건과 치장 판매 조건 확인. 추천 과금의 플랫폼 조건 근거.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.minecraft.net/en-us/partner",
+      "title": "Minecraft 공식 Marketplace 파트너 프로그램",
+      "type": "공식",
+      "note": "판매용 맵 등록에는 파트너 요건·포트폴리오·상품 자료·개별 제출물 검토가 있음. 신규 1인 개발자의 즉시 무심사 입점을 전제하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/introduction?view=minecraft-bedrock-stable",
+      "title": "Microsoft Bedrock 공식 스크립팅 입문",
+      "type": "공식",
+      "note": "Bedrock 제작의 behavior pack·스크립트 워크플로 참고. 작은 맵 MVP를 권장하며 에디션 간 코드를 자동 호환한다고 보지 않음.",
+      "accessed": "2026-10-13"
+    }
+  ]
+}

@@ -1,0 +1,1049 @@
+{
+  "market": "워크래프트 3 유즈맵",
+  "scope": "워크래프트 III의 실제 커스텀맵 20선을 2개 제작 메커니즘으로 비교한다. 2026년에 갱신된 계승작과 고전 보관본을 구분해 함께 다뤘다. 한국·전 세계 현재 접속자 순위나 장르 전체 Top 10을 주장하지 않는다.",
+  "methodology": [
+    "기준일 2026-10-13(KST). 제작자의 Hive 리소스/프로젝트 소개, Blizzard의 고전 디자이너 자료, Epic War의 지정 맵 등록정보를 확인했다. 맵 바이너리·원작 아트를 다운로드하거나 실제 게임을 실행하지 않았다.",
+    "번호는 근거 기반 대표 10선의 조사 배열이다. 현재 갱신·설계 다양성·누적 배포 관심·역사적 의미를 고려한 표본이며 전체 다운로드 상위 10개나 한국 인기 순위가 아니다. 같은 맵의 여러 버전은 별도 게임으로 중복 계산하지 않는다.",
+    "2026년 갱신 맵과 고전 보관본의 상태를 행마다 표시한다. 저장소 재등록일은 원작 신규 업데이트나 개발 재개를 뜻하지 않는다. 중단 공지는 그 원작/배포 분기의 상태이며 후속 변형판 전체에 일반화하지 않는다.",
+    "Hive/Epic War 누적 다운로드는 해당 등록본/묶음의 관심 대리 지표다. 재다운로드·버전·노출기간의 영향을 받으며 Roblox 동접·메월 누적 이용자와 직접 비교하지 않는다. 국가별 플레이어·현재 로비 수·매출은 미확인.",
+    "권장 패치·SD/HD·Reforged 설명은 제작자/저장소 표기다. 실제 실행 검증을 하지 않았고 고전 표기 버전의 정확성·최신 클라이언트 호환을 보장하지 않는다.",
+    "현금 상품을 확인한 사례는 없다. 공개 다운로드·게임 내 골드 상점·자발 후원 링크를 유료 상품과 분리했다. Gaias/Sunken City의 후원도 금액·리워드·우대·매출을 확인하지 못해 productEvidence=false다.",
+    "인기 요소·공통점은 기능에서 도출한 해석이다. 후기·제작자의 인기 주장을 현재 점유율·인과관계로 취급하지 않는다. 제작자·기여자 표기는 자료의 크레딧이며 국적을 추정하지 않았다.",
+    "추천은 원작에서 참고한 메커니즘으로 새 규칙을 만드는 기획이다. WC3 시제품은 무료 배포로 검증한다. 유료 맵·VIP 우대 판매를 계획하지 않고 무혜택 후원과 자체 코드·아트의 독립 신작 과금안을 분리한다.",
+    "추천 기간은 1인·AI·주20시간·기초 엔진 경험·자체 아트를 전제로 한 MVP 추정이다. 대형 ORPG 저장/경제·수백 아이템·장시간 콘텐츠·실시간 온라인 운영은 초기 범위에서 제외한다."
+  ],
+  "categories": [
+    {
+      "id": "wc3-defense",
+      "name": "타워 디펜스·자동 전투·팀 전략",
+      "selectionBasis": "2026년 갱신/호환 안내가 있는 Castle Fight DE·Line Tower Wars·Magi Maul과 고전 TD의 배치·경제·미로·원소·커뮤니티 콘텐츠·미니게임 구조를 보여주는 10개를 선정했다. 현재 인기와 역사적 의미를 섞어 실측 순위로 만들지 않았다.",
+      "commonalities": [
+        "전투 전 구매·배치 → 자동 결과 관찰 → 다음 웨이브 개선",
+        "경제 투자와 즉시 수비 강화 사이 자원 선택",
+        "원소·종족·기술·아이템 조합으로 같은 지도에서 전략이 바뀜",
+        "협동 구간 분담·적 전송 경쟁이 친구와 할 이유",
+        "소수 선택의 의미와 읽히는 결과부터 검증하는 것이 1인 MVP에 적합"
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "name": "Castle Fight DE Beta 9.33",
+          "url": "https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/",
+          "description": "건물을 선택해 병력을 생산하고 상대 성을 무너뜨리는 자동 전투 중심 팀 전략.",
+          "features": [
+            "종족별 생산 건물과 병력 조합",
+            "직접 병력을 모두 조종하기보다 생산·조합 결정",
+            "경쟁 모드와 W3Champions 래더 안내"
+          ],
+          "popularityFactors": [
+            "분석: 생산 선택이 눈에 보이는 전선 변화로 이어짐",
+            "분석: 병력 상성과 팀 내 조합이 여러 전략을 만든다"
+          ],
+          "operatingStatus": "2026-09-13 배포본 갱신 · Hive 권장 2.00 · 실행 호환 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/castle-fight-de-beta-9-33.346513/",
+              "title": "Castle Fight DE Beta 9.33 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Frotty, wTc[JediMaster]; 원계열 geX로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 7459,
+            "lastUpdated": "2026-09-13",
+            "recommendedVersion": "2.00",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 재배포·버전·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Line Tower Wars: Reforged 12.4a",
+          "url": "https://www.hiveworkshop.com/threads/line-tower-wars-reforged.354130/",
+          "description": "타워로 방어하면서 옆 플레이어에게 적을 보내 수입과 공격을 함께 늘리는 타워 전쟁.",
+          "features": [
+            "적 전송과 방어의 자원 배분",
+            "기술 조합으로 타워 해금",
+            "AI 상대와 시즌 순위"
+          ],
+          "popularityFactors": [
+            "분석: 안전한 방어와 상대 압박의 선택이 반복해서 갈림",
+            "분석: 타워·적·기술 조합으로 같은 규칙 안의 변주가 많음"
+          ],
+          "operatingStatus": "2026-08-04 12.4a 등록 · 제작자 현대화/시즌 운영 안내 · Hive 권장 2.00 · 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/line-tower-wars-reforged.354130/",
+              "title": "Line Tower Wars: Reforged 12.4a 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "lolreported & Pokebunny로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "2026-08-04",
+            "recommendedVersion": "2.00",
+            "metricScope": "제작자 배포본·시즌 안내. 현재 로비 수는 조사하지 않음",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 3,
+          "name": "Magi Maul v7.7",
+          "url": "https://www.hiveworkshop.com/threads/magi-maul-v7-7.259682/",
+          "description": "각자의 방어선을 지키거나 중앙에 모여 여러 종족 타워로 웨이브를 막는 협동 TD.",
+          "features": [
+            "최대 6명 협동과 중앙 전용 모드",
+            "11개 종족의 타워·업그레이드·연구",
+            "제작자가 Reforged용으로 설계했다고 명시"
+          ],
+          "popularityFactors": [
+            "분석: 친구와 방어 구간·역할을 나누기 쉬움",
+            "분석: 종족과 타워 조합을 바꾸는 재도전 목표"
+          ],
+          "operatingStatus": "2026-08-09 배포본 갱신 · Hive 권장 2.00 · 실제 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/magi-maul-v7-7.259682/",
+              "title": "Magi Maul v7.7 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Auriel (게시 계정 watterly)로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "2026-08-09",
+            "recommendedVersion": "2.00",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 4,
+          "name": "Green Circle Team TD v3.5",
+          "url": "https://www.hiveworkshop.com/threads/green-circle-team-td-v3-5-official.316779/",
+          "description": "두 명씩 팀을 이뤄 원형 구역에 쌓이는 적을 제거하며 다른 팀보다 오래 버티는 TD.",
+          "features": [
+            "4개 팀의 원형 방어 구역",
+            "적 누적 수가 한도를 넘으면 패배",
+            "대공·광역·독·오라 타워 조합"
+          ],
+          "popularityFactors": [
+            "분석: 적이 쌓이는 양을 보며 위험을 즉시 읽을 수 있음",
+            "분석: 함께 막는 협력과 팀 간 생존 경쟁이 공존"
+          ],
+          "operatingStatus": "페이지 갱신 2025-08-07 / 파일 갱신 2024-12-16 · Hive 권장 2.00 · 최신 실행 미검증",
+          "monetization": {
+            "summary": "배포자는 공식 다운로드 경로를 안내한다. 공개 소개에서 유료 맵·현금 아이템 상품은 확인하지 못했다.",
+            "verified": [
+              "제작자 공개 배포 페이지와 원 제작자·수정자 크레딧 확인"
+            ],
+            "unverified": [
+              "외부 서버 결제·후원과 현재 인게임 현금 상품·가격 미확인. 지도 안에서 쓰는 골드는 현금 과금 근거가 아니다."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/green-circle-team-td-v3-5-official.316779/",
+              "title": "Green Circle Team TD v3.5 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Ishachus & Garfielf; 원 Green Circle 계열 Hit!로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "페이지 2025-08-07 / 파일 2024-12-16",
+            "recommendedVersion": "2.00",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 5,
+          "name": "Legion TD Mega 3.5 (B4)",
+          "url": "https://www.hiveworkshop.com/threads/legion-td-mega-3-5-b4-3-41-unprotect.194224/",
+          "description": "전투 전에 수비 유닛을 배치하고 웨이브를 자동으로 맞서는 군단 방어 전략.",
+          "features": [
+            "여러 빌더·유닛 조합",
+            "경제 성장과 수비력의 균형",
+            "팀 왕 방어·용병 전송"
+          ],
+          "popularityFactors": [
+            "분석: 전투의 결과를 보며 다음 배치를 개선하는 루프",
+            "분석: 경제에 투자할지 즉시 수비할지 매 웨이브 선택"
+          ],
+          "operatingStatus": "역사적 대표 배포본 · 3.5(B4) 파일 2012-10-07 / 리소스 묶음 2016-07-02 갱신 · 권장 1.19~1.21b · 현행 Reforged 호환 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/legion-td-mega-3-5-b4-3-41-unprotect.194224/",
+              "title": "Legion TD Mega 3.5 (B4) 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "HuanAk; 원 Legion TD LISK로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 76166,
+            "lastUpdated": "묶음 2016-07-02; 선정 파일 2012-10-07",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 재배포·버전·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 6,
+          "name": "Element TD Survivor 4.3b",
+          "url": "https://www.hiveworkshop.com/threads/element-td-survivor-4-3b.125024/",
+          "description": "적의 원소 상성을 읽고 원소를 조합한 타워로 정해진 경로의 적을 막는 TD.",
+          "features": [
+            "6개 원소 상성과 이중·삼중 원소 타워",
+            "원소 수호자를 처치하여 기술 해금",
+            "공격 타워와 보조 타워의 조합"
+          ],
+          "popularityFactors": [
+            "분석: 원소 선택에 따라 다른 기술 트리가 열림",
+            "분석: 불리한 웨이브를 준비하는 전략 학습이 반복 동기"
+          ],
+          "operatingStatus": "역사적 대표 4.3b 보관본 · 2011-01-02 갱신 · 권장 1.19~1.21b · 현대 패치 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/element-td-survivor-4-3b.125024/",
+              "title": "Element TD Survivor 4.3b 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Karawasa & mrchak로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 67929,
+            "lastUpdated": "2011-01-02",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 재배포·버전·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 7,
+          "name": "Burbenog TD v2.33 — Editor’s Version",
+          "url": "https://www.hiveworkshop.com/threads/burbenog-td-v2-33-editors-version.356467/",
+          "description": "여러 빌더와 특수 타워를 조합해 웨이브를 처리하는 고전 협동 TD의 공개 편집본.",
+          "features": [
+            "2명 또는 4명 권장",
+            "빌더·특수 타워·난이도별 웨이브",
+            "원 제작자의 편집 허용과 소스 보관 안내"
+          ],
+          "popularityFactors": [
+            "분석: 서로 다른 타워 역할을 맞추는 협동 설계",
+            "분석: 편집·변형이 가능한 구조가 커뮤니티 확장에 도움"
+          ],
+          "operatingStatus": "고전 원작의 보관·편집본 · 저장소 2024-11-08 갱신이 원작 개발 재개를 뜻하지 않음 · 권장 1.19~1.21b · 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/burbenog-td-v2-33-editors-version.356467/",
+              "title": "Burbenog TD v2.33 — Editor’s Version 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Shvegait (원 제작자), Ralle (보관·업로더)로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 1707,
+            "lastUpdated": "저장소 2024-11-08",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 재배포·버전·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 8,
+          "name": "eeve! TD v1.01",
+          "url": "https://www.hiveworkshop.com/threads/eeve-td-v1-01.170270/",
+          "description": "원소 타워와 장애물로 자기 미로를 만들고 무작위 웨이브를 견디는 개인 중심 TD.",
+          "features": [
+            "6개 원소·혼합 원소 기술",
+            "타워와 블로커 수 제한 안의 미로 설계",
+            "타워 경험치·아이템과 도전 웨이브"
+          ],
+          "popularityFactors": [
+            "분석: 경로 설계와 타워 성장이라는 두 개선 목표",
+            "분석: 같은 세팅에서도 웨이브 속성 변화에 대응"
+          ],
+          "operatingStatus": "고전 2010-06-18 보관본 · 권장 1.19~1.21b · 제작자 소개는 팀 모드 불안정도 명시 · 현재 호환 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 자료에서 맵 이용료·유료 아이템 상품을 확인하지 못했다. 다운로드 링크와 현금 과금 부재의 보장은 구분한다.",
+            "verified": [
+              "해당 소개/맵 저장소의 공개 배포·소개 자료 확인"
+            ],
+            "unverified": [
+              "이 맵의 후원 운영·외부 서버 상품·게임 내 결제·현행 가격은 미확인. 인게임 골드·아이템 상점은 현금 상품으로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/eeve-td-v1-01.170270/",
+              "title": "eeve! TD v1.01 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "geX; Numerion이 허가받아 올렸다고 소개로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 619,
+            "lastUpdated": "2010-06-18",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 재배포·버전·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 9,
+          "name": "YouTD",
+          "url": "https://www.hiveworkshop.com/threads/youtd-its-your-tower-defense.137336/",
+          "description": "이용자가 만든 타워·아이템을 통합하고 무작위 적에 대응하는 커뮤니티 제작형 TD.",
+          "features": [
+            "커뮤니티 타워·아이템 제작 체계",
+            "무작위 적 능력·속성",
+            "타워 강화 아이템과 고득점 생존"
+          ],
+          "popularityFactors": [
+            "분석: 사용자 콘텐츠가 다른 전략과 타워 경험을 공급",
+            "분석: 매판 적 조건에 맞추는 적응과 수집의 결합"
+          ],
+          "operatingStatus": "2009년 제작자 소개 기반 역사적 설계 사례 · 최신 정식 배포본·현행 패치 호환 미확인 · 독립 리메이크 YouTD 2와 구분",
+          "monetization": {
+            "summary": "원 제작자의 공개 프로젝트 소개에서 타워 제작·배포 구조를 확인했다. 현금 상품이나 플레이 요금 정책은 확인하지 못했다.",
+            "verified": [
+              "원 제작자의 커뮤니티 타워·아이템 기여 절차 설명"
+            ],
+            "unverified": [
+              "현재 원 맵의 유료 상품·후원·가격 및 공식 최신 다운로드 경로 미확인. 동명 독립 리메이크의 판매 정책은 이 맵에 적용하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/youtd-its-your-tower-defense.137336/",
+              "title": "YouTD 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "geX (gexxo)와 YouTD 커뮤니티로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "소개 글 2009년",
+            "metricScope": "제작자가 직접 설명한 역사적 프로젝트. 현재 다운로드/동접 통계로 사용하지 않음",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 10,
+          "name": "Skibi’s Castle TD (Skibi 6 설계 자료)",
+          "url": "https://classic.battle.net/mod/dev/skibi.shtml",
+          "description": "공격 웨이브 사이에 미니게임을 넣어 방어와 짧은 경쟁의 리듬을 교차시키는 TD.",
+          "features": [
+            "웨이브 사이 미니게임",
+            "영웅 빌더와 여러 모드",
+            "종합 점수·자동 재시작"
+          ],
+          "popularityFactors": [
+            "분석: 반복 방어 사이 다른 행동을 넣어 피로를 줄임",
+            "분석: 친구들이 같은 방에서 여러 종류의 실력을 보여줄 기회"
+          ],
+          "operatingStatus": "역사적 대표 · Blizzard 공식 디자이너 노트 보관 자료 · 현재 배포 파일·최신 패치 호환 미확인",
+          "monetization": {
+            "summary": "Blizzard가 공개한 고전 커스텀맵 설계 자료다. 현재 맵별 결제 상품이나 요금 정책은 확인하지 못했다.",
+            "verified": [
+              "공식 디자이너 노트에 맵 구성·기능 설명 존재"
+            ],
+            "unverified": [
+              "현행 맵 배포 상태·외부 후원·유료 상품·가격 미확인."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://classic.battle.net/mod/dev/skibi.shtml",
+              "title": "Skibi’s Castle TD (Skibi 6 설계 자료) 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Blizzard의 Skibi 6 디자이너 노트로 표기된 설명·버전 자료를 확인. 최신 전체 변형판이나 국가별 인기 순위의 증거는 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "metricScope": "Blizzard 공식 과거 설계 자료; 현재 인기·접속자 지표 없음",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정된 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "세 칸 원소 조립소",
+          "pitch": "세 개의 타워 슬롯에 두 원소를 조합하며 10분 방어를 완성하는 작은 전략.",
+          "mvp": [
+            "고정 경로 1개·타워 슬롯 3개",
+            "기본 원소 3종·조합 타워 6종",
+            "15웨이브·적 상성 3종",
+            "로컬 저장·즉시 재시작"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "3~5주(60~100시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 타워 외형·전장 테마를 확정 가격으로 판매; 점수·공격력은 동일.",
+          "why": "Element TD의 원소 선택과 eeve! TD의 배치 자원 제한을 소수 슬롯으로 축소한다. 복잡한 길찾기·다인전 없이 선택의 재미를 검증할 수 있다.",
+          "risks": [
+            "상성이 정답 하나로 굳으면 재플레이가 약해짐",
+            "복잡한 툴팁 대신 결과가 보이는 피드백 필요"
+          ],
+          "buildNext": "원소 2개·타워 3종·5웨이브부터 만들고 서로 다른 조합이 비슷한 성공률을 내는지 반복 플레이로 확인.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        },
+        {
+          "name": "쌍둥이 로봇 방어선",
+          "pitch": "두 방어선에 로봇을 나눠 배치하고 자동 전투 결과를 보며 다음 편성을 바꾸는 협동 방어.",
+          "mvp": [
+            "로봇 6종·앞뒤 6칸 배치",
+            "2개 방어선·10웨이브",
+            "공유 자원·구매와 합성",
+            "혼자 두 구간 플레이 우선"
+          ],
+          "difficulty": "중간",
+          "effort": "4~6주(80~120시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 로봇 색상·격납고 배경·승리 연출 확정 구매.",
+          "why": "Legion TD의 전투 전 배치와 Magi Maul의 협동 방어를 적은 유닛·짧은 세션으로 압축한다.",
+          "risks": [
+            "자동 전투 결과를 이해할 수 있는 피드백 필요",
+            "온라인 협동·이탈 처리는 별도 범위"
+          ],
+          "buildNext": "단일 방어선에서 로봇 3종의 배치 차이가 결과를 바꾸는지 검증한 뒤 두 번째 방어선과 협동을 추가.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        },
+        {
+          "name": "5분 미니 탑 전쟁",
+          "pitch": "방어선에서 버티면서 상대에게 적을 보내는 5분 자원 배분 대전.",
+          "mvp": [
+            "타워 4종·적 전송 3종",
+            "수입과 방어 구매 중 선택",
+            "AI 상대 1명·5분 제한",
+            "오프라인 기록·재대결"
+          ],
+          "difficulty": "중간",
+          "effort": "4~7주(80~140시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 타워 장식·기지 스킨 판매; 수입 배수·공격력 판매는 넣지 않는다.",
+          "why": "Line Tower Wars의 공격/방어 선택과 Castle Fight의 읽히는 전선을 작은 단위로 재구성한다.",
+          "risks": [
+            "자원 눈덩이·선승자 우위",
+            "온라인 PVP의 서버 판정·지연 대응"
+          ],
+          "buildNext": "AI와 방어 우선/경제 우선 전략을 대결시켜 양쪽 모두 승리 조건이 있는지 확인한 뒤 온라인을 검토.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        }
+      ],
+      "listLabel": "대표 10선"
+    },
+    {
+      "id": "wc3-heroes",
+      "name": "협동 RPG·영웅 방어·파티 대전",
+      "selectionBasis": "2026년 갱신 자료가 있는 Sunken City·Gaias·The Black Road·Warlock과 저장 성장·팀 영웅 방어·짧은 대전/파티의 고전 6개를 골랐다. 영웅 선택·성장·협력이라는 제작 축으로 비교하며 단일 콘텐츠 장르 전체 순위가 아니다.",
+      "commonalities": [
+        "영웅·기술·장비 선택으로 맡는 역할이 드러남",
+        "파티 역할·상대 상호작용이 매판 새로운 사건을 만듦",
+        "RPG는 저장·장비·직업의 장기 성장, 대전/파티는 빠른 재경쟁이 각각 재방문 동기",
+        "보스 패턴·함정·넉백·룰 변화가 행동을 바꾸며 반복 피로를 보완",
+        "지속형 RPG의 큰 저장·콘텐츠 비용을 피하려면 짧은 세션과 소수 기술로 검증"
+      ],
+      "games": [
+        {
+          "rank": 1,
+          "name": "Sunken City v2.5.2a",
+          "url": "https://www.hiveworkshop.com/threads/sunken-city-v2-5-2a.168086/",
+          "description": "영웅을 골라 퍼즐·함정·퀘스트·보스를 통과하는 협동 던전 탐험.",
+          "features": [
+            "영웅 커스터마이즈와 장비",
+            "2~3명 권장·혼자 플레이도 가능하다고 소개",
+            "전투와 퍼즐·함정의 교차"
+          ],
+          "popularityFactors": [
+            "분석: 역할 조합과 함께 해결하는 장애물이 협력을 유도",
+            "분석: 단순 수치 성장과 다른 발견·퍼즐의 성취"
+          ],
+          "operatingStatus": "2026-09-05 배포본 갱신 · Hive 권장 2.00/SD · 실제 실행 미검증",
+          "monetization": {
+            "summary": "제작자 페이지에 Patreon 지원과 PayPal 기부 안내가 있다. 맵 유료 판매나 인게임 우대 상품의 존재는 확인하지 못했다.",
+            "verified": [
+              "제작자 맵 페이지의 Patreon 지원·PayPal 기부 안내 확인",
+              "공개 맵 배포 자료 확인"
+            ],
+            "unverified": [
+              "후원 요금·리워드·인게임 혜택·실제 매출 미확인. 기부 안내를 유료 아이템 판매로 해석하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/sunken-city-v2-5-2a.168086/",
+              "title": "Sunken City v2.5.2a 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "SpasMaster; 전투 설계 Vunjo로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "2026-09-05",
+            "recommendedVersion": "2.00",
+            "metricScope": "제작자 배포본과 소개. 현재 참가자 규모·유료 후원 전환율 미확인",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 2,
+          "name": "Gaias Retaliation ORPG v1.3A(12)",
+          "url": "https://www.hiveworkshop.com/threads/gaias-retaliation-orpg-v1-3a-12.144066/",
+          "description": "퀘스트·직업 성장·장비와 던전을 함께 탐험하는 저장형 온라인 RPG.",
+          "features": [
+            "세션을 넘기는 캐릭터 저장과 버전 변환",
+            "직업·장비·연금술 등 성장",
+            "던전·보스·탐험"
+          ],
+          "popularityFactors": [
+            "분석: 한 판 밖으로 이어지는 캐릭터 애착",
+            "분석: 친구와 역할을 나눠 더 어려운 도전에 진입"
+          ],
+          "operatingStatus": "2026-09-15 페이지 갱신 · 제작자가 Reforged 호환 수정 명시 · 실제 실행/저장 변환 미검증",
+          "monetization": {
+            "summary": "제작자 페이지에 커피 후원 안내가 있다. 공개 자료에서 현금으로 사는 장비·우대 상품은 확인하지 못했다.",
+            "verified": [
+              "원 제작자 페이지의 커피 후원 링크와 공개 배포 확인"
+            ],
+            "unverified": [
+              "후원 금액·혜택·현재 운영·인게임 유료 상품 미확인. 후원 링크만으로 플레이 우대 판매를 추정하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/gaias-retaliation-orpg-v1-3a-12.144066/",
+              "title": "Gaias Retaliation ORPG v1.3A(12) 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Zwiebelchen, Jumbo, SHBlade 등로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 251423,
+            "lastUpdated": "2026-09-15",
+            "recommendedVersion": "제작자 Reforged 호환 안내",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 3,
+          "name": "The Black Road v1.39h",
+          "url": "https://www.hiveworkshop.com/threads/the-black-road-v1-39h.322223/",
+          "description": "고대 그리스 신화 세계에서 영웅을 성장시키며 악마·신화적 위협에 맞서는 협동 RPG.",
+          "features": [
+            "2~8명 권장",
+            "그리스 신화 배경의 탐험·전투",
+            "영웅과 장비 성장"
+          ],
+          "popularityFactors": [
+            "분석: 분명한 세계관이 성장에 이야기 목표를 부여",
+            "분석: 파티로 도전할 적과 성장 결과가 장기 플레이 동기"
+          ],
+          "operatingStatus": "2026-09-19 배포본 갱신 · Hive 권장 3.00/SD · 실제 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/the-black-road-v1-39h.322223/",
+              "title": "The Black Road v1.39h 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Deviance와 Alteisen(Av3n); 계승 개발 크레딧 공개로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "lastUpdated": "2026-09-19",
+            "recommendedVersion": "3.00",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 4,
+          "name": "Warlock Community Edition 1.10F",
+          "url": "https://www.hiveworkshop.com/threads/warlock-1-10f.92687/",
+          "description": "줄어드는 경기장에서 마법으로 상대를 밀어내는 영웅 난투.",
+          "features": [
+            "축소되는 플랫폼과 넉백",
+            "캐릭터·마법 선택",
+            "커뮤니티가 이어가는 버전 개발"
+          ],
+          "popularityFactors": [
+            "분석: 체력 수치보다 밀어내기라는 읽기 쉬운 결과",
+            "분석: 회피·위치 선정·짧은 대결이 재경쟁을 유도"
+          ],
+          "operatingStatus": "2026-10-09 1.10F 갱신 · 제작자: 최신 Reforged용, 이전 패치 불가 · 권장 3.00 · 실행 미검증",
+          "monetization": {
+            "summary": "공개 리소스에 원작·고전 커뮤니티판·Reforged판을 함께 배포한다. 현금 상품·이용료는 확인하지 못했다.",
+            "verified": [
+              "1.02·1.08M·1.10F를 다른 호환 분기로 설명하고 공개 배포"
+            ],
+            "unverified": [
+              "외부 후원·커뮤니티 서버 결제·인게임 현금 상품 및 가격 미확인. 지도 내 선택 비용은 현금 가격으로 인용하지 않음."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/warlock-1-10f.92687/",
+              "title": "Warlock Community Edition 1.10F 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Zymoran·Adynathos 원작, Quetra 등 커뮤니티 계승로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 72084,
+            "lastUpdated": "2026-10-09",
+            "recommendedVersion": "3.00",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 5,
+          "name": "DotA Allstars — v6.83d 보관본",
+          "url": "https://www.epicwar.com/maps/254544/",
+          "description": "다양한 영웅을 선택해 팀으로 상대 고대 유적을 무너뜨리는 영웅 중심 전장.",
+          "features": [
+            "112개 영웅이 기재된 배포본",
+            "팀 전장과 상대 기지 목표",
+            "영웅 성장·아이템 선택"
+          ],
+          "popularityFactors": [
+            "분석: 서로 다른 영웅 역할과 팀 조합",
+            "분석: 성장·전투·지도 판단이 반복 경기에서 숙련 목표"
+          ],
+          "operatingStatus": "역사적 대표 2015-06-16 등록본 · 최신 DotA 계열 전체나 Dota 2의 현재 상태를 뜻하지 않음 · 현대 패치 호환 미검증",
+          "monetization": {
+            "summary": "Epic War에 등록된 고전 배포본이다. 이 Warcraft III 맵의 현금 상품·후원 정책은 확인하지 못했다.",
+            "verified": [
+              "v6.83d 맵 자료와 공개 배포 링크 확인"
+            ],
+            "unverified": [
+              "외부 사설 플랫폼 이용료·현재 DotA 변형판 상품 미확인. Dota 2의 외형 판매 정책은 이 맵의 과금 근거가 아님."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.epicwar.com/maps/254544/",
+              "title": "DotA Allstars — v6.83d 보관본 맵 자료",
+              "type": "커뮤니티 맵 저장소 등록정보",
+              "note": "저장소 제작자 표기 IceFrog로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 357302,
+            "lastUpdated": "등록 2015-06-16",
+            "recommendedVersion": "저장소 표기 1.19~1.21b; 실제 호환 미검증",
+            "metricScope": "Epic War 이 등록본의 누적 다운로드. 동일 지도 다른 버전·사이트 수치는 합산하지 않음",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 6,
+          "name": "Enfo’s TS: MT Edition 1.93",
+          "url": "https://www.hiveworkshop.com/threads/enfos-ts-mt-edition-1-93.81150/",
+          "description": "영웅을 골라 적 웨이브를 막으면서 두 팀의 생존을 겨루는 영웅 방어.",
+          "features": [
+            "영웅 스킬과 장비 성장",
+            "적의 목표 지점 도달을 방어",
+            "Spell Bringer를 통한 전장 개입"
+          ],
+          "popularityFactors": [
+            "분석: 팀 내 역할 분담과 상대 팀 견제가 함께 작동",
+            "분석: 다양한 영웅 조합으로 같은 웨이브를 다르게 해결"
+          ],
+          "operatingStatus": "역사적 2011-10-30 배포본 · 후속 변형판 운영과 구분 · 현행 패치 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/enfos-ts-mt-edition-1-93.81150/",
+              "title": "Enfo’s TS: MT Edition 1.93 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Enfo 원작·MT Team/mecatronic로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 52898,
+            "lastUpdated": "2011-10-30",
+            "recommendedVersion": "고전 파일; 현행 호환 미검증",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 7,
+          "name": "X Hero Siege 3.33",
+          "url": "https://www.hiveworkshop.com/threads/x-hero-siege-3-33.76776/",
+          "description": "영웅을 선택해 성을 지키고 어둠의 군대를 격파하는 협동 영웅 방어.",
+          "features": [
+            "여러 영웅과 성장 스킬",
+            "성 방어와 적 웨이브",
+            "아이템·난이도·Dual Hero 변형 모드"
+          ],
+          "popularityFactors": [
+            "분석: 큰 적 무리를 정리하는 힘의 성장",
+            "분석: 친구와 담당 구간을 나누는 협동 성취"
+          ],
+          "operatingStatus": "역사적 2009-01-24 보관본 · Hive 권장 1.22a · 최신 변형판·현행 Reforged 호환 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/x-hero-siege-3-33.76776/",
+              "title": "X Hero Siege 3.33 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Sogat로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 83379,
+            "lastUpdated": "2009-01-24",
+            "recommendedVersion": "1.22a",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 8,
+          "name": "Uther Party Ultima-X",
+          "url": "https://www.epicwar.com/maps/109209/",
+          "description": "무작위로 선택되는 다양한 미니게임에서 친구와 승부하는 파티 맵.",
+          "features": [
+            "4~8명 권장",
+            "무작위 미니게임 순환",
+            "라운드별 조작·목표 변화"
+          ],
+          "popularityFactors": [
+            "분석: 한 가지 조작에 오래 묶이지 않는 다양성",
+            "분석: 새 규칙을 함께 발견하며 실력 차이를 완화할 수 있음"
+          ],
+          "operatingStatus": "역사적 2009-09-04 등록본 · 후속 버전 존재 표시 · 고전 버전 권장 1.19~1.21b · 현대 호환 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.epicwar.com/maps/109209/",
+              "title": "Uther Party Ultima-X 맵 자료",
+              "type": "커뮤니티 맵 저장소 등록정보",
+              "note": "TheZizz(초기~0.50), Ancanus(0.50~Ultima-X) 표기로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 96258,
+            "lastUpdated": "등록 2009-09-04",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Epic War 지정 배포본 누적 다운로드. 전체 Uther Party 계열·실제 플레이어 수 아님",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 9,
+          "name": "TKoK — Eastern Kingdom 3.3.0f",
+          "url": "https://www.hiveworkshop.com/threads/tkok-eastern-kingdom-3-3-0f.146077/",
+          "description": "능력치·특성·장비를 조합하고 역할을 나누며 스크립트 보스를 공략하는 저장형 협동 RPG.",
+          "features": [
+            "저장/불러오기와 영웅 성장",
+            "위협도 기반 탱커 역할",
+            "특성 트리·전체 화면 장비 UI·보스 패턴"
+          ],
+          "popularityFactors": [
+            "분석: 직업 역할과 보스 공략을 배우는 팀 성취",
+            "분석: 장비·특성 조합이 장기 성장 목표를 만듦"
+          ],
+          "operatingStatus": "본 3.3.0f 프로젝트 페이지는 독립판 개발을 위해 중단했다고 명시 · 파일 2013-08-14 · 후속 커뮤니티 분기의 현재 상태로 일반화하지 않음",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/tkok-eastern-kingdom-3-3-0f.146077/",
+              "title": "TKoK — Eastern Kingdom 3.3.0f 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Crimson Creations Team & TGM Team / PheoniX_VII로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 235700,
+            "lastUpdated": "2013-08-14",
+            "recommendedVersion": "1.19~1.21b; 현재 실행 미검증",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        },
+        {
+          "rank": 10,
+          "name": "Dark Invasion II v2.14",
+          "url": "https://www.hiveworkshop.com/threads/dark-invasion-ii-v2-14.99774/",
+          "description": "독자적인 전투 시스템과 넓은 세계를 갖춘 고전 협동 ORPG.",
+          "features": [
+            "자체 전투 시스템",
+            "3~10명 권장",
+            "넓은 탐험 지도와 파티 중심 RPG"
+          ],
+          "popularityFactors": [
+            "분석: 새 전투 규칙과 넓은 세계의 발견",
+            "분석: 공동 탐험이 파티 경험과 캐릭터 애착을 만듦"
+          ],
+          "operatingStatus": "원 제작자: 2010-01-20 개발 중단(2013년 확인 글) · 선정 파일 2009-09-25 · 현대 실행 미검증",
+          "monetization": {
+            "summary": "공개 맵 배포 페이지에서 맵 이용료·현금 아이템 상품을 확인하지 못했다. 무료 다운로드 안내를 모든 외부 운영의 무과금 보장으로 확장하지 않았다.",
+            "verified": [
+              "해당 맵 저장소의 공개 배포 페이지 확인"
+            ],
+            "unverified": [
+              "맵별 후원·외부 서버 상품·현금 과금·현행 가격은 미확인. 게임 안의 골드·상점은 현금 결제 상품과 구분."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.hiveworkshop.com/threads/dark-invasion-ii-v2-14.99774/",
+              "title": "Dark Invasion II v2.14 맵 자료",
+              "type": "제작자·공개 리소스 자료",
+              "note": "Arkan & Pidda로 표기된 소개·버전·기록 확인. 자료의 원본/계열과 지정 배포본을 구분했으며 한국 순위 근거가 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.hiveworkshop.com/threads/dark-invasion-ii-v2-14.99774/page-6",
+              "title": "원 제작자의 개발 중단 확인",
+              "type": "제작자 발언",
+              "note": "Pidda가 2013-01-12 글에서 2010-01-20 중단과 당시 2.14 최종판을 명시. 이후 모든 변형판 운영 상태를 뜻하지 않음.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "downloads": 67527,
+            "lastUpdated": "2009-09-25",
+            "recommendedVersion": "1.19~1.21b",
+            "metricScope": "Hive 리소스 묶음 누적 다운로드. 파일 버전·재배포·자료 노출기간 영향을 받는 관심 대리 지표.",
+            "asOf": "2026-10-13 KST",
+            "metricLabel": "지정 맵 페이지·배포본의 기록; 동접·한국 이용자·매출 순위 아님"
+          }
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "세 기술 등대 원정",
+          "pitch": "기술 세 개로 다섯 방을 통과하며 등대의 불을 켜는 12분 협동 던전.",
+          "mvp": [
+            "영웅 2종·기술 각 3개",
+            "방 5개·적 3종·보스 1종",
+            "피하기·차단·구조의 명료한 패턴",
+            "한 판 장비 6종; 영구 RPG는 후속"
+          ],
+          "difficulty": "중간~높음",
+          "effort": "5~8주(100~160시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 영웅 의상·등대 장식 확정 판매. 경험치·희귀 장비 가속은 초기 MVP에 넣지 않는다.",
+          "why": "Sunken City의 퍼즐·전투 교차와 TKoK의 역할 공략을 짧은 원정으로 축소한다. 대형 ORPG를 만들기 전에 핵심 전투를 검증한다.",
+          "risks": [
+            "스킬 상호작용·보스 AI·역할 밸런스",
+            "온라인 협동의 위치·체력 동기화"
+          ],
+          "buildNext": "방 하나와 보스 패턴 둘을 먼저 완성. 설명 없이 위험 신호를 읽는지 5명에게 테스트하고 역할 협동 추가.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        },
+        {
+          "name": "밀어내기 원형 경기장",
+          "pitch": "세 가지 마법으로 상대를 밀어내고 마지막까지 남는 짧은 난투.",
+          "mvp": [
+            "축소 경기장 1개",
+            "직선 밀치기·보호막·짧은 대시",
+            "연습 AI·60초 라운드",
+            "반격·낙하를 보여주는 단순 효과"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "3~5주(60~100시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 마법 색상·아바타·탈락 연출 판매; 기술 수치·쿨다운은 동일.",
+          "why": "Warlock의 읽기 쉬운 넉백 결과와 Uther Party의 짧은 경쟁을 간단한 입력으로 바꾼다.",
+          "risks": [
+            "충돌·넉백 규칙의 일관성",
+            "온라인 지연에 따른 회피 판정"
+          ],
+          "buildNext": "AI 하나와 밀치기 한 기술로 20회 라운드 테스트. 사거리·넉백 거리·축소 속도를 조정한 뒤 기술을 셋으로 확장.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        },
+        {
+          "name": "90초 직장 파티",
+          "pitch": "협동 배송·버튼 타이밍·자리 찾기를 90초씩 돌리는 작은 파티.",
+          "mvp": [
+            "미니게임 3종·각 90초",
+            "공통 이동·상호작용 조작",
+            "무작위 순서·3판 종합 점수",
+            "연습 모드·로컬 2인 플레이"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "3~6주(60~120시간) · 1인·AI 보조·주20시간·기초 엔진 경험·재사용 자체 아트 전제의 작은 MVP 추정. 온라인 상용 운영과 대형 아트 제작 별도.",
+          "monetization": "WC3 시제품은 무료 배포하고 후원은 게임 혜택과 연결하지 않는다. 아래 판매안은 자체 코드·아트로 만든 독립 웹/엔진 신작을 출시할 때의 별도 제안이다. 독립 신작의 명찰·유니폼·사무실 테마 확정 구매.",
+          "why": "Uther Party의 규칙 교체와 Skibi의 방어 사이 쉬어가는 리듬을 독립적인 짧은 업무 놀이로 바꾼다.",
+          "risks": [
+            "미니게임 수에 따라 제작·밸런스 범위 급증",
+            "매판 새 규칙을 바로 이해해야 함"
+          ],
+          "buildNext": "자리 찾기 한 종을 완성하고 10초 설명만으로 시작하는지 확인. 공통 코드를 활용해 두 게임을 추가.",
+          "platform": "WC3 무료 시제품 / 독립 웹·게임 엔진 신작"
+        }
+      ],
+      "listLabel": "대표 10선"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hiveworkshop.com/repositories/maps.564/",
+      "title": "Hive Workshop Warcraft III 맵 리소스",
+      "type": "공개 리소스 인덱스",
+      "note": "제작자 설명과 맵 버전·배포 기록 확인. 전체 순위는 수집하지 않았다.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.epicwar.com/maps/254544/",
+      "title": "Epic War DotA v6.83d 등록정보",
+      "type": "커뮤니티 배포본",
+      "note": "고전 등록본·제작자 표기·누적 다운로드 확인; 원 제작자 사이트의 현재 운영을 뜻하지 않음.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://classic.battle.net/mod/dev/skibi.shtml",
+      "title": "Blizzard Skibi Castle TD 디자이너 노트",
+      "type": "공식·역사 자료",
+      "note": "미니게임과 방어를 결합한 과거 설계 설명.",
+      "accessed": "2026-10-13"
+    }
+  ]
+}
