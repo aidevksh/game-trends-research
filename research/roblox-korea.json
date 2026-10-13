@@ -1,0 +1,1353 @@
+{
+  "market": "로블록스 국내",
+  "scope": "한국에서 관심·노출되는 게임 20선. 한국 개발 게임으로 한정하지 않는다. 대한민국·컴퓨터 공식 차트와 2025년 한국 검색어 자료를 사용했다.",
+  "methodology": {
+    "asOf": "2026-10-13",
+    "timezone": "Asia/Seoul",
+    "rankingLabel": "카테고리별 근거 기반 10선 · 표의 번호는 조사용 배열 순서",
+    "selection": "실력 경쟁/스포츠/오비와 협동/추격/공포 생존의 두 제작 메커니즘으로 분류. 공개 한국 검색 신호 또는 국가 필터 차트에서 개별 타이틀이 확인된 작품을 골랐다. 해외 표본과 같은 타이틀은 한국에서도 발견되는 국제 성공작이라는 뜻이며 서로 다른 시장 지표로 비교한다.",
+    "koreaEvidence": "Roblox 공식 차트에서 대한민국·컴퓨터 선택과 country=kr 필터를 확인. 2025 Replay는 한국 인기 검색어의 과거 표본이며 현재 CCU 자료가 아니다.",
+    "metrics": "차트에 표시된 수치를 한국 동접으로 해석하지 않았다. 특히 지금 가장 많이 플레이하는 항목은 전체 기기 및 위치 결과로 표시되므로 한국 순위 근거에 넣지 않았다.",
+    "monetization": "공개 체험 메타데이터·게임패스 API 상품 설명·판매 여부를 대조. 가격은 비인증 API 표시 Robux 값으로 한국 계정의 체크아웃 가격을 보장하지 않는다. 반복구매 상품과 인게임 상점을 전수 조회하지 못한 부분은 미확인으로 표시.",
+    "interpretation": "인기 요소와 공통점은 메커니즘을 근거로 한 연구자의 추론이며 이용자 설문으로 검증된 인과관계가 아니다.",
+    "effortAssumption": "추천의 기간/시간은 1인 개발자, 주 20시간, AI 코드 보조 사용, Roblox Studio 기본 학습 완료, 기존 기본 에셋 활용, 작은 공개 테스트용 MVP 기준의 추정이다. 상용 운영·결제 QA·대형 아트 제작은 별도.",
+    "limits": [
+      "장르별 한국 이용자 수 원자료와 국가별 매출이 공개되지 않아 엄밀한 한국 TOP 10 순위는 만들지 않았다.",
+      "PC 차트에 초점을 맞췄으며 모바일과 연령층 전체를 대표하지 않는다.",
+      "현재 공식 차트와 과거 공식 검색어는 기간과 정의가 다른 지표다."
+    ]
+  },
+  "categories": [
+    {
+      "id": "kr-competition",
+      "name": "실력 경쟁·스포츠·오비",
+      "selectionBasis": "한국 공식 검색어에 직접 포함된 RIVALS를 먼저 두고, 한국·컴퓨터 톱 트렌드에서 확인된 서로 다른 경쟁/도전 구조 9개를 노출 순서대로 추렸다. 장르별 실측 순위가 아닌 근거 기반 10선이다.",
+      "commonalities": [
+        "정상 도달·5승·득점처럼 몇 초 안에 이해되는 목표",
+        "실패 또는 패배 후 즉시 다시 시도할 수 있는 반복 루프",
+        "숙련과 점수·연승이 친구 비교·하이라이트 영상 소재",
+        "외형뿐 아니라 보상 배수·해금 편의·기능 확장이 함께 과금되는 사례가 많음",
+        "실시간 PVP는 서버 판정·지연·부정행위 대응이 제작 난이도를 높임"
+      ],
+      "games": [
+        {
+          "name": "RIVALS (라이벌)",
+          "universeId": 6035872082,
+          "url": "https://www.roblox.com/games/17625359962",
+          "description": "1대1부터 5대5까지, 먼저 5승을 달성하는 짧은 FPS 결투 게임.",
+          "features": [
+            "결투 패드로 매칭",
+            "계약 과제와 열쇠를 통한 무기·스킨 해금",
+            "연승·순위 경쟁"
+          ],
+          "popularityFactors": [
+            "즉시 재대결할 수 있는 간결한 승리 목표",
+            "친구와 실력을 비교하고 연승을 자랑하기 쉬움",
+            "무기 해금과 계약 과제가 재방문 목표를 제공"
+          ],
+          "monetization": {
+            "summary": "무기와 외형을 묶은 영구 패스 번들을 판매한다. 전투 도구가 포함되므로 외형 전용 과금으로 볼 수 없다.",
+            "verified": [
+              "Standard Weapons Bundle 설명에 현재·향후 표준 무기와 기존 열쇠 비용 환급이 명시됨",
+              "일부 번들 상자·캡슐은 지역에 따라 지급되지 않을 수 있다고 제작자가 명시",
+              "Standard Weapons Bundle!: 공개 API 표시 849 Robux",
+              "Starter Bundle!: 공개 API 표시 59 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/17625359962",
+              "title": "RIVALS (라이벌) 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/6035872082/game-passes?passView=Full&pageSize=100",
+              "title": "RIVALS (라이벌) 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.newswire.co.kr/newsRead.php?no=1025526",
+              "title": "Roblox 2025 Replay 한국 보도자료",
+              "type": "1차·한국 관심 근거",
+              "note": "2025년 한국 TOP 5 검색어에 라이벌이 직접 포함됐다. 2025-01-01~11-09 수집 표본, 2025-12-17 발행.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "개별 타이틀이 2025년 한국 인기 검색어에 포함",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 1
+        },
+        {
+          "name": "Sniper Arena",
+          "universeId": 9534705677,
+          "url": "https://www.roblox.com/games/122446657157717",
+          "description": "스나이퍼 사격에 집중한 빠른 대전과 랭크 매치 게임.",
+          "features": [
+            "저격 중심 교전",
+            "스킨 상자와 플레이어 거래시장",
+            "모바일 자동 조준 지원"
+          ],
+          "popularityFactors": [
+            "한 발 명중이라는 이해하기 쉬운 실력 피드백",
+            "스킨 수집·거래가 경기 외 목표를 생성",
+            "짧은 경쟁 구조가 하이라이트 공유에 적합"
+          ],
+          "monetization": {
+            "summary": "공식 설명은 스킨에 능력치 증가가 없다고 명시한다. 별도 VIP 패스가 있으나 공개 설명에는 혜택이 비어 있다.",
+            "verified": [
+              "공식 체험 설명: 스킨은 외형 전용",
+              "공식 설명: Premium 가입자 경기 크레딧 +20%; 친구와 플레이 시 +20%",
+              "VIP: 공개 API 표시 399 Robux"
+            ],
+            "unverified": [
+              "VIP의 상세 혜택, 상자 확률·구매 방식, 반복구매 가격 및 한국 최종 결제 가격 미확인."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/122446657157717",
+              "title": "Sniper Arena 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/9534705677/game-passes?passView=Full&pageSize=100",
+              "title": "Sniper Arena 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 4번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 4번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 2
+        },
+        {
+          "name": "Volleyball Legends",
+          "universeId": 6931042565,
+          "url": "https://www.roblox.com/games/73956553001240",
+          "description": "범프·토스·스파이크·블로킹을 조합하는 6대6 아케이드 배구.",
+          "features": [
+            "6대6 일반·랭크 경기",
+            "서브 강도와 스파이크 방향 조절",
+            "주간 업데이트 안내"
+          ],
+          "popularityFactors": [
+            "역할 협력이 승리에 바로 드러남",
+            "공을 살리거나 블로킹하는 순간이 영상화하기 좋음",
+            "익숙한 스포츠 규칙이 첫 진입을 돕는다"
+          ],
+          "monetization": {
+            "summary": "VIP는 승리 시 Yen 보상 2배·전용 태그·공을 준다. 스핀 연출 건너뛰기와 이모트 슬롯도 판매한다.",
+            "verified": [
+              "공식 설명: Roblox Premium 가입자 Yen +10%",
+              "VIP: 공개 API 표시 399 Robux",
+              "Spin Skipping: 공개 API 표시 49 Robux",
+              "2x Emote Slots: 공개 API 표시 150 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/73956553001240",
+              "title": "Volleyball Legends 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/6931042565/game-passes?passView=Full&pageSize=100",
+              "title": "Volleyball Legends 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 11번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 11번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 3
+        },
+        {
+          "name": "Untitled Boxing Game (UBG)",
+          "universeId": 4730278139,
+          "url": "https://www.roblox.com/games/13621938427",
+          "description": "대시·방어·약펀치·강펀치·페인트를 읽고 대응하는 권투 PVP.",
+          "features": [
+            "여러 격투 스타일",
+            "상대 움직임을 읽는 근거리 공방",
+            "조작과 코드 보상 안내"
+          ],
+          "popularityFactors": [
+            "간단한 공격 입력 속에 회피·심리전 숙련도가 쌓임",
+            "격투 스타일 수집이 반복 목표가 됨",
+            "1대1 결과가 친구 간 재대결로 이어지기 쉬움"
+          ],
+          "monetization": {
+            "summary": "스타일 저장 슬롯과 스핀 연출 편의, 외형 패스를 판매한다. 제작자는 Dual Gloves와 Knockdown Outfits를 외형 전용이라고 명시한다.",
+            "verified": [
+              "Extra Slot 1: 공개 API 표시 149 Robux",
+              "Dual Gloves: 공개 API 표시 399 Robux",
+              "Skip Spins: 공개 API 표시 25 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/13621938427",
+              "title": "Untitled Boxing Game (UBG) 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/4730278139/game-passes?passView=Full&pageSize=100",
+              "title": "Untitled Boxing Game (UBG) 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 13번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 13번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 4
+        },
+        {
+          "name": "Racket Rivals",
+          "universeId": 7883776681,
+          "url": "https://www.roblox.com/games/90906407195271",
+          "description": "배드민턴·테니스·스쿼시·배구를 섞은 능력 기반 3대3 라켓 경기.",
+          "features": [
+            "일반·강한 스윙·세트·대시",
+            "정령 능력·라켓·각성",
+            "3대3 팀 경기"
+          ],
+          "popularityFactors": [
+            "라켓 스포츠의 익숙한 랠리와 필살기 연출이 공존",
+            "팀 호흡과 개인 기술 모두 표현",
+            "장비·능력 수집이 장기 목표를 만든다"
+          ],
+          "monetization": {
+            "summary": "공개 패스에서는 거래 부스와 부스 공간 확장을 확인했다. 라켓·정령 획득의 실제 과금 구성은 공개 패스 목록만으로 판단하지 않았다.",
+            "verified": [
+              "Tribe Booth: 공개 API 표시 299 Robux",
+              "More Booth Space: 공개 API 표시 99 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/90906407195271",
+              "title": "Racket Rivals 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/7883776681/game-passes?passView=Full&pageSize=100",
+              "title": "Racket Rivals 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 16번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 16번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 5
+        },
+        {
+          "name": "Phantom Forces",
+          "universeId": 113491250,
+          "url": "https://www.roblox.com/games/292439477",
+          "description": "여러 전장과 게임 모드에서 대량의 무기 조합을 만드는 FPS.",
+          "features": [
+            "다양한 지도·모드",
+            "무기·부착물 조합",
+            "2026년 가을 무기 추가·리모델링 안내"
+          ],
+          "popularityFactors": [
+            "깊은 무기 조합이 실험과 숙련을 유도",
+            "도시·사막·설원 전장이 플레이 변화를 제공",
+            "오래 축적된 콘텐츠와 업데이트가 재방문 이유"
+          ],
+          "monetization": {
+            "summary": "공개 게임패스 API에서는 판매 중 패스를 찾지 못했다. 이것은 무과금 정책을 뜻하지 않으며, 인게임 화폐 구매 등의 개별 상품·가격은 이번 조사에서 미확인.",
+            "verified": [
+              "공개 게임패스 목록에서 판매 중인 상품을 확인하지 못했다."
+            ],
+            "unverified": [
+              "개별 상품·가격 미확인. 게임패스 목록의 공백으로 반복구매 상품 부재나 무료 정책을 추정하지 않았다."
+            ],
+            "productEvidence": false
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/292439477",
+              "title": "Phantom Forces 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/113491250/game-passes?passView=Full&pageSize=100",
+              "title": "Phantom Forces 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 34번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 34번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 6
+        },
+        {
+          "name": "Funky Friday",
+          "universeId": 2404080894,
+          "url": "https://www.roblox.com/games/6447798030",
+          "description": "방향키 패턴을 박자에 맞춰 입력하고 다른 플레이어와 점수를 겨루는 리듬 대전.",
+          "features": [
+            "키 설정과 화살표 스킨",
+            "노래 단위 점수 경쟁",
+            "애니메이션 표현"
+          ],
+          "popularityFactors": [
+            "같은 곡을 다시 하며 실력 향상을 느끼기 쉬움",
+            "입력 정확도와 점수 비교가 명확",
+            "캐릭터 애니메이션이 자기표현 소재가 됨"
+          ],
+          "monetization": {
+            "summary": "곡 종료 보상 포인트 2배 패스와 애니메이션 크기·속도 등의 커스터마이즈 패스를 판매한다.",
+            "verified": [
+              "Animation Customization: 공개 API 표시 399 Robux",
+              "2x Points: 공개 API 표시 349 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/6447798030",
+              "title": "Funky Friday 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/2404080894/game-passes?passView=Full&pageSize=100",
+              "title": "Funky Friday 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 46번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 46번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 7
+        },
+        {
+          "name": "Tower of Hell",
+          "universeId": 703124385,
+          "url": "https://www.roblox.com/games/1962086868",
+          "description": "체크포인트 없이 무작위로 생성된 장애물 탑의 정상에 도전하는 오비.",
+          "features": [
+            "무작위 탑",
+            "체크포인트 없음",
+            "VIP 서버 소유자는 라운드·탑 크기·상점 제어"
+          ],
+          "popularityFactors": [
+            "정상이라는 즉시 이해되는 목표",
+            "실패 직후 재도전과 숙련의 성취감",
+            "떨어지는 장면과 아슬아슬한 성공이 숏폼 소재"
+          ],
+          "monetization": {
+            "summary": "승리 코인 2배와 한정 번들을 판매한다. VIP 서버 설정 기능은 공식 설명에서 확인했지만 서버 가격은 미확인.",
+            "verified": [
+              "체크포인트가 없는 구조는 공식 설명에 명시됨",
+              "Haunted Bundle: 공개 API 표시 480 Robux",
+              "Double Coins: 공개 API 표시 195 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/1962086868",
+              "title": "Tower of Hell 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/703124385/game-passes?passView=Full&pageSize=100",
+              "title": "Tower of Hell 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 57번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 57번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 8
+        },
+        {
+          "name": "Obby Creator",
+          "universeId": 1053132402,
+          "url": "https://www.roblox.com/games/2913303231",
+          "description": "플레이어가 직접 오비·쇼케이스·카트 코스를 만들고 서로 플레이하는 제작 샌드박스.",
+          "features": [
+            "혼자·친구와 공동 제작",
+            "이용자 제작 코스",
+            "좋아요 기반 순위"
+          ],
+          "popularityFactors": [
+            "유저 제작물이 코스 공급을 계속 늘림",
+            "만든 코스를 보여주고 평가받는 동기",
+            "놀이와 제작이 하나의 순환을 형성"
+          ],
+          "monetization": {
+            "summary": "고급 도구·공간/높이·프리메이드 저장량·수익 배수 등을 영구 패스로 판다. 기능 확장형 과금이 핵심이다.",
+            "verified": [
+              "Advanced Tools: 공개 API 표시 399 Robux",
+              "More Space: 공개 API 표시 225 Robux",
+              "Double Cash: 공개 API 표시 500 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/2913303231",
+              "title": "Obby Creator 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/1053132402/game-passes?passView=Full&pageSize=100",
+              "title": "Obby Creator 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 63번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 63번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 9
+        },
+        {
+          "name": "FIFA Super Soccer",
+          "universeId": 4293374620,
+          "url": "https://www.roblox.com/games/12177325772",
+          "description": "골키퍼·미드필더·스트라이커로 역할을 나누는 4대4 아케이드 축구.",
+          "features": [
+            "슈팅·패스·태클·드리블",
+            "4대4 경기",
+            "골키퍼를 포함한 포지션 역할"
+          ],
+          "popularityFactors": [
+            "보편적인 축구 규칙과 소규모 팀의 빠른 참여",
+            "골·어시스트·선방이 개인 성취를 만듦",
+            "팀 포지션을 맡아 친구와 함께할 이유"
+          ],
+          "monetization": {
+            "summary": "VIP의 코인·XP 배수와 외형, 유니폼 이름·번호 변경, 포지션 즉시 선택권 등을 판매한다.",
+            "verified": [
+              "Shirt Name & Number Change: 공개 API 표시 99 Robux",
+              "VIP: 공개 API 표시 199 Robux",
+              "Position Priority: 공개 API 표시 79 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/12177325772",
+              "title": "FIFA Super Soccer 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/4293374620/game-passes?passView=Full&pageSize=100",
+              "title": "FIFA Super Soccer 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 89번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 89번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 10
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "오늘의 30칸 오비",
+          "pitch": "매일 같은 규칙 시드로 바뀌는 짧은 코스를 모두가 달리고, 어제의 나와 기록을 비교한다.",
+          "mvp": [
+            "장애물 모듈 8종을 조합하는 30칸 코스 1개",
+            "연습 모드와 기록 모드",
+            "서버 검증 완주 시간·주간 순위",
+            "모바일 점프와 실패 즉시 재시작"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "2~4주 · 40~80시간",
+          "monetization": "능력치와 기록에 영향을 주지 않는 발자국·완주 이펙트·칭호의 확정 구매",
+          "why": "한국 타워 검색 관심과 Tower of Hell의 반복 도전 구조를 작은 모듈 세트로 압축할 수 있다.",
+          "risks": [
+            "클라이언트 기록 조작을 서버에서 막아야 함",
+            "모바일에서도 물리 난이도가 공정해야 함",
+            "유료 체크포인트를 기록 모드에 넣으면 경쟁 신뢰가 약해짐"
+          ],
+          "buildNext": "7일치 시드를 5명에게 플레이시켜 첫 완주율·재시도 횟수·다음 날 재방문 의향을 확인한다."
+        },
+        {
+          "name": "옥상 배달 릴레이",
+          "pitch": "2~4명이 짐을 넘겨가며 작은 옥상 코스를 완주하는 협동 기록 게임.",
+          "mvp": [
+            "옥상 코스 1개와 모듈 6종",
+            "짐 1개·인계·낙하 복귀",
+            "5분 라운드",
+            "팀 최고 기록과 빠른 재시작"
+          ],
+          "difficulty": "중간",
+          "effort": "3~5주 · 60~100시간",
+          "monetization": "가방·팀 깃발·배송 완료 연출의 확정 구매",
+          "why": "오비의 실패/성공 장면과 소규모 스포츠 팀의 역할 협력을 합친다. 대규모 FPS의 무기·맵 제작량을 줄일 수 있다.",
+          "risks": [
+            "물리 오브젝트 소유권과 동기화",
+            "짐을 숨기는 방해 행동",
+            "친구 없는 이용자의 매칭 대기"
+          ],
+          "buildNext": "2인 로컬 테스트 코스에서 인계가 재미있는지 확인하고, 봇 배송 도우미 또는 혼자 연습 모드를 추가한다."
+        },
+        {
+          "name": "원버튼 랠리 클럽",
+          "pitch": "작은 경기장에서 이동과 타이밍 스윙 하나로 랠리를 이어가는 1대1 스포츠.",
+          "mvp": [
+            "코트 1개·공 1개",
+            "이동·일반 스윙·5점 승리",
+            "연습 봇",
+            "친구 초대와 재대결"
+          ],
+          "difficulty": "중간~높음",
+          "effort": "4~7주 · 80~140시간",
+          "monetization": "라켓 외형·공 트레일·응원 이모트, 경쟁 능력은 동일",
+          "why": "Volleyball Legends와 Racket Rivals의 이해하기 쉬운 랠리 재미를 소규모 인원과 적은 기술로 축소한다.",
+          "risks": [
+            "지연시간에 따른 판정 불공정",
+            "랠리 속도와 타격 허용시간 밸런스",
+            "대전 이용자가 적을 때의 대기"
+          ],
+          "buildNext": "우선 연습 봇과 서버 판정으로 20회 랠리가 가능한지 확인하고, 실제 이용자 간 네트워크 지연 테스트를 통과한 뒤 공개한다."
+        }
+      ]
+    },
+    {
+      "id": "kr-survival",
+      "name": "협동·추격·공포 생존",
+      "selectionBasis": "한국 톱 트렌드·재방문·친구와 즐기는 공식 목록에 등장한 10개를 선정했다. 상위 3개는 검색/트렌드/재방문의 강한 근거를 우선하고, 이후 대표 메커니즘별 표본을 제시한다. 서로 다른 차트의 노출 위치를 직접 비교해 한국 장르 순위로 만들지 않았다.",
+      "commonalities": [
+        "생존·탈출·목표 수행이라는 단순한 공동 목적",
+        "예측 못 한 위험과 다른 플레이어가 매판 새로운 사건 생성",
+        "거점·역할·구조가 친구와 함께할 이유를 만든다",
+        "공포 캐릭터·외형·수집물이 전투 밖 장기 목표를 보완",
+        "과금은 외형 전용부터 XP·정보 편의·생존 도구까지 다르므로 장르 전체를 동일 정책으로 볼 수 없음"
+      ],
+      "games": [
+        {
+          "name": "99 Nights in the Forest",
+          "universeId": 7326934954,
+          "url": "https://www.roblox.com/games/79546208627805",
+          "description": "친구와 캠프를 만들고 숲속 위협을 견디는 협동 생존.",
+          "features": [
+            "공동 캠프",
+            "탐험과 생존 목표",
+            "밤의 위협"
+          ],
+          "popularityFactors": [
+            "친구끼리 나눌 수 있는 캠프 역할",
+            "밤을 넘긴다는 누적 성취",
+            "위기와 구조 장면이 플레이 이야기를 만듦"
+          ],
+          "monetization": {
+            "summary": "공개 패스에서 Decorator Pass를 확인했다. 기지 꾸미기 도구와 가구 상인 원격 구매·할인을 제공한다. 반복 구매 과금은 별도 미확인.",
+            "verified": [
+              "장식 패스 설명에 망치·붓·가구 상인 원격 구매와 할인 명시",
+              "Decorator Pass: 공개 API 표시 199 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/79546208627805",
+              "title": "99 Nights in the Forest 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/7326934954/game-passes?passView=Full&pageSize=100",
+              "title": "99 Nights in the Forest 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 3번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 3번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 1
+        },
+        {
+          "name": "Dandy’s World",
+          "universeId": 5569032992,
+          "url": "https://www.roblox.com/games/16116270224",
+          "description": "여러 Toons가 기계를 완성하며 Gardenview Center의 더 깊은 층으로 내려가는 마스코트 공포 생존.",
+          "features": [
+            "능력과 능력치가 다른 Toons 수집",
+            "기계 완성과 연구 수집",
+            "Trinket으로 플레이 방식 조정"
+          ],
+          "popularityFactors": [
+            "귀여운 캐릭터와 공포의 대비",
+            "팀 내 역할 선택과 수집 목표",
+            "층별 위험이 이어져 긴장과 공유할 사건 생성"
+          ],
+          "monetization": {
+            "summary": "외형 팩·프로필 장식·추가 스티커 휠을 판다. 확인한 외형 팩은 파티클·트레일 등으로 플레이 능력에 영향을 주지 않는다고 명시한다.",
+            "verified": [
+              "Queens of Mischief Cosmetic Bundle: 공개 API 표시 550 Robux",
+              "Spooky-Time Cosmetic Pack: 공개 API 표시 200 Robux",
+              "+2 Sticker Wheels: 공개 API 표시 199 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/16116270224",
+              "title": "Dandy’s World 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/5569032992/game-passes?passView=Full&pageSize=100",
+              "title": "Dandy’s World 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 17번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 17번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 2
+        },
+        {
+          "name": "Forsaken",
+          "universeId": 6331902150,
+          "url": "https://www.roblox.com/games/18687417158",
+          "description": "생존자는 동료를 보호하고 목표를 수행하며 제한 시간을 버티고, 살인자는 모두 제거하는 비대칭 생존.",
+          "features": [
+            "생존자와 살인자 역할",
+            "협동 목표·시간제 생존",
+            "알파 버전 운영"
+          ],
+          "popularityFactors": [
+            "쫓고 쫓기는 역할 차이가 매판 다른 경험",
+            "팀원 보호가 강한 협동 감정",
+            "캐릭터와 스킨이 역할 정체성을 형성"
+          ],
+          "monetization": {
+            "summary": "VIP는 영구 XP +25%, 전용 스킨·칭호·이모트 등을 준다. 별도 스킨·이모트 팩과 슬롯도 판다.",
+            "verified": [
+              "V.I.P: 공개 API 표시 599 Robux",
+              "Skin Pack #3: 공개 API 표시 399 Robux",
+              "2x Emotes: 공개 API 표시 199 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/18687417158",
+              "title": "Forsaken 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/6331902150/game-passes?passView=Full&pageSize=100",
+              "title": "Forsaken 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 한국·컴퓨터 차트의 재방문자 수 상위 체험 첫 화면 5번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 재방문자 수 상위 체험 첫 화면 5번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 3
+        },
+        {
+          "name": "Flee the Facility",
+          "universeId": 372226183,
+          "url": "https://www.roblox.com/games/893973440",
+          "description": "괴물을 피해 도망치고 출구를 열어 시설에서 탈출하는 비대칭 추격 생존.",
+          "features": [
+            "추격·숨기·탈출",
+            "생존자 협력",
+            "지도와 계절 이벤트 업데이트"
+          ],
+          "popularityFactors": [
+            "잡힐 위험과 탈출 성공의 명료한 긴장",
+            "친구를 돕는 협동 장면",
+            "라운드마다 동선과 상대 선택이 달라짐"
+          ],
+          "monetization": {
+            "summary": "VIP는 외형·칭호와 지도 투표 가중치 2배, 라운드 XP·크레딧 +15%를 제공한다.",
+            "verified": [
+              "VIP: 공개 API 표시 420 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/893973440",
+              "title": "Flee the Facility 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/372226183/game-passes?passView=Full&pageSize=100",
+              "title": "Flee the Facility 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 1번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 1번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 4
+        },
+        {
+          "name": "3008",
+          "universeId": 1000233041,
+          "url": "https://www.roblox.com/games/2768379856",
+          "description": "거대한 가구점에서 기지를 만들고 직원으로부터 살아남는 건설 생존.",
+          "features": [
+            "가구를 이용한 기지 건설",
+            "낮·밤 생존",
+            "대규모 가구점 탐험"
+          ],
+          "popularityFactors": [
+            "익숙한 실내가 끝없는 공포 공간으로 바뀜",
+            "함께 만든 집과 방어 시설에 애착",
+            "건설·탐색·피신의 역할 분담"
+          ],
+          "monetization": {
+            "summary": "시간 확인 시계와 사망 위치 웨이포인트, 추가 웨이포인트 같은 정보·편의 패스를 판다.",
+            "verified": [
+              "Personal Watch: 공개 API 표시 8 Robux",
+              "Death Waypoint: 공개 API 표시 12 Robux",
+              "Octuple Waypoints: 공개 API 표시 8 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/2768379856",
+              "title": "3008 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/1000233041/game-passes?passView=Full&pageSize=100",
+              "title": "3008 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 3번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 3번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 5
+        },
+        {
+          "name": "Murder Mystery 2",
+          "universeId": 66654135,
+          "url": "https://www.roblox.com/games/142823291",
+          "description": "시민·보안관·살인자로 나뉘어 생존과 추리, 제거를 겨루는 라운드 게임.",
+          "features": [
+            "숨겨진 역할",
+            "보안관의 무기와 추리",
+            "칼 수집·거래"
+          ],
+          "popularityFactors": [
+            "누가 범인인지 의심하는 사회적 재미",
+            "짧은 규칙으로도 반복할 때 다른 상황",
+            "수집과 거래가 라운드 사이 목표를 채움"
+          ],
+          "monetization": {
+            "summary": "Elite는 XP 1.5배·코인 가방 확장과 전용 외형을 준다. 라디오와 한정 무기 번들도 판다.",
+            "verified": [
+              "BUNDLE: Beach: 공개 API 표시 3399 Robux",
+              "Elite: 공개 API 표시 499 Robux",
+              "Radio: 공개 API 표시 475 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/142823291",
+              "title": "Murder Mystery 2 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/66654135/game-passes?passView=Full&pageSize=100",
+              "title": "Murder Mystery 2 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 28번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 28번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 6
+        },
+        {
+          "name": "Guts & Blackpowder",
+          "universeId": 4342047058,
+          "url": "https://www.roblox.com/games/12334109280",
+          "description": "나폴레옹 전쟁 시기의 머스킷과 검으로 좀비 무리를 함께 막는 협동 생존.",
+          "features": [
+            "역사 전쟁과 좀비 조합",
+            "머스킷·검 전투",
+            "서로 버티며 이동하는 협동"
+          ],
+          "popularityFactors": [
+            "느린 무기와 밀려오는 적이 팀 의존도를 높임",
+            "역사 복장과 좀비 장르의 독특한 결합",
+            "친구와 함께 위기를 넘긴 이야기"
+          ],
+          "monetization": {
+            "summary": "연대 선택 팩과 머리·수염·붕대 등의 외형 팩을 판매한다. 공식 설명은 별도 의상·UGC 모자 상점도 연결한다.",
+            "verified": [
+              "연대 선택은 지도에 따라 제한된다고 상품 설명에 명시됨",
+              "Regiment Pack 1: 공개 API 표시 150 Robux",
+              "Cosmetic Pack 1: 공개 API 표시 50 Robux",
+              "Blemish Pack 1: 공개 API 표시 25 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/12334109280",
+              "title": "Guts & Blackpowder 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/4342047058/game-passes?passView=Full&pageSize=100",
+              "title": "Guts & Blackpowder 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 39번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 39번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 7
+        },
+        {
+          "name": "Piggy",
+          "universeId": 1516533665,
+          "url": "https://www.roblox.com/games/4623386862",
+          "description": "아이템을 찾아 문을 열고 Piggy를 피해 탈출하며 이야기를 발견하는 공포 게임.",
+          "features": [
+            "아이템 사용과 탈출",
+            "숨기·트랩",
+            "Build Mode와 지도 슬롯"
+          ],
+          "popularityFactors": [
+            "쫓기는 가운데 필요한 물건을 찾는 명확한 목표",
+            "미스터리 이야기가 다음 플레이 동기",
+            "유저 제작 지도와 역할 전환이 반복성"
+          ],
+          "monetization": {
+            "summary": "토큰 보상 2배, Piggy 선택 확률 2배, Build Mode 지도 저장 슬롯을 영구 패스로 판다.",
+            "verified": [
+              "x2 Piggy Tokens: 공개 API 표시 300 Robux",
+              "x2 Piggy Chance: 공개 API 표시 150 Robux",
+              "Build Map Slot 3: 공개 API 표시 100 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/4623386862",
+              "title": "Piggy 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/1516533665/game-passes?passView=Full&pageSize=100",
+              "title": "Piggy 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 92번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 92번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 8
+        },
+        {
+          "name": "Natural Disaster Survival",
+          "universeId": 65241,
+          "url": "https://www.roblox.com/games/189707",
+          "description": "지도에 발생하는 여러 재난에 대응하여 한 라운드 끝까지 생존하는 게임.",
+          "features": [
+            "재난별 위치 선택",
+            "지도와 재난 조합",
+            "생존 기록·배지"
+          ],
+          "popularityFactors": [
+            "움직이고 숨는 것만으로 시작하는 낮은 진입장벽",
+            "상황을 잘 읽었다는 즉각적인 성취",
+            "재난과 여러 플레이어가 예측 못 한 장면 생성"
+          ],
+          "monetization": {
+            "summary": "풍선은 점프·낙하 피해 완화, 사과는 체력 회복, 나침반은 지도 선택을 제공한다. 유료 상품이 실제 생존 편의·성능에 영향을 준다.",
+            "verified": [
+              "Green Balloon: 공개 API 표시 95 Robux",
+              "Red Apple: 공개 API 표시 80 Robux",
+              "Yellow Compass: 공개 API 표시 60 Robux"
+            ],
+            "unverified": [
+              "인게임 반복구매 상품·전체 상품 구성·한국 계정 최종 결제 가격은 미확인. 표시 가격은 비인증 공개 API 값이며 지역·계정에 따라 달라질 수 있다."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/189707",
+              "title": "Natural Disaster Survival 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/65241/game-passes?passView=Full&pageSize=100",
+              "title": "Natural Disaster Survival 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 77번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 77번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 9
+        },
+        {
+          "name": "한국 머더",
+          "universeId": 2027832238,
+          "url": "https://www.roblox.com/games/5720801512",
+          "description": "여러 직업으로 라운드를 살아남고 결투하며 다양한 무기를 수집하는 한국어 중심 머더 게임.",
+          "features": [
+            "여러 직업",
+            "생존 라운드와 결투",
+            "무기 컬렉션"
+          ],
+          "popularityFactors": [
+            "한국어 직업 설명과 커뮤니티 접근성",
+            "익숙한 머더 규칙과 변형 직업",
+            "컬렉션을 완성하고 전투 실력을 보여주는 목표"
+          ],
+          "monetization": {
+            "summary": "Starter Pack은 7일 XP·코인 배수와 외형 세트, 별도 무기·효과 세트 패스를 판다. 수집 무기의 전투 성능 차이는 확인하지 못했다.",
+            "verified": [
+              "Leviathan Set ( - 10% ): 공개 API 표시 2790 Robux",
+              "Starter Pack: 공개 API 표시 49 Robux"
+            ],
+            "unverified": [
+              "유료 무기·효과의 성능 차이, 전체 인게임 상점, 한국 최종 결제 가격은 미확인."
+            ],
+            "productEvidence": true
+          },
+          "evidence": [
+            {
+              "url": "https://www.roblox.com/games/5720801512",
+              "title": "한국 머더 공식 체험 페이지",
+              "type": "1차·제작자 설명",
+              "note": "체험 설명과 기능을 공식 공개 메타데이터와 대조했다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://apis.roblox.com/game-passes/v1/universes/2027832238/game-passes?passView=Full&pageSize=100",
+              "title": "한국 머더 공개 게임패스 API",
+              "type": "1차·상품 목록",
+              "note": "isForSale=true 상품의 이름·표시 가격·효과 설명을 확인. 반복구매 상품·개인화 가격을 전수 확인한 자료는 아니다.",
+              "accessed": "2026-10-13"
+            },
+            {
+              "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+              "title": "Roblox 대한민국·컴퓨터 차트",
+              "type": "1차·한국 관심 근거",
+              "note": "브라우저에서 해당 한국 필터 목록의 80번째 노출을 확인. 국가별 CCU나 장르 순위를 뜻하지 않는다.",
+              "accessed": "2026-10-13"
+            }
+          ],
+          "metrics": {
+            "koreanEvidence": "대한민국·컴퓨터 공식 차트 목록 80번째 노출",
+            "observedDate": "2026-10-13",
+            "scope": "한국 관심·발견 대리 지표; 한국 이용자 수 아님"
+          },
+          "rank": 10
+        }
+      ],
+      "recommendations": [
+        {
+          "name": "야간 편의점 공동근무",
+          "pitch": "2~4명이 물건을 채우고 계산하며, 평소와 다른 손님·매장 징후를 찾아 한 교대를 버틴다.",
+          "mvp": [
+            "편의점 지도 1개",
+            "12분 교대",
+            "재고·계산·수리 3개 역할",
+            "규칙 기반 이상 현상 8종",
+            "단일 추격 적과 피난 구역"
+          ],
+          "difficulty": "중간",
+          "effort": "4~6주 · 80~120시간",
+          "monetization": "유니폼·카운터 장식·이모트 확정 구매; 유료 부활 의존을 피한다.",
+          "why": "99 Nights의 공동 거점과 공포 생존의 협력을 작은 실내 공간에 담는다. 한국 이용자에게 익숙한 장소가 설명 비용을 줄인다.",
+          "risks": [
+            "기존 편의점 공포와 구별되는 역할 설계가 필요",
+            "이상 현상 학습 후 반복 피로",
+            "추격 AI·막힘·플레이어 이탈"
+          ],
+          "buildNext": "이상 현상 3개와 계산/재고 역할부터 4인 테스트하고, 눈치챈 순간을 말로 공유하는 재미가 있는지 확인한다."
+        },
+        {
+          "name": "정전 아파트 구조대",
+          "pitch": "배터리를 나눠 쓰는 구조대가 정전된 작은 아파트에서 주민을 구하고 옥상으로 탈출한다.",
+          "mvp": [
+            "3개 층·8개 방의 고정 지도",
+            "배터리 자원 1개",
+            "주민 NPC 3명",
+            "문 수리·길 열기·구조의 순차 목표",
+            "불빛에 반응하는 적 1종"
+          ],
+          "difficulty": "중간~높음",
+          "effort": "5~8주 · 100~160시간",
+          "monetization": "손전등 외형·구조대 헬멧·구조 기록 프로필 확정 구매",
+          "why": "Flee the Facility의 탈출 목표와 3008의 실내 위기, Guts & Blackpowder의 서로 돕는 역할을 작은 임무로 재구성한다.",
+          "risks": [
+            "NPC 길찾기와 문 상호작용 오류",
+            "공유 자원의 독점·방해",
+            "맵을 외우면 긴장 감소"
+          ],
+          "buildNext": "방 3개짜리 5분 임무에서 역할 분담을 확인한다. 구조 경로의 순서만 랜덤화하고 큰 맵 확장은 이후로 미룬다."
+        },
+        {
+          "name": "5분 재난 훈련장",
+          "pitch": "소형 동네 지도에서 다 같이 재난 표지판을 읽고 안전 경로를 찾으며 살아남는다.",
+          "mvp": [
+            "지도 1개·대피 구역 3개",
+            "침수·정전·돌풍 3종의 단순 규칙",
+            "5분 라운드",
+            "구조 점수와 생존 점수",
+            "혼자 연습과 친구 라운드"
+          ],
+          "difficulty": "낮음~중간",
+          "effort": "3~5주 · 60~100시간",
+          "monetization": "조끼 외형·배지 테두리·깃발 확정 구매; 유료 회복/점프 능력을 경쟁에 넣지 않는다.",
+          "why": "Natural Disaster Survival의 낮은 진입장벽과 MM2의 라운드 반복성을 살리되, 파괴 물리와 대형 세계 없이 구현할 수 있다.",
+          "risks": [
+            "너무 쉬우면 반복 동기가 약함",
+            "표지판의 가독성과 모바일 카메라",
+            "현실 안전 교육으로 오해할 수 있어 게임 규칙으로 표현"
+          ],
+          "buildNext": "침수 한 종류를 먼저 완성하고, 사전 신호를 본 이용자와 못 본 이용자의 성공률을 비교해 규칙의 가독성을 조정한다."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+      "title": "Roblox 대한민국·컴퓨터 톱 트렌드",
+      "type": "공식 국가 필터 차트",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+      "title": "Roblox 대한민국·컴퓨터 친구들과 즐거운 시간 보내기",
+      "type": "공식 국가 필터 차트",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.roblox.com/ko/charts?country=kr&device=computer",
+      "title": "Roblox 대한민국·컴퓨터 차트 및 재방문 상위",
+      "type": "공식 국가 필터 차트",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://www.newswire.co.kr/newsRead.php?no=1025526",
+      "title": "Roblox 2025 Replay 한국 보도자료",
+      "type": "Roblox 제공 공식 보도자료",
+      "published": "2025-12-17",
+      "period": "2025-01-01~2025-11-09",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games",
+      "title": "Roblox 공개 체험 메타데이터 API",
+      "type": "공식 API",
+      "note": "실제 universeIds 조회 URL은 korea-api-evidence.json에 보존",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://devforum.roblox.com/t/official-list-of-deprecated-web-endpoints/62889/103",
+      "title": "Roblox 게임패스 공개 API 교체 안내",
+      "type": "공식 개발자 안내",
+      "accessed": "2026-10-13"
+    }
+  ]
+}

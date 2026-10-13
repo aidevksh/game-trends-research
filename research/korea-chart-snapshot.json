@@ -1,0 +1,113 @@
+{
+  "capturedAtKST": "2026-10-13T09:22:27+09:00",
+  "captureNote": "2026-10-13 오전 KST 브라우저에서 읽은 공식 차트의 선택 타이틀을 09:22에 정리. 지속 변동하는 차트이며 원본 텍스트/전체 페이지 보존 자료는 아니다.",
+  "selectedFilters": {
+    "country": "kr",
+    "countryLabel": "대한민국",
+    "device": "computer",
+    "deviceLabel": "컴퓨터",
+    "age": "all"
+  },
+  "method": "렌더링된 차트의 개별 게임 링크·노출 순서와 appliedFilters의 country=kr를 확인. 같은 페이지의 지금 가장 많이 플레이하는 항목에는 전체 기기 및 위치 결과 표시가 있어 한국 순위 근거에서 제외했다.",
+  "charts": [
+    {
+      "url": "https://www.roblox.com/ko/charts/top-trending?country=kr&device=computer",
+      "name": "톱 트렌드",
+      "observedTitles": [
+        {
+          "name": "99 Nights in the Forest",
+          "position": 3
+        },
+        {
+          "name": "Sniper Arena",
+          "position": 4
+        },
+        {
+          "name": "Volleyball Legends",
+          "position": 11
+        },
+        {
+          "name": "Untitled Boxing Game",
+          "position": 13
+        },
+        {
+          "name": "Racket Rivals",
+          "position": 16
+        },
+        {
+          "name": "Dandy’s World",
+          "position": 17
+        },
+        {
+          "name": "Phantom Forces",
+          "position": 34
+        },
+        {
+          "name": "Guts & Blackpowder",
+          "position": 39
+        },
+        {
+          "name": "Funky Friday",
+          "position": 46
+        },
+        {
+          "name": "Tower of Hell",
+          "position": 57
+        },
+        {
+          "name": "Obby Creator",
+          "position": 63
+        },
+        {
+          "name": "FIFA Super Soccer",
+          "position": 89
+        }
+      ]
+    },
+    {
+      "url": "https://www.roblox.com/ko/charts/fun-with-friends?country=kr&device=computer",
+      "name": "친구들과 즐거운 시간 보내기",
+      "observedTitles": [
+        {
+          "name": "Flee the Facility",
+          "position": 1
+        },
+        {
+          "name": "3008",
+          "position": 3
+        },
+        {
+          "name": "Murder Mystery 2",
+          "position": 28
+        },
+        {
+          "name": "Natural Disaster Survival",
+          "position": 77
+        },
+        {
+          "name": "한국 머더",
+          "position": 80
+        },
+        {
+          "name": "Piggy",
+          "position": 92
+        }
+      ]
+    },
+    {
+      "url": "https://www.roblox.com/ko/charts?country=kr&device=computer",
+      "name": "재방문자 수 상위 체험 (첫 화면)",
+      "observedTitles": [
+        {
+          "name": "Forsaken",
+          "position": 5
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "노출 위치는 해당 목록 내부의 표시 순서이며 이용자 수·한국 장르 점유율은 아니다.",
+    "한국 모바일 차트는 확인하지 않았으므로 국내 전체 기기의 대표성을 주장하지 않는다.",
+    "비인증 조회, 시간대, 지역 필터와 추천 방식의 영향을 받을 수 있다."
+  ]
+}

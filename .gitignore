@@ -1,0 +1,11 @@
+__pycache__/
+node_modules/
+scratch/
+research/raw/
+research/.tmp-maple/
+/maple-home.html
+/maple-*.js
+/maple-*.html
+/research/*-raw.json
+/research/*.py
+*.log

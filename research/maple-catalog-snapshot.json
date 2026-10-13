@@ -1,0 +1,224 @@
+{
+  "accessed": "2026-10-13",
+  "measuredAt": "2026-10-13 KST 조회값",
+  "headers": {
+    "x-mverse-language": "ko",
+    "x-mverse-countrycode": "KR"
+  },
+  "notes": [
+    "공식 공개 API의 총 플레이어는 전 지역 누적 지표. 한국 이용자만의 수치 아님.",
+    "이 파일은 최종 선정 20개에 대한 수집 시점 스냅샷이며 전체 월드 순위표가 아님."
+  ],
+  "categoriesUsed": [
+    114,
+    124,
+    111,
+    112,
+    129,
+    102,
+    126,
+    130
+  ],
+  "worlds": [
+    {
+      "gameId": "be146ee19f5247d18c13834ec29eef09",
+      "name": "Mapleland",
+      "totalPlayers": 2523814,
+      "likes": 128458,
+      "dislikes": 4831,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/be146ee19f5247d18c13834ec29eef09"
+    },
+    {
+      "gameId": "64b9fefe2f664c189a4c1be40b6e8062",
+      "name": "메이플 플래닛",
+      "totalPlayers": 818742,
+      "likes": 47888,
+      "dislikes": 1076,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/64b9fefe2f664c189a4c1be40b6e8062"
+    },
+    {
+      "gameId": "f396568ea33348bf8730b129e6b42dba",
+      "name": "바람의나라 클래식",
+      "totalPlayers": 760888,
+      "likes": 59798,
+      "dislikes": 2142,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/f396568ea33348bf8730b129e6b42dba"
+    },
+    {
+      "gameId": "c3f8ebc162a7443d814226dfb235cc99",
+      "name": "메이플 로나월드",
+      "totalPlayers": 582512,
+      "likes": 36250,
+      "dislikes": 1454,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/c3f8ebc162a7443d814226dfb235cc99"
+    },
+    {
+      "gameId": "1907c8d7a23f4742a616b59ac752d7e8",
+      "name": "아르테일",
+      "totalPlayers": 520150,
+      "likes": 35437,
+      "dislikes": 1391,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/1907c8d7a23f4742a616b59ac752d7e8"
+    },
+    {
+      "gameId": "e0722cf70d25496b9abd0276215cfdb5",
+      "name": "옛날바람",
+      "totalPlayers": 245233,
+      "likes": 23287,
+      "dislikes": 570,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/e0722cf70d25496b9abd0276215cfdb5"
+    },
+    {
+      "gameId": "0e05254069524204a5f405174754a8c9",
+      "name": "Southperry (Early Access)",
+      "totalPlayers": 222687,
+      "likes": 10452,
+      "dislikes": 190,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/0e05254069524204a5f405174754a8c9"
+    },
+    {
+      "gameId": "9d2c4887d732456c82fa4932b7c74996",
+      "name": "단풍의 전설",
+      "totalPlayers": 124360,
+      "likes": 3099,
+      "dislikes": 209,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/9d2c4887d732456c82fa4932b7c74996"
+    },
+    {
+      "gameId": "c5d375ee75f14868aebda4325df24e41",
+      "name": "프로젝트 메이플 브로아 서버",
+      "totalPlayers": 115882,
+      "likes": 2303,
+      "dislikes": 261,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/c5d375ee75f14868aebda4325df24e41"
+    },
+    {
+      "gameId": "c25994a920e241428e7fd0f6cb1eb8ea",
+      "name": "[방치형] 세모 원정대",
+      "totalPlayers": 106732,
+      "likes": 1523,
+      "dislikes": 262,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/c25994a920e241428e7fd0f6cb1eb8ea"
+    },
+    {
+      "gameId": "61a60afbd236400c9cec65f96b42adc2",
+      "name": "메소전사",
+      "totalPlayers": 238683,
+      "likes": 4903,
+      "dislikes": 282,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/61a60afbd236400c9cec65f96b42adc2"
+    },
+    {
+      "gameId": "6355e1fb949c4258ace79567aedd1f9a",
+      "name": "광부 시뮬레이터",
+      "totalPlayers": 212154,
+      "likes": 4563,
+      "dislikes": 108,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/6355e1fb949c4258ace79567aedd1f9a"
+    },
+    {
+      "gameId": "dcd9c5fee74142c9b0d7fbb4d1bccb1e",
+      "name": "메이플 슬래시",
+      "totalPlayers": 201109,
+      "likes": 2955,
+      "dislikes": 250,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/dcd9c5fee74142c9b0d7fbb4d1bccb1e"
+    },
+    {
+      "gameId": "2f1e5b3cc6894b00bd4c2624586f0d20",
+      "name": "큐플레이 아카이브",
+      "totalPlayers": 197617,
+      "likes": 5232,
+      "dislikes": 128,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/2f1e5b3cc6894b00bd4c2624586f0d20"
+    },
+    {
+      "gameId": "8d612559e6594c7fa10bc59bf32227ca",
+      "name": "메이플 랜덤 디펜스",
+      "totalPlayers": 195149,
+      "likes": 4297,
+      "dislikes": 194,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/8d612559e6594c7fa10bc59bf32227ca"
+    },
+    {
+      "gameId": "1d595e3fd9b94a9bb422c947dca7adfc",
+      "name": "항아리게임 리턴즈",
+      "totalPlayers": 125299,
+      "likes": 1185,
+      "dislikes": 180,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/1d595e3fd9b94a9bb422c947dca7adfc"
+    },
+    {
+      "gameId": "f821324696d740efb8e5dc547ffcbb9a",
+      "name": "항아리메이커",
+      "totalPlayers": 95661,
+      "likes": 566,
+      "dislikes": 329,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/f821324696d740efb8e5dc547ffcbb9a"
+    },
+    {
+      "gameId": "19ee80a4d0514cbab70ecd61deeb24fb",
+      "name": "메토체스 : 메이플 올스타 리그",
+      "totalPlayers": 85246,
+      "likes": 1380,
+      "dislikes": 97,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/19ee80a4d0514cbab70ecd61deeb24fb"
+    },
+    {
+      "gameId": "21ad8c8b33f34d5aa8be5827a7b07246",
+      "name": "츄츄버거 1호점",
+      "totalPlayers": 82753,
+      "likes": 1101,
+      "dislikes": 133,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/21ad8c8b33f34d5aa8be5827a7b07246"
+    },
+    {
+      "gameId": "e92c6726261c4c1795c369b5e66f1efa",
+      "name": "메이플 듀얼",
+      "totalPlayers": 70467,
+      "likes": 789,
+      "dislikes": 83,
+      "inspection": 0,
+      "publicWebPasses": 0,
+      "detailApi": "https://mverse-api.nexon.com/game/v1/mverse/e92c6726261c4c1795c369b5e66f1efa"
+    }
+  ]
+}

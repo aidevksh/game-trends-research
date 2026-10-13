@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-13",
+  "language": "ko",
+  "title": "게임 트렌드에서 작은 게임으로",
+  "subtitle": "로블록스 해외 · 한국 인기 · 메이플스토리 월드",
+  "methodology": [
+    "‘해외’는 Roblox 전 세계 인기작을 뜻한다. 해외 이용자만 따로 분리한 통계는 아니다. ‘국내’는 한국 개발작이 아니라 한국에서 인기 근거가 확인되는 게임을 뜻한다.",
+    "장르는 제작 관점에서 연구자가 재분류했다. Top 10은 각 장르의 전체 모집단을 조사한 공식 순위가 아니라, 공개 인기 지표와 대표성을 바탕으로 선정한 10개 작품이다. 선정 후보 안에서만 순서를 정한다.",
+    "Roblox의 현재 동시 접속자는 순간값이고 방문 수는 누적 방문이다. 메이플스토리 월드의 누적 이용자 수·좋아요와 직접 비교하지 않는다. 한국 차트 노출과 전 세계 동접도 구분한다.",
+    "설명·특징은 공식 소개와 상품 정보를 요약했다. 인기 요소와 공통점, 추천 아이디어는 그 관찰에 대한 연구자 해석이며 인과관계나 흥행 보장이 아니다.",
+    "패스 API의 판매 상태·기본 가격은 조회 시점의 공개 정보다. 지역별 가격, 실험, 할인, 게임 내부 상점은 다를 수 있다. 개별 상품이 확인되지 않았다는 표시는 무료 게임이라는 뜻이 아니다.",
+    "일정은 1인 개발자, AI 코딩 보조, 하루 3~4시간, 기본 엔진 사용법을 아는 조건의 작은 MVP 추정이다. 학습·아트·심사·마케팅·장기 운영은 별도다."
+  ],
+  "insights": [
+    {
+      "title": "다음 행동이 바로 보인다",
+      "body": "수집·성장 게임은 다음 장비나 구역을, 대전·오비는 다음 판과 기록을, 공포·협동은 다음 목표를 보여 준다. 첫 프로토타입에서도 ‘이제 무엇을 하지?’라는 시간을 줄인다.",
+      "implication": "첫 60초 안에 이동 → 행동 → 보상까지 한 번 완료하게 만든다.",
+      "examples": [
+        "Blox Fruits",
+        "Tower of Hell",
+        "DOORS",
+        "메이플랜드"
+      ]
+    },
+    {
+      "title": "반복되는 규칙에 변주를 얹는다",
+      "body": "큰 게임의 콘텐츠 양을 복제하기보다 재사용할 수 있는 라운드, 방, 성장 표를 만든다. 맵 조합·적 배치·도구 선택이 같은 규칙을 다르게 경험하게 한다.",
+      "implication": "처음에는 맵 1개와 변주 3개, 콘텐츠는 데이터 표로 관리한다.",
+      "examples": [
+        "99 Nights in the Forest",
+        "Natural Disaster Survival",
+        "Obby Creator"
+      ]
+    },
+    {
+      "title": "친구가 또 하나의 콘텐츠다",
+      "body": "경쟁 순위, 역할 분담, 타인의 수집품·아바타 구경은 고정 스테이지 밖에서 이야기를 만든다. 다만 거래 경제와 대규모 MMO는 작은 MVP보다 훨씬 많은 운영이 필요하다.",
+      "implication": "2~4인 역할 하나 또는 주간 기록 하나만 먼저 구현한다.",
+      "examples": [
+        "Brookhaven",
+        "Adopt Me!",
+        "RIVALS",
+        "Guts & Blackpowder"
+      ]
+    },
+    {
+      "title": "과금은 서로 다른 욕구를 판다",
+      "body": "확인된 상품은 외형·표현, 영구 편의, 진행 가속, 반복 소비로 나뉜다. 성장 장르의 가속 상품과 경쟁 장르의 외형 상품은 플레이에 미치는 영향이 다르다.",
+      "implication": "추천 MVP는 기본 재미를 검증한 뒤 외형·감정 표현의 확정 구매부터 붙인다.",
+      "examples": [
+        "Blox Fruits",
+        "Pet Simulator 99",
+        "DOORS",
+        "Tower of Hell"
+      ]
+    }
+  ],
+  "firstBuilds": [
+    {
+      "priority": "01",
+      "name": "60초 릴레이 타워",
+      "engine": "Roblox · 국내 실력/오비",
+      "pitch": "두 사람이 번갈아 발판을 활성화하며 60초 코스를 완주하는 오비. 기록 갱신과 친구의 실수가 다음 판을 만든다.",
+      "scope": "맵 1개 · 발판 8종 · 2인 방 · 개인 최고 기록",
+      "effort": "7~14 작업일",
+      "monetization": "트레일·완주 포즈 확정 구매",
+      "reason": "사격 판정이나 거래 없이 이동·라운드·기록으로 작동하는 작은 범위.",
+      "references": [
+        "Tower of Hell",
+        "Obby Creator",
+        "RIVALS"
+      ],
+      "validation": "친구 6~10명에게 설명 없이 플레이하게 하고, 완주 실패 이유와 자발적 재도전 횟수를 기록한다."
+    },
+    {
+      "priority": "02",
+      "name": "4인 야간 택배",
+      "engine": "Roblox · 해외 협동/라운드",
+      "pitch": "불이 꺼진 건물에서 손전등·운반·문 열기 역할을 나눠 5분 안에 택배 3개를 배달한다. 위험은 하나, 역할은 서로 필요하게 만든다.",
+      "scope": "건물 1개 · 적 1종 · 목표 3개 · 최대 4인",
+      "effort": "15~25 작업일",
+      "monetization": "택배 가방·손전등 외형 확정 구매",
+      "reason": "협동 공포의 목표·긴장·에피소드를 살리되 대규모 생존 제작 시스템은 후속 단계로 둔다.",
+      "references": [
+        "DOORS",
+        "99 Nights in the Forest",
+        "Guts & Blackpowder"
+      ],
+      "validation": "한 라운드 뒤 역할을 바꿔 다시 하려는지 관찰한다. 길 찾기와 적 인지 실패를 따로 기록한다."
+    },
+    {
+      "priority": "03",
+      "name": "10분 유물 원정",
+      "engine": "메이플스토리 월드 · 성장/액션",
+      "pitch": "세 갈래 방 중 하나를 골라 전투하고 유물 3개의 조합으로 보스를 잡는 짧은 2D 원정. 매 판 진행은 초기화하고 도감만 남긴다.",
+      "scope": "직업 1개 · 방 5개 · 적 3종 · 보스 1종 · 유물 12개",
+      "effort": "15~30 작업일",
+      "monetization": "캐릭터 외형·도감 프레임 확정 구매",
+      "reason": "기존 2D 리소스와 짧은 성장 곡선을 활용한다. 직업·거래·오픈월드 경제는 MVP 범위 밖이다.",
+      "references": [
+        "단풍의 전설",
+        "Southperry (Early Access)",
+        "Mapleland",
+        "아르테일"
+      ],
+      "validation": "유물 선택이 다음 행동을 바꾸는지 관찰하고, 인기 없는 선택지 3개를 먼저 고친다."
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Roblox",
+      "build": "Studio + Luau. Assistant가 스크립트·오브젝트 생성과 수정 등을 지원한다.",
+      "payment": "패스는 일회성 권한, 개발자 상품은 반복 구매 상품이다. 개인별 실제 결제 가격은 지역 가격 적용 등에 따라 달라질 수 있다.",
+      "implementation": "라운드·보상·저장은 서버에서 결정한다. 반복 구매를 붙일 때는 영수증 처리와 중복 지급 방지를 구현한다.",
+      "links": [
+        {
+          "title": "Studio Assistant",
+          "url": "https://create.roblox.com/docs/assistant/guide"
+        },
+        {
+          "title": "과금 수단",
+          "url": "https://create.roblox.com/docs/production/monetization"
+        },
+        {
+          "title": "개발자 상품",
+          "url": "https://create.roblox.com/docs/production/monetization/developer-products"
+        },
+        {
+          "title": "지역 가격",
+          "url": "https://create.roblox.com/docs/production/monetization/regional-pricing"
+        }
+      ]
+    },
+    {
+      "name": "메이플스토리 월드",
+      "build": "Maker + 플랫폼 Lua/mLua 및 컴포넌트 API. 공식 2D 리소스와 문서의 호출 형식에 맞춰 코딩한다.",
+      "payment": "월드별 상품과 World Coin 체계를 구분해 확인한다. 플랫폼 수익 배분·환급 조건은 공식 문서의 최신 조건을 적용한다. 이 보고서는 미확인 배분율을 제시하지 않는다.",
+      "implementation": "공식 DataStorage 문서 기준으로 서버에서 저장·불러오기를 처리한다. 제작 환경과 출시 환경의 저장 동작을 따로 확인한다.",
+      "links": [
+        {
+          "title": "mLua",
+          "url": "https://maplestoryworlds-creators.nexon.com/ko/docs?postId=1287"
+        },
+        {
+          "title": "DataStorage",
+          "url": "https://maplestoryworlds-creators.nexon.com/en/docs/?postId=692"
+        },
+        {
+          "title": "World Coin 수익 배분",
+          "url": "https://maplestoryworlds-creators.nexon.com/en/docs/?postId=1302"
+        }
+      ]
+    }
+  ],
+  "buildPlan": [
+    {
+      "step": "1",
+      "title": "보상 하나까지 먼저",
+      "body": "한 문장으로 규칙을 쓰고 이동·핵심 행동·승패·보상을 연결한다. AI에는 시스템 전체 대신 작은 기능 하나와 완료 조건을 전달한다."
+    },
+    {
+      "step": "2",
+      "title": "두 명으로 반복 검증",
+      "body": "입장·중도 이탈·재시작·동시 행동을 확인한다. 같은 보상을 두 번 받거나 클라이언트가 점수를 직접 바꾸는 경로를 고친다."
+    },
+    {
+      "step": "3",
+      "title": "선택과 변주 추가",
+      "body": "새 시스템보다 맵 조합·도구 3개·적 패턴 3개부터 늘린다. 재도전과 선택을 관찰한 뒤 분량을 늘린다."
+    },
+    {
+      "step": "4",
+      "title": "저장과 상점 연결",
+      "body": "최고 기록 또는 도감 한 종류만 저장한다. 확정 외형 구매부터 시작하고 취소·중복 영수증·재접속 때 지급을 검증한다."
+    }
+  ],
+  "starterPrompt": "Roblox Studio / Luau로 ‘60초 릴레이 타워’의 첫 프로토타입을 만들어 줘. 최대 2인, 맵 1개, 제한시간 60초, 체크포인트 4개. 서버가 라운드 상태와 승패를 결정하고 클라이언트는 입력·화면만 처리해. 시작 → 플레이 → 결과 → 재시작 상태를 구현해. 먼저 폴더 구조와 기능별 완료 조건을 제시하고 라운드 상태 머신 하나부터 작성해. 저장·결제·다른 맵은 다음 단계로 남겨. 플레이어가 중도 이탈하거나 동시에 완주할 때의 동작도 설명해."
+}
