@@ -1,0 +1,3250 @@
+{
+  "id": "roblox",
+  "region": "글로벌",
+  "platformGroup": "로블록스",
+  "name": "로블록스 방치·타이쿤·성장 시뮬레이터",
+  "asOf": "2026-10-14",
+  "scope": "실시간·오프라인 성장, 초당 수익(money per second), AFK·자동 파밍, 자동 롤(RNG)처럼 '시간이 흐르면 자원이 쌓이는' 방치 메커닉이 핵심 루프인 로블록스 경험을 다룬다. Roblox 공식 장르 분류가 Simulation/Tycoon 또는 Simulation/Incremental Simulator인 작품 중에서 골랐다.",
+  "selectionBasis": "연구자 선정 목록이며 공식 전체 순위나 매출 순위가 아니다. ① Rolimon's 동접 순위(2026-10-14 07:24 KST, 추적 7,748개) 상위 300위와 의뢰 후보에서 출발해 ② 공식 API 장르가 Tycoon/Incremental Simulator이고 ③ 공식 설명·게임패스·개발자 상품·이벤트 기록에서 방치 메커닉(시간 기반 생산·자동화·오프라인 진행·자동 롤)이 확인되는 작품을 추렸다. ④ 같은 계열 복제작은 원작 1개만 남기고, 초당 수익 약탈형·오프라인 농장형·자동 롤 RNG형·자동 파밍 펫형·장기 운영형이 고루 들어가게 10개를 확정했다. 목록 순서는 이 10개 안에서 공식 API 동접(2026-10-14 07:30 KST 단일 스냅샷) 내림차순이다. 동접 상위였지만 제외한 작품: Break and Steal an Egg(94,565명, Steal An Egg에서 영감을 받았다고 공식 설명에 명시한 파생작), Ride A Pet(맵 탐색형), +1 Speed Keyboard Escape(이동 기반 증분형), PLS DONATE(공식 장르 Social, 기부 중심). Capybaras VS Plants는 오프라인 수익을 공식 표방하지만 동접 1,574명으로 작아 패턴 사례로만 인용했다.",
+  "methodology": [
+    "지표 수집: Roblox 공개 API로 동접·누적 방문·즐겨찾기·생성/갱신일(games.roblox.com/v1/games), 좋아요(…/games/votes), placeId→universeId(apis.roblox.com/universes)를 2026-10-14 07:30 KST(2026-10-13 22:30 UTC) 기준으로 조회했다. 동접은 시점 스냅샷이다. 예를 들어 Steal a Brainrot은 같은 날 18분 사이에 622,905명에서 517,399명으로 바뀌었다.",
+    "과금 수집: 의뢰서의 games.roblox.com/v1/games/{id}/game-passes 엔드포인트는 조회 시 HTTP 404였다. 그래서 공식 apis.roblox.com 게임패스 API(이름·Robux 가격·판매 여부)와 개발자 상품 카탈로그 API(페이지당 100개, 최대 12페이지)로 대신했다. 카탈로그에 등록돼 있다고 인게임 상점에 실제 노출·판매된다는 뜻은 아니다. 지역 가격(Managed Pricing)이 적용되면 최종 결제가가 다를 수 있다.",
+    "운영 주기: 공식 경험 이벤트 API(apis.roblox.com/virtual-events)에 개발자가 등록한 업데이트·관리자 이벤트의 제목과 시작 시각(UTC)을 모아 요일·시각 패턴을 계산했다. 이벤트를 등록하지 않는 게임(예: Bee Swarm Simulator)은 갱신일만 확인했다.",
+    "최고 동접: 공식 수치(주주서한)를 우선하고, 게임별 역대·30일·7일 최고치는 제3자 추적 사이트 Rolimon's 게임 페이지 값(추정·관측치)으로 보완했다. Rolimon's의 '3주 전' 같은 상대 날짜는 조회일(2026-10-14) 기준이다.",
+    "플랫폼 수익 구조는 Roblox Creator Hub 공식 문서(DevEx·패스·구독·Creator Rewards·보상형 광고·유료 랜덤 아이템 정책)와 IR 주주서한(2025 Q2~2026 Q2), RDC 보도자료로만 서술했다.",
+    "한계: 조사 중 웹 검색 할당량이 소진돼 언론·커뮤니티 자료는 병렬 조사 에이전트가 먼저 수집한 범위와 공식 1차 자료 위주로 썼다. 게임을 직접 플레이하거나 결제하지 않았다. 매출·리텐션·국가별 이용자는 공개 자료가 없어 추정하지 않았다. 인기 요인·교훈은 설계 관점의 해석이다."
+  ],
+  "overview": "2025~2026년 로블록스 성장은 '시간이 지나면 돈이 쌓이는' 방치·타이쿤 계열이 이끌었다. Grow a Garden(2025-03-25 출시)은 1개월 안에 Robux 지출 1위에 올라 2025년 7월 동접 약 2,200만 명을 기록했고, Steal a Brainrot은 2025년 10월 2,500만 명을 넘었다(Roblox Q2·Q3 2025 주주서한). 2025-08-23 두 게임의 동시 관리자 이벤트 'Admin War'에서 Roblox 동접이 4,740만 명까지 올랐다(Tubefilter). 2026-07-25 생성된 Steal An Egg는 조사 시점 동접 900,094명으로 1위지만, 러닝머신 동영상 피드가 2026-08-25 Roblox의 보상형 연속 피드 제한 대상이 됐다(Inven Global). 오프라인 진행은 Pet Simulator 99!가 2026-09-05 Coin Tray로 넣는 등 기존 작품으로도 번지고 있다(BIG Games 블로그). 크리에이터는 자체 패스 Robux의 70%를 받고, DevEx는 1 Robux당 0.0038달러(2025-09-05~), 미국 18세 이상 인증 이용자 적격 구매분은 0.0054달러(2026-06-08~)다. 다만 2026년 2분기 Roblox 부킹 성장률은 '2025년산 바이럴 게임'에서 참여가 빠져 8%로 둔화했으므로(Q2 2026 주주서한), 신작은 피크 뒤 급감에 대비한 리텐션 구조를 처음부터 설계해야 한다(해석).",
+  "commonalities": [
+    "시간 기반 자원 생성이 진행의 축이다. 기지에 둔 펫·브레인롯·작물이 초당 돈을 만들거나(Steal An Egg·Steal a Brainrot·Plants & Brainrots·Anime Dice), 작물·알이 실시간으로 자라거나(Grow a Garden), 자동 롤·자동 파밍으로 시간을 확률 시도로 바꾼다(Sol's RNG·Pet Simulator 99!·Bubble Gum Simulator INFINITY).",
+    "희귀도에 변이(mutation)·크기·특성(trait)을 곱하는 다층 RNG 수집 구조다. 같은 개체도 날씨·이벤트 변이로 가치가 몇 배가 된다. Steal a Brainrot은 2025-05-31부터 공식 이벤트 제목에 'Mutations'·'Rainbow Mutation'·'Lava Mutation'을 반복해 썼다.",
+    "주간 고정 업데이트와 관리자 이벤트가 표준이다. 공식 이벤트 API 기준 시작 시각 최빈값은 Grow a Garden 토 14·20시 UTC와 수 22시 UTC('Watering Wednesday'), Steal a Brainrot 토 19~20시, Pet Simulator 99! 토 16시, Sol's RNG 토 08시, Bubble Gum Simulator INFINITY 금 20~21시, Fish It! 일 01시, Steal An Egg 토 15시 UTC다.",
+    "플레이어 간 상호작용이 경제를 움직인다. 훔치기·기지 잠금(Steal a Brainrot·Steal An Egg), 거래 도입(Grow a Garden 2025-08-02 'TRADING' 업데이트, Steal a Brainrot 2026-02-21 'TRADE MACHINE', Anime Dice 2026-08-29 'Trading'), 서버 전체 버프 상품(Fish It! 'X8 SERVER BOOST')이 그 예다.",
+    "과금은 시간 단축(스킵), 자동화(Auto Farm·Auto Fishing·Auto Merge), 영구 배수(2x Money·VIP), 확률(럭키 블록·알·상자·행운 부스트)의 네 축에 거의 모두 들어간다. 최근에는 '[AD]'·'Ad Reward'라는 이름의 보상형 광고 보상 상품도 등록돼 있다(Steal An Egg·Sol's RNG·Grow a Garden).",
+    "동접이 업데이트 직후 치솟았다가 며칠 안에 가라앉는 주간 사이클을 보인다. Grow a Garden은 최근 7일 최고 103,532명(Rolimon's)인데 스냅샷 동접은 12,992명이고, Steal An Egg는 최근 7일 최고 11,952,178명에 스냅샷 900,094명이다."
+  ],
+  "designPatterns": [
+    {
+      "name": "초당 수익 기지 + 슬롯 확장",
+      "detail": "수집한 개체를 기지 슬롯에 놓으면 초당 돈이 생긴다. 그 돈으로 더 비싼 개체를 사거나 훔쳐 슬롯·층·리버스(rebirth)를 넓힌다. 생산량이 숫자로 바로 보여 성장 체감이 빠르고, 기지 자체가 다른 이용자에게 보여주는 쇼케이스가 된다(해석).",
+      "examples": [
+        "Steal a Brainrot",
+        "Steal An Egg",
+        "Plants & Brainrots",
+        "Anime Dice"
+      ]
+    },
+    {
+      "name": "오프라인 성장·오프라인 수익",
+      "detail": "접속하지 않아도 작물이 자라거나 수익이 쌓인다. Grow a Garden('your garden literally grows while you are offline')·Anime Dice('MONEY GENERATES WHILE YOU ARE OFFLINE')·Capybaras VS Plants('generate money online AND offline')가 공식 설명에 이를 내세운다. 로블록스는 20분 이상 유휴인 이용자를 자동으로 접속 해제하므로 이 장치가 특히 중요하다(해석).",
+      "examples": [
+        "Grow a Garden",
+        "Anime Dice",
+        "Capybaras VS Plants",
+        "Grow a Garden 2"
+      ]
+    },
+    {
+      "name": "약탈(훔치기)과 방어 타이머",
+      "detail": "다른 이용자 기지의 개체·알을 들고 도망치는 PvP다. 방치 수익이 쌓인 기지를 지켜야 하는 긴장과 '역전' 기회가 생기고, 친구 초대·복수 동기로 이어진다(해석). 파생작 Break and Steal an Egg와 Merge a Nuke!(기지 잠금 쿨다운 상품)도 같은 축을 쓴다.",
+      "examples": [
+        "Steal a Brainrot",
+        "Steal An Egg",
+        "Break and Steal an Egg",
+        "Merge a Nuke!"
+      ]
+    },
+    {
+      "name": "자동 롤·자동 파밍",
+      "detail": "굴리기·채집·부화를 자동으로 반복해 시간을 확률 시도로 바꾼다. 무료 기본 기능으로 두는 게임이 있고, 유료 패스로 파는 게임도 있다(Pet Simulator 99! Auto Farm 175·Auto Tap 350 Robux, Bubble Gum Simulator INFINITY Auto Fishing 349 Robux, Merge a Nuke! Auto Merge 199 Robux, Idle Mafia Game Auto-roll Henchmen 1,200 Robux).",
+      "examples": [
+        "Sol's RNG",
+        "Pet Simulator 99!",
+        "Bubble Gum Simulator INFINITY",
+        "Anime Dice"
+      ]
+    },
+    {
+      "name": "날씨·바이옴·변이 배수 이벤트",
+      "detail": "서버 단위의 시간 한정 환경(날씨·블러드문·바이옴)이 열리면 변이 확률이나 행운이 올라 모두가 같은 시각에 접속할 이유가 생긴다. Pet Simulator 99!는 2026-10-10 'BLOOD MOON', Fish It!은 2026-06-28 'AURORA BOREALIS WEATHER', Capybaras VS Plants는 공식 설명에서 'WEATHERS will occur and mutate'를 내세운다.",
+      "examples": [
+        "Grow a Garden",
+        "Sol's RNG",
+        "Fish It!",
+        "Pet Simulator 99!"
+      ]
+    },
+    {
+      "name": "주간 고정 업데이트 + 관리자 이벤트(admin abuse)",
+      "detail": "매주 같은 요일·시각에 업데이트를 내고 공식 이벤트 알림('Notify me')으로 접속 시각을 모은다. 업데이트 직전이나 주중에는 개발자가 직접 날씨·희귀 개체를 뿌리는 관리자 이벤트를 연다. Grow a Garden은 2026-04-15부터 매주 수요일 22:00 UTC에 30분간 'WATERING WEDNESDAY — ADMIN ABUSE'를 열고, Capybaras VS Plants는 수·토 주 2회 연다.",
+      "examples": [
+        "Grow a Garden",
+        "Steal a Brainrot",
+        "Capybaras VS Plants",
+        "Bubble Gum Simulator INFINITY"
+      ]
+    },
+    {
+      "name": "재입고 상점·한정 재고",
+      "detail": "상점 재고가 주기적으로 재입고되고 희귀 품목은 확률로만 나타나 '재입고 시각'에 다시 접속하게 만든다. Grow a Garden은 'Auto Restock'(79 Robux)·'Restock Shop'(79 Robux) 같은 재입고 관련 개발자 상품을 등록했고, Steal An Egg는 '[Extinction] Limited Egg'(1개 99~50개 3,499 Robux) 한정 알을 판다.",
+      "examples": [
+        "Grow a Garden",
+        "Steal An Egg",
+        "Bee Swarm Simulator"
+      ]
+    },
+    {
+      "name": "거래 경제와 가치 서열",
+      "detail": "희귀 개체를 이용자끼리 교환하게 해 커뮤니티가 가치표를 만들고 장기 목표를 갖게 한다. 대신 사기와 실물 거래 문제가 생긴다(해석). 국가별로 유료 아이템 거래가 제한된 이용자는 PolicyService의 IsPaidItemTradingAllowed로 처리해야 한다(공식 정책).",
+      "examples": [
+        "Grow a Garden",
+        "Pet Simulator 99!",
+        "Steal a Brainrot",
+        "Anime Dice"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "영구 배수·VIP 패스",
+      "detail": "수익·행운·성장 속도를 영구히 2배로 하거나 VIP 혜택을 주는 1회성 패스다. 공식 API 가격 예: Steal a Brainrot '2x Money' 299·VIP 375, Steal An Egg 'X2 MONEY!' 399·'X2 GROWTH SPEED!' 467, Anime Dice 'More Cash'·'Luck' 각 199, Fish It! 'VIP 👑' 445 Robux.",
+      "examples": [
+        "Steal a Brainrot",
+        "Steal An Egg",
+        "Anime Dice",
+        "Fish It!"
+      ]
+    },
+    {
+      "name": "자동화 판매",
+      "detail": "방치의 핵심인 자동 기능 자체를 판다. Pet Simulator 99! 'Auto Farm! ♻️' 175·'Auto Tap! ☝️' 350, Bubble Gum Simulator INFINITY 'Auto Fishing' 349, Merge a Nuke! 'Auto Merge' 199, Idle Mafia Game 'Offline Operations' 480 Robux(공식 패스 API).",
+      "examples": [
+        "Pet Simulator 99!",
+        "Bubble Gum Simulator INFINITY",
+        "Merge a Nuke!",
+        "Idle Mafia Game"
+      ]
+    },
+    {
+      "name": "타이머 스킵·즉시 완료",
+      "detail": "성장·부화·제작 대기 시간을 Robux로 건너뛰는 반복 구매형 개발자 상품이다. Grow a Garden 'Skip Growth' 49·'Grow All Plants' 375, Steal a Brainrot 'Skip Timer – (알 이름)' 99~199, Capybaras VS Plants 'Skip Hatch Time' 39 Robux(카탈로그 등록 기준).",
+      "examples": [
+        "Grow a Garden",
+        "Steal a Brainrot",
+        "Capybaras VS Plants"
+      ]
+    },
+    {
+      "name": "유료 랜덤 상품과 대량 묶음",
+      "detail": "럭키 블록·알·상자를 1/3/10/50/400개 묶음으로 판다. 예: Steal a Brainrot 'Premium Skull Lucky Block' 699(10개 6,990), Pet Simulator 99! '400 Exclusive Lost Hero Eggs!' 32,000, Grow a Garden '+50 Exotic Fairy Chest' 6,999 Robux. Roblox 정책상 모든 결과의 수치 확률 공개가 의무이고, 행운 부스트도 확률 변화를 수치로 설명해야 한다.",
+      "examples": [
+        "Steal a Brainrot",
+        "Pet Simulator 99!",
+        "Grow a Garden",
+        "Fish It!"
+      ]
+    },
+    {
+      "name": "선물·서버 단위 상품",
+      "detail": "같은 상품의 '[GIFT]' 버전으로 친구에게 선물하게 하거나 서버 전체 버프를 판다. 산 사람의 과시가 다른 이용자의 체류 이유가 된다(해석). 예: Fish It! '6H/12H – X8 SERVER BOOST' 1,287/1,989, Capybaras VS Plants 'Server Luck (Stacks)' 199 Robux.",
+      "examples": [
+        "Fish It!",
+        "Steal a Brainrot",
+        "Capybaras VS Plants",
+        "Pet Simulator 99!"
+      ]
+    },
+    {
+      "name": "시즌 패스·보상형 광고",
+      "detail": "시즌제 프리미엄 패스와 티어 스킵, 그리고 보상형 동영상 광고로 무과금 이용자를 수익화한다. 예: Sol's RNG 'RNG Premium Pass – Season VIII' 499, Plants & Brainrots 'Season 9 Premium Pass' 749 Robux. 광고 보상은 개발자 상품이어야 하며 랜덤 보상은 금지된다(공식 문서). Roblox 공식 가이드는 Tycoon에 Opt-in 15%+·일 3회+, Incremental Sim에 13%+·2.8회를 핵심 지표로 제시한다.",
+      "examples": [
+        "Sol's RNG",
+        "Plants & Brainrots",
+        "Grow a Garden",
+        "Steal An Egg"
+      ]
+    }
+  ],
+  "risks": [
+    "피크 뒤 급감이 크다. Grow a Garden은 Rolimon's 관측 최고 22,375,597명(2025-08-23)에서 스냅샷 12,992명으로, Plants & Brainrots는 8,654,525명(2025-10-11)에서 1,916명으로 줄었다. Roblox도 2026년 2분기 부킹 둔화 원인으로 '2025년산 바이럴 게임'에서 참여가 빠진 점을 들었다(Q2 2026 주주서한).",
+    "복제 속도가 매우 빠르다. 2026-09-05 생성된 Break and Steal an Egg는 공식 설명에 'inspired by steal an egg'라고 적었고 Rolimon's 관측 최고 935,530명을 기록했다. 'Steal a …' 변형작도 다수 순위권에 있어 메커닉 자체로는 해자를 만들기 어렵다(해석).",
+    "플랫폼 정책 변화에 노출된다. 유료 랜덤 아이템 확률 공개와 국가별 제한(PolicyService), 2026년 채팅 연령 확인과 16세 미만 Roblox Kids/Select 카탈로그 선별, 추천 알고리즘(RFY)의 리텐션 중심 개편, 교차 경험 게임패스 판매 중단이 모두 수익과 노출에 직접 영향을 준다(공식 문서·IR).",
+    "AFK·매크로·봇 문제가 있다. 로블록스는 20분 유휴 시 자동으로 접속을 해제하므로, 서버 체류형 AFK 보상은 우회 매크로를 부르고 오프라인 진행은 경제 인플레이션을 부를 수 있다. Steal An Egg '+1B SPEED'(2,999 Robux)나 Break and Steal an Egg '4096x Speed'(3,499 Robux)처럼 배수 상품이 커질수록 균형 관리가 어려워진다(해석).",
+    "타깃 연령과 수익 단가가 어긋날 수 있다. 바이럴 방치 게임은 저연령 비중이 높은 반면, Roblox는 미국 18세 이상 지출의 크리에이터 몫을 37.8%로 높이며 '노블 게임'(새 장르·메커닉·비주얼, R15 필수)을 우대한다. 기존 방치·브레인롯 문법을 따르는 게임은 이 인센티브를 덜 받을 수 있다(해석, Q1 2026 주주서한).",
+    "보상형 연속 피드·다계정 지표 논란에 노출된다. Roblox는 2026-08-25부터 보상형 연속 피드 게임을 Kids·Select에서 제외했고 Steal An Egg가 직접 영향을 받았다(Inven Global). Hindenburg Research 공매도 보고서는 다계정·AFK 이용자가 동접을 부풀린다고 주장했다(적대적 출처, 미검증, Roblox 반박은 이번 조사에서 확인하지 못함). 체류 시간 자체를 보상으로 거는 설계는 정책과 지표 신뢰 양쪽에서 위험하다(해석)."
+  ],
+  "pipeline": [
+    {
+      "name": "Roblox Everywhere(로블록스 게임의 독립 앱 배포)",
+      "note": "RDC 2026(2026-09-11) 발표. 크리에이터가 게임을 모바일·PC·콘솔 독립 앱으로 낼 수 있게 할 예정이며 시점은 '곧(Soon)'. 방치 게임의 플랫폼 밖 유통과 직결된다(Roblox IR 보도자료)."
+    },
+    {
+      "name": "Play Offline·비동기 알림 시스템",
+      "note": "RDC 2026 발표. 한 게임 안에서 온라인·오프라인 모드를 함께 쓸 수 있고, 턴제·비동기 멀티플레이용 알림 시스템을 지원할 예정이다. 출시 시점은 미공개(Roblox IR 보도자료)."
+    },
+    {
+      "name": "크롬 웹 즉시 플레이",
+      "note": "RDC 2026 발표. 2026년 말까지 경험 상세 페이지에서 설치 없이 크롬 브라우저로 접속할 수 있게 할 예정이다(Roblox IR 보도자료)."
+    },
+    {
+      "name": "Grow a Garden 다음 업데이트(2026-10-17 20:30 UTC)",
+      "note": "공식 이벤트 API에 'NEXT UPDATE – ???'로 등록됨. Steal An Egg 'Halloween Dimension'(10-17 15:00 UTC), Fish It! 'NEXT UPDATE!'(10-18 01:00 UTC), Anime Dice 'HALLOWEEN PT. 1'(10-18 19:00 UTC)도 예정돼 있다."
+    }
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "id": "steal-an-egg",
+      "name": "Steal An Egg",
+      "url": "https://www.roblox.com/games/107778070777162/Steal-An-Egg",
+      "developer": "and Collect Rare Pets 그룹(소유자 misfitsbsthree, 프로필에 'Ben from Steal an Egg' 표기). 법인 구조 미확인",
+      "publisher": "and Collect Rare Pets 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2026-07-25 (Roblox 공식 API 생성일, 글로벌)",
+      "platforms": [
+        "Roblox(PC·모바일·태블릿·콘솔)"
+      ],
+      "subgenre": "알 약탈·부화형 초당 수익 타이쿤(공식 장르 Simulation/Tycoon)",
+      "businessModel": "무료 플레이 + Robux 게임패스 2종 + 개발자 상품(속도·한정 알·즉시 부화·행운)",
+      "status": "서비스 중",
+      "description": "동물과 다른 플레이어의 알을 훔쳐 부화시키고, 펫이 버는 돈으로 러닝머신과 기지를 업그레이드해 더 크고 희귀한 알을 노리는 타이쿤이다. 생성 3개월이 안 된 조사 시점에 Roblox 동접 1위다.",
+      "coreLoop": [
+        "러닝머신에서 속도(Speed) 훈련",
+        "알을 훔쳐 잡히기 전에 기지로 귀환",
+        "기지에서 알 성장·부화로 펫 획득(크기·변이 포함)",
+        "펫이 기지에서 초당 돈 생산",
+        "돈으로 러닝머신·기지 업그레이드 → 더 멀고 희귀한 알에 도전(반복)"
+      ],
+      "features": [
+        "공식 설명: 동물의 알 훔치기 → 부화 → 펫으로 돈 벌기 → 러닝머신·기지 업그레이드 → 속도 훈련 → 다른 플레이어 알 훔치기 → 더 희귀한 알·크기·변이 발견",
+        "서버 최대 7인(공식 API)이라 약탈 상대가 늘 가까이 있다(해석)",
+        "개발자 상품명 기준 알 희귀도가 Common~Divine 10단계다('Steal DNA Common' 49 ~ 'Steal DNA Divine' 4,999 Robux)",
+        "토요일 15:00 UTC 주간 업데이트(공식 이벤트 9건: 2026-08-22 'ADMIN ABUSE!? + New Zone' → 09-05 'RIFTS ARE OPENING' → 10-10 'Mounts are coming! RIDE YOUR PETS!' → 10-17 'Halloween Dimension')",
+        "업데이트 8로 펫 탈것이 추가됐다. 희귀 Shooting Star 이벤트에서 얻는 fallen star가 필요하다(PCGamesN, 2026-10-13)",
+        "초기에는 러닝머신에서 짧은 동영상이 연속 재생되고 화면에 머무는 동안 속도가 계속 올랐다. Roblox의 보상형 연속 피드 제한(2026-08-25 시행) 대상이 됐다(Inven Global)"
+      ],
+      "progression": [
+        "속도(Speed) 수치와 속도 배수 티어",
+        "러닝머신 등급·스킨",
+        "기지 확장·업그레이드",
+        "알 희귀도(10단계)와 알 크기",
+        "펫 변이(mutation)",
+        "탈것(Mounts, 2026-10-10)",
+        "트로피·별(Stars)"
+      ],
+      "idleMechanics": "기지에 둔 펫이 초당 돈을 만들고 알은 실시간으로 자란다(공식 설명, 'X2 GROWTH SPEED!' 패스). 오프라인 수익 여부는 공식 출처로 확인하지 못했다(미확인). 파생작 Break and Steal an Egg는 'Double Offline Reward'(49 Robux)를 판다. 출시 초 러닝머신 동영상 피드는 화면에 머물기만 해도 속도가 오르는 AFK형 보상이었다. 2026-08-25 Roblox 정책 시행 직후 이 피드를 뺀 채 복귀했다는 커뮤니티 보도가 있다. '[AD] 2x Cash Reward'·'[AD] 2x Egg Growth (5 Min)' 같은 광고 보상 명칭의 상품도 등록돼 있다(판매 off). 보상형 광고와 연동한 것으로 보인다(해석).",
+      "socialAndLiveOps": [
+        "다른 플레이어 기지의 알 약탈(공식 설명 'Steal eggs from other players')",
+        "토 15:00 UTC 주간 업데이트와 'ADMIN ABUSE' 이벤트(공식 이벤트 API)",
+        "업데이트마다 한정 알('[Extinction]'·'[Luminous]' Limited Egg)로 시즌감 부여",
+        "그룹 'and Collect Rare Pets' 멤버 99,091,621명(공식 그룹 API, 2026-10-14)",
+        "2026-08-24~25 약 3시간 비공개 후 복귀(커뮤니티 보도), 같은 시기 Roblox가 아동 계정 대상 보상형 피드 정책 시행"
+      ],
+      "popularityFactors": [
+        "'알을 훔쳐 부화'라는 목표를 첫 화면에서 바로 이해할 수 있다(해석)",
+        "Steal a Brainrot의 약탈 타이쿤 문법을 펫·알 수집으로 옮겨 기존 이용자의 학습 비용이 낮다(해석)",
+        "유튜버 Foltyn 영상(130만 회) 등 크리에이터 영상으로 화제가 됐다(eGamers.io)",
+        "알 크기·변이·10단계 희귀도로 장기 목표가 겹겹이 있다(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "영구 패스는 수익 2배·알 성장 2배 두 개뿐이다. 매출의 중심은 반복 구매형 개발자 상품(속도 묶음, 속도 배수 티어, 한정 알 1/3/10/50개 묶음, 즉시 부화, 행운 부스트)이다. 1 Robux 샘플 팩으로 첫 결제 장벽을 낮추고, '[GIFT]' 상품으로 선물도 할 수 있다.",
+        "products": [
+          {
+            "name": "X2 MONEY!",
+            "price": "399 Robux(게임패스)",
+            "contents": "펫 수익 2배",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "X2 GROWTH SPEED!",
+            "price": "467 Robux(게임패스)",
+            "contents": "알 성장 속도 2배",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "+1M SPEED / +1B SPEED",
+            "price": "249 / 2,999 Robux",
+            "contents": "속도 즉시 추가",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "[Extinction] Limited Egg x1 / x10 / x50",
+            "price": "99 / 799 / 3,499 Robux",
+            "contents": "한정 알 묶음(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Instant Hatch (1) ~ (10) / INSTANT GROW ALL!",
+            "price": "9~299 / 199 Robux",
+            "contents": "부화·성장 대기 즉시 완료",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Luck Boost 1·2·3 / 2x Earnings",
+            "price": "49·99·199 / 99 Robux",
+            "contents": "행운·수익 부스트",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Sample Pack 1~4",
+            "price": "1 Robux",
+            "contents": "첫 구매 유도 샘플",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "게임패스 2종(X2 MONEY! 399, X2 GROWTH SPEED! 467 Robux)이 판매 중 표시(공식 API, 2026-10-14)",
+          "개발자 상품 109개 등록, 그중 105개가 가격 있는 판매 상태(1~4,999 Robux, 중앙값 249)",
+          "한정 알을 1·3·10·50개(99·249·799·3,499 Robux) 묶음으로 판매",
+          "'[AD]' 접두어 광고 보상 명칭 상품 4종 등록(판매 off)"
+        ],
+        "unverified": "알·럭키 상품의 공시 확률과 인게임 노출 여부, 지역별 최종 가격, 광고 연동 실제 구현, 매출(공식·언론 수치 없음)은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 900,094명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동) / 같은 날 22:48 UTC 906,576명. Rolimon's 관측 최고 동접 14,293,524명(3 weeks ago 표기), 최근 30일 최고 14,293,524명(3 weeks ago), 최근 7일 최고 11,952,178명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준). 언론 보도: 2026-09-09 무렵 동접 약 120만~130만·역대 최고 990만 근접(Player.One, 추적 사이트 인용). 1,000만 명 이상 최고치는 언론으로 확인되지 않음",
+        "chart": "RoTrends 기준 Top Playing Now·Most Popular·Top Earning 1위(2026-08 중순~10-13, 제3자 데이터, 병렬 조사 인용)",
+        "rating": "공식 투표 좋아요 3,487,921 / 싫어요 303,371(긍정 92.0%), 2026-10-14",
+        "other": "누적 방문 7,990,790,283회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 7,696,308 · 좋아요 3,487,921/싫어요 303,371(긍정 92.0%) — 공식 API, 2026-10-14 07:30 KST. 평균 세션 약 15분(Player.One, 추적 사이트 인용)"
+      },
+      "userFeedback": {
+        "positive": [
+          "공식 투표 긍정 92.0%로 대형작 중 높은 편",
+          "단순한 목표와 빠른 성장 체감으로 크리에이터 영상에서 확산(eGamers.io, 해석 포함)"
+        ],
+        "negative": [
+          "러닝머신 동영상 피드가 블랙미러 'Fifteen Million Merits'에 비유되는 등 비판(eGamers.io)",
+          "Roblox가 보상형 연속 피드를 아동 계정에서 제한하며 5~15세의 접근이 수정 전까지 막혔다(Inven Global)"
+        ],
+        "basis": "Roblox 공식 투표 API와 언론 보도(eGamers.io·Inven Global). 스토어형 텍스트 리뷰 표본은 조사하지 않았다."
+      },
+      "takeaways": {
+        "borrow": [
+          "'훔치기→부화→초당 수익' 3단 목표를 한 화면에서 보여주는 즉시성",
+          "한정 알을 1/3/10/50개 묶음으로 파는 가격 사다리와 1 Robux 샘플 팩",
+          "토요일 고정 업데이트마다 새 존·바이옴·탈것으로 목표 갱신"
+        ],
+        "avoid": [
+          "콘텐츠 피드를 '보는 동안 보상'으로 주는 AFK 장치 — 아동 보호 정책 위반 위험",
+          "속도 +1B 같은 극단적 배수 상품으로 인한 경제 인플레이션"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/107778070777162/Steal-An-Egg",
+          "title": "Steal An Egg 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(알 훔치기·부화·펫 수익·러닝머신·변이), 데스크톱·콘솔·모바일·태블릿 지원",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=10563114921",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=10563114921 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/10563114921/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 2종 이름·가격·판매 여부(2026-10-13 22:30 UTC 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/10563114921/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 109개(속도·한정 알·즉시 부화·행운·[AD] 상품) 등록 확인. 등록이 인게임 판매를 보장하지 않음",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/10563114921/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "토 15:00 UTC 주간 업데이트 9건(2026-08-22~10-17)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/107778070777162",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.invenglobal.com/articles/25146/roblox-blocks-rewarded-infinite-scroll-on-kids-accounts",
+          "title": "Roblox Blocks Rewarded Infinite Scroll on Kids Accounts — Inven Global (2026-08-25)",
+          "type": "보도",
+          "note": "Steal An Egg 러닝머신에서 짧은 동영상이 연속 재생되고 화면에 머무는 동안 캐릭터 속도가 계속 오르던 구조를 설명. 2026-08-25부터 보상형 연속 피드 게임을 Roblox Kids·Select에서 제외. 동접 약 65만·누적 방문 3억 9,400만",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://player.one/robloxs-steal-egg-beating-some-platforms-biggest-games-164086",
+          "title": "Roblox's Steal an Egg beating some of the platform's biggest games — Player.One (2026-09-09)",
+          "type": "보도",
+          "note": "2026-09-09 무렵 동접 약 120만~130만, 24시간 최고 200만 이상, 역대 최고 990만 근접, 평균 세션 약 15분(추적 사이트 인용)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "steal-a-brainrot",
+      "name": "Steal a Brainrot",
+      "url": "https://www.roblox.com/games/109983668079237/Steal-a-Brainrot",
+      "developer": "BRAZILIAN SPYDER 그룹(소유자 SpyderSammy). 법인명 Spyder Games, 개발 파트너로 Do Big Studios가 보도됨",
+      "publisher": "BRAZILIAN SPYDER 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2025-05-16 (Roblox 공식 API 생성일, 글로벌)",
+      "platforms": [
+        "Roblox(PC·모바일·태블릿)"
+      ],
+      "subgenre": "밈 캐릭터 약탈·초당 수익 타이쿤(공식 장르 Simulation/Tycoon)",
+      "businessModel": "무료 플레이 + 게임패스 3종 + 개발자 상품(서버 행운·럭키 블록·이벤트 휠·트롤 장비·현금 팩)",
+      "status": "서비스 중",
+      "description": "중앙 컨베이어에서 '이탈리안 브레인롯' 밈 캐릭터를 사서 기지에 두면 초당 돈이 쌓이고, 다른 기지의 캐릭터를 훔치며 리버스하는 타이쿤이다. 2025년 10월 Roblox 역대 최고인 동접 2,500만 명을 넘겼다.",
+      "coreLoop": [
+        "컨베이어에서 브레인롯 구매(또는 남의 기지에서 훔치기)",
+        "기지 슬롯에 배치해 초당 돈 생성",
+        "기지 잠금으로 방어하며 더 비싼·희귀한 브레인롯 확보",
+        "변이·특성·퓨즈로 수익 배수 상승",
+        "리버스로 초기화 후 더 높은 배수로 재성장(반복)"
+      ],
+      "features": [
+        "공식 설명: 브레인롯 구매 → 다른 플레이어에게서 훔치기 → 돈 생성 → 리버스 → 슬랩·트롤 장비로 다른 플레이어 방해",
+        "맵 중앙 빨간 컨베이어로 지나가는 브레인롯을 사서 기지로 옮긴다(ScreenRant)",
+        "공식 이벤트 제목 기준 변이를 꾸준히 추가했다: Mutations(2025-05-31)·Bloodmoon·Rainbow·Candy·Lava(2025-07-25)·Radioactive·Cursed·Divine·Crystal·Eclipse(2026-10-03)",
+        "퓨즈·크래프트·트레이드·RNG 같은 '머신' 단위로 콘텐츠를 늘렸다(공식 이벤트: FUSE MACHINE 2025-08-01, CRAFT MACHINE 09-06, TRADE MACHINE 2026-02-21, RNG MACHINE 2026-08-08)",
+        "매주 화요일 미 동부 18시(22:00 UTC) 30분 'Taco Tuesday' 관리자 이벤트에서 타코 특성(수익 3배)을 준다(Dexerto)",
+        "2026-01-17 인게임 브루노 마스 콘서트에 1,270만 명 이상이 접속했다(NME)"
+      ],
+      "progression": [
+        "브레인롯 희귀도(상품명 기준 Mythic·Brainrot God·Secret 등)",
+        "변이(mutation) 수익 배수",
+        "특성(trait) 배수",
+        "기지 층 해금('Unlock First/Second/Third Floor' 상품)",
+        "리버스(공식 이벤트 'REBIRTH 19', 2026-08-15)",
+        "퓨즈·크래프트·리추얼"
+      ],
+      "idleMechanics": "기지에 놓은 브레인롯이 초당 돈을 만든다(공식 설명 'Generate money'). 기지 버튼으로 잠깐 보호막을 칠 수 있다(위키백과). 오프라인 수익은 공식 출처로 확인하지 못했다. 일부 AI 보조 가이드가 '리버스 5 이상부터 누적'이라고 주장하지만 미검증이다. 알 부화 대기 시간이 있어 'Skip Timer – (알 이름)' 상품(99~199 Robux)을 판다. 핵심은 방치보다 '정시 접속'이다(해석). 토요일 업데이트와 화요일 Taco Tuesday 때 잠깐 접속하면 큰 보상을 받는 구조다.",
+      "socialAndLiveOps": [
+        "다른 기지 약탈과 잠금 방어, 슬랩·트롤 장비(예: Ban Hammer 999 Robux)로 방해",
+        "토 19~20시 UTC 주간 업데이트(공식 이벤트 63건, 2025-05-31~2026-10-10)와 화요일 Taco Tuesday",
+        "2025-08-23 Grow a Garden과 동시 관리자 이벤트 'Admin War'로 2,000만 동접·Roblox 4,740만 동접(Tubefilter)",
+        "트레이드 머신(2026-02-21)과 이벤트별 휠·럭키 블록 교체",
+        "브루노 마스 콘서트(2026-01-17) 등 외부 협업"
+      ],
+      "popularityFactors": [
+        "훔치고 도망치는 추격이 짧은 영상 클립과 잘 맞는다(해석). NME가 인용한 이용자 반응 'Best part is the chase'",
+        "이탈리안 브레인롯 밈 캐릭터의 인지도를 그대로 가져왔다(해석)",
+        "개발자끼리 공개 경쟁한 관리자 이벤트가 사상 최대 동시 접속을 만들었다(Tubefilter)",
+        "주 2회(토·화) 정시 이벤트로 접속을 습관화했다(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "게임패스는 2x Money·VIP·관리자 명령어 3종이다. 개발자 상품은 서버 전체 행운, 이벤트마다 바뀌는 럭키 블록·휠(확률형), 트롤 장비, 현금 팩, 알 타이머 스킵으로 짜였고 대부분 '[GIFT]' 선물판이 있다.",
+        "products": [
+          {
+            "name": "2x Money / VIP / Admin Commands",
+            "price": "299 / 375 / 7,999 Robux(게임패스)",
+            "contents": "수익 2배·VIP·채팅 관리자 명령어",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "2x / 4x / 8x Server Luck",
+            "price": "249 / 999 / 2,999 Robux",
+            "contents": "서버 전체 행운 증가",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Premium Skull Lucky Block (1x / 10x)",
+            "price": "699 / 6,990 Robux",
+            "contents": "할로윈 업데이트 럭키 블록(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "1x / 3x / 10x Spin (Eclipse Wheel)",
+            "price": "99(할인 49) / 199 / 499 Robux",
+            "contents": "이벤트 휠(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "+1 Secret Lucky Block",
+            "price": "1,499 Robux",
+            "contents": "Secret 등급 럭키 블록",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Skip Timer – (알 이름)",
+            "price": "99~199 Robux",
+            "contents": "알 부화 대기 스킵",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Cash Pack #1~#5 / StarterPack",
+            "price": "59~2,499 / 189 Robux",
+            "contents": "인게임 현금·스타터 팩",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "게임패스 3종 판매 중(2x Money 299, VIP 375, Admin Commands 7,999 Robux)",
+          "개발자 상품 308개 등록, 가격 있는 판매 상태 124개(지난 이벤트 휠은 가격 없음으로 판매 중지)",
+          "서버 행운 2x/4x/8x(249/999/2,999 Robux)와 Secret 럭키 블록 묶음(+3 4,497, +8 11,992 Robux) 판매 표시",
+          "대부분 상품에 '[GIFT]' 선물 버전 존재"
+        ],
+        "unverified": "럭키 블록·휠의 공시 확률과 인게임 노출, 지역 가격, 매출(공식·언론 수치 없음. RoWatcher 추정치는 신뢰도가 낮아 쓰지 않음)은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 622,905명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동) → 18분 뒤 517,399명(화요일 Taco Tuesday 시간대 급등 후 하락). Rolimon's 관측 최고 동접 25,836,222명(October 11, 2025 표기), 최근 30일 최고 1,412,614명(3 weeks ago), 최근 7일 최고 1,231,457명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준). 공식: 2025년 10월 동접 2,500만 명 돌파(Roblox Q3 2025 주주서한). 보도: 2025-08-23 Admin War 2,000만(Tubefilter), 2025-10 첫 2,500만(2,540만) 돌파(PocketGamer.biz)",
+        "revenue": "미확인(공식·언론 수치 없음)",
+        "rating": "공식 투표 좋아요 15,459,505 / 싫어요 2,696,096(긍정 85.2%), 2026-10-14",
+        "other": "누적 방문 73,950,099,468회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 29,540,750 · 좋아요 15,459,505/싫어요 2,696,096(긍정 85.2%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 39,351,459명(공식 그룹 API). Roblox는 이 게임을 '젊은 개발자 그룹이 4개월 만에 출시해 2,500만 동접'한 사례로 소개(Q4 2025 주주서한)"
+      },
+      "userFeedback": {
+        "positive": [
+          "공식 투표 좋아요 1,545만 건으로 절대 규모 최대급",
+          "ScreenRant '혼란스럽지만 몰입감 있다', NME 인용 이용자 '추격이 최고'"
+        ],
+        "negative": [
+          "Polygon이 최고 아이템과 서버 관리자 능력을 현금으로 파는 P2W 구조를 비판(위키백과 인용)",
+          "약탈당한 아동이 우는 영상이 확산됐고 Massively OP는 '아이들을 비참하게 만들도록 설계'라고 헤드라인을 달았다(위키백과 인용)",
+          "긍정 85.2%로 10개 중 하위권(공식 투표)"
+        ],
+        "basis": "Roblox 공식 투표 API, ScreenRant·NME 보도, 위키백과에 인용된 Polygon·Massively OP 기사(원문 미열람)"
+      },
+      "takeaways": {
+        "borrow": [
+          "주 2회 정시 이벤트(토요일 업데이트+주중 30분 관리자 이벤트)로 동접 파동을 설계",
+          "이벤트마다 새 변이·휠·럭키 블록을 바꿔 '이번 주 한정' 수집 목표 제공",
+          "서버 전체 행운처럼 산 사람과 주변 모두가 이득을 보는 사회적 과금"
+        ],
+        "avoid": [
+          "약탈 손실이 큰 구조는 저연령 이용자의 좌절과 부정 여론으로 이어진다",
+          "밈 캐릭터 IP 의존: 라이선스 분쟁으로 캐릭터가 삭제되고 소송이 났다(Tung Tung Tung Sahur, GamesBeat)",
+          "고가 관리자 권한 판매(Admin Commands 7,999 Robux) 같은 P2W 인식"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/109983668079237/Steal-a-Brainrot",
+          "title": "Steal a Brainrot 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(브레인롯 구매·훔치기·돈 생성·리버스·트롤 장비)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=7709344486",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=7709344486 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/7709344486/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 3종 이름·가격(2026-10-13 22:30 UTC)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/7709344486/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 308개(서버 행운·럭키 블록·휠·스킵·트롤 장비) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/7709344486/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "토 19~20시 UTC 주간 업데이트 63건(2025-05-31~2026-10-10)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.tubefilter.com/2025/08/25/roblox-grow-garden-steal-brainrot-admin-war-record/",
+          "title": "Developer beef just helped Roblox set a 47-million-player record — Tubefilter (2025-08-25)",
+          "type": "보도",
+          "note": "2025-08-23 Grow a Garden(Jandel)과 Steal a Brainrot(SpyderSammy)의 동시 관리자 이벤트 'Admin War'. Grow a Garden 2,110만·Steal a Brainrot 2,000만(자체 최고)·Roblox 4,740만 동접, 평소 두 게임 하루 평균 약 100만",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.dexerto.com/roblox/taco-tuesday-steal-a-brainrot-3242873/",
+          "title": "What time is Taco Tuesday in Steal a Brainrot? — Dexerto (2026-03-10 갱신)",
+          "type": "보도",
+          "note": "매주 화요일 미 동부 18시 약 30분 관리자 이벤트. 컨베이어 위 타코 대포가 브레인롯에 Taco 특성(수익 3배)·희귀 Corrupted Taco(5배) 부여",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/robloxs-steal-a-brainrot-becomes-first-game-to-surpass-25m-concurrent-players/",
+          "title": "Roblox's Steal a Brainrot becomes first game to surpass 25m concurrent players — PocketGamer.biz (2025-10-07)",
+          "type": "보도",
+          "note": "첫 2,500만 동접(2,540만) 돌파, 개발 파트너 Do Big Studios 언급, 2025년 10월 누적 방문 301억(Grow a Garden 322억)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "fish-it",
+      "name": "Fish It!",
+      "url": "https://www.roblox.com/games/121864768012064/Fish-It",
+      "developer": "Fish Atelier 그룹(소유자 Wildes)",
+      "publisher": "Fish Atelier 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2024-10-21 (Roblox 공식 API 생성일). 첫 공식 이벤트는 2024-12-13 'SHARK HUNT!'",
+      "platforms": [
+        "Roblox(PC·모바일·태블릿·콘솔)"
+      ],
+      "subgenre": "낚시 수집 증분형 시뮬레이터(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 게임패스(행운·변이·VIP·팩) + 개발자 상품(스킨 크레이트·펫 알·코인·서버 부스트·물약)",
+      "status": "서비스 중",
+      "description": "섬을 오가며 물고기를 낚아 100만 가지 이상의 변형을 모으는 낚시 수집 시뮬레이터다. 공식 설명에 'Fisch와 Fishing Simulator에서 영감을 받았다'고 적혀 있다. 매주 일요일 01:00 UTC(미국 토요일 저녁)에 새 섬·비밀 개체를 낸다.",
+      "coreLoop": [
+        "클릭으로 캐스팅 게이지 충전 → 연타로 낚기(공식 설명)",
+        "물고기 판매로 코인 획득",
+        "낚싯대·보트·행운 업그레이드",
+        "새 섬·확장 지역에서 Secret·Forgotten 등 희귀 개체·변이 수집",
+        "주간 업데이트의 새 섬·이벤트·보스로 반복"
+      ],
+      "features": [
+        "공식 설명: 100만 가지 이상 변형 수집, 친구와 함께 낚시, 바다 항해 탐험",
+        "매주 일요일 01:00 UTC 업데이트(2026년 공식 이벤트 20건 이상: Kohana Expansion·Underwater City·Mariana Trench Expansion·BOSS FIGHTS·ESOTERIC EXPANSION 등)",
+        "보스전, 외계인 침공 이벤트, 픽셀 펫 알, 배틀패스 보상·스킨(공식 설명의 최근 업데이트 요약)",
+        "날씨 이벤트로 신규 변이를 공급한다('AURORA BOREALIS WEATHER — NEW SECRET + MUTATION', 2026-06-28)",
+        "클랜 생성 상품 'Create Clan'(99 Robux)이 2026-10-13에 갱신돼 클랜 기능을 넣은 것으로 보인다(해석)"
+      ],
+      "progression": [
+        "낚싯대(애니메이션 로드 스킨 포함)",
+        "보트·호버보트",
+        "행운(Luck) 패스·물약",
+        "변이(More Mutations 패스)",
+        "섬·확장 지역 해금",
+        "펫(Arcade Egg 등)",
+        "배틀패스 티어"
+      ],
+      "idleMechanics": "공식 설명은 클릭으로 충전하고 연타하는 능동 낚시다. 의뢰서의 'AFK 낚시' 전제는 공식 자료로 확인하지 못했다(자동 낚시 기능의 존재·무료 여부 미확인). 6시간·12시간짜리 서버 전체 X8 부스트와 행운 물약처럼 시간제 버프가 있어 장시간 체류를 보상한다(해석). 오프라인 진행에 대한 언급은 없다.",
+      "socialAndLiveOps": [
+        "친구와 함께 낚시·항해(공식 설명)",
+        "서버 전체 X8 부스트(6H 1,287·12H 1,989 Robux) 같은 공유 버프",
+        "클랜(2026-10, 상품 등록 기준)",
+        "일요일 01:00 UTC 주간 업데이트와 관리자 이벤트(2025-08-09 'NEW UPDATE – ADMIN EVENTS')",
+        "배틀패스·스킨 크레이트 시즌 운영"
+      ],
+      "popularityFactors": [
+        "검증된 낚시 수집 문법(Fisch·Fishing Simulator)을 쉬운 조작으로 단순화했다(공식 설명의 영감 표기, 해석)",
+        "100만+ 변형과 Secret·Forgotten 등급이 '한 번 더' 동기를 만든다(해석)",
+        "매주 새 섬·확장 지역으로 탐험 목표를 갱신한다(공식 이벤트 기록)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "행운·변이·판매 편의·VIP 같은 영구 패스에 스킨 크레이트·펫 알·코인 팩·서버 부스트·저가 물약 같은 반복 상품을 더한다. 한정 보트는 기간 판매 후 판매를 중지한다(가격 없음).",
+        "products": [
+          {
+            "name": "Small Luck / Extra Luck / Advanced Luck",
+            "price": "50 / 245 / 545 Robux(게임패스)",
+            "contents": "행운 증가",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "More Mutations / Sell Anywhere / VIP",
+            "price": "295 / 315 / 445 Robux(게임패스)",
+            "contents": "변이 확률·어디서나 판매·VIP",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Hyper Pack",
+            "price": "999 Robux(게임패스)",
+            "contents": "팩",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "1 Exalted Crate / 5 Exalted Crates",
+            "price": "249 / 1,245 Robux",
+            "contents": "스킨 크레이트(확률형, 2026-10-11 갱신)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "6H / 12H – X8 SERVER BOOST",
+            "price": "1,287 / 1,989 Robux",
+            "contents": "서버 전체 8배 부스트",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "1 Luck Potion / 20,000 Coins",
+            "price": "9 / 245 Robux",
+            "contents": "행운 물약·코인",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 12종(50~999 Robux), 판매 종료 한정 보트·팩 12종",
+          "개발자 상품 325개 등록, 가격 있는 판매 상태 294개(중앙값 495 Robux)",
+          "서버 전체 부스트·클랜 생성(99 Robux) 상품 존재"
+        ],
+        "unverified": "크레이트·펫 알의 공시 확률, 자동 낚시 관련 상품·무료 기능, 지역 가격, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 67,901명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 2,716,766명(December 7, 2025 표기), 최근 30일 최고 142,263명(2 days ago), 최근 7일 최고 142,263명(2 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준)",
+        "rating": "공식 투표 좋아요 1,345,907 / 싫어요 279,096(긍정 82.8%, 10개 중 최저), 2026-10-14",
+        "other": "누적 방문 4,779,989,265회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 1,290,223 · 좋아요 1,345,907/싫어요 279,096(긍정 82.8%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 3,819,947명(공식 그룹 API)"
+      },
+      "userFeedback": {
+        "positive": [
+          "누적 방문 47.8억 회, 좋아요 134만 건(공식 API)",
+          "매주 업데이트 직후 30일 최고 동접 142,263명을 기록하는 등 업데이트 반응이 꾸준하다(Rolimon's, 해석)"
+        ],
+        "negative": [
+          "긍정 비율 82.8%로 비교군 최저(공식 투표). 구체적 불만 내용은 미확인",
+          "패스·상품 수가 많아 과금 피로가 생길 수 있다(상품 319개 판매 상태, 해석)"
+        ],
+        "basis": "Roblox 공식 투표·메타데이터 API와 Rolimon's 관측치. 텍스트 리뷰·커뮤니티 표본은 웹 검색 한도로 수집하지 못했다."
+      },
+      "takeaways": {
+        "borrow": [
+          "'X시간 서버 전체 부스트'처럼 결제자 1명이 서버 전체의 체류 이유를 만드는 상품",
+          "매주 같은 시각 새 섬·비밀 개체 공개와 공식 이벤트 알림",
+          "기간 한정 보트를 판매 종료해 희소성 유지"
+        ],
+        "avoid": [
+          "유사작(Fisch)과 겹치는 콘셉트 — 차별점이 약하면 평가가 낮아질 수 있음(해석)",
+          "패스 12종 이상 병렬 판매로 인한 과금 구조 복잡화"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/121864768012064/Fish-It",
+          "title": "Fish It! 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(100만+ 변형, 클릭 충전·연타 낚시, Fisch·Fishing Simulator 영감 표기, 최근 업데이트 요약)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=6701277882",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=6701277882 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/6701277882/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 24종(판매 중 12종) 이름·가격",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/6701277882/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 325개(크레이트·펫 알·코인·서버 부스트·물약·클랜) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/6701277882/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "공식 이벤트 35건, 2026년 일 01:00 UTC 주간 업데이트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/121864768012064",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "pet-simulator-99",
+      "name": "Pet Simulator 99!",
+      "url": "https://www.roblox.com/games/8737899170/Pet-Simulator-99",
+      "developer": "BIG Games(BIG Games Pets 그룹, 소유자 Preston_Username)",
+      "publisher": "BIG Games(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2023-12-01 (Pocket Tactics·TheGamer 보도, 글로벌. 공식 API 생성일은 2022-02-05)",
+      "platforms": [
+        "Roblox"
+      ],
+      "subgenre": "펫 수집·자동 파밍 증분형 시뮬레이터(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 게임패스 13종(자동화·행운·슬롯) + 개발자 상품(독점 알 대량 묶음·팩·부스)",
+      "status": "서비스 중",
+      "description": "펫 군단을 구역에 풀어 코인과 블록을 부수게 하고, 그 돈으로 더 좋은 알을 부화시키는 펫 시뮬레이터다. Pet Simulator 시리즈의 3번째 작품으로 거래 광장·클랜·주간 업데이트로 3년 가까이 운영 중이다. 2026-09-05 업데이트로 오프라인 수익(Coin Tray)을 넣었다.",
+      "coreLoop": [
+        "펫을 구역에 보내 코인·블록 파괴(자동 파밍)",
+        "코인으로 알 구매·부화",
+        "강해진 펫으로 다음 구역·월드 해금",
+        "리버스·이벤트 리그로 행운·배수 강화",
+        "Huge·Titanic 희귀 펫 수집·거래(반복)"
+      ],
+      "features": [
+        "공식 설명: 3,000종 이상의 펫을 모아 펫 군단이 '부자로 만들어 준다'",
+        "업데이트 1(2023-12-09)에서 거래 광장 경매(60초 카운트다운)·최근 경매가(RAP)·클랜 배너를 넣었다(BIG Games 블로그)",
+        "업데이트 92 'Coin Arcade!'(2026-09-05): '오프라인에서도 펫이 계속 일한다', 구역별 Coin Tray가 가득 차면 적립 중단(상한), MVP +5%(BIG Games 블로그)",
+        "업데이트 97 'Blood Moon!'(2026-10-10): 2시간마다 10분간 이벤트 행운 3배·Huge/Titanic 확률 2배, 6일 리그, 주간 시즌 패스(BIG Games 블로그)",
+        "다른 장르를 이벤트로 빌려 온다: 'RNG EVENT'(2026-05, 굴리기·날씨), 'TAP HEROES'(2026-07), 'LUCKY BLOCK BREAKOUT'(2026-08)(공식 이벤트 API)",
+        "토요일 16:00 UTC 업데이트(공식 이벤트 최빈 시각). 블로그 기준 업데이트 88(2026-08-08)부터 97(10-10)까지 매주 나왔다"
+      ],
+      "progression": [
+        "펫 등급(일반 → Huge → Titanic → Gargantuan)",
+        "구역·월드 해금",
+        "리버스",
+        "행운·드롭·별 배수 패스",
+        "펫 장착 수(+15 Pets)·동시 부화 수(+15 Eggs)",
+        "클랜·리그 순위"
+      ],
+      "idleMechanics": "'Auto Farm! ♻️'(175 Robux, 'Pets stay in areas on command!')과 'Auto Tap! ☝️'(350 Robux, 'Automatically tap breakables!') 패스로 자동 파밍을 판다. 자동 부화는 게임 기능으로 있다(업데이트 1 패치노트의 자동 부화 버그 수정. 나무위키는 리버스 2 해금이라고 기술). 2026-09-05부터는 접속하지 않는 동안 구역별 Coin Tray가 채워지고, 가득 차면 적립이 멈춘다(상한 수치 미공개). 'Daycare Slots!'(625 Robux)로 펫을 맡겨 보상을 받는 방치 슬롯도 있다.",
+      "socialAndLiveOps": [
+        "거래 광장 경매와 Pro 거래 광장(Huge 5마리 또는 Titanic 1마리 보유 조건)",
+        "클랜과 주간 클랜 배틀(병렬 조사, BIG Games Index)",
+        "토요일 주간 업데이트 + 주간 페이지형 시즌 패스",
+        "2시간 주기 Blood Moon 같은 서버 공통 시간 이벤트",
+        "VIP 패스: 6시간마다 선물·전용 부스(패스 설명)"
+      ],
+      "popularityFactors": [
+        "시리즈 브랜드와 전작 자산 이전(Pet Simulator X의 Huge·Titanic 등을 최대 250개씩 이전, TheGamer)",
+        "자동화로 '방치해도 펫이 일한다'는 감각과 희귀 펫의 거래 가치(해석)",
+        "매주 새 이벤트·리그로 경쟁 목표를 준다(공식 블로그)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "자동화(Auto Farm·Auto Tap), 행운(Lucky·Ultra Lucky), 희귀 펫 사냥(Huge Hunter·Super Shiny Hunter), 슬롯 패스로 영구 가치를 팔고, 독점 알을 2~400개 묶음으로 파는 대량 확률형 상품이 반복 매출을 만든다.",
+        "products": [
+          {
+            "name": "Auto Farm! ♻️ / Auto Tap! ☝️",
+            "price": "175 / 350 Robux(게임패스)",
+            "contents": "펫 구역 고정 자동 파밍·자동 타격",
+            "evidence": "Roblox 공식 게임패스 API·상품 정보 API"
+          },
+          {
+            "name": "Lucky! 🍀 / Ultra Lucky! 🍀✨",
+            "price": "275 / 800 Robux(게임패스)",
+            "contents": "알 행운 증가",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Huge Hunter! 🔥",
+            "price": "3,250 Robux(게임패스)",
+            "contents": "Huge 펫 확률 관련",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Daycare Slots! 💖",
+            "price": "625 Robux(게임패스)",
+            "contents": "데이케어 슬롯 증가로 보상 증가",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "2 / 400 Exclusive Lost Hero Eggs! ✨",
+            "price": "240 / 32,000 Robux",
+            "contents": "독점 알 묶음(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Wendigo Pack",
+            "price": "399 Robux",
+            "contents": "할로윈 팩",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 13종(175~3,250 Robux)",
+          "개발자 상품 578개 등록, 가격 있는 판매 상태 329개(중앙값 485 Robux)",
+          "독점 알 2·8·35·170·400개 묶음 240~32,000 Robux"
+        ],
+        "unverified": "알 확률 공시 수치, 시즌 패스 가격, 인게임 상점 노출, 매출(공식 발표 없음. RoWatcher 추정은 신뢰도가 낮아 쓰지 않음)은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 50,665명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 732,936명(December 9, 2023 표기), 최근 30일 최고 86,655명(3 weeks ago), 최근 7일 최고 67,169명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준). 역대 최고일은 업데이트 1 공개일(2023-12-09)이다",
+        "rating": "공식 투표 좋아요 3,071,123 / 싫어요 170,635(긍정 94.7%), 2026-10-14",
+        "other": "누적 방문 2,667,273,236회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 2,208,921 · 좋아요 3,071,123/싫어요 170,635(긍정 94.7%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 29,172,395명(공식 그룹 API)"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 94.7%(공식 투표)",
+          "Entertainment Focus 리뷰는 출시를 'fantastic'으로, 격주 업데이트를 호평했다(위키백과 요약)"
+        ],
+        "negative": [
+          "Hindenburg Research(공매도 보고서)가 Titanic 펫을 위해 10계정을 사흘 돌린 사례와 eBay 275달러 이상 거래를 인용 — 다계정·현금 거래 문제",
+          "업데이트 5·9에서 최상위 펫 전투력이 약 18배 올라 인플레이션 비판(나무위키)"
+        ],
+        "basis": "Roblox 공식 투표 API, 위키백과(Entertainment Focus 요약), Hindenburg Research 보고서(적대적 출처), 나무위키(커뮤니티)"
+      },
+      "takeaways": {
+        "borrow": [
+          "자동화를 '편의 패스'로 팔되 기본 루프는 무료로 유지",
+          "오프라인 수익에 '트레이가 차면 멈춤' 상한을 둬 재접속을 유도(Coin Tray)",
+          "2시간 주기·10분짜리 서버 공통 행운 창으로 짧은 정시 접속을 반복 유도"
+        ],
+        "avoid": [
+          "업데이트마다 최상위 전투력을 크게 올리는 파워 인플레이션",
+          "희귀 펫 거래 가치가 다계정 파밍·현금 거래를 부르는 구조"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/8737899170/Pet-Simulator-99",
+          "title": "Pet Simulator 99! 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명('3,000+ pets', 펫이 부자로 만들어 줌)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=3317771874",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=3317771874 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/3317771874/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 14종(판매 13종) 이름·가격·설명(Auto Farm·Auto Tap·Daycare 등)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/3317771874/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 578개(독점 알 묶음·팩) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/3317771874/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "공식 이벤트 43건, 토 16:00 UTC 최빈",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://biggames.io/post/pet-simulator-99-update-92",
+          "title": "Pet Simulator 99 Update 92 'Coin Arcade!' — BIG Games 공식 블로그 (2026-09-05)",
+          "type": "공식",
+          "note": "'Your pets keep grinding even while you're OFFLINE!' 구역별 Coin Tray가 부재 중 채워지고 가득 차면 적립 중단, MVP +5%(오프라인 포함), 상인 근처에서 알 자동 부화",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://biggames.io/post/pet-simulator-99-update-97",
+          "title": "Pet Simulator 99 Update 97 'Blood Moon!' — BIG Games 공식 블로그 (2026-10-10)",
+          "type": "공식",
+          "note": "2시간마다 10분간 이벤트 행운 3배·Huge/Titanic 확률 2배, 주간 페이지형 시즌 패스, 6일 리그",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pockettactics.com/pet-simulator-99/release-date",
+          "title": "Pet Simulator 99 release date — Pocket Tactics (2023-11-20 갱신)",
+          "type": "보도",
+          "note": "2023-12-01 09:00 PST 출시",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "anime-dice",
+      "name": "Anime Dice",
+      "url": "https://www.roblox.com/games/113290951185459/Anime-Dice",
+      "developer": "More & More Games 그룹(소유자 VorportalHolder)",
+      "publisher": "More & More Games 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2026-08-15 (Roblox 공식 API 생성일). 첫 공식 이벤트 2026-08-29 'Trading + Content'",
+      "platforms": [
+        "Roblox"
+      ],
+      "subgenre": "주사위 RNG + 오프라인 수익 증분형 타이쿤(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 게임패스 8종(행운·굴림 속도·수익) + 개발자 상품(잭팟 굴림·캐릭터 직판)",
+      "status": "서비스 중",
+      "description": "주사위를 굴려 애니메이션풍 캐릭터를 뽑고, 플롯에 둔 캐릭터가 돈을 벌며, 주사위를 업그레이드해 행운을 올리는 RNG 타이쿤이다. 공식 설명 첫 줄이 '오프라인에서도 돈이 생긴다'이다. 생성 두 달 만에 동접 5만 명대에 올랐다.",
+      "coreLoop": [
+        "주사위 굴리기로 캐릭터 획득(등급·특성·변이)",
+        "플롯에 배치해 초당 돈 생산(오프라인 포함)",
+        "돈·젬으로 주사위 업그레이드(행운 상승)",
+        "더 희귀한 캐릭터로 교체·리버스",
+        "주간 업데이트의 새 주사위·캐릭터·날씨로 반복"
+      ],
+      "features": [
+        "공식 설명: 'MONEY GENERATES WHILE YOU ARE OFFLINE', 주사위로 캐릭터 공개, 주사위 업그레이드로 행운 증가, 최강 팀 구성, 희귀 캐릭터·변이 수집, 리더보드",
+        "생성 57일 만에 업데이트 8회(공식 이벤트: 08-29 Trading + Content → 09-12 UPDATE 4 → 10-11 UPDATE 8 → 10-18 HALLOWEEN PT. 1)",
+        "UPDATE 4에서 무작위 날씨 이벤트, 신규 등급, 포션 타워, 거래 시스템 개편을 넣었다(공식 이벤트 설명)",
+        "공식 투표 긍정 99.2%로 10개 중 가장 높다",
+        "동접·좋아요 달성을 기념하는 코드(1KCCU~50KCCU 등)로 커뮤니티 마일스톤을 만든다(Bloxodes, 커뮤니티)"
+      ],
+      "progression": [
+        "캐릭터 등급(grade)·특성(trait)·변이",
+        "주사위 종류와 업그레이드(행운)",
+        "유닛 슬롯",
+        "리버스",
+        "포션·무한 타워"
+      ],
+      "idleMechanics": "플롯에 둔 캐릭터가 접속하지 않아도 돈을 만든다(공식 설명). 오프라인 적립 비율과 상한은 공개되지 않았다. 굴림은 반복 클릭이며 'Roll Speed'(349)·'Double Roll'(799 Robux) 패스로 빨라진다. 자동 굴림 기능은 확인하지 못했다(미확인).",
+      "socialAndLiveOps": [
+        "거래(2026-08-29 도입, UPDATE 4에서 개편)",
+        "리더보드(공식 설명)",
+        "주간 업데이트(초기 토요일 → 2026-09-27부터 일요일 19시 UTC 전후)",
+        "동접·좋아요 마일스톤 코드"
+      ],
+      "popularityFactors": [
+        "RNG 뽑기·초당 수익 타이쿤·오프라인 수익을 한 게임에 묶었다(해석)",
+        "주 1회 이상 빠른 업데이트로 초기 이탈을 막았다(공식 이벤트)",
+        "유명 애니메이션을 떠올리게 하는 캐릭터(해석, IP 위험 동반)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "행운·수익·굴림 속도·VIP 같은 영구 패스 8종이 중심이다. 개발자 상품은 19개로 적지만 잭팟 굴림(확률형)과 특정 캐릭터 직판(349~1,499 Robux)을 판다.",
+        "products": [
+          {
+            "name": "Luck / More Cash / VIP",
+            "price": "199 / 199 / 249 Robux(게임패스)",
+            "contents": "행운·수익 증가·VIP",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Roll Speed / Ultra Luck / Double Roll",
+            "price": "349 / 499 / 799 Robux(게임패스)",
+            "contents": "굴림 속도·행운·2회 굴림",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "More Grades / More Traits",
+            "price": "299 / 329 Robux(게임패스, 2026-10-11 추가)",
+            "contents": "등급·특성 관련",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Jackpot Roll / 10 Jackpot Spins",
+            "price": "79 / 749 Robux",
+            "contents": "잭팟 굴림(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Honored One / Grimmjaw",
+            "price": "1,499 / 1,299 Robux",
+            "contents": "캐릭터 직접 판매",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 8종(199~799 Robux)",
+          "개발자 상품 19개 중 가격 있는 판매 상태 17개(79~1,499 Robux)",
+          "업데이트에 맞춰 새 패스를 추가(2026-10-11 More Grades·More Traits)"
+        ],
+        "unverified": "잭팟 확률 공시, 오프라인 적립 상한, 자동 굴림 유무, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 50,581명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 76,837명(1 week ago 표기), 최근 30일 최고 76,837명(1 week ago), 최근 7일 최고 74,925명(2 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준)",
+        "rating": "공식 투표 좋아요 632,055 / 싫어요 4,933(긍정 99.2%), 2026-10-14",
+        "other": "누적 방문 96,375,007회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 158,551 · 좋아요 632,055/싫어요 4,933(긍정 99.2%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 1,280,628명(공식 그룹 API)"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 99.2%로 비교군 최고(공식 투표)",
+          "생성 약 7주 만에 최고 동접 76,837명(Rolimon's)"
+        ],
+        "negative": [
+          "캐릭터명이 유명 애니메이션 캐릭터를 떠올리게 해 IP 분쟁 위험이 있다(해석)",
+          "텍스트 리뷰·언론 평가는 코드 가이드 외에 찾지 못함"
+        ],
+        "basis": "Roblox 공식 투표 API, Rolimon's 관측치, 코드 가이드 기사(Pocket Tactics·GAMES.GG)"
+      },
+      "takeaways": {
+        "borrow": [
+          "'오프라인에서도 돈이 쌓인다'를 설명 첫 줄과 첫 화면에 내세우는 메시지",
+          "굴림 속도·2회 굴림처럼 RNG 시도 횟수를 늘리는 패스 설계",
+          "출시 직후 주 1회 이상 업데이트로 신규작 노출 기간 활용"
+        ],
+        "avoid": [
+          "기존 애니메이션 IP를 연상시키는 캐릭터 — 상용 신작에서는 법적 위험",
+          "확률형 잭팟 상품의 확률 공시 누락(정책 위반 위험)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/113290951185459/Anime-Dice",
+          "title": "Anime Dice 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명('MONEY GENERATES WHILE YOU ARE OFFLINE', 주사위·행운·변이·리더보드)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=10708913337",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=10708913337 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/10708913337/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 8종 이름·가격",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/10708913337/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 19개(잭팟 굴림·캐릭터 직판) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/10708913337/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "2026-08-29~10-18 주간 업데이트 8건(UPDATE 4 날씨·거래 개편)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/113290951185459",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pockettactics.com/anime-dice-codes",
+          "title": "Anime Dice codes — Pocket Tactics (2026-10-03 갱신)",
+          "type": "보도",
+          "note": "Anime Dice를 '증분형 타이쿤 게임'으로 소개",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.gg/roblox/guides/anime-dice-codes-september-2026/",
+          "title": "Anime Dice codes September 2026 — GAMES.GG (2026-09-25)",
+          "type": "위키/커뮤니티",
+          "note": "유닛을 플롯에 배치하면 돈 생성, 특성이 수입에 영향, 젬이 주사위 업그레이드용 프리미엄 재화(가이드 사이트)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "sols-rng",
+      "name": "Sol's RNG",
+      "url": "https://www.roblox.com/games/15532962292/Sols-RNG",
+      "developer": "Sol's Studio 그룹(소유자 YGvw_Sol). 나무위키는 개발진을 한국인으로 기술(미검증)",
+      "publisher": "Sol's Studio 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2023-12-03 (Roblox 공식 API 생성일, 정확한 공개일 미확인)",
+      "platforms": [
+        "Roblox"
+      ],
+      "subgenre": "자동 굴림 오라 수집 RNG(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 게임패스(VIP·Quick roll·시즌 프리미엄 패스) + 개발자 상품(패키지·바이옴 랜덤화) + 보상형 광고",
+      "status": "서비스 중",
+      "description": "'Roll' 버튼으로 400종 이상의 오라를 뽑고, 오라로 장비를 만들며, 행운 물약으로 더 희귀한 결과를 노리는 순수 RNG 게임이다(공식 설명). 맵의 바이옴이 수시로 바뀌며 특정 오라 확률을 끌어올린다.",
+      "coreLoop": [
+        "Roll(수동·자동 반복)로 오라 획득",
+        "희귀 오라 보관·장착",
+        "오라·재료로 장비(gear) 제작 → 행운·속도 상승",
+        "바이옴·관리자 이벤트에 맞춰 물약 사용",
+        "더 희귀한 오라에 도전(반복)"
+      ],
+      "features": [
+        "공식 설명: 400종 이상 오라, 장비 제작, 행운 물약, 친구와 희귀도 경쟁, '최적 성능을 위한 무료 비공개 서버' 제공",
+        "Eon(시대) 단위 대형 업데이트: Eon1(2024-11-10) → Eon 1-20 'Singularity'(2026-04-25) → 현재 제목 'Eon 1-29', 다음 '[Radiant Forest]'(2026-10-17)(공식 이벤트 API)",
+        "업데이트는 주로 토요일 08:00 UTC(한국 17시)에 나오고 직후 관리자 이벤트가 열린다(예: '+100% Basic Luck | x1.2 Total Luck', 공식 이벤트)",
+        "시즌제 'RNG Premium Pass'(Season I 2025-06 → VIII 2026-07, 약 2개월 주기, 499 Robux)",
+        "Roblox 공식 Incremental Sim 보상형 광고 가이드가 Sol's RNG의 'Fast Roll'을 자동화형 우수 사례로 소개했다"
+      ],
+      "progression": [
+        "오라 희귀도 수집",
+        "장비(gear) 제작",
+        "행운·굴림 속도 스탯",
+        "물약",
+        "시즌 패스 티어",
+        "보스 레이드(공식 이벤트 'Boss Raid Chapter 2', 2026-02-28)"
+      ],
+      "idleMechanics": "굴리기를 자동으로 반복하는 구조다. 'Quick roll'(100 Robux)은 연출을 건너뛰는 가속일 뿐이고 자동 굴림 패스는 팔지 않는다(공식 패스 설명). 자동 굴림이 무료로 허용되고 매크로도 공식 허용된다는 커뮤니티 기술(나무위키)이 있으나 공식 1차 출처는 확인하지 못했다. VIP+(350 Robux)에 'Auto Item Collection'이 포함된다. 오프라인 진행은 없고 서버 체류형이라 20분 유휴 해제 규칙과 충돌한다(해석).",
+      "socialAndLiveOps": [
+        "친구와 희귀 오라 경쟁(공식 설명)",
+        "토요일 업데이트 + 관리자 이벤트(행운 배수)",
+        "글로벌 이벤트('Defeat the Summer', 2026-09-05)",
+        "무료 비공개 서버로 소규모 체류",
+        "약 2개월 주기 시즌 패스"
+      ],
+      "popularityFactors": [
+        "'얼마나 희귀한 걸 뽑을까'라는 단일 목표의 순수 RNG 쾌감(해석)",
+        "자동 반복으로 틀어 두고 희귀 결과를 기다리는 저부담 플레이(해석)",
+        "바꾸는 바이옴이 확률을 높여 정시 접속 동기를 준다(해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "저가 편의 패스(40~350 Robux)와 2개월 주기 시즌 프리미엄 패스(499 Robux), 패키지형 개발자 상품이 중심이다. '[AD]' 명칭 상품과 개발사 이벤트 공지('New Ad Feature Added' 2025-07 등)로 보아 보상형 광고도 쓴다(해석).",
+        "products": [
+          {
+            "name": "Quick roll",
+            "price": "100 Robux(게임패스)",
+            "contents": "굴림 연출 생략",
+            "evidence": "Roblox 공식 게임패스 API·상품 정보 API"
+          },
+          {
+            "name": "VIP / VIP+",
+            "price": "249 / 350 Robux(게임패스)",
+            "contents": "최종 행운 x1.2·퀘스트 보상 / 자동 아이템 수집·행운 x1.2(VIP 보유 시 x1.3)",
+            "evidence": "Roblox 공식 게임패스 상품 정보 API"
+          },
+          {
+            "name": "RNG Premium Pass - Season VIII",
+            "price": "499 Robux(게임패스)",
+            "contents": "시즌 프리미엄 패스",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Starter Pack",
+            "price": "49 Robux(게임패스)",
+            "contents": "스타터 팩",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Summer Package Vol1~Vol4",
+            "price": "150 / 250 / 450 / 750 Robux",
+            "contents": "단계형 시즌 패키지",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "One-time Biome Randomizer / Random Merchant Token",
+            "price": "80 / 150 Robux",
+            "contents": "바이옴 랜덤화·상인 토큰",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 7종(40~499 Robux), 종료된 시즌 패스 7개 기록",
+          "개발자 상품 97개 등록·전부 가격 표시(10~1,000,000,000 Robux, '[AD]' 상품은 10억 Robux 자리표시 가격)",
+          "VIP+ 패스 설명에 'Auto Item Collection' 명시"
+        ],
+        "unverified": "오라 확률 공시 방식, 매크로·자동 굴림 공식 정책, 광고 보상 구성, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 27,679명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 193,836명(May 12, 2024 표기), 최근 30일 최고 80,295명(3 weeks ago), 최근 7일 최고 36,015명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준)",
+        "rating": "공식 투표 좋아요 1,425,748 / 싫어요 134,131(긍정 91.4%), 2026-10-14",
+        "other": "누적 방문 2,226,449,710회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 1,025,451 · 좋아요 1,425,748/싫어요 134,131(긍정 91.4%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 12,668,707명(공식 그룹 API)"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 91.4%·좋아요 142만(공식 투표)",
+          "무료 비공개 서버 같은 이용자 편의(공식 설명)"
+        ],
+        "negative": [
+          "Hindenburg Research(공매도 보고서)가 24시간 이상 접속 계정 의혹 2위로 지목 — AFK 체류가 지표를 부풀린다는 논란",
+          "VIP 가격 149→249 Robux 인상과 P2W 비판 뒤 일부 기능 무료화(나무위키, 커뮤니티)"
+        ],
+        "basis": "Roblox 공식 투표 API, Hindenburg Research 보고서(적대적 출처), 나무위키(커뮤니티)"
+      },
+      "takeaways": {
+        "borrow": [
+          "굴림 연출 생략·자동 수집처럼 '시도 횟수/편의'만 파는 저가 패스",
+          "바이옴(날씨) 순환으로 같은 RNG에 시간대별 변주를 준다",
+          "보상형 광고를 자동화(빠른 굴림) 체험에 쓴다(공식 가이드 사례)"
+        ],
+        "avoid": [
+          "서버 체류형 AFK에만 기대는 진행 — 지표 신뢰성·서버 비용 문제",
+          "가격 인상으로 인한 P2W 반발"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/15532962292/Sols-RNG",
+          "title": "Sol's RNG 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(400+ 오라·장비 제작·물약·무료 비공개 서버)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=5361032378",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=5361032378 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/5361032378/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 17종(판매 7종) 이름·가격·설명(Quick roll·VIP·VIP+)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/5361032378/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 97개(패키지·바이옴 랜덤화·[AD] 상품) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/5361032378/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "공식 이벤트 40건, 토 08:00 UTC 최빈",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/15532962292",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://prod.docsiteassets.roblox.com/assets/ads/IncrementalSim_Playbook.pdf",
+          "title": "Roblox Rewarded Video Playbook: Incremental Sim (2026 Guide)",
+          "type": "공식",
+          "note": "핵심 지표 Opt-in 13%+·일 빈도 2.8 제시. 전략: 속도/배수 부스트, 재접속 시 오프라인 수익 2배(Welcome Back), 자원 충전, 10분 자동 클릭/판매. 사례 Sol's RNG Fast Roll(자동화)·Fisch·Gym Star Simulator",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://hindenburgresearch.com/roblox/",
+          "title": "Roblox: Inflated Key Metrics… — Hindenburg Research (2024-10-08)",
+          "type": "데이터(추정)",
+          "note": "공매도 포지션을 공개한 적대적 보고서. PS99 Titanic 펫을 위한 10계정 사흘 운용 사례와 eBay 275달러 이상 거래, Sol's RNG를 24시간 이상 접속 계정 의혹 2위로 지목",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "bee-swarm-simulator",
+      "name": "Bee Swarm Simulator",
+      "url": "https://www.roblox.com/games/1537690962/Bee-Swarm-Simulator",
+      "developer": "Onett(개인 개발자 계정, 2009년 생성)",
+      "publisher": "Onett(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2018-03-21 (Roblox 공식 API 생성일, 글로벌)",
+      "platforms": [
+        "Roblox(PC·모바일·태블릿·콘솔)"
+      ],
+      "subgenre": "벌 군집 채집·변환 장기 성장 시뮬레이터(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 개발자 상품(바우처·시즌 패키지·티켓). 게임패스 4종은 조사 시점 판매 중지",
+      "status": "서비스 중(최근 갱신 2026-08-22)",
+      "description": "벌 군단을 키워 꽃밭에서 꽃가루를 모으고 벌집에서 꿀로 바꾸며, 곰 NPC 퀘스트와 몬스터 처치로 산 위 지역을 해금하는 장기 운영 시뮬레이터다(공식 설명). 2018년부터 8년째 서비스 중이다.",
+      "coreLoop": [
+        "꽃밭에 서 있으면 벌이 꽃가루를 채집",
+        "가방이 차면 벌집으로 돌아가 꿀로 변환",
+        "꿀로 벌·알·장비 구매, 벌집 확장",
+        "곰 퀘스트·몬스터 처치로 보상",
+        "더 높은 산 지역 해금(반복)"
+      ],
+      "features": [
+        "공식 설명: 벌 군단 성장, 꽃가루 채집·꿀 제조, 곰 NPC 퀘스트, 버그·몬스터 전투, 숨은 보물, 성격·특성이 다른 벌 종류",
+        "서버 최대 6인(공식 API)",
+        "공식 이벤트 API 등록 0건 — 예고형 주간 업데이트 대신 대형 업데이트 위주로 보인다(해석). 최근 갱신 2026-08-22",
+        "연말 Beesmas 시즌 패키지(개발자 상품 'Merry Mythic Mondo-Haul' 4,500 Robux 등, 2025-12-25 갱신)",
+        "게임패스 4종(Bear Bee·x2 Bee Gather Pollen·x2 Convert Speed·x2 Ticket Chance)이 조사 시점 모두 판매 중지 상태였다(공식 API, 2026-08-04 갱신, 사유 미확인). 같은 혜택의 바우처형 개발자 상품이 등록돼 있다"
+      ],
+      "progression": [
+        "벌 수·종류·희귀도(상품명 'Gifted Giga-Bundle'·'Mythic Egg' 등)",
+        "벌집 확장·배치",
+        "가방·도구 장비",
+        "곰 퀘스트 체인",
+        "지역(산 높이) 해금",
+        "티켓·바우처 재화"
+      ],
+      "idleMechanics": "플레이어가 머무는 꽃밭에서 벌이 자동으로 꽃가루를 모으고 벌집에서 꿀로 바꾼다. 공식 패스 설명에 'Allows your bees to collect twice as much pollen…', '…convert pollen at the hive into honey twice as fast'라고 돼 있다. 즉 필드에 머물러야 하는 반자동 구조다. 오프라인 진행은 공식 설명에 없다. 매크로·AFK의 공식 허용 여부는 확인하지 못했다(미확인).",
+      "socialAndLiveOps": [
+        "Bee Swarm Simulator Club 그룹(공식 설명 링크)",
+        "연말 Beesmas·블랙프라이데이·사이버먼데이 한정 패키지(개발자 상품명)",
+        "공식 이벤트 일정 미등록, 대형 업데이트 위주",
+        "Rolimon's 관측 최고 동접 264,505명(2025-12-29) — 연말 Beesmas 시기와 겹친다(해석)"
+      ],
+      "popularityFactors": [
+        "8년 운영된 장기 성장 곡선(누적 방문 46억 회, 공식 API)",
+        "벌 수집과 벌집 배치 최적화라는 장기 목표(해석)",
+        "긍정 95.6%로 10개 중 상위권(공식 투표)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "패스 혜택(곰 변신·채집 2배·변환 2배)과 같은 효과를 바우처형 개발자 상품으로 팔고, 연말 시즌 패키지와 티켓을 판다. 판매 종료 상품은 999,999,999 같은 비현실적 가격으로 남겨 두는 정황이 있다.",
+        "products": [
+          {
+            "name": "Bear Bee Voucher",
+            "price": "800 Robux",
+            "contents": "곰 변신(꽃가루 2배·이동 강화) 혜택 바우처",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "x2 Bee Gather Voucher / x2 Convert Speed Voucher",
+            "price": "400 / 250 Robux",
+            "contents": "채집 2배·변환 속도 2배 바우처",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Ticket Voucher",
+            "price": "400 Robux",
+            "contents": "티켓",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Merry Mythic Mondo-Haul / Seasonal Slumber Special",
+            "price": "4,500 / 1,700 Robux",
+            "contents": "Beesmas 2025 시즌 패키지",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Mythic Egg / Choose-A-Mythic Egg",
+            "price": "1,200 / 800 Robux",
+            "contents": "미식 알",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "게임패스 4종 모두 IsForSale=false·가격 없음(2026-10-14 조회, 2026-08-04 갱신)",
+          "개발자 상품 92개 등록, 가격 표시 92개(일부는 999,999,999 등 비현실적 가격)",
+          "연말 시즌 패키지 400~4,500 Robux"
+        ],
+        "unverified": "게임패스 판매 중지 사유, 바우처의 인게임 실제 판매, 알 확률 공시, 매크로 정책, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 26,697명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 264,505명(December 29, 2025 표기), 최근 30일 최고 33,379명(2 days ago), 최근 7일 최고 33,379명(2 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준)",
+        "rating": "공식 투표 좋아요 3,037,461 / 싫어요 139,945(긍정 95.6%), 2026-10-14",
+        "other": "누적 방문 4,605,397,214회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 6,551,632 · 좋아요 3,037,461/싫어요 139,945(긍정 95.6%) — 공식 API, 2026-10-14 07:30 KST"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 95.6%, 즐겨찾기 655만(공식 API)",
+          "생성 8년 뒤인 2025-12에 역대 최고 동접 264,505명을 갱신했다(Rolimon's, 해석: 장기 충성층)"
+        ],
+        "negative": [
+          "2026-08-22 이후 갱신 없음, 공식 이벤트 일정 미등록 — 콘텐츠 공백이 길다(해석)",
+          "게임패스 일괄 판매 중지 등 과금 구조 변경(사유 미확인)"
+        ],
+        "basis": "Roblox 공식 투표·메타데이터·게임패스 API와 Rolimon's 관측치. 텍스트 리뷰는 수집하지 못했다."
+      },
+      "takeaways": {
+        "borrow": [
+          "'필드에 서 있으면 벌이 일한다'는 반자동 채집 — 조작 부담이 적은 방치감",
+          "연 1회 대형 시즌 이벤트(Beesmas)로 피크를 만드는 장기 운영"
+        ],
+        "avoid": [
+          "업데이트 간격이 긴 1인 개발 구조는 경쟁작의 주간 업데이트에 밀릴 수 있다(해석)",
+          "필드 체류형 보상은 20분 유휴 접속 해제와 충돌해 매크로 수요를 만든다(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/1537690962/Bee-Swarm-Simulator",
+          "title": "Bee Swarm Simulator 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(벌 군단·꽃가루 채집·꿀 제조·곰 퀘스트·몬스터·숨은 보물)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=601130232",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=601130232 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/601130232/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 4종 판매 중지 상태와 패스 설명(채집 2배·변환 2배·곰 변신) 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/601130232/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 92개(바우처·Beesmas 패키지·티켓) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/1537690962",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/game-passes/4257788/product-info",
+          "title": "Roblox 공식 게임패스 상품 정보 API — Bear Bee",
+          "type": "공식",
+          "note": "Bear Bee 패스 설명('periodically transforms you into a bear, granting x2 pollen…'), IsForSale=false·PriceInRobux=null, 2026-08-04 갱신",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "grow-a-garden",
+      "name": "Grow a Garden",
+      "url": "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
+      "developer": "The Garden Game 그룹(소유자 DevNamedDavid). 원작자 BMWLux(익명 10대), 2025-04 Splitting Point(Jandel) 합류, Do Big Studios 소수 지분(보도)",
+      "publisher": "The Garden Game 그룹(Roblox 직접 배포)",
+      "origin": "미확인(공동 개발사 Splitting Point는 뉴질랜드 소재로 보도)",
+      "release": "2025-03-25 (Roblox 공식 API 생성일·Roblox Q2 2025 주주서한 출시일, 글로벌)",
+      "platforms": [
+        "Roblox"
+      ],
+      "subgenre": "실시간·오프라인 성장 농장 타이쿤(공식 장르 Simulation/Tycoon)",
+      "businessModel": "무료 플레이 + 개발자 상품 중심(씨앗·재입고·성장 스킵·알·상자·시즌 패스·거래 토큰) + 보상형 광고",
+      "status": "서비스 중(후속작 Grow a Garden 2와 병행)",
+      "description": "상점이 재입고될 때 씨앗을 사서 심고, 실시간으로(오프라인에서도) 자란 작물을 수확해 파는 농장 게임이다. 날씨가 만드는 변이로 작물 가치가 수십~수백 배가 된다. 2025년 7월 동접 약 2,200만 명으로 당시 비디오게임 동시접속 세계 기록을 세웠다(Roblox).",
+      "coreLoop": [
+        "5분마다 재입고되는 상점에서 씨앗·장비 구매",
+        "플롯에 심고 실시간 성장(오프라인 포함)",
+        "날씨·펫·스프링클러로 변이·크기 확률 상승",
+        "수확해 판매(가치=기본가×변이×무게)",
+        "더 희귀한 씨앗·펫·확장 구매(반복)"
+      ],
+      "features": [
+        "공식 설명: 재입고 상점에서 씨앗 구매 → 심기 → 성장 대기 → 수확·수익, 친구에게 과시, '정원은 오프라인에도 자란다'",
+        "2025-04-19부터 거의 매주 토요일 업데이트(공식 이벤트 108건). 2026-04-15부터는 수요일 22:00 UTC 'Watering Wednesday' 관리자 이벤트도 연다",
+        "날씨가 모든 서버에 같은 시각 발생해 Wet·Shocked 같은 변이를 준다(위키)",
+        "거래: 2025-08-02 'TRADING' 업데이트로 도입, 2025-11-29 거래 월드(Farmers Market) 추가(공식 이벤트·위키)",
+        "펫(2025-05-03 'ANIMALS' 업데이트)의 패시브 능력이 수분·변이·수확에 관여한다(위키)",
+        "공식 후속작 Grow a Garden 2(2026-05-21 생성, 같은 소유자)를 원작 이벤트 채널로 예고했다(2026-06-12)"
+      ],
+      "progression": [
+        "씨앗 희귀도(Common~Transcendent, 위키)",
+        "변이 배수와 변형(Silver×5·Gold×20·Rainbow×50, 위키)",
+        "정원 확장('Expand Garden' 99 Robux)",
+        "펫·알(부화 10분~8시간, 위키)",
+        "장비(스프링클러 등)",
+        "Garden Ascension(2025-08-30, 화폐 흡수)",
+        "시즌 패스(2025-09-27~)"
+      ],
+      "idleMechanics": "작물이 실시간으로 자라고 접속하지 않아도 성장한다(공식 설명 'your garden literally grows while you are offline'). 수확·판매·재입고 구매는 접속해서 해야 한다. 'Skip Growth'(49)·'Grow All Plants'(375 Robux) 같은 성장 단축과 'Auto Restock'(79 Robux) 자동 재입고를 판다. 'Ad Reward: Watering Can Booster' 같은 광고 보상 상품이 있고, Roblox 공식 Tycoon 광고 가이드는 이 게임을 Progressive Rewards 우수 사례로 소개한다. 오프라인 성장 상한 시간은 확인하지 못했다.",
+      "socialAndLiveOps": [
+        "같은 서버 친구 1명당 Sheckles +10%(최대 +40%, 위키)",
+        "업데이트 30분 전 관리자 이벤트와 Watering Wednesday",
+        "2025-08-23 Steal a Brainrot과의 'Admin War'(Tubefilter)",
+        "유명인 협업: Travis Kelce(2025-07-26), Glass Animals(2025-10-25)(공식 이벤트)",
+        "거래·선물·거래 월드"
+      ],
+      "popularityFactors": [
+        "'심고 기다리고 수확한다'는 누구나 아는 농장 판타지이고, 오프라인 성장이 짧은 세션과 맞는다(해석)",
+        "AI 기반 발견과 'Today's Picks' 큐레이션으로 출시 1개월 안에 지출 1위(Roblox Q2 2025 주주서한)",
+        "날씨·변이·재입고의 시간 한정 요소가 정시 접속을 만든다(해석)",
+        "주간 업데이트·관리자 이벤트·유명인 협업(공식 이벤트)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "게임패스는 판매 중인 것이 없다('Premium Seed Pack' 판매 중지). 재입고·성장 스킵·씨앗 직구·확률형 알/상자·시즌 패스·거래 토큰 등 개발자 상품 1,200개 이상(조회 상한 도달)으로 수익화한다. 보상형 광고도 함께 쓴다.",
+        "products": [
+          {
+            "name": "Auto Restock / Restock Shop",
+            "price": "79 / 79 Robux",
+            "contents": "상점 자동·즉시 재입고",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Skip Growth / Grow All Plants",
+            "price": "49 / 375 Robux",
+            "contents": "성장 즉시 완료",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Season Pass / Skip All [1]",
+            "price": "749 / 1,699 Robux",
+            "contents": "시즌 패스·전 티어 스킵",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "+1 / +3 / +10 Super Seed",
+            "price": "199 / 575 / 1,699 Robux",
+            "contents": "슈퍼 씨앗 묶음",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "+1 / +50 Exotic Fairy Chest",
+            "price": "199 / 6,999 Robux",
+            "contents": "이벤트 상자(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Trading Ticket / +1000 Trade Tokens",
+            "price": "19 / 1,000 Robux",
+            "contents": "거래권·거래 토큰",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Mythical / Prismatic Seed Rain",
+            "price": "199 / 1,299 Robux",
+            "contents": "씨앗 비(날씨형 이벤트) 구매",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 0종(유일한 패스 'Premium Seed Pack' 판매 중지)",
+          "개발자 상품 1,200개 조회(12페이지 상한 도달, 이후 미수집), 그중 10만 Robux 미만 판매 상태 1,116개",
+          "'Ad Reward:' 접두어 광고 보상 상품 2종(1 Robux 표기) 등록"
+        ],
+        "unverified": "알·상자 확률 공시 수치, 1,200개 이후 상품, 지역별 확률형 상품 숨김(위키는 호주·벨기에·영국·네덜란드라고 기술), 매출(공식·언론 수치 없음)은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 12,992명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 22,375,597명(August 23, 2025 표기), 최근 30일 최고 157,820명(3 weeks ago), 최근 7일 최고 103,532명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준). 공식: 2025년 7월 약 2,200만 명(Roblox Q2·Q3 2025 주주서한). 보도: 2025-06-21 2,130만(PocketGamer.biz), 2025-08-23 2,110만(Tubefilter) — 추적처마다 수치가 다름",
+        "rating": "공식 투표 좋아요 9,438,754 / 싫어요 1,055,151(긍정 89.9%). Rolimon's 이력상 2025-05 94.1% → 2025-10 91.1% → 2026-07 89.9%",
+        "other": "누적 방문 35,970,308,750회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 11,446,456 · 좋아요 9,438,754/싫어요 1,055,151(긍정 89.9%) — 공식 API, 2026-10-14 07:30 KST. Rolimon's 6시간 표본 월 중앙값: 2025-06 2,379,731 → 2025-10 379,423 → 2026-02 37,867 → 2026-04 123,661(반등) → 2026-10 17,629. Roblox 경험 최단 33일 만에 방문 10억 회(PocketGamer.biz)"
+      },
+      "userFeedback": {
+        "positive": [
+          "Common Sense Media 편집장이 'chill(느긋한)' 게임이라고 평했다(AP)",
+          "Roblox가 'Grow a Garden의 성공은 우연이 아니다'라며 발견·성능 투자의 사례로 들었다(Q2 2025 주주서한)"
+        ],
+        "negative": [
+          "초기에는 '프로토타입에 가깝다'는 평(Kotaku), 급하게 만든 이벤트에 대한 불만으로 이벤트 전담팀을 꾸렸다(PC Gamer 헤드라인)",
+          "Do Big 참여 뒤 과도한 수익화 비판, 거래 사기·아이템 복제·현금 거래 문제(위키백과·위키)",
+          "좋아요 비율이 94.1%에서 89.9%로 꾸준히 하락(Rolimon's)"
+        ],
+        "basis": "AP·Kotaku·PC Gamer 보도, Roblox 주주서한, 위키백과·Fandom 위키(보조), Rolimon's 투표 이력"
+      },
+      "takeaways": {
+        "borrow": [
+          "오프라인 성장 + 접속해야 하는 수확·판매·재입고의 조합",
+          "서버 공통 날씨가 변이 배수를 주는 정시 이벤트",
+          "토요일 업데이트 + 수요일 30분 관리자 이벤트의 2박자 운영"
+        ],
+        "avoid": [
+          "거래를 경제 설계 없이 뒤늦게 넣어 사기·복제·인플레이션 사후 대응",
+          "피크 때 장기 목표 없이 이벤트만 늘린 결과로 1년 만에 월 중앙값 99% 감소"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
+          "title": "Grow a Garden 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(재입고 상점·심기·성장·수확·'your garden literally grows while you are offline')",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=7436755782",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·서버 최대 4인·생성일 2025-03-25, 좋아요는 https://games.roblox.com/v1/games/votes?universeIds=7436755782 (2026-10-14 07:30 KST)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/7436755782/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 1,200개(12페이지 상한) 조회: Auto Restock·Skip Growth·Season Pass·Super Seed·Trade Tokens·Ad Reward 상품 등",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/7436755782/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트 API",
+          "type": "공식",
+          "note": "2025-04-19~2026-10-17 공식 이벤트 108건(토요일 업데이트·Watering Wednesday·Admin War·Grow a Garden 2 예고)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2025/q2/Q2-25-SH-Letter.pdf",
+          "title": "Roblox Q2 2025 Shareholder Letter",
+          "type": "공식",
+          "note": "Grow a Garden(2025-03-25 출시)이 1개월 내 지출 기준 1위, 2025년 6월 동시접속 세계 기록 후 7월 약 2,200만 명으로 경신. 2025년 6월 Robux 지출 상위 10개 중 3개가 최근 12개월 내 출시작(Grow a Garden·Steal a Brainrot·Dead Rails). 플랫폼 동접 3,200만 명 돌파, DAU 1억 1,180만",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/millions-flocking-grow-virtual-gardens-160456564.html",
+          "title": "Millions are flocking to grow virtual gardens in viral Roblox game created by teenager — AP(Yahoo 게재, 2025-07-30)",
+          "type": "보도",
+          "note": "빈 플롯·약간의 Sheckles·시작 씨앗으로 시작, 6월 말 동접 2,160만 명(Roblox 인용), Common Sense Media 편집장 'chill' 평",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/robloxs-grow-a-garden-hits-industry-record-213m-concurrent-users-surpassing-pubg-fortnite-and-more/",
+          "title": "Roblox's Grow a Garden hits industry record 21.3m concurrent users — PocketGamer.biz (2025-06-25)",
+          "type": "보도",
+          "note": "2025-06-21 영국 시각 15시 2,130만 → 16시 760만 → 17시 550만, 14일 평균 270만",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/126884695634066",
+          "title": "Rolimon's — Grow a Garden 게임 페이지(내장 이력 데이터)",
+          "type": "데이터(추정)",
+          "note": "역대 최고 22,375,597명(2025-08-23), 6시간 간격 표본 월 중앙값(2025-06 2,379,731 → 2026-10 17,629), 좋아요 비율 94.1%(2025-05)→89.9%(2026-07) 추이",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "bubble-gum-simulator-infinity",
+      "name": "Bubble Gum Simulator INFINITY",
+      "url": "https://www.roblox.com/games/85896571713843/Bubble-Gum-Simulator-INFINITY",
+      "developer": "Rumble Studios(그룹 소유자 RumbleStudiosHolder) — Bubble Gum Simulator(2018)·Mining Simulator 제작사",
+      "publisher": "Rumble Studios(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2025-04-11 20:00 UTC (공식 이벤트 'Release!', 글로벌. 공식 API 생성일은 2024-09-02)",
+      "platforms": [
+        "Roblox"
+      ],
+      "subgenre": "풍선껌 불기·펫 부화 증분형 시뮬레이터(공식 장르 Simulation/Incremental Simulator)",
+      "businessModel": "무료 플레이 + 게임패스 12종(부화 가속·행운·저장량·자동 낚시) + 개발자 상품(직판 펫·번들·스핀 티켓)",
+      "status": "서비스 중",
+      "description": "풍선껌을 불어 크기를 키워 하늘 섬으로 뛰어오르고, 알을 부화해 펫 팀을 강화하는 시뮬레이터다. 2018년 Bubble Gum Simulator의 후속작으로 매주 금요일 업데이트한다(공식 설명).",
+      "coreLoop": [
+        "풍선껌 불기로 크기·재화 증가",
+        "판매해 코인 획득",
+        "알 부화로 펫 팀 강화(빠른·3연속 부화)",
+        "높은 섬·월드·리프트 탐험",
+        "리버스·시즌으로 반복"
+      ],
+      "features": [
+        "공식 설명: 풍선껌을 불어 구름 위로 점프, 하늘 섬·비밀 탐험, 희귀 펫 부화·팀 구성, 'Updates every Friday at 2PM EST!'",
+        "출시 23일 뒤 'WORLD + TRADING PLAZA' 업데이트일(2025-05-04)에 역대 최고 동접 380,959명(Rolimon's·공식 이벤트)",
+        "할로윈 월드(2026-10-10~31): 할로윈 알 3종, 비밀 펫 7종 이상, 할로윈 리버스·리더보드, 매시간·매일 보상(공식 설명)",
+        "리프트(Rift): 서버에 일정 시간 나타나는 고행운 알·상자, 전 서버 공통 글로벌 리프트(2025-09)(공식 이벤트 설명)",
+        "길드(2026-09-12), 주말 행운 2배 이벤트, 월 1회 'Shadow Admin Abuse'(공식 이벤트)"
+      ],
+      "progression": [
+        "풍선껌 크기·저장량(Infinity Gum으로 상한 해제)",
+        "펫 희귀도(Mythic·Secret)",
+        "인챈트",
+        "월드·섬 해금",
+        "리버스",
+        "시즌 패스(Bubble Pass)"
+      ],
+      "idleMechanics": "매시간·매일 보상(공식 설명 'Get Items Hourly & Daily!')과 매시간 선물 비(공식 이벤트)로 체류를 보상한다. 'Fast Hatch'(99)·'Triple Hatch'(249) 같은 부화 가속 패스와, 이 게임의 유일한 자동화 패스인 'Auto Fishing'(349 Robux, 'Automatically Casts and Catches fish!')을 판다. 자동 불기·자동 부화의 무료 여부는 공식 출처로 확인하지 못했다. 오프라인 진행에 대한 언급은 없다.",
+      "socialAndLiveOps": [
+        "거래 광장(2025-05-04)",
+        "길드(2026-09-12)",
+        "금요일 업데이트와 주말 행운 이벤트",
+        "전 서버 글로벌 리프트",
+        "할로윈 리버스 리더보드"
+      ],
+      "popularityFactors": [
+        "2018년 원작 Bubble Gum Simulator(누적 방문 약 12.5억 회) 브랜드를 이었다(공식 그룹 게임 목록)",
+        "매주 금요일 고정 업데이트로 신뢰를 쌓았다(공식 설명)",
+        "긍정 96.8%로 만족도가 높다(공식 투표)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "부화 속도·행운·장착 수·저장량 같은 영구 패스(99~799 Robux, 일부 '50% OFF' 표기)와, 업데이트마다 바뀌는 직판 펫(일반·Mythic·XL 단계)·번들·스핀 티켓으로 수익을 낸다.",
+        "products": [
+          {
+            "name": "[50% OFF] Fast Hatch / [50% OFF] Triple Hatch",
+            "price": "99 / 249 Robux(게임패스)",
+            "contents": "빠른 부화·3연속 부화",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Auto Fishing",
+            "price": "349 Robux(게임패스)",
+            "contents": "자동 낚시(유일한 자동화 패스)",
+            "evidence": "Roblox 공식 게임패스 상품 정보 API"
+          },
+          {
+            "name": "Infinity Gum / VIP",
+            "price": "799 / 299 Robux(게임패스)",
+            "contents": "풍선 저장량 무제한 / 코인 x1.15·상자 재생성 25% 빠름",
+            "evidence": "Roblox 공식 게임패스 상품 정보 API"
+          },
+          {
+            "name": "Hallowed Lord / Mythic Hallowed Lord / XL Hallowed Lord",
+            "price": "599 / 899 / 1,299 Robux",
+            "contents": "할로윈 직판 펫 3단계",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Mega Halloween Bundle",
+            "price": "1,399 Robux",
+            "contents": "할로윈 번들",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "판매 중 게임패스 12종(99~799 Robux)",
+          "개발자 상품 471개 등록, 가격 있는 판매 상태 409개(1~3,499 Robux)",
+          "직판 펫을 일반·Mythic·XL 3단계 가격으로 판매(2026-10 할로윈)"
+        ],
+        "unverified": "알·리프트 확률 공시, 자동 불기·부화 무료 여부, 레벨업 팩 구성, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 10,049명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 380,959명(May 4, 2025 표기), 최근 30일 최고 11,526명(2 days ago), 최근 7일 최고 11,526명(2 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준). 최근 30일 최고는 역대 최고의 약 3%",
+        "rating": "공식 투표 좋아요 495,238 / 싫어요 16,407(긍정 96.8%), 2026-10-14",
+        "other": "누적 방문 611,774,949회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 292,373 · 좋아요 495,238/싫어요 16,407(긍정 96.8%) — 공식 API, 2026-10-14 07:30 KST. 그룹 멤버 11,232,013명(공식 그룹 API)"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 96.8%(공식 투표)",
+          "출시 후 1년 반 동안 공식 이벤트 87건으로 주간 업데이트를 이어 왔다(공식 이벤트 API)"
+        ],
+        "negative": [
+          "최근 30일 최고 동접이 역대 최고의 약 3%로 줄었다(Rolimon's)",
+          "친구 수에 비례하는 행운 보너스 때문에 부계정으로 동접이 부풀었다는 주장(나무위키, 미검증)"
+        ],
+        "basis": "Roblox 공식 투표·이벤트 API, Rolimon's 관측치, 나무위키(커뮤니티)"
+      },
+      "takeaways": {
+        "borrow": [
+          "'매주 금요일 오후 2시(EST)'처럼 요일·시각을 설명에 박아 두는 업데이트 약속",
+          "직판 펫을 일반·Mythic·XL 3단계 가격으로 파는 가격 사다리",
+          "매시간·매일 보상과 주말 행운 이벤트로 체류 리듬 형성"
+        ],
+        "avoid": [
+          "친구·계정 수에 비례하는 보너스 — 부계정 남용을 부른다",
+          "출시 초 피크 이후 장기 목표가 약하면 동접이 피크의 몇 %로 떨어진다"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/85896571713843/Bubble-Gum-Simulator-INFINITY",
+          "title": "Bubble Gum Simulator INFINITY 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(풍선껌·하늘 섬·펫 부화·할로윈 이벤트·'Updates every Friday at 2PM EST!')",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=6504986360",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=6504986360 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/6504986360/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 15종(판매 12종) 이름·가격·설명(Auto Fishing·Infinity Gum·VIP)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/6504986360/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 471개(직판 펫·번들·스핀 티켓) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/6504986360/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "공식 이벤트 87건(2025-04-11 'Release!'~2026-10-17), 금 20~21시 UTC 최빈",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/85896571713843",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v2/groups/3333298/games?accessFilter=Public&limit=50",
+          "title": "Roblox 공식 그룹 게임 목록 API — Rumble Studios",
+          "type": "공식",
+          "note": "Bubble Gum Simulator(2018)·Mining Simulator 등 전작과 방문 수 확인(병렬 조사)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "plants-and-brainrots",
+      "name": "Plants & Brainrots",
+      "originalName": "Plants vs Brainrots(이전 명칭으로 널리 알려짐)",
+      "url": "https://www.roblox.com/games/127742093697776/Plants-Brainrots",
+      "developer": "Splitting Point - PVB 그룹(소유자 jandel). 그룹 이름 이력 API에 'Herbert Games'(2025-07-17)·'Yo Gurt Studio'(2026-02-02) 기록",
+      "publisher": "Splitting Point - PVB 그룹(Roblox 직접 배포)",
+      "origin": "미확인",
+      "release": "2025-08-01 (Roblox 공식 API 생성일, 공개 출시일 미확인)",
+      "platforms": [
+        "Roblox(PC·모바일·태블릿·콘솔)"
+      ],
+      "subgenre": "식물 디펜스 + 초당 수익 타이쿤(공식 장르 Simulation/Tycoon)",
+      "businessModel": "무료 플레이 + 게임패스 2종 + 개발자 상품(씨앗·럭키 블록·시즌 패스·서버 행운)",
+      "status": "서비스 중(피크 대비 동접 급감)",
+      "description": "씨앗을 심으면 식물이 몰려오는 브레인롯과 대신 싸우고, 잡은 브레인롯이 돈을 만드는 디펜스형 타이쿤이다. 2025년 10월 동접 865만 명(Rolimon's)까지 올랐다가 조사 시점에는 2천 명 안팎으로 줄었다.",
+      "coreLoop": [
+        "씨앗 구매·심기",
+        "식물이 레인을 따라오는 브레인롯과 자동 전투",
+        "확보한 브레인롯이 초당 돈 생산",
+        "더 강한(EPIC) 식물·브레인롯 수집과 과시",
+        "시즌·이벤트 보상으로 반복"
+      ],
+      "features": [
+        "공식 설명: 씨앗을 사서 정원에 심으면 식물이 대신 브레인롯과 싸우고, 브레인롯이 돈을 만든다",
+        "토 22:00 UTC 주간 업데이트(공식 이벤트 57건, 2025-09-27 'BOSSES'~2026-10-17)",
+        "시즌제(2025-11-22 Season 1 → 2026-09-23 Season 9 상품 등록) 프리미엄 패스와 티어 스킵 판매",
+        "2026년 5월 이후 이벤트 제목이 순환 재사용된다(예: 'PRISON EVENT' 2025-10-04·2026-05-16·2026-08-08, 'INVESTMENT' 2026-04-11·06-13·08-22) — 저비용 운영 전환 정황(해석)",
+        "같은 날(2025-10-11) Steal a Brainrot과 함께 역대 최고 동접을 기록했다(Rolimon's)"
+      ],
+      "progression": [
+        "식물 희귀도·등급",
+        "브레인롯 수집(수익원)",
+        "레인(Row) 확장·정리",
+        "식물 퓨즈 머신",
+        "시즌 패스 티어",
+        "리버스(공식 이벤트 'New Event + Rebirth')"
+      ],
+      "idleMechanics": "심어 둔 식물이 자동으로 싸우고 확보한 브레인롯이 돈을 만드는 '자동 디펜스 + 수동 수입' 구조다(공식 설명). 오프라인 수익 여부는 공식 출처로 확인하지 못했다. 같은 장르의 Capybaras VS Plants는 'online AND offline' 수익과 'Triple Offline Earnings'(24 Robux)를 공식 표방한다.",
+      "socialAndLiveOps": [
+        "토요일 주간 이벤트·시즌제(공식 이벤트 API)",
+        "크리스마스 관리자 이벤트(2025-12-24·25)",
+        "서버 행운 2x/4x 상품(149/499 Robux)",
+        "브레인롯 과시('flex your brainrots', 공식 설명)"
+      ],
+      "popularityFactors": [
+        "Plants vs. Zombies식 레인 디펜스와 브레인롯 밈을 결합해 직관적이다(해석)",
+        "브레인롯 장르 유행 정점(2025년 가을)에 맞춰 나왔다(해석)",
+        "Grow a Garden 창작자 Jandel이 소유한 그룹이라는 연결성(공식 그룹 API, 영향은 해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "VIP·인벤토리 확장 패스 2종 외에는 씨앗·식물 럭키 블록·시즌 패스·티어 스킵·서버 행운·영구 팩 같은 개발자 상품 중심이다. 시즌 상품은 '[GIFT]' 판으로도 판다.",
+        "products": [
+          {
+            "name": "VIP / Extra Inventory Space",
+            "price": "249 / 149 Robux(게임패스)",
+            "contents": "VIP 혜택·인벤토리 확장",
+            "evidence": "Roblox 공식 게임패스 API"
+          },
+          {
+            "name": "Purchase Season 9 Premium Pass",
+            "price": "749 Robux",
+            "contents": "시즌 9 프리미엄 패스",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "Skip 1 Tier / Skip All [31-35 Tiers] for Season 9",
+            "price": "49 / 1,199 Robux",
+            "contents": "시즌 티어 스킵",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "10 Premium Fall Plant Lucky Block",
+            "price": "2,399 Robux",
+            "contents": "식물 럭키 블록 10개(확률형)",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          },
+          {
+            "name": "2x / 4x Server Luck",
+            "price": "149 / 499 Robux",
+            "contents": "서버 행운",
+            "evidence": "Roblox 공식 개발자 상품 카탈로그 API"
+          }
+        ],
+        "verified": [
+          "게임패스 2종 판매 중(VIP 249, Extra Inventory Space 149 Robux)",
+          "개발자 상품 386개 등록·전부 가격 표시(5~9,991,999 Robux)",
+          "시즌 9 프리미엄 패스 749 Robux·티어 스킵 49~1,199 Robux"
+        ],
+        "unverified": "럭키 블록 확률 공시, 개명 시점·사유(Plants vs. Zombies 상표 관련 여부), 인수 조건, 오프라인 수익, 매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "공식 API 동접 1,916명(2026-10-14 07:30 KST 시점 스냅샷, 시간대·요일·이벤트에 따라 크게 변동). Rolimon's 관측 최고 동접 8,654,525명(October 11, 2025 표기), 최근 30일 최고 32,737명(1 week ago), 최근 7일 최고 32,380명(3 days ago) — 제3자 추적값, 2026-10-14 조회(상대 날짜는 조회 시점 기준)",
+        "rating": "공식 투표 좋아요 3,027,212 / 싫어요 166,644(긍정 94.8%), 2026-10-14",
+        "other": "누적 방문 4,715,049,482회(재방문 포함 세션 수, 순이용자 아님) · 즐겨찾기 2,002,758 · 좋아요 3,027,212/싫어요 166,644(긍정 94.8%) — 공식 API, 2026-10-14 07:30 KST"
+      },
+      "userFeedback": {
+        "positive": [
+          "긍정 94.8%로 높다(공식 투표)",
+          "누적 방문 47억 회로 짧은 기간에 대규모 유입(공식 API)"
+        ],
+        "negative": [
+          "피크 865만에서 스냅샷 1,916명으로 99.9% 감소(Rolimon's·공식 API, 원인 미확인)",
+          "2026년 중반부터 이벤트 순환 재사용 — 신규 콘텐츠 부족 인상(해석)"
+        ],
+        "basis": "Roblox 공식 투표·메타데이터·이벤트 API, Rolimon's 관측치. 텍스트 리뷰는 수집하지 못했다."
+      },
+      "takeaways": {
+        "borrow": [
+          "디펜스 전투를 '자동 생산 장치'로 바꿔 방치와 액션을 섞은 구조",
+          "시즌 패스 + 티어 스킵 가격 사다리(49~1,199 Robux)"
+        ],
+        "avoid": [
+          "유행 밈에 기대 빠르게 나온 게임은 유행이 꺾이면 동접이 급감한다",
+          "이벤트 재탕으로 버티는 운영은 이탈을 늦추지 못한다(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.roblox.com/games/127742093697776/Plants-Brainrots",
+          "title": "Plants & Brainrots 공식 경험 페이지",
+          "type": "공식",
+          "note": "공식 설명(씨앗 심기·식물이 브레인롯과 전투·브레인롯이 돈 생성)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://games.roblox.com/v1/games?universeIds=8316902627",
+          "title": "Roblox 공식 게임 메타데이터·투표 API",
+          "type": "공식",
+          "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=8316902627 로 확인(2026-10-14 07:30 KST 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/game-passes/v1/universes/8316902627/game-passes?passView=Full&pageSize=100",
+          "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+          "type": "공식",
+          "note": "게임패스 2종 이름·가격",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/developer-products/v2/universes/8316902627/developerproducts?limit=100",
+          "title": "Roblox 공식 개발자 상품 카탈로그 API",
+          "type": "공식",
+          "note": "개발자 상품 386개(씨앗·럭키 블록·시즌 패스·서버 행운) 등록 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apis.roblox.com/virtual-events/v1/universes/8316902627/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+          "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+          "type": "공식",
+          "note": "토 22:00 UTC 주간 이벤트 57건(2025-09-27~2026-10-17)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rolimons.com/game/127742093697776",
+          "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+          "type": "데이터(추정)",
+          "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://groups.roblox.com/v1/groups/34869880/name-history?limit=10&sortOrder=Desc",
+          "title": "Roblox 공식 그룹 이름 이력 API — Splitting Point - PVB",
+          "type": "공식",
+          "note": "그룹 소유자 jandel(groups/v1/groups/34869880), 이름 이력 'Herbert Games'(2025-07-17)·'Yo Gurt Studio'(2026-02-02)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "deepDive": {
+    "gameId": "grow-a-garden",
+    "title": "오프라인 성장·재입고·날씨 변이를 한 루프로 묶어 출시 1개월 안에 Robux 지출 1위에 오르고, 1년 만에 월 중앙값 동접이 99% 줄어드는 전 과정이 공식·추적 데이터로 남은 사례",
+    "summary": "Grow a Garden은 '재입고된 씨앗을 심고, 실시간으로 자란 작물을 팔아 더 비싼 씨앗을 산다'는 단순한 루프에 오프라인 성장, 서버 공통 날씨 변이, 확률형 알·상자, 거래를 겹쳐 2025년 7월 동접 약 2,200만 명을 기록했다(Roblox Q2 2025 주주서한). 수익은 게임패스가 아니라 재입고·성장 스킵·씨앗 직구·상자 같은 반복 구매형 개발자 상품 1,200개 이상(조회 상한)과 보상형 광고로 낸다(공식 카탈로그 API). 그러나 Rolimon's 6시간 표본 월 중앙값 동접은 2025-06 2,379,731명에서 2026-10(1~13일) 17,629명으로 줄었고, 공식 좋아요 비율도 94.1%에서 89.9%로 내려갔다. 그래서 '바이럴을 만드는 설계'와 '바이럴 뒤에 남기는 설계'를 분리해서 배울 수 있는 대표작이다(해석).",
+    "firstSession": [
+      "빈 플롯과 소량의 Sheckles, 시작 씨앗으로 시작한다(AP 보도).",
+      "상점에서 가장 싼 씨앗을 사 플롯에 심는다. 첫 작물은 수 초~수십 초 안에 자란다(위키 기반, 정확한 시간·가격은 공식 확인 못 함).",
+      "수확한 작물을 팔아 Sheckles를 얻고 더 비싼 씨앗을 산다. 상점은 5분마다 재입고돼 '다음 재입고까지 기다리는' 리듬이 생긴다(위키).",
+      "같은 서버 친구 1명당 Sheckles +10%(최대 +40%)가 붙어 친구 초대 동기가 첫 세션부터 생긴다(위키).",
+      "날씨가 발생하면 작물에 Wet·Shocked 같은 변이가 붙어 판매가가 몇 배가 되는 경험을 한다(위키).",
+      "알(부화 10분~8시간)과 펫을 만나 '접속 안 해도 진행된다'는 장기 대기 구조를 알게 된다(위키·공식 설명).",
+      "정원 확장(Expand Garden 99 Robux)·재입고 스킵(79 Robux) 같은 상품이 대기 시간이 생기는 시점에 노출된다(공식 상품 카탈로그, 노출 위치는 미확인)."
+    ],
+    "coreLoop": [
+      {
+        "step": "재입고 상점에서 구매",
+        "detail": "상점이 5분마다 재입고되고 희귀 씨앗은 확률로만 나온다(위키). 재입고 시각이 접속 이유가 된다."
+      },
+      {
+        "step": "심고 기다리기",
+        "detail": "작물은 실시간으로 자라며 접속하지 않아도 성장한다(공식 설명 'your garden literally grows while you are offline')."
+      },
+      {
+        "step": "날씨·펫으로 변이 올리기",
+        "detail": "서버 공통 날씨와 펫·스프링클러가 변이·크기 확률을 올린다. 변이 배수는 Wet×2에서 Cosmic×240까지, Gold×20·Rainbow×50이다(위키)."
+      },
+      {
+        "step": "수확해 판매",
+        "detail": "가치는 기본가×변이×무게로 결정된다(위키). 판매는 접속해야 한다."
+      },
+      {
+        "step": "더 희귀한 씨앗·알·확장 구매",
+        "detail": "번 Sheckles로 상위 씨앗, 알, 정원 확장을 사서 루프의 배수를 키운다. 막히면 스킵·직구 상품이 보인다(반복)."
+      }
+    ],
+    "currencies": [
+      {
+        "name": "Sheckles",
+        "earn": "작물 판매, 친구 보너스",
+        "spend": "씨앗·장비·알·확장 구매",
+        "paid": false
+      },
+      {
+        "name": "이벤트 재화(Honey 등)",
+        "earn": "이벤트 참여·이벤트 작물 제출(수집 노트 기준)",
+        "spend": "이벤트 상점 교환",
+        "paid": false
+      },
+      {
+        "name": "Trade Tokens",
+        "earn": "Robux 구매(1토큰=1 Robux, 수집 노트 기준)",
+        "spend": "거래 월드 거래 수수료·거래권",
+        "paid": true
+      },
+      {
+        "name": "Garden Coins",
+        "earn": "Garden Ascension(2025-08-30) 때 기존 화폐를 흡수해 전환(위키)",
+        "spend": "Ascension 이후 상점",
+        "paid": false
+      },
+      {
+        "name": "Robux",
+        "earn": "현금 구매",
+        "spend": "재입고·스킵·씨앗·알·상자·시즌 패스(공식 개발자 상품 카탈로그)",
+        "paid": true
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "씨앗 희귀도",
+        "detail": "Common~Transcendent 등급(위키). 상위 씨앗은 Robux 직구도 가능하다(Carrot 7 ~ Alien Apple 1,700 Robux).",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "변이·무게 배수",
+        "detail": "날씨·펫·이벤트로 변이를 얻고 가치가 몇 배~수백 배가 된다(위키). Seed Rain(199/699/1,299 Robux)으로 날씨형 이벤트도 산다.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "정원 확장",
+        "detail": "플롯 수를 늘려 생산량을 키운다. Expand Garden 99 Robux.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "펫·알",
+        "detail": "펫 패시브가 수분·변이·수확에 관여한다(위키). Premium 알 149~4,999, Exotic 상자 199~6,999 Robux(확률형).",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "성장 시간 단축",
+        "detail": "Skip Growth 49, Grow All Plants 375, Super Seed 199/575/1,699 Robux.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "시즌 패스·Ascension",
+        "detail": "2025-09-27 시즌 패스(749 Robux, Skip Tier 49, Skip All 1,699)와 2025-08-30 Garden Ascension.",
+        "monetized": "유료 가속"
+      }
+    ],
+    "gacha": {
+      "pools": [
+        "Premium 알(149~4,999 Robux)",
+        "Exotic 상자(199~6,999 Robux, 예: +50 Exotic Fairy Chest 6,999)"
+      ],
+      "rates": [
+        "공시 수치는 확인하지 못했다. Roblox 정책상 유료 랜덤 아이템은 모든 결과의 수치 확률 공개가 의무이다(Creator Hub 유료 랜덤 아이템 정책)."
+      ],
+      "pity": "천장·보정 여부는 확인하지 못했다.",
+      "source": "Roblox Creator Hub — Paid random items 정책 및 공식 개발자 상품 카탈로그 API(가격만 확인)"
+    },
+    "offline": "작물은 오프라인에서도 자란다(공식 설명). 다만 수확·판매·재입고 구매는 접속해야 하므로 '돌아와서 한꺼번에 처리'하는 구조다(해석). 오프라인 성장의 상한 시간과 오프라인 수익 배율은 확인하지 못했다. 로블록스는 20분 유휴 시 자동 접속 해제하므로(Player.Idled) 서버 체류형 AFK는 성립하지 않고, 이 게임은 서버 시간 기반 성장으로 이를 우회한다(해석).",
+    "adPlacements": [
+      "'Ad Reward:' 접두어 보상형 광고 상품 2종이 2026-02-13 등록돼 있다(공식 카탈로그, 1 Robux 표기). 'Watering Can Booster' 같은 이름이 확인된다. 광고 위치·보상 수치는 확인하지 못했다.",
+      "Roblox 공식 Tycoon 광고 플레이북이 Grow a Garden을 Progressive Rewards 사례로 소개하고 Opt-in 15%+·일 3회+를 핵심 지표로 제시한다."
+    ],
+    "storeStructure": [
+      "재입고: Auto Restock 79, Restock Shop 79 Robux",
+      "성장 스킵: Skip Growth 49, Grow All Plants 375 Robux",
+      "씨앗 직구: Carrot 7 ~ Alien Apple 1,700, Super Seed 199/575/1,699 Robux",
+      "확률형: Premium 알 149~4,999, Exotic 상자 199~6,999 Robux",
+      "날씨형: Seed Rain 199/699/1,299 Robux",
+      "확장·거래: Expand Garden 99, Trading Ticket 19 Robux",
+      "시즌 패스 749 Robux, Skip Tier 49, Skip All 1,699 Robux",
+      "게임패스는 판매 중 0종. 유일한 패스 'Premium Seed Pack'은 판매 중지(공식 패스 API). 개발자 상품 1,200개 이상(조회 상한, 10만 Robux 미만 판매 상태 1,116개)"
+    ],
+    "liveOpsCadence": [
+      "2025-04-19부터 거의 매주 토요일 업데이트(공식 이벤트 108건)",
+      "2025-05-24 MONSTER MASH RECORD",
+      "2025-08-02 TRADING 업데이트(거래 도입)",
+      "2025-08-23 ADMIN WAR(Steal a Brainrot과 동시 관리자 이벤트, Tubefilter)",
+      "2025-09-27 Seed Stages와 시즌 패스",
+      "2025-11-29 거래 월드 추가(공식 이벤트·위키)",
+      "2026-04-15부터 매주 수요일 22:00 UTC 30분 Watering Wednesday 관리자 이벤트",
+      "2026-06-12 Grow a Garden 2 예고(원작 이벤트 채널)",
+      "다음 업데이트 2026-10-17 20:30 UTC('NEXT UPDATE – ???' 등록)"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2025-03-25",
+        "event": "출시",
+        "value": "공식 API 생성일, Roblox Q2 2025 주주서한 출시일"
+      },
+      {
+        "date": "2025-05-17",
+        "event": "동접 500만",
+        "value": "Kotaku 보도(수집 노트)"
+      },
+      {
+        "date": "2025-06-21",
+        "event": "동접 2,130만(당시 세계 기록)",
+        "value": "PocketGamer.biz. 한 시간 뒤 760만, 두 시간 뒤 550만"
+      },
+      {
+        "date": "2025-07",
+        "event": "동접 약 2,200만",
+        "value": "Roblox Q2·Q3 2025 주주서한. 출시 1개월 안에 지출 1위"
+      },
+      {
+        "date": "2025-08-23",
+        "event": "Admin War",
+        "value": "Tubefilter 기준 Grow a Garden 2,110만·Roblox 4,740만. Rolimon's 역대 최고 22,375,597명"
+      },
+      {
+        "date": "2025-06",
+        "event": "월 중앙값 동접(Rolimon's 6시간 표본)",
+        "value": "2,379,731명"
+      },
+      {
+        "date": "2025-10",
+        "event": "월 중앙값 동접",
+        "value": "379,423명"
+      },
+      {
+        "date": "2026-02",
+        "event": "월 중앙값 동접",
+        "value": "37,867명"
+      },
+      {
+        "date": "2026-04",
+        "event": "월 중앙값 동접(반등, Watering Wednesday 시작 달)",
+        "value": "123,661명"
+      },
+      {
+        "date": "2026-10-14",
+        "event": "조사 시점",
+        "value": "월 중앙값(10월 1~13일) 17,629명, 공식 API 스냅샷 12,992명, 최근 7일 최고 103,532명, 좋아요 89.9%(Rolimon's)"
+      }
+    ],
+    "strengths": [
+      "'심고 기다리고 수확한다'는 보편적 판타지와 오프라인 성장이 짧은 세션 이용자에게 맞았다(해석).",
+      "재입고·날씨·변이가 서버 공통 시각을 만들어 접속 이유가 분명했다(위키·해석).",
+      "반복 구매형 상품이 대기 시간 단축과 확률 두 축에 촘촘히 깔려 있다(공식 카탈로그).",
+      "주간 업데이트와 관리자 이벤트가 크리에이터 영상 소재를 계속 공급했다(공식 이벤트 108건)."
+    ],
+    "weaknesses": [
+      "피크 뒤 월 중앙값 동접이 1년 만에 99% 감소했다. 장기 목표 없이 이벤트를 늘린 결과로 읽힌다(Rolimon's, 해석).",
+      "좋아요 비율이 94.1%에서 89.9%로 하락했다(Rolimon's). 거래 사기·복제·현금 거래 문제가 보고됐다(위키백과·위키).",
+      "거래를 출시 4개월 뒤에야 넣어 경제 설계를 사후 대응으로 보완했다(2025-08-02 도입, 2025-08-30 Ascension·거래세).",
+      "서버 최대 4인(공식 API)이라 약탈 게임 같은 사회적 긴장이 적고 개인 최적화 플레이에 의존한다(해석).",
+      "후속작 Grow a Garden 2가 같은 소유자 아래 이용자를 나눠 가졌다(해석, 2026-06 최고 929,371명은 Rolimon's)."
+    ],
+    "lessons": [
+      "오프라인 성장은 '성장은 자동, 수확·판매는 접속'으로 나누면 짧은 세션과 재접속을 함께 얻는다. 단 상한 시간을 명확히 설계한다.",
+      "서버 공통 시각 이벤트(재입고·날씨)를 요일 고정 업데이트와 주중 30분 이벤트의 2박자로 운영하되, 피크 뒤 남을 장기 목표(컬렉션·길드·시즌)를 출시 초기에 같이 넣는다.",
+      "유료 랜덤 상품은 출시 시점에 확률 공개와 국가별 제한 처리(PolicyService)를 구현한다. 거래는 경제 설계(세금·복제 방지)와 함께 넣는다.",
+      "패스보다 소액 반복 구매(49~375 Robux 스킵·재입고)가 중심이므로 소프트런칭에서 결제자 비율보다 결제 빈도와 광고 Opt-in(15%+·일 3회+)을 같이 본다.",
+      "바이럴 이용자의 상당수는 같은 날 다른 경험도 플레이한다(Q2 2025 주주서한: DAU 75% 이상). 단일 게임 체류 시간에 의존하지 않는 가벼운 복귀 동기를 설계한다."
+    ],
+    "evidence": [
+      {
+        "url": "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
+        "title": "Grow a Garden 공식 경험 페이지",
+        "type": "공식",
+        "note": "공식 설명(재입고 상점·심기·성장·수확·'your garden literally grows while you are offline')",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://games.roblox.com/v1/games?universeIds=7436755782",
+        "title": "Roblox 공식 게임 메타데이터·투표 API",
+        "type": "공식",
+        "note": "동접·누적 방문·즐겨찾기·서버 최대 4인·생성일 2025-03-25, 좋아요는 https://games.roblox.com/v1/games/votes?universeIds=7436755782 (2026-10-14 07:30 KST)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://apis.roblox.com/developer-products/v2/universes/7436755782/developerproducts?limit=100",
+        "title": "Roblox 공식 개발자 상품 카탈로그 API",
+        "type": "공식",
+        "note": "개발자 상품 1,200개(12페이지 상한) 조회: Auto Restock·Skip Growth·Season Pass·Super Seed·Trade Tokens·Ad Reward 상품 등",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://apis.roblox.com/virtual-events/v1/universes/7436755782/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+        "title": "Roblox 공식 경험 이벤트 API",
+        "type": "공식",
+        "note": "2025-04-19~2026-10-17 공식 이벤트 108건(토요일 업데이트·Watering Wednesday·Admin War·Grow a Garden 2 예고)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2025/q2/Q2-25-SH-Letter.pdf",
+        "title": "Roblox Q2 2025 Shareholder Letter",
+        "type": "공식",
+        "note": "Grow a Garden(2025-03-25 출시)이 1개월 내 지출 기준 1위, 2025년 6월 동시접속 세계 기록 후 7월 약 2,200만 명으로 경신. 2025년 6월 Robux 지출 상위 10개 중 3개가 최근 12개월 내 출시작(Grow a Garden·Steal a Brainrot·Dead Rails). 플랫폼 동접 3,200만 명 돌파, DAU 1억 1,180만",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://tech.yahoo.com/gaming/articles/millions-flocking-grow-virtual-gardens-160456564.html",
+        "title": "Millions are flocking to grow virtual gardens in viral Roblox game created by teenager — AP(Yahoo 게재, 2025-07-30)",
+        "type": "보도",
+        "note": "빈 플롯·약간의 Sheckles·시작 씨앗으로 시작, 6월 말 동접 2,160만 명(Roblox 인용), Common Sense Media 편집장 'chill' 평",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/robloxs-grow-a-garden-hits-industry-record-213m-concurrent-users-surpassing-pubg-fortnite-and-more/",
+        "title": "Roblox's Grow a Garden hits industry record 21.3m concurrent users — PocketGamer.biz (2025-06-25)",
+        "type": "보도",
+        "note": "2025-06-21 영국 시각 15시 2,130만 → 16시 760만 → 17시 550만, 14일 평균 270만",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.rolimons.com/game/126884695634066",
+        "title": "Rolimon's — Grow a Garden 게임 페이지(내장 이력 데이터)",
+        "type": "데이터(추정)",
+        "note": "역대 최고 22,375,597명(2025-08-23), 6시간 간격 표본 월 중앙값(2025-06 2,379,731 → 2026-10 17,629), 좋아요 비율 94.1%(2025-05)→89.9%(2026-07) 추이",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://prod.docsiteassets.roblox.com/assets/ads/Tycoon_Playbook.pdf",
+        "title": "Roblox 공식 Tycoon 광고 플레이북(2026)",
+        "type": "공식",
+        "note": "Tycoon 보상형 광고 핵심 지표(Opt-in 15%+·일 3회+)와 Grow a Garden을 Progressive Rewards 사례로 소개",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "차밭 마을(가칭) — 약탈 없는 협동형 오프라인 농장",
+      "pitch": "서버 전체가 함께 차밭을 키우고, 접속하지 않아도 자라며 돌아오면 보상형 광고로 오프라인 수익을 2배로 받는 Roblox 협동 농장.",
+      "target": "Roblox 10대 중심 이용자와 약탈 PvP를 부담스러워하는 저연령·캐주얼 이용자. Grow a Garden 이탈자(해석).",
+      "platform": "Roblox(PC·모바일 동시, R15 아바타 사용)",
+      "coreLoop": [
+        "재입고 시각에 맞춰 씨앗·도구 구매",
+        "심고 오프라인 성장(상한 시간 있음)",
+        "서버 공통 날씨가 마을 전체 변이 확률을 올림",
+        "돌아와서 수확·납품, 복귀 보상 광고로 오프라인 수익 2배",
+        "마을 공동 목표(시즌 건물)에 기여하고 반복"
+      ],
+      "mvp": [
+        "플롯 8칸과 씨앗 15종, 실시간 성장·오프라인 성장 상한 8시간(설계값, 소프트런칭에서 조정)",
+        "서버 공통 날씨 3종과 변이 배수",
+        "복귀 보상형 광고 1곳(개발자 상품, 고정 보상)",
+        "마을 공동 목표와 기여 랭킹",
+        "수·토 2박자 정시 이벤트 운영 도구",
+        "알림 이벤트(Experience Events) 등록"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 16~20주(MVP), 이후 주 단위 업데이트 유지",
+      "monetization": "영구 패스는 2종 이하로 제한하고 소액 반복 상품 중심으로 설계한다. 재입고 스킵·성장 스킵(Grow a Garden의 49~79 Robux대 사례 참고), 시즌 패스 1종, 복귀 광고. 확률형 상품은 출시 시점에 수치 확률을 공개하고 PolicyService 제한 국가를 처리한다.",
+      "why": "Grow a Garden의 오프라인 성장+재입고+날씨 변이 구조가 출시 1개월 안에 지출 1위를 만들었지만 장기 목표 부재로 월 중앙값 동접이 99% 줄었다. 협동 목표와 시즌 건물로 피크 뒤 체류 이유를 넣는다. Roblox 공식 광고 가이드가 '복귀 시 오프라인 수익 2배'를 권장한다(공식 플레이북).",
+      "risks": "복제작이 빠르고(Break and Steal an Egg 사례), 바이럴 없이는 노출이 어렵다. 오프라인 성장이 경제 인플레이션을 부를 수 있다. 협동 구조가 약탈형보다 영상 소재로 약할 수 있다(해석).",
+      "kpiGate": "D1 리텐션과 세션 10분 이상 비율(Creator Rewards 기준선인 10분 이상 플레이를 기준), 광고 Opt-in 15% 이상·일 3회 이상(공식 Tycoon 가이드), 좋아요 비율 90% 이상(공식 투표)을 통과해야 확장. 리텐션 목표값은 소프트런칭 중 자체 기준으로 확정(공개 수치 없음).",
+      "buildNext": "플롯 8칸·씨앗 5종·실시간 성장·판매만 있는 Roblox 프로토타입을 만들고 서버 날씨 1종과 오프라인 성장 상한을 넣어 친구 5명 플레이테스트로 세션 길이 확인."
+    },
+    {
+      "name": "교배 수족관(가칭) — RNG 교배형 방치 수족관",
+      "pitch": "자동 교배 시도가 시간 단위로 돌아가고, 오프라인 상한과 비동기 방문으로 돌아올 이유를 만드는 확률 공시형 수족관 방치 게임.",
+      "target": "모바일·Steam의 수집·방치 이용자, Roblox 연령층 밖의 20~30대 캐주얼 이용자(해석).",
+      "platform": "독립 플랫폼(모바일 우선, Steam 확장 검토)",
+      "coreLoop": [
+        "수조에 개체 2마리 배치",
+        "자동 교배가 시간당 시도되고 변이·희귀도 결정",
+        "결과 개체를 도감·판매에 사용",
+        "수조 확장과 사료·장치 구매",
+        "오프라인 상한까지 쌓인 결과를 접속 시 수령(반복)"
+      ],
+      "mvp": [
+        "개체 30종과 변이 3단계",
+        "자동 교배와 오프라인 상한(Coin Tray식 가득 차면 멈춤)",
+        "도감과 비동기 수조 방문",
+        "전 확률 공시 화면",
+        "보상형 광고 1곳(고정 보상)",
+        "주간 이벤트 1종"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 20~24주 / 2인 팀 3~4개월",
+      "monetization": "광고 제거·오프라인 상한 확대·도감 가속 등 소액 상품과 시즌 패스. 확률형 상품은 공시 확률과 표기 의무를 처음부터 준수한다.",
+      "why": "Pet Simulator 99!는 2026-09-05 Coin Tray로 오프라인 수익에 '가득 차면 적립 중단' 상한을 두어 재접속을 유도했고, Auto Farm 175·Auto Tap 350 Robux처럼 자동화 자체를 팔았다. Sol's RNG·Anime Dice는 자동 롤과 변이로 수집 동기를 만든다. 이를 플랫폼 밖에서 구현하면 Roblox 정책 변화·수수료 위험을 피한다(해석). Roblox Everywhere는 아직 출시 시점이 '곧'이라 독립 앱 노선이 더 확실하다(RDC 2026 보도자료).",
+      "risks": "플랫폼 밖에서는 Roblox의 발견·유입이 없어 UA 비용이 든다. 수족관·교배 소재 경쟁작이 많다. 확률형 규제(국가별)가 다르다.",
+      "kpiGate": "D1·D7 리텐션과 오프라인 수령 복귀율, 광고 Opt-in 13% 이상·일 2.8회 이상(Roblox Incremental Sim 가이드를 참고 기준으로 차용), CPI 대비 D7 매출 회수. 리텐션 목표는 소프트런칭 지역 벤치마크로 확정.",
+      "buildNext": "자동 교배·오프라인 상한·도감만 있는 모바일 프로토타입을 만들어 시간 가속 테스트로 한 달치 진행 곡선과 인플레이션을 시뮬레이션."
+    },
+    {
+      "name": "크루 습격단(가칭) — R15 크루 비동기 습격 운영형",
+      "pitch": "미국 18세 이상 이용자를 겨냥해 크루를 꾸려 비동기로 습격하고 방어하되 손실 상한을 두어 약탈 좌절을 줄인 Roblox 운영 시뮬레이션.",
+      "target": "미국 18세 이상 Roblox 이용자, 방치 약탈 문법에 익숙한 성인층(해석).",
+      "platform": "Roblox(R15 아바타 필수, 비동기 알림 도입 시 연동)",
+      "coreLoop": [
+        "크루원 배치와 시설 운영으로 초당 수익",
+        "타임 윈도에 비동기 습격 출동",
+        "방어 설정에 따라 결과 정산(손실 상한 적용)",
+        "전리품으로 크루·시설 강화",
+        "알림으로 습격 결과를 확인하고 재접속(반복)"
+      ],
+      "mvp": [
+        "시설 3종과 크루원 10종",
+        "비동기 습격·방어 정산과 손실 상한",
+        "R15 아바타 크루 표시",
+        "수·토 정시 이벤트",
+        "복귀 보상형 광고 1곳",
+        "확률 공시가 필요한 상품은 MVP에서 제외"
+      ],
+      "difficulty": "높음",
+      "effort": "3인 팀 4~6개월",
+      "monetization": "미국 18세 이상 구매분에는 DevEx 0.0054달러가 적용된다(2026-06-08~, 공식 문서). 시간 단축·크루 슬롯·시즌 패스를 소액 중심으로 설계하고 영구 배수 패스는 최소화한다. 약탈 보호 시간 연장 같은 상품은 P2W 인식 위험을 점검한다.",
+      "why": "Steal a Brainrot·Steal An Egg가 약탈 타이쿤의 수요를 입증했지만 Steal a Brainrot은 긍정 85.2%로 비교군 하위권이며 약탈당한 아동 영상이 부정 여론을 만들었다. Roblox는 Q1 2026에 미국 18세 이상 지출의 크리에이터 몫을 26.6%에서 37.8%로 올리며 '노블 게임'을 우대했다(주주서한). RDC 2026은 비동기 알림 시스템을 예고했다(보도자료, 출시 시점 미공개).",
+      "risks": "성인 이용자 풀이 작고 아바타 R15 요건이 있다. 노블 게임 판정 기준이 공개 수치가 아니다. 비동기 알림 출시가 지연될 수 있다. 약탈 구조는 정책·여론 위험이 있다.",
+      "kpiGate": "18세 이상 비율과 이 집단 결제 전환율, 습격 후 재접속률, 손실 경험 이용자의 D7 이탈률이 비손실 대비 과도하지 않을 것. 구체 임계값은 자체 기준으로 소프트런칭 중 확정(공개 벤치마크 없음).",
+      "buildNext": "비동기 습격과 손실 상한 정산 규칙만 구현한 서버 프로토타입을 만들고 가상 크루 수백 개로 경제 균형(인플레이션·손실 분포)을 시뮬레이션."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/developer-exchange",
+      "title": "Roblox Creator Hub — Roblox Developer Exchange Program",
+      "type": "공식",
+      "note": "표준 DevEx 환율 1 Earned Robux당 0.0038달러(30,000 Robux=114달러), 2025-09-05 10am PT 이전 적립분은 0.0035달러. 최소 30,000 Earned Robux·13세 이상·인증 이메일·세금 양식 필요",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/18-plus-devex-rate",
+      "title": "Roblox Creator Hub — U.S. 18+ exchange rate",
+      "type": "공식",
+      "note": "미국 18세 이상 연령 확인 이용자의 개발자 상품·패스·구독·비공개 서버 구매분에 0.0054달러 환율 적용(2026-06-08 시행). R15 아바타 등 플레이어 캐릭터 요건 충족 게임만 대상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/monetize-experiences",
+      "title": "Roblox Creator Hub — Monetize your games",
+      "type": "공식",
+      "note": "자체 게임패스 판매 시 소비 Robux의 70%를 크리에이터가 획득(타 크리에이터 패스 재판매 시 10% 제휴 수수료)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/subscriptions",
+      "title": "Roblox Creator Hub — Subscriptions",
+      "type": "공식",
+      "note": "경험 내 구독: Robux 가격 구독은 매월 70% 지급, 현지 통화 구독은 첫 달 70%·이후 100%. Robux 구독은 지역별 가격 기본 적용",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/regional-pricing",
+      "title": "Roblox Creator Hub — Regional pricing",
+      "type": "공식",
+      "note": "Managed Pricing으로 지역별 가격 자동 조정. 패스는 기본 활성화, 지역 가격은 기본가의 30~100% 범위",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/price-optimization",
+      "title": "Roblox Creator Hub — Price optimization",
+      "type": "공식",
+      "note": "가격 A/B 테스트(대개 최근 30일 6만 건 이상 거래 필요), 최소 90일마다 자동 테스트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/creator-rewards",
+      "title": "Roblox Creator Hub — Creator Rewards",
+      "type": "공식",
+      "note": "Active Spender(최근 60일 9.99달러 이상 결제)가 하루 첫 3개 경험 중 하나로 10분 이상 플레이 시 5 Robux 지급, 신규·복귀 유저 유입 시 첫 60일 결제 100달러까지 35% 지급. 기존 Engagement Based Payouts 대체",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/promotion/rewarded-video-ads",
+      "title": "Roblox Creator Hub — Rewarded video ads",
+      "type": "공식",
+      "note": "6~30초 보상형 동영상 광고. 보상은 개발자 상품이어야 하며 랜덤 보상 금지, 3~10 Robux 상당 보상 권장, 월 2천 명 이상 순방문 등 자격 요건",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://prod.docsiteassets.roblox.com/assets/ads/IncrementalSim_Playbook.pdf",
+      "title": "Roblox Rewarded Video Playbook: Incremental Sim (2026 Guide)",
+      "type": "공식",
+      "note": "핵심 지표 Opt-in 13%+·일 빈도 2.8 제시. 전략: 속도/배수 부스트, 재접속 시 오프라인 수익 2배(Welcome Back), 자원 충전, 10분 자동 클릭/판매. 사례 Sol's RNG Fast Roll(자동화)·Fisch·Gym Star Simulator",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://prod.docsiteassets.roblox.com/assets/ads/Tycoon_Playbook.pdf",
+      "title": "Roblox Rewarded Video Playbook: Tycoons (2026 Guide)",
+      "type": "공식",
+      "note": "핵심 지표 Opt-in 15%+·일 빈도 3+ 제시. 전략: 복귀 시 오프라인 수익 2배(Time Skip), 연속 시청 보상 증가(Progressive Rewards), 진행 가속. Grow a Garden을 Progressive Rewards 우수 사례로 명시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/rewarded-video-guides",
+      "title": "Roblox Creator Hub — Rewarded video genre guides",
+      "type": "공식",
+      "note": "Incremental Sim·Tycoon 등 장르별 2026 보상형 광고 가이드 PDF 목록",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/production/monetization/paid-random-items",
+      "title": "Roblox Creator Hub — Paid random items policy guidelines",
+      "type": "공식",
+      "note": "Robux(또는 Robux로 산 재화)로 얻는 랜덤 보상(알 부화·상자·룰렛·행운 부스트 등)은 모든 결과와 수치 확률 공개 의무. PolicyService로 국가별 유료 랜덤/거래 제한 이용자 처리",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/reference/engine/classes/Player",
+      "title": "Roblox Engine API — Player.Idled",
+      "type": "공식",
+      "note": "Roblox는 20분 이상 유휴 상태인 플레이어를 자동 접속 해제. Idled 이벤트로 AFK 경고·처리 구현 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2025/q2/Q2-25-SH-Letter.pdf",
+      "title": "Roblox Q2 2025 Shareholder Letter",
+      "type": "공식",
+      "note": "Grow a Garden(2025-03-25 출시)이 1개월 내 지출 기준 1위, 2025년 6월 동시접속 세계 기록 후 7월 약 2,200만 명으로 경신. 2025년 6월 Robux 지출 상위 10개 중 3개가 최근 12개월 내 출시작(Grow a Garden·Steal a Brainrot·Dead Rails). 플랫폼 동접 3,200만 명 돌파, DAU 1억 1,180만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2025/q3/Q3-2025-Shareholder-Letter.pdf",
+      "title": "Roblox Q3 2025 Shareholder Letter (2025-10-30)",
+      "type": "공식",
+      "note": "Steal a Brainrot 동접 2,500만 명 돌파(2025년 10월 초), 2025-08-23 플랫폼 동접 4,500만 명 이상. DAU 1억 5,150만(+70%), 부킹 19억 2,180만 달러(+70%). DevEx 8.5% 인상(1,000 Robux당 3.50→3.80달러)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2025/q4/Q4-2025-Shareholder-Letter.pdf",
+      "title": "Roblox Q4·FY2025 Shareholder Letter (2026-02-05)",
+      "type": "공식",
+      "note": "2025년 매출 49억 달러(+36%)·부킹 68억 달러(+55%). Steal a Brainrot을 '젊은 개발자 그룹이 4개월 만에 출시해 2,500만 동접'한 사례로 언급. 상위 1,000 크리에이터 평균 130만 달러. 보상형 광고 완료율 90%+",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2026/q1/Q1-2026-Earnings-Shareholder-Letter.pdf",
+      "title": "Roblox Q1 2026 Shareholder Letter (2026-04-30)",
+      "type": "공식",
+      "note": "DAU 1억 3,200만(+35%), 부킹 17억 달러(+43%). 연령 확인 도입·러시아 차단 영향. '노블 게임' 보상 위해 2026-06-08부터 미국 O18 지출의 크리에이터 실효 몫 26.6%→37.8%(R15 필수)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://s27.q4cdn.com/984876518/files/doc_financials/2026/q2/Roblox-Q2-2026-Earnings-Shareholder-Letter.pdf",
+      "title": "Roblox Q2 2026 Shareholder Letter (2026-07-30)",
+      "type": "공식",
+      "note": "부킹 성장률 8%로 가이던스 하단. '고수익 2025년산 바이럴 게임'에서 신규·에버그린 게임으로 참여가 이동하며 시간당 수익화 하락, RFY 추천 알고리즘이 리텐션 높은 게임에 노출 확대. Grow a Garden 2·Kick a Lucky Block 등이 빠르게 상위권 진입",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://ir.roblox.com/news/news-details/2026/Roblox-Unveils-New-Ways-to-Play-Build-and-Grow-at-the-Roblox-Developers-Conference-RDC/default.aspx",
+      "title": "Roblox RDC 2026 보도자료 (2026-09-11)",
+      "type": "공식",
+      "note": "독립 앱 배포(Roblox Everywhere), 크롬 웹 플레이(연내), 오프라인 플레이 모드, 2D 지원·비동기 게임용 알림 시스템 발표. 최근 12개월 크리에이터 수익 약 17억 달러, 발견 랭킹은 첫 28일 이후 리텐션까지 반영",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://ir.roblox.com/news/news-details/2025/Roblox-Unveils-AI-Monetization-and-Performance-Innovations-for-Creators/default.aspx",
+      "title": "Roblox RDC 2025 보도자료 (2025-09-05)",
+      "type": "공식",
+      "note": "DevEx 환율 8.5% 인상 발표, 2025-06-30까지 12개월간 DevEx 지급 10억 달러 이상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://ir.roblox.com/news/news-details/2026/Roblox-Kids-and-Roblox-Select-Accounts-Now-Available-Worldwide/default.aspx",
+      "title": "Roblox Kids·Roblox Select 계정 전 세계 도입 (2026-06-16)",
+      "type": "공식",
+      "note": "16세 미만 연령 기반 계정: 선별 게임 카탈로그만 노출, 소셜 행아웃·자유 그리기 게임 기본 제외, 개발자 인증·콘텐츠 심사 추가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/games",
+      "title": "Rolimon's Most Playing (동접 순위)",
+      "type": "데이터(추정)",
+      "note": "2026-10-13 22:24 UTC(10-14 07:24 KST) 수집, 추적 7,748개 경험 동접 정렬. 후보 발굴용 제3자 데이터",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/7436755782/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트 API (예: Grow a Garden)",
+      "type": "공식",
+      "note": "개발자가 등록한 업데이트·이벤트 일정(제목·시작/종료 UTC). 10개 게임의 업데이트 요일·시각 산출에 사용",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.invenglobal.com/articles/25146/roblox-blocks-rewarded-infinite-scroll-on-kids-accounts",
+      "title": "Roblox Blocks Rewarded Infinite Scroll on Kids Accounts — Inven Global (2026-08-25)",
+      "type": "보도",
+      "note": "Steal An Egg 러닝머신에서 짧은 동영상이 연속 재생되고 화면에 머무는 동안 캐릭터 속도가 계속 오르던 구조를 설명. 2026-08-25부터 보상형 연속 피드 게임을 Roblox Kids·Select에서 제외. 동접 약 65만·누적 방문 3억 9,400만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/roblox-restricts-reward-driven-media-feeds-in-kids-and-select/",
+      "title": "Roblox restricts reward-driven media feeds in Kids and Select — PocketGamer.biz (2026-08-26)",
+      "type": "보도",
+      "note": "자동재생·무한 스크롤 피드를 계속 봐야 보상을 주는 게임을 Kids·Select에서 제외. 이용자가 직접 시작하고 횟수가 제한되는 보상형 동영상 광고는 예외",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egamers.io/robloxs-no-1-game-steal-an-egg-was-pulled-hours-after-reaching-the-top/",
+      "title": "Roblox's No.1 game Steal an Egg was pulled hours after reaching the top — eGamers.io (2026-08-25)",
+      "type": "보도",
+      "note": "동접 50만 돌파 직후 일시 내려간 사건, 유튜버 Foltyn 영상(130만 회) 화제, 블랙미러 'Fifteen Million Merits' 비유 반응 소개",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://player.one/robloxs-steal-egg-beating-some-platforms-biggest-games-164086",
+      "title": "Roblox's Steal an Egg beating some of the platform's biggest games — Player.One (2026-09-09)",
+      "type": "보도",
+      "note": "2026-09-09 무렵 동접 약 120만~130만, 24시간 최고 200만 이상, 역대 최고 990만 근접, 평균 세션 약 15분(추적 사이트 인용)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pcgamesn.com/roblox/steal-an-egg-codes",
+      "title": "Steal an Egg codes — PCGamesN (2026-10-13)",
+      "type": "보도",
+      "note": "업데이트 8로 탈것(mounts) 추가, 희귀 Shooting Star 이벤트의 fallen star 필요(주 5개까지 구매 가능), 코드 없음",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.tubefilter.com/2025/08/25/roblox-grow-garden-steal-brainrot-admin-war-record/",
+      "title": "Developer beef just helped Roblox set a 47-million-player record — Tubefilter (2025-08-25)",
+      "type": "보도",
+      "note": "2025-08-23 Grow a Garden(Jandel)과 Steal a Brainrot(SpyderSammy)의 동시 관리자 이벤트 'Admin War'. Grow a Garden 2,110만·Steal a Brainrot 2,000만(자체 최고)·Roblox 4,740만 동접, 평소 두 게임 하루 평균 약 100만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/robloxs-steal-a-brainrot-becomes-first-game-to-surpass-25m-concurrent-players/",
+      "title": "Roblox's Steal a Brainrot becomes first game to surpass 25m concurrent players — PocketGamer.biz (2025-10-07)",
+      "type": "보도",
+      "note": "첫 2,500만 동접(2,540만) 돌파, 개발 파트너 Do Big Studios 언급, 2025년 10월 누적 방문 301억(Grow a Garden 322억)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.dexerto.com/roblox/taco-tuesday-steal-a-brainrot-3242873/",
+      "title": "What time is Taco Tuesday in Steal a Brainrot? — Dexerto (2026-03-10 갱신)",
+      "type": "보도",
+      "note": "매주 화요일 미 동부 18시 약 30분 관리자 이벤트. 컨베이어 위 타코 대포가 브레인롯에 Taco 특성(수익 3배)·희귀 Corrupted Taco(5배) 부여",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.nme.com/news/gaming-news/bruno-mars-roblox-steal-a-brainrot-live-gig-virtual-3924088",
+      "title": "Bruno Mars Steal a Brainrot live gig — NME (2026-01-19)",
+      "type": "보도",
+      "note": "2026-01-17 주말 인게임 콘서트에 1,270만 명 이상 접속",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.nme.com/news/gaming-news/steal-a-brainrot-is-robloxs-latest-viral-hit-grow-a-garden-3888650",
+      "title": "Steal a Brainrot is Roblox's latest viral hit — NME (2025-08-29)",
+      "type": "보도",
+      "note": "이용자 인용 'Best part is the chase' 등 반응 소개",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://screenrant.com/roblox-steal-brainrot-fad-explanation/",
+      "title": "Roblox Steal a Brainrot fad explained — ScreenRant (2025-08-22)",
+      "type": "보도",
+      "note": "맵 중앙 빨간 컨베이어에서 브레인롯을 사는 구조, '혼란스럽지만 몰입감 있는(equally chaotic and engaging)' 게임으로 평가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://aftermath.site/brainrot-roblox-court/",
+      "title": "Brainrot Goes To Court — Aftermath (2025-10-24, 2025-11-10 갱신)",
+      "type": "보도",
+      "note": "Steal a Brainrot 법인 Spyder Games가 무단 Fortnite 복제 맵 제작자를 미국 법원에 제소",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamesbeat.com/the-battle-over-tung-tung-tung-sahur-is-testing-the-limits-of-copyright-and-trademark-law/",
+      "title": "The battle over Tung Tung Tung Sahur is testing the limits of copyright and trademark law — GamesBeat (2026-08-06)",
+      "type": "보도",
+      "note": "밈 캐릭터 Tung Tung Tung Sahur 권리를 둘러싼 Spyder Games 대 Mementum 소송 경과",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Steal_a_Brainrot",
+      "title": "Steal a Brainrot — Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "기지 수동 수익·일시 보호막(잠금)·리버스 설명, Polygon의 P2W 비판, 약탈당한 아동이 우는 영상 확산, 캐릭터 라이선스 분쟁으로 2025-09 삭제·2025-11-29 복귀(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://allthings.how/steal-an-egg-roblox-ban-why-it-happened-and-how-it-returned/",
+      "title": "Steal an Egg Roblox ban: why it happened and how it returned — AllThingsHow (2026-08-25)",
+      "type": "위키/커뮤니티",
+      "note": "2026-08-24 22:21 UTC 비공개 전환 후 08-25 01:44 UTC 러닝머신 동영상 피드 없이 복귀했다고 정리(커뮤니티 매체, 보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://biggames.io/post/pet-simulator-99-update-92",
+      "title": "Pet Simulator 99 Update 92 'Coin Arcade!' — BIG Games 공식 블로그 (2026-09-05)",
+      "type": "공식",
+      "note": "'Your pets keep grinding even while you're OFFLINE!' 구역별 Coin Tray가 부재 중 채워지고 가득 차면 적립 중단, MVP +5%(오프라인 포함), 상인 근처에서 알 자동 부화",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://biggames.io/post/pet-simulator-99-update-97",
+      "title": "Pet Simulator 99 Update 97 'Blood Moon!' — BIG Games 공식 블로그 (2026-10-10)",
+      "type": "공식",
+      "note": "2시간마다 10분간 이벤트 행운 3배·Huge/Titanic 확률 2배, 주간 페이지형 시즌 패스, 6일 리그",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://biggames.io/post/pet-simulator-99-update-1",
+      "title": "Pet Simulator 99 'First Update!' — BIG Games 공식 블로그 (2023-12-09)",
+      "type": "공식",
+      "note": "거래 광장 경매(60초)·최근 경매가(RAP)·Pro 거래 광장·클랜 배너 도입, 자동 부화 관련 버그 수정(병렬 조사 확인)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pockettactics.com/pet-simulator-99/release-date",
+      "title": "Pet Simulator 99 release date — Pocket Tactics (2023-11-20 갱신)",
+      "type": "보도",
+      "note": "2023-12-01 09:00 PST 출시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.thegamer.com/roblox-pet-simulator-x-how-to-transfer-pets-to-pet-simulator-99/",
+      "title": "How to transfer pets from Pet Simulator X to Pet Simulator 99 — TheGamer (2023-11-26)",
+      "type": "보도",
+      "note": "Pet Simulator X의 Huge·Titanic·독점 펫과 Robux 알을 6개월간 1회 최대 250개씩 이전",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://hindenburgresearch.com/roblox/",
+      "title": "Roblox: Inflated Key Metrics… — Hindenburg Research (2024-10-08)",
+      "type": "데이터(추정)",
+      "note": "공매도 포지션을 공개한 적대적 보고서. PS99 Titanic 펫을 위한 10계정 사흘 운용 사례와 eBay 275달러 이상 거래, Sol's RNG를 24시간 이상 접속 계정 의혹 2위로 지목",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/Pet%20Simulator%2099",
+      "title": "Pet Simulator 99 — 나무위키",
+      "type": "위키/커뮤니티",
+      "note": "자동 부화가 리버스 2에서 해금, 업데이트 5·9에서 최상위 펫 전투력 약 18배 상승(인플레이션 비판) 기술(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pockettactics.com/anime-dice-codes",
+      "title": "Anime Dice codes — Pocket Tactics (2026-10-03 갱신)",
+      "type": "보도",
+      "note": "Anime Dice를 '증분형 타이쿤 게임'으로 소개",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.gg/roblox/guides/anime-dice-codes-september-2026/",
+      "title": "Anime Dice codes September 2026 — GAMES.GG (2026-09-25)",
+      "type": "위키/커뮤니티",
+      "note": "유닛을 플롯에 배치하면 돈 생성, 특성이 수입에 영향, 젬이 주사위 업그레이드용 프리미엄 재화(가이드 사이트)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/Sol's%20RNG",
+      "title": "Sol's RNG — 나무위키 (2026-10-13 편집)",
+      "type": "위키/커뮤니티",
+      "note": "자동 굴림 허용·매크로 공식 허용·VIP 149→249 Robux 인상과 P2W 비판, 개발진 한국인 설 기술(미검증 보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v2/groups/3333298/games?accessFilter=Public&limit=50",
+      "title": "Roblox 공식 그룹 게임 목록 API — Rumble Studios",
+      "type": "공식",
+      "note": "Bubble Gum Simulator(2018)·Mining Simulator 등 전작과 방문 수 확인(병렬 조사)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/Bubble%20Gum%20Simulator%20INFINITY",
+      "title": "Bubble Gum Simulator INFINITY — 나무위키",
+      "type": "위키/커뮤니티",
+      "note": "원작 7년 만의 후속작, 친구 수 비례 행운 보너스로 부계정 동접 부풀림 주장, 리프트 최대 25배 행운(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://tech.yahoo.com/gaming/articles/millions-flocking-grow-virtual-gardens-160456564.html",
+      "title": "Millions are flocking to grow virtual gardens in viral Roblox game created by teenager — AP(Yahoo 게재, 2025-07-30)",
+      "type": "보도",
+      "note": "빈 플롯·약간의 Sheckles·시작 씨앗으로 시작, 6월 말 동접 2,160만 명(Roblox 인용), Common Sense Media 편집장 'chill' 평",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamesbeat.com/janzen-madsen-interview/",
+      "title": "How Grow a Garden took off on Roblox — Janzen 'Jandel' Madsen 인터뷰, GamesBeat (2025-09-07)",
+      "type": "인터뷰",
+      "note": "합류 당시 동접 약 500명→2주 내 10만→약 한 달 100만, 최고 2,230만·최고 DAU 약 6천만, 'You return and your plants have grown bigger', Roblox Innovation Awards 최우수 신규 경험",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/robloxs-grow-a-garden-hits-industry-record-213m-concurrent-users-surpassing-pubg-fortnite-and-more/",
+      "title": "Roblox's Grow a Garden hits industry record 21.3m concurrent users — PocketGamer.biz (2025-06-25)",
+      "type": "보도",
+      "note": "2025-06-21 영국 시각 15시 2,130만 → 16시 760만 → 17시 550만, 14일 평균 270만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/roblox-game-grow-a-garden-beats-steam-with-record-concurrent-user-high-of-89m/",
+      "title": "Grow a Garden beats Steam with record concurrent user high of 8.9m — PocketGamer.biz (2025-06-02)",
+      "type": "보도",
+      "note": "2025-05 말 동접 890만, Roblox 경험 최단 33일 만에 누적 방문 10억 회",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/robloxs-peak-concurrent-user-count-hits-record-474m-as-steal-a-brainrot-and-grow-a-garden-compete/",
+      "title": "Roblox's peak concurrent user count hits record 47.4m — PocketGamer.biz (2025-08-27)",
+      "type": "보도",
+      "note": "2025-08-23 Grow a Garden·Steal a Brainrot 경쟁 속 Roblox 전체 동접 4,740만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kotaku.com/grow-a-garden-roblox-5-million-active-users-record-pc-1851781824",
+      "title": "Grow a Garden 5 million users record — Kotaku (2025-05-21)",
+      "type": "보도",
+      "note": "Roblox 게임 최초 동접 500만 돌파(2025-05-17 주말), 원작자가 지분 약 50% 보유, '프로토타입에 가깝다'는 평",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamerant.com/grow-a-garden-roblox-new-update-11-million-players/",
+      "title": "Grow a Garden new update 11 million players — Game Rant (2025-05-31)",
+      "type": "보도",
+      "note": "2025-05-31 Bizzy Bees 업데이트 때 동접 1,100만 명 이상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/roblox-s-grow-a-garden-had-nearly-22-million-concurrent-users-in-july",
+      "title": "Roblox's Grow a Garden had nearly 22 million concurrent users in July — Game Developer (2025-07-31)",
+      "type": "보도",
+      "note": "Roblox 주주서한의 7월 약 2,200만 명 인용, Do Big Studios 소수 지분 언급",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/survival-crafting/robloxs-hot-gardening-game-gets-a-crack-squad-dedicated-to-new-events-after-players-kicked-up-over-old-ones-being-rushed-and-not-very-inspired/",
+      "title": "Roblox's hot gardening game gets a crack squad dedicated to new events — PC Gamer (2025-07-09)",
+      "type": "보도",
+      "note": "이벤트가 '급하고 영감 없다'는 이용자 불만 뒤 이벤트 전담팀 구성(헤드라인 기준 확인)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+      "title": "Grow a Garden — Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "원작자 BMWLux, Splitting Point(Jandel) 2025-04 합류, Do Big Studios 소수 지분, 2025-07-19까지 Top Earners 1위, Do Big에 대한 과도한 수익화 비판(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Weather",
+      "title": "Weather — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "서버 공통 날씨 3~5분 지속, 비 약 20분마다(성장 +50%·Wet), 뇌우 2~6시간마다(Shocked), 밤·블러드문·유성우 4시간 주기(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Crop_Mutations",
+      "title": "Crop Mutations — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "변이 195종, Wet×2·Chilled×2·Bloodlit×4·Frozen×10·Shocked×100·Celestial×120·Disco×125·Cosmic×240(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Mechanics",
+      "title": "Mechanics — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "가치=기본가×변이×변형(Silver×5·Gold×20·Rainbow×50)×무게 보정², 다중 수확 작물, Steven 판매대(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Seed_Shop",
+      "title": "Seed Shop — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "씨앗 상점 5분마다 재입고(전 서버 동일 재고), 일일 특가 24시간, 당근·딸기·블루베리·토마토 상시, Robux 즉시 재입고 또는 광고 시청(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Trade_System",
+      "title": "Trade System — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "2025-08-01~02(v1.17.0) 사기 방지를 위한 Trading Ticket·거래 시스템, 2025-11-29 거래 월드(Farmers Market)·Trade Tokens(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://growagarden.fandom.com/wiki/Update_Log",
+      "title": "Update Log — Grow a Garden Wiki(Fandom)",
+      "type": "위키/커뮤니티",
+      "note": "공식 Discord 업데이트 채널 전사. 2025-04-19~2026-10-10 토요일 78회 중 76회 업데이트, v1.00.0~v1.71.0, Sheckle 거래 중단·10% 거래세(2025-08-30~09-10), Garden Ascension(2025-08-30)(보조 출처)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/126884695634066",
+      "title": "Rolimon's — Grow a Garden 게임 페이지(내장 이력 데이터)",
+      "type": "데이터(추정)",
+      "note": "역대 최고 22,375,597명(2025-08-23), 6시간 간격 표본 월 중앙값(2025-06 2,379,731 → 2026-10 17,629), 좋아요 비율 94.1%(2025-05)→89.9%(2026-07) 추이",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/97598239454123/Grow-a-Garden-2",
+      "title": "Grow a Garden 2 공식 경험 페이지",
+      "type": "공식",
+      "note": "2026-05-21 생성, Strawberreh Squad 그룹(Grow a Garden과 같은 소유자 DevNamedDavid), '밤에는 훔치기 시작'·'오프라인에도 자란다' 설명. Rolimon's 최고 929,371명(2026-06-19)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/107778070777162/Steal-An-Egg",
+      "title": "Steal An Egg 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(알 훔치기·부화·펫 수익·러닝머신·변이), 데스크톱·콘솔·모바일·태블릿 지원",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=10563114921",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=10563114921 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/10563114921/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 2종 이름·가격·판매 여부(2026-10-13 22:30 UTC 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/10563114921/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 109개(속도·한정 알·즉시 부화·행운·[AD] 상품) 등록 확인. 등록이 인게임 판매를 보장하지 않음",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/10563114921/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "토 15:00 UTC 주간 업데이트 9건(2026-08-22~10-17)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/107778070777162",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/109983668079237/Steal-a-Brainrot",
+      "title": "Steal a Brainrot 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(브레인롯 구매·훔치기·돈 생성·리버스·트롤 장비)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=7709344486",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=7709344486 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/7709344486/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 3종 이름·가격(2026-10-13 22:30 UTC)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/7709344486/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 308개(서버 행운·럭키 블록·휠·스킵·트롤 장비) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/7709344486/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "토 19~20시 UTC 주간 업데이트 63건(2025-05-31~2026-10-10)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/121864768012064/Fish-It",
+      "title": "Fish It! 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(100만+ 변형, 클릭 충전·연타 낚시, Fisch·Fishing Simulator 영감 표기, 최근 업데이트 요약)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=6701277882",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=6701277882 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/6701277882/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 24종(판매 중 12종) 이름·가격",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/6701277882/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 325개(크레이트·펫 알·코인·서버 부스트·물약·클랜) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/6701277882/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "공식 이벤트 35건, 2026년 일 01:00 UTC 주간 업데이트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/121864768012064",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/8737899170/Pet-Simulator-99",
+      "title": "Pet Simulator 99! 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명('3,000+ pets', 펫이 부자로 만들어 줌)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=3317771874",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=3317771874 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/3317771874/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 14종(판매 13종) 이름·가격·설명(Auto Farm·Auto Tap·Daycare 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/3317771874/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 578개(독점 알 묶음·팩) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/3317771874/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "공식 이벤트 43건, 토 16:00 UTC 최빈",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/113290951185459/Anime-Dice",
+      "title": "Anime Dice 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명('MONEY GENERATES WHILE YOU ARE OFFLINE', 주사위·행운·변이·리더보드)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=10708913337",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=10708913337 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/10708913337/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 8종 이름·가격",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/10708913337/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 19개(잭팟 굴림·캐릭터 직판) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/10708913337/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "2026-08-29~10-18 주간 업데이트 8건(UPDATE 4 날씨·거래 개편)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/113290951185459",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/15532962292/Sols-RNG",
+      "title": "Sol's RNG 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(400+ 오라·장비 제작·물약·무료 비공개 서버)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=5361032378",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=5361032378 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/5361032378/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 17종(판매 7종) 이름·가격·설명(Quick roll·VIP·VIP+)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/5361032378/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 97개(패키지·바이옴 랜덤화·[AD] 상품) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/5361032378/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "공식 이벤트 40건, 토 08:00 UTC 최빈",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/15532962292",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/1537690962/Bee-Swarm-Simulator",
+      "title": "Bee Swarm Simulator 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(벌 군단·꽃가루 채집·꿀 제조·곰 퀘스트·몬스터·숨은 보물)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=601130232",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=601130232 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/601130232/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 4종 판매 중지 상태와 패스 설명(채집 2배·변환 2배·곰 변신) 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/601130232/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 92개(바우처·Beesmas 패키지·티켓) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/1537690962",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/game-passes/4257788/product-info",
+      "title": "Roblox 공식 게임패스 상품 정보 API — Bear Bee",
+      "type": "공식",
+      "note": "Bear Bee 패스 설명('periodically transforms you into a bear, granting x2 pollen…'), IsForSale=false·PriceInRobux=null, 2026-08-04 갱신",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
+      "title": "Grow a Garden 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(재입고 상점·심기·성장·수확·'your garden literally grows while you are offline')",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=7436755782",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·서버 최대 4인·생성일 2025-03-25, 좋아요는 https://games.roblox.com/v1/games/votes?universeIds=7436755782 (2026-10-14 07:30 KST)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/7436755782/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 1,200개(12페이지 상한) 조회: Auto Restock·Skip Growth·Season Pass·Super Seed·Trade Tokens·Ad Reward 상품 등",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/85896571713843/Bubble-Gum-Simulator-INFINITY",
+      "title": "Bubble Gum Simulator INFINITY 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(풍선껌·하늘 섬·펫 부화·할로윈 이벤트·'Updates every Friday at 2PM EST!')",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=6504986360",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Incremental Simulator) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=6504986360 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/6504986360/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 15종(판매 12종) 이름·가격·설명(Auto Fishing·Infinity Gum·VIP)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/6504986360/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 471개(직판 펫·번들·스핀 티켓) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/6504986360/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "공식 이벤트 87건(2025-04-11 'Release!'~2026-10-17), 금 20~21시 UTC 최빈",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/85896571713843",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.roblox.com/games/127742093697776/Plants-Brainrots",
+      "title": "Plants & Brainrots 공식 경험 페이지",
+      "type": "공식",
+      "note": "공식 설명(씨앗 심기·식물이 브레인롯과 전투·브레인롯이 돈 생성)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=8316902627",
+      "title": "Roblox 공식 게임 메타데이터·투표 API",
+      "type": "공식",
+      "note": "동접·누적 방문·즐겨찾기·생성/갱신일·공식 장르(Simulation/Tycoon) 확인, 좋아요/싫어요는 https://games.roblox.com/v1/games/votes?universeIds=8316902627 로 확인(2026-10-14 07:30 KST 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/game-passes/v1/universes/8316902627/game-passes?passView=Full&pageSize=100",
+      "title": "Roblox 공식 게임패스 API(apis.roblox.com)",
+      "type": "공식",
+      "note": "게임패스 2종 이름·가격",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/developer-products/v2/universes/8316902627/developerproducts?limit=100",
+      "title": "Roblox 공식 개발자 상품 카탈로그 API",
+      "type": "공식",
+      "note": "개발자 상품 386개(씨앗·럭키 블록·시즌 패스·서버 행운) 등록 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apis.roblox.com/virtual-events/v1/universes/8316902627/virtual-events?fromUtc=2024-01-01T00:00:00Z&limit=100",
+      "title": "Roblox 공식 경험 이벤트(Experience Events) API",
+      "type": "공식",
+      "note": "토 22:00 UTC 주간 이벤트 57건(2025-09-27~2026-10-17)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.rolimons.com/game/127742093697776",
+      "title": "Rolimon's 게임 페이지(최고 동접 추적)",
+      "type": "데이터(추정)",
+      "note": "제3자 동접 추적 사이트의 최고 동접 기록(전 기간/30일/7일). 공식 집계가 아니며 수집 간격에 따른 오차 가능",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://groups.roblox.com/v1/groups/34869880/name-history?limit=10&sortOrder=Desc",
+      "title": "Roblox 공식 그룹 이름 이력 API — Splitting Point - PVB",
+      "type": "공식",
+      "note": "그룹 소유자 jandel(groups/v1/groups/34869880), 이름 이력 'Herbert Games'(2025-07-17)·'Yo Gurt Studio'(2026-02-02)",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

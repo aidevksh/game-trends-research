@@ -1,0 +1,1935 @@
+{
+ "asOf": "2026-10-14",
+ "marketStats": [
+  {
+   "id": "kr-idle-share-mobile-2024",
+   "label": "국내 모바일 게임 매출 중 방치형 비중(백서 표기)",
+   "value": 16,
+   "unit": "%",
+   "period": "2024",
+   "region": "한국",
+   "note": "백서 p.70이 센서타워 통계로 인용. 2020년 1.7%. 센서타워 원 블로그(2024-08)에서는 같은 1.7%→16%가 '모바일 RPG 매출 중 방치형 RPG 비중'(각 연도 1~7월)이므로 분모가 전체 모바일 매출이 아닐 가능성이 높다.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-idle-share-mobile-2020",
+   "label": "같은 지표의 2020년 값",
+   "value": 1.7,
+   "unit": "%",
+   "period": "2020",
+   "region": "한국",
+   "note": "위와 동일한 정의 주의.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-idle-share-of-rpg-2024",
+   "label": "국내 모바일 RPG 매출 중 방치형 RPG 비중(센서타워 원문)",
+   "value": 16,
+   "unit": "%",
+   "period": "2024-01~07",
+   "region": "한국",
+   "note": "분모는 모바일 RPG 매출. 2020년 1.7%, MMORPG는 78.8%→56.2%.",
+   "source": "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent"
+  },
+  {
+   "id": "kr-idle-rpg-share-2024",
+   "label": "국내 모바일 게임 월매출 중 방치형 RPG 비중(백서 그림)",
+   "value": 7.1,
+   "unit": "%",
+   "period": "2024",
+   "region": "한국",
+   "note": "2021년 1.6%. 카피바라 Go!, 저니 오브 모나크가 견인했다고 백서가 기술.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-idle-rpg-share-2021",
+   "label": "같은 지표의 2021년 값",
+   "value": 1.6,
+   "unit": "%",
+   "period": "2021",
+   "region": "한국",
+   "note": "",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-idle-rpg-in-rpg-2023",
+   "label": "국내 모바일 RPG 매출 중 방치형 RPG 비중(2023)",
+   "value": 4.4,
+   "unit": "%",
+   "period": "2023-01~08",
+   "region": "한국",
+   "note": "2019년 1.7%에서 상승, 서브장르 3위. 같은 기간 MMORPG 69.5%.",
+   "source": "https://sensortower.com/ko/blog/Korea-stands-out-as-the-leading-country-with-RPG-revenue-constituting-approximately-60-percent-of-total-mobile-game-revenue"
+  },
+  {
+   "id": "kr-rpg-share-2024",
+   "label": "국내 모바일 게임 매출 중 RPG 비중",
+   "value": 51.3,
+   "unit": "%",
+   "period": "2024",
+   "region": "한국",
+   "note": "2021년 67%. 한국금융경제신문은 이를 MMORPG 비중으로 오기했다.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-rpg-share-2023",
+   "label": "국내 모바일 게임 매출 중 RPG 비중(2023-01~08)",
+   "value": 57.5,
+   "unit": "%",
+   "period": "2023-01~08",
+   "region": "한국",
+   "note": "일본 47.8%, 미국 11.3%, 세계 25.1%.",
+   "source": "https://sensortower.com/ko/blog/Korea-stands-out-as-the-leading-country-with-RPG-revenue-constituting-approximately-60-percent-of-total-mobile-game-revenue"
+  },
+  {
+   "id": "kr-game-market-2024",
+   "label": "2024 국내 게임시장 규모",
+   "value": 238515,
+   "unit": "억 원",
+   "period": "2024",
+   "region": "한국",
+   "note": "전년 대비 +3.9%. 모바일 약 14조 710억 원(59.0%).",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-idle-est-revenue-2024",
+   "label": "기사 추정 방치형 시장 규모",
+   "value": 38000,
+   "unit": "억 원",
+   "period": "2024",
+   "region": "한국",
+   "note": "기사(한국금융경제신문)의 단순 곱셈 추정으로 16%×전체 시장(23.8조). 분모 문제로 상한 참고치로만 쓴다.",
+   "source": "https://www.kfenews.co.kr/news/articleView.html?idxno=656841"
+  },
+  {
+   "id": "kr-gamer-rate-2025",
+   "label": "2025 게임 이용률",
+   "value": 50.2,
+   "unit": "%",
+   "period": "2025",
+   "region": "한국",
+   "note": "2024년 59.9%, 2023년 62.9%. 2025 실태조사 10,000명(이용자 5,024명).",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-auto-play-exp",
+   "label": "자동플레이 기능 이용 경험",
+   "value": 29.9,
+   "unit": "%",
+   "period": "2025",
+   "region": "한국",
+   "note": "20대 37.5%, 30대 40.6%. 이유 1위 '지루한 부분 넘기고 핵심 보상' 44.8%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-level-up-purchase",
+   "label": "모바일 결제 이용자 중 '빠른 레벨업' 아이템 구입 1순위",
+   "value": 46.0,
+   "unit": "%",
+   "period": "2025",
+   "region": "한국",
+   "note": "중복 응답 66.3%. 경쟁 우위 32.3%, 꾸미기 15.3%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-mobile-session-weekday",
+   "label": "모바일 게임 1회 평균 이용시간(주중)",
+   "value": 57.3,
+   "unit": "분",
+   "period": "2025",
+   "region": "한국",
+   "note": "주말 73.2분. 전년(66.9/90.7분)보다 감소.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-unused-reason-time",
+   "label": "게임 미이용 사유 1위 '이용 시간 부족'",
+   "value": 44.0,
+   "unit": "%",
+   "period": "2025",
+   "region": "한국",
+   "note": "이용 경험 보유 미이용자 3,828명 대상.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-mobile-halfyear-2h25",
+   "label": "국내 모바일 게임 하반기 매출(센서타워)",
+   "value": 28,
+   "unit": "억 달러",
+   "period": "2025 하반기",
+   "region": "한국",
+   "note": "+8.3% HoH, -1.1% YoY. 다운로드 약 2.1억(-21% YoY), 안드로이드 매출 75%.",
+   "source": "https://sensortower.com/ko/blog/2H2025-mobile-games-recap-in-Korea"
+  },
+  {
+   "id": "maple-idle-45d-revenue",
+   "label": "메이플 키우기 출시 45일 누적 매출",
+   "value": 100000000,
+   "unit": "달러",
+   "period": "2025-11-06~12-20",
+   "region": "글로벌",
+   "note": "다운로드 300만+. 매출 비중 한국 67%, 미국 16.6%, 대만 7.1%. 2025 신작 방치형 RPG 1위.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "id": "maple-idle-iap-appmagic",
+   "label": "메이플 키우기 IAP 누적(AppMagic)",
+   "value": 164000000,
+   "unit": "달러",
+   "period": "2025-11~2026-03",
+   "region": "글로벌",
+   "note": "설치 760만. 출시 4개월차 월 약 $44M 정점. $109 팩이 매출 13%+, $219 오퍼 약 25%.",
+   "source": "https://appmagic.rocks/blog/MapleStory-Idle-RPG-Success%20"
+  },
+  {
+   "id": "maple-idle-dau-aos",
+   "label": "메이플 키우기 안드로이드 DAU",
+   "value": 150000,
+   "unit": "명",
+   "period": "2025-12-23",
+   "region": "한국",
+   "note": "모바일인덱스. 라스트 워 10만 3,700, 마비노기 모바일 7만.",
+   "source": "https://v.daum.net/v/20251227081204720"
+  },
+  {
+   "id": "maple-idle-mar26-krw",
+   "label": "메이플 키우기 2026-03 월 매출(모바일인덱스)",
+   "value": 452,
+   "unit": "억 원",
+   "period": "2026-03",
+   "region": "한국",
+   "note": "국내 1위. 구글·앱스토어·원스토어 합산.",
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2604"
+  },
+  {
+   "id": "capybara-go-2m-overseas",
+   "label": "카피바라 Go! 출시 2개월 해외 매출",
+   "value": 40000000,
+   "unit": "달러",
+   "period": "~2024-12-11",
+   "region": "글로벌",
+   "note": "센서타워 인용 보도.",
+   "source": "https://technode.com/2024/12/19/capybara-go-takes-40-million-in-overseas-revenue-within-two-months-of-launch/"
+  },
+  {
+   "id": "capybara-go-cum-109m",
+   "label": "카피바라 Go! 누적 매출(AppMagic)",
+   "value": 109000000,
+   "unit": "달러",
+   "period": "~2025-02-10",
+   "region": "글로벌",
+   "note": "미국 1,610만 달러.",
+   "source": "https://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/"
+  },
+  {
+   "id": "mushroom-kr-cum-97m",
+   "label": "버섯커 키우기 누적 매출",
+   "value": 97000000,
+   "unit": "달러",
+   "period": "2023-12-22~2024-02",
+   "region": "글로벌",
+   "note": "한국 약 6,400만(66%). 한국 다운로드 1위·매출 2위.",
+   "source": "https://sensortower.com/ko/blog/Growing-Mushroom-has-earned-64-million-dollars-in-revenue"
+  },
+  {
+   "id": "seven-knights-idle-45d",
+   "label": "세븐나이츠 키우기 출시 45일 누적",
+   "value": 40000000,
+   "unit": "달러",
+   "period": "2023-09-06~",
+   "region": "한국",
+   "note": "한국 비중 76.7%.",
+   "source": "https://sensortower.com/ko/blog/Seven-Knights-Idle-Adventure-achieved-40M-securing-the-second-spot-in-revenue"
+  },
+  {
+   "id": "stoneage-idle-cum",
+   "label": "스톤에이지 키우기 누적 매출",
+   "value": 15000000,
+   "unit": "달러",
+   "period": "2026-03-03~04",
+   "region": "글로벌",
+   "note": "다운로드 100만+. 매출 한국 78%·대만 8%.",
+   "source": "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue"
+  },
+  {
+   "id": "jp-idle-rpg-2023",
+   "label": "일본 모바일 방치형 RPG 2023 매출",
+   "value": 280000000,
+   "unit": "달러",
+   "period": "2023",
+   "region": "일본",
+   "note": "세계 점유율 24%(1위), 미국 18%, 한국 16%.",
+   "source": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan"
+  },
+  {
+   "id": "global-idle-rpg-jp-kr-2505",
+   "label": "글로벌 방치형 RPG 월매출 중 일본 비중",
+   "value": 17.9,
+   "unit": "%",
+   "period": "2025-05",
+   "region": "글로벌",
+   "note": "한국 17.6%(2위).",
+   "source": "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue"
+  },
+  {
+   "id": "kr-ad-penetration-idle",
+   "label": "한국 방치형 RPG 디지털 광고 노출 비중",
+   "value": 81,
+   "unit": "%",
+   "period": "2025-11",
+   "region": "한국",
+   "note": "미국 37%. 메이플 키우기 분석 중 모바일 방치형 RPG 광고 노출 지표.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "id": "global-mobile-iap-2024",
+   "label": "2024 글로벌 모바일 게임 IAP",
+   "value": 82000000000,
+   "unit": "달러",
+   "period": "2024",
+   "region": "글로벌",
+   "note": "+4%. 다운로드 490억(-7%).",
+   "source": "https://sensortower.com/ko/blog/state-of-mobile-gaming-2025-KR"
+  },
+  {
+   "id": "global-top100-rev-2025",
+   "label": "2025 상위 100 모바일 게임 매출",
+   "value": 46600000000,
+   "unit": "달러",
+   "period": "2025",
+   "region": "글로벌",
+   "note": "전체의 57%(2022 51%), 2026 약 530억 달러(58%) 전망.",
+   "source": "https://sensortower.com/ko/blog/mobile-games-monetisation-2026-KR"
+  },
+  {
+   "id": "global-game-dl-2025",
+   "label": "2025 글로벌 게임 다운로드",
+   "value": 52000000000,
+   "unit": "건",
+   "period": "2025",
+   "region": "글로벌",
+   "note": "Google Play 420억.",
+   "source": "https://sensortower.com/ko/blog/state-of-gaming-2026-KR"
+  },
+  {
+   "id": "global-ad-eco",
+   "label": "광고 수익화 생태계 규모",
+   "value": 12000000000,
+   "unit": "달러",
+   "period": "2026-08 발표",
+   "region": "글로벌",
+   "note": "120억 달러+, 퍼즐이 주요 네트워크 광고 수익의 절반 이상.",
+   "source": "https://sensortower.com/ko/blog/gaming-deep-dive-ad-monetization-korea"
+  },
+  {
+   "id": "steam-tbh-peak-ccu",
+   "label": "TBH: Task Bar Hero 역대 최고 동시접속",
+   "value": 545349,
+   "unit": "명",
+   "period": "2026-06",
+   "region": "Steam",
+   "note": "2026-05-27 출시 F2P 작업표시줄 방치 RPG. 9월 월평균 76,465.",
+   "source": "https://steamcharts.com/app/3678970"
+  },
+  {
+   "id": "steam-idleon-2025",
+   "label": "IdleOn 2025년 Steam 매출",
+   "value": 22000000,
+   "unit": "달러",
+   "period": "2025",
+   "region": "Steam",
+   "note": "F2P, 누적 약 $59M, 2025-11 정식 출시.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "id": "steam-cloverpit",
+   "label": "CloverPit Steam 매출",
+   "value": 15500000,
+   "unit": "달러",
+   "period": "2025-05~",
+   "region": "Steam",
+   "note": "",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "id": "steam-cast-n-chill",
+   "label": "Cast n Chill Steam 매출",
+   "value": 6800000,
+   "unit": "달러",
+   "period": "2025-06~",
+   "region": "Steam",
+   "note": "55만+ 판매.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "id": "steam-tfwr",
+   "label": "The Farmer Was Replaced Steam 매출",
+   "value": 6800000,
+   "unit": "달러",
+   "period": "2025-10~",
+   "region": "Steam",
+   "note": "96만+ 판매, 위시리스트 3위.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "id": "mobile-gold-goblins-iap",
+   "label": "Gold and Goblins 누적 IAP",
+   "value": 163000000,
+   "unit": "달러",
+   "period": "2020 말 출시 후 누적(2026-04 기준)",
+   "region": "글로벌",
+   "note": "6,900만+ 다운로드. Idle Lumber Empire IAP $113M+.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  }
+ ],
+ "series": [
+  {
+   "id": "kr-game-market-size",
+   "title": "국내 게임시장 규모(2015~2024)",
+   "unit": "억 원",
+   "points": [
+    {
+     "x": "2015",
+     "y": 107223
+    },
+    {
+     "x": "2016",
+     "y": 108945
+    },
+    {
+     "x": "2017",
+     "y": 131423
+    },
+    {
+     "x": "2018",
+     "y": 142902
+    },
+    {
+     "x": "2019",
+     "y": 155750
+    },
+    {
+     "x": "2020",
+     "y": 188855
+    },
+    {
+     "x": "2021",
+     "y": 209913
+    },
+    {
+     "x": "2022",
+     "y": 222149
+    },
+    {
+     "x": "2023",
+     "y": 229642
+    },
+    {
+     "x": "2024",
+     "y": 238515
+    }
+   ],
+   "note": "백서 그림 1-1-1-1. 성장률 7.5, 1.6, 20.6, 8.7, 9.0, 21.3, 11.2, 5.8, 3.4, 3.9%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-gamer-rate",
+   "title": "국내 게임 이용률",
+   "unit": "%",
+   "points": [
+    {
+     "x": "2021",
+     "y": 71.3
+    },
+    {
+     "x": "2022",
+     "y": 74.4
+    },
+    {
+     "x": "2023",
+     "y": 62.9
+    },
+    {
+     "x": "2024",
+     "y": 59.9
+    },
+    {
+     "x": "2025",
+     "y": 50.2
+    }
+   ],
+   "note": "2021~22는 N=3,000, 2023부터 N=10,000으로 표본 확대. 10~64세 기준 2024 62.8, 2025 52.7.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-mobile-session-weekday",
+   "title": "모바일 게임 1회 평균 이용시간(주중)",
+   "unit": "분",
+   "points": [
+    {
+     "x": "2021",
+     "y": 57.5
+    },
+    {
+     "x": "2022",
+     "y": 62.8
+    },
+    {
+     "x": "2023",
+     "y": 64.4
+    },
+    {
+     "x": "2024",
+     "y": 66.9
+    },
+    {
+     "x": "2025",
+     "y": 57.3
+    }
+   ],
+   "note": "주말은 75.2, 89.5, 93.0, 90.7, 73.2분.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-mobile-session-weekend",
+   "title": "모바일 게임 1회 평균 이용시간(주말)",
+   "unit": "분",
+   "points": [
+    {
+     "x": "2021",
+     "y": 75.2
+    },
+    {
+     "x": "2022",
+     "y": 89.5
+    },
+    {
+     "x": "2023",
+     "y": 93.0
+    },
+    {
+     "x": "2024",
+     "y": 90.7
+    },
+    {
+     "x": "2025",
+     "y": 73.2
+    }
+   ],
+   "note": "",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-rpg-share-monthly-2024",
+   "title": "한국 모바일 월매출 중 RPG 비중(2024-01~08)",
+   "unit": "%",
+   "points": [
+    {
+     "x": "2024-01",
+     "y": 58.4
+    },
+    {
+     "x": "2024-02",
+     "y": 54.8
+    },
+    {
+     "x": "2024-03",
+     "y": 53.1
+    },
+    {
+     "x": "2024-04",
+     "y": 51.4
+    },
+    {
+     "x": "2024-05",
+     "y": 47.2
+    },
+    {
+     "x": "2024-06",
+     "y": 48.6
+    },
+    {
+     "x": "2024-07",
+     "y": 50.9
+    },
+    {
+     "x": "2024-08",
+     "y": 49.5
+    }
+   ],
+   "note": "센서타워(백서 그림 2-2-2-11). 2024-05 사상 처음 50% 아래. 같은 기간 전략은 16, 18, 19.8, 22.2, 20.9, 22.3, 19.3, 22.7%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-strategy-share-monthly-2024",
+   "title": "한국 모바일 월매출 중 전략 장르 비중(2024-01~08)",
+   "unit": "%",
+   "points": [
+    {
+     "x": "2024-01",
+     "y": 16
+    },
+    {
+     "x": "2024-02",
+     "y": 18
+    },
+    {
+     "x": "2024-03",
+     "y": 19.8
+    },
+    {
+     "x": "2024-04",
+     "y": 22.2
+    },
+    {
+     "x": "2024-05",
+     "y": 20.9
+    },
+    {
+     "x": "2024-06",
+     "y": 22.3
+    },
+    {
+     "x": "2024-07",
+     "y": 19.3
+    },
+    {
+     "x": "2024-08",
+     "y": 22.7
+    }
+   ],
+   "note": "RPG 비중 하락과 맞물려 상승.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "id": "kr-mobile-halfyear-revenue",
+   "title": "한국 모바일 게임 반기별 매출(센서타워)",
+   "unit": "억 달러",
+   "points": [
+    {
+     "x": "2023H2",
+     "y": 26.6
+    },
+    {
+     "x": "2024H1",
+     "y": 27.5
+    },
+    {
+     "x": "2024H2",
+     "y": 28
+    },
+    {
+     "x": "2025H1",
+     "y": 24
+    },
+    {
+     "x": "2025H2",
+     "y": 28
+    }
+   ],
+   "note": "각 반기 결산 블로그 발표 시점 추정치로 사후 개정이 있다. 2023 상반기 약 27.2억 달러(2024H1 블로그의 전년 비교치).",
+   "source": "https://sensortower.com/ko/blog/2H2025-mobile-games-recap-in-Korea"
+  },
+  {
+   "id": "maple-idle-mobileindex-monthly",
+   "title": "메이플 키우기 월 매출(모바일인덱스, 구글·앱스토어·원스토어 합산)",
+   "unit": "억 원",
+   "points": [
+    {
+     "x": "2026-01",
+     "y": 439
+    },
+    {
+     "x": "2026-02",
+     "y": 391
+    },
+    {
+     "x": "2026-03",
+     "y": 452
+    },
+    {
+     "x": "2026-04",
+     "y": 256
+    },
+    {
+     "x": "2026-05",
+     "y": 285
+    },
+    {
+     "x": "2026-08",
+     "y": 221
+    },
+    {
+     "x": "2026-09",
+     "y": 176
+    }
+   ],
+   "note": "2026-06은 리포트가 확인되지 않았고 2026-07은 순위(7위)만 역산돼 수치 공백. 2026-03 1위, 04 3위, 05 2위, 08 3위, 09 5위.",
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2604"
+  },
+  {
+   "id": "tbh-steam-monthly-avg-ccu",
+   "title": "TBH: Task Bar Hero 월평균 동시접속(Steam)",
+   "unit": "명",
+   "points": [
+    {
+     "x": "2026-06",
+     "y": 434627
+    },
+    {
+     "x": "2026-07",
+     "y": 288455
+    },
+    {
+     "x": "2026-08",
+     "y": 107511
+    },
+    {
+     "x": "2026-09",
+     "y": 76465
+    }
+   ],
+   "note": "2026-05-27 출시 F2P. 역대 최고 545,349(2026-06). 최근 30일 평균 69,776, 조회 시점 45,818.",
+   "source": "https://steamcharts.com/app/3678970"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154",
+   "title": "2025 대한민국 게임백서 (문화체육관광부·한국콘텐츠진흥원)",
+   "type": "공식",
+   "note": "2026-03-25 게시. 2024년 국내 시장 규모·센서타워 인용 장르 비중·2025 게임이용자 실태조사 수록.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=656841",
+   "title": "게임 산업 지형 바꾼 방치형 게임…4년 만에 매출 점유율 10배 폭증 (한국금융경제신문)",
+   "type": "보도",
+   "note": "2026-04-14 백서 인용 보도. 51.3%를 MMORPG로 기술(원문은 RPG 전체), 약 3조 8,000억 원은 16%×전체 시장 단순 곱셈.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent",
+   "title": "모바일 게임 매출에서 RPG 비중은 사상 처음 50% 아래로…방치형이 비중 2위로 급부상 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2024-08. 방치형 RPG 비중·연령·이용 시간. 서브장르 비중은 각 연도 1~7월 기준, 분모가 모바일 RPG 매출.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/Korea-stands-out-as-the-leading-country-with-RPG-revenue-constituting-approximately-60-percent-of-total-mobile-game-revenue",
+   "title": "한국, RPG 매출 비중 약 60% 압도적 1위 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2023-10. 2023-01~08 한국 RPG 57.5%, 방치형 RPG 1.7%(2019)→4.4%(2023).",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+   "title": "메이플 키우기 누적 매출 1억 달러 돌파 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2025-12. 출시 45일 매출 1억 달러·다운로드 300만+, 국가별 비중, 세션 지표.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/Seven-Knights-Idle-Adventure-achieved-40M-securing-the-second-spot-in-revenue",
+   "title": "세븐나이츠 키우기 4,000만 달러 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2023-10. 2023-09-06 출시, 45일 약 4,000만 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue",
+   "title": "갓깨비 키우기 방치형 RPG 매출 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2025-06. 글로벌 방치형 RPG 국가별 비중(일본 17.9%, 한국 17.6%).",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/LoadComplete-Legend-of-Slime-Idle-RPG-War-has-generated-50M-in-consumer-spending",
+   "title": "레전드 오브 슬라임 5천만 달러 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2023-04. 2022-08 글로벌 출시, 5천만 달러+.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea",
+   "title": "카피바라 Go! 한국 성과 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2024-11. 2024-10-23 출시, 한국 첫 달 약 900만 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/Growing-Mushroom-has-earned-64-million-dollars-in-revenue",
+   "title": "버섯커 키우기 한국 매출 6,400만 달러 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2024-03. 2023-12-22 출시, 누적 약 9,700만 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue",
+   "title": "스톤에이지 키우기 누적 1,500만 달러 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2026-04. 2026-03-03 글로벌 출시, 방치형 RPG 연령 구성.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/2H2025-mobile-games-recap-in-Korea",
+   "title": "2025 하반기 국내 모바일 게임 결산 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2026-01. 하반기 매출 약 28억 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/state-of-mobile-gaming-2025-KR",
+   "title": "State of Mobile Gaming 2025 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2025-04. 2024 IAP 820억 달러(+4%), 다운로드 490억(-7%).",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/state-of-gaming-2026-KR",
+   "title": "State of Gaming 2026 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2026-03. 2025 게임 다운로드 520억 등.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/mobile-games-monetisation-2026-KR",
+   "title": "모바일 게임 수익화 2026 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2026-05. 2025 상위100 게임 매출 약 466억 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/gaming-deep-dive-ad-monetization-korea",
+   "title": "게임 광고 수익화 딥다이브 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "2026-08. 광고 수익화 생태계 120억 달러+.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan",
+   "title": "日本のモバイル放置RPG (센서타워 일본)",
+   "type": "데이터(추정)",
+   "note": "2024-02. 2023 일본 방치형 RPG 2.8억 달러+, 세계 점유율 24%.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ja/blog/legend-of-mushroom-achieved-100m-dollars-in-japan",
+   "title": "Legend of Mushroom 일본 1억 달러 (센서타워 일본)",
+   "type": "데이터(추정)",
+   "note": "2024-08. 일본 출시 2024-02-23, 6월 일본 누적 1억 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/ko/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026-KR",
+   "title": "2026년 3월 전 세계 모바일 게임 매출·다운로드 TOP10 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "Pizza Ready! 다운로드 5위, 스톤에이지 키우기 매출 성장 4위.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.igaworksblog.com/post/mobilegame-chart-2604",
+   "title": "모바일인덱스 2026-03 인기 모바일 게임 순위 (IGAWorks)",
+   "type": "데이터(추정)",
+   "note": "2026-03 월 매출 순위.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.igaworksblog.com/post/mobilegame-chart-2609-1",
+   "title": "모바일인덱스 2026-08 인기 모바일 게임 순위 (IGAWorks)",
+   "type": "데이터(추정)",
+   "note": "2026-08 월 매출 순위, 매출 합산 범위(구글·앱스토어·원스토어) 명시.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.igaworksblog.com/post/mobilegame-chart-2610",
+   "title": "모바일인덱스 2026-09 인기 모바일 게임 순위 (IGAWorks)",
+   "type": "데이터(추정)",
+   "note": "2026-09 월 매출 순위.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://v.daum.net/v/20251227081204720",
+   "title": "메이플 키우기 DAU 등 (아이뉴스24)",
+   "type": "보도",
+   "note": "2025-12-27. 모바일인덱스 기준 메이플 키우기 안드로이드 DAU 15만, 세븐나이츠 키우기 45일 4,000만 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.betanews.net/article/view/beta202609280001",
+   "title": "2026-09-21~27 구글플레이 인기 순위 (베타뉴스)",
+   "type": "보도",
+   "note": "2026-09-28. 1위 아가타 키우기, 2위 후더덕 서바이벌.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.inven.co.kr/webzine/news/?news=322001",
+   "title": "귀혼키우기 출시 예정 (인벤)",
+   "type": "보도",
+   "note": "2026-11 출시 예정.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://itunes.apple.com/kr/rss/topgrossingapplications/limit=100/genre=6014/json",
+   "title": "App Store 한국 최고매출 게임 RSS (Apple)",
+   "type": "스토어",
+   "note": "2026-10-14 07:55 KST 조회. 메이플 키우기 1위, 쿠키런 키우기 24위 등.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://steamcharts.com/app/3678970",
+   "title": "TBH: Task Bar Hero 동시접속 (SteamCharts)",
+   "type": "데이터(추정)",
+   "note": "2026-10-14 조회. 월평균·최고 동접.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://appmagic.rocks/blog/idle-steam-games-2026",
+   "title": "Idle Games in 2026: Home, Steam Home (AppMagic)",
+   "type": "데이터(추정)",
+   "note": "2026-04-28. Steam Idle 태그 매출 상위·모바일 idle 흐름.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://appmagic.rocks/blog/MapleStory-Idle-RPG-Success%20",
+   "title": "MapleStory Idle RPG: Old IP, New Heights (AppMagic)",
+   "type": "데이터(추정)",
+   "note": "2026-04-01. IAP $164M, 설치 760만, 과금 구조.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://technode.com/2024/12/19/capybara-go-takes-40-million-in-overseas-revenue-within-two-months-of-launch/",
+   "title": "Capybara Go! 2개월 해외 매출 4,000만 달러 (TechNode)",
+   "type": "보도",
+   "note": "2024-12-19.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/",
+   "title": "Capybara Go! 1억 달러 돌파 (PocketGamer.biz)",
+   "type": "보도",
+   "note": "AppMagic 2025-02-10 기준 누적 약 1.09억 달러.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+   "title": "2025 Q2 미국 idle RPG 매출 TOP5 (센서타워)",
+   "type": "데이터(추정)",
+   "note": "Capybara Go! 주간 매출 추이.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://appmedia.jp/app_review/5443987",
+   "title": "放置少女 매출 순위 (AppMedia)",
+   "type": "보도",
+   "note": "App Store 월평균 매출 순위 80위→57위→65위(2026-01/03/06).",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks",
+   "title": "2026 Mobile & PC Gaming Benchmarks (GameAnalytics)",
+   "type": "데이터(추정)",
+   "note": "2025 데이터, 16,000+ 게임. 장르별 수치 없음.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.gameanalytics.com/reports/2025-mobile-gaming-benchmarks",
+   "title": "2025 Mobile Gaming Benchmarks (GameAnalytics)",
+   "type": "데이터(추정)",
+   "note": "2024 데이터, 11,600 게임. 장르별 중앙값.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.gameanalytics.com/blog/how-to-keep-players-engaged-and-coming-back-to-your-idle-game",
+   "title": "How to keep players engaged in your idle game (GameAnalytics)",
+   "type": "데이터(추정)",
+   "note": "최종 수정 2025-03-17. Idle stickiness·세션·ARPDAU 상대 비교, 샘플 정의 불명.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.gameanalytics.com/blog/how-voodoo-diversified-and-lowered-game-product-kpis",
+   "title": "Voodoo KPI 하향 (GameAnalytics)",
+   "type": "인터뷰",
+   "note": "최종 수정 2025-03-17. 과거 KPI(D1 55%·D7 22%)와 하향 KPI.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://liftoff.ai/2025-casual-gaming-apps-report/",
+   "title": "2025 Casual Gaming Apps Report (Liftoff x Singular)",
+   "type": "데이터(추정)",
+   "note": "2024-02~2025-02. 캐주얼 CPI·ROAS.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://tenjin.com/blog/ad-mon-gaming-2026/",
+   "title": "Ad Monetization in Mobile Games Benchmark Report 2026 (Tenjin x CAS)",
+   "type": "데이터(추정)",
+   "note": "2026-06-04 게시, 08-13 갱신. 광고 매출 플랫폼·국가 비중. eCPM 수치는 텍스트에 없음.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.blog.udonis.co/mobile-marketing/mobile-apps/ecpms",
+   "title": "What is eCPM (Udonis)",
+   "type": "데이터(추정)",
+   "note": "2024-06-21 게시. Appodeal 2021H2~2022H1 eCPM.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-monetization-kpis",
+   "title": "Mobile game monetization KPIs (Udonis)",
+   "type": "데이터(추정)",
+   "note": "2024-06-20. 목표 KPI 가이드라인, 데이터 기간·표본 없음.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://business.mistplay.com/resources/mobile-game-retention-benchmarks",
+   "title": "Mobile game retention benchmarks (Mistplay)",
+   "type": "데이터(추정)",
+   "note": "2023-10-03. AppsFlyer 2022 Q3 장르별 리텐션 인용.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://www.appsflyer.com/ko/resources/reports/global-mobile-gaming-benchmarks/",
+   "title": "글로벌 모바일 게이밍 벤치마크 보고서 (AppsFlyer x Facebook)",
+   "type": "데이터(추정)",
+   "note": "페이지에는 RPG 연간 CPI 34% 증가(2020 데이터 맥락) 외 수치 없음.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Incremental_game",
+   "title": "Incremental game (Wikipedia)",
+   "type": "위키/커뮤니티",
+   "note": "Progress Quest 2002, Cookie Clicker 2013, Idle Game Maker 2014, 2015 Steam 확산.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Egg,_Inc.",
+   "title": "Egg, Inc. (Wikipedia)",
+   "type": "위키/커뮤니티",
+   "note": "2016 Android·iOS 출시.",
+   "accessed": "2026-10-14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/App_Tracking_Transparency",
+   "title": "App Tracking Transparency (Wikipedia)",
+   "type": "위키/커뮤니티",
+   "note": "iOS 14.5부터 IDFA 동의 팝업, 2021-05 미국 96% 거부(Flurry).",
+   "accessed": "2026-10-14"
+  }
+ ],
+ "topTitles": [
+  {
+   "name": "메이플 키우기(넥슨·에이블게임즈)",
+   "metric": "국내 월 매출(모바일인덱스)",
+   "value": "452억 원",
+   "period": "2026-03",
+   "note": "1월 439억, 2월 391억. 2026-01~03 국내 1위, 4월 256억(3위), 5월 285억(2위), 8월 221억(3위), 9월 176억(5위).",
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2604"
+  },
+  {
+   "name": "메이플 키우기",
+   "metric": "출시 45일 글로벌 매출",
+   "value": "1억 달러(다운로드 300만+)",
+   "period": "2025-11-06~",
+   "note": "한국 67%·미국 16.6%·대만 7.1%. 45일 매출은 카피바라 Go! 약 3,700만, 버섯커 키우기 약 5,900만 달러보다 큼.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "name": "메이플 키우기",
+   "metric": "누적 IAP(AppMagic)",
+   "value": "1.64억 달러, 설치 760만",
+   "period": "2025-11~2026-03",
+   "note": "출시 4개월차 월 약 $44M 정점, 다운로드는 감소하나 월매출은 성장.",
+   "source": "https://appmagic.rocks/blog/MapleStory-Idle-RPG-Success%20"
+  },
+  {
+   "name": "버섯커 키우기",
+   "metric": "누적 매출",
+   "value": "약 9,700만 달러(한국 약 6,400만)",
+   "period": "2023-12-22~2024-02",
+   "note": "2024 상반기 국내 매출 3위·다운로드 1위. 백서·센서타워는 출시 후 누적 약 3.5억 달러·한국 34%로 기술.",
+   "source": "https://sensortower.com/ko/blog/Growing-Mushroom-has-earned-64-million-dollars-in-revenue"
+  },
+  {
+   "name": "카피바라 Go!(Habby)",
+   "metric": "누적 매출(AppMagic)",
+   "value": "약 1.09억 달러",
+   "period": "~2025-02-10",
+   "note": "미국 1,610만 달러. 2024-12-11까지 2개월 해외 매출 4,000만 달러(센서타워).",
+   "source": "https://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/"
+  },
+  {
+   "name": "카피바라 Go!",
+   "metric": "iOS 미국 주간 매출",
+   "value": "약 100만 → 38.2만 달러",
+   "period": "2025-04 초 → 06 말",
+   "note": "Q3 9월 초 약 43.8만 달러(iOS), 안드로이드 약 14.9만 달러.",
+   "source": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb"
+  },
+  {
+   "name": "세븐나이츠 키우기(넷마블)",
+   "metric": "출시 45일 누적",
+   "value": "약 4,000만 달러",
+   "period": "2023-09-06~",
+   "note": "한국 76.7%. 국내 매출 2위·다운로드 2위.",
+   "source": "https://sensortower.com/ko/blog/Seven-Knights-Idle-Adventure-achieved-40M-securing-the-second-spot-in-revenue"
+  },
+  {
+   "name": "스톤에이지 키우기(넷마블)",
+   "metric": "누적 매출",
+   "value": "약 1,500만 달러",
+   "period": "2026-03-03~04",
+   "note": "글로벌 방치형 RPG 다운로드 1위·매출 2위, 한국 78%·대만 8%.",
+   "source": "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue"
+  },
+  {
+   "name": "갓깨비 키우기(조이게임즈)",
+   "metric": "누적 매출",
+   "value": "약 1,000만 달러",
+   "period": "2025-04 중순 출시 추정~06",
+   "note": "국내 전체 매출 8위, 2025-05 전 세계 방치형 RPG 매출 4위.",
+   "source": "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue"
+  },
+  {
+   "name": "레전드 오브 슬라임",
+   "metric": "누적 매출",
+   "value": "5천만 달러+",
+   "period": "2022-08-09~2023-04-15",
+   "note": "매출 일본 32.5%·미국 18.8%·한국 11.3%. 센서타워 순위에서 국내 방치형 1위.",
+   "source": "https://sensortower.com/ko/blog/LoadComplete-Legend-of-Slime-Idle-RPG-War-has-generated-50M-in-consumer-spending"
+  },
+  {
+   "name": "Legend of Mushroom",
+   "metric": "일본 누적 매출",
+   "value": "1억 달러(일본 출시 2024-02-23)",
+   "period": "~2024-06",
+   "note": "일본 매출 비중 약 45%, 월평균 사용시간 330분+. 2023-11 이후 전 세계 IAP 2.7억 달러(WN Hub).",
+   "source": "https://sensortower.com/ja/blog/legend-of-mushroom-achieved-100m-dollars-in-japan"
+  },
+  {
+   "name": "放置少女(C4 Connect)",
+   "metric": "일본 2023 매출",
+   "value": "1억 달러+",
+   "period": "2023",
+   "note": "2026 App Store 월평균 매출 순위 80위(1월)→57위(3월)→65위(6월).",
+   "source": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan"
+  },
+  {
+   "name": "ドット勇者",
+   "metric": "일본 매출",
+   "value": "6,500만 달러+",
+   "period": "2023-09~약 4개월",
+   "note": "일본 방치형 RPG 2위.",
+   "source": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan"
+  },
+  {
+   "name": "TBH: Task Bar Hero",
+   "metric": "Steam 역대 최고 동접",
+   "value": "545,349명",
+   "period": "2026-06",
+   "note": "F2P, 2026-05-27 출시. 9월 월평균 76,465.",
+   "source": "https://steamcharts.com/app/3678970"
+  },
+  {
+   "name": "IdleOn",
+   "metric": "Steam 2025 매출",
+   "value": "$22M+(누적 약 $59M)",
+   "period": "2025",
+   "note": "F2P, 2025-11 정식 출시.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "name": "Gold and Goblins",
+   "metric": "모바일 누적 IAP",
+   "value": "$163M+(다운로드 6,900만+)",
+   "period": "2020 말~",
+   "note": "Idle Lumber Empire IAP $113M+.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "name": "CloverPit",
+   "metric": "Steam 매출",
+   "value": "$15.5M+",
+   "period": "2025-05~",
+   "note": "Idle 태그 상위.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "name": "쿠키런 키우기(데브시스터즈)",
+   "metric": "국내 월 매출(모바일인덱스)",
+   "value": "134억 원(6위)",
+   "period": "2026-08",
+   "note": "2026-07-29 출시. 8월 사용자 10위 74만. 9월에는 사용자 TOP50 18계단 하락. App Store 최고매출 24위(2026-10-14).",
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2609-1"
+  }
+ ],
+ "chartSnapshots": [
+  {
+   "date": "2026-10-14",
+   "store": "App Store 한국 최고매출 게임(Apple RSS, 07:55 KST)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "메이플 키우기",
+     "note": "방치형 RPG"
+    },
+    {
+     "rank": 24,
+     "name": "쿠키런 키우기",
+     "note": "2026-07-29 출시"
+    },
+    {
+     "rank": 39,
+     "name": "오피스 퀸 키우기",
+     "note": "방치형 RPG"
+    },
+    {
+     "rank": 48,
+     "name": "총잡이 고양이 - 방치형 키우기",
+     "note": ""
+    },
+    {
+     "rank": 58,
+     "name": "캣 히어로: 방치형 RPG",
+     "note": ""
+    },
+    {
+     "rank": 90,
+     "name": "스톤에이지 키우기",
+     "note": "넷마블"
+    }
+   ],
+   "source": "https://itunes.apple.com/kr/rss/topgrossingapplications/limit=100/genre=6014/json"
+  },
+  {
+   "date": "2026-09-27",
+   "store": "구글플레이 인기 순위(2026-09-21~27, 베타뉴스)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "아가타 키우기",
+     "note": "에어캡, 방치형 RPG, 4인 스쿼드, 같은 등급 합성"
+    },
+    {
+     "rank": 2,
+     "name": "후더덕 서바이벌",
+     "note": "조이게임즈, 2026-09-18 출시, 디펜스+슈팅"
+    }
+   ],
+   "source": "https://www.betanews.net/article/view/beta202609280001"
+  },
+  {
+   "date": "2026-09",
+   "store": "모바일인덱스 월간 매출(구글+앱스토어+원스토어, 2026-09)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "제우스: 오만의 신",
+     "note": "386억 원"
+    },
+    {
+     "rank": 2,
+     "name": "리니지M",
+     "note": "291억"
+    },
+    {
+     "rank": 3,
+     "name": "이클립스",
+     "note": "231억"
+    },
+    {
+     "rank": 4,
+     "name": "화이트아웃 서바이벌",
+     "note": "229억"
+    },
+    {
+     "rank": 5,
+     "name": "메이플 키우기",
+     "note": "176억, 방치형"
+    },
+    {
+     "rank": 6,
+     "name": "SOL",
+     "note": "151억"
+    },
+    {
+     "rank": 7,
+     "name": "킹샷",
+     "note": "143억"
+    }
+   ],
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2610"
+  },
+  {
+   "date": "2026-08",
+   "store": "모바일인덱스 월간 매출(구글+앱스토어+원스토어, 2026-08)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "SOL",
+     "note": "370억 원"
+    },
+    {
+     "rank": 2,
+     "name": "화이트아웃 서바이벌",
+     "note": "321억"
+    },
+    {
+     "rank": 3,
+     "name": "메이플 키우기",
+     "note": "221억, 방치형"
+    },
+    {
+     "rank": 4,
+     "name": "킹샷",
+     "note": "216억"
+    },
+    {
+     "rank": 5,
+     "name": "리니지M",
+     "note": "175억"
+    },
+    {
+     "rank": 6,
+     "name": "쿠키런 키우기",
+     "note": "134억, 방치형, 2026-07-29 출시"
+    }
+   ],
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2609-1"
+  },
+  {
+   "date": "2026-03",
+   "store": "모바일인덱스 월간 매출(2026-03)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "메이플 키우기",
+     "note": "452억 원, 방치형"
+    },
+    {
+     "rank": 2,
+     "name": "라스트 워",
+     "note": "321억"
+    },
+    {
+     "rank": 3,
+     "name": "화이트아웃 서바이벌",
+     "note": "296억"
+    },
+    {
+     "rank": 4,
+     "name": "리니지M",
+     "note": "266억"
+    },
+    {
+     "rank": 5,
+     "name": "킹샷",
+     "note": "184억"
+    }
+   ],
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2604"
+  },
+  {
+   "date": "2026-03",
+   "store": "센서타워 전 세계 다운로드 TOP5(2026-03)",
+   "entries": [
+    {
+     "rank": 1,
+     "name": "Block Blast!",
+     "note": ""
+    },
+    {
+     "rank": 2,
+     "name": "Free Fire",
+     "note": ""
+    },
+    {
+     "rank": 3,
+     "name": "ROBLOX",
+     "note": ""
+    },
+    {
+     "rank": 4,
+     "name": "Subway Surfers",
+     "note": ""
+    },
+    {
+     "rank": 5,
+     "name": "Pizza Ready!",
+     "note": "아케이드 아이들"
+    }
+   ],
+   "source": "https://sensortower.com/ko/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026-KR"
+  }
+ ],
+ "benchmarks": [
+  {
+   "metric": "D1 리텐션",
+   "segment": "전 장르 글로벌 모바일 P50 / P75 / P90",
+   "value": "약 22% / 30% 초과 / 약 40%",
+   "note": "2025 데이터, 16,000+ 게임. 장르별 분리 없음.",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "D7 리텐션",
+   "segment": "전 장르 글로벌 모바일 P50 / P75 / P90",
+   "value": "4% 미만 / 6~7% / 11~12%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "D30 리텐션",
+   "segment": "전 장르 글로벌 모바일 P50 / P75",
+   "value": "0.68~0.79% / 1.6~1.8%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D30 리텐션(P50)",
+   "segment": "아시아 / 북미 / 유럽",
+   "value": "아시아 17.50/2.68/0.53%, 북미 23.28/4.97/1.18%, 유럽 22.20/4.06/0.92%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D30 리텐션(P50)",
+   "segment": "PC 전체",
+   "value": "D1 약 7%, D7 1.1~1.3%, D30 0.2~0.25%",
+   "note": "PC 플레이타임 32~33분, 세션 약 18분, 일 1.65~1.70회.",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "플레이타임·세션",
+   "segment": "모바일 전체 P50",
+   "value": "일 플레이타임 약 12분, 세션 3.1~3.5분, 일 세션 3.8~3.9회",
+   "note": "아시아 P50 세션 3.12분, 일 4.19회, 플레이타임 11.79분.",
+   "source": "https://www.gameanalytics.com/reports/2026-mobile-pc-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D28 리텐션(월별 중앙값 범위)",
+   "segment": "RPG",
+   "value": "D1 14.69~15.42%, D7 1.96~2.23%, D28 0.39~0.47%",
+   "note": "플레이타임 14.7~16.9분, 세션 4.1~4.8분, 일 세션 3.95~4.09회. 2024 데이터, 방치형 별도 구분 없음.",
+   "source": "https://www.gameanalytics.com/reports/2025-mobile-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D28 리텐션(월별 중앙값 범위)",
+   "segment": "시뮬레이션",
+   "value": "D1 16.77~17.28%, D7 2.22~2.56%, D28 0.45~0.53%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2025-mobile-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D28 리텐션(월별 중앙값 범위)",
+   "segment": "캐주얼 / 전략 / 퍼즐",
+   "value": "캐주얼 D1 20.02~21.11·D7 3.14~3.46·D28 0.65~0.75%, 전략 D1 19.00~20.65·D7 3.18~3.58·D28 0.66~0.77%, 퍼즐 D1 19.66~20.74·D7 4.27~4.79·D28 1.09~1.26%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2025-mobile-gaming-benchmarks"
+  },
+  {
+   "metric": "D1 리텐션 상위 25%",
+   "segment": "글로벌 / iOS / Android",
+   "value": "26.48~27.69% / 31~33% / 25~27%",
+   "note": "",
+   "source": "https://www.gameanalytics.com/reports/2025-mobile-gaming-benchmarks"
+  },
+  {
+   "metric": "D1/D7/D30 리텐션(AppsFlyer 2022 Q3, Mistplay 인용)",
+   "segment": "RPG",
+   "value": "30.54 / 9.85 / 3.48%",
+   "note": "하이퍼캐주얼 29.31/5.90/1.38, 시뮬레이션 30.10/8.71/2.96, 전략 25.39/8.06/3.12, 퍼즐 31.85/12.18/5.35. 일본 D30 6.4%, 미국 3.72%. 2023-10 인용, 측정 정의가 달라 GameAnalytics와 직접 비교 불가.",
+   "source": "https://business.mistplay.com/resources/mobile-game-retention-benchmarks"
+  },
+  {
+   "metric": "Idle 스티키니스",
+   "segment": "Idle 18% vs 하이퍼캐주얼 10.5%",
+   "value": "일 세션 5.3회 vs 4.6회, 평균 세션 8분",
+   "note": "ARPDAU가 하이퍼캐주얼의 9배(절대 수치 없음). 표본·기간 불명(최종 수정 2025-03-17).",
+   "source": "https://www.gameanalytics.com/blog/how-to-keep-players-engaged-and-coming-back-to-your-idle-game"
+  },
+  {
+   "metric": "D1 리텐션 상위 구간(장르 불명확)",
+   "segment": "상위 10% / 상위 25%",
+   "value": "45.55% / 39.40%",
+   "note": "플레이타임 상위 10% 34.92분. 장르 정의 불명확.",
+   "source": "https://www.gameanalytics.com/blog/how-to-keep-players-engaged-and-coming-back-to-your-idle-game"
+  },
+  {
+   "metric": "목표 KPI(과거 하이퍼캐주얼)",
+   "segment": "Voodoo 과거 → 하향",
+   "value": "D1 55%·D7 22%·CPI 0.25달러 미만 → D1 45%·D7 13%·CPI 0.20달러",
+   "note": "2019~2020 맥락의 사례.",
+   "source": "https://www.gameanalytics.com/blog/how-voodoo-diversified-and-lowered-game-product-kpis"
+  },
+  {
+   "metric": "D1 리텐션",
+   "segment": "최근 출시 Steam idle(Cast n Chill, TFWR, Tiny Pasture, Scritchy Scratchy, Berry Bury Berry)",
+   "value": "보통 40~70%",
+   "note": "TFWR D30 10%+로 장르 대비 이례적. AppMagic 추정 모델.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "metric": "ARPDAU 목표",
+   "segment": "모바일 게임(일반 가이드)",
+   "value": "10~20센트",
+   "note": "Udonis 가이드라인, 데이터 기간·표본·장르 구분 없음. 방치형 실측 ARPDAU는 확인하지 못했다.",
+   "source": "https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-monetization-kpis"
+  },
+  {
+   "metric": "보상형 광고 시청률 목표",
+   "segment": "DAU 중 광고 시청 비율",
+   "value": "30%",
+   "note": "Udonis 목표 KPI, 근거 데이터 기간 없음. 일 5회 이하 노출 권장, 보상형 광고 1회 가치 0.05달러 이상.",
+   "source": "https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-monetization-kpis"
+  },
+  {
+   "metric": "결제자 지표 목표",
+   "segment": "7일차 결제자 비율 / 결제자당 구매",
+   "value": "10% 초과 / 3회 이상",
+   "note": "Udonis 목표 KPI, 근거 불명.",
+   "source": "https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-monetization-kpis"
+  },
+  {
+   "metric": "보상형 eCPM",
+   "segment": "미국 Android / iOS",
+   "value": "12.91달러 / 13.81달러",
+   "note": "Appodeal 2021H2~2022H1 데이터. 아시아 Android 2달러 / iOS 5.86달러, 서유럽 3.62 / 6.51달러.",
+   "source": "https://www.blog.udonis.co/mobile-marketing/mobile-apps/ecpms"
+  },
+  {
+   "metric": "전면 eCPM",
+   "segment": "미국 Android / iOS",
+   "value": "11.06달러 / 9.58달러",
+   "note": "동일 출처·기간.",
+   "source": "https://www.blog.udonis.co/mobile-marketing/mobile-apps/ecpms"
+  },
+  {
+   "metric": "CPI(캐주얼 평균)",
+   "segment": "iOS / Android",
+   "value": "1.41달러 / 0.14달러",
+   "note": "Singular 2024-02~2025-02, 설치 24억, 지출 119억 달러. 카지노 iOS CPI 21.03달러, 시뮬레이션 iOS CPI는 Android의 10배 이상.",
+   "source": "https://liftoff.ai/2025-casual-gaming-apps-report/"
+  },
+  {
+   "metric": "D30 ROAS",
+   "segment": "캐주얼 iOS / Android / RPG Android",
+   "value": "47% / 15% / 39%",
+   "note": "동일 보고서.",
+   "source": "https://liftoff.ai/2025-casual-gaming-apps-report/"
+  },
+  {
+   "metric": "광고 매출 비중",
+   "segment": "플랫폼(2026 Q2)",
+   "value": "Android 55% / iOS 45%",
+   "note": "iOS 국가 US 58%·JP 10%·UK 6%, Android 국가 US 32%·RU 9%·JP 5%·BR 5%·MX 4%·KR 3%. eCPM 수치는 확인하지 못했다.",
+   "source": "https://tenjin.com/blog/ad-mon-gaming-2026/"
+  },
+  {
+   "metric": "RPG 연간 CPI 변화",
+   "segment": "RPG",
+   "value": "+34%",
+   "note": "AppsFlyer x Facebook 보고서(2020년 맥락, 발행일 불명). iOS 논오가닉 설치 2020 하반기 -35%.",
+   "source": "https://www.appsflyer.com/ko/resources/reports/global-mobile-gaming-benchmarks/"
+  },
+  {
+   "metric": "광고 소재 노출 비중",
+   "segment": "모바일 방치형 RPG 디지털 광고 노출(2025-11)",
+   "value": "한국 81% / 미국 37%",
+   "note": "센서타워 메이플 키우기 분석.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "metric": "일 평균 세션",
+   "segment": "메이플 키우기 vs 상위 매출 방치형 RPG",
+   "value": "세션 지속 약 12분, 일 세션 약 7회(최고)",
+   "note": "센서타워 2025-12.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "metric": "과금 구조",
+   "segment": "메이플 키우기 IAP 구성",
+   "value": "월정액 $8.69 = 구매 건수 3%, 패스 $36.49 = 1%, $109 팩 매출 13%+, $219 오퍼 약 25%, $99.99 초과 오퍼 최대 약 40%",
+   "note": "AppMagic 추정.",
+   "source": "https://appmagic.rocks/blog/MapleStory-Idle-RPG-Success%20"
+  },
+  {
+   "metric": "유입 구성",
+   "segment": "메이플 키우기 초기 다운로드",
+   "value": "오가닉 약 40%, 광고 채널 56%",
+   "note": "Legend of Mushroom 일본은 오가닉 53%·광고 44%·웹 3%.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  }
+ ],
+ "userInsights": [
+  {
+   "stat": "방치형 RPG 평균 연령",
+   "value": "32세(상위 5개, 25세 이하 약 16%)",
+   "note": "MMORPG 상위5 평균 36세와 비교. 센서타워 2024-08.",
+   "source": "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent"
+  },
+  {
+   "stat": "방치형 RPG 1일 평균 이용",
+   "value": "50.42분, 5.21회",
+   "note": "MMORPG 135분·5.4회. 대상·기간 미명시.",
+   "source": "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent"
+  },
+  {
+   "stat": "스톤에이지 키우기 연령 구성",
+   "value": "25~34세 52.8%, 35~44세 19.4%, 18~24세 18.7%",
+   "note": "센서타워 2026-04.",
+   "source": "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue"
+  },
+  {
+   "stat": "일본 방치형 RPG 평균 연령",
+   "value": "35세 전후",
+   "note": "App Store 2023 Q4. 放置少女 25~34세, ドット勇者 35~44세 중심.",
+   "source": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan"
+  },
+  {
+   "stat": "자동플레이 이용 경험",
+   "value": "29.9% (20대 37.5%, 30대 40.6%)",
+   "note": "이유: 지루한 부분 건너뛰고 핵심 보상 44.8%, 빠른 성장 44.7%, 시간 부족 37.9%, 자동 특화 게임 19.4%, 격차 줄이기 13.3%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "stat": "결제 동기",
+   "value": "빠른 레벨업 1순위 46.0%(중복 66.3%)",
+   "note": "경쟁 유리 32.3%, 꾸미기 15.3%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "stat": "게임 미이용 사유",
+   "value": "이용 시간 부족 44.0%",
+   "note": "이용률이 2021 71.3%에서 2025 50.2%로 하락.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "stat": "모바일 이용",
+   "value": "게임 이용자 중 89.1%, 평균 3.4개 게임",
+   "note": "모바일 장르 1년 이용(중복): 퍼즐&퀴즈 36.8%, 수집형/육성형 RPG 27.0%.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "stat": "Legend of Mushroom 일본 사용시간",
+   "value": "월평균 330분+",
+   "note": "2024-02~06, 센서타워 일본.",
+   "source": "https://sensortower.com/ja/blog/legend-of-mushroom-achieved-100m-dollars-in-japan"
+  },
+  {
+   "stat": "메이플 키우기 안드로이드 DAU",
+   "value": "15만",
+   "note": "모바일인덱스 2025-12-23.",
+   "source": "https://v.daum.net/v/20251227081204720"
+  }
+ ],
+ "timeline": [
+  {
+   "date": "2002",
+   "event": "Progress Quest 출시",
+   "significance": "GDC 강연(Pecorella)이 방치형 장르의 시초로 꼽는 MMORPG 스탯 성장 패러디.",
+   "source": "https://en.wikipedia.org/wiki/Incremental_game"
+  },
+  {
+   "date": "2013",
+   "event": "Cookie Clicker 흥행",
+   "significance": "인크리멘탈 게임이 대중화된 계기.",
+   "source": "https://en.wikipedia.org/wiki/Incremental_game"
+  },
+  {
+   "date": "2014",
+   "event": "Idle Game Maker 초기 버전 공개(Orteil)",
+   "significance": "코딩 없이 방치형 게임을 만드는 도구로 제작 진입 장벽을 낮춤.",
+   "source": "https://en.wikipedia.org/wiki/Incremental_game"
+  },
+  {
+   "date": "2015",
+   "event": "Steam에서 클리커 게임 확산(Clicker Heroes 등)",
+   "significance": "PC 인크리멘탈 시장이 형성됨.",
+   "source": "https://en.wikipedia.org/wiki/Incremental_game"
+  },
+  {
+   "date": "2016",
+   "event": "Egg, Inc. 모바일 출시",
+   "significance": "보상형 광고를 결합한 모바일 방치형 사례.",
+   "source": "https://en.wikipedia.org/wiki/Egg,_Inc."
+  },
+  {
+   "date": "2017-03",
+   "event": "放置少女 일본 출시",
+   "significance": "일본 방치형 RPG의 장수작. 2023년 일본에서 1억 달러+.",
+   "source": "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan"
+  },
+  {
+   "date": "2020 말",
+   "event": "Gold and Goblins 출시",
+   "significance": "모바일 idle 대형 IAP 사례(누적 IAP $163M+).",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "date": "2021 상반기",
+   "event": "iOS 14.5 ATT 도입",
+   "significance": "IDFA 동의제 이후 UA 비용이 올라 모바일 idle이 4X 등 대형 장르로 흡수된 배경으로 AppMagic이 지목.",
+   "source": "https://en.wikipedia.org/wiki/App_Tracking_Transparency"
+  },
+  {
+   "date": "2022",
+   "event": "모바일 idle 매출 정점",
+   "significance": "2023 중반 성장 둔화 후 2022 수준으로 회귀.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "date": "2022-08",
+   "event": "레전드 오브 슬라임 글로벌 출시",
+   "significance": "8개월 만에 5천만 달러+, 한국 방치형 RPG 매출 상위권에 오름.",
+   "source": "https://sensortower.com/ko/blog/LoadComplete-Legend-of-Slime-Idle-RPG-War-has-generated-50M-in-consumer-spending"
+  },
+  {
+   "date": "2023-09-06",
+   "event": "세븐나이츠 키우기 출시",
+   "significance": "45일 약 4,000만 달러. 한국 대형 IP의 방치형 전환 선례.",
+   "source": "https://sensortower.com/ko/blog/Seven-Knights-Idle-Adventure-achieved-40M-securing-the-second-spot-in-revenue"
+  },
+  {
+   "date": "2023-12-22",
+   "event": "버섯커 키우기 한국 정식 출시",
+   "significance": "한국 방치형 RPG 1위, 2024 상반기 매출 3위·다운로드 1위.",
+   "source": "https://sensortower.com/ko/blog/Growing-Mushroom-has-earned-64-million-dollars-in-revenue"
+  },
+  {
+   "date": "2024-02-23",
+   "event": "Legend of Mushroom 일본 출시",
+   "significance": "2024-06 일본 누적 1억 달러.",
+   "source": "https://sensortower.com/ja/blog/legend-of-mushroom-achieved-100m-dollars-in-japan"
+  },
+  {
+   "date": "2024-05",
+   "event": "국내 모바일 매출 RPG 비중 사상 처음 50% 아래",
+   "significance": "MMORPG 침체와 방치형 RPG 부상.",
+   "source": "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent"
+  },
+  {
+   "date": "2024-10-23",
+   "event": "카피바라 Go! 출시",
+   "significance": "한국 첫 달 약 900만 달러, 2개월 해외 매출 4,000만 달러.",
+   "source": "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea"
+  },
+  {
+   "date": "2025-04",
+   "event": "갓깨비 키우기 한국 출시(추정)",
+   "significance": "2025-04 글로벌 방치형 RPG가 모바일 RPG 매출 비중 4위로 올라섬.",
+   "source": "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue"
+  },
+  {
+   "date": "2025-11",
+   "event": "IdleOn 정식 출시",
+   "significance": "수년의 얼리 액세스 후 2025년 Steam 매출 $22M+.",
+   "source": "https://appmagic.rocks/blog/idle-steam-games-2026"
+  },
+  {
+   "date": "2025-11-06",
+   "event": "메이플 키우기 글로벌 출시",
+   "significance": "45일 1억 달러. 2026-01~03 국내 월 매출 1위.",
+   "source": "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue"
+  },
+  {
+   "date": "2026-03-03",
+   "event": "스톤에이지 키우기 글로벌 출시",
+   "significance": "글로벌 방치형 RPG 다운로드 1위·매출 2위.",
+   "source": "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue"
+  },
+  {
+   "date": "2026-03-25",
+   "event": "2025 대한민국 게임백서 게시",
+   "significance": "방치형 비중 2020 1.7%→2024 16%(분모 정의 주의) 등 공식 문서에 방치형이 처음 비중 있게 등장.",
+   "source": "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+  },
+  {
+   "date": "2026-04-07",
+   "event": "애니멀 버스터즈(라인게임즈) 출시",
+   "significance": "한국 퍼블리셔의 방치형 신작.",
+   "source": "https://www.kfenews.co.kr/news/articleView.html?idxno=656841"
+  },
+  {
+   "date": "2026-05-27",
+   "event": "TBH: Task Bar Hero Steam 출시",
+   "significance": "작업표시줄 방치 RPG, 6월 동접 545,349명으로 데스크톱 방치 붐 확인.",
+   "source": "https://steamcharts.com/app/3678970"
+  },
+  {
+   "date": "2026-07-29",
+   "event": "쿠키런 키우기 출시",
+   "significance": "8월 국내 매출 6위(134억 원), 9월 사용자 하락.",
+   "source": "https://www.igaworksblog.com/post/mobilegame-chart-2609-1"
+  },
+  {
+   "date": "2026-09-18",
+   "event": "후더덕 서바이벌 출시",
+   "significance": "디펜스+슈팅 하이브리드, 구글플레이 인기 2위.",
+   "source": "https://www.betanews.net/article/view/beta202609280001"
+  },
+  {
+   "date": "2026-11",
+   "event": "귀혼키우기(엠게임) 출시 예정",
+   "significance": "3인 전투대·문파·스테이지형 방치.",
+   "source": "https://www.inven.co.kr/webzine/news/?news=322001"
+  }
+ ],
+ "trends": [
+  {
+   "title": "국내 방치형은 'RPG 장르 내부 재편'의 핵심",
+   "body": "국내 모바일 RPG 비중은 2021 67%에서 2024 51.3%로 줄고 2024-05 처음 50% 아래로 떨어졌다. 같은 시기 방치형 RPG는 2021 1.6%에서 2024 7.1%(백서 그림), RPG 내 비중 기준으로는 1.7%에서 16%(센서타워)로 커졌다. 백서의 '16%'는 분모가 RPG 매출이라 전체 모바일 매출 비중으로 읽으면 과대 해석이다.",
+   "evidence": [
+    "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154",
+    "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent",
+    "https://www.kfenews.co.kr/news/articleView.html?idxno=656841"
+   ],
+   "implication": "시장 규모를 인용할 때는 분모(전체 모바일 vs RPG)를 반드시 명시한다."
+  },
+  {
+   "title": "IP 기반 방치형이 한국 최상위를 점령",
+   "body": "메이플 키우기는 출시 45일에 1억 달러, 2026-01~03 국내 월 매출 1위(439·391·452억 원)였다. 세븐나이츠 키우기, 쿠키런 키우기, 스톤에이지 키우기 등 대형 IP의 '키우기' 파생이 이어진다.",
+   "evidence": [
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://www.igaworksblog.com/post/mobilegame-chart-2604",
+    "https://sensortower.com/ko/blog/Seven-Knights-Idle-Adventure-achieved-40M-securing-the-second-spot-in-revenue",
+    "https://www.igaworksblog.com/post/mobilegame-chart-2609-1"
+   ],
+   "implication": "소규모 팀은 IP 없이 경쟁하기 어렵고, 오리지널은 카피바라 Go! 같은 아트·광고 소재 차별화가 필요하다."
+  },
+  {
+   "title": "출시 직후 정점, 이후 빠른 하락",
+   "body": "메이플 키우기 월 매출은 3월 452억 원에서 4월 256억, 9월 176억 원으로 내려갔고 쿠키런 키우기도 출시 한 달 뒤 사용자 순위가 18계단 하락했다. 카피바라 Go! 미국 iOS 주간 매출도 4월 100만 달러에서 6월 말 38.2만 달러로 줄었다.",
+   "evidence": [
+    "https://www.igaworksblog.com/post/mobilegame-chart-2604",
+    "https://www.igaworksblog.com/post/mobilegame-chart-2610",
+    "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb"
+   ],
+   "implication": "출시 초 UA·이벤트 설계와 이후 라이브옵스 수익 곡선을 따로 잡아야 한다."
+  },
+  {
+   "title": "한국과 일본이 방치형 RPG 양대 시장",
+   "body": "2023 일본 방치형 RPG 수익은 2.8억 달러로 세계 24%(1위), 미국 18%, 한국 16%였다. 2025-05 월매출 비중은 일본 17.9%, 한국 17.6%였다. 한국 타이틀은 한국 비중이 67~78%로 쏠려 있고.",
+   "evidence": [
+    "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan",
+    "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue",
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://sensortower.com/ko/blog/stoneage-idle-adventure-reaches-15m-in-cumulative-revenue"
+   ],
+   "implication": "해외 진출 시 일본 아트 취향과 대만 선출시 전략을 검토한다."
+  },
+  {
+   "title": "방치형 이용 시간은 짧고 세션은 잦다",
+   "body": "방치형 RPG 평균 이용은 하루 50.4분·5.2회로 MMORPG(135분·5.4회)의 약 3분의 1이다. 메이플 키우기는 세션 약 12분, 하루 약 7회로 최고 수준이다. 모바일 1회 평균 이용 시간도 2025 주중 57.3분으로 감소했다.",
+   "evidence": [
+    "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent",
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+   ],
+   "implication": "짧은 세션 기준 FTUE와 푸시·오프라인 보상 설계가 핵심이다."
+  },
+  {
+   "title": "자동화 수요가 구조적",
+   "body": "게임 이용률이 71.3%에서 50.2%로 하락하고 미이용 1위 사유가 시간 부족(44.0%)이며, 자동플레이 이용 경험은 29.9%(30대 40.6%)다. 결제 동기 1위는 빠른 레벨업(46.0%)이다.",
+   "evidence": [
+    "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154"
+   ],
+   "implication": "성장 속도 단축 상품이 과금 핵심이며, 시간 절약 가치를 명확히 제시한다."
+  },
+  {
+   "title": "고가 패키지·이중 결제 의존",
+   "body": "메이플 키우기는 $109 팩이 매출 13%+, $219 오퍼가 약 25%, $99.99 초과 오퍼가 최대 약 40%를 차지했다(AppMagic 추정). 월정액은 구매 건수의 3%에 그친다.",
+   "evidence": [
+    "https://appmagic.rocks/blog/MapleStory-Idle-RPG-Success%20"
+   ],
+   "implication": "소수 고액 결제자 의존 구조의 규제·확률 공시 리스크를 함께 본다."
+  },
+  {
+   "title": "Steam·PC 데스크톱 방치 붐",
+   "body": "TBH: Task Bar Hero는 6월 동접 545,349명으로 정점을 찍었으나 9월 월평균은 76,465명으로 줄었다. IdleOn은 2025년 $22M+, CloverPit $15.5M+를 기록했고 최근 idle 신작 D1은 보통 40~70%다. 프리미엄 가격은 대부분 $3~15다.",
+   "evidence": [
+    "https://steamcharts.com/app/3678970",
+    "https://appmagic.rocks/blog/idle-steam-games-2026"
+   ],
+   "implication": "저예산 PC 방치는 바이럴 한 방과 빠른 이탈이 공존한다."
+  },
+  {
+   "title": "글로벌 모바일 idle은 성숙기, 하이브리드·아케이드 idle로 이동",
+   "body": "AppMagic은 모바일 idle 매출이 2022 정점 뒤 2023 중반 둔화되고 4X 등으로 흡수됐다고 본다. 반면 글로벌 상위 100 게임 매출 집중은 2022 51%에서 2025 57%로 커졌고, 다운로드 5위에 Pizza Ready!(아케이드 아이들)가 올랐다.",
+   "evidence": [
+    "https://appmagic.rocks/blog/idle-steam-games-2026",
+    "https://sensortower.com/ko/blog/mobile-games-monetisation-2026-KR",
+    "https://sensortower.com/ko/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026-KR"
+   ],
+   "implication": "신규 방치형은 광고 기반 아케이드 idle과 IAP 기반 idle RPG로 갈린다."
+  },
+  {
+   "title": "광고 수익화·CPI 벤치마크는 공개 데이터 공백이 큼",
+   "body": "한국 방치형 RPG 디지털 광고 노출 비중은 81%(미국 37%)로 광고 의존이 크다. 반면 방치형 실측 ARPDAU, 보상형 시청률, eCPM 최신 수치는 공개 문서에서 확인하지 못했고 일반 가이드(ARPDAU 10~20센트, 시청률 30%)만 있다.",
+   "evidence": [
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-monetization-kpis",
+    "https://tenjin.com/blog/ad-mon-gaming-2026/"
+   ],
+   "implication": "자체 텔레메트리로 ARPDAU·시청률을 측정하고 공개 수치는 참고용으로만 쓴다."
+  }
+ ],
+ "regionNotes": [
+  {
+   "region": "한국",
+   "notes": "2024 국내 게임시장 23조 8,515억 원(+3.9%), 모바일 59.0%. RPG 비중은 2021 67%에서 2024 51.3%로 하락. 방치형은 백서 기준 2020 1.7%→2024 16%(분모 주의)이며 메이플 키우기가 2026-01~03 월 매출 1위. 2026-10-14 App Store 매출 1위도 메이플 키우기. 2026-09 매출 5위(176억 원). 2026-11 귀혼키우기 출시 예정.",
+   "sources": [
+    "https://www.kocca.kr/kocca/bbs/view/B0000146/2011091.do?menuNo=204154",
+    "https://sensortower.com/ko/blog/RPGs-share-of-mobile-game-revenue-in-the-Korean-market-has-fallen-below-50-percent",
+    "https://www.igaworksblog.com/post/mobilegame-chart-2610",
+    "https://itunes.apple.com/kr/rss/topgrossingapplications/limit=100/genre=6014/json"
+   ]
+  },
+  {
+   "region": "일본",
+   "notes": "2023 방치형 RPG 매출 2.8억 달러+로 세계 24%(1위). 放置少女 1억 달러+, ドット勇者 6,500만 달러+. Legend of Mushroom은 일본 출시 4개월 만에 누적 1억 달러. 평균 연령 35세 전후. 放置少女는 2026 App Store 월평균 매출 순위 57~80위권.",
+   "sources": [
+    "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan",
+    "https://sensortower.com/ja/blog/legend-of-mushroom-achieved-100m-dollars-in-japan",
+    "https://appmedia.jp/app_review/5443987"
+   ]
+  },
+  {
+   "region": "대만",
+   "notes": "메이플 키우기 매출 비중 7.1%·다운로드 10.5%, 스톤에이지 키우기 매출 8%. 카피바라 Go!는 출시 첫 달 매출 비중 대만 28.7%. 버섯커 키우기는 대만·홍콩·마카오 선공개. 2026-10-14 대만 App Store 매출 11위 메이플 키우기, 69위 薑餅人放置大戰爭.",
+   "sources": [
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea",
+    "https://sensortower.com/ko/blog/Growing-Mushroom-has-earned-64-million-dollars-in-revenue",
+    "https://itunes.apple.com/kr/rss/topgrossingapplications/limit=100/genre=6014/json"
+   ]
+  },
+  {
+   "region": "미국",
+   "notes": "2023 방치형 RPG 수익 점유율 18%(2위). 카피바라 Go! iOS 주간 매출은 2025 Q2 약 100만 달러 정점. 메이플 키우기 매출 비중 16.6%. 2026-10-14 미국 App Store 매출 상위에 제목상 idle 타이틀 없음. 방치형 RPG 디지털 광고 노출 비중 37%.",
+   "sources": [
+    "https://sensortower.com/ja/blog/mobile-idle-rpg-in-japan",
+    "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+    "https://sensortower.com/ko/blog/maplestory-idle-rpg-surpasses-100-million-in-cumulative-revenue",
+    "https://itunes.apple.com/kr/rss/topgrossingapplications/limit=100/genre=6014/json"
+   ]
+  },
+  {
+   "region": "글로벌·Steam",
+   "notes": "2025 상위 100 게임이 매출의 57%. Steam은 IdleOn $22M+, CloverPit $15.5M+, TBH 동접 545,349. 광고 수익 비중은 Android 55%·iOS 45%(2026 Q2). 센서타워 일본 리포트는 방치형 데이터가 없고, Gamerefinery 월간 리뷰도 방치형을 다루지 않아 해당 데이터는 확인 불가.",
+   "sources": [
+    "https://sensortower.com/ko/blog/mobile-games-monetisation-2026-KR",
+    "https://appmagic.rocks/blog/idle-steam-games-2026",
+    "https://steamcharts.com/app/3678970",
+    "https://tenjin.com/blog/ad-mon-gaming-2026/"
+   ]
+  }
+ ],
+ "summary": [
+  "국내 방치형은 2020년 이후 급성장했다. 백서 표기 '모바일 매출 비중 1.7%→16%'는 센서타워 원문상 분모가 RPG 매출일 가능성이 높아 해석에 주의가 필요하며, 백서 그림 기준 방치형 RPG는 1.6%(2021)→7.1%(2024)다.",
+  "메이플 키우기가 2025-11-06 출시 45일 만에 1억 달러를 벌고 2026-01~03 국내 월 매출 1위(439·391·452억 원)에 올랐으나 4월 256억, 9월 176억 원으로 빠르게 식었다.",
+  "한국과 일본이 방치형 RPG 양대 시장이다(2023 일본 2.8억 달러, 세계 24%). 한국 타이틀은 매출의 67~78%가 한국에서 나온다.",
+  "Steam·PC에서도 TBH: Task Bar Hero가 6월 동접 545,349명으로 정점을 찍었고 9월 월평균은 76,465명으로 줄었다. IdleOn $22M+, CloverPit $15.5M+ 등 저예산 idle의 성공 사례가 있다.",
+  "KPI 벤치마크는 GameAnalytics 2025 데이터(D1 P50 약 22%, D7 4% 미만, D30 0.7%대)와 장르별 RPG 중앙값(D1 약 15%)을 확보했다. 방치형 전용 D1/D7/D30·ARPDAU·보상형 시청률·eCPM 최신치는 공개 출처에서 확인하지 못했다.",
+  "조회 기준일은 2026-10-14이며 센서타워·모바일인덱스·AppMagic 수치는 추정치로 출처마다 정의와 범위가 다르다."
+ ]
+}

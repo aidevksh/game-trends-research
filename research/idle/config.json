@@ -1,0 +1,23 @@
+{
+  "output": "docs/idle-games.html",
+  "data": "docs/idle-report-data.json",
+  "template": "scripts/idle-report-template.html",
+  "categories": [
+    {"id": "kr-major", "file": "kr-major.json", "expectedGames": 10},
+    {"id": "kr-indie", "file": "kr-indie.json", "expectedGames": 10},
+    {"id": "global-rpg", "file": "global-rpg.json", "expectedGames": 10},
+    {"id": "hybrid", "file": "hybrid.json", "expectedGames": 10},
+    {"id": "cozy", "file": "cozy.json", "expectedGames": 10},
+    {"id": "tycoon", "file": "tycoon.json", "expectedGames": 10},
+    {"id": "arcade-idle", "file": "arcade-idle.json", "expectedGames": 10},
+    {"id": "desktop", "file": "desktop.json", "expectedGames": 10},
+    {"id": "incremental", "file": "incremental.json", "expectedGames": 10},
+    {"id": "roblox", "file": "roblox.json", "expectedGames": 10}
+  ],
+  "guides": {
+    "overview": "overview.json",
+    "market": "market.json",
+    "design": "design-guide.json",
+    "build": "build-guide.json"
+  }
+}

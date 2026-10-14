@@ -1,0 +1,2262 @@
+{
+  "id": "cozy",
+  "region": "글로벌",
+  "platformGroup": "모바일",
+  "name": "힐링·컬렉션·라이프 방치 (코지 아이들)",
+  "asOf": "2026-10-14",
+  "scope": "모바일 기반의 힐링·귀여운 수집·꾸미기·생활 루프 중심 방치(코지 아이들)를 다룬다. 전투 중심 방치 RPG, 타이쿤, 아케이드 아이들, 데스크톱 방치, 로블록스는 제외한다.",
+  "selectionBasis": "연구자가 2026-10-14에 스토어·공식 자료로 확인 가능했던 코지 아이들 후보 중 선정한 목록이며 공식 순위가 아니다. 순서는 공식 다운로드 발표·평점 규모·자료 확인 정도와 대표성을 종합한 연구자 판단이다. Pokémon Sleep과 Finch는 방치형 정의 경계 사례로, 접속 루틴 참고용으로 포함했다.",
+  "methodology": [
+    "App Store(US/KR/JP)·Google Play 페이지에서 평점·앱 내 구입 목록·가격·업데이트 노트를 2026-10-14에 수집",
+    "공식 사이트·보도자료·IR(네오위즈 2Q26)·Pocket Gamer 등 매체로 다운로드·이벤트 확인",
+    "Google Play 설치 배지 내부 값은 비공식 참고용이며 공식 다운로드와 혼용하지 않음",
+    "센서타워·AppMagic 등 매출 추정은 검색 한도 소진으로 조회하지 못해 매출은 대부분 미확인",
+    "커뮤니티 위키(고양이와 스프 위키)는 보조 근거로만 사용했고 개별 수치는 출처 표기",
+    "리뷰는 App Store 샘플 소수만 확인해 대표성이 낮음"
+  ],
+  "overview": "코지 아이들은 전투·수치 경쟁 대신 귀여운 캐릭터 수집, 꾸미기, 느린 시간 경과를 핵심 가치로 삼는 방치 하위 장르다. 고양이와 스프는 공식 발표 기준 2024-09 6,000만 다운로드, 2026-04 원작 IP 누적 8,000만을 기록했고 2026년 2분기 해외 매출 비중이 91%라고 네오위즈 IR이 밝혔다. 일본 Hit-Point의 네코아츠메 2는 시리즈 누적 3,300만 다운로드를 내세워 2024-10 출시됐다. Pokémon Sleep은 2026-04 3,000만 다운로드를 공지했고 수면이라는 현실 행동을 방치 구간으로 사용한다. 서비스 연차가 5~10년인 작품(고양이와 스프, Penguin Isle, AbyssRium)도 월 단위 시즌 이벤트로 운영을 이어 간다. 과금은 광고 제거권·소액 재화·시즌 패스·구독 등 소액 다층 구조이며 평점은 App Store 기준 4.5~4.9대로 높다.",
+  "commonalities": [
+    "동물·캐릭터 수집과 꾸미기가 성장의 핵심 동기",
+    "접속 없이도 진행되는 방치 구간과 짧은 체크인 세션",
+    "선택형 보상 광고 + 광고 제거/스킵 상품",
+    "시즌·월 단위 한정 콘텐츠와 복각",
+    "App Store 평점 4.5~4.9의 높은 만족도(스토어 수치)",
+    "낮은 가격대 소액 패키지(약 $0.99~$9.99)가 다수"
+  ],
+  "designPatterns": [
+    {
+      "name": "고양이·동물 수집 + 도감",
+      "detail": "새 시설·방문으로 캐릭터를 늘리고 도감 완성 목표를 제공",
+      "examples": [
+        "고양이와 스프",
+        "네코아츠메 2",
+        "토끼의 섬",
+        "Pokémon Sleep"
+      ]
+    },
+    {
+      "name": "배치 후 대기(관찰형)",
+      "detail": "아이템을 놓고 방문을 기다리는 최소 조작 루프",
+      "examples": [
+        "네코아츠메 2",
+        "여행 개구리"
+      ]
+    },
+    {
+      "name": "현실 행동 연동 시간",
+      "detail": "수면·습관 같은 실제 행동이 진행 동력",
+      "examples": [
+        "Pokémon Sleep",
+        "Finch"
+      ]
+    },
+    {
+      "name": "시즌 시설·테마 월간 운영",
+      "detail": "약 2주~월 단위로 한정 콘텐츠를 공급하고 과거 이벤트를 복각",
+      "examples": [
+        "고양이와 스프",
+        "Penguin Isle",
+        "AbyssRium"
+      ]
+    },
+    {
+      "name": "주기 팝업 보상",
+      "detail": "열기구·병요정·사진 요청 등 3~5분 주기 탭 보상으로 짧은 접속 유도",
+      "examples": [
+        "고양이와 스프"
+      ]
+    },
+    {
+      "name": "서사형 손님 수집",
+      "detail": "손님 편지·사연을 수집하며 감정적 애착 형성",
+      "examples": [
+        "고양이 식탁",
+        "햄스터 여관"
+      ]
+    },
+    {
+      "name": "공간 꾸미기·공유",
+      "detail": "미니룸·정원·섬을 꾸미고 SNS·커뮤니티 보드로 공유",
+      "examples": [
+        "고양이와 스프",
+        "네코아츠메 2",
+        "토끼의 섬"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "광고 제거·스킵 상품",
+      "detail": "7일/30일권, 스킵 토큰, 광고 쿠폰, 팁 단계 상품",
+      "examples": [
+        "고양이와 스프",
+        "Penguin Isle",
+        "토끼의 섬",
+        "고양이 식탁"
+      ]
+    },
+    {
+      "name": "소액 프리미엄 재화",
+      "detail": "$0.99~$5 단계의 젬·진주·금멸치·클로버",
+      "examples": [
+        "네코아츠메 2",
+        "여행 개구리",
+        "AbyssRium"
+      ]
+    },
+    {
+      "name": "패스/구독",
+      "detail": "일일 미션 패스, 프리미엄 패스, 주간 구독, Cat's Club, Finch Plus",
+      "examples": [
+        "고양이와 스프",
+        "Pokémon Sleep",
+        "AbyssRium",
+        "네코아츠메 2",
+        "Finch"
+      ]
+    },
+    {
+      "name": "시즌 한정 패키지·이벤트 패스",
+      "detail": "기간 한정 시설·의상 패키지와 이벤트 패스",
+      "examples": [
+        "Penguin Isle",
+        "고양이와 스프",
+        "고양이 식탁"
+      ]
+    },
+    {
+      "name": "유료 단독 구매/무과금 PC",
+      "detail": "Steam 판은 마이크로트랜잭션 없음",
+      "examples": [
+        "토끼의 섬(Steam 예정)"
+      ]
+    }
+  ],
+  "risks": [
+    "높은 평점의 기존작이 장기간 쌓은 콘텐츠량(시설·고양이·이벤트)을 신작이 따라잡기 어려움",
+    "IP 인지도 의존(Pokémon, 네코아츠메) — 신규 IP는 유입 비용이 큼",
+    "오프라인 보상 상한·광고 의존 구조에 대한 이용자 불만(광고를 봐야 속도가 난다는 리뷰)",
+    "튜토리얼 부족으로 복잡도가 쌓이면 신규 이탈(JP 1점 리뷰)",
+    "낮은 객단가와 매출 데이터 공개 부족으로 사업성 추정 어려움",
+    "센서·건강 연동은 기기·정책 이슈와 의료 오해 위험"
+  ],
+  "pipeline": [
+    {
+      "name": "Usagi Shima: Bunny Island (Steam)",
+      "note": "2026-10-29 출시 예정, 싱글플레이·마이크로트랜잭션 없음(Steam 페이지)"
+    },
+    {
+      "name": "고양이와 스프: 마법의 레시피 (머지)",
+      "note": "2026-04-28 글로벌 정식 출시(App Store KR/JP 표기, US 2025-04-22 표기). 네오위즈 IR 2Q26이 신작 효과 언급"
+    },
+    {
+      "name": "고양이와 스프 IP 신규 프로젝트",
+      "note": "네오위즈 채용 공고: 신규 장르·플랫폼(콘솔·PC 등) 확장 검토"
+    }
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "id": "cats-and-soup",
+      "name": "고양이와 스프",
+      "originalName": "Cats & Soup (Cats&Soup: Relaxing Cozy Games)",
+      "url": "https://apps.apple.com/us/app/id1581431235",
+      "developer": "하이디어(HIDEA, 김동규 대표) — 2021-11 네오위즈 인수, 2026-01 흡수합병(잡코리아 연혁 기재)",
+      "publisher": "NEOWIZ(네오위즈)",
+      "origin": "한국",
+      "release": "2021-09 (한국 App Store 2021-09-16 표기 · Google Play 2021-10-12 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "힐링 방치형 고양이 수집·요리 타이쿤 + 꾸미기",
+      "businessModel": "부분유료(IAP 패키지·광고 제거권·미션 패스·확률형 아이템 포함)+보상형 광고(선택)",
+      "status": "서비스 중 (iOS 5.2.0, 2026-10-01 업데이트)",
+      "description": "숲속에서 고양이들이 스프·주스·볶음을 끓여 파는 방치형 게임으로, 고양이 수집·의상·미니룸 꾸미기와 시즌 이벤트가 결합되어 있다. 출시 5년차인 2026-10에도 약 2주 주기로 업데이트된다.",
+      "coreLoop": [
+        "고양이가 시설에서 요리를 만들고 손님에게 팔아 골드 획득(접속하지 않아도 진행)",
+        "골드로 요리 시설 건설·업그레이드, 레시피 포인트로 레시피 레벨 강화",
+        "새 요리 시설을 지으면 새 고양이 합류, 관측소(Observatory)로 외형·스킬 변경",
+        "열기구·사진 요청·고양이 선물·병요정 등 주기적 팝업을 탭해 골드·재화 획득(선택적으로 광고 시청 보상)",
+        "보석으로 의상·가구·시즌 아이템 수집·꾸미기 → 다음 접속 시 반복"
+      ],
+      "features": [
+        "요리·고양이 소리가 ASMR처럼 구성되고 BGM 재생목록을 직접 고를 수 있음(App Store 설명)",
+        "영구 고양이 66종과 이벤트 한정 고양이 다수(커뮤니티 위키 표기: 영구 66종, 한정 24종)",
+        "시설 약 85종(요리 29·휴식 29·기능 7·특수 10·이벤트 10, 커뮤니티 위키)",
+        "낚시 미니게임, 뽑기(집게) 기계, 고양이 타워·미니룸 꾸미기, 사진 촬영",
+        "미니룸 커뮤니티 보드(배치 업로드/다운로드, Pocket Gamer 2025-12-04)와 고양이 타워 개편·소셜 기능(4.40.0, 2026-07-30)",
+        "한국어 포함 15개 언어 지원(App Store)"
+      ],
+      "progression": [
+        "요리·휴식 시설 레벨(커뮤니티 위키: 최대 레벨 24,000)",
+        "레시피 포인트로 레시피 레벨 상승 → 요리 판매가 상승",
+        "고양이 별(1~5개)·행복도·스킬이 배치 시설의 판매가를 올림(커뮤니티 위키: 별 확률 40/30/20/8/2%)",
+        "컬렉션 보너스(오프라인 시간 +5%, 요리 가격 +10% 등, 커뮤니티 위키)",
+        "시즌별 시설·테마·미니룸 꾸미기 수집"
+      ],
+      "idleMechanics": "오프라인 보상이 존재하며 골드·레시피 포인트의 획득처로 확인됨(커뮤니티 위키 Currencies). 유료 시설 '거대 거북 창고'는 오프라인 보상 시간을 3시간 늘리고, 컬렉션 달성으로 오프라인 시간 +5%가 붙는다(커뮤니티 위키). 기본 최대 누적 시간은 로그에서 미확인. 광고 시청으로 판매 수입 2배, 고양이 선물 3상자 모두 수령 등 가속(Pocket Gamer 가이드 2024-09-18, 위키).",
+      "socialAndLiveOps": [
+        "약 2주 주기 업데이트: 5.2.0(2026-10-01), 5.1.0(2026-09-10), 5.0.0(2026-08-27), 4.41.0(2026-08-13), 4.40.0(2026-07-30), 4.39.0(2026-07-16)(App Store 버전 노트)",
+        "주년·다운로드 달성 이벤트(20M·40M·50M·60M, 1~5주년 출석/한정 고양이)",
+        "IP 협업: 스누피(2022-12), 산리오 시나모롤·폼폼푸린·포차코(2026-04, Pocket Gamer)",
+        "오프라인 IP 행사: 스타필드 하남 10주년 협업(2026-10-03~11, 아이뉴스24 2026-10-01)",
+        "친구 기능(Game Center)·미니룸 커뮤니티 보드"
+      ],
+      "popularityFactors": [
+        "동화풍 일러스트와 ASMR 사운드로 보기만 해도 힐링되는 감성 (해석)",
+        "접속 부담이 낮은 방치 루프와 수집·꾸미기의 결합 (해석)",
+        "광고가 강제되지 않고 선택형이라 거부감이 낮다는 리뷰(US App Store 리뷰)",
+        "약 2주 주기의 시즌 콘텐츠로 재접속 이유를 지속 공급 (해석)",
+        "App Store 4.85~4.88의 높은 평점과 15개 언어 동시 서비스로 해외 비중이 높음(네오위즈 IR 해외 매출 91%)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "무료 다운로드 + 광고 제거권(7일/30일), 일일 미션 패스, 재료 지원 일일 패키지, 시설·친구 패키지, 시즌 한정 패키지 중심의 IAP. 기본 진행은 선택형 보상 광고로 가속하며, 광고 제거·스킵 티켓으로 대체할 수 있다. 확률형 아이템(관측소 등)이 포함되었다고 App Store에 표기된다.",
+        "products": [
+          {
+            "name": "광고 제거 7일권 (Remove Ads 7-Day Pass)",
+            "price": "₩1,100 / $0.99",
+            "contents": "광고 제거(기간제)",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "광고 제거 30일권 (Remove Ads 30-Day Pass)",
+            "price": "₩3,300 / $2.99",
+            "contents": "광고 제거(기간제)",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "일일 미션 패스 (Daily Missions Pass)",
+            "price": "₩15,000 / $11.99",
+            "contents": "구성 미확인(커뮤니티 위키에 상세 페이지 없음)",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "재료 지원 일일 패키지 3 / 2",
+            "price": "₩6,000 / $3.99 (패키지 3), $1.99 (패키지 2, US 목록)",
+            "contents": "일일 재료 지원(상세 미확인)",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "우산 패키지 (Umbrella Package)",
+            "price": "₩1,500 / $0.99",
+            "contents": "위키는 우산 등 'Paid Content'가 수익을 늘린다고 표기(구체 효과 미확인)",
+            "evidence": "App Store 앱 내 구입 목록, 커뮤니티 위키 Currencies"
+          },
+          {
+            "name": "두더지 배달부 패키지 (Mole Deliveryman Package)",
+            "price": "₩14,000 / $8.99",
+            "contents": "상세 미확인",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "펭귄낚시꾼 패키지 (Penguin Angler Package)",
+            "price": "₩7,500 / $4.99",
+            "contents": "상세 미확인",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "고급 선물 해제 (Advanced Gifts)",
+            "price": "₩7,500 / $4.99",
+            "contents": "상세 미확인",
+            "evidence": "App Store KR/US 앱 내 구입 목록"
+          },
+          {
+            "name": "광고 건너뛰기 티켓 20장",
+            "price": "₩1,100 (KR)",
+            "contents": "광고 스킵 티켓 20장",
+            "evidence": "App Store KR 앱 내 구입 목록"
+          },
+          {
+            "name": "GEM 1050",
+            "price": "$4.99 (US)",
+            "contents": "보석 1,050개",
+            "evidence": "App Store US 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "Google Play IAP 가격대 $0.49~$84.99, 광고 포함 표기(2026-10-14 조회)",
+          "App Store 앱 내 구입 10종(KR 원화·US 달러)과 '확률형 아이템 포함' 표기",
+          "보석은 현금 구매 가능, 가구 코인은 보석 교환·유료 패키지로 간접 획득(커뮤니티 위키 Currencies)",
+          "유료 시설 예: 거대 거북 창고(오프라인 보상 +3시간), 요정 나무(레시피 포인트 2배), 얼음 동굴(주스 가격 +50% 영구)(커뮤니티 위키 Facilities)",
+          "작은 트렁크 가게는 전 품목 보석 결제: 의상 500·친구 2,000·특별 방문자 2,500 등(커뮤니티 위키 Little Trunk Shop)"
+        ],
+        "unverified": "개별 상품의 정확한 구성, 일일 미션 패스 보상표, 프리미엄 패스·구독 상품 가격, 관측소 가챠 공시 확률(공식 공시 페이지 미발견)은 확인하지 못했다. Google Play 가격표는 범위만 확인했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 발표 누적: 5M+(2021-12-02), 10M(2022-01-04), 20M(2022-05-24), 40M(2023-04-18), 50M(2023-10-17), 60M(2024-09-13); 원작 IP 글로벌 누적 8,000만 건 돌파(바이라인네트워크 2026-04-29)",
+        "revenue": "게임 단독 매출 공식 수치 미확인. 네오위즈 2Q26 IR 주석: 고양이와스프 해외 매출 비중 91%(2026년 2분기 기준 표기)",
+        "chart": "한국 App Store 시뮬레이션 #144 (2026-10-14 조회)",
+        "rating": "App Store US 4.88(339,548개), KR 4.85(60,466개), JP 4.71, Google Play 4.6(1.77M 리뷰) — 2026-10-14 조회",
+        "ccu": "최고 DAU 120만 이상(네오위즈 2021-12-02 보도자료)",
+        "other": "Google Play 설치 배지 10M+(페이지 내부 추출값 42,972,344, 비공식); 이용자의 90% 이상이 해외(바이라인네트워크 2024-02-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "귀엽고 편안한 분위기, 옷·가구·이벤트로 지루하지 않고 광고가 강제되지 않아 좋다(US App Store 리뷰)",
+          "고양이를 탭하면 실제와 비슷한 다양한 울음소리가 나서 매력적이다(JP App Store 리뷰)"
+        ],
+        "negative": [
+          "광고를 보지 않으면 레벨업 속도 차이가 커서 광고 과다를 부담스러워할 수 있다(JP 리뷰)",
+          "튜토리얼 설명이 부족해 빨간 점 아이콘·선물·타워 사용법을 알기 어렵다(JP 1점 리뷰)",
+          "일부 글리치와 고양이 타워 가구 정렬 옵션 부족(US 리뷰)"
+        ],
+        "basis": "App Store US/JP 리뷰 샘플(2026-10-14 수집). 대표성을 보장하지 않음."
+      },
+      "takeaways": {
+        "borrow": [
+          "선택형 광고 + 기간제 광고 제거권(7일/30일)으로 광고 거부감과 소액 결제를 동시에 설계",
+          "약 2주 단위 시즌 시설·고양이·테마와 소셜 요소(미니룸 보드)로 재접속 이유 공급",
+          "캐릭터 IP를 굿즈·만화·오프라인 행사로 확장(대원미디어 3년 독점 라이선스 2022-07, 만화 4권, 스타필드 협업)"
+        ],
+        "avoid": [
+          "튜토리얼 없이 아이콘·재화가 늘어나 신규 이용자가 길을 잃는 구조",
+          "장기 서비스에서 시설 약 85종·재화 5종 이상으로 복잡도가 누적되는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1581431235",
+          "title": "Cats&Soup: Relaxing Cozy Games - App Store (US)",
+          "type": "스토어",
+          "note": "앱 내 구입 10종·USD 가격, 평점 4.9(약 34만), 5.2.0(2026-10-01) 업데이트 노트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1581431235",
+          "title": "고양이와 스프 - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표, 시뮬레이션 차트 #144, 확률형 아이템 포함 표기, 판매자 NEOWIZ",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.hidea.cat&hl=en_US&gl=US",
+          "title": "Cats&Soup - Google Play",
+          "type": "스토어",
+          "note": "출시 2021-10-12, 설치 배지 10M+, 평점 4.6(1.77M 리뷰), IAP $0.49~$84.99, 광고 포함",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.inews24.com/view/1439340",
+          "title": "네오위즈, '고양이와 스프' 글로벌 다운로드 1천만 돌파 (아이뉴스24, 2022-01-04)",
+          "type": "보도",
+          "note": "정식 출시 5개월 만에 1천만, 일본 구글플레이 3위·미국 4위, 평균 평점 4.8 이상",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://gamedeveloper.com/press-release/catssoup-meows-and-slurps-its-way-to-12m-daily-users",
+          "title": "Cats&Soup press release (2021-12-02)",
+          "type": "공식",
+          "note": "500만 다운로드·DAU 120만 공식 발표",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.com/cats-soup/60m-downloads/",
+          "title": "Cats & Soup hits 60 million downloads (Pocket Gamer, 2024-09-13)",
+          "type": "보도",
+          "note": "누적 6,000만 다운로드, 3주년 이벤트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://cdn.neowiz.com/neowiz-site/assets/ir-library/2Q26_NWZ-IR-PPT_KR_FN-ttfoqm1w.pdf",
+          "title": "네오위즈 2Q26 IR PPT",
+          "type": "공식",
+          "note": "2분기 모바일 매출 532억 원(고양이와 스프 IP 콜라보·마법의 레시피 신작 효과 언급), 고양이와스프 해외 매출 비중 91%",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://byline.network/2022/12/%ea%b3%a0%ec%96%91%ec%9d%b4%ec%99%80-%ec%8a%a4%ed%94%84-%eb%84%a4%ec%98%a4%ec%9c%84%ec%a6%88-%ed%95%98%ec%9d%b4%eb%94%94%ec%96%b4-%ec%bd%98%ed%85%90%ec%b8%a0%eb%8c%80%ec%83%81/",
+          "title": "'고양이와 스프' 네오위즈 하이디어, 콘텐츠대상 대통령표창 (바이라인네트워크, 2022-12-14)",
+          "type": "보도",
+          "note": "김동규 대표 2012년 1인 개발사 설립, 2021-11 네오위즈 자회사 편입, 출시 1년여 만에 3,000만 다운로드",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "pokemon-sleep",
+      "name": "Pokémon Sleep (포켓몬 슬립)",
+      "originalName": "Pokémon Sleep",
+      "url": "https://www.pokemonsleep.net/en/",
+      "developer": "SELECT BUTTON inc.(App Store 저작권 표기)",
+      "publisher": "The Pokémon Company",
+      "origin": "일본",
+      "release": "2023-07-18 (Google Play·한국/대만 App Store 표기, 일본·미국 App Store는 07-19)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "수면 연동 수집·육성 방치 (포함 근거: 시간 경과로 자동 진행되는 수집·육성 루프가 코지 아이들의 접속 루틴 사례로 적합하다고 본 연구자 판단)",
+      "businessModel": "부분유료(프리미엄 패스 1·6개월 + 다이아 + 한정 번들), 광고 없음(Google Play 표기)",
+      "status": "서비스 중 (3.8.3, 2026-10-08)",
+      "description": "기기를 베개 옆에 두고 자면 수면 유형·시간에 따라 포켓몬이 모여 수집·육성되는 앱. 3주년(2026-07)을 지난 현재도 이벤트가 이어진다.",
+      "coreLoop": [
+        "밤에 수면 측정 시작(기기를 베개 옆에 두거나 스마트워치 연동)",
+        "아침에 수면 리포트·모인 포켓몬 확인, 수면 스타일 조사로 도감 등록",
+        "낮 동안 친해진 포켓몬이 가져온 열매로 카비곤을 키움(열매를 먹일수록 희귀 수면 스타일 조우 확률 상승)",
+        "성장 보상으로 포켓몬 육성 → 다음 밤 수면으로 반복"
+      ],
+      "features": [
+        "수면 측정 기반 포켓몬 수집(수면 유형과 수면 시간에 따라 조우)",
+        "카비곤 육성(열매를 먹을수록 희귀 수면 스타일 조우 확률 상승)",
+        "수면 스타일 도감 완성",
+        "수면 리포트·스마트 알람·수면 유도 음악",
+        "Pokémon GO Plus + 등 연동 기기(공식 사이트)",
+        "2026-07-20 3주년 신기능 '낮잠 섬(Munchlax's Nap Island)'"
+      ],
+      "progression": [
+        "카비곤 크기 성장 → 희귀 수면 스타일 확률 증가",
+        "포켓몬 EXP·사탕 육성",
+        "수면 스타일 도감 등록 수(낮잠 섬 해금 조건 35종)",
+        "연구 지역 확장(탐험 지역 연구 이벤트)"
+      ],
+      "idleMechanics": "수면 시간 자체가 방치 구간이다. 낮잠 섬(2026-07-20)은 헬퍼 포켓몬 1마리를 보내 두면 접속하지 않아도 하루 150 EXP, 최대 1년까지 누적되고, 7일 미만 회수 시 EXP가 절반이다. 픽업 상자에 아이템이 최대 30개 쌓인다(공식 공지). 일반 오프라인 누적 상한은 미확인.",
+      "socialAndLiveOps": [
+        "Good Sleep Day·New Moon Day가 번호를 붙여 약 2주 간격(예: Good Sleep Day #39 2026-09-26~29, New Moon Day #18 2026-09-25)",
+        "시즌 이벤트(Summer Festival 2026-07-31), 협업 주간(2026-08-12), 탐험 지역 연구 '뮤츠' 추격(2026-09-03)",
+        "주년 이벤트(1.5·2·2.5·3주년), 3,000만 다운로드 기념 보상(2026-04-27)",
+        "잦은 앱 업데이트(3.8.0~3.8.3, 2026-09-09~10-08)"
+      ],
+      "popularityFactors": [
+        "포켓몬 IP의 인지도와 캐릭터 수집 욕구 (해석)",
+        "반드시 하는 수면 행위에 보상을 붙여 별도 시간 투자 없이 루틴이 형성된다는 평가(JP 리뷰: 해야 하는 일이 오락이 된다)",
+        "아침 수면 리포트·도감으로 기상 시 확인 습관 유도 (해석)",
+        "약 2주 주기의 이벤트 달력으로 접속 동기 유지 (해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "프리미엄 패스(1개월·6개월)와 다이아 6단계, 한정 번들로 구성된다. Google Play에는 광고 없음으로 표기되어 광고 수익 의존도는 낮은 것으로 보인다(해석).",
+        "products": [
+          {
+            "name": "프리미엄 패스 1개월",
+            "price": "$9.99 / ₩12,800 / ¥980",
+            "contents": "혜택 설명은 스토어 설명에 없음(미확인)",
+            "evidence": "App Store US/KR/JP 앱 내 구입 목록"
+          },
+          {
+            "name": "프리미엄 패스 6개월",
+            "price": "$49.99 / ₩64,000 / ¥4,900",
+            "contents": "혜택 미확인",
+            "evidence": "App Store US/KR/JP 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 60개",
+            "price": "$1.19 / ₩1,500 / ¥120",
+            "contents": "다이아 60",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 260개",
+            "price": "$4.79 / ₩6,000 / ¥480",
+            "contents": "다이아 260",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 620개",
+            "price": "$10.99 / ₩13,800 / ¥1,100",
+            "contents": "다이아 620",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 1,500개",
+            "price": "$23.99 / ₩30,000 / ¥2,400",
+            "contents": "다이아 1,500",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 3,100개",
+            "price": "$47.99 / ₩60,500 / ¥4,800",
+            "contents": "다이아 3,100",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "다이아 7,000개",
+            "price": "$97.99 / ₩124,000 / ¥9,800",
+            "contents": "다이아 7,000",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "맛보기(Trial/Taste Sampler) 번들 vol.2·vol.4·vol.6",
+            "price": "$2.99 / ₩3,700 / ¥300",
+            "contents": "번들 구성 미확인",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "Pokémon Growth Bundles Vol.6 S/M/L (다이아 결제)",
+            "price": "250 / 1,200 / 3,000 다이아",
+            "contents": "S: 포케 비스킷3·성장 향1·꿈 클러스터S2 / M: 그레이트 비스킷2·포케 비스킷10·성장 향3·만능 사탕M3 / L: 울트라 비스킷3·그레이트 비스킷10·성장 향4·느긋한 낮잠 티켓1·만능 사탕M4",
+            "evidence": "공식 공지 2026-10-07 (판매 2026-10-11~10-20)"
+          }
+        ],
+        "verified": [
+          "App Store 앱 내 구입 10종 가격(미국·한국·일본)",
+          "Google Play IAP 범위 $1.19~$97.99, 광고 없음 표기",
+          "Growth Bundles Vol.6은 다이아로 결제, 계정당 구매 제한(S 3개·M 1개·L 1개)",
+          "느긋한 낮잠 티켓은 낮잠 섬에서 헬퍼 포켓몬 EXP를 올리는 아이템(공식 공지)"
+        ],
+        "unverified": "프리미엄 패스의 정확한 혜택, 매출 추정치(검색 예산 소진으로 센서타워 등 조회 못 함), 다이아 사용처별 확률 공시는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "전 세계 누적 3,000만 다운로드(공식 공지 2026-04-27)",
+        "rating": "App Store JP 4.5(205,238개), US 4.53(24,739개), KR 4.5(2,573개), Google Play 4.4(136K 리뷰) — 2026-10-14 조회",
+        "chart": "JP App Store 시뮬레이션 #15, KR 시뮬레이션 #30 (2026-10-14 조회)",
+        "revenue": "미확인(추정치 조회 못 함)",
+        "other": "Google Play 설치 배지 10M+(페이지 내부 값 13,464,943은 공식 3,000만과 불일치하여 참고 불가)"
+      },
+      "userFeedback": {
+        "positive": [
+          "해야 하는 수면이 오락이 되어 수면 리듬이 정돈되고 아침이 기다려진다(JP 4점 리뷰)",
+          "아침에 포켓몬 자는 모습을 보는 기쁨, 수면 불안 완화에 도움됐다는 후기(US 5점 리뷰)"
+        ],
+        "negative": [
+          "저가형 기기(iPhone SE2)에서 프리징·발열 우려로 은퇴(JP 3점 리뷰)",
+          "야간 근무자 등 불규칙 수면자에게 부적합하다는 지적(JP 리뷰)",
+          "앱을 게임이 아닌 건강 카테고리로 분류하면 좋겠다는 요청(US 리뷰)"
+        ],
+        "basis": "App Store JP/US 리뷰 샘플(2026-10-14 수집). 대표성 보장 안 됨."
+      },
+      "takeaways": {
+        "borrow": [
+          "현실의 필수 행동(수면)을 방치 루프의 시간 경과로 사용해 접속 루틴을 강제 없이 형성",
+          "주기 이벤트 달력(약 2주)과 도감 완성 목표로 장기 유지",
+          "접속 없이도 쌓이는 상한(1년)·픽업 박스 같은 돌아오면 선물형 보상 설계"
+        ],
+        "avoid": [
+          "센서·배터리 의존 기능의 기기 호환성·발열 이슈",
+          "IP 인지도 없이는 복제하기 어려운 수집 동기 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1579464667",
+          "title": "Pokémon Sleep - App Store (US)",
+          "type": "스토어",
+          "note": "IAP 목록($ 가격), 설명, 개발 SELECT BUTTON 표기, 평점 4.53(24,739)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1579464667",
+          "title": "Pokémon Sleep - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표(프리미엄 패스·다이아), 시뮬레이션 차트 #30",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id1579464667",
+          "title": "Pokémon Sleep - App Store (JP)",
+          "type": "스토어",
+          "note": "엔화 가격표, 평점 4.5(205,238), 시뮬레이션 차트 #15, 사용자 리뷰",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=jp.pokemon.pokemonsleep&hl=en_US&gl=US",
+          "title": "Pokémon Sleep - Google Play",
+          "type": "스토어",
+          "note": "출시 2023-07-18, 평점 4.4(136K 리뷰), IAP $1.19~$97.99, 광고 없음 표기",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pokemonsleep.net/en/news/333931333939353930363437303337393533/",
+          "title": "30 Million Downloads Worldwide! (공식 공지, 2026-04-27)",
+          "type": "공식",
+          "note": "전 세계 3,000만 다운로드 달성 공지와 보상",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pokemonsleep.net/en/news/343231333934393333353535393230383937/",
+          "title": "Third Anniversary Commemorative New Feature: Munchlax's Nap Island (공식, 2026-07-16)",
+          "type": "공식",
+          "note": "낮잠 섬: 하루 150 EXP 자동 적립, 최대 1년 누적, 픽업 상자 30개",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pokemonsleep.net/en/news/343531343533393333353034363932323237/",
+          "title": "Pokémon Growth Bundles Vol. 6 (공식 공지, 2026-10-07)",
+          "type": "공식",
+          "note": "번들 S/M/L 다이아 250/1,200/3,000, 판매 기간·구매 제한",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pokemonsleep.net/en/news/category/event/",
+          "title": "Pokémon Sleep 공식 이벤트 목록",
+          "type": "공식",
+          "note": "Good Sleep Day·New Moon Day 약 2주 간격 주기",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pokemonsleep.net/en/",
+          "title": "Pokémon Sleep 공식 사이트",
+          "type": "공식",
+          "note": "무료+선택적 앱 내 구입, 수면 추적·도감 소개, 최신 뉴스(3.8.3)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "finch",
+      "name": "Finch: Self-Care Pet",
+      "originalName": "Finch: Self-Care Pet",
+      "url": "https://finchcare.com/",
+      "developer": "Finch Care Public Benefit Corporation",
+      "publisher": "Finch Care Public Benefit Corporation",
+      "origin": "미국 추정(Public Benefit Corporation 표기, 소재지는 로그에서 미확인)",
+      "release": "2021-05 (Google Play 2021-05-11 · App Store 2021-05-12 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "셀프케어 습관·감정 일기 + 반려 펫 육성 (포함 근거: 방치형 아닌 일일 체크인형이나, 코지 아이들의 하루 2회 접속 루틴·펫 모험 대기 구조를 공유하는 경계 사례. 연구자 판단)",
+      "businessModel": "무료 + Finch Plus 구독(여러 가격 단계), 광고 없음(Google Play 표기)",
+      "status": "서비스 중 (iOS 3.73.225, 2026-10-10; 거의 매일 패치)",
+      "description": "하루 목표·감정 체크·호흡 등 셀프케어 활동을 하면 반려 펫이 성장하고 모험을 다녀오는 건강 카테고리 앱. 게임 매출 순위가 아닌 헬스 차트에서 평가되는 코지 계열 변종이다.",
+      "coreLoop": [
+        "아침에 기분 체크와 습관·목표 설정으로 펫을 모험에 내보냄",
+        "낮 동안 호흡·일기·퀴즈 등 가벼운 셀프케어 활동 수행",
+        "저녁에 감사 기록으로 마무리하면 펫이 모험에서 돌아와 이야기를 공유",
+        "보상으로 펫을 키우고 꾸밈 → 다음 날 반복"
+      ],
+      "features": [
+        "습관 트래커·감정 일기·호흡·퀴즈·감정 트래커·명언·인사이트(App Store 설명)",
+        "펫 성장과 모험 이야기(스토어 설명)",
+        "Guardian 프로그램(공식 사이트에 링크, 세부 미확인)",
+        "TikTok·Discord·Instagram 커뮤니티 운영(스토어 설명)"
+      ],
+      "progression": [
+        "셀프케어 활동 완료로 펫 성장 및 보상 획득",
+        "펫 꾸미기·모험 진행(세부 재화 체계는 미확인)"
+      ],
+      "idleMechanics": "펫이 모험을 다녀오는 시간 경과형 구조가 있으나 오프라인 누적 상한·가속 수단은 로그에서 미확인.",
+      "socialAndLiveOps": [
+        "거의 매일 빌드 업데이트(3.73.214~3.73.225, 2026-10-01~10-10)",
+        "Discord·TikTok 커뮤니티",
+        "Guardian 프로그램(세부 미확인)"
+      ],
+      "popularityFactors": [
+        "셀프케어를 의무가 아닌 펫 돌봄으로 포장하여 부담을 낮춤(스토어 설명 문구 기반, 해석)",
+        "고평점(App Store 4.95)과 5.0 표기, 500k+ 평점 보유(공식 사이트)",
+        "건강 카테고리 차트 노출(US #16) (해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "무료로 시작하고 Finch Plus 구독을 여러 가격 단계로 판매한다. 광고는 Google Play에 없음으로 표기됐다.",
+        "products": [
+          {
+            "name": "Finch Plus (구독/단계별 가격)",
+            "price": "US App Store 가격 단계: $5.99, $9.99, $34.99, $39.99, $41.99, $59.99, $69.99 / KR: ₩14,000, ₩49,000, ₩50,000, ₩55,000, ₩66,000, ₩88,000, ₩99,000",
+            "contents": "기간별 구성(월/연/평생 등)은 목록에 구분 표기가 없어 미확인",
+            "evidence": "App Store US/KR 앱 내 구입 목록 (상위 10개 표기분)"
+          }
+        ],
+        "verified": [
+          "App Store 앱 내 구입 목록이 모두 'Finch Plus' 항목(가격 단계 다수)",
+          "Google Play IAP 범위 $1.99~$399.99, 광고 없음 표기"
+        ],
+        "unverified": "각 가격 단계의 결제 주기(월/연/평생), 무료/유료 기능 경계, 앱 내 재화(레인보우 스톤 등) 구매 여부, 공식 FAQ(403으로 열람 불가)는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 10M+, 페이지 내부 추출값 16,426,566 — 비공식)",
+        "rating": "App Store US 4.95(763,019개), Google Play 4.9(631K 리뷰) — 2026-10-14 조회",
+        "chart": "US App Store 건강 및 피트니스 #16 (2026-10-14 조회)",
+        "other": "공식 사이트 '500k+ ratings' 표기, 매출 미확인(검색 예산 소진)"
+      },
+      "userFeedback": {
+        "positive": [
+          "감정 일기·습관 앱이 부담스러웠지만 펫을 위해 하게 된다는 사용 후기(스토어 설명에 인용된 리뷰)"
+        ],
+        "negative": [
+          "미확인: 실사용자 부정 리뷰 샘플을 확보하지 못함"
+        ],
+        "basis": "스토어 설명에 개발사가 인용한 리뷰만 확인(홍보성 선별 가능성). 독립 리뷰 분석 아님."
+      },
+      "takeaways": {
+        "borrow": [
+          "하루 2회(아침·저녁) 체크인과 펫 모험 복귀로 접속 루틴 설계",
+          "광고 없이 구독 중심으로 신뢰 형성(구독 가격 단계는 추가 검증 필요)"
+        ],
+        "avoid": [
+          "건강 효능 오해를 부르는 표현(Pokémon Sleep 공식 면책 문구와 같이 의료 목적 아님을 명시하는 사례 참고)",
+          "구독 가격 단계가 너무 많아 혼란을 주는 구성 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/finch-virtual-self-care-pet/id1528595748",
+          "title": "Finch: Self-Care Pet - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.95(763,019), 건강 및 피트니스 차트 #16, Finch Plus 구독 가격 단계, 앱 설명, 버전 3.73.225(2026-10-10)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.finch.finch&hl=en_US&gl=US",
+          "title": "Finch: Self-Care Pet - Google Play",
+          "type": "스토어",
+          "note": "출시 2021-05-11, 평점 4.9(631K 리뷰), IAP $1.99~$399.99, 광고 없음 표기",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1528595748",
+          "title": "Finch: Self-Care Pet - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격 단계(₩14,000~₩99,000 Finch Plus 항목)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://finchcare.com/",
+          "title": "Finch 공식 사이트",
+          "type": "공식",
+          "note": "'500k+ ratings' 표기, Guardian 프로그램 안내, 운영사 Finch Care PBC",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "neko-atsume-2",
+      "name": "네코아츠메 2 (ねこあつめ２)",
+      "originalName": "Neko Atsume 2: Kitty Collector / ねこあつめ２",
+      "url": "https://www.nekoatsume.com/",
+      "developer": "Hit-Point Co., Ltd. (일본 나고야)",
+      "publisher": "Hit-Point Co., Ltd.",
+      "origin": "일본",
+      "release": "2024-10-20 (JST, 보도자료·공식 포털; Google Play는 2024-10-19 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "고양이 방문 수집형 정원 방치(굿즈·간식 배치 후 대기)",
+      "businessModel": "부분유료(금멸치 IAP + Cat's Club 구독 + 광고) — 보도자료에 Free-to-play·IAP·구독·광고 명시",
+      "status": "서비스 중 (iOS 2.34.0, 2026-10-06)",
+      "description": "정원에 장난감과 간식을 놓고 고양이가 오기를 기다리는 네코아츠메의 속편으로, 외출(Going Out)·굿즈 낡음/수리·Cat's Club 구독이 추가됐다.",
+      "coreLoop": [
+        "정원에 굿즈(장난감)와 간식을 배치",
+        "시간이 지나면 고양이가 방문해 놀고 먹음",
+        "고양이 도감(Catbook)에 기록하고 스탬프·재화를 받음",
+        "외출로 다른 이용자 정원을 방문하거나 초대, 새 고양이 조우",
+        "낡은 굿즈를 수리(Fix)하고 재배치하여 반복"
+      ],
+      "features": [
+        "40종 이상의 고양이(공식 설명)",
+        "Going Out: SNS 연동으로 정원 공유, 티켓으로 타인 정원 방문, 하루 1회 스탬프(보도자료)",
+        "굿즈가 고양이 놀이로 낡고 Fix로 새 외형(보도자료)",
+        "Cat's Club(구독): Myneko(좋아하는 고양이 외형의 특별 고양이)와 Helper(간식 보충을 돕는 서포트 고양이)(보도자료)",
+        "스티커북 꾸미기, 인스턴트 카메라·티슈 상자 등 굿즈 상호작용 업데이트(2026-09 노트)"
+      ],
+      "progression": [
+        "고양이 도감 채우기",
+        "굿즈·방 확장(공식 노트: 굿즈·방 추가 업데이트 지속)",
+        "스탬프 교환 보상",
+        "스티커북 Deco 수집(2026-07~10 노트)"
+      ],
+      "idleMechanics": "간식을 채워 두고 고양이가 방문하기를 기다리는 구조. Cat's Club의 Helper가 간식 보충을 대신한다(보도자료). 오프라인 상한·타이머 수치는 로그에서 미확인.",
+      "socialAndLiveOps": [
+        "업데이트가 거의 매주~격주: 2.34.0(2026-10-06), 2.33.0(09-15), 2.32.0(09-08), 2.31.0(09-01), 2.30.0(08-26), 2.29.0(08-19), 2.28.0(08-06), 2.27.0(08-03)",
+        "Ver2.0.0은 2025-10-20 배포(공식 포털)",
+        "정원 공유·초대(URL 포함 공유 개선 2026-09)",
+        "공식 굿즈 온라인 스토어 'あつめラボ'(시리즈 10주년 기념 굿즈, 보도자료)"
+      ],
+      "popularityFactors": [
+        "전작 시리즈 누적 3,300만 다운로드의 인지도(공식 보도자료)",
+        "간단한 두 단계 규칙(굿즈·간식 놓기→기다리기)으로 진입 장벽이 낮음(공식 설명)",
+        "높은 평점(JP 4.75, Google Play 4.8)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "금멸치(프리미엄 재화) IAP, 구독형 Cat's Club, 광고를 병행한다. 정확한 코스 이름은 のんびり/まんぞく/なかよし(US 목록: Leisurely/Satisfactory/Friendly course)이며 구독 코스로 보이나(해석) 구독 여부 표기는 목록에 없다.",
+        "products": [
+          {
+            "name": "금멸치 70개 (70 gold fish)",
+            "price": "$0.99 / ¥160 / ₩1,100",
+            "contents": "금멸치 70",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "금멸치 170개",
+            "price": "$1.99 / ¥320 / ₩3,300",
+            "contents": "금멸치 170",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "금멸치 270개",
+            "price": "$2.99 / ¥480 / ₩4,400",
+            "contents": "금멸치 270",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "금멸치 400개",
+            "price": "$3.99 / ¥650 / ₩6,600",
+            "contents": "금멸치 400",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "のんびりコース (Leisurely course)",
+            "price": "$0.99 / ¥160 / ₩1,100",
+            "contents": "Cat's Club 코스로 추정(해석), 혜택 상세 미확인",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "なかよしコース (Friendly course)",
+            "price": "$1.99 / ¥320 / ₩3,300",
+            "contents": "Cat's Club 코스로 추정(해석)",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "まんぞくコース (Satisfactory course)",
+            "price": "$2.99 / ¥480 / ₩4,400",
+            "contents": "Cat's Club 코스로 추정(해석)",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "おだんご (Dango: Anko/Mitarashi/Three-Color)",
+            "price": "$0.99 / ¥150 / ₩1,100",
+            "contents": "당고 아이템(효과 미확인)",
+            "evidence": "App Store 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "보도자료: Free-to-play, in-app purchases, subscription, and ads",
+          "App Store 앱 내 구입 목록의 금멸치·코스·당고 가격",
+          "Google Play IAP 범위 $0.99~$7.99, 광고 포함 표기"
+        ],
+        "unverified": "Cat's Club 구독의 정확한 가격·주기, 코스와 구독의 관계, 광고 노출 위치와 보상은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "시리즈 누적 3,300만 다운로드(Hit-Point 보도자료 2024-10-04, 본작 단독 수치 아님). 본작 단독 미확인(Google Play 배지 500K+, 페이지 내부 값 636,695 비공식)",
+        "rating": "App Store JP 4.75(16,443개), US 4.74(4,718개), KR 4.77(201개), Google Play 4.8(20K 리뷰) — 2026-10-14 조회",
+        "chart": "JP App Store 시뮬레이션 #149 (2026-10-14 조회)",
+        "revenue": "미확인",
+        "other": "전작 Neko Atsume Google Play 배지 10M+(내부 값 13,652,834, 비공식)"
+      },
+      "userFeedback": {
+        "positive": [
+          "정원이 넓어지고 새 아이템이 많아져 편안하게 즐긴다(JP 5점 리뷰)",
+          "출시 후 UI가 크게 개선됨(굿즈 탭으로 손질, 고양이 길게 눌러 촬영)(JP 4점 리뷰)"
+        ],
+        "negative": [
+          "업데이트 공지에 UI 개선이 거의 적혀 있지 않아 모르는 이용자가 많다(JP 리뷰)",
+          "손질한 굿즈의 외형이 허름하다는 불만(JP 리뷰)"
+        ],
+        "basis": "App Store JP 리뷰 샘플(2026-10-14 수집). 대표성 보장 안 됨."
+      },
+      "takeaways": {
+        "borrow": [
+          "규칙이 한 줄로 설명되는 방치 루프(놓고 기다리기)",
+          "수집 도감과 SNS 공유·방문으로 가벼운 소셜 연결",
+          "구독의 혜택을 접속 편의(보충 도우미)에 둔 설계"
+        ],
+        "avoid": [
+          "굿즈 낡음 같은 마모 메커니즘이 외형 불만으로 이어질 수 있음",
+          "업데이트 노트에 중요한 개선을 적지 않아 이탈 위험"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/jp/app/id6499131935",
+          "title": "ねこあつめ２ - App Store (JP)",
+          "type": "스토어",
+          "note": "평점 4.75(16,443), 시뮬레이션 차트 #149, 앱 내 구입 엔화 가격",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/us/app/id6499131935",
+          "title": "Neko Atsume 2 - App Store (US)",
+          "type": "스토어",
+          "note": "앱 내 구입 USD 가격, 평점 4.74(4,718), 버전 2.34.0(2026-10-06)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=jp.co.hit_point.nekoatsume2&hl=en_US&gl=US",
+          "title": "Neko Atsume 2: Kitty Collector - Google Play",
+          "type": "스토어",
+          "note": "출시 2024-10-19, 평점 4.8(20K 리뷰), IAP $0.99~$7.99, 광고 포함",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "http://www.hit-point.co.jp/press/press_nekoatsume2_en.pdf",
+          "title": "Neko Atsume 2 보도자료 (Hit-Point, 2024-10-04)",
+          "type": "공식",
+          "note": "시리즈 누적 3,300만 다운로드, Free-to-play·IAP·구독·광고, 신기능(외출·낡음/수리·Cat's Club)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.nekoatsume.com/",
+          "title": "ねこあつめ 공식 포털",
+          "type": "공식",
+          "note": "발매 연기(2024-07-29), 2024-10-20 출시, 업데이트 Ver1.2.0~Ver2.34.0(2026-10-06), 공식 굿즈 'あつめラボ'",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.hit-point.co.jp/",
+          "title": "Hit-Point 공식 사이트",
+          "type": "공식",
+          "note": "ねこあつめ２ 2024-10-20 출시 뉴스, 소속 게임 목록",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "tabikaeru",
+      "name": "여행 개구리 (旅かえる)",
+      "originalName": "旅かえる (Tabikaeru)",
+      "url": "http://www.hit-point.co.jp/games/tabikaeru/",
+      "developer": "Hit-Point Co., Ltd.",
+      "publisher": "Hit-Point Co., Ltd.",
+      "origin": "일본",
+      "release": "2017-11 (Android 2017-11-24, iOS 2017-12-07 — Hit-Point 뉴스 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치계(放置系) 여행 대기형: 도시락·도구를 챙겨 보내고 돌아오기를 기다리는 개구리 육성",
+      "businessModel": "부분유료(클로버 IAP)+광고(Google Play 표기)",
+      "status": "서비스 중 (iOS 1.9.2, 2024-05-01 최종 업데이트 표기 / Google Play 최근 갱신 2026-05-26)",
+      "description": "개구리를 여행에 보내고 도시락을 챙겨 주면 엽서와 기념품을 보내오는 방치 게임. 공식 페이지는 방치(放置)계 여행 게임이라고 밝힌다.",
+      "coreLoop": [
+        "도시락·도구를 개구리에게 챙겨 줌",
+        "개구리가 여행을 떠나고 이용자는 대기",
+        "돌아오거나 엽서·사진·기념품을 보내오면 확인",
+        "기념품·가구·음식을 모아 집 꾸미기, 다음 여행 준비 → 반복"
+      ],
+      "features": [
+        "공식 태그라인: 자유분방한 개구리와의 여행(自由気ままなかえると旅を)",
+        "재화 '미츠바 클로버'(クローバー)는 구매 화면에서 구입 가능(공식 페이지)",
+        "iOS 최소 요구 iOS 9→11(1.8.6), Android 4.4→6.0(1.8.5)으로 2023년 중 상향(공식 페이지)",
+        "사용자 리뷰: 귀엽지만 볼륨이 적고 여행 모습을 실시간으로 볼 수 없다"
+      ],
+      "progression": [
+        "여행 장소·기념품 도감 수집(리뷰 기반)",
+        "가구·음식 수집(JP 리뷰: 가구·기념품·음식이 귀엽다)"
+      ],
+      "idleMechanics": "도시락을 챙겨 보내고 돌아오길 기다리는 순수 방치 구조(JP 리뷰). 자세한 시간 상한·가속은 공식 페이지에 없어 미확인.",
+      "socialAndLiveOps": [
+        "공식 페이지에 이벤트·콜라보 기재 없음",
+        "수상: Google Play Best of 2018 인디 대상, Best of 2023 Play Pass 부문",
+        "구매 상태 확인 기능(1.0.6 이후)과 OS 지원 정책 공지 중심의 운영"
+      ],
+      "popularityFactors": [
+        "표정 없고 말이 없는 개구리 캐릭터 덕분에 사진·기념품을 보내올 때의 기쁨이 커진다는 평가(JP 리뷰)",
+        "바쁜 직장인이 짬짬이 즐기기 좋은 가벼움(JP 리뷰)",
+        "Hit-Point의 '...あつめ' 계열 IP 인지도 (해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "클로버(프리미엄 재화) 4단계 구매를 판매한다. Google Play에 광고 포함 표기가 있다.",
+        "products": [
+          {
+            "name": "みつ葉400",
+            "price": "$0.99 / ¥110 / ₩1,100",
+            "contents": "클로버 400",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "みつ葉1000",
+            "price": "$1.99 / ¥220 / ₩3,300",
+            "contents": "클로버 1,000",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "みつ葉1800",
+            "price": "$2.99 / ¥330 / ₩4,400",
+            "contents": "클로버 1,800",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "みつ葉2800",
+            "price": "$3.99 / ¥440 / ₩6,600",
+            "contents": "클로버 2,800",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          }
+        ],
+        "verified": [
+          "클로버 4종 가격(App Store 3개국)",
+          "Google Play IAP 범위 $0.99~$3.49, 광고 포함 표기",
+          "공식 페이지: 무료 다운로드+앱 내 구입"
+        ],
+        "unverified": "광고 위치·보상, 클로버 사용처(구입 외 획득 경로), Google Play 개별 가격표는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 5M+, 페이지 내부 값 5,281,251은 비공식)",
+        "rating": "App Store JP 4.29(14,862개), US 4.41(2,317개), Google Play 4.1(59.8K 리뷰) — 2026-10-14 조회",
+        "chart": "JP App Store 시뮬레이션 #140 (2026-10-14 조회)",
+        "other": "수상: Google Play Best of 2018 인디 대상, Best of 2023 Play Pass 부문(공식)"
+      },
+      "userFeedback": {
+        "positive": [
+          "개구리가 귀엽고, 말을 하지 않아 기념품·사진 도착 때 기쁨이 커진다(JP 5점 리뷰)",
+          "iOS로 즐길 수 있어 기쁘다(JP 5점 리뷰)"
+        ],
+        "negative": [
+          "하는 일이 거의 없고 여행 과정을 실시간으로 볼 수 없어 볼륨을 원하는 사람에게 맞지 않는다(JP 리뷰 자체 평가)"
+        ],
+        "basis": "App Store JP 리뷰 샘플 2건(2026-10-14 수집). 대표성 보장 안 됨."
+      },
+      "takeaways": {
+        "borrow": [
+          "이용자가 하는 일을 최소화하고 돌아왔을 때의 놀람을 보상으로 삼는 설계",
+          "저가 재화 4단계(약 $1~$4) 소액 과금 구조"
+        ],
+        "avoid": [
+          "콘텐츠 볼륨이 적다는 평가로 장기 이탈 위험",
+          "업데이트가 드물면(iOS 마지막 2024-05) 신규 유입 유지가 어렵다 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "http://www.hit-point.co.jp/games/tabikaeru/",
+          "title": "旅かえる - Hit-Point 공식 게임 페이지",
+          "type": "공식",
+          "note": "2017-11 출시, 방치계 여행 게임, 무료+앱 내 구입, 클로버 재화, Google Play Best of 2018 인디 대상·Best of 2023 Play Pass 부문 수상",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id1255032913",
+          "title": "旅かえる - App Store (JP)",
+          "type": "스토어",
+          "note": "평점 4.29(14,862), 시뮬레이션 차트 #140, 앱 내 구입 엔화 가격, 사용자 리뷰",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/us/app/id1255032913",
+          "title": "旅かえる - App Store (US)",
+          "type": "스토어",
+          "note": "앱 내 구입 USD 가격(みつ葉 400~2800), 버전 1.9.2(2024-05-01)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=jp.co.hit_point.tabikaeru&hl=en_US&gl=US",
+          "title": "旅かえる - Google Play",
+          "type": "스토어",
+          "note": "평점 4.1(59.8K 리뷰), IAP $0.99~$3.49, 광고 포함, 설치 배지 5M+",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.hit-point.co.jp/",
+          "title": "Hit-Point 공식 사이트",
+          "type": "공식",
+          "note": "旅かえる 출시일(Android 2017-11-24, iOS 2017-12-07) 뉴스",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "penguin-isle",
+      "name": "펭귄의 섬 (Penguin Isle)",
+      "originalName": "Penguin Isle",
+      "url": "https://apps.apple.com/us/app/id1474314811",
+      "developer": "Habby(App Store 판매자 HABBY PTE. LTD., 저작권 표기 Fantome)",
+      "publisher": "Habby",
+      "origin": "싱가포르 추정(판매자 법인명 PTE. LTD. 기반, 로그에서 명시 확인 안 됨)",
+      "release": "2019-08-26 (App Store·Google Play 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "펭귄 서식지 수집·꾸미기 방치",
+      "businessModel": "부분유료(젬·패키지·이벤트 패스·광고 스킵 토큰)+보상형 광고",
+      "status": "서비스 중 (iOS 1.100.0, 2026-09-30)",
+      "description": "펭귄별 서식지를 만들어 다양한 펭귄을 수집·꾸미는 힐링 방치 게임. 월 단위 시즌 이벤트가 7년째 이어진다.",
+      "coreLoop": [
+        "펭귄이 방치 중 재화 생산",
+        "재화로 서식지 확장·펭귄 구매",
+        "의상·꾸미기 아이템(300종 이상)으로 서식지 꾸미기",
+        "미니게임·이벤트 미션 참여 → 반복"
+      ],
+      "features": [
+        "다양한 펭귄과 북극 동물(Google Play 설명)",
+        "300종 이상의 장식 아이템과 테마",
+        "펭귄 의상 입히기",
+        "미니게임, 파도 소리·잔잔한 음악"
+      ],
+      "progression": [
+        "펭귄·서식지 수집",
+        "이벤트 레벨 보상(Sun and Moon Pass: 이벤트 레벨 25 도달 시 교환)",
+        "2025년 이벤트 복각 재참여"
+      ],
+      "idleMechanics": "방치 게임으로 표기(Google Play: Idle gameplay which helps you relax and heals). 오프라인 상한·수치는 미확인. 광고 스킵 토큰(50개/150개) 상품이 존재.",
+      "socialAndLiveOps": [
+        "월 1회 이벤트: Sun and Moon(1.100.0, 2026-09-30), Sunflower(08-31), Savanna(07-30), Ocean Party(06-29), HipHop(05-30), Kart Rush(04-29)",
+        "전년(2025) 이벤트 복각과 이벤트 보물상자 한정 판매",
+        "이벤트 패스('Sun and Moon Pass') 구매로 모든 이벤트 보상 해금"
+      ],
+      "popularityFactors": [
+        "귀여운 펭귄 수집과 대규모 꾸미기 아이템 풀 (해석)",
+        "월 단위 이벤트와 복각으로 장기 운영",
+        "평점 4.6~4.8, 일본 평가 수 133,352개(App Store JP) 등 일본 시장 반응(수치만 확인)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "젬 패키지·초심자 패키지·한정 패키지·이벤트 패스·광고 스킵 토큰이 확인된다. Google Play IAP 상한이 $99.99로 고가 패키지가 존재한다.",
+        "products": [
+          {
+            "name": "Beginner's Pack / Beginner Boost Package / Limit Package",
+            "price": "각 $0.99 (KR ₩1,100 외 초심자 패키지 ₩17,000 표기 1건)",
+            "contents": "초반 지원 패키지(구성 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입 목록"
+          },
+          {
+            "name": "A Heap of Gems",
+            "price": "$0.99 / ₩1,100",
+            "contents": "젬",
+            "evidence": "App Store US/KR 앱 내 구입 목록"
+          },
+          {
+            "name": "A Bucket of Gems",
+            "price": "$4.99 / ₩7,700",
+            "contents": "젬",
+            "evidence": "App Store US/KR 앱 내 구입 목록"
+          },
+          {
+            "name": "Jeweler Package",
+            "price": "$4.99 / ₩7,700",
+            "contents": "젬 중심 패키지(추정, 상세 미확인)",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "Special Package.",
+            "price": "$3.99 / ₩6,600",
+            "contents": "상세 미확인",
+            "evidence": "App Store 앱 내 구입 목록"
+          },
+          {
+            "name": "Baby Penguin Pack",
+            "price": "$9.99",
+            "contents": "상세 미확인",
+            "evidence": "App Store US 앱 내 구입 목록"
+          },
+          {
+            "name": "50 Ad Skip Tokens",
+            "price": "$2.99",
+            "contents": "광고 스킵 토큰 50",
+            "evidence": "App Store US 앱 내 구입 목록"
+          },
+          {
+            "name": "150 Ad Skip Tokens",
+            "price": "$5.99 / ₩9,900",
+            "contents": "광고 스킵 토큰 150",
+            "evidence": "App Store US/KR 앱 내 구입 목록"
+          },
+          {
+            "name": "Sun and Moon Pass",
+            "price": "가격 미확인",
+            "contents": "이벤트 보상 전체 해금(앱 업데이트 노트)",
+            "evidence": "App Store 1.100.0 업데이트 노트"
+          }
+        ],
+        "verified": [
+          "App Store US/KR 앱 내 구입 목록(상위 10개)",
+          "Google Play IAP $0.99~$99.99, 광고 포함",
+          "이벤트 패스 판매 사실은 업데이트 노트에서 확인(가격은 미확인)"
+        ],
+        "unverified": "이벤트 패스 가격, 일반 패키지 구성, 보상형 광고 위치와 보상, 오프라인 누적 상한은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 10M+, 페이지 내부 값 22,844,169는 비공식)",
+        "rating": "App Store US 4.81(38,587개), JP 4.75(133,352개), KR 4.8(39,748개), TW 4.81, Google Play 4.6(423K 리뷰) — 2026-10-14 조회",
+        "chart": "KR App Store 가족 #57 (2026-10-14 조회)",
+        "revenue": "미확인"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인: 독립 리뷰 본문 샘플을 확보하지 못함(평점 수치만 확인)"
+        ],
+        "negative": [
+          "미확인"
+        ],
+        "basis": "스토어 평점 수치와 업데이트 노트만 사용. 리뷰 본문은 수집하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "월 1회 시즌 이벤트와 전년 이벤트 복각으로 콘텐츠 재활용",
+          "이벤트 패스를 일반 패키지와 분리해 시즌 단위 과금"
+        ],
+        "avoid": [
+          "패키지 이름이 모호(Special Package. 등)하여 이용자가 가치를 파악하기 어려움 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1474314811",
+          "title": "Penguin Isle - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.81(38,587), 앱 내 구입 10종(USD), 버전 1.100.0(2026-09-30)과 이벤트 노트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1474314811",
+          "title": "펭귄의 섬 - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표, 가족 차트 #57",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.fantome.penguinisle&hl=en_US&gl=US",
+          "title": "Penguin Isle - Google Play",
+          "type": "스토어",
+          "note": "출시 2019-08-26, 평점 4.6(423K 리뷰), IAP $0.99~$99.99, 광고 포함",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.habby.com/",
+          "title": "Habby 공식 사이트",
+          "type": "공식",
+          "note": "Penguin Isle을 Habby 게임 목록에 링크(웹 번들에서 확인)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "abyssrium",
+      "name": "탭탭피쉬 어비스리움 (Tap Tap Fish - AbyssRium)",
+      "originalName": "Tap Tap Fish - AbyssRium (어비스리움)",
+      "url": "https://www.abyssrium.com",
+      "developer": "Wemade Connect(Google Play 개발자·공식 사이트 저작권 표기; App Store 판매자는 SangHeon Kim)",
+      "publisher": "Wemade Connect",
+      "origin": "한국(Wemade Connect, 공식 사이트 한국어 지원·한국어 App Store 판매자 확인; 국적 명시 문구는 로그에 없음)",
+      "release": "2016-07 (Google Play 2016-07-07 · App Store 2016-07-15 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "수족관 키우기 방치(힐링 클리커) + 컬렉션",
+      "businessModel": "부분유료(IAP 패키지·진주/젬·주간 구독·광고 제거/자동 수확)+보상형 광고",
+      "status": "서비스 중 (iOS 2.0.3, 2026-10-06; 출시 10주년 이벤트 2026-07)",
+      "description": "외로운 산호석을 키워 물고기 친구를 부르고 심해 수족관을 꾸미는 방치형 힐링 게임. 공식 사이트는 전 세계 6,000만 다운로드를 내세운다.",
+      "coreLoop": [
+        "산호가 하트를 생산(레벨업 시 같은 시간에 더 많은 하트)",
+        "하트로 새 물고기·친구 영입",
+        "수족관 확장·장식 배치",
+        "수집·공유 → 다시 접속해 하트 수확"
+      ],
+      "features": [
+        "물고기·고래·육지 동물 친구(코기 등) 수집, 모든 일반 물고기를 모으면 '1000년 푸른 고래' 등장(공식 사이트)",
+        "미스터리 상자·럭키 버블·미스터리 알 등 깜짝 보상(Play 설명)",
+        "VR 모드(Play 설명)",
+        "잔잔한 BGM·다양한 수족관 테마(Play 설명)",
+        "시리즈: Abyssrium The Classic(2024-06), Pole(제작 중), Origin(블록체인/NFT 컨셉, 제작 중 표기)(공식 사이트)"
+      ],
+      "progression": [
+        "코랄 레벨",
+        "물고기 친구 도감",
+        "수족관 확장(익스텐션 미션으로 8종 확장 획득, 2026-10 노트)",
+        "시즌 이벤트 물고기"
+      ],
+      "idleMechanics": "탭·방치로 수족관이 자란다는 방치 클리커(Play 설명). 자동 수확 구매 상품(Auto Harvest $0.99)이 있어 수동 수확 요소가 존재함을 시사한다. 오프라인 상한은 미확인.",
+      "socialAndLiveOps": [
+        "월 단위 이벤트 업데이트: 2.0.1(2026-10-01 할로윈), 1.99.0(2026-09-01 박물관), 1.98.0(2026-08-06 머지 이벤트), 1.97.0(2026-07-02 10주년 생일 이벤트)",
+        "그림 대회·행운 카드·콘 마블 등 미니 이벤트",
+        "1주년 이벤트 팩 등 기간 한정 패키지"
+      ],
+      "popularityFactors": [
+        "출시 10년차에도 이벤트를 이어 가는 장기 운영",
+        "수족관·고래 등 직관적인 힐링 테마 (해석)",
+        "공식 6,000만 다운로드 표기(공식 사이트)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "진주·젬 소액 패키지와 단계별 팩, 주간 구독, 자동 수확·광고 제거류 상품이 병행된다. Google Play IAP 상한 $99.99. 광고 시청 미션·업적이 있다(업데이트 노트).",
+        "products": [
+          {
+            "name": "Super Sale Package / 슈퍼 세일 팩",
+            "price": "$0.99 / ₩1,100",
+            "contents": "상세 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Auto Harvest / 농장 자동 수확",
+            "price": "$0.99 / ₩1,100",
+            "contents": "자동 수확(상품명 기준)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Beginner Package / 초심자 팩",
+            "price": "$4.99 / ₩7,700",
+            "contents": "상세 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Junior Pack(중급자 팩)",
+            "price": "$9.99 (US)",
+            "contents": "상세 미확인",
+            "evidence": "App Store US 앱 내 구입"
+          },
+          {
+            "name": "Weekly Subscription (1 week) / 주간 이용권",
+            "price": "$7.99 / ₩11,000",
+            "contents": "혜택 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "100 Gems / 550 Gems",
+            "price": "$0.99 / $4.99",
+            "contents": "젬",
+            "evidence": "App Store US 앱 내 구입"
+          },
+          {
+            "name": "200 Pearls / 400 Pearls",
+            "price": "$4.99 / ₩7,700 (200개)",
+            "contents": "진주",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Daily Pearl Pack / 데일리 진주팩",
+            "price": "$9.99 / ₩17,000",
+            "contents": "일일 진주(구성 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "마이다스 탭 / 1주년 이벤트 팩 / 상급자 팩 (KR)",
+            "price": "₩17,000 / ₩19,000 / ₩21,000",
+            "contents": "상세 미확인",
+            "evidence": "App Store KR 앱 내 구입"
+          }
+        ],
+        "verified": [
+          "App Store US/KR 앱 내 구입 목록(US 10종, KR 10종)",
+          "주간 구독 상품 존재",
+          "Google Play IAP $0.99~$99.99, 광고 포함",
+          "업데이트 노트: 광고 제거 오류·광고 시청 미션·광고 업적 언급(2026-09)"
+        ],
+        "unverified": "구독·팩 구성의 정확한 내용, 광고 보상, 확률형 요소의 공시 여부는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "전 세계 6,000만 다운로드(공식 사이트 표기, 날짜 미표기). Google Play 배지 10M+(내부 값 16,724,967은 비공식)",
+        "rating": "App Store US 4.48(24,168개), KR 4.28(8,465개), JP 4.15(37,488개), Google Play 3.9(380K 리뷰) — 2026-10-14 조회",
+        "chart": "KR App Store 전략 #158 (2026-10-14 조회)",
+        "revenue": "미확인"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인: 리뷰 본문 샘플 미수집"
+        ],
+        "negative": [
+          "미확인"
+        ],
+        "basis": "스토어 평점 수치만 확인. Google Play 평점 3.9로 코지 계열 중 낮은 편이나 원인은 미확인."
+      },
+      "takeaways": {
+        "borrow": [
+          "산호(핵심 오브젝트) 하나를 키우는 단순한 방치 구조와 장기 이벤트 운영",
+          "자동 수확·주간 구독 같은 편의 중심 과금"
+        ],
+        "avoid": [
+          "블록체인/NFT 컨셉(Origin) 같은 비핵심 확장은 코지 이용자 기대와 어긋날 수 있음 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://www.abyssrium.com",
+          "title": "Abyssrium 공식 사이트 (Wemade Connect)",
+          "type": "공식",
+          "note": "'전 세계 6,000만 다운로드' 표기, 시리즈 구성(Classic·Pole·Origin), 코랄 하트 생산 구조 설명",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/us/app/id1068366937",
+          "title": "Tap Tap Fish - AbyssRium - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.48(24,168), 앱 내 구입 10종(주간 구독 포함), 버전 2.0.3(2026-10-06)과 이벤트 노트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1068366937",
+          "title": "어비스리움 - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표(초심자 팩·주간 이용권·마이다스 탭 등), 전략 차트 #158",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.idleif.abyssrium&hl=en_US&gl=US",
+          "title": "Tap Tap Fish AbyssRium (+VR) - Google Play",
+          "type": "스토어",
+          "note": "출시 2016-07-07, 평점 3.9(380K 리뷰), IAP $0.99~$99.99, 광고 포함, 개발 Wemade Connect",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "usagi-shima",
+      "name": "토끼의 섬 (Usagi Shima)",
+      "originalName": "Usagi Shima: Cute Bunny Game (うさぎしま)",
+      "url": "https://usagishima.net/",
+      "developer": "studio rabbiko G.K.",
+      "publisher": "studio rabbiko (Steam 판은 Wholesome Games Presents 공동 표기)",
+      "origin": "일본 추정(합동회사 G.K.·info@rabbiko.co.jp 연락처 기반, 로그에서 국가 명시 확인 안 됨)",
+      "release": "2023-08-31 (Google Play) · 2023-09-01 (App Store); Steam 판 2026-10-29 출시 예정",
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC(Steam, 출시 예정)"
+      ],
+      "subgenre": "토끼 수집·섬 꾸미기 방치",
+      "businessModel": "모바일: 무료+소액 IAP·광고 제거 팁·광고 / Steam: 마이크로트랜잭션 없음",
+      "status": "서비스 중 (모바일 1.9.2, 2026-03-25) / Steam 출시 예정",
+      "description": "버려진 섬을 토끼 낙원으로 만드는 힐링 방치 게임. 쓰다듬기·브러시·숨바꼭질, 사진 앨범, 실시간 낮밤 동기화가 특징이다.",
+      "coreLoop": [
+        "섬에 장난감·식물·건물을 배치해 토끼를 유인",
+        "방문한 토끼를 쓰다듬기·먹이 주기·브러시·숨바꼭질로 친밀도 상승",
+        "친해지면 기념 선물을 받고 섬에 초대",
+        "사진 촬영·앨범 수집 → 다시 꾸미기"
+      ],
+      "features": [
+        "30종 이상(Steam 35종 이상) 토끼, 각자 좋아하는 아이템",
+        "100종 이상 장식(상호작용 가능한 것 포함)",
+        "사진 앨범·배경화면 저장",
+        "실시간 시간대와 동기화되는 낮밤 분위기",
+        "오프라인 무료 플레이(스토어 문구), Steam 판은 스크린세이버 모드",
+        "손그림 전통 애니메이션 스타일"
+      ],
+      "progression": [
+        "토끼 도감·친밀도",
+        "섬 확장·인벤토리 확장(IAP 상품으로도 판매)",
+        "건물·상점 설치"
+      ],
+      "idleMechanics": "'시간 제한 없이 느긋한 방치(no time limits)'를 표방. 다만 JP 리뷰는 쓰다듬기·브러시 등 작업이 많아 완전 방치는 아니라고 평가했다.",
+      "socialAndLiveOps": [
+        "업데이트 주기: 마지막 1.9.2(2026-03-25) — 최근 빈도 낮음",
+        "Steam 판 'Wholesome Games Presents' 공동 퍼블리싱, 2026-10-29 출시 예정",
+        "굿즈 판매(rabbica 스토어, The Yetee)"
+      ],
+      "popularityFactors": [
+        "일본 '고양이 모으기' 감성의 토끼 버전과 손그림 비주얼 (해석)",
+        "강제 광고 없고 가격이 양심적이라는 JP 리뷰",
+        "App Store US 4.87 등 높은 평점"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "당근(일반 재화)·황금 당근(프리미엄) 패키지, 섬/인벤토리 확장, 스타터 팩, 광고 제거 '팁' 상품(커피·샌드위치·피자 단계)으로 구성된다. JP 리뷰에 따르면 광고를 강제로 보게 하는 구조는 없다.",
+        "products": [
+          {
+            "name": "Remove Ads - Coffee Tip",
+            "price": "$4.99 / ¥800 / ₩7,700",
+            "contents": "광고 제거(상품명 기준)",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "Remove Ads - Sandwich Tip",
+            "price": "$6.99 / ¥1,100 / ₩11,000",
+            "contents": "광고 제거",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "Remove Ads - Pizza Tip",
+            "price": "¥2,000 / ₩22,000",
+            "contents": "광고 제거",
+            "evidence": "App Store JP/KR 앱 내 구입"
+          },
+          {
+            "name": "Starter Pack",
+            "price": "$4.99 / ₩7,700",
+            "contents": "상세 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Island Expansion / Expansion Bundle",
+            "price": "$4.99 / $5.99 (JP ¥800 / ¥1,000)",
+            "contents": "섬 확장",
+            "evidence": "App Store US/JP 앱 내 구입"
+          },
+          {
+            "name": "Inventory Expansion",
+            "price": "$1.99 / ¥300 / ₩3,300",
+            "contents": "인벤토리 확장",
+            "evidence": "App Store US/JP/KR 앱 내 구입"
+          },
+          {
+            "name": "1000 carrots / 3000 carrots",
+            "price": "$1.99 / $2.99",
+            "contents": "당근",
+            "evidence": "App Store US 앱 내 구입"
+          },
+          {
+            "name": "20 gold carrots / 50 gold carrots",
+            "price": "$2.99 / $4.99",
+            "contents": "황금 당근",
+            "evidence": "App Store US 앱 내 구입"
+          }
+        ],
+        "verified": [
+          "App Store US/JP/KR 앱 내 구입 목록",
+          "Google Play IAP $1.29~$12.99, 광고 포함",
+          "Steam 판은 마이크로트랜잭션 없음(스토어 문구)"
+        ],
+        "unverified": "광고 노출 위치·보상, Steam 판 가격(미표기), 다운로드 공식 수치는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 1M+, 내부 값 2,914,789는 비공식)",
+        "rating": "App Store US 4.87(2,697개), JP 4.78(744개), KR 4.84(341개), Google Play 4.6(16.4K 리뷰) — 2026-10-14 조회",
+        "other": "Steam: 큐레이터 13곳 리뷰, 사용자 리뷰 없음(2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "광고를 강제로 보게 하는 시스템이 없고 100엔대 결제로 당근 1,000개를 받는 등 가격이 양심적(JP 5점 리뷰)",
+          "토끼를 쓰다듬고 섬을 꾸밀 수 있어 느긋하다(JP 5점 리뷰)"
+        ],
+        "negative": [
+          "쓰다듬기·브러시·숨바꼭질 등 작업이 많아 완전 방치가 아니다(JP 2점 리뷰)",
+          "배치 가능한 굿즈·건물이 일본풍 콘셉트와 어긋난다는 지적(JP 2점 리뷰)"
+        ],
+        "basis": "App Store JP 리뷰 샘플(2026-10-14 수집). 대표성 보장 안 됨."
+      },
+      "takeaways": {
+        "borrow": [
+          "모바일 무료+Steam 단독 구매(마이크로트랜잭션 없음) 듀얼 전략",
+          "광고 제거를 팁(커피·샌드위치·피자) 단계로 포장한 기부형 과금"
+        ],
+        "avoid": [
+          "방치형 표방과 실제 조작량의 불일치",
+          "모바일·PC 동시 운영 시 업데이트 주기 저하 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://usagishima.net/",
+          "title": "Usagi Shima 공식 사이트",
+          "type": "공식",
+          "note": "Steam 위시리스트 안내, 스토어 링크, 데브로그, 굿즈 스토어",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://store.steampowered.com/app/3144010/",
+          "title": "Usagi Shima: Bunny Island - Steam",
+          "type": "스토어",
+          "note": "출시 예정 2026-10-29, 싱글플레이·마이크로트랜잭션 없음, 35종 이상 토끼, 퍼블리셔 studio rabbiko·Wholesome Games Presents",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/us/app/usagi-shima/id1632728038",
+          "title": "Usagi Shima - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.87(2,697), 앱 내 구입 10종(USD), 버전 1.9.2(2026-03-25)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id1632728038",
+          "title": "うさぎしま - App Store (JP)",
+          "type": "스토어",
+          "note": "엔화 가격표, 사용자 리뷰",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.pank0.usagishima&hl=en_US&gl=US",
+          "title": "Usagi Shima - Google Play",
+          "type": "스토어",
+          "note": "출시 2023-08-31, 평점 4.6(16.4K 리뷰), IAP $1.29~$12.99, 광고 포함, 30종 이상 토끼",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "hamster-inn",
+      "name": "햄스터 여관 (Hamster Inn)",
+      "originalName": "Hamster Inn",
+      "url": "https://apps.apple.com/us/app/id6445921415",
+      "developer": "HyperBeard Inc.",
+      "publisher": "HyperBeard Inc.",
+      "origin": "멕시코(공식 사이트: 멕시코 최대 모바일 게임 개발·퍼블리셔 표기)",
+      "release": "2024-04 (Google Play 2024-04-09 · App Store 2024-04-12 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "동물 여관 경영 방치 + 장식 수집",
+      "businessModel": "부분유료(씨앗·젬·티켓 IAP + 스타터/시즌 세트)+광고",
+      "status": "서비스 중 (iOS 1.16.1, 2026-08-29)",
+      "description": "햄스터 손님을 받아 여관을 키우고 꾸미는 귀여운 경영 방치 게임. 평판 점수가 오를수록 새 방과 기능이 열린다.",
+      "coreLoop": [
+        "다양한 햄스터 손님이 체크인",
+        "요구(식사·침대 등)에 반응해 평판 포인트 획득",
+        "씨앗 재화로 방 확장·직원 고용·장식 구매",
+        "귀여운 순간을 사진으로 남기고 컬렉션 자랑 → 반복"
+      ],
+      "features": [
+        "여행자 음악가·출장 햄스터 등 손님 다양화",
+        "평판이 오르면 새 방·기능 해금",
+        "직원(청소부·요리사 등) 고용",
+        "장식 수집·사진 촬영·친구에게 자랑",
+        "잔잔한 음악의 방치 플레이(Google Play 설명)"
+      ],
+      "progression": [
+        "평판 포인트로 방·기능 해금",
+        "객실 확장·직원",
+        "장식 도감"
+      ],
+      "idleMechanics": "'Idle & Relax'를 표방(Google Play 설명). 오프라인 누적 시간·보상 수치는 미확인.",
+      "socialAndLiveOps": [
+        "업데이트 1.16.1(2026-08-29)까지 지속(App Store)",
+        "HyperBeard 자사 크로스 프로모션 네트워크(자매작 Pocket Love 앱 노트에 Tsuki 협업 이벤트 2026-05 기재)",
+        "시즌 세트 판매(Sweet Set, Spring Set)"
+      ],
+      "popularityFactors": [
+        "동물 의인화와 여관 경영의 직관적 콘셉트 (해석)",
+        "HyperBeard의 크로스 프로모션 네트워크 (해석)",
+        "평점 App Store US 4.80, Google Play 4.6"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "씨앗(일반 재화) 4단계, 젬·티켓 소액 팩, 스타터·리차저 팩, 시즌 세트(최대 $9.99~)가 확인된다. Google Play IAP 상한은 $19.99로 고가 상품 비중은 낮다.",
+        "products": [
+          {
+            "name": "Starter Pack",
+            "price": "$3.99 / ₩6,600",
+            "contents": "상세 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Recharger Pack",
+            "price": "$2.99 / ₩4,400",
+            "contents": "상세 미확인",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "씨앗 팩: 40k / 80k / 150k / 300k Seeds",
+            "price": "$0.99 / $0.99 / $2.99 / $2.99 (KR: 40k·80k ₩1,100, 300k ₩4,400)",
+            "contents": "씨앗(일반 재화)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "20 Gems Pack / 100 Gems Pack",
+            "price": "$1.99 / $7.99 (KR 20 Gems ₩3,300)",
+            "contents": "젬",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "24 Tickets Pack / 10 Tickets Pack",
+            "price": "$1.99 (KR 24 Tickets ₩3,300, 10 Tickets ₩1,100)",
+            "contents": "티켓",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Sweet Set / Spring Set",
+            "price": "$9.99 (Sweet Set) / ₩17,000 (Sweet Set, Spring Set KR)",
+            "contents": "시즌 세트(상세 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          }
+        ],
+        "verified": [
+          "App Store US/KR 앱 내 구입 목록",
+          "Google Play IAP $0.99~$19.99, 광고 포함"
+        ],
+        "unverified": "젬·티켓 사용처, 광고 보상 위치, 확률형 요소 여부는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 5M+, 내부 값 7,849,673은 비공식). HyperBeard 전체 2억 다운로드 이상은 회사 주장",
+        "rating": "App Store US 4.80(6,723개), KR 4.71(139개), JP 4.35(153개), Google Play 4.6(73K 리뷰) — 2026-10-14 조회",
+        "chart": "US App Store 퀴즈 #150, KR 퀴즈 #55 (2026-10-14 조회, 카테고리가 퀴즈로 분류됨)",
+        "revenue": "미확인"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인: 리뷰 본문 샘플 미수집(평점 수치만 확인)"
+        ],
+        "negative": [
+          "미확인"
+        ],
+        "basis": "스토어 평점 수치만 확인. 리뷰 본문 미수집."
+      },
+      "takeaways": {
+        "borrow": [
+          "동물 의인화 + 경영 테마를 방치에 결합하고 평판으로 해금 속도를 조절",
+          "소액 팩 중심 가격대($0.99~$19.99)"
+        ],
+        "avoid": [
+          "스토어 카테고리가 퀴즈/가족으로 분류되어 차트 비교가 어려운 점 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6445921415",
+          "title": "Hamster Inn - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.80(6,723), 앱 내 구입 10종(USD), 버전 1.16.1(2026-08-29)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id6445921415",
+          "title": "햄스터 여관 - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표, 퀴즈 차트 #55",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.hyperbeard.hamsterinn&hl=en_US&gl=US",
+          "title": "Hamster Inn - Google Play",
+          "type": "스토어",
+          "note": "출시 2024-04-09, 평점 4.6(73K 리뷰), IAP $0.99~$19.99, 광고 포함, 설명(여관 경영·방치)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.hyperbeard.com/",
+          "title": "HyperBeard 공식 사이트",
+          "type": "공식",
+          "note": "멕시코 최대 모바일 게임 개발·퍼블리셔 표기, 전 세계 2억 다운로드 이상 주장, cute-casual 지향",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "animal-restaurant",
+      "name": "고양이 식탁 (Animal Restaurant)",
+      "originalName": "Animal Restaurant (App Store US: animal restaurant / JP: ねこレストラン)",
+      "url": "https://apps.apple.com/us/app/id1460564684",
+      "developer": "Chengdu Zhuojin Information Technology Co., Ltd.(App Store 판매자) / DH-Publisher(Google Play) — 저작권 표기 Droidhang Inc 2016",
+      "publisher": "DH-Publisher (Droidhang)",
+      "origin": "중국 추정(판매자 법인명 Chengdu 기반, 로그에서 명시 확인 안 됨)",
+      "release": "2019-09 (Google Play 2019-09-11 · App Store 2019-09-18 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "고양이 직원 식당 경영 방치 + 손님 스토리 수집",
+      "businessModel": "부분유료(다이아·패키지·광고 쿠폰)+보상형 광고",
+      "status": "서비스 중 (iOS 12.32, 2026-09-22)",
+      "description": "숲에서 만난 길고양이를 직원으로 식당을 키우는 힐링 경영 게임. 손님과 대화·편지로 이야기를 모으는 서사가 특징이다.",
+      "coreLoop": [
+        "길고양이를 직원으로 식당 운영",
+        "레시피를 배우고 가구·시설 설치",
+        "손님 방문·대화·편지 수집",
+        "추억(mementos)·영화 등 콘텐츠 해금 → 반복"
+      ],
+      "features": [
+        "타이야키·딸기 팬케이크·빙수·스파게티 등 다양한 레시피(Play 설명)",
+        "유럽풍·일본풍·지중해풍 가구, 앨리스 테마 정원 티파티",
+        "랙돌·태비·오렌지 고양이 직원",
+        "손님 이야기(비밀·소문·감동 사연), 편지·영화 콘텐츠",
+        "동영상 광고 사용(Play 안내문)"
+      ],
+      "progression": [
+        "식당 시설·정원·테라스·채소밭 등 시리즈 시설 수집",
+        "손님·편지·추억·영화 수집",
+        "직원 의상·펫 액세서리"
+      ],
+      "idleMechanics": "방치 상세는 로그에서 미확인(Play 설명은 관리 시뮬레이션으로 표기). 광고 쿠폰 상품(Value/Luxurious Ad Coupon)이 존재.",
+      "socialAndLiveOps": [
+        "약 3~6주 간격 업데이트: 12.32(2026-09-22), 12.31(09-07), 12.30(08-11), 12.29(07-02), 12.28(05-20), 12.27(05-14)",
+        "기념일 이벤트(2026-09-23~10-08), 중추절 시설 한정 판매(~2026-11-12)",
+        "신규 손님·편지·레시피·의상 지속 추가(버전 노트)"
+      ],
+      "popularityFactors": [
+        "스토리형 손님 편지로 캐릭터 애착 형성 (해석)",
+        "7년 장기 서비스와 높은 평점(App Store US 4.85)",
+        "시리즈 시설 한정 판매의 수집 욕구 (해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "다이아 6단계(최대 $29.99), 일일 팩·초심자 팩, 광고 쿠폰, 코드(Cod, 재화) 대량 팩이 확인된다. 광고 쿠폰으로 광고 노출을 줄이는 구조로 보인다(상품명 기준).",
+        "products": [
+          {
+            "name": "Novice Pack",
+            "price": "$1.99 / ₩3,300",
+            "contents": "초반 팩(상세 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Daily Pack",
+            "price": "$4.99 / ₩7,700",
+            "contents": "일일 팩(상세 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Diamond goods 1~6",
+            "price": "$0.99 / $1.99 / $3.99 / $7.99 / $14.99 / $29.99",
+            "contents": "다이아(KR 1번 ₩1,100, 4번 ₩12,000)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Value Ad Coupon / Luxurious Ad Coupon",
+            "price": "₩1,100 / $3.99(₩6,600)",
+            "contents": "광고 쿠폰(상세 미확인)",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Super Diamondbags Pack / Diamondbags Pack",
+            "price": "$8.99(₩15,000) / ₩4,400",
+            "contents": "다이아 묶음",
+            "evidence": "App Store US/KR 앱 내 구입"
+          },
+          {
+            "name": "Cod x200,000 / Cod x1,000,000 (KR)",
+            "price": "₩1,100 / ₩6,600",
+            "contents": "코드(Cod) 재화 대량",
+            "evidence": "App Store KR 앱 내 구입"
+          }
+        ],
+        "verified": [
+          "App Store US/KR 앱 내 구입 목록",
+          "Google Play IAP $0.99~$30.99, 광고 포함, 동영상 광고 관련 권한 안내"
+        ],
+        "unverified": "방치 보상 상한, 광고 위치·보상, 확률형 요소 여부, 가챠 공시는 확인하지 못했다(위키 열람 불가 402).",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "공식 수치 미확인(Google Play 배지 10M+, 내부 값 22,217,955는 비공식)",
+        "rating": "App Store US 4.85(167,882개), KR 4.65(19,147개), JP 4.58(23,553개), TW 4.71(36,152개), Google Play 4.7(690K 리뷰) — 2026-10-14 조회",
+        "revenue": "미확인"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인: 리뷰 본문 샘플 미수집"
+        ],
+        "negative": [
+          "미확인"
+        ],
+        "basis": "스토어 평점 수치만 확인."
+      },
+      "takeaways": {
+        "borrow": [
+          "손님 사연·편지 같은 서사 수집이 방치 루프에 감정적 이유를 더함 (해석)",
+          "시리즈 시설을 한정 기간 판매하는 수집형 과금"
+        ],
+        "avoid": [
+          "광고 쿠폰·다양한 재화 병행으로 상점 구조가 복잡해질 수 있음 (해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1460564684",
+          "title": "animal restaurant - App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.85(167,882), 앱 내 구입 10종(USD), 버전 12.32(2026-09-22)와 이벤트 노트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1460564684",
+          "title": "고양이 식탁 - App Store (KR)",
+          "type": "스토어",
+          "note": "원화 가격표, 평점 4.65(19,147), 연령 12+",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=droidhang.twgame.restaurant&hl=en_US&gl=US",
+          "title": "Animal Restaurant - Google Play",
+          "type": "스토어",
+          "note": "출시 2019-09-11, 평점 4.7(690K 리뷰), IAP $0.99~$30.99, 광고 포함, 설명",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "deepDive": {
+    "gameId": "cats-and-soup",
+    "title": "출시 5년차에도 약 2주 단위로 갱신되는 코지 아이들의 표준 사례(하이디어 1인 개발에서 네오위즈 IP로 성장)",
+    "summary": "고양이와 스프는 2021-09 출시 후 공식 발표 기준 6,000만(2024-09), 원작 IP 8,000만(2026-04)에 도달했고 App Store 평점 4.85~4.88을 유지한다. 개발자 김동규 대표는 2012년 1인 개발사 하이디어를 세웠고 2021-11 네오위즈에 인수됐다. 기본 루프는 요리 판매와 시설 확장이며, 선택형 광고·광고 제거권·패스·시즌 패키지로 수익화한다. 굿즈·만화·오프라인 행사까지 IP를 넓힌 점이 배울 만하다.",
+    "firstSession": [
+      "숲 배경에서 고양이가 요리하고 완성된 스프가 나무 바에 쌓임(커뮤니티 가이드)",
+      "스프를 탭해 손님에게 판매하여 골드 획득",
+      "망치 아이콘으로 첫 요리 시설 건설, 시설을 지을수록 스프 가격 상승",
+      "붉은 책 아이콘에서 레시피를 연구(휴식 포인트 사용)",
+      "아이템 상자에서 광고를 보고 추가 골드·보상 수령",
+      "열기구·사진 요청 등 팝업 보상 탭",
+      "튜토리얼 설명이 부족하다는 JP 리뷰가 있어 첫 세션 이탈 위험 존재(리뷰 기반)"
+    ],
+    "coreLoop": [
+      {
+        "step": "스프를 판다",
+        "detail": "완성된 요리를 탭해 골드 획득"
+      },
+      {
+        "step": "시설을 짓고 올린다",
+        "detail": "골드로 요리·휴식 시설 건설과 레벨업"
+      },
+      {
+        "step": "고양이를 배치한다",
+        "detail": "스킬·별이 해당 시설 판매가를 높임"
+      },
+      {
+        "step": "팝업을 줍는다",
+        "detail": "열기구 3분, 사진/선물 4분, 병요정 5분 주기(커뮤니티 위키)"
+      },
+      {
+        "step": "꾸미고 수집한다",
+        "detail": "보석으로 의상·가구·시즌 아이템 구매"
+      }
+    ],
+    "currencies": [
+      {
+        "name": "골드",
+        "earn": "요리 판매, 병요정, 열기구, 사진 미션, 선물, 오프라인 보상",
+        "spend": "시설 건설·업그레이드, 관측소 스킬 재설정",
+        "paid": false
+      },
+      {
+        "name": "레시피 포인트",
+        "earn": "게스트 시설 말풍선, 개구리 왕자 선물, 오프라인 보상, 미션",
+        "spend": "레시피 레벨 업(요리 가격 상승)",
+        "paid": false
+      },
+      {
+        "name": "보석(젬)",
+        "earn": "집게 캡슐, 고양이 선물, 미션·업적, 일일 광고 30, 이벤트, 7일 선물 합계 2,100",
+        "spend": "의상 상자, 관측소 외형·스킬 변경(100/500/500), 트렁크 가게, 한정 패키지",
+        "paid": true
+      },
+      {
+        "name": "가구 코인",
+        "earn": "집게 캡슐, 낚시, 미션, 이벤트, 보석 교환, 유료 패키지",
+        "spend": "가구 상점, 고양이 타워 장식",
+        "paid": true
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "시설 레벨",
+        "detail": "요리·휴식 시설 최대 레벨 24,000(위키)",
+        "monetized": "무료"
+      },
+      {
+        "name": "레시피 레벨",
+        "detail": "레시피 포인트로 요리별 가격 상승",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "고양이 별·스킬",
+        "detail": "관측소에서 외형·스킬 변경, 별 확률 40/30/20/8/2%(위키)",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "유료 시설",
+        "detail": "거대 거북 창고 오프라인 +3시간, 요정 나무 레시피 포인트 2배 등(위키)",
+        "monetized": "유료 전용"
+      },
+      {
+        "name": "꾸미기",
+        "detail": "의상·가구·테마·미니룸",
+        "monetized": "유료 가속"
+      }
+    ],
+    "gacha": {
+      "pools": [
+        "관측소 랜덤 탐색(외형/스킬)",
+        "별 관측(Star Observation, 마법 렌즈 사용)",
+        "한정 고양이 선택 티켓",
+        "이벤트 추첨"
+      ],
+      "rates": [
+        "공식 확률 공시 페이지는 확인하지 못함",
+        "커뮤니티 위키: 영구 고양이 66종 각 1.51%(1/66), 메인 스킬 23종 각 4.347%, 서브 스킬 20%",
+        "별 수 1~5: 40/30/20/8/2%(커뮤니티 위키, 비공식)"
+      ],
+      "pity": "별 관측 화면 하단 숫자는 10번째 관측 시 Fairy Tale 아이템 보장까지 남은 횟수(공식 FAQ)",
+      "source": "Cats&Soup FAQ(nwzrise.oqupie.com), 커뮤니티 위키 Cats"
+    },
+    "offline": "오프라인 보상이 골드·레시피 포인트 획득처로 존재한다. 유료 거대 거북 창고로 오프라인 시간 +3시간, 컬렉션 +5%(위키). 기본 상한 시간은 확인하지 못했다. 병요정은 미수령 오프라인 보상이 있으면 나타나지 않는다(위키 Periodic Events).",
+    "adPlacements": [
+      "아이템 상자: 광고로 추가 골드·보상(가이드)",
+      "행운 병·스냅샷(가이드)",
+      "고양이 선물: 광고 시청 또는 스킵 티켓으로 3상자 모두 수령(위키)",
+      "보석 상점 일일 광고 30젬(위키)",
+      "작은 트렁크 가게: 광고 시청으로 하루 1회 추가 3시간 개점(위키)",
+      "판매 수입 2배·고양이 외형 변경(Pocket Gamer 가이드)"
+    ],
+    "storeStructure": [
+      "광고 제거 7일 $0.99/₩1,100, 30일 $2.99/₩3,300(App Store)",
+      "일일 미션 패스 $11.99/₩15,000",
+      "재료 지원 일일 패키지 $1.99~$3.99",
+      "친구/시설 패키지: 두더지 배달부 $8.99, 펭귄낚시꾼 $4.99, 우산 $0.99, 고급 선물 $4.99",
+      "GEM 1050 $4.99",
+      "작은 트렁크 가게(보석): 의상 500·친구 2,000·특별 방문자 2,500, 하루 2회 3시간 개점, 슬롯 확장 6칸 50~250젬(위키)",
+      "5주년 수프 패스(5.0.0, 2026-08-27) 등 시즌 패스·한정 패키지(버전 노트)"
+    ],
+    "liveOpsCadence": [
+      "5.0.0(2026-08-27) 5주년 별나무 축제·28일 출석·신규 고양이 2종·시설 3종",
+      "5.1.0(2026-09-10) 아깽이 고양이·숲 크기 조절·모험 박스 분류",
+      "5.2.0(2026-10-01) 할로윈 타운·신규 고양이·시설 2종",
+      "산리오 협업 주사위 이벤트(2026-04-10~05-06)",
+      "스타필드 하남 오프라인 협업(2026-10-03~11)"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2021-12-02",
+        "event": "500만 다운로드·DAU 120만",
+        "value": "공식 보도자료"
+      },
+      {
+        "date": "2022-01-04",
+        "event": "1천만 다운로드",
+        "value": "아이뉴스24"
+      },
+      {
+        "date": "2022-05-24",
+        "event": "2천만",
+        "value": "Neowiz(GameSpace 보도)"
+      },
+      {
+        "date": "2023-04-18",
+        "event": "4천만",
+        "value": "Pocket Gamer"
+      },
+      {
+        "date": "2023-10-17",
+        "event": "5천만",
+        "value": "Pocket Gamer"
+      },
+      {
+        "date": "2024-09-13",
+        "event": "6천만",
+        "value": "Pocket Gamer"
+      },
+      {
+        "date": "2026-04-29",
+        "event": "원작 IP 누적 8,000만 돌파",
+        "value": "바이라인네트워크"
+      },
+      {
+        "date": "2026-08-12",
+        "event": "2Q26 고양이와스프 해외 매출 비중 91%",
+        "value": "네오위즈 IR"
+      }
+    ],
+    "strengths": [
+      "선택형 광고와 소액 상품으로 낮은 부담의 수익화",
+      "2주 단위 시즌 콘텐츠와 오랜 서비스 기간",
+      "IP 확장(굿즈·만화·오프라인·후속작)",
+      "높은 평점 유지"
+    ],
+    "weaknesses": [
+      "튜토리얼·아이콘 안내 부족(JP 리뷰)",
+      "광고를 봐야 진행 속도가 난다는 인식",
+      "기본 오프라인 상한과 유료 가속의 투명성 부족(확인 못 함)",
+      "확률 공시를 공식 경로로 확인하지 못함"
+    ],
+    "lessons": [
+      "광고는 선택형으로 두고 광고 제거를 기간제 소액 상품으로 제공",
+      "수집 대상(고양이)·꾸미기를 2주 단위 시즌 콘텐츠와 연결",
+      "팝업 주기 보상으로 짧은 체크인 습관 형성",
+      "IP를 방치 앱 밖(굿즈·만화·행사)으로 확장하되 해외 비중 높은 시장 전제",
+      "첫 10분 안내 UI를 별도 설계해 복잡도 누적을 방지"
+    ],
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/us/app/id1581431235",
+        "title": "Cats&Soup - App Store (US)",
+        "type": "스토어",
+        "note": "IAP·버전 노트",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://nwzrise.oqupie.com/portals/1694/articles/79141",
+        "title": "Cats&Soup FAQ: 별 관측 화면 숫자",
+        "type": "공식",
+        "note": "10번째 관측 보장",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://catsandsoup.miraheze.org/wiki/Currencies",
+        "title": "Cats & Soup Wiki - Currencies",
+        "type": "위키/커뮤니티",
+        "note": "재화 획득·사용처(커뮤니티)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://catsandsoup.miraheze.org/wiki/Facilities",
+        "title": "Cats & Soup Wiki - Facilities",
+        "type": "위키/커뮤니티",
+        "note": "유료 시설 효과(커뮤니티)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://catsandsoup.miraheze.org/wiki/Cats",
+        "title": "Cats & Soup Wiki - Cats",
+        "type": "위키/커뮤니티",
+        "note": "고양이 종수·확률(커뮤니티)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://catsandsoup.miraheze.org/wiki/Little_Trunk_Shop",
+        "title": "Cats & Soup Wiki - Little Trunk Shop",
+        "type": "위키/커뮤니티",
+        "note": "트렁크 가게 가격·개점",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.com/cats-and-soup/guide/",
+        "title": "Cats & Soup guide (Pocket Gamer, 2024-09-18)",
+        "type": "보도",
+        "note": "광고 위치·재화 가이드",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://mytour.vn/en/blog/bai-viet/how-to-play-cats-and-soup-cats-and-amp-soup-guide-for-beginners.html",
+        "title": "Cats and Soup beginner guide (mytour.vn)",
+        "type": "위키/커뮤니티",
+        "note": "초반 흐름(보조)",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "숲속 우체국 (가칭)",
+      "pitch": "동물 손님의 편지를 배달·분류하며 시간이 지나 답장이 도착하는 서사형 코지 방치.",
+      "target": "20~40대 코지 게임·일러스트 선호층(한국·일본·북미)",
+      "platform": "모바일(iOS/Android), 이후 Steam 검토",
+      "coreLoop": [
+        "편지 분류 후 배달원 파견",
+        "답장이 도착할 때까지 대기(오프라인 진행)",
+        "손님 사연 수집·도감 완성",
+        "우체국 꾸미기"
+      ],
+      "mvp": [
+        "손님 20종",
+        "우체국 꾸미기 아이템 60종",
+        "주 1회 시즌 이벤트 1세트",
+        "광고 없는 기본 + 광고 제거/후원 상품",
+        "5분 이내 첫 세션 튜토리얼"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 16~20주",
+      "monetization": "선택형 보상 광고 + 광고 제거 7/30일권 + 시즌 패스 + 코스메틱 소액 팩($0.99~$9.99)",
+      "why": "고양이 식탁의 손님 편지 서사와 고양이와 스프의 선택형 광고·시즌 운영을 결합(해석).",
+      "risks": "서사 콘텐츠 생산 비용, IP 없는 신작의 유입 비용",
+      "kpiGate": "D1 40%, D7 15%, D30 5% 이상, 리뷰 평점 4.5 이상(KPI는 연구자 설정 목표이며 근거 벤치마크는 market.json 참조)",
+      "buildNext": "편지 10통과 손님 5종 프로토타입으로 방치-답장 루프의 재접속률 측정"
+    },
+    {
+      "name": "마이크로 하루 정원 (가칭)",
+      "pitch": "하루 두 번 아침·저녁 체크인과 현실 습관을 정원 식물 성장에 연결하는 셀프케어 코지.",
+      "target": "자기돌봄·습관 앱 사용층",
+      "platform": "모바일",
+      "coreLoop": [
+        "아침 체크인으로 정원 일꾼 파견",
+        "낮 시간 경과로 식물 성장(방치)",
+        "저녁 감사 기록으로 수확",
+        "정원 꾸미기·공유"
+      ],
+      "mvp": [
+        "아침·저녁 체크인",
+        "식물 15종",
+        "습관 3종 연동",
+        "도감",
+        "알림 설정(무음 기본)"
+      ],
+      "difficulty": "낮음",
+      "effort": "1인+AI 주20시간 12~16주",
+      "monetization": "무광고 + 구독(Finch Plus 형 가격 단계 단순화) + 코스메틱 소액",
+      "why": "Finch의 체크인 루프와 Pokémon Sleep의 현실 행동 연동 사례(해석)",
+      "risks": "의료 효능 오해, 구독 가격 구성 혼란, 습관 앱 경쟁",
+      "kpiGate": "D7 20% 이상, 하루 2회 체크인 비율 30% 이상, 구독 전환 소프트런칭 목표 설정(수치는 연구자 목표)",
+      "buildNext": "체크인 UI와 식물 3종으로 일주일 사용자 테스트"
+    },
+    {
+      "name": "작은 섬 가게 (가칭)",
+      "pitch": "토끼의 섬처럼 무과금 Steam과 소액 모바일을 병행하는 동물 손님 섬 꾸미기 방치.",
+      "target": "Steam 코지 팬과 모바일 라이트 유저",
+      "platform": "모바일 + Steam(Wholesome 계열 노출 목표)",
+      "coreLoop": [
+        "아이템을 놓고 방문 대기",
+        "친밀도 쌓기·사진",
+        "섬 확장",
+        "도감 완성"
+      ],
+      "mvp": [
+        "동물 25종",
+        "아이템 80종",
+        "실시간 낮밤",
+        "사진 앨범",
+        "Steam 스크린세이버 모드"
+      ],
+      "difficulty": "중간",
+      "effort": "3인 팀 4~6개월",
+      "monetization": "Steam 단독 구매(마이크로트랜잭션 없음), 모바일은 광고 제거 팁형 상품과 섬 확장 소액 팩",
+      "why": "Usagi Shima의 모바일+Steam 듀얼 전략과 JP 리뷰의 양심적 가격 호평(해석)",
+      "risks": "Steam 위시리스트 확보, 업데이트 주기 유지(Usagi Shima 1.9.2 이후 갱신 저조)",
+      "kpiGate": "Steam 위시리스트 및 모바일 D1/D7 목표를 소프트런칭에서 별도 설정",
+      "buildNext": "동물 5종·섬 1개의 수직 슬라이스와 Steam 데모 페이지 개설"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://apps.apple.com/us/app/id1581431235",
+      "title": "Cats&Soup App Store",
+      "type": "스토어",
+      "note": "고양이와 스프 IAP·평점",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pokemonsleep.net/en/",
+      "title": "Pokémon Sleep 공식",
+      "type": "공식",
+      "note": "수면 방치 구조",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://finchcare.com/",
+      "title": "Finch 공식",
+      "type": "공식",
+      "note": "셀프케어 펫",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.nekoatsume.com/",
+      "title": "ねこあつめ 공식",
+      "type": "공식",
+      "note": "네코아츠메 2",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "http://www.hit-point.co.jp/games/tabikaeru/",
+      "title": "旅かえる 공식",
+      "type": "공식",
+      "note": "여행 개구리",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1474314811",
+      "title": "Penguin Isle App Store",
+      "type": "스토어",
+      "note": "Penguin Isle",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.abyssrium.com",
+      "title": "Abyssrium 공식",
+      "type": "공식",
+      "note": "AbyssRium",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://usagishima.net/",
+      "title": "Usagi Shima 공식",
+      "type": "공식",
+      "note": "Usagi Shima",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.hyperbeard.com/",
+      "title": "HyperBeard 공식",
+      "type": "공식",
+      "note": "Hamster Inn 개발사",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1460564684",
+      "title": "animal restaurant App Store",
+      "type": "스토어",
+      "note": "고양이 식탁",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://cdn.neowiz.com/neowiz-site/assets/ir-library/2Q26_NWZ-IR-PPT_KR_FN-ttfoqm1w.pdf",
+      "title": "네오위즈 2Q26 IR",
+      "type": "공식",
+      "note": "해외 매출 비중",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

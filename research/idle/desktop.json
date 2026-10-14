@@ -1,0 +1,2108 @@
+{
+  "id": "desktop",
+  "region": "글로벌",
+  "platformGroup": "PC/Steam",
+  "name": "PC 데스크톱·작업표시줄 방치 (Steam)",
+  "asOf": "2026-10-14",
+  "scope": "Windows 작업표시줄·화면 가장자리·창 위에 작게 띄워 두고 다른 일을 하면서 진행시키는 PC(Steam) 방치/데스크톱 펫형 게임. 전통 인크리멘탈(Cookie Clicker 등)과 모바일·로블록스는 제외.",
+  "selectionBasis": "연구자 선정 10종이며 공식 전체 순위가 아님. 순서는 (1) 2026-10-14 조회 시점 Steam 최근 동접·역대 최고 동접의 규모, (2) 방치/데스크톱 상주 방식의 대표성, (3) 과금 구조의 다양성(무료+마켓 드롭, 유료 구매, 라이선스 DLC) 기준. 추정 매출은 대부분 미확인이라 순위 기준으로 쓰지 않음.",
+  "methodology": [
+    "Steam 상점 appdetails API(가격·리뷰 집계·DLC), SteamCharts 월별 동접, 스팀 공식 ISteamChartsService(2026-10-13 22:46 UTC 스냅샷), SteamDB RSS 뉴스(역대 최고 동접 보도)를 2026-10-14에 수집했다.",
+    "개발사 Steam 커뮤니티 공지(ISteamNews 피드)와 PC Gamer·Rock Paper Shotgun·Eurogamer 기사에서 정책 변경·수치·인터뷰를 확인했다.",
+    "동접(CCU)·누적 리뷰 수·다운로드(개발사 발표)·매출은 서로 다른 지표라 섞어 비교하지 않았다. 매출은 개발사가 직접 밝힌 Bongo Cat 월 수익 외에는 확인하지 못했다.",
+    "Steam 동접에는 봇·AFK 계정이 포함된다(Bongo Cat 개발사 추정 약 50%, Banana도 봇 문제 언급). 따라서 동접은 '실제 이용자 수'가 아니라 '로그인 상태 계정 수'다.",
+    "SteamSpy 소유자 구간(예: 20만~50만)은 참고용 추정이며 본문 지표로는 일부만 인용했다.",
+    "수집 당시 웹 검색 한도가 소진되어 추가 웹 검색은 하지 못했고, 공식 API·피드로 수집된 자료 범위에서 서술했다. 팀 규모 등 확인 못 한 항목은 '미확인'으로 표기했다."
+  ],
+  "overview": "작업표시줄·화면 모서리에 상주하는 PC 방치 게임은 2024년 Banana(역대 최고 동접 917,272, SteamDB 2024-06-20)로 'Steam 아이템 드롭+마켓'이라는 구조가 알려진 뒤, 2025-03 출시한 Bongo Cat(최고 약 19.4만)과 2026-05-27 출시한 TBH: Task Bar Hero(SteamDB 기준 546,130, 2026-06-18)로 이어졌다. 2026-10-14 기준 Steam 공식 동접 차트에서 Bongo Cat은 7위(111,348 동시 접속), TBH는 23위(45,518), 2026-09-28 출시한 Deskrawl: Idle ARPG는 27위(37,708)에 있다(스냅샷 2026-10-13 22:46 UTC). 한편 PC Gamer는 'idler' 태그 게임이 SteamDB 기준 2020년 100개, 2024년 647개, 2025년 1,033개, 2026년 1,811개로 급증했고 한 주에 54개가 출시됐다고 보도했다(게재일 미확인, 2026-09 초 추정). 소규모 팀이 '데스크톱 상주+Steam 마켓 연동'을 따라 하는 신작이 다수 예정돼 있으나(Taskbar Chickens·Task Bar Dungeons·Exile: Idle ARPG 등), 같은 구조가 봇·작업장·서버 장애를 낳는다는 사실도 TBH(2026-05~07)와 Bongo Cat(봇 약 50% 추정)에서 확인됐다. 한편 Rusty's Retirement·Ropuka's Idle Island·Tiny Pasture처럼 마켓 드롭 없이 $2~6대 유료 구매와 소액 서포터 DLC로 '오래 켜두는 반려형' 경험을 파는 모델은 동접 규모는 작지만 리뷰 긍정률이 매우 높다.",
+  "commonalities": [
+    "화면 일부(작업표시줄·하단 띠·모서리)에 작게 상주해 '다른 일을 하면서' 진행되며, 사용자의 능동 조작이 거의 필요 없다.",
+    "무료이거나 $2~$15의 낮은 진입 가격이며, 서포터 팩·스킨·OST·소액 DLC 같은 '후원형 소액 과금'이 중심이다.",
+    "Steam 인벤토리 아이템 드롭·커뮤니티 마켓 연동(Banana·Bongo Cat·TBH·Deskrawl)이 동접 급등의 공통 엔진이며, 동시에 봇·작업장 문제의 공통 원인이다.",
+    "소규모 팀(예: Deskrawl 2인 스튜디오)이 짧은 개발 기간으로 출시해 바이럴·언론 보도로 확산한다(Bongo Cat은 제작 약 3주, Eurogamer 보도).",
+    "Steam 기능(도전과제·클라우드·뱃지·카드·DLC)을 적극 활용해 별도 결제 인프라 없이 운영한다.",
+    "방치 진행이 핵심이라 최고 동접이 출시 직후 1~2개월에 몰리고 이후 장기 감소하는 곡선을 보이는 경우가 많다(Banana·TBH·Tiny Pasture, SteamCharts 월별)."
+  ],
+  "designPatterns": [
+    {
+      "name": "화면 점유 최소화 상주",
+      "detail": "작업표시줄 위·하단 띠·모서리에 투명 창으로 띄우고 크기 조절·이동·숨김을 지원한다. 집중 방해를 줄여 '켜두기' 장벽을 낮춘다.",
+      "examples": [
+        "TBH: Task Bar Hero",
+        "Deskrawl: Idle ARPG",
+        "Rusty's Retirement",
+        "Tiny Pasture",
+        "Ropuka's Idle Island"
+      ]
+    },
+    {
+      "name": "입력 기반 성장(키 입력·클릭 카운트)",
+      "detail": "키보드·마우스 입력 횟수가 곧 진행도다. 일하는 행위 자체가 게임 진행이 되어 '켜두는 이유'를 만든다.",
+      "examples": [
+        "Bongo Cat"
+      ]
+    },
+    {
+      "name": "시간 기반 드롭 쿨다운",
+      "detail": "일정 간격(예: Banana 3시간)마다 Steam 인벤토리 아이템이 드롭되고, 봇 방지를 위해 주기적 클릭을 요구하기도 한다.",
+      "examples": [
+        "Banana",
+        "Bongo Cat",
+        "TBH: Task Bar Hero"
+      ]
+    },
+    {
+      "name": "자동 전투+루팅 ARPG 루프",
+      "detail": "영웅이 자동 사냥하고 상자·장비를 모으며, 사용자는 가끔 열어 장비 합성·룬·스킬 빌드를 조정한다.",
+      "examples": [
+        "TBH: Task Bar Hero",
+        "Deskrawl: Idle ARPG"
+      ]
+    },
+    {
+      "name": "희귀도 사다리와 컬렉션",
+      "detail": "Common부터 Cosmic/Legendary까지 극히 낮은 확률의 희귀 등급과 도감(컬렉션)이 장기 목표를 만든다.",
+      "examples": [
+        "Bongo Cat",
+        "Banana",
+        "TBH: Task Bar Hero"
+      ]
+    },
+    {
+      "name": "Steam 마켓 거래 경제",
+      "detail": "아이템을 Steam 지갑 머니로 거래하게 해 외부 유입(수익 목적 이용자)을 끌어오며, 거래 제한·등급 제한 같은 정책 조정이 반복된다.",
+      "examples": [
+        "Banana",
+        "TBH: Task Bar Hero",
+        "Deskrawl: Idle ARPG"
+      ]
+    },
+    {
+      "name": "코지 반려·집중 보조",
+      "detail": "개구리·동물·정원·로파이 음악 등 감정적 반려 요소와 집중 도구(타이머·투두)를 결합해 장시간 켜두는 이유를 만든다.",
+      "examples": [
+        "Spirit City: Lofi Sessions",
+        "Ropuka's Idle Island",
+        "Tiny Pasture",
+        "Rusty's Retirement"
+      ]
+    },
+    {
+      "name": "라이선스 캐릭터 DLC 판매",
+      "detail": "무료 본편에 인기 IP 캐릭터를 개별 DLC로 판매해 수익을 낸다.",
+      "examples": [
+        "Desktop Mate"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "무료 본편+Steam 마켓 수수료",
+      "detail": "본편은 무료이고 드롭 아이템 거래 수수료가 개발사 수익이 된다. Bongo Cat 개발사는 마켓 수익이 전체 수익의 절반 이하라고 밝혔다(Eurogamer, 2025-06-26).",
+      "examples": [
+        "Bongo Cat",
+        "Banana",
+        "TBH: Task Bar Hero"
+      ]
+    },
+    {
+      "name": "서포터 팩·코스메틱 소액 후원",
+      "detail": "펫·스킨·도감 보너스 등을 $1.99~$10.09 수준 DLC·인벤토리 아이템으로 판매한다. 진행에 필수는 아니라고 개발사·이용자가 강조한다.",
+      "examples": [
+        "Bongo Cat",
+        "TBH: Task Bar Hero",
+        "Tiny Pasture",
+        "Rusty's Retirement",
+        "Cast n Chill"
+      ]
+    },
+    {
+      "name": "저가 유료 구매(Buy-to-play)",
+      "detail": "$2.99~$14.99의 1회 구매로 가격 장벽을 두어 봇 유입을 줄이고 리뷰 품질을 높인다.",
+      "examples": [
+        "Rusty's Retirement",
+        "Ropuka's Idle Island",
+        "Tiny Pasture",
+        "Cast n Chill",
+        "Deskrawl: Idle ARPG"
+      ]
+    },
+    {
+      "name": "기능·슬롯 확장 DLC",
+      "detail": "클래스·스태시 탭·마켓 거래 슬롯 같은 편의·성장 확장을 DLC로 판다.",
+      "examples": [
+        "TBH: Task Bar Hero"
+      ]
+    },
+    {
+      "name": "라이선스 IP 캐릭터 DLC",
+      "detail": "무료 본편 위에 캐릭터별 DLC를 대부분 $14.99(일부 $7.49)에 판매하며 DLC가 42종 등록돼 있다(Steam 상점 2026-10-14).",
+      "examples": [
+        "Desktop Mate"
+      ]
+    },
+    {
+      "name": "패스·월간 코스메틱",
+      "detail": "2026-09-01 도입된 Paw Pass는 무료·유료 트랙으로 월간 스킨·모자·이모트를 제공한다.",
+      "examples": [
+        "Bongo Cat"
+      ]
+    }
+  ],
+  "risks": [
+    "Steam 마켓 연동은 봇·작업장·서버 폭주를 부른다. TBH는 출시 직후 마켓 영구 제한 약 350명(2026-05-28)·마켓 중단(2026-06-08)·특정 레벨 장비 삭제 등 리셋을 겪었고 리뷰가 Mixed로 떨어졌다.",
+    "동접 수치가 봇을 포함해 부풀려져(Bongo Cat 약 50% 추정), 수치만 보고 시장을 과대평가하기 쉽다.",
+    "출시 직후 단기 정점 후 급감하는 곡선: Banana 2024-06 평균 약 40만에서 2026-09 평균 약 2,947로 감소(SteamCharts).",
+    "수익 구조가 약하다: Bongo Cat은 2025-03~06 월 순수익 $2,000~$4,050(개발사 발언)으로 개발자 인건비도 못 댄다고 했다.",
+    "클라이언트 안티치트·필수 데이터 수집 약관이 반발을 부른다(TBH 오탐 밴·약관 관련 부정 리뷰).",
+    "'idler' 태그 포화와 AI 사용 공개가 많은 유사 UI 신작 범람(PC Gamer): 발견성 하락."
+  ],
+  "pipeline": [
+    {
+      "name": "TBH: Task Bar Hero 10~11월 업데이트",
+      "note": "2026-09-30 공지: 10월 핼러윈(Relic 성장 시스템·룬), 11월 던전 4종·최대 레벨 증가·새 난이도. 7월 로드맵은 지연됨."
+    },
+    {
+      "name": "Taskbar Chickens",
+      "note": "Steam 상점 출시 예정 Q1 2027 (2026-10-14 조회)."
+    },
+    {
+      "name": "Taskbar Garden",
+      "note": "Steam 상점 출시 예정 Q1 2027 (2026-10-14 조회)."
+    },
+    {
+      "name": "Task Bar Dungeons",
+      "note": "Steam 상점 출시 예정 June 2027 (2026-10-14 조회)."
+    },
+    {
+      "name": "Task Bar Cube",
+      "note": "Steam 상점 출시 예정 Oct 25, 2026 (2026-10-14 조회)."
+    },
+    {
+      "name": "Desktop Island: Idle Together!",
+      "note": "Steam 상점 출시 예정 Nov 26, 2026 (2026-10-14 조회)."
+    },
+    {
+      "name": "Desktop Party: An Idle Fantasy RPG",
+      "note": "Steam 상점 출시 예정 Jan 14, 2027 (2026-10-14 조회)."
+    },
+    {
+      "name": "Exile: Idle ARPG",
+      "note": "Steam 상점 출시 예정 Q1 2027 (2026-10-14 조회)."
+    }
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "id": "tbh-task-bar-hero",
+      "name": "TBH: Task Bar Hero",
+      "originalName": "TBH: Task Bar Hero (태스크바 히어로)",
+      "url": "https://store.steampowered.com/app/3678970/",
+      "developer": "Nugem Studio (뉴젬스튜디오), Tesseract Studio (Steam 상점 개발사 표기)",
+      "publisher": "Nugem Studio",
+      "origin": "한국 (뉴젬스튜디오: 서울 금천구, 2023.03 설립 — 공식 사이트 표기. Tesseract Studio 국적은 미확인)",
+      "release": "2026-05-27 (Steam 정식 출시, 사전 데모·플레이테스트 2026-04)",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "작업표시줄 자동전투 방치 ARPG + Steam 마켓 연동 루팅",
+      "businessModel": "무료 본편 + 유료 DLC(클래스·펫·스태시·거래 슬롯·OST) + Steam 커뮤니티 마켓 아이템 거래",
+      "status": "서비스 중 (2026-09-08 콘텐츠 업데이트 '플레이그랜드' 1.02.00, 10~11월 업데이트 예고)",
+      "description": "작업표시줄 안에서 픽셀 영웅들이 자동으로 몬스터를 사냥하고 장비를 모으는 초소형 방치 RPG. 아이템을 Steam 마켓에서 거래할 수 있어 출시 직후 동접이 폭증했다.",
+      "coreLoop": [
+        "영웅이 스테이지에서 자동 전투하며 경험치·골드·상자를 획득한다",
+        "상자를 열어 장비·재료를 얻고 장비를 장착한다",
+        "큐브로 합성·연금·제작·장식·각인·각명으로 장비를 강화한다",
+        "룬·스킬 포인트·영웅 조합으로 빌드를 조정한다",
+        "소울스톤으로 액트 보스에 도전해 다음 스테이지·난이도로 올라가고 다시 사냥한다"
+      ],
+      "features": [
+        "작업표시줄 위 초소형 창, 투명도·창 복원 옵션 (패치노트)",
+        "3개 액트, 4단계 난이도(Nightmare·Hell·Torment 등 패치노트 표기), 500+ 아이템, 50+ 몬스터 종류 (Steam 상점 설명)",
+        "희귀도: Common·Uncommon·Rare·Legendary·Immortal·Arcana·Beyond·Celestial·Divine·Cosmic (Steam 상점 설명)",
+        "큐브 시스템(합성·연금·제작·장식·각인·각명·봉헌)과 Trade Ship(마켓 등록용)",
+        "클래스 6종 이상(기사·레인저·소서러 등, 패치노트 및 DLC 표기에서 Priest·Hunter·Slayer 확인)",
+        "13개 언어 현지화(2026-01-30 공지)"
+      ],
+      "progression": [
+        "캐릭터 레벨(레벨 101 이상 존재, 패치노트)",
+        "장비 희귀도·레벨·큐브 개조",
+        "룬 노드·스킬 포인트",
+        "스테이지/액트/난이도 진행",
+        "소울스톤(보스 도전 토큰)",
+        "펫 보너스(서포터 팩)",
+        "플레이그랜드(Nightmare 이상, Corruption 소모) 신규 스테이지 유형(2026-09)"
+      ],
+      "idleMechanics": "켜두면 자동 전투·루팅이 진행된다. 오프라인 보상이 존재한다(패치노트에 '레벨 101 이후 오프라인 보상 경험치 표시 오류' 수정 기록). 오프라인 최대 누적 시간·보상 상한은 미확인. 상자 획득 요청 최소 간격을 서버 부하 때문에 늘렸다는 공지가 이용자 리뷰에 인용됨(공지 원문 미확인).",
+      "socialAndLiveOps": [
+        "Steam 마켓 거래(Trade Ship 경유). 2026-06-25 재개 시 등록 슬롯 4개, 슬롯당 등록 쿨다운 8시간(공지)",
+        "2026-07-22 Cosmic/Divine/Celestial 등급 거래 재개(1.01.00)",
+        "치트 제재·마켓 영구 제한 공지가 반복(2026-05-27, 06-25, 07-06)",
+        "콘텐츠 업데이트: 2026-09-08 플레이그랜드, 10월 핼러윈·Relic 시스템, 11월 던전 4종(2026-09-30 공지)",
+        "잦은 핫픽스와 서버 장애 공지(2026-07-22, 09-17, 10-08 등)"
+      ],
+      "popularityFactors": [
+        "무료 + 작업표시줄에 두기만 하면 진행되는 낮은 진입 장벽 (해석)",
+        "Steam 마켓 거래로 '켜두면 돈이 된다'는 기대가 외부 유입을 만듦 (해석, 이용자 리뷰에 마켓 목적 이용자 언급)",
+        "Banana·Bongo Cat으로 형성된 '데스크톱 방치+마켓' 선례와 게이머 인지도 (해석)",
+        "ARPG 장비·루팅 중독성(리뷰: 'just one more check' 느낌)"
+      ],
+      "monetization": {
+        "model": "혼합 (무료+소액 DLC+마켓 수수료)",
+        "summary": "본편은 무료이며 DLC로 클래스·펫·스태시·거래 슬롯·OST를 판다. 아이템 마켓 거래는 Steam 지갑 머니 기준이며(약관 v1.5 공지), Steam 마켓 수수료가 개발사 수익이 되는지는 공식 확인 못 했다.",
+        "products": [
+          {
+            "name": "TBH : Task Bar Hero - Supporter Pack",
+            "price": "$3.99 / ₩3,900",
+            "contents": "펫 3종(Sword·Butterfly·Dragon), 보유 시 패시브 보너스",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH : Task Bar Hero - 3 Stash Pack",
+            "price": "$2.99 / ₩2,900",
+            "contents": "스태시 페이지 3개 추가",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH : Task Bar Hero - Hunter (Class)",
+            "price": "$4.99 / ₩4,900",
+            "contents": "Hunter 클래스 해금",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH : Task Bar Hero - Slayer (Class)",
+            "price": "$4.99 / ₩4,900",
+            "contents": "Slayer 클래스 해금",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH : Task Bar Hero - Priest (Class)",
+            "price": "무료",
+            "contents": "Priest 클래스 해금",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH : Task Bar Hero - Trade Ship Pack",
+            "price": "$4.99 / ₩4,900",
+            "contents": "Trade Ship 슬롯 5개 추가(마켓 등록 증가), 2026-07-02 출시",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "TBH: Task Bar Hero Soundtrack",
+            "price": "$3.99 / ₩3,900",
+            "contents": "16곡, 34:24",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 무료(Steam 상점 is_free=true)",
+          "DLC 7종 가격은 2026-10-14 Steam 상점 조회 기준",
+          "출시 공지(2026-05-08)에는 유료 DLC를 출시 후 2주간 20% 할인한다고 기재",
+          "마켓 거래 매체는 Steam 지갑 머니(약관 v1.5 공지, 2026-06-12)"
+        ],
+        "unverified": "마켓 수수료에 따른 개발사 수익 규모, 매출·판매량(DLC 판매 수량), 인게임 코인 유료 판매 여부는 확인하지 못했다. 부정 리뷰에 '30 Coins를 구매'했다는 언급이 있어 유료 재화가 있을 수 있으나 상품명·가격은 확인 못 했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "역대 최고 동접 546,130 (SteamDB RSS, 2026-06-18 / SteamCharts 월 최고 545,349). 2026-10-13 22:46 UTC 공식 차트 23위, 동시 접속 45,518·24시간 최고 70,008. SteamCharts 월 평균: 2026-06 434,627 / 07 288,455 / 08 107,511 / 09 76,465 / 최근 30일 69,776(최고 102,089).",
+        "rating": "Steam 리뷰 47,328개 중 긍정 25,429개(약 53.7%, 계산값) — 'Mixed' (Steam 상점 appdetails, 2026-10-14)",
+        "chart": "Steam 공식 동접 차트 23위 (2026-10-13 22:46 UTC 스냅샷)",
+        "other": "상점 도전과제 56개. SteamSpy 등 소유자 추정은 미사용."
+      },
+      "userFeedback": {
+        "positive": [
+          "무료인데 픽셀 아트·음악·루팅 루프가 완성도 있고 켜두고 다른 일을 할 수 있다는 평가",
+          "필수 구매 없이 진행 가능(서포터 팩은 후원성)이라는 평가",
+          "빌드·큐브 최적화 과정이 재미있다는 후기"
+        ],
+        "negative": [
+          "마켓 연동으로 작업장·핵 계정이 몰려 상자 드롭 제한·서버 장애·아이템 증발이 발생했다는 불만(한국어 리뷰 다수)",
+          "안티치트 오탐으로 Steam 계정에 게임 밴 표시가 붙었다는 후기, 필수 데이터 수집 약관에 대한 반발(영어 리뷰)",
+          "엔드게임 그라인드가 길고 시간 대비 성장이 적다는 의견"
+        ],
+        "basis": "Steam 리뷰 최근 365일 샘플(영어·한국어 각 긍정·부정 상위 8개씩), 2026-10-14 수집"
+      },
+      "takeaways": {
+        "borrow": [
+          "작업표시줄 초소형 상주 + 자동 전투의 낮은 진입 장벽",
+          "큐브처럼 방치와 능동 조작(가끔 열어 빌드 조정)을 잇는 조작 지점",
+          "펫·클래스 등 진행에 필수가 아닌 소액 DLC 구성"
+        ],
+        "avoid": [
+          "서버 인프라 준비 없이 Steam 마켓 연동으로 출시해 폭주를 겪는 것(공지에서 개발팀이 Steam 기술 지침 미준수를 사과)",
+          "필수 데이터 수집·오탐 가능한 안티치트를 약관·소통 없이 도입하는 것",
+          "트레이딩 허용 등급 변경과 아이템 삭제로 이용자 신뢰를 잃는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3678970/",
+          "title": "TBH: Task Bar Hero - Steam",
+          "type": "스토어",
+          "note": "무료, 개발사·출시일, 기능 설명(액트·난이도·희귀도), DLC 목록, 리뷰 집계.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3678970",
+          "title": "SteamCharts - TBH: Task Bar Hero",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접(2026-06~09, 최근 30일).",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamdb.info/app/3678970/charts/",
+          "title": "SteamDB RSS - TBH: Task Bar Hero peaks at 546k players",
+          "type": "보도",
+          "note": "2026-06-18 546,130명 동시 접속(출시 22일 후).",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/711150909845931875",
+          "title": "[Urgent Notice] Please Be Sure to Withdraw Your Steam Market Items",
+          "type": "공식",
+          "note": "2026-05-31 마켓 정책 변경, 레전더리 이상 장비만 거래 가능, 특정 레벨 장비 제거.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/689761349249532400",
+          "title": "Steam Market Reopening & Hotfix [Ver 1.00.21]",
+          "type": "공식",
+          "note": "2026-06-25 마켓 재개, 등록 슬롯 4개·슬롯당 8시간 쿨다운.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/668378128507207737",
+          "title": "October & November Update Plans",
+          "type": "공식",
+          "note": "2026-09-30 로드맵 지연 사과, 10월·11월 업데이트 계획.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.nugemstudio.com/",
+          "title": "Nugem Studio 공식 사이트",
+          "type": "공식",
+          "note": "(주)뉴젬스튜디오, 서울 금천구, 2023.03 설립, 대표 한상빈 표기.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "bongo-cat",
+      "name": "Bongo Cat",
+      "url": "https://store.steampowered.com/app/3419430/",
+      "developer": "Irox Games",
+      "publisher": "Irox Games",
+      "origin": "독일 추정 (뮌헨 동물 보호소 기부 공지 근거, 국가는 공식 표기 미확인)",
+      "release": "2025-03-05 (데모 2025-02-03)",
+      "platforms": [
+        "PC(Steam)",
+        "Mac(실험적 지원, 2026-03-23)"
+      ],
+      "subgenre": "입력(키·클릭) 반응 데스크톱 펫 + 아이템 드롭 수집",
+      "businessModel": "무료 + Steam 인벤토리 서포터 아이템/DLC 판매 + 마켓 수수료",
+      "status": "서비스 중 (2026-10-01 UI THEMES 업데이트)",
+      "description": "화면 위 흰 고양이가 키를 누르거나 클릭할 때마다 작업표시줄을 두드리고, 입력 횟수에 따라 모자·스킨이 드롭되는 데스크톱 펫 겸 방치 게임.",
+      "coreLoop": [
+        "Bongo Cat을 켜두고 일·게임을 한다",
+        "키 입력·클릭이 카운터에 쌓인다",
+        "일정 간격으로 상자 타이머가 완료되어 아이템이 인벤토리에 드롭된다",
+        "중복 아이템을 교환해 새 아이템을 얻고 컬렉션(도감)을 채운다",
+        "더 많은 입력을 위해 계속 켜둔다"
+      ],
+      "features": [
+        "작업표시줄·화면 어디든 배치 가능, 25개 언어 지원(출시 공지)",
+        "Meowtiplayer 멀티플레이: 최대 100마리가 한 화면에(2025-08-11)",
+        "게임 모드: 상자가 준비될 때까지 상호작용 차단(2025-03-11 공지)",
+        "Steam 인벤토리 아이템·도감(2025-04-20 Collections 업데이트)",
+        "Discord 연동·로비 브라우저·채팅(2026)",
+        "The Farmer Was Replaced와 협업한 tap() 자동화(2026-04-16)"
+      ],
+      "progression": [
+        "누적 탭 수(업적 'Bongo Beat' 100만 등)",
+        "아이템 희귀도 컬렉션",
+        "중복 아이템 교환(Exchange)",
+        "Bongo Coin·Paw Pass(2026-09-01)"
+      ],
+      "idleMechanics": "사용자의 키·클릭 입력이 곧 진행이며, 일정 시간 켜두면 상자가 드롭된다. Steam이 '자리비움'으로 판단하면 드롭에 문제가 생기는 알려진 이슈가 있었다(2025-03-11 공지). 별도 오프라인 보상은 없고 오프라인에서는 Paw Pass 보상 수령이 불가하지만 탭 진행도는 쌓인다(2026-09-01 공지).",
+      "socialAndLiveOps": [
+        "월간 Paw Pass(스킨·모자·이모트·상자)와 시즌 이벤트(여름·할로윈·겨울·춘절·만우절)",
+        "멀티플레이 로비 3단계(친구/코드·초대 전용·공개)와 AFK 경고(2분 비활동)",
+        "자선 이벤트: 2025-12 공지에서 이용자 기부 총 15,000유로",
+        "스핀오프 Tap Tap Loot 연동·인디 게임 데모 제휴 이벤트 반복"
+      ],
+      "popularityFactors": [
+        "무료 + 마케팅용 '앱' 성격의 낮은 부담 (해석, 개발사 인터뷰와 일치)",
+        "밈 IP 기반 귀여움과 '일하면서 보이는 입력 카운터'의 중독성 (해석)",
+        "Steam 마켓 아이템에 대한 외부 유입과 봇 (개발사가 동접의 약 50%가 봇이라 추정)",
+        "PC Gamer·Eurogamer 등 언론 보도와 스트리머 확산 (해석)"
+      ],
+      "monetization": {
+        "model": "무료(후원/코스메틱)",
+        "summary": "게임은 무료이며 수익은 서포터 아이템(고양이 스킨 등)과 마켓 수수료다. 개발사는 마켓 수수료가 전체 수익의 절반 이하이며 대부분이 스킨 판매라고 밝혔다. 모든 서포터 팩은 2026-04-13부터 개별 DLC로도 판매된다.",
+        "products": [
+          {
+            "name": "Paw Pass Token",
+            "price": "$4.99",
+            "contents": "월간 Paw Pass 프리미엄 트랙 이용권(공지상 500 Bongo Coin으로도 구매 가능)",
+            "evidence": "Steam 아이템 스토어(2026-10-14 조회) · 2026-09-01 공지"
+          },
+          {
+            "name": "스킨류 (Bumble Kitten, Meowxolotl, Sea Purrtle 등)",
+            "price": "$2.50",
+            "contents": "고양이 스킨 인벤토리 아이템",
+            "evidence": "Steam 아이템 스토어(2026-10-14 조회)"
+          },
+          {
+            "name": "Bongo Cat - God Pack / Wrestler Pack / Squirrel Pack / Wild Wonders",
+            "price": "$10.09 (₩9,830~9,850)",
+            "contents": "스킨 3종 세트 DLC",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "Bongo Cat - Mecha Pack",
+            "price": "$5.05 (₩4,920)",
+            "contents": "메카 스킨 DLC",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 무료(Steam 상점)",
+          "Eurogamer(2025-06-26): 순수익 2025-03 $2,000, 04 $4,050, 05 $3,800, 06(24일까지) $2,800",
+          "마켓 거래 수익은 전체 수익의 절반 이하(Eurogamer)",
+          "2026-03-23 지역 가격 적용 공지, 2026-04-13 모든 서포터 팩 DLC화·20% 할인 14일"
+        ],
+        "unverified": "2025-07 이후 월 수익·누적 매출은 확인하지 못했다. Paw Pass 보상 구성 상세와 구매율은 미확인.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamDB 기준 역대 최고 194,508 (2025-05-04, 출시 60일 후) / SteamCharts 월 최고 193,859 (2025-05). 2026-10-13 22:46 UTC 공식 차트 7위 동시 111,348·24시간 최고 188,874. SteamCharts 최근 30일 평균 155,700·최고 188,817.",
+        "players": "개발사 1주년 공지(2026-03-05): 5.8 million 이용자가 다운로드해 체험(개발사 발표). 2025-03-11 공지: 출시 직후 15만 명 이상 플레이.",
+        "rating": "Steam 리뷰 112,513개 중 긍정 108,641개(약 96.6%, 계산값) — 'Overwhelmingly Positive' (2026-10-14)",
+        "revenue": "개발사 발언 기준 월 순수익 $2,000~$4,050 (2025-03~06, Eurogamer). 이후 수치는 미확인.",
+        "chart": "Steam 공식 동접 차트 7위 (2026-10-13 22:46 UTC)",
+        "other": "개발사 추정 동접의 약 50%가 봇(Eurogamer 2025-06-26). 2025-07 말 봇 단속 후 동접이 15만 안팎에서 약 7.5만으로 급락했다고 개발사가 Eurogamer에 설명(PC Gamer 2025-08-15 인용)."
+      },
+      "userFeedback": {
+        "positive": [
+          "귀엽고 부담 없이 켜두기 좋으며 입력 카운트 수집이 동기부여가 된다는 후기",
+          "모자·스킨 컬렉션 재미와 멀티플레이로 친구와 함께 켜는 재미",
+          "무료이며 지속 업데이트·자선 이벤트 호감"
+        ],
+        "negative": [
+          "게임이 아니라 프로그램인데 Steam 연말 결산 플레이타임을 부풀린다는 지적(긍정 리뷰 내 농담성 불만)",
+          "봇·마켓 문제와 드롭 오류('red cross' 문제) 등 기술적 이슈(개발사 공지 근거)",
+          "대규모 UI·백엔드 교체 업데이트의 불안정(2026-06-05 공지에서 개발자 직접 언급)"
+        ],
+        "basis": "Steam 리뷰 최근 365일 상위 샘플, 개발사 공지 (2026-10-14 수집)"
+      },
+      "takeaways": {
+        "borrow": [
+          "입력 자체가 성장이 되어 '일하는 동안 보이는 카운터'를 만든 설계",
+          "부담 없는 무료 + 후원형 코스메틱·월간 패스",
+          "이용자 기부 자선 이벤트 같은 커뮤니티 결속"
+        ],
+        "avoid": [
+          "마켓 드롭을 열어두고 봇 방지 수단 없이 출시(결국 사용자 간 거래를 2025-03-11 제거)",
+          "수익 설계 없이 낮은 월 수익($2,000~$4,050)으로 개발을 지탱하려는 것",
+          "동접을 실제 이용자 수로 해석해 기획 수치로 쓰는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3419430/",
+          "title": "Bongo Cat - Steam",
+          "type": "스토어",
+          "note": "무료, 드롭 확률(Common 90%·Uncommon 9.5%·Rare 0.49%·Epic 0.01%·Legendary 1/500,000), 리뷰 집계, DLC.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3419430",
+          "title": "SteamCharts - Bongo Cat",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접, 최근 30일.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamdb.info/app/3419430/charts/",
+          "title": "SteamDB RSS - Bongo Cat peaks at 194k players",
+          "type": "보도",
+          "note": "2025-05-04 194,508명 동시 접속.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.eurogamer.net/steams-fourth-most-played-game-doesnt-really-make-any-money-and-its-developer-says-its-better-off-that-way",
+          "title": "Eurogamer - Steam's fourth most played game doesn't really make any money",
+          "type": "인터뷰",
+          "note": "월 순수익, 봇 약 50% 추정, 제작 3주, 마케팅 목적.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3419430/announcements/detail/534344040319026985",
+          "title": "QoL, Bug Fixes and Trading Changes",
+          "type": "공식",
+          "note": "2025-03-11 사용자 간 트레이딩 제거(봇 대응), 게임 모드·관리자 모드 설명.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3419430/announcements/detail/541132417437532527",
+          "title": "1 Year Anniversary",
+          "type": "공식",
+          "note": "2026-03-05 이용자 5.8 million 다운로드 발표.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3419430/announcements/detail/696522455474242806",
+          "title": "New UI and monthly Skins, Hats and Emotes!",
+          "type": "공식",
+          "note": "2026-09-01 Paw Pass 도입, 유료 트랙, 500 Bongo Coin.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://store.steampowered.com/itemstore/3419430/",
+          "title": "Bongo Cat - Steam 아이템 스토어",
+          "type": "스토어",
+          "note": "Paw Pass Token $4.99, 스킨 $2.50 (2026-10-14 조회).",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "banana",
+      "name": "Banana",
+      "url": "https://store.steampowered.com/app/2923300/Banana/",
+      "developer": "Sky, AestheticSpartan, Banana Game (Steam 상점 개발사 표기)",
+      "publisher": "Banana Game",
+      "origin": "미확인",
+      "release": "2024-04-23",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "클릭·시간 드롭 방치형 + Steam 인벤토리 아이템 수집·거래",
+      "businessModel": "무료 + Steam 마켓 거래 + 아이템 스토어(캡슐·토큰) + OST DLC",
+      "status": "서비스 중 (2026-07-04 패치 v1.2.22 확인)",
+      "description": "바나나 그림을 클릭하고 3시간마다 랜덤 바나나가 Steam 인벤토리로 드롭되는 무료 게임. 아이템을 마켓에서 거래할 수 있어 2024-06 동접이 91만을 넘었다.",
+      "coreLoop": [
+        "게임을 켜두거나 바나나를 클릭한다",
+        "3시간마다 랜덤 희귀도의 바나나가 인벤토리에 드롭된다",
+        "중복 바나나를 교환 시스템으로 상위 희귀도와 교환하거나 마켓에 판매한다",
+        "컬렉션(도감)을 채운다",
+        "다음 드롭을 위해 계속 켜둔다"
+      ],
+      "features": [
+        "3시간 드롭 풀: Normal 70%·Common 25%·Uncommon 4.89%·Rare 0.1%·Epic 0.01%·Ultra Rare 1/400,000·Legendary 1/10,000,000 (Steam 상점)",
+        "바나나 도안은 커뮤니티가 Discord에서 제작(Steam 상점 설명)",
+        "Steam 도전과제 76개·트레이딩 카드·워크숍·리더보드·클라우드",
+        "교환 시스템: 10개를 상위 희귀도로 교환하며 Normal 바나나 추가 요구(2024-11-20 공지)",
+        "2024-05-25 봇 방지: 드롭을 받으려면 3시간(희귀 드롭은 18시간)마다 한 번 클릭"
+      ],
+      "progression": [
+        "바나나 컬렉션 수·희귀도",
+        "교환 단계(Normal→Common→…→Legendary)",
+        "도전과제·통계",
+        "Well of the Past 등 보조 시스템(2025-06 패치노트)"
+      ],
+      "idleMechanics": "게임을 켜두기만 해도 3시간 간격으로 드롭된다(RPS, 2024-06-19). 봇 방지를 위해 3시간마다 1회 클릭이 필요하다(2024-05-25 공지). 오프라인 누적은 없다.",
+      "socialAndLiveOps": [
+        "계절·이벤트 드롭(크리스마스, Spookfest, Advent Calendar 등)과 드롭 풀 업데이트 공지 다수",
+        "Discord 커뮤니티(PC Gamer 2024-06 기준 회원 108,000명 이상) 도안 공모",
+        "2024-12 크리스마스 이벤트 교환 시스템에서 유료 토큰 방식을 이용자 피드백 후 철회",
+        "2026-07-02 공식 OST 출시"
+      ],
+      "popularityFactors": [
+        "Steam 마켓에서 거래되는 아이템을 '켜두기만 하면' 얻는 구조 (해석)",
+        "언론의 반복 보도: 2024-06 CS2 다음으로 두 번째 많이 플레이된 게임 (PC Gamer·RPS)",
+        "무료·무자원 클라이언트(개발자 발언: PC 자원 1% 이하) 때문에 다중 계정 봇 농사가 가능 (PC Gamer 인용)",
+        "커뮤니티 제작 아이템과 희귀 아이템의 고가 거래 화제"
+      ],
+      "monetization": {
+        "model": "무료(후원/코스메틱)",
+        "summary": "본편 무료이고 Steam 마켓 거래 수수료와 아이템 스토어 판매가 수익원으로 보인다. 2025-06-12 캡슐(랜덤 바나나)이 아이템 스토어에 추가됐다. 개별 가격은 확인하지 못했다.",
+        "products": [
+          {
+            "name": "Banana OST",
+            "price": "$4.99 / ₩4,100",
+            "contents": "17곡 및 데모·계절 음악",
+            "evidence": "Steam 상점 DLC (appdetails), 2026-07-01 출시"
+          }
+        ],
+        "verified": [
+          "본편 무료, 앱 내 구입(Steam 'In-App Purchases' 카테고리) 표기",
+          "2025-06-12 공지: 아이템 스토어에서 캡슐 판매(희귀도 uncommon~legendary 바나나)",
+          "2024-12-12 공지: 유료 Ultra Rare·Legendary 토큰 판매가 있었으며 이용자 피드백으로 방식을 바꾸겠다고 공지(2024-12-20)"
+        ],
+        "unverified": "캡슐·토큰의 실제 가격, 마켓 수수료 수익, 매출 규모는 확인하지 못했다. 아이템 스토어 페이지는 수집 시 접근 불가였다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamDB 역대 최고 917,272 (2024-06-20, 출시 58일 후) / SteamCharts 월 최고 890,713. SteamCharts 월 평균: 2024-06 399,467 · 2024-12 104,140 · 2025-12 58,408 · 2026-06 15,238 · 2026-09 2,947 · 최근 30일 2,879(최고 4,812).",
+        "rating": "Steam 리뷰 97,080개 중 긍정 79,418개(약 81.8%, 계산값) — 'Very Positive' (2026-10-14)",
+        "other": "Eurogamer(2025-06-26): 당시 동접 약 90,000이지만 봇 문제를 겪고 있고 포럼은 사실상 비어 있다고 Bongo Cat 개발사가 언급. 개발사 Hery는 Polygon 인터뷰에서 1,000개 대체 계정을 쓰는 이용자가 있다고 말했다(PC Gamer 2024-06-20 인용)."
+      },
+      "userFeedback": {
+        "positive": [
+          "게임이 없어도 되는 방치 드롭과 컬렉션 수집을 즐긴다는 평가(언론 서술 기반)",
+          "커뮤니티 제작 아이템과 이벤트가 활발"
+        ],
+        "negative": [
+          "본질이 클릭 게임보다 아이템 거래라는 지적(PC Gamer: '좋은 게임이라서가 아니라 무스트레스로 Steam 아이템을 얻는 방법이라서 인기')",
+          "봇·다중 계정으로 인한 경제 왜곡과 이용자 이탈(Eurogamer)",
+          "유료 토큰 기반 이벤트가 'pay to have'라는 이용자 반발로 철회(2024-12-20 공지)"
+        ],
+        "basis": "개발사 공지·PC Gamer·RPS·Eurogamer 기사. 이번 조사에서 Steam 리뷰 본문은 확인 못 했다."
+      },
+      "takeaways": {
+        "borrow": [
+          "'켜두기만 해도 드롭'이라는 단순한 방치 보상 구조",
+          "커뮤니티 도안 제작으로 콘텐츠 비용을 줄이고 참여를 만든 방식",
+          "희귀도 확률을 상점에 공개하고 드롭 풀을 정기 개편한 운영"
+        ],
+        "avoid": [
+          "마켓 거래를 열어두면서 봇 방지를 사후 보완하는 구조(출시 2개월 만에 봇 방지 클릭 필요, 이후 동접 급감)",
+          "개발진 이력 논란(PC Gamer 2024-06-20: 개발자 한 명이 과거 마켓 조작 논란으로 이탈) 같은 거버넌스 리스크",
+          "한정 아이템을 유료 토큰으로만 열어 반발을 사는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/2923300/Banana/",
+          "title": "Banana - Steam",
+          "type": "스토어",
+          "note": "무료, 3시간 드롭 확률표, 도전과제·카테고리, 리뷰 집계, DLC.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/2923300",
+          "title": "SteamCharts - Banana",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접 및 최근 30일.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamdb.info/app/2923300/charts/",
+          "title": "SteamDB RSS - Banana peaks at 917k players",
+          "type": "보도",
+          "note": "2024-06-20 917,272명 동시 접속(출시 58일 후).",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rockpapershotgun.com/fine-lets-write-about-the-stupid-banana-game",
+          "title": "Rock Paper Shotgun - Fine, let's write about the stupid Banana game",
+          "type": "보도",
+          "note": "2024-06-19 무료 방치 클릭 게임·마켓 판매 설명.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/dev-promises-that-steam-sensation-banana-has-no-scamming-after-fellow-dev-s-shady-faux-bitcoin-past-sees-his-fruits-confiscated/",
+          "title": "PC Gamer - Dev promises that Steam sensation Banana has 'no scamming'",
+          "type": "보도",
+          "note": "2024-06-20 두 번째 많이 플레이된 게임, 봇·다중 계정 문제.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/2923300/announcements/detail/4178856034930942544",
+          "title": "Patch notes (2024-05-25)",
+          "type": "공식",
+          "note": "봇 방지: 3시간(희귀 18시간)마다 1회 클릭.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/2923300/announcements/detail/535478173041691123",
+          "title": "New Update: Capsules Are Here!",
+          "type": "공식",
+          "note": "2025-06-12 캡슐 판매 시작, 인벤토리·교환 패치.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "deskrawl-idle-arpg",
+      "name": "Deskrawl: Idle ARPG",
+      "url": "https://store.steampowered.com/app/4623570/",
+      "developer": "First Day Games (2인 스튜디오, 개발사 소개글 표기)",
+      "publisher": "First Day Games, Gamersky Games (Steam 상점 표기)",
+      "origin": "미확인 (Discord·QQ 운영, 중국어권 이용자 다수 언급)",
+      "release": "2026-09-28 (데모 2026-06-15, 클로즈 베타 2026-08-19)",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "데스크톱 하단 띠 횡스크롤 방치 ARPG (디아블로풍) + Steam 마켓 거래",
+      "businessModel": "유료 구매($6.99, 출시 30% 할인) + 서포터 팩 DLC + Steam 마켓 거래",
+      "status": "서비스 중 (출시 2주, 2026-10-13 10월 로드맵 공지)",
+      "description": "화면 하단에서 영웅이 자동으로 몹을 사냥하고 레전더리 장비와 적 미니언을 모으는 데스크톱 방치 ARPG. 장비·재료·미니언을 Steam 마켓에서 거래할 수 있다.",
+      "coreLoop": [
+        "영웅이 맵을 자동 순회하며 몬스터를 처치한다",
+        "전리품을 수레(cart)에 싣고 마을에서 판매·보관한다",
+        "장비·룬·재능·미니언으로 빌드를 강화한다",
+        "보스와 Mythic Realms(시간제한·난이도 단계) 도전으로 더 좋은 보상을 얻는다",
+        "자동 사냥을 계속한다"
+      ],
+      "features": [
+        "영웅 4종: Warrior·Sorcerer·Hunter·Monk (리뷰·패치노트)",
+        "적(보스 포함) 포획해 미니언으로 사용, 미니언이 전리품 수레를 끎(Steam 상점 설명)",
+        "마을 성장·NPC 해금, Mythic Realms(시간제한·난이도 단계)",
+        "온라인 모드: 리더보드·안티치트(0.1.13, 2026-06-27), 오프라인(싱글) 캐릭터 구분",
+        "Steam 마켓 및 인게임 경매장(Auction House) 거래",
+        "리사이즈·드래그 가능한 창, 클라우드 세이브(0.1.9, 2026-06-16)"
+      ],
+      "progression": [
+        "캐릭터 레벨·재능(Talents)",
+        "장비 희귀도(Legendary·Ancient Legendary·Divine·Black Mist 등)",
+        "룬 및 룬 세트(1.0.1에서 레전더리 룬 32종 추가)",
+        "미니언 수집",
+        "마을 시설",
+        "Life Skills(0.1.10), 낚시 등"
+      ],
+      "idleMechanics": "하단 띠에서 자동 진행되며 오프라인 캐릭터는 희귀 아이템 드롭 확률 2배 버프를 받는다(1.0.2, 2026-10-09). 오프라인(앱 종료 중) 진행 여부와 누적 시간 상한은 미확인.",
+      "socialAndLiveOps": [
+        "리더보드(Treant 보스 챌린지 상위 100 공지, 2026-07-22)와 치트 이용자 제거",
+        "출시 후 2주 내 패치 1.0.0g~1.0.2b와 룬 변환·신규 룬·원자재(Commodity) 추가",
+        "온라인 모드는 정품 소유 필수(1.0.0h, Family Sharing 등은 싱글만)",
+        "2026-10-13 '10월 로드맵' 공지(세부 내용 미확인)"
+      ],
+      "popularityFactors": [
+        "'바쁜 사람을 위한 디아블로 2' 식 하단 방치 ARPG라는 명확한 포지셔닝 (이용자 리뷰 표현)",
+        "TBH 이후 확산된 '데스크톱 ARPG+마켓' 수요 흡수 (해석)",
+        "$4.89~$6.99의 저가 구매로 봇 진입 장벽 형성 (해석)",
+        "데모·Next Fest·리더보드 이벤트로 출시 전 팬층 확보 (공지 근거)"
+      ],
+      "monetization": {
+        "model": "유료 구매",
+        "summary": "본편은 $6.99 1회 구매이며 출시 직후 30% 할인($4.89 Steambase 표기)이 적용됐다. 서포터 팩 DLC($1.99)가 있고, 장비·재료·미니언을 Steam 마켓에서 거래할 수 있다.",
+        "products": [
+          {
+            "name": "Deskrawl: Idle ARPG",
+            "price": "$6.99 (2026-10-14 Steam 상점 US) / 출시 30% 할인 $4.89 (Steambase 2026-10-13 표기)",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails · Steambase · 출시 공지 제목 '30% Off!'"
+          },
+          {
+            "name": "Deskrawl: Idle ARPG - Supporter Pack",
+            "price": "$1.99 / ₩2,250",
+            "contents": "내용 설명 미확인",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 유료 $6.99(2026-10-14 US 상점 조회)",
+          "서포터 팩 DLC $1.99",
+          "상점 설명: 장비·재료·미니언을 Steam 마켓에서 거래 가능",
+          "경매장에 'Buy Items' 버튼 추가(1.0.0i)"
+        ],
+        "unverified": "서포터 팩의 구체 구성, 마켓 수수료 수익, 판매량·매출은 확인하지 못했다. 부정 리뷰에서 룬 세트 완성을 위해 Steam 마켓 구매가 사실상 필요해 '온라인 모드가 페이투윈'이라는 주장이 있으나 공식 확인은 못 했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "2026-10-13 22:46 UTC 공식 차트 27위 동시 37,708·24시간 최고 46,863. SteamCharts 조회 당시 동시 37,985.",
+        "rating": "Steam 리뷰 2,772개 — 'Mixed' (SteamCharts 수집 2026-10-14, 긍정/부정 개수는 미수집)",
+        "chart": "Steam 공식 동접 차트 27위 (2026-10-13 22:46 UTC)"
+      },
+      "userFeedback": {
+        "positive": [
+          "하단에 두고 다른 일을 할 수 있는 '디아블로 2 풍' 방치 ARPG라는 호평",
+          "마켓 연동에 대한 비판 리뷰의 상당수가 마켓 수익 목적 이용자로부터 나왔다는 반박(긍정 리뷰)",
+          "세컨드 모니터용으로 좋다는 후기"
+        ],
+        "negative": [
+          "마켓 거래 허용으로 장비 가치가 하락하고 RMT만 남는다는 비판",
+          "엔드게임 희귀 등급 드롭이 거의 없어 소수 행운 이용자 중심이라는 불만",
+          "빌드 자유도 부족·성장 단조로움 지적"
+        ],
+        "basis": "Steam 리뷰 최근 365일 상위 샘플(영어 긍정·부정 8개씩), 2026-10-14 수집"
+      },
+      "takeaways": {
+        "borrow": [
+          "데모(Next Fest)→클로즈 베타→정식 출시로 이어지는 점진적 공개와 리더보드 이벤트",
+          "미니언 포획·수레 등 방치 중에도 눈에 띄는 수집 요소",
+          "오프라인(싱글) 캐릭터에 희귀 드롭 버프를 줘 마켓 의존을 낮추는 시도"
+        ],
+        "avoid": [
+          "가격이 낮아도 마켓 거래를 열면 RMT 논란이 따라온다는 점",
+          "온라인·오프라인 캐릭터를 분리했을 때 생기는 서버 안정성·세이브 손실 문제(0.1.13 핫픽스 다수)",
+          "엔드게임 희귀 등급을 극단적으로 낮게 둬 소수에게만 보상이 집중되는 설계"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/4623570/",
+          "title": "Deskrawl: Idle ARPG - Steam",
+          "type": "스토어",
+          "note": "개발사·퍼블리셔 표기, $6.99, 기능 설명, 마켓 거래 문구.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steambase.io/games/deskrawl-idle-arpg/steam-charts",
+          "title": "Steambase - Deskrawl: Idle ARPG",
+          "type": "데이터(추정)",
+          "note": "2026-10-13 갱신 기준 가격 $4.89, 출시 2026-09-28.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/4623570/announcements/detail/655980546469398075",
+          "title": "Introduction of Deskrawl",
+          "type": "공식",
+          "note": "2026-05-18 First Day Games 2인 스튜디오 소개.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/4623570/announcements/detail/704398048038487178",
+          "title": "[0.1.13] New Talents, Online Mode, Leaderboard and Anti-cheat!",
+          "type": "공식",
+          "note": "2026-06-27 온라인 캐릭터·리더보드.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/4623570/announcements/detail/706659359748261894",
+          "title": "[1.0.2] Rune Transmute, New Runes and more!",
+          "type": "공식",
+          "note": "2026-10-09 오프라인 캐릭터 희귀 드롭 2배 버프.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/4623570/announcements/detail/706658725338808440",
+          "title": "[Patch 1.0.0h] Hunter/Monk Buffs and other improvements",
+          "type": "공식",
+          "note": "2026-10-01 온라인 모드 정품 소유 필수.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://api.steampowered.com/ISteamChartsService/GetGamesByConcurrentPlayers/v1/",
+          "title": "Steam 공식 동접 차트",
+          "type": "공식",
+          "note": "27위 37,708 (2026-10-13 22:46 UTC).",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "rustys-retirement",
+      "name": "Rusty's Retirement",
+      "url": "https://store.steampowered.com/app/2666510/",
+      "developer": "Mister Morris Games",
+      "publisher": "Mister Morris Games",
+      "origin": "미확인",
+      "release": "2024-04-26",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "화면 하단 상주 방치 농장 시뮬레이션",
+      "businessModel": "유료 구매 $4.19 + 서포터 팩 DLC $3.99",
+      "status": "서비스 중 (Vampire Survivors·Balatro 콜라보 등 2025년 업데이트 확인)",
+      "description": "화면 하단에 띠 모양으로 띄워 두고 로봇 보조와 함께 작물을 키워 바이오 연료를 파는 방치형 농장 시뮬레이션.",
+      "coreLoop": [
+        "작물을 심고 Rusty가 물을 주고 수확한다",
+        "작물로 바이오 연료를 만들어 판매한다",
+        "번 돈으로 농장을 확장하고 로봇 보조를 구매·업그레이드한다",
+        "자동화가 늘수록 방치 효율이 오른다",
+        "새 작물을 해금하며 반복한다"
+      ],
+      "features": [
+        "화면 하단에 앉는 레이아웃, 확대/축소, 집중 모드(작물 생산 속도 감소) (Steam 상점 설명)",
+        "세로 모드: 화면 옆면에 두는 수직 농장",
+        "Twitch 연동: 채팅 명령(!plant !water !harvest)으로 시청자가 로봇에 작업 지시",
+        "로봇 보조 커스터마이즈·업그레이드",
+        "Steam 트레이딩 카드 추가(2025-01-31 공지)"
+      ],
+      "progression": [
+        "작물 해금",
+        "농장 확장",
+        "로봇 보조 수·성능",
+        "마지막 주민 해금 후 완전 자동화(리뷰 서술)"
+      ],
+      "idleMechanics": "하단에 두고 진행되며 집중 모드는 생산을 늦춘다고 상점 설명에 명시돼 있다. 마지막 주민 해금 전까지는 수동 심기가 필요하다는 이용자 리뷰가 있다. 오프라인 진행은 미확인.",
+      "socialAndLiveOps": [
+        "Twitch 연동 협업 농장",
+        "2025-04-01 Vampire Survivors 콜라보, 2025-08-07 Balatro 콜라보",
+        "2025-01-31 Steam 트레이딩 카드 추가",
+        "Steam 번들 'Bottom-Of-Your-Screen'(17종 포함)에 포함"
+      ],
+      "popularityFactors": [
+        "Rock Paper Shotgun이 '하단에 앉는 농장 시뮬'로 소개(2024-04-27)해 초기 확산 (해석)",
+        "저가 구매와 마켓 드롭 없는 단순 구조 (해석)",
+        "Bongo Cat 개발사가 영감원으로 언급(Eurogamer): 데스크톱 상주형 장르의 선례"
+      ],
+      "monetization": {
+        "model": "유료 구매",
+        "summary": "본편 $4.19 1회 구매이고 후원용 서포터 팩이 있다. 마켓 드롭이나 인앱 구입은 확인하지 못했다.",
+        "products": [
+          {
+            "name": "Rusty's Retirement",
+            "price": "$4.19 (2026-10-14 Steam 상점 US 조회)",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails"
+          },
+          {
+            "name": "Rusty's Retirement - Supporter Pack",
+            "price": "$3.99 / ₩4,500",
+            "contents": "개발 후원용 팩",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 유료(is_free=false)",
+          "서포터 팩 DLC $3.99(2024-04-26 출시)"
+        ],
+        "unverified": "서포터 팩에 포함된 인게임 혜택, 판매량·매출, 할인 이력은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 20,876 (2024-05). 2026-09 월 평균 309·최고 498, 최근 30일 평균 272·최고 418. 조회 시점 동시 접속 284.",
+        "rating": "Steam 리뷰 14,906개 — 'Overwhelmingly Positive' (2026-10-14)",
+        "other": "SteamSpy 소유자 추정 20만~50만(참고용 추정, 조회 시점 미명시)."
+      },
+      "userFeedback": {
+        "positive": [
+          "하단에 두고 일하며 키우는 편안한 농장 경험(언론·리뷰)",
+          "저가이며 콜라보 업데이트 지속",
+          "스트리머와 함께 하는 Twitch 연동"
+        ],
+        "negative": [
+          "완전 자동화 전까지 수동 조작이 잦고 화면이 크다는 불만",
+          "창 모드 없음·배치 불편 지적",
+          "엔드게임/목표 부재로 '인터랙티브 배경화면'에 가깝다는 평가"
+        ],
+        "basis": "Steam 리뷰(부정 5개 샘플 확인), 개발사 공지 (2026-10-14 수집)"
+      },
+      "takeaways": {
+        "borrow": [
+          "하단 띠 레이아웃과 집중 모드 같은 '방해하지 않는' 옵션",
+          "Twitch 연동과 인기 게임 콜라보로 바이럴 유지",
+          "마켓 드롭 없이 저가 구매로 높은 긍정률(Overwhelmingly Positive) 달성"
+        ],
+        "avoid": [
+          "완전 자동화 해금 전까지 잦은 수동 조작을 요구해 방치 기대와 어긋나는 설계",
+          "장기 목표가 없어 출시 한 달 후 동접이 크게 줄어드는 곡선(2024-05 평균 8,292 → 2024-06 1,976)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/2666510/",
+          "title": "Rusty's Retirement - Steam",
+          "type": "스토어",
+          "note": "개발사, 가격, 상점 설명(집중 모드·세로 모드·Twitch 연동), 리뷰 집계.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/2666510",
+          "title": "SteamCharts - Rusty's Retirement",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rockpapershotgun.com/this-farming-sim-sits-at-the-bottom-of-your-screen-while-you-kid-yourself-youre-doing-other-things",
+          "title": "Rock Paper Shotgun - This farming sim sits at the bottom of your screen",
+          "type": "보도",
+          "note": "2024-04-27 보도 제목 확인.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/2666510/announcements/detail/524209673376629053",
+          "title": "Rusty's Retirement x Vampire Survivors!",
+          "type": "공식",
+          "note": "2025-04-01 콜라보 공지.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://store.steampowered.com/bundle/48558/",
+          "title": "Bottom-Of-Your-Screen 번들 - Steam",
+          "type": "스토어",
+          "note": "17종 번들 구성(Rusty's Retirement 등), 12% 할인 표기.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.eurogamer.net/steams-fourth-most-played-game-doesnt-really-make-any-money-and-its-developer-says-its-better-off-that-way",
+          "title": "Eurogamer - Bongo Cat interview",
+          "type": "인터뷰",
+          "note": "Bongo Cat 제작 영감이 Rusty's Retirement라는 언급.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "spirit-city-lofi-sessions",
+      "name": "Spirit City: Lofi Sessions",
+      "url": "https://store.steampowered.com/app/2113850/",
+      "developer": "Mooncube Games",
+      "publisher": "Mooncube Games",
+      "origin": "미확인",
+      "release": "2024-04-08",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "로파이 집중 도구 + 코지 컬렉션(방치·집중 보조)",
+      "businessModel": "유료 구매 + 확장 DLC·코스메틱 DLC",
+      "status": "서비스 중 (2026-08-24 Magical Library DLC 출시, 2026-05-25 무료 Lofi Girl 업데이트)",
+      "description": "로파이 음악·투두·타이머·습관 트래커와 방 꾸미기·스피릿 수집을 결합한 '게이미파이드 집중 도구'. 데스크톱에 켜두는 코지 앱 성격이다.",
+      "coreLoop": [
+        "방을 꾸미고 음악·환경음을 고른다",
+        "타이머·투두·습관 기록으로 집중 작업을 한다",
+        "XP를 얻어 레벨이 오른다",
+        "조합에 따라 스피릿 동료가 등장해 도감에 모인다",
+        "새 꾸미기 아이템을 해금해 반복한다"
+      ],
+      "features": [
+        "로파이 음악과 환경음(빗소리·모닥불) 스트리밍 친화 (Steam 상점)",
+        "내장 투두·타이머·습관 트래커·저널",
+        "캐릭터·방 커스터마이즈, 스피릿 수집",
+        "Homework Radio 음악 라이선스는 2028-08까지(상점 표기)"
+      ],
+      "progression": [
+        "XP·레벨(이용자 리뷰에 레벨 174 언급)",
+        "스피릿 수집(약 30시간·레벨 24에 전부 수집했다는 리뷰)",
+        "꾸미기 해금",
+        "확장 DLC로 방·스피릿 추가"
+      ],
+      "idleMechanics": "엄밀한 방치 게임은 아니며 켜둔 채 작업하는 집중 도구다. 오프라인 보상은 확인하지 못했다(미확인).",
+      "socialAndLiveOps": [
+        "확장 DLC 연 1~2회: Cozy Kitchen(2025-03-26), All Aboard!(2025-08-25), Enchanted Garden(2026-03-23), Magical Library(2026-08-24)",
+        "무료 업데이트 Lofi Girl Update(2026-05-25)",
+        "1주년(2025-04-08) 및 계절 업데이트·커뮤니티 챌린지"
+      ],
+      "popularityFactors": [
+        "공부·업무 중 켜두는 코지 도구라는 틈새 수요 (해석)",
+        "RPS·PC Gamer가 출시 직후(2024-04-09) 소개",
+        "스트리밍 가능한 라이선스 음악 (상점 설명)"
+      ],
+      "monetization": {
+        "model": "혼합 (유료 구매+DLC)",
+        "summary": "본편 구매 후 확장 DLC($7.99)와 코스메틱 팩($4.99), 서포터 팩($5.99)을 판매한다. 일부 DLC는 2026-10-14 조회 시 20% 할인 중이었다.",
+        "products": [
+          {
+            "name": "Spirit City: Lofi Sessions (본편)",
+            "price": "$4.79 (2026-10-14 Steam 상점 US 조회, 할인 여부 미확인)",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails"
+          },
+          {
+            "name": "Magical Library DLC",
+            "price": "$7.99 / ₩8,900",
+            "contents": "방·스피릿 확장",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "Enchanted Garden / All Aboard! / Cozy Kitchen DLC",
+            "price": "$7.99 (조회 시 20% 할인 $6.39)",
+            "contents": "확장 DLC",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "Winter Spirit Cosmetics Pack",
+            "price": "$4.99 (조회 시 $3.99)",
+            "contents": "겨울 코스메틱",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "Supporter pack",
+            "price": "$5.99 (조회 시 $4.79)",
+            "contents": "개발 후원 + 스피릿 'Galaxy' 스킨",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 유료",
+          "DLC 6종 가격(2026-10-14 조회)",
+          "일부 부정 리뷰가 초기 '업데이트는 무료' 안내와 이후 DLC 판매 사이의 차이를 지적"
+        ],
+        "unverified": "본편 정가(조회 시점 할인 여부 불명), 판매량·매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 4,167 (2024-04). 2026-09 월 평균 1,589·최고 2,604, 최근 30일 평균 1,420·최고 2,162. 월 평균은 출시 2년 반 후에도 1,200~1,900 범위(월별 조회치).",
+        "rating": "Steam 리뷰 16,941개 — 'Overwhelmingly Positive' (2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "공부·작업 시간에 켜두기 좋은 셀프케어 도구라는 후기",
+          "음악·꾸미기·스피릿 수집의 코지함",
+          "수백~수천 시간 플레이한 장기 이용자 다수"
+        ],
+        "negative": [
+          "생산성 도구로는 얕고 PC 자원이 무겁다는 지적",
+          "초기 '무료 업데이트' 안내와 유료 DLC 전환에 대한 반발",
+          "위젯 재배치 등 기능 한계"
+        ],
+        "basis": "Steam 리뷰 최근 365일 상위 샘플(긍정·부정 각 5개), 2026-10-14 수집"
+      },
+      "takeaways": {
+        "borrow": [
+          "작업 도구와 코지 수집을 합친 '켜둘 이유' 설계",
+          "연 1~2회 확장 DLC와 무료 업데이트 병행으로 장기 동접(월 평균 1,200~1,900) 유지",
+          "음악 라이선스를 상점에 명시한 투명성"
+        ],
+        "avoid": [
+          "'업데이트 무료' 같은 장기 약속을 DLC 계획과 충돌하게 하는 것",
+          "도구로서 기능이 얕다는 인상(생산성 기대 대비)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/2113850/",
+          "title": "Spirit City: Lofi Sessions - Steam",
+          "type": "스토어",
+          "note": "개발사, 상점 설명, 리뷰 집계, DLC 목록.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/2113850",
+          "title": "SteamCharts - Spirit City: Lofi Sessions",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.rockpapershotgun.com/this-gamified-focus-tool-lets-you-construct-your-own-lofi-girlboy-to-chillstudy-with",
+          "title": "Rock Paper Shotgun - gamified focus tool",
+          "type": "보도",
+          "note": "2024-04-09 출시 직후 소개.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/2113850/announcements/detail/689758177396261501",
+          "title": "The Lofi Girl Update is available now for FREE!",
+          "type": "공식",
+          "note": "2026-05-25 무료 업데이트.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/2113850/announcements/detail/525339374585381601",
+          "title": "Spirit City: Lofi Sessions - 1 Year Anniversary!",
+          "type": "공식",
+          "note": "2025-04-08 1주년 공지.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "cast-n-chill",
+      "name": "Cast n Chill",
+      "url": "https://store.steampowered.com/app/3483740/",
+      "developer": "Wombat Brawler",
+      "publisher": "Wombat Brawler",
+      "origin": "미확인",
+      "release": "2025-06-16 (데모 2025-05-08)",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "코지 낚시 + 패시브(아이들) 모드, 보조 모니터에 켜두는 형태",
+      "businessModel": "유료 구매 $14.99 + 서포터 팩 DLC $2.99",
+      "status": "서비스 중 (2026-05-28 Old Moose Cabin 무료 업데이트, 후속작 Wild n Chill 데모 2026-08-07)",
+      "description": "호수·강·바다에서 낚시하며 장비를 강화하는 코지 게임. 액티브 모드와 아무것도 안 해도 낚시가 진행되는 패시브(Idle) 모드를 오갈 수 있다.",
+      "coreLoop": [
+        "배를 타고 낚시터를 골라 낚시한다",
+        "잡은 물고기를 판매한다",
+        "번 돈으로 낚싯대·릴 등 장비를 강화한다",
+        "새 낚시터·전설 어종을 해금해 도감을 채운다",
+        "액티브 또는 패시브 모드로 계속한다"
+      ],
+      "features": [
+        "16개 낚시터, 50종 이상 물고기, 전설 어종 16종 (Steam 상점)",
+        "Active Mode / Passive(Idle) Mode, 두 번째 모니터·구석에 두는 사용 권장(상점 설명)",
+        "2025-08-06 업데이트: Idle Mode 제한 설정, 진행·판매·업적이 없는 Screensaver Mode",
+        "코옵(2025-12-19), 반려동물 동료, 오두막 복구",
+        "도전과제 38개"
+      ],
+      "progression": [
+        "장비 업그레이드",
+        "낚시터 해금",
+        "도감(로그북) 수집",
+        "오두막 복구·낚시터 꾸미기"
+      ],
+      "idleMechanics": "Passive 모드에서 게임이 자동으로 낚시를 진행한다. 오프라인(앱 종료 중) 보상·누적 상한은 미확인. 2025-06-25 v1.0.1에서 Idle Mode가 변경됐다.",
+      "socialAndLiveOps": [
+        "계절·지역 업데이트: Autumnwood Lake(2025-09-11), Lake Hunkerdown 겨울(2025-12-01)",
+        "코옵 모드와 Remote Play Together(2025-12-19)",
+        "DREDGE 번들 10% 할인(2025-06-30)",
+        "후속 'Wild n Chill' 발표(2026-05-28)"
+      ],
+      "popularityFactors": [
+        "코지 낚시 장르 + 도트 그래픽과 반려견 동료 (해석)",
+        "Steam 낚시 페스트 20% 할인 등 프로모션 (공지 근거)",
+        "방치(Passive) 모드로 업무 중에도 켜둘 수 있는 선택지 (해석)"
+      ],
+      "monetization": {
+        "model": "유료 구매",
+        "summary": "본편 $14.99 구매형이며 반려동물 2종이 들어간 서포터 팩($2.99)이 있다. 마켓 드롭·인앱 구입은 확인하지 못했다.",
+        "products": [
+          {
+            "name": "Cast n Chill",
+            "price": "$14.99 / ₩16,500",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails"
+          },
+          {
+            "name": "Cast n Chill - Supporter Pack",
+            "price": "$2.99 / ₩3,400",
+            "contents": "동료 선택지(Bernese Mountain dog 또는 Maine Coon cat)",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 정가 $14.99",
+          "서포터 팩 $2.99(2025-06-16 출시)",
+          "Eastern Winds DLC는 출시일 미정으로 조회됨"
+        ],
+        "unverified": "판매량·매출(AppMagic 등 추정치)은 이번 조사에서 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 4,425 (2025-06). 월 평균: 2025-06 2,483 · 2025-12 989 · 2026-06 560 · 2026-09 243, 최근 30일 평균 275(최고 521).",
+        "rating": "Steam 리뷰 8,841개(긍정 8,388개, 약 94.9% 계산값) — 'Very Positive' (2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "편안한 분위기와 낚시 업그레이드 루프에 대한 호평(상점 설명·리뷰 집계 기준 Very Positive)",
+          "패시브 모드와 스크린세이버 모드 추가에 대한 호응(업데이트 공지 근거)"
+        ],
+        "negative": [
+          "출시 직후 급감한 동접(2025-06 평균 2,483 → 2026-09 평균 243)에서 장기 리텐션 약화가 읽힘 (해석)"
+        ],
+        "basis": "이번 조사에서 Steam 리뷰 본문 샘플은 수집하지 못함. 집계 수치와 공지 근거만 사용"
+      },
+      "takeaways": {
+        "borrow": [
+          "액티브/패시브 모드와 스크린세이버 모드로 '켜두기'와 '직접 하기'를 모두 지원",
+          "비수익 모드(스크린세이버)를 별도로 제공해 고령·직장인 이용자 배려",
+          "무료 콘텐츠 업데이트(Old Moose Cabin)로 신뢰 유지"
+        ],
+        "avoid": [
+          "고정 $14.99 정가의 풀 게임은 데스크톱 상주 이용자 규모를 키우기 어렵다는 점(최고 동접 4,425)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3483740/",
+          "title": "Cast n Chill - Steam",
+          "type": "스토어",
+          "note": "$14.99, 상점 설명(Active/Passive 모드, 16곳·50종), 리뷰 집계.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3483740",
+          "title": "SteamCharts - Cast n Chill",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3483740/announcements/detail/539986220231426272",
+          "title": "v1.0.2 Fish Fighting Update",
+          "type": "공식",
+          "note": "2025-08-06 Idle Mode 제한·Screensaver Mode 추가.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3483740/announcements/detail/502844844914246683",
+          "title": "Co-op Mode + New Outfits",
+          "type": "공식",
+          "note": "2025-12-19 코옵·Remote Play Together.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "ropukas-idle-island",
+      "name": "Ropuka's Idle Island",
+      "url": "https://store.steampowered.com/app/3416070/",
+      "developer": "Moczan and Little Chmura, Begoña Pereda",
+      "publisher": "Moczan and Little Chmura",
+      "origin": "미확인",
+      "release": "2025-01-29",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "화면 어디에나 두는 '스티커형' 코지 방치",
+      "businessModel": "유료 구매 $3.99 + OST DLC",
+      "status": "서비스 중 (OST 2026-01-29 출시)",
+      "description": "화면 어디에나 올려두는 '플레이 가능한 스티커'. 개구리 Ropuka가 잔디를 깎고 그 잔디로 도구 업그레이드와 섬 꾸미기를 한다.",
+      "coreLoop": [
+        "Ropuka가 자동으로 잔디를 깎는다",
+        "잔디를 통화로 도구를 업그레이드하고 잔디 품질을 올린다",
+        "건물·식물로 섬을 꾸민다",
+        "도감(모든 아이템)을 채운다",
+        "계속 켜둔다"
+      ],
+      "features": [
+        "화면 어디든 배치·크기 조절, 작게 두기(Steam 상점 설명)",
+        "로파이 트랙·자연 환경음 모드 제공",
+        "도전과제 31개",
+        "Tiny Pasture와 콜라보 이벤트(2025-06-26, Tiny Pasture 공지)"
+      ],
+      "progression": [
+        "도구 업그레이드",
+        "잔디 품질",
+        "섬 건물·식물 꾸미기",
+        "아이템 수집"
+      ],
+      "idleMechanics": "Ropuka는 잠든 때를 제외하고 항상 잔디를 깎는다(상점 설명). 오프라인 누적은 미확인.",
+      "socialAndLiveOps": [
+        "PC Gamer 리뷰(2025-02-06): 25시간 플레이 후 '푹 빠졌다'는 표현",
+        "Tiny Pasture 콜라보(2025-06-26)",
+        "Bottom-Of-Your-Screen 번들에 포함"
+      ],
+      "popularityFactors": [
+        "귀여운 개구리 캐릭터와 '데스크톱 펫 르네상스' 맥락의 보도 (PC Gamer 2025-02-25·2025-12-31)",
+        "$3.99 저가·마켓 없는 단순 구조 (해석)",
+        "스트리머·언론의 '코워킹 버디' 소개 (해석)"
+      ],
+      "monetization": {
+        "model": "유료 구매",
+        "summary": "본편 $3.99 1회 구매이며 DLC는 $1.99 OST 하나뿐이다.",
+        "products": [
+          {
+            "name": "Ropuka's Idle Island",
+            "price": "$3.99 / ₩3,250",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails"
+          },
+          {
+            "name": "Ropuka's Idle Island Soundtrack",
+            "price": "$1.99 / ₩2,300",
+            "contents": "사운드트랙(2026-01-29)",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 정가 $3.99",
+          "OST DLC $1.99"
+        ],
+        "unverified": "판매량·매출, 앱 내 구입 여부는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 3,850 (2025-02). 최근 30일 평균 325(최고 455).",
+        "rating": "Steam 리뷰 4,335개(긍정 4,121개, 약 95.1% 계산값) — 'Overwhelmingly Positive' (2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "하단·모서리 어디든 둘 수 있는 귀여운 코워킹 버디라는 평가(PC Gamer 인용: '개구리 친구가 구석에서 잔디를 깎는다')",
+          "저가 대비 만족도 높음(Overwhelmingly Positive)"
+        ],
+        "negative": [
+          "확인된 부정 리뷰 본문 없음(조사 미수행). 동접이 출시 직후 3,850에서 최근 약 325로 감소"
+        ],
+        "basis": "PC Gamer 기사 발췌, Steam 리뷰 집계 (리뷰 본문 샘플은 수집 못 함)"
+      },
+      "takeaways": {
+        "borrow": [
+          "'플레이 가능한 스티커'라는 한 줄 포지셔닝",
+          "$3.99 구매 + OST만 DLC로 두는 최소 과금",
+          "음악 모드(로파이·자연음) 선택 제공"
+        ],
+        "avoid": [
+          "콘텐츠 깊이가 얕으면 출시 후 동접이 빠르게 줄어든다는 점(최고 3,850 → 최근 약 325)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3416070/",
+          "title": "Ropuka's Idle Island - Steam",
+          "type": "스토어",
+          "note": "개발사, $3.99, 상점 설명, 리뷰 집계, OST DLC.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3416070",
+          "title": "SteamCharts - Ropuka's Idle Island",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/ive-already-spent-25-hours-with-this-idle-game-where-an-adorable-grass-cutting-frog-keeps-me-company-on-my-desktop-and-its-safe-to-say-im-obsessed/",
+          "title": "PC Gamer - I've already spent 25 hours with this idle game",
+          "type": "보도",
+          "note": "2025-02-06 보도 제목.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/life-sim/desktop-pets-are-so-back-baby/",
+          "title": "PC Gamer - Desktop pets are so back, baby!",
+          "type": "보도",
+          "note": "2025-02-25 보도 제목.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3167550/announcements/detail/523094550774809097",
+          "title": "Tiny Pasture x Ropuka's Idle Island Collaboration Begins!",
+          "type": "공식",
+          "note": "2025-06-26 Tiny Pasture 공지에 기재된 콜라보.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "tiny-pasture",
+      "name": "Tiny Pasture",
+      "url": "https://store.steampowered.com/app/3167550/",
+      "developer": "CaveLiquid",
+      "publisher": "Gamersky Games",
+      "origin": "미확인",
+      "release": "2025-02-17",
+      "platforms": [
+        "PC(Steam)"
+      ],
+      "subgenre": "화면 하단 동물 목장 데스크톱 컴패니언 방치",
+      "businessModel": "유료 구매 $5.99 + 소액 DLC·서포터 팩 + 번들 협업",
+      "status": "서비스 중 (2026-06-10 Birdwatching Notebook 번들 등 업데이트 지속)",
+      "description": "화면 하단에서 동물들이 졸고 뛰어다니는 데스크톱 목장. 동물을 돌보고 팔거나 수집한다.",
+      "coreLoop": [
+        "동물을 키우며 코인을 수거한다",
+        "먹이·청소·약으로 돌본다",
+        "동물을 판매하거나 도감용으로 보유한다",
+        "더 비싼 종과 다양한 색 동물을 해금한다",
+        "하단에 계속 켜둔다"
+      ],
+      "features": [
+        "다양한 동물·색, 화면 하단 점유(Steam 상점 설명)",
+        "도전과제 55개",
+        "Azure Waters DLC: 목장을 데스크톱 수족관으로 전환(2025-06-18)",
+        "다수 게임과의 번들 협업(2025-07~2026-06)",
+        "퍼블리셔 Gamersky Games(Steam 표기)"
+      ],
+      "progression": [
+        "동물 종·색 해금",
+        "목장 장식·테마(계절 꾸미기)",
+        "도감",
+        "Azure Waters DLC 수족관 전환"
+      ],
+      "idleMechanics": "동물이 방치 중 코인을 생산하지만 쌓인 코인을 직접 수거하지 않으면 사라질 수 있고(Money beehive 필요), 먹이·청소·약도 필요하다는 이용자 리뷰가 있어 완전 방치는 아니다. 오프라인 보상은 미확인.",
+      "socialAndLiveOps": [
+        "계절 업데이트(크리스마스 2025-12-18, 춘절 2026-02-10, 말띠 동물 2026-02-14 등)",
+        "여러 인디 게임과의 번들·협업 다수",
+        "굿즈 크라우드펀딩(2025-12-05)",
+        "BitSummit·WePlay Expo 참가 공지"
+      ],
+      "popularityFactors": [
+        "귀여운 동물과 하단 점유가 작은 컴패니언 포지셔닝 (해석)",
+        "출시 첫 달 최고 동접 19,674로 급상승한 바이럴 (SteamCharts)",
+        "번들·콜라보로 신규 유입 지속 (공지 근거)"
+      ],
+      "monetization": {
+        "model": "혼합 (유료 구매+소액 DLC)",
+        "summary": "본편 $5.99 구매형이며 후원용 서포터 팩($1.99), 수족관 DLC($2.99), 무료 동물 DLC 2종을 제공한다.",
+        "products": [
+          {
+            "name": "Tiny Pasture",
+            "price": "$5.99 / ₩6,000",
+            "contents": "본편",
+            "evidence": "Steam 상점 appdetails"
+          },
+          {
+            "name": "Tiny Pasture: Azure Waters DLC",
+            "price": "$2.99 / ₩3,400",
+            "contents": "수족관 테마·신규 물고기 30종 이상(공지)",
+            "evidence": "Steam 상점 DLC · 2025-06-18 공지"
+          },
+          {
+            "name": "Tiny Pasture - Supporter Pack",
+            "price": "$1.99 / ₩2,000",
+            "contents": "벽돌집 스킨",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "Baabaa and Moomoo DLC / Ribbitribbit and Quackquack DLC",
+            "price": "무료",
+            "contents": "동물 추가",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          }
+        ],
+        "verified": [
+          "본편 정가 $5.99",
+          "DLC 4종 가격(유료 2종·무료 2종)",
+          "굿즈 크라우드펀딩 공지(2025-12-05)"
+        ],
+        "unverified": "판매량·매출은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 19,674 (2025-02, 월 평균 12,560). 월 평균: 2025-06 2,298 · 2025-12 1,072 · 2026-06 672 · 2026-09 456, 최근 30일 평균 503(최고 837).",
+        "rating": "Steam 리뷰 8,670개(긍정 8,015개, 약 92.4% 계산값) — 'Very Positive' (2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "동물 수집·돌봄이 업무 중 위안이 된다는 후기",
+          "종류가 다양하고 화면을 적게 차지",
+          "수집 욕구 자극"
+        ],
+        "negative": [
+          "완전 방치가 아니라 코인 수거·먹이·청소가 필요해 방치 기대와 어긋난다는 불만(복수 리뷰)",
+          "세이브 초기화·실행 오류 보고",
+          "더 비싼 동물로 교체하려면 계속 판매해야 하는 구조에 대한 불만"
+        ],
+        "basis": "Steam 리뷰 최근 365일 상위 샘플(긍정·부정 5개씩), 2026-10-14 수집"
+      },
+      "takeaways": {
+        "borrow": [
+          "귀여운 동물 + 하단 점유 최소화",
+          "번들 협업과 계절 업데이트로 장기 노출",
+          "무료 DLC로 팬 보상"
+        ],
+        "avoid": [
+          "'Idler' 태그를 달고 잦은 수동 조작을 요구하는 설계(기대 불일치 부정 리뷰)",
+          "세이브 손실 버그"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3167550/",
+          "title": "Tiny Pasture - Steam",
+          "type": "스토어",
+          "note": "개발사·퍼블리셔, $5.99, 상점 설명, 리뷰 집계, DLC.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3167550",
+          "title": "SteamCharts - Tiny Pasture",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3167550/announcements/detail/548989708728796102",
+          "title": "Over 30 New Fish! Azure Waters DLC Launches Today!",
+          "type": "공식",
+          "note": "2025-06-18 DLC 출시.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3167550/announcements/detail/496088177467983029",
+          "title": "Tiny Pasture Merch Crowdfunding Is Now Live!",
+          "type": "공식",
+          "note": "2025-12-05 굿즈 크라우드펀딩.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "desktop-mate",
+      "name": "Desktop Mate",
+      "url": "https://store.steampowered.com/app/3301060/",
+      "developer": "infiniteloop",
+      "publisher": "infiniteloop",
+      "origin": "일본 (공식 사이트 .co.jp 도메인 근거)",
+      "release": "2025-01-07",
+      "platforms": [
+        "PC(Steam)",
+        "Mac(2026-06-24 출시 공지)"
+      ],
+      "subgenre": "3D 캐릭터 데스크톱 마스코트 (창 위 앉기·커서 반응) — 방치 진행 요소는 약함",
+      "businessModel": "무료 본편 + 라이선스 캐릭터 DLC(대부분 $14.99)",
+      "status": "서비스 중 (2026-10-02 Ver 1.16.0, 2026-10-15 'IA DLC' 출시 예고)",
+      "description": "좋아하는 캐릭터를 창 위에 앉히고 커서와 상호작용하며 알람·음성을 쓰는 무료 데스크톱 마스코트 앱. 공식 라이선스 캐릭터 DLC가 수익원이다.",
+      "coreLoop": [
+        "캐릭터 DLC를 구매·설치한다",
+        "캐릭터를 창 위에 올리고 커서와 상호작용한다",
+        "알람·음성·특수 동작을 즐긴다",
+        "신규 캐릭터 DLC 출시를 기다린다"
+      ],
+      "features": [
+        "창 위에 앉기·커서 쫓기·머리 쓰다듬기 반응·음성(Steam 상점 설명)",
+        "알람 기능, 다중 캐릭터(베타)",
+        "캐릭터 조합 특수 동작(Kagamine Rin/Len 등)",
+        "Mahjong Soul 연동 DLC",
+        "Mac 버전(2026-06-24 공지)"
+      ],
+      "progression": [
+        "캐릭터 DLC 수집",
+        "조합 특수 동작 해금(DLC 보유 기준)",
+        "알람·음성 기능 사용(캐릭터별 보이스)",
+        "다중 캐릭터 표시(베타)"
+      ],
+      "idleMechanics": "성장·방치 진행 요소는 확인하지 못했다(미확인). 데스크톱에 켜두는 꾸밈 앱 성격이라 이번 분류에서는 '인접 사례'로 포함했다.",
+      "socialAndLiveOps": [
+        "신규 캐릭터 DLC가 약 2주 간격으로 출시(2026-08-20 Kizuna AI, 2026-09-15 Tsurumaki Maki, 2026-09-29 Miyamai Moca, 2026-10-15 IA 예정)",
+        "정기 버전 업데이트(1.12.0~1.16.0, 2026-07~10)와 약관 개정",
+        "Hatsune Miku 생일 세일(2026-08-28), Steam 가을 세일에서 26종 DLC 20% 할인(2026-10-02)",
+        "자매 앱 Calculator - Desktop Mate Widgets(2026-07-22)"
+      ],
+      "popularityFactors": [
+        "보컬로이드·VTuber 등 일본 캐릭터 IP 팬덤 (해석)",
+        "무료 본편으로 진입 장벽 제거 후 캐릭터 DLC 구매 유도 (해석)",
+        "개발사 공지: 다운로드 1,000,000(2025-01-22), 2,000,000(2026-06-24), 2.1M(2026-07-30)"
+      ],
+      "monetization": {
+        "model": "혼합 (무료 본편+라이선스 DLC)",
+        "summary": "본편 무료이며 라이선스 캐릭터 DLC 42종이 Steam에 등록돼 있다. 가격 조회 가능한 41종 중 39종이 $14.99, 2종이 $7.49다.",
+        "products": [
+          {
+            "name": "Desktop Mate Hatsune Miku DLC",
+            "price": "$14.99 (Steam 상점 US, 2026-10-14)",
+            "contents": "공식 라이선스 캐릭터 DLC(예시)",
+            "evidence": "Steam 상점 DLC (appdetails)"
+          },
+          {
+            "name": "기타 캐릭터 DLC 다수",
+            "price": "대부분 $14.99, 일부 $7.49",
+            "contents": "각 캐릭터 DLC",
+            "evidence": "Steam 상점 DLC 가격 조회(41종 가격 확인)"
+          }
+        ],
+        "verified": [
+          "본편 무료",
+          "DLC 42종 등록·가격 분포(39종 $14.99, 2종 $7.49, 1종 가격 없음)",
+          "Steam 가을 세일 2026-10-02 공지: DLC 26종 20% 할인(공지 제목)"
+        ],
+        "unverified": "판매량·매출은 확인하지 못했다. 다운로드 수는 개발사 발표이며 유료 구매 수와 다르다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "ccu": "SteamCharts 월 최고 23,388 (2025-01, 월 평균 10,053). 2026-09 월 평균 3,594·최고 5,216, 최근 30일 평균 3,580(최고 5,076).",
+        "players": "개발사 공지: 다운로드 2.1 million (2026-07-30), 2 million+ (2026-06-24), 1 million (2025-01-22)",
+        "rating": "Steam 리뷰 9,394개(긍정 6,310개, 약 67.2% 계산값) — 'Mixed' (2026-10-14)"
+      },
+      "userFeedback": {
+        "positive": [
+          "좋아하는 캐릭터와 데스크톱을 함께 쓰는 경험",
+          "무료 본편으로 체험 가능"
+        ],
+        "negative": [
+          "Mixed 평가(구체적 리뷰 본문은 이번 조사에서 수집 못 함)"
+        ],
+        "basis": "Steam 리뷰 집계만 확인, 본문 미수집"
+      },
+      "takeaways": {
+        "borrow": [
+          "무료 본편 + IP 캐릭터 DLC 확장 모델",
+          "월 2회 가량의 DLC 출시 케이던스와 세일 이벤트 결합"
+        ],
+        "avoid": [
+          "방치 성장 루프가 없어 최고 동접이 출시 첫 달(23,388)에 몰린 뒤 하락한 점",
+          "라이선스 IP 의존(IP 협상 비용·계약 리스크)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://store.steampowered.com/app/3301060/",
+          "title": "Desktop Mate - Steam",
+          "type": "스토어",
+          "note": "무료, 개발사, 상점 설명, 리뷰 집계, DLC 42종.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcharts.com/app/3301060",
+          "title": "SteamCharts - Desktop Mate",
+          "type": "데이터(추정)",
+          "note": "월별 평균·최고 동접.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3301060/announcements/detail/708904817558290988",
+          "title": "Celebrating 2.1 Million Downloads!",
+          "type": "공식",
+          "note": "2026-07-30 다운로드 2.1 million.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3301060/announcements/detail/697642013631189823",
+          "title": "Desktop Mate Hits 2 Million Downloads! Mac Version Launches",
+          "type": "공식",
+          "note": "2026-06-24 다운로드 2 million, Mac 버전.",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://steamcommunity.com/ogg/3301060/announcements/detail/782037674453106712",
+          "title": "Desktop Mate Hits 1 Million Downloads!",
+          "type": "공식",
+          "note": "2025-01-22 다운로드 1 million.",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "deepDive": {
+    "gameId": "tbh-task-bar-hero",
+    "title": "Steam 마켓 연동이 만든 초고속 동접 급등(546,130)과 5개월간의 운영 붕괴·복구 과정이 한 게임에 모두 드러나는 최신 사례",
+    "summary": "TBH는 무료 작업표시줄 자동전투 ARPG로 2026-05-27 출시 22일 만에 SteamDB 기준 546,130명의 동시 접속에 도달했다. 큐브 합성·룬·Trade Ship으로 능동 조작 지점을 두고 장비를 Steam 마켓에서 거래하게 했으나, 출시 직후 치트 아이템 대량 등록·Steam 아이템 서버 불안정·상자 드롭 제한·마켓 중단과 아이템 삭제 리셋을 겪었다. 6월 중순 서버 일부를 자체 서버로 이전했고, 마켓은 6월 25일 재개(슬롯 4개·8시간 쿨다운)됐으며 7월 22일 상위 등급 거래가 재개됐다. 월 평균 동접은 2026-06 약 43.5만에서 09 약 7.6만으로 줄었고 리뷰는 Mixed(긍정 약 53.7%)가 됐다. 한국 2인 규모 팀이라는 이용자 언급이 있으나 공식 확인은 못 했다.",
+    "firstSession": [
+      "Steam에서 무료로 설치하고 실행하면 시작 시 약관·데이터 수집 요약 화면이 나온다(2026-05-29 핫픽스에서 요약 방식으로 개선, 공지 근거)",
+      "캐릭터 생성에서 클래스(Knight·Ranger·Sorcerer 등)를 고른다(패치노트 근거, DLC 클래스는 미보유 시 선택 불가)",
+      "작업표시줄 위 창에서 영웅이 1-1 스테이지부터 자동 전투하고 골드·경험치를 얻는다(스테이지 1-1 클리어 업적 존재)",
+      "상자가 드롭되면 열어 장비를 얻는다(상자 자동 열기 타이머 존재, 패치노트)",
+      "큐브(합성·연금·제작·장식·각인·각명)로 장비를 만들고 룬·스킬 포인트로 빌드를 조정한다",
+      "소울스톤을 모아 1-10 액트 보스에 도전해 다음 액트로 진행한다",
+      "Cube Level 10부터 Trade Ship(마켓 등록)을 쓸 수 있다(2026-06-02 업데이트 기준)"
+    ],
+    "coreLoop": [
+      {
+        "step": "자동 전투",
+        "detail": "영웅 파티가 스테이지에서 자동으로 싸우며 골드·경험치·상자를 모은다."
+      },
+      {
+        "step": "상자 개봉·장비 획득",
+        "detail": "상자에서 장비·재료가 나오며 희귀도는 Common부터 Cosmic까지 10단계다."
+      },
+      {
+        "step": "큐브 가공",
+        "detail": "합성·연금·제작·장식·각인·각명·봉헌으로 장비를 강화한다. 접속 중 일정 조작이 필요한 능동 구간이다."
+      },
+      {
+        "step": "빌드 조정",
+        "detail": "룬 노드, 스킬 포인트, 영웅 조합, 클래스 스킬을 조정한다."
+      },
+      {
+        "step": "보스 도전·진행",
+        "detail": "소울스톤으로 액트 보스를 열고 난이도(Nightmare·Hell·Torment)와 플레이그랜드로 올라간다."
+      },
+      {
+        "step": "거래",
+        "detail": "Trade Ship으로 아이템을 Steam 마켓에 올려 팔거나 산다."
+      }
+    ],
+    "currencies": [
+      {
+        "name": "골드",
+        "earn": "전투·스테이지 클리어·보스",
+        "spend": "제작·강화 등(공지에 골드 증가 룬 존재, 세부 용도 미확인)",
+        "paid": false
+      },
+      {
+        "name": "소울스톤(Soulstone)",
+        "earn": "게임 내 획득(세부 경로 미확인)",
+        "spend": "액트 보스 도전 입장 토큰. 마켓에서 거래 가능(공지: 6월 25일 재개 시 상위 등급 일시 제한 속에서도 Soulstone은 등록 가능)",
+        "paid": false
+      },
+      {
+        "name": "큐브 재료(장식·각인·각명·제작 재료)",
+        "earn": "몬스터 드롭(드롭률은 패치로 조정, 2026-07 공지)",
+        "spend": "큐브 가공. Common 등급 재료도 마켓 거래 가능(2026-05-31 공지)",
+        "paid": false
+      },
+      {
+        "name": "Corruption",
+        "earn": "플레이 시간에 비례해 누적, 큐브에서 아이템을 부식시켜 획득(2026-08-19 개발노트)",
+        "spend": "플레이그랜드 도전 시 소모",
+        "paid": false
+      },
+      {
+        "name": "Steam 지갑 머니",
+        "earn": "마켓 판매",
+        "spend": "마켓 구매",
+        "paid": true
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "캐릭터 레벨",
+        "detail": "레벨 101 이상 존재(패치노트). 오프라인 보상으로도 경험치 획득.",
+        "monetized": "무료"
+      },
+      {
+        "name": "장비 희귀도·큐브 가공",
+        "detail": "10단계 희귀도와 큐브 가공으로 스탯 조정.",
+        "monetized": "무료 (마켓 구매로 가속 가능)"
+      },
+      {
+        "name": "룬·스킬 포인트",
+        "detail": "룬 노드와 스킬 선행 조건 구조. 2026-10 Relic 시스템 예고.",
+        "monetized": "무료"
+      },
+      {
+        "name": "클래스·영웅 풀",
+        "detail": "Hunter·Slayer 클래스는 DLC($4.99), Priest는 무료 DLC.",
+        "monetized": "유료 가속(DLC로 선택지 확장)"
+      },
+      {
+        "name": "펫 보너스",
+        "detail": "Supporter Pack의 펫 3종 패시브.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "스태시·거래 슬롯",
+        "detail": "3 Stash Pack, Trade Ship Pack.",
+        "monetized": "유료 가속(편의)"
+      }
+    ],
+    "gacha": {
+      "pools": [
+        "일반 상자",
+        "스테이지 보스 상자",
+        "액트 보스 보상 상자"
+      ],
+      "rates": [
+        "공식 확률 공시는 확인하지 못했다. 이용자 리뷰가 '일반상자 드롭확률 계수 276% / 스테이지 보스상자 520%'를 인용했으나 공식 근거 미확인"
+      ],
+      "pity": "미확인",
+      "source": "Steam 이용자 리뷰(한국어, 2026-06-17 추가분) — 공식 공시 아님"
+    },
+    "offline": "오프라인 보상이 존재한다(2026-07-10 핫픽스 1.00.26에서 레벨 101 이후 오프라인 보상 경험치 표시 오류 수정). 최대 누적 시간·보상 종류는 확인하지 못했다.",
+    "adPlacements": [],
+    "storeStructure": [
+      "본편 무료, 모든 구매는 Steam DLC(상점)",
+      "Supporter Pack $3.99: 펫 3종(Sword·Butterfly·Dragon) 패시브",
+      "3 Stash Pack $2.99: 스태시 3페이지",
+      "Hunter $4.99 / Slayer $4.99 클래스 DLC, Priest 무료",
+      "Trade Ship Pack $4.99: 거래 슬롯 5개 추가(2026-07-02)",
+      "OST $3.99 (출시 공지에서는 $4.99로 기재, 상점 조회 시 $3.99)",
+      "출시 공지: 유료 DLC 2주 20% 할인"
+    ],
+    "liveOpsCadence": [
+      "2026-04-16 플레이테스트 공지 → 2026-04-27 플레이테스트 시작 → 2026-05-27 정식 출시",
+      "2026-06-25 마켓 재개·핫픽스, 2026-07-22 상위 등급 거래 재개(1.01.00)",
+      "2026-07-10 개발 로드맵 공지(3분기 계획), 2026-09-08 콘텐츠 업데이트 1.02.00 '플레이그랜드'(로드맵보다 지연)",
+      "2026-09-30 공지: 10월 핼러윈·Relic, 11월 던전 4종·최대 레벨·난이도",
+      "핫픽스·서버 장애 공지가 2026-06~10 사이 수십 건(뉴스 피드 109건)"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2026-05-27",
+        "event": "정식 출시 (무료)",
+        "value": "Steam 상점 출시일, 정식 출시 공지"
+      },
+      {
+        "date": "2026-05-28",
+        "event": "치트 프로그램 사용 이용자 마켓 영구 제한 누적",
+        "value": "약 350명 (공지 2026-05-28 06:23 KST 기준)"
+      },
+      {
+        "date": "2026-05-31",
+        "event": "마켓 정책 변경: 레전더리 이상 장비만 거래, 특정 레벨 장비 제거",
+        "value": "공지 2026-05-31, 철회·삭제 마감 2026-06-01"
+      },
+      {
+        "date": "2026-06-08",
+        "event": "Steam 마켓 신규 등록 중단(봇 트래픽)",
+        "value": "공지 2026-06-08"
+      },
+      {
+        "date": "2026-06-15",
+        "event": "서버 이전 업데이트 Ver 1.00.12",
+        "value": "공지 2026-06-15"
+      },
+      {
+        "date": "2026-06-18",
+        "event": "역대 최고 동접",
+        "value": "546,130 (SteamDB)"
+      },
+      {
+        "date": "2026-06-25",
+        "event": "마켓 재개: 슬롯 4개, 슬롯당 8시간 쿨다운",
+        "value": "공지 2026-06-25"
+      },
+      {
+        "date": "2026-07-22",
+        "event": "Celestial/Divine/Cosmic 등급 거래 재개",
+        "value": "공지 2026-07-22 (Ver 1.01.00)"
+      },
+      {
+        "date": "2026-09-30",
+        "event": "월 평균 동접 하락",
+        "value": "2026-06 434,627 → 2026-09 76,465 (SteamCharts)"
+      },
+      {
+        "date": "2026-10-14",
+        "event": "현재 리뷰·동접",
+        "value": "리뷰 47,328개(긍정 25,429, Mixed), 공식 차트 23위 동시 45,518 (2026-10-13 22:46 UTC)"
+      }
+    ],
+    "strengths": [
+      "작업표시줄 초소형 창+자동 전투라는 명확한 컨셉과 ARPG 루팅 재미(이용자 리뷰 다수)",
+      "무료 본편과 필수 아닌 DLC 중심 과금(리뷰에서 '안 사도 문제없다'는 평가)",
+      "큐브·룬 등 방치와 능동 조작을 연결하는 지점이 있어 장기 플레이(리뷰어 플레이타임 수백~수천 시간)",
+      "13개 언어 현지화와 플레이테스트·데모를 거친 출시 준비"
+    ],
+    "weaknesses": [
+      "마켓 연동 설계가 서버·봇 대응 없이 출시되어 아이템 증발·드롭 제한·마켓 중단·삭제 리셋 발생",
+      "안티치트 오탐과 필수 데이터 수집 약관에 대한 반발(영어 부정 리뷰 최다 추천 수 1,000+)",
+      "로드맵 지연과 콘텐츠 소진(2026-08-19 개발노트: '목표가 없어진 이용자')",
+      "월 평균 동접이 출시 3개월 만에 약 1/6로 감소"
+    ],
+    "lessons": [
+      "마켓 거래를 허용하려면 출시 전에 서버 이전·봇 대응·레이트 리밋을 준비하거나, 마켓 대신 소프트 트레이딩(인게임 길드 거래)으로 시작한다.",
+      "거래 가능 등급·슬롯·쿨다운 같은 경제 레버를 초기부터 설계해 사후 삭제 리셋을 피한다.",
+      "약관·데이터 수집은 필수 최소만, 설명을 명확히 하고 안티치트 오탐 구제 절차를 마련한다.",
+      "방치 게임이라도 큐브 같은 능동 조작 지점과 엔드게임 목표(보스·난이도·시즌)를 로드맵에 고정한다.",
+      "동접 급등 이후 4~6주 내 첫 콘텐츠 업데이트 일정을 지키지 못하면 하락 속도가 빨라진다(해석, 로드맵 지연 사례 근거)."
+    ],
+    "evidence": [
+      {
+        "url": "https://store.steampowered.com/app/3678970/",
+        "title": "TBH: Task Bar Hero - Steam",
+        "type": "스토어",
+        "note": "기능·희귀도·DLC·리뷰 집계.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamdb.info/app/3678970/charts/",
+        "title": "SteamDB RSS - TBH peaks at 546k",
+        "type": "보도",
+        "note": "2026-06-18 546,130명.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcharts.com/app/3678970",
+        "title": "SteamCharts - TBH",
+        "type": "데이터(추정)",
+        "note": "월별 평균 동접.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/711150909845930064",
+        "title": "[Notice] Announcement Regarding Cheating Program Sanctions",
+        "type": "공식",
+        "note": "2026-05-27~28 치트 제재·마켓 영구 제한 약 350명.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/711150909845931794",
+        "title": "Steam Item Server Instability & Steam Market Bulk Purchase Issue",
+        "type": "공식",
+        "note": "2026-05-30 Steam 아이템 서버 지연, 큐브 사용 중 골드·아이템 소실 보고.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/711150909845932727",
+        "title": "Item Reset & Market Trading Policy Change Update (Ver 1.00.07)",
+        "type": "공식",
+        "note": "2026-06-02 큐브 복구, Trade Ship Cube Lv.10 제한, 특정 레벨 장비 삭제.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/717906943451071510",
+        "title": "Notice: Temporary Closure of the Steam Market",
+        "type": "공식",
+        "note": "2026-06-08 신규 등록 중단(봇 트래픽).",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/689761349249532400",
+        "title": "Steam Market Reopening & Hotfix [Ver 1.00.21]",
+        "type": "공식",
+        "note": "2026-06-25 마켓 재개.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/690889784357290153",
+        "title": "Higher-Grade Item Trading Resumed & Balance Update [Ver 1.01.00]",
+        "type": "공식",
+        "note": "2026-07-22 상위 등급 거래 재개.",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://steamcommunity.com/ogg/3678970/announcements/detail/713410320354246801",
+        "title": "TBH Dev Note #1 - Preparing the Plaguelands Update",
+        "type": "공식",
+        "note": "2026-08-19 콘텐츠 지연 사과·플레이그랜드 설명.",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "포켓 던전 스트립 (가칭)",
+      "pitch": "작업표시줄 하단 띠에서 자동 전투하되, 아이템은 Steam 마켓이 아니라 로컬 저장소와 인게임 '길드 보관함' 안에서만 교환되는 오프라인 우선 방치 ARPG.",
+      "target": "일하면서 켜두는 PC 이용자, TBH·Deskrawl 유입층 중 마켓 논란에 피로를 느낀 이용자",
+      "platform": "PC(Steam)",
+      "coreLoop": [
+        "하단 띠에서 자동 전투·루팅",
+        "가끔 열어 장비 합성·룬 배치",
+        "보스 시즌 목표에 도전",
+        "시즌 종료 후 로컬 리더보드로 성과 공유"
+      ],
+      "mvp": [
+        "하단 투명 창과 크기 조절·숨김",
+        "클래스 2종·액트 1·보스 5",
+        "큐브형 합성 1종",
+        "로컬 세이브와 Steam 클라우드",
+        "시즌 리더보드(서버 없이 Steam Leaderboards)"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 약 20~24주(추정)",
+      "monetization": "본편 $4.99~$6.99 1회 구매, 클래스·스킨 DLC $1.99~$4.99, 마켓·랜덤 박스 없음",
+      "why": "TBH는 마켓 연동으로 546,130 동접을 얻었으나 운영 붕괴를 겪었고, Deskrawl은 저가 구매에도 RMT 논란이 따랐다. 반대로 Rusty's Retirement·Ropuka는 마켓 없이도 Overwhelmingly Positive를 얻었다.",
+      "risks": "마켓 없이 동접 폭증을 못 얻을 수 있고, 로컬 저장 구조의 변조·치트 방지가 필요하다.",
+      "kpiGate": "소프트런칭(Steam 데모·플레이테스트)에서 7일 후 데모 유지율 20% 이상, 평균 켜두는 시간 하루 2시간 이상, 위시리스트 전환율 설정 후 목표 달성(수치는 설계 목표이며 사례 근거 아님).",
+      "buildNext": "하단 투명 창 + 자동 전투 프로토타입 1주 제작, 1시간 방치 시 보상 곡선 시뮬레이션."
+    },
+    {
+      "name": "키스트로크 가든 (가칭)",
+      "pitch": "키 입력·클릭 수가 곧 정원 성장이 되는 컴패니언 앱으로, 하루 입력 통계와 집중 시간을 코지하게 보여준다.",
+      "target": "Bongo Cat류 입력 반응 앱 유저, 작업·공부 중 켜두는 직장인·학생",
+      "platform": "PC(Steam), 이후 Mac",
+      "coreLoop": [
+        "입력할 때마다 정원 식물이 반응·성장",
+        "하루 입력량·집중 시간 요약 확인",
+        "도감 식물·장식 수집",
+        "시즌 테마 이벤트로 새 식물 획득"
+      ],
+      "mvp": [
+        "전역 키·마우스 입력 감지(관리자 모드 옵션)",
+        "식물 12종과 성장 단계",
+        "일일 통계 화면",
+        "도감",
+        "Steam 인벤토리 서포터 아이템 없이 DLC만"
+      ],
+      "difficulty": "낮음",
+      "effort": "1인+AI 주20시간 12~16주(추정)",
+      "monetization": "무료 본편 + 서포터 팩 $1.99~$4.99 DLC, 월간 코스메틱 패스 옵션(Bongo Cat Paw Pass 사례 참고)",
+      "why": "Bongo Cat은 제작 약 3주로 만들어 최고 약 19.4만 동접·5.8M 다운로드(개발사 발표)를 얻었으나 월 수익이 $2,000~$4,050이라 수익화가 약점이다. 스킨 판매가 핵심 수익이라는 점은 DLC·패스 설계의 근거가 된다.",
+      "risks": "수익이 작고 Bongo Cat과 직접 비교되며, 입력 감지는 일부 게임에서 관리자 권한이 필요하다(2025-03-11 공지).",
+      "kpiGate": "출시 첫 달 위시리스트 대비 구매 전환, 평균 켜두는 시간 3시간/일, 부정 리뷰 비율 10% 미만(설계 목표).",
+      "buildNext": "입력 감지·정원 반응 프로토타입 2주 제작 후 지인 20명 테스트."
+    },
+    {
+      "name": "길드 스트립 (가칭)",
+      "pitch": "친구 3~5명의 작업표시줄 파티가 Steam 로비로 연결되어 함께 방치 전투하고 인게임 골드 경매만으로 거래하는 협동 방치 ARPG.",
+      "target": "Bongo Cat Meowtiplayer(최대 100마리)·Tiny Pasture 등 반려형을 즐기는 사교형 이용자와 ARPG 이용자",
+      "platform": "PC(Steam)",
+      "coreLoop": [
+        "로비로 파티를 맺고 각자 하단 띠에서 자동 전투",
+        "파티 보스를 함께 처치",
+        "골드 경매에서 장비 교환",
+        "주간 길드 목표 달성"
+      ],
+      "mvp": [
+        "Steam 로비 연동 2~4인 파티",
+        "공유 스테이지·보스 3종",
+        "인게임 골드 경매(Steam 마켓 미사용)",
+        "AFK 경고 표시(Bongo Cat 사례)",
+        "주간 목표"
+      ],
+      "difficulty": "높음",
+      "effort": "3인 팀 4~6개월(추정)",
+      "monetization": "본편 $6.99 구매 + 클래스·펫 DLC, 월정액·랜덤 박스 없음",
+      "why": "Bongo Cat의 멀티플레이 업데이트(2025-08-11)가 화제가 됐고, Deskrawl은 온라인 캐릭터·리더보드로 소셜 요소를 넣었다. TBH 교훈상 마켓 대신 인게임 경제로 서버 부담을 통제한다.",
+      "risks": "동시 접속 서버 비용과 지연, 친구 풀이 작으면 파티가 구성되지 않음, 인게임 경매 RMT 위험.",
+      "kpiGate": "파티 구성 비율 40% 이상, 파티 이용자의 7일 유지율이 솔로보다 높을 것(설계 목표).",
+      "buildNext": "Steam 로비로 두 계정이 보스 HP를 공유하는 프로토타입."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://api.steampowered.com/ISteamChartsService/GetGamesByConcurrentPlayers/v1/",
+      "title": "Steam 공식 ISteamChartsService (동시 접속 상위 100)",
+      "type": "공식",
+      "note": "2026-10-13 22:46 UTC 스냅샷: Bongo Cat 7위 111,348, TBH 23위 45,518, Deskrawl 27위 37,708.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pcgamer.com/gaming-industry/steam-week-in-review-54-idle-games-released-on-steam-last-week-and-many-look-eerily-similar/",
+      "title": "PC Gamer - Steam Week in Review: 54 idle games released on Steam last week",
+      "type": "보도",
+      "note": "idler 태그 연도별 증가(SteamDB 인용), 한 주 54개 출시, AI 공개 다수. 게재일 미확인.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pcgamer.com/games/the-most-surprising-cozy-game-trend-this-year-was-the-desktop-pet-renaissance/",
+      "title": "PC Gamer - desktop pet renaissance",
+      "type": "보도",
+      "note": "2025-12-31 게재(Lauren Morton). 본문 내용은 수집 못 해 제목·게재일만 확인.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.eurogamer.net/steams-fourth-most-played-game-doesnt-really-make-any-money-and-its-developer-says-its-better-off-that-way",
+      "title": "Eurogamer - Bongo Cat interview",
+      "type": "인터뷰",
+      "note": "월 수익·봇 약 50% 추정·제작 경위. 2025-06-26.",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

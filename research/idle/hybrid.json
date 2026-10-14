@@ -1,0 +1,2896 @@
+{
+  "id": "hybrid",
+  "region": "글로벌",
+  "platformGroup": "모바일",
+  "name": "방치 하이브리드 · 로그라이트/디펜스/머지",
+  "asOf": "2026-10-14",
+  "games": [
+    {
+      "rank": 1,
+      "id": "capybara-go",
+      "name": "카피바라 Go!",
+      "originalName": "Capybara Go!",
+      "url": "https://apps.apple.com/us/app/capybara-go/id6596787726",
+      "developer": "Habby",
+      "publisher": "HABBY PTE. LTD.",
+      "origin": "싱가포르 법인(HABBY PTE. LTD.), 한국·중국 보도에서는 중국계로 표기",
+      "release": "2024-10 (한국·대만 선행 출시, 센서타워는 한국 2024-10-23 출시로 기술) / 2024-11 글로벌 확대(미국 접근 2024-11-20)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "텍스트 로그라이크 어드벤처 + 방치형 RPG(하이브리드캐주얼)",
+      "businessModel": "부분유료(IAP 중심: 팩·패스·상자·뽑기) + 광고 시청 보상(IAA) 혼합",
+      "status": "서비스 중 (iOS 1.9.3, 2026-09-03 업데이트 확인)",
+      "description": "카피바라가 되어 60일짜리 챕터를 하루씩 넘기며 랜덤 이벤트와 자동 전투를 헤쳐 가는 텍스트 로그라이크 RPG로, 장비·펫·재능 같은 메타 성장이 방치형 RPG 구조를 이룬다. Habby가 하이브리드캐주얼 공식을 방치형 RPG에 적용한 대표작으로 보도된다.",
+      "coreLoop": [
+        "챕터 시작(에너지 소모)",
+        "'다음 날' 버튼으로 하루씩 진행하며 랜덤 이벤트·전투 발생(전투는 플레이어 조작 없이 진행)",
+        "레벨업·이벤트 때 스킬 카드 3택1로 빌드 구성",
+        "60일 생존 시 챕터 클리어 보상(장비·상자·재화)",
+        "메타 성장(장비 합성·펫·재능)으로 전투력 강화",
+        "에너지 회복·방치 보상 수령 후 다음 챕터 반복"
+      ],
+      "features": [
+        "텍스트 이벤트와 자동 전투를 결합한 로그라이크 구조(스토어 설명: 승패는 선택과 운에 달림)",
+        "챕터당 60일 생존, 챕터 시작 에너지 5 소모(MuMuPlayer 가이드, 2025-01-20)",
+        "장비 메뉴는 챕터 1 클리어 후 해금, 보물상자는 챕터 3 클리어 후 해금(MuMuPlayer·AppGrowing)",
+        "펫·수집품·탈것·유물·스킨 등 수집 성장 축과 길드·아레나·던전 등 후반 콘텐츠",
+        "영어·일본어·한국어·중국어(간·번체) 지원(미국 App Store 기준, 이후 포르투갈어(브라질) 추가)",
+        "앱 용량 약 741MB(미국 App Store)"
+      ],
+      "progression": [
+        "챕터 클리어와 신대륙 해금",
+        "장비 레벨업·합성(2024-11 v1.2.0에서 장비·펫 레벨 상한 100)",
+        "펫 알 부화·먹이 육성·펫 성장 시스템(2026-08 v1.9.1)",
+        "재능 트리(HP·ATK·DEF 단계별 상한, 최초 업그레이드 240골드)",
+        "수집품(예: 방치 보상을 키우는 Golden Hourglass)",
+        "탈것·유물, 모험가 공명·정점 재능(2025-07 v1.6.x)",
+        "길드 보스·길드 패권"
+      ],
+      "idleMechanics": "방치 보상(AFK Rewards)이 존재하며 수집품 Golden Hourglass 업그레이드로 수익이 늘어난다(MeowDB). 최대 누적 시간·정확한 수치는 미확인. 주 전투는 플레이어 조작 없이 자동 진행되나 챕터 진행에는 에너지가 소모된다.",
+      "socialAndLiveOps": [
+        "길드(길드 보스·길드 패권·길드 거래)와 PvP 아레나·외계 광산(Alien Minefield, 5일 크로스서버) 이벤트",
+        "연례 이벤트: Magic Celebration(1/26~2/4), Fisherman's Journey(2/9~2/18) 등(MeowDB, 2026 기준)",
+        "협업 이벤트: 닌자 거북이(2025-06), 핑구(2026-05-18~06-01)",
+        "대규모 콘텐츠 업데이트: 2026-08-07 v1.9.1 신규 PvE·펫 성장 시스템",
+        "서버 600개 이상(EdgeOne 블로그 서술, 2024-12)"
+      ],
+      "popularityFactors": [
+        "귀여운 카피바라 캐릭터가 고평점 리뷰에서 가장 많이 언급된 단어(센서타워 2024-11)",
+        "방치형 편의성과 캐릭터·자원 성장 깊이가 하이퍼캐주얼·코어 유저를 함께 흡수(센서타워: 코어 게이머 성향 +397%, 하이퍼캐주얼 성향 +318%)(해석 포함)",
+        "배우 안재홍 광고와 공격적 UA로 한국 Meta 게임 광고주 1위(센서타워 Pathmatics)",
+        "Habby의 단계적 출시·검증 후 확장 방식(AppGrowing 서술)",
+        "IAP와 광고를 함께 쓰는 하이브리드 수익화(해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "미국 App Store에 $0.99~$49.99 사이 앱 내 구입 10개가 등록돼 있고 Google Play는 항목당 $0.99~$299.99 범위다. 상점은 챕터 팩·가치 선택·일/주/월 팩·충전으로 나뉘며, 월간·평생 패스는 하루 약 5,000젬을 준다는 팬 DB 서술이 있다. 광고는 블랙마켓에서 보는 광고로 1,250골드를 받는 형태가 확인된다.",
+        "products": [
+          {
+            "name": "$0.99 Package",
+            "price": "$0.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$2.99 Package",
+            "price": "$2.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$4.99 Package (2종)",
+            "price": "$4.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$9.99 Package (2종)",
+            "price": "$9.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$19.99 Package (2종)",
+            "price": "$19.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$29.99 Package",
+            "price": "$29.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "$49.99 Package",
+            "price": "$49.99",
+            "contents": "구성 미확인",
+            "evidence": "Capybara Go! App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "선물 팩 (KR 10종)",
+            "price": "₩1,100 ~ ₩77,000 (항목별 표기 ₩1,100·4,400·7,500·7,700·15,000·17,000·31,500·33,000·49,000·77,000)",
+            "contents": "구성 미확인",
+            "evidence": "카피바라 Go! App Store (KR) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, 가격대 $0.99~$49.99(스토어 목록은 가격만 표기, 상품 구성 비공개)",
+          "Google Play 앱 내 구입 범위 $0.99~$299.99(항목당)",
+          "상점 탭: 장비 상점(챕터 팩·상자), 가치 선택, 팩 상점(일/주/월), 충전(MuMuPlayer 가이드 2025-01-20)",
+          "블랙마켓 광고 시청 시 1,250골드(MuMuPlayer 가이드)",
+          "App Store 연령 고지에 Loot Boxes·Advertising 명시, 장비 상자 확률 표시 기능이 2024-10-17 v1.0.6에 추가(App Store 버전 기록)"
+        ],
+        "unverified": "월정액·평생 패스·성장 펀드 등 정기 상품의 공식 가격과 구성, 광고 보상 일일 횟수, 상품별 이름과 구성(스토어 목록은 가격만 표기), 광고와 IAP의 매출 비중은 확인하지 못했다. 팬 DB(MeowDB)의 상품·확률 정보는 공식 공시가 아니다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 10M+(2026-10 페이지 확인). 센서타워: 한국 누적 130만 건, 전 세계 다운로드 중 한국 21.8%(2024-11-23 기준).",
+        "revenue": "AppMagic 추정 누적 플레이어 지출 약 1.09억 달러(2025-02-10, pocketgamer.biz), 월 3,330만 달러(2024-12)·3,210만 달러(2025-01). 센서타워 한국 첫 달 약 900만 달러(2024-11-23), 미국 통합 주간 매출 정점 약 130만 달러(2025 Q1).",
+        "chart": "모바일인덱스 2024-12 한국 월 추정 매출 8위, 센서타워 한국 매출 순위 약 1개월간 6위(2024-11-23)",
+        "rating": "App Store US 4.9(63,999건)·KR 4.7(10,004건), Google Play 약 4.61(463,549건)",
+        "other": "2025-01-24 하루 최고 140만 달러(AppMagic 추정, v1.5 업데이트 직후). 다운로드·매출·평점은 서로 다른 지표라 합산 비교하지 않는다."
+      },
+      "userFeedback": {
+        "positive": [
+          "귀여운 콘셉트와 편안한 분위기를 칭찬하는 스토어 리뷰",
+          "방치형이면서 성장 시스템이 깊다는 평가(센서타워 오디언스 분석)",
+          "이벤트가 풍부하고 보상이 후하다는 서술(스토어 리뷰 일부)"
+        ],
+        "negative": [
+          "일부 리뷰가 '페이 투 윈' 성향을 지적",
+          "국내 언론이 '양산형 게임'이라는 비판이 컸다고 보도(파이낸셜뉴스 2025-01-09)",
+          "미국 매출은 2025 Q2~Q3 하락 후 일부 회복(센서타워 주간 추정)"
+        ],
+        "basis": "App Store 미국 리뷰, 파이낸셜뉴스·센서타워 보도. 리뷰는 표본이 작아 대표성이 제한된다."
+      },
+      "takeaways": {
+        "borrow": [
+          "텍스트 이벤트와 스킬 선택으로 단판 몰입을 만들고 메타 성장으로 방치 보상을 연결한 구조",
+          "챕터 해금 순서(장비 → 상자 → 후반 콘텐츠)로 새로운 시스템을 단계적으로 공개",
+          "국가별 단계 출시와 지표 검증 후 UA 확대"
+        ],
+        "avoid": [
+          "상품 구성 비공개와 높은 가격대 확장은 평점 하락과 과금 압박 인식으로 이어질 수 있음(해석)",
+          "콘텐츠 소모가 빠른 후반 구간에서 이벤트 의존도가 높아지는 점(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/capybara-go/id6596787726",
+          "title": "Capybara Go! App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.9(63,999건), 앱 내 구입 10개(US$0.99~49.99), 버전 1.9.3(2026-09-03), 연령 고지에 Loot Boxes·Advertising 포함",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/capybara-go/id6596787726",
+          "title": "카피바라 Go! App Store (KR)",
+          "type": "스토어",
+          "note": "KR 평점 4.7(10,004건), 앱 내 구입 10개(₩1,100~₩77,000 표기, '선물 팩')",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.habby.capybara",
+          "title": "Capybara Go! Google Play",
+          "type": "스토어",
+          "note": "Google Play 10M+ 설치, 평점 약 4.61(463,549건), 앱 내 구입 $0.99~$299.99, 2024-11-17 게시, 2026-09-01 업데이트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "http://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/",
+          "title": "Habby's Capybara Go surpasses $100M in gross player spending (pocketgamer.biz)",
+          "type": "보도",
+          "note": "AppMagic 추정 2025-02-02 누적 1억 달러 돌파, 2025-02-10 약 1.09억 달러, 12월 3,330만 달러·1월 3,210만 달러, 국가별 비중",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea",
+          "title": "카피바라 Go! 매출의 최대 기여 시장은 한국 (센서타워)",
+          "type": "데이터(추정)",
+          "note": "2024-10-23 출시, 한국 첫 달 매출 약 900만 달러, 국가별 매출 비중, Pathmatics 광고 분석",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q1-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+          "title": "2025 Q1 unified top 5 idle RPG revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "미국 주간 매출 2025년 1월 말 약 130만 달러 정점, 3월 말 약 100만 달러",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/2H2024-mobile-games-recap-in-Korea",
+          "title": "2H2024 mobile games recap in Korea (센서타워)",
+          "type": "데이터(추정)",
+          "note": "2024년 하반기 한국 다운로드 성장 1위, 출시 초기 Meta 게임 광고주 1위",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://meowdb.com/db/capybara-go/chests-and-selection-boxes-catalog",
+          "title": "MeowDB Capybara Go 상자·선택 상자 카탈로그",
+          "type": "위키/커뮤니티",
+          "note": "팬 수집 데이터 기반 상자 구성 확률(공식 공시 아님)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "kingshot",
+      "name": "킹샷",
+      "originalName": "Kingshot",
+      "url": "https://apps.apple.com/us/app/id6739554056",
+      "developer": "Century Games Pte. Ltd.",
+      "publisher": "Century Games Pte. Ltd.",
+      "origin": "Pte. Ltd. 법인(국가는 로그에서 미확인)",
+      "release": "2025-02-22 (미국 App Store 출시일, 센서타워는 2025-02 출시로 서술) / Google Play 2025-03-03 게시",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "4X 전략 + 방치형 자원 채집·마을 재건(하이브리드 캐주얼풍 광고)",
+      "businessModel": "부분유료(IAP 중심: 팩·패스·일일 딜), 광고 보상 구조는 미확인",
+      "status": "서비스 중 (iOS 1.12.10, 2026-08-24 업데이트 확인)",
+      "description": "App Store 설명이 'idle medieval survival game'이라고 소개하는 중세 배경 4X 전략 게임으로, 자원 채집·마을 재건에 영웅 수집, 동맹, 서버 간 전투가 결합된다. 광고에서 보이는 타워 디펜스 장면과 실제 4X 게임플레이의 차이가 리뷰에서 지적된다.",
+      "coreLoop": [
+        "자원 채집과 건물 건설로 마을 성장",
+        "영웅 모집·강화와 병력 편성",
+        "침공 방어 및 필드 전투",
+        "동맹 이벤트·왕국 대항전 참여",
+        "보상으로 건물·기술·영웅 추가 성장 후 반복"
+      ],
+      "features": [
+        "마을 건설·생존자 역할 배정(일꾼·사냥꾼·요리사)과 질병·행복 관리(스토어 설명)",
+        "동맹 토너먼트·챔피언십·Bear Hunt·Blizzard Brawl 등 이벤트",
+        "왕국(서버) 단위로 같은 세대 유저끼리 시작(리뷰 서술)",
+        "내장 번역 채팅(리뷰 언급)",
+        "3D 카툰 중세 판타지 스타일(센서타워)"
+      ],
+      "progression": [
+        "마을 건물·기술 연구",
+        "영웅 모집과 스킬 육성",
+        "펫 시스템(4세대 펫 업데이트 2025-09-01)",
+        "마스터 시스템(Master Academy)",
+        "프레스티지 상점·스킨 시리즈"
+      ],
+      "idleMechanics": "스토어 설명에서 'idle'을 표방하고 센서타워가 '방치형 자원 채집과 마을 재건'으로 서술했다. 오프라인 누적 시간·보상 수치는 미확인.",
+      "socialAndLiveOps": [
+        "동맹(Alliance) 토너먼트·Weekly Alliance Championship 시기에 매출이 상승(센서타워 2025-09)",
+        "Duel of the Elites(왕국 전쟁 준비 단계 서버 간 전투), Blizzard Brawl 등 신규 이벤트(App Store 업데이트 노트)",
+        "Viking Revenge 이벤트",
+        "Bear Hunt 보상 개편, Master System 신설 등 주기적 업데이트"
+      ],
+      "popularityFactors": [
+        "Whiteout Survival로 검증된 4X 공식과 광고 크리에이티브 친화성(센서타워의 4X 서술을 근거로 한 해석)",
+        "한국 게임 광고비 3위·노출 2위(센서타워 2025-09, 한국 기준)",
+        "다운로드당 매출이 높은 미국·한국 시장(센서타워 추정)",
+        "동맹 이벤트 중심의 장기 소셜 루프(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $0.99~$99.99의 앱 내 구입 10개가 등록돼 있고 'Normal Pack' 시리즈와 Regular Pass($4.99), Daily Worship($4.99), Daily Deal(7d, $4.99) 같은 정기·한정형 상품이 있다. 센서타워는 한국 RPD(다운로드당 매출)가 22달러로 주요 국가 중 가장 높다고 추정했다.",
+        "products": [
+          {
+            "name": "Normal Pack 1",
+            "price": "$0.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 3",
+            "price": "$2.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 5",
+            "price": "$4.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Regular Pass",
+            "price": "$4.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Daily Worship",
+            "price": "$4.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Daily Deal (7d)",
+            "price": "$4.99",
+            "contents": "7일 한정 딜(상세 미확인)",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 7",
+            "price": "$9.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 10",
+            "price": "$19.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 14",
+            "price": "$49.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Normal Pack 16",
+            "price": "$99.99",
+            "contents": "구성 미확인",
+            "evidence": "Kingshot App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $0.99~$99.99",
+          "Google Play 항목당 $0.99~$99.99",
+          "Regular Pass·Daily Worship·Daily Deal(7d) 등 정기·한정 상품 존재",
+          "센서타워 추정: 누적 매출 약 4억 달러, 누적 다운로드 약 4천만 건(2025-09 게시 기준), 미국 매출 비중 42.2%"
+        ],
+        "unverified": "팩별 구성, 확률형 아이템 공시, 월정액 여부, 광고 시청 보상 구조와 광고 매출 비중은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "센서타워 추정 누적 약 4천만 건(2025-09 게시, 미국 19.2%·일본 5%). Google Play 50M+(2026-10 페이지 확인).",
+        "revenue": "센서타워 추정 누적 약 4억 달러(2025-09 게시, 미국 42.2%·한국 9.5%). 한국 RPD 22달러(주요 국가 중 최고). Century Games 글로벌 모바일 매출 중 Kingshot 17.5%·Whiteout Survival 74.1%(2025년 중 기준).",
+        "chart": "한국 전략 게임 매출 3위(센서타워 2025-09), 2025-09-11 일 매출 기록 경신",
+        "rating": "App Store US 4.6(230,072건), Google Play 약 4.35(1,618,069건)",
+        "other": "한국 광고 노출 점유: 4X 서브장르 내 Kingshot 21%(센서타워 2026-02)"
+      },
+      "userFeedback": {
+        "positive": [
+          "도시 건설·동맹 협력 등 복합 시스템과 활발한 이벤트를 칭찬",
+          "같은 레벨대 유저와 새 서버에서 시작해 격차 부담이 적다는 서술"
+        ],
+        "negative": [
+          "광고는 타워 디펜스처럼 보이지만 실제 게임은 다르다는 지적",
+          "영웅 수가 적다는 불만",
+          "Whiteout Survival의 리스킨이라는 리뷰어 주장(사실 확인 전)"
+        ],
+        "basis": "App Store 미국 리뷰 일부(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "방치형 연출의 광고와 4X 소셜 장기 루프의 결합",
+          "동맹 대항전 일정으로 매출 스파이크를 설계하는 라이브옵스"
+        ],
+        "avoid": [
+          "광고 연출과 실제 게임 차이로 인한 리뷰 불만",
+          "풀 4X 규모의 운영 비용(소규모 팀이 따라 하기 어려움, 해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6739554056",
+          "title": "Kingshot App Store (US)",
+          "type": "스토어",
+          "note": "설명('idle medieval survival game'), 평점 4.6(230,072건), 앱 내 구입 10개, 업데이트 노트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.run.tower.defense",
+          "title": "Kingshot Google Play",
+          "type": "스토어",
+          "note": "50M+ 설치, 평점 약 4.35(1,618,069건), 앱 내 구입 $0.99~$99.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/Century-Games-Kingshot-ranks-3rd-in-mobile-strategy-game-revenue",
+          "title": "센추리 게임즈 킹샷, 모바일 전략 게임 매출 3위 (센서타워)",
+          "type": "데이터(추정)",
+          "note": "누적 다운로드 약 4천만 건, 누적 매출 약 4억 달러, 한국 RPD 22달러, 광고 전략, 동맹 이벤트와 매출 상승 시점",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/4X-strategy-emerges-as-the-top-grossing-mobile-game-genre-for-the-first-time",
+          "title": "4X strategy emerges as the top-grossing mobile game genre (센서타워 한국)",
+          "type": "데이터(추정)",
+          "note": "2026-01 한국 4X 월 매출 7,000만 달러 초과, 4X 광고 노출 점유 19%, Kingshot 21%",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "gold-and-goblins",
+      "name": "Gold and Goblins: Idle Merger (App Store 표기: Gold and Goblins – Miner Games)",
+      "originalName": "Gold and Goblins",
+      "url": "https://apps.apple.com/us/app/id1529762599",
+      "developer": "Red Cell Games로 추정(번들 ID com.redcellgames.goldandgoblins, 판매자 URL redcellgames.com; 개발사 명칭은 스토어 페이지에서 직접 확인하지 못함)",
+      "publisher": "AppQuantum Publishing Ltd",
+      "origin": "퍼블리셔 AppQuantum 사무실 키프로스 리마솔(공식 사이트 표기), 개발사 국가 미확인",
+      "release": "2020-09-16 (App Store·Google Play 공통)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치 광산 경영 + 고블린 머지(타이쿤 성격의 하이브리드)",
+      "businessModel": "무료 + IAP(젬·이벤트 오퍼) + 광고(광고 제거 구매 언급 리뷰)",
+      "status": "서비스 중 (iOS 1.50.0, 2026-07-10 업데이트 확인)",
+      "description": "저레벨 고블린을 합쳐 더 강한 팀을 만들고 광산을 깊이 파 내려가는 방치형 광산 경영 시뮬레이터로, 카드 수집과 이벤트가 성장 축을 더한다. 2020년 출시작이 2025~2026년 센서타워 미국 iOS 방치(idler) 매출 상위 5위권에 반복 등장한다.",
+      "coreLoop": [
+        "고블린 유닛 배치·합성(머지)",
+        "바위를 부수고 광석·골드 수집",
+        "골드로 광산 업그레이드와 카드 강화",
+        "체크포인트 클리어 후 다음 광산 구역으로 이동(1.50.0에서 유닛 자동 이동)",
+        "이벤트 참여·재화 수령 후 반복"
+      ],
+      "features": [
+        "저레벨 고블린 합성으로 더 강한 팀 구성(스토어 설명)",
+        "카드 수집으로 고블린 보너스 획득",
+        "광산·지역 확장(2026-07 기준 Mines 160~165 개방)",
+        "방치형 이벤트 보상(Pirate Plunder 2025-08-27 등)",
+        "앱 용량 약 305.5MB(미국 App Store)"
+      ],
+      "progression": [
+        "광산(Mine) 번호 진행(2026-05 v1.48.0에서 Mines 160~165)",
+        "카드 수집과 레벨업(만렙 카드가 쌓이면 Ancestral 카드 드롭, 2025-10)",
+        "고블린 머지 등급",
+        "신규 카드·광산 갱(Holystone, 2025-12)"
+      ],
+      "idleMechanics": "스토어 설명이 '방치형 시뮬레이터'를 표방하나 오프라인 누적 시간·보상 수치는 미확인. 광산 진행이 며칠간 정체된다는 리뷰와 광고 제거 구매를 권하는 리뷰가 있다.",
+      "socialAndLiveOps": [
+        "이벤트: Pirate Plunder(2025-08-27) 등 주기적 특별 이벤트",
+        "광산·카드 콘텐츠 추가 업데이트(2025-10, 2025-12, 2026-05, 2026-07)",
+        "이벤트 스타터 오퍼·스페셜 오퍼가 상품 목록에 상시 존재",
+        "길드·랭킹 요소는 로그에서 미확인"
+      ],
+      "popularityFactors": [
+        "센서타워 미국 iOS 방치 매출 5위권 상위 반복 진입(2025 Q1·Q3·Q4)",
+        "퍼블리셔 AppQuantum이 공개한 대규모 UA 사례(광고 컨셉에 1,200만 달러 이상 집행, 계약 후 3개월간 700만 달러 매출 주장)",
+        "머지와 광산 성장의 단순한 루프(해석)",
+        "4년 이상 장수하며 광산·카드 콘텐츠를 꾸준히 추가(해석)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "미국 App Store에 $1.99~$19.99 가격대 인앱 구입 10개가 있으며 젬 패키지 4종과 이벤트 스페셜·스타터 오퍼 6종으로 구성된다. 리뷰에서 광고가 많아 광고 제거 구매가 필요하다는 서술이 반복된다.",
+        "products": [
+          {
+            "name": "Fistful of Gems",
+            "price": "$1.99",
+            "contents": "젬 패키지",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Pouch of Gems",
+            "price": "$4.99",
+            "contents": "젬 패키지",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Bucket of Gems",
+            "price": "$9.99",
+            "contents": "젬 패키지",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Barrel of Gems",
+            "price": "$19.99",
+            "contents": "젬 패키지",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Event Starter Offer (2종)",
+            "price": "$3.99 / $4.99",
+            "contents": "이벤트 입문 오퍼",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Event Special Offer (4종)",
+            "price": "$3.99 / $5.99 / $6.99 / $7.99",
+            "contents": "이벤트 스페셜 오퍼",
+            "evidence": "Gold and Goblins App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $1.99~$19.99(젬 패키지 4종·이벤트 오퍼 6종)",
+          "Google Play 항목당 $1.99~$119.99",
+          "이벤트 스타터·스페셜 오퍼가 상시 판매 목록에 포함",
+          "AppQuantum 공식 케이스 페이지 주장: 계약 후 3개월 700만 달러 매출, 광고 컨셉 지출 1,200만 달러 이상(퍼블리셔 자체 주장)"
+        ],
+        "unverified": "광고 제거 상품의 이름과 가격, 월정액·패스 여부, 광고 매출과 IAP 매출 비중, 확률형 요소 공시는 확인하지 못했다. App Store 목록 10개 이외 상품은 보이지 않는다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 50M+(2026-10 페이지 확인, 2020-09 출시 후 누적). 센서타워 미국 iOS 주간 다운로드 정점 약 35K(2025 Q1 1월 말).",
+        "revenue": "센서타워 추정 미국 iOS 주간 매출 정점: 2025 Q1 약 31.1만 달러(2월 중순)·Q3 약 23.9만 달러(8월 말)·Q4 약 20.8만 달러(10월 말). 미국 통합(iOS+Android) Q4 주간 정점 약 42.9만 달러(10월 말).",
+        "chart": "센서타워 미국 iOS 방치 매출 상위 5위권: 2025 Q1 1위권(정점 기준 정렬)·Q3·Q4 포함",
+        "rating": "App Store US 4.4(42,019건), Google Play 약 3.96(495,039건)",
+        "other": "미국 iOS MAU 약 78K → 69K(2025 Q1), 73K → 42K(2025 Q3)."
+      },
+      "userFeedback": {
+        "positive": [
+          "'App Store 최고의 방치 게임'이라는 평가 리뷰",
+          "머지와 광산 성장 루프의 만족감 언급"
+        ],
+        "negative": [
+          "광고가 너무 잦아 광고 제거 구매가 사실상 필수라는 리뷰",
+          "같은 광산에서 3~5일 정체, 이후 리셋 반복이 지루하다는 리뷰"
+        ],
+        "basis": "App Store 미국 리뷰 일부와 개발사 답글(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "머지와 광산 확장을 합친 이해하기 쉬운 성장 곡선",
+          "만렙 카드가 쌓였을 때 새 카드를 풀어 후반 목표를 만드는 방식"
+        ],
+        "avoid": [
+          "잦은 광고와 정체 구간이 광고 제거 강제 구매로 인식되는 설계",
+          "리셋 반복이 길어질 때의 이탈"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1529762599",
+          "title": "Gold and Goblins App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.4(42,019건), 인앱 구입 10개($1.99~$19.99), 버전 1.50.0(2026-07-10), 설명, 리뷰",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.redcell.goldandgoblins",
+          "title": "Gold and Goblins: Mining Games Google Play",
+          "type": "스토어",
+          "note": "50M+ 설치, 평점 약 3.96(495,039건), 앱 내 구입 $1.99~$119.99, 2020-09-16 출시, AppQuantum 게시",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-ios-top-5-idler%20games-revenue-us-602ae7fb241bc16eb874f8e1",
+          "title": "2025 Q3 iOS top 5 idler games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Gold and Goblins 주간 매출 정점 약 23.9만 달러(8월 말), The Tower 약 16.2만 달러(9월 중순)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q1-ios-top-5-idler%20games-revenue-us-602ae7fb241bc16eb874f8e1",
+          "title": "2025 Q1 iOS top 5 idler games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Gold and Goblins 주간 매출 정점 약 31.1만 달러(2월 중순), 주간 다운로드 정점 약 35K",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idler-games-revenue-us-602ae7fb241bc16eb874f8e1",
+          "title": "2025 Q4 unified top 5 idler games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Gold and Goblins 통합 주간 매출 정점 약 42.9만 달러(10월 말), The Tower 약 40만 달러(12월 22일 주)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://appquantum.com/cases/",
+          "title": "AppQuantum Cases",
+          "type": "공식",
+          "note": "Gold & Goblins: 계약 후 3개월 700만 달러 매출, 광고 컨셉 지출 1,200만 달러 이상(퍼블리셔 주장)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "the-tower",
+      "name": "The Tower - Idle Tower Defense",
+      "originalName": "The Tower - Idle Tower Defense",
+      "url": "https://apps.apple.com/us/app/id1575590830",
+      "developer": "Tech Tree Games LLC",
+      "publisher": "Tech Tree Games LLC",
+      "origin": "LLC 법인(국가는 로그에서 미확인)",
+      "release": "2021-11-02 (미국 App Store 출시일) / Google Play 2021-08-18 게시",
+      "platforms": [
+        "Android",
+        "iOS",
+        "웹 스토어(결제 전용)"
+      ],
+      "subgenre": "단일 타워 증분형 타워 디펜스(워크숍·랩·카드 영구 성장 + 토너먼트)",
+      "businessModel": "무료 + 광고(보상형) + IAP(젬·스톤·패스) + 웹 스토어(FastSpring) 결제",
+      "status": "서비스 중 (iOS 29.0.6, 2026-10-06 업데이트 확인)",
+      "description": "화면 중앙의 하나뿐인 타워가 웨이브를 막아 내고, 코인으로 워크숍을 영구 강화하며 시간이 걸리는 랩 연구와 카드·모듈·울티메이트 웨폰을 쌓아 가는 증분형 타워 디펜스다. 주 2회 토너먼트와 길드·이벤트가 메타 순환을 만든다.",
+      "coreLoop": [
+        "런 시작 후 타워가 웨이브를 자동으로 방어(웨이브당 26초 + 쿨다운 9초)",
+        "런 중 캐시로 임시 업그레이드, 처치 시 코인 획득",
+        "죽으면 런 종료, 코인으로 워크숍 영구 업그레이드",
+        "랩(시간·코인) 연구로 상한·보너스 확장",
+        "카드·모듈·울티메이트 웨폰 빌드를 조정해 더 높은 웨이브·티어 도전 후 반복"
+      ],
+      "features": [
+        "워크숍(코인) 영구 업그레이드와 랩(시간 소모) 연구",
+        "카드 수집(20젬 구매, 최대 7성, 31종), 카드 슬롯 최대 22칸(젬)",
+        "토너먼트에서 파워 스톤과 키 획득, 울티메이트 웨폰 구매",
+        "길드·시즌(8주 주기)·이벤트(2주 주기)",
+        "v27 Fleets(티어 19~21), v28 Dissonant Runs·Bot Bot, v29 프리셋·Mythic 리그(2026-08-25)"
+      ],
+      "progression": [
+        "티어·웨이브 마일스톤",
+        "워크숍(공격/방어/유틸리티) 영구 강화",
+        "랩 연구(최대 5개 랩, 젬 총 4,900)",
+        "카드(80장으로 마스터, 카드 마스터리)",
+        "모듈·울티메이트 웨폰(파워 스톤 총 9,705로 9개)",
+        "가디언·칩(길드 전용)",
+        "볼트(Harmony·Power·Enemy, 키로 해금)",
+        "유물(마일스톤·토너먼트·이벤트)"
+      ],
+      "idleMechanics": "앱 설명이 '랩 연구는 유휴 중에도 진행'이라고 밝히고(스토어 설명), 랩은 실시간 시간을 소모한다. 런 자체의 오프라인 진행·누적 한도는 로그에서 확인하지 못했다. 볼트 업그레이드에 '패배 후 자동 재시작'이 있다(팬 위키).",
+      "socialAndLiveOps": [
+        "토너먼트: 매주 수·토 00:00 UTC, 30명 조, 7개 리그(Copper~Mythic), 상위 4명 승급(팬 위키)",
+        "이벤트: 2주 주기, 메달 보상(T1 웨이브 70 해금)",
+        "길드: 최대 30명, 시즌 8주, 길드 생성 50젬(팬 위키)",
+        "메이저 업데이트 v25 Legends(카드 마스터리), v26 길드, v27 Fleets, v28 Dissonant Runs, v29(2026-08-25)",
+        "공식 Discord 약 107K 명(2026-10-14 초대 API 조회)"
+      ],
+      "popularityFactors": [
+        "한 개의 타워와 깊은 수치 성장이라는 단일 콘셉트로 코어 증분형 팬층 확보(해석)",
+        "토너먼트로 비교·경쟁 동기 제공",
+        "개발사가 메이저 업데이트를 지속 제공(리뷰에서 언급)",
+        "광고 선택 시청 구조에 대한 호평 리뷰(리뷰 서술)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "미국 App Store에 $4.99~$99.99 인앱 구입 10개(젬 팩·스톤 팩·스타터·밀스톤 프리미엄·광고 제거)가 있고, 같은 상품을 FastSpring 기반 웹 스토어에서도 판다. 젬은 보상형 광고(약 10분마다 6젬)·오퍼월·이벤트로도 얻으며, 랩 가속·카드·슬롯·토너먼트 티켓에 쓰인다.",
+        "products": [
+          {
+            "name": "Small Gem Pack",
+            "price": "$4.99",
+            "contents": "젬",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Medium Gem Pack",
+            "price": "$9.99",
+            "contents": "젬",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Galaxy Sized Gem Pack",
+            "price": "$99.99",
+            "contents": "젬",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Stone Pack 1",
+            "price": "$29.99",
+            "contents": "파워 스톤",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Stone Pack 2",
+            "price": "$59.99",
+            "contents": "파워 스톤",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Starter Pack",
+            "price": "$9.99",
+            "contents": "구성 미확인",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Epic Pack",
+            "price": "$29.99",
+            "contents": "구성 미확인",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Milestone Premium 1",
+            "price": "$9.99",
+            "contents": "마일스톤 패스 유료 트랙(상세 미확인)",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Event Boost",
+            "price": "$14.99",
+            "contents": "이벤트 부스트(상세 미확인)",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Disable Ads",
+            "price": "$9.99",
+            "contents": "광고 제거",
+            "evidence": "The Tower App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 인앱 구입 10개, $4.99~$99.99(광고 제거 $9.99 포함)",
+          "Google Play 항목당 $1.99~$99.99",
+          "웹 스토어(store.techtreegames.com/thetower/)가 Featured·Events·Packs·Gems·Stones·Pass를 판매하며 결제는 FastSpring가 처리",
+          "젬 획득: 광고 젬(약 10분마다 6젬), 오퍼월(Tapjoy), 토너먼트, 일일/주간 무료, 미션(팬 위키)",
+          "App Store 연령 고지에 Loot Boxes·Advertising 명시"
+        ],
+        "unverified": "웹 스토어 상품별 가격(페이지 동적 로드), 카드 구매의 확률 공시(팬 위키는 Common 80%·Rare 17%·Epic 3% 서술), 광고와 IAP의 매출 비중은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 5M+(2026-10 페이지 확인, 내부 값 7,338,502). 센서타워 미국 iOS 주간 다운로드 약 9~12K(2025 Q3).",
+        "revenue": "센서타워 추정 미국 iOS 주간 매출 정점: 2025 Q1 약 19.2만 달러(3월 중순)·Q3 약 16.2만 달러(9월 중순)·Q4 약 19.3만 달러(11월 말). 미국 통합 Q4 2025 주간 약 40만 달러(12월 22일 주). 2023 Q4 미국 통합 주간 22만 달러 초과(연말 주).",
+        "chart": "센서타워 미국 iOS 방치 매출 상위 5위권: 2025 Q1 3위·Q3 3위(정점 기준 정렬)·Q4 포함",
+        "rating": "App Store US 4.2(19,975건), Google Play 약 4.00(150,749건)",
+        "other": "공식 Discord 약 107,113명(온라인 약 21,721명, 2026-10-14 초대 API 조회)"
+      },
+      "userFeedback": {
+        "positive": [
+          "개발사가 꾸준히 주는 메이저 업데이트와 품질 개선 호평",
+          "광고를 선택적으로 시청하는 구조를 선호하는 리뷰"
+        ],
+        "negative": [
+          "랩 시간 때문에 젬 없이는 성장이 느리다는 불만",
+          "핵심 기능 일부가 과금과 묶여 있다는 리뷰('완성된 게임을 7~10달러에 사고 싶다')"
+        ],
+        "basis": "App Store 미국 리뷰 일부(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "영구 성장(워크숍·랩·카드)과 한 판 단위 런을 분리하고 토너먼트로 경쟁 동기를 주는 구조",
+          "랩 시간을 젬으로 가속하는 시간 기반 과금",
+          "웹 스토어를 병행하는 결제 채널 다변화"
+        ],
+        "avoid": [
+          "랩 대기 시간과 젬 가속을 과도하게 묶어 'F2P에 불친절'하다는 평가를 받는 설계",
+          "수치가 복잡해져 신규 유입이 어려워지는 점(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1575590830",
+          "title": "The Tower - Idle Tower Defense App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.2(19,975건), 인앱 구입 10개, v29 업데이트 노트(2026-08), 설명",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.TechTreeGames.TheTower",
+          "title": "The Tower Google Play",
+          "type": "스토어",
+          "note": "5M+ 설치, 평점 약 4.00(150,749건), 앱 내 구입 $1.99~$99.99, 2021-08-18 게시, 2026-10-06 업데이트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://store.techtreegames.com/thetower/",
+          "title": "The Tower Web Store",
+          "type": "공식",
+          "note": "웹 스토어 구성(Featured·Events·Packs·Gems·Stones·Pass), FastSpring 결제",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://the-tower-idle-tower-defense.fandom.com/wiki/Tournaments",
+          "title": "The Tower Wiki: Tournaments",
+          "type": "위키/커뮤니티",
+          "note": "토너먼트 주기·리그·보상(팬 위키, MediaWiki API 조회)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://the-tower-idle-tower-defense.fandom.com/wiki/Currency/Gems",
+          "title": "The Tower Wiki: Gems",
+          "type": "위키/커뮤니티",
+          "note": "젬 획득·소비처(팬 위키)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-ios-top-5-idler%20games-revenue-us-602ae7fb241bc16eb874f8e1",
+          "title": "2025 Q3 iOS top 5 idler games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "The Tower 주간 매출 정점 약 16.2만 달러(9월 중순)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idler-games-revenue-us-602ae7fb241bc16eb874f8e1",
+          "title": "2025 Q4 unified top 5 idler games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "The Tower 통합 주간 매출 약 40만 달러(12월 22일 주)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "wittle-defender",
+      "name": "콩콩던전 (Wittle Defender)",
+      "originalName": "Wittle Defender",
+      "url": "https://apps.apple.com/us/app/wittle-defender/id6502815032",
+      "developer": "Habby",
+      "publisher": "HABBY PTE. LTD.",
+      "origin": "싱가포르 법인(HABBY PTE. LTD.)",
+      "release": "2025-06-09 (App Store·Google Play 출시일, 버전 기록상 최초 버전 1.0은 2024-06-08로 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "타워 디펜스 + 로그라이크 스킬 선택 + 카드 전략(오토 배틀)",
+      "businessModel": "무료 + IAP 중심(영웅 뽑기·체인 팩·에너지 시스템), 런 중 광고 팝업 없음(리뷰 서술)",
+      "status": "서비스 중 (iOS 2.0.4, 2026-09-10 업데이트 확인)",
+      "description": "던전 사령관이 영웅 분대를 짜 오토 배틀로 몬스터 웨이브를 막고, 매 런마다 로그라이크 스킬을 고르는 타워 디펜스·카드 전략 게임이다. Habby의 방치형 시리즈와 달리 런 단위 선택이 중심이며 길드 레이스와 시즌이 메타 축이다.",
+      "coreLoop": [
+        "영웅 분대와 보물(유물) 구성",
+        "던전 런 시작, 오토 배틀로 몬스터 웨이브 방어",
+        "런 중 로그라이크 스킬·버프 선택",
+        "보스 처치와 보상으로 영웅·장비 강화",
+        "길드 레이스·시즌 이벤트 참여 후 반복"
+      ],
+      "features": [
+        "오토 배틀(스토어 설명: 'hands-free')과 영웅 약 100명 로스터",
+        "어둠 테마 던전과 스톰콜러 타워 등 스테이지",
+        "길드 챌린지·길드 클래시·길드 레이스",
+        "시즌 PvE 'Unknown Waters'(2026-06 v2.0.1, 계정 생성 30일·메인 스토리 75 조건)와 시즌 장비",
+        "에너지 시스템(리뷰에서 진행 속도 불만으로 언급)"
+      ],
+      "progression": [
+        "영웅 수집·강화(한정 픽업 예: Valkyrie + EX 무기 Skofnung, 2025-12)",
+        "장비·엠블럼 재련(2026-04 v2.0.0에서 재련 확정 카운터 표시)",
+        "시즌 장비 시스템",
+        "길드 퀘스트·레이스 보상",
+        "체인 팩 등 단계형 패키지"
+      ],
+      "idleMechanics": "스토어 설명은 자동 전투('hands-free gaming with auto battle')를 강조하지만 오프라인 누적 보상 수치는 미확인.",
+      "socialAndLiveOps": [
+        "길드 레이스(2026-09-10 v2.0.4에서 전용 채팅 채널 추가), 길드 퀘스트",
+        "주간 이벤트: Co-op Hunt, Hero Rush, Bingo Moments, Party Spin, Collection Rush, Gold Rush Pachinko(2026-08~09 업데이트 노트)",
+        "시즌 업데이트(2026-06-12 v2.0.1)와 1주년 업데이트(2026-04-07 v2.0.0)",
+        "추석·계절 한정 이벤트(2026-09 업데이트 노트 확인)"
+      ],
+      "popularityFactors": [
+        "Habby 브랜드와 기존 팬층(리뷰: Archero 팬 유입)",
+        "광고가 아닌 스킬 선택 중심의 전략 재미를 칭찬하는 리뷰",
+        "센서타워 미국 타워 디펜스 매출 5위권(2025 Q3)",
+        "자동 전투와 짧은 런으로 접근성 확보(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $0.99~$99.99 인앱 구입 10개가 있고 Google Play는 항목당 $0.29~$99.99다. 상품 이름은 'goods'로만 표기돼 구성 확인이 어렵고, 업데이트 노트에서 Chain Pack(Hat Trick)과 재련 확정 카운터 같은 단계형 상품·천장형 장치가 확인된다.",
+        "products": [
+          {
+            "name": "goods (US 10종)",
+            "price": "$0.99·$1.99·$2.99·$4.99·$9.99·$14.99·$19.99·$29.99·$49.99·$99.99",
+            "contents": "상품명이 'goods'로만 표기됨, 구성 비공개",
+            "evidence": "Wittle Defender App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $0.99~$99.99(명칭 'goods')",
+          "Google Play 항목당 $0.29~$99.99",
+          "2026-04-07 v2.0.0: Chain Pack [Hat Trick] 신설, 엠블럼 재련 확정(천장) 카운터와 Curio 재련 확정 규칙 표시",
+          "한정 픽업 영웅 'Valkyrie + EX Weapon'(2025-12-22 v1.1.8)"
+        ],
+        "unverified": "영웅 뽑기 확률 공시·천장 수치, 에너지 충전 상품 가격, 광고 시청 보상 구조는 확인하지 못했다. 리뷰어는 'ZERO ADS'(런 중 팝업 광고 없음)를 주장하나 공식 확인은 없다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 1M+(2026-10 페이지 확인, 내부 값 약 216만). 센서타워 미국 통합 주간 다운로드 정점 38.5K(2025 Q3 7월 말).",
+        "revenue": "센서타워 추정 미국 통합 주간 매출 정점 약 20.1만 달러(2025-08 중순, 타워 디펜스 카테고리 5위권), Q3 말 약 15만 달러.",
+        "rating": "App Store US 4.5(3,305건), KR 4.49(456건), Google Play 약 4.36(40,455건)",
+        "other": "미국 통합 MAU 2025 Q3: 100K 이상에서 약 14K로 감소(센서타워 추정)"
+      },
+      "userFeedback": {
+        "positive": [
+          "오토 배틀이지만 영웅 조합과 런 버프로 전략적 깊이가 있다는 평가",
+          "런 중 팝업 광고가 없다는 호평(리뷰 주장)"
+        ],
+        "negative": [
+          "스케일링과 에너지 시스템이 '캐시 그랩'처럼 느껴진다는 불만",
+          "기존 Habby 게임과 비슷해 새 요소가 부족하다는 지적"
+        ],
+        "basis": "App Store 미국 리뷰와 개발사 답글(표본). 개발사는 진행 속도·에너지·콘텐츠 해금 속도에 대한 의견을 검토하겠다고 답함."
+      },
+      "takeaways": {
+        "borrow": [
+          "런 중 선택(스킬·유물)과 메타 성장(영웅·장비)을 분리한 구조",
+          "시즌 PvE와 길드 레이스로 중후반 목표 제공"
+        ],
+        "avoid": [
+          "에너지·확정 장치 중심의 과금 설계가 'cash grab' 평으로 이어지는 점",
+          "초반 몰입 후 가파른 스케일링으로 MAU가 크게 줄어드는 양상(센서타워 추정, 해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/wittle-defender/id6502815032",
+          "title": "Wittle Defender App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.5(3,305건), 인앱 구입 10개, 설명, 업데이트 기록(1.0~2.0.4)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.game.kingrush",
+          "title": "Wittle Defender Google Play",
+          "type": "스토어",
+          "note": "1M+ 설치, 평점 약 4.36(40,455건), 앱 내 구입 $0.29~$99.99, 2025-06-09 출시",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-unified-top-5-tower%20defense%20games-revenue-us-6012932d241bc16eb85e0db8",
+          "title": "2025 Q3 unified top 5 tower defense games revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Wittle Defender 주간 매출 정점 약 20.1만 달러(8월 중순), 다운로드 38.5K(7월 말), MAU 감소",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.deconstructoroffun.com/blog/2025/7/31/habbys-hybridcasual-empire-the-template-that-built-a-powerhouse",
+          "title": "HABBY's Hybridcasual Empire (Deconstructor of Fun)",
+          "type": "보도",
+          "note": "Habby 포트폴리오와 하이브리드캐주얼 템플릿 분석(Wittle Defender 수치는 없음)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "high-seas-hero",
+      "name": "전함 고! 고! 고! (High Seas Hero: Dig & Build)",
+      "originalName": "High Seas Hero: Dig & Build",
+      "url": "https://apps.apple.com/us/app/id6621220868",
+      "developer": "Century Games Pte. Ltd.",
+      "publisher": "Century Games Pte. Ltd.",
+      "origin": "Pte. Ltd. 법인(국가는 로그에서 미확인)",
+      "release": "2025-01 (App Store US 2025-01-09, Google Play 2025-01-07 게시; 한국 App Store 2025-06-24; 공식 사이트 뉴스는 2025-02-18 정식 출시 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "생존 슈터 + 방치(AFK) 보상 + 기지·선박 건설 + 얼라이언스",
+      "businessModel": "무료 + IAP 중심(Growth Pack 시리즈·패스), 광고 보상 구조 미확인",
+      "status": "서비스 중 (iOS 1.0.69, 2026-09-22 업데이트 확인)",
+      "description": "가라앉은 세상에서 전함을 키워 총알 비를 막아 내며 선원(생존자)·선실을 확장하는 생존 슈터 게임으로, 스토어 설명이 AFK 중에도 보상이 쌓인다고 밝힌다. 센서타워 미국 방치 RPG 매출 상위 5위권에 2025년 Q1~Q3 반복 등장한다.",
+      "coreLoop": [
+        "무기 업그레이드로 전함 강화",
+        "끝없는 적과 전투(총알 회피·스킬)",
+        "선원(생존자) 모집과 선실 개조·자원 관리",
+        "얼라이언스 보스·서버 간 이벤트 참여",
+        "AFK 보상과 성장으로 다음 스테이지 반복"
+      ],
+      "features": [
+        "무기 탭 업그레이드와 AFK 보상(스토어 설명)",
+        "전함 외형·유형 선택(탱크형·암살자형·전함형)",
+        "생존자 직업군(해군 장교·의사·엔지니어·파일럿)",
+        "얼라이언스·보스·서버 간 개인 채팅(2026-09 업데이트)",
+        "Class Counters·Class Resonance, 3v3 Arena(2026-09-22 v1.0.69)"
+      ],
+      "progression": [
+        "무기 업그레이드",
+        "전설 영웅·무기와 본드(2026-06 v1.0.68, 영웅·무기 만렙 50으로 조정)",
+        "선원 모집·선실 개조",
+        "전함 진화",
+        "건설 패스(2026-01-30 이후 영구화)"
+      ],
+      "idleMechanics": "스토어 설명: 'Enjoy a bounty of rewards even while you're AFK'. 누적 한도와 수치는 미확인.",
+      "socialAndLiveOps": [
+        "얼라이언스 보스와 서버 간 이벤트(스토어 설명, 업데이트 노트)",
+        "한정 이벤트: Tundra Adventure(2026-01-30), Happy Lunar New Year(2026-02-05), Block Brawl 기념 이벤트(2026-09-22)",
+        "3v3 Arena, Treasure Hunt 이벤트(v1.0.69)",
+        "월~분기 단위 콘텐츠 갱신(2026-01~2026-09 사이 11개 이상 버전 기록)"
+      ],
+      "popularityFactors": [
+        "센서타워 미국 방치 RPG 매출 5위권 반복 진입(2025 Q2·Q3)",
+        "전함 육성과 슈터 전투의 시각적 광고 소재(해석)",
+        "Century Games의 4X·생존 IP 운영 경험(해석)",
+        "높은 평점(App Store 4.8)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $0.99~$99.99 Growth Pack 10개가 있고 Google Play는 항목당 $0.49~$299.99다. 건설 패스는 구매자에게 영구 혜택으로 전환(2026-01-30 v1.0.65)됐다.",
+        "products": [
+          {
+            "name": "Growth Pack 1 / Growth Pack 1 (2종)",
+            "price": "$0.99 / $4.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 2",
+            "price": "$1.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 3",
+            "price": "$2.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 6",
+            "price": "$9.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 8",
+            "price": "$19.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 9",
+            "price": "$24.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 10",
+            "price": "$29.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 12",
+            "price": "$49.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Growth Pack 17",
+            "price": "$99.99",
+            "contents": "구성 미확인",
+            "evidence": "High Seas Hero App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $0.99~$99.99(모두 'Growth Pack N' 표기)",
+          "Google Play 항목당 $0.49~$299.99",
+          "Construction Pass가 영구 혜택으로 전환(2026-01-30), 중복 구매자에게 Arctic Crystals 보상(499개 예시)",
+          "공식 Top-Up Store 존재(공식 사이트 문구)"
+        ],
+        "unverified": "팩별 구성, 월정액·패스 가격, 확률형 요소 공시, 광고 시청 보상은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 1M+(2026-10 페이지 확인, 내부 값 약 389만). 센서타워 미국 통합 주간 다운로드 정점 79K(2025 Q2 4월 중순).",
+        "revenue": "센서타워 추정 미국 통합 주간 매출: 2025 Q2 5월 중순 약 39.3만 달러 정점, 2025 Q3 시작 약 25.7만 달러 → 말 약 12.2만 달러. 미국 iOS Q3 약 17.7만 → 9.1만 달러. 유럽 통합 2025 Q1 정점 약 8.1만 달러(2월 초).",
+        "chart": "센서타워 미국 통합 방치 RPG 매출 상위 5위권: 2025 Q2 2위·Q3 2위(주간 매출 정점 기준 정렬), 유럽 2025 Q1 4위",
+        "rating": "App Store US 4.8(34,319건), KR 4.84(1,620건), Google Play 약 4.52(110,599건)",
+        "other": "미국 통합 MAU 2025 Q3: 63.7K → 11.2K(센서타워 추정). 한국 서비스명 '전함 고! 고! 고!'(한국 App Store 출시 2025-06-24)"
+      },
+      "userFeedback": {
+        "positive": [
+          "개발사가 설문·리뷰에 잘 대응한다는 평가",
+          "중독성 있고 흥미롭다는 리뷰"
+        ],
+        "negative": [
+          "광고·스토어 이미지가 실제 게임과 다르다는 지적",
+          "업데이트마다 서버가 비고 모든 것이 유료화됐다는 이탈 리뷰",
+          "월드 채팅 단어 검열 불만"
+        ],
+        "basis": "App Store 미국 리뷰 일부와 개발사 답글(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "AFK 보상과 서버 단위 얼라이언스 콘텐츠를 결합해 방치+소셜 루프 구성",
+          "건설 패스를 영구 혜택으로 전환해 신뢰 확보"
+        ],
+        "avoid": [
+          "광고 소재와 실제 플레이의 괴리",
+          "서버 인구 감소를 방치한 채 유료화를 강화하는 운영"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6621220868",
+          "title": "High Seas Hero: Dig & Build App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.8(34,319건), 인앱 구입 10개, 설명, 업데이트 노트(1.0.65~1.0.69)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://highseashero.centurygames.com/",
+          "title": "High Seas Hero 공식 사이트",
+          "type": "공식",
+          "note": "공식 Top-Up Store, 뉴스(2025/2/18 출시, 2025/1/9 사전등록)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.wwv.global",
+          "title": "High Seas Hero Google Play",
+          "type": "스토어",
+          "note": "1M+ 설치, 평점 약 4.52(110,599건), 앱 내 구입 $0.49~$299.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+          "title": "2025 Q2 unified top 5 idle RPG revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "High Seas Hero 주간 매출 약 39.3만 달러(5월 중순), 다운로드 79K(4월 중순)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+          "title": "2025 Q3 unified top 5 idle RPG revenue US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "High Seas Hero 주간 매출 25.7만 → 12.2만 달러, MAU 63.7K → 11.2K",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "galaxy-defense",
+      "name": "갤럭시 디펜스 (Galaxy Defense: Fortress TD)",
+      "originalName": "Galaxy Defense: Fortress TD",
+      "url": "https://apps.apple.com/us/app/id6740189002",
+      "developer": "CYBERJOY LIMITED (CyberJoy Games)",
+      "publisher": "CYBERJOY LIMITED",
+      "origin": "미확인(개발사 사이트 cyberjoygame.com, 법인 소재국은 로그에서 미확인)",
+      "release": "2025-02-01 (미국 App Store 출시일, 버전 기록상 0.12.3은 2025-09-21) / Google Play 2025-04-21 게시",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치형 타워 디펜스 + 로그라이크 카드 선택 + 길드 원정",
+      "businessModel": "무료 + IAP 중심(젬·패스·스타터·월정액) + 광고(리뷰에서 2배속 해금 언급)",
+      "status": "서비스 중 (iOS 1.0.1, 2026-09-22 업데이트 확인)",
+      "description": "인류를 지키는 요새의 지휘관이 터렛을 조합하고 칩·무기를 장착해 외계 침공군을 막는 방치형 타워 디펜스로, 전투 중 에너지를 모아 업그레이드를 고르는 로그라이크 요소와 길드 원정이 결합된다. 센서타워 미국 타워 디펜스 매출 5위권에 2025년 Q3·Q4 등장한다.",
+      "coreLoop": [
+        "터렛 구성과 캐릭터 칩·무기 장착",
+        "전투(자동 방어) 중 처치로 에너지 충전",
+        "충전 시 업그레이드 카드 선택(로그라이크)",
+        "전투 보상으로 터렛·캐릭터 강화",
+        "길드 원정·시즌 이벤트 참여 후 반복"
+      ],
+      "features": [
+        "터렛별 고유 스킬과 조합 전략(스토어 설명)",
+        "로그라이크식 업그레이드 선택",
+        "'Ark: Rebuild' 모드(터렛 레벨 상한 45, 2026-05 v0.15.4)",
+        "길드 기능(기부·레이드·미션·상점, 2026-04-19 v0.15.1)",
+        "시즌 원정(Season: Expedition, 2026-09-18~, Lv.60 해금·길드 레벨 60 이상 10명 이상 조건)"
+      ],
+      "progression": [
+        "캐릭터 칩·무기 업그레이드",
+        "터렛 레벨과 체인 카드(상한 Lv.45)",
+        "카드 수집(스토어 설명)",
+        "길드 레벨과 길드 상점",
+        "패스(Ark-Rebuild Pass·BP 계열) 보상",
+        "레벨 60 이상 원정 해금"
+      ],
+      "idleMechanics": "스토어 설명이 'idle tower defense game'을 표방하나 오프라인 누적 한도와 수치는 미확인. 일부 리뷰는 2배속이 '레벨 2 해금'으로 안내되지만 사실상 구매를 유도한다고 주장.",
+      "socialAndLiveOps": [
+        "Project Ember: Vanguard(매주 화 00:00~수 24:00 UTC, 레벨 50 참가, 2025-11-18 v0.13.3)",
+        "신규 이벤트가 신규 유저 로그인 8일 후 해금(Operation Dawn 2026-06-29, Lunar Farside Survey 2026-08-11, Kronos Exploration 2026-09-24)",
+        "Anniversary Genesis(2026-01-25 v0.14.0)",
+        "길드 시즌 원정(2026-09-21~10-15)",
+        "공식 Discord 약 217K 명(2026-10-14 초대 API 조회)"
+      ],
+      "popularityFactors": [
+        "센서타워 미국 타워 디펜스 매출 5위권 진입(2025 Q3·Q4)",
+        "방치형 TD에 로그라이크 선택을 더한 구성(해석)",
+        "대규모 커뮤니티(Discord 약 217K)",
+        "월 단위로 새 모드·이벤트를 추가하는 업데이트 속도(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $2.99~$19.99 인앱 구입 10개(젬 3종·스타터 2종·패스/티켓·SVIP 월정액)가 있고 Google Play는 항목당 $0.99~$349.99다. 월정액(SVIP-Monthly 1, $9.99)과 두 종류 패스(Ark-Rebuild, BP-Honor·Medal)가 확인된다.",
+        "products": [
+          {
+            "name": "Starter Pack 1b",
+            "price": "$2.99",
+            "contents": "구성 미확인",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Starter Pack 2c",
+            "price": "$9.99",
+            "contents": "구성 미확인",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "320 Gems",
+            "price": "$4.99",
+            "contents": "젬 320개",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "680 Gems",
+            "price": "$9.99",
+            "contents": "젬 680개",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "1400 Gems",
+            "price": "$19.99",
+            "contents": "젬 1,400개",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "BP-Honor-1",
+            "price": "$4.99",
+            "contents": "배틀 패스 계열(상세 미확인)",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "BP-Medal-1",
+            "price": "$9.99",
+            "contents": "배틀 패스 계열(상세 미확인)",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Ark-Rebuild Pass",
+            "price": "$9.99",
+            "contents": "Ark: Rebuild 모드 패스",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Ark-Rebuild Ticket 2",
+            "price": "$9.99",
+            "contents": "Ark: Rebuild 티켓",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "SVIP-Monthly 1",
+            "price": "$9.99",
+            "contents": "월정액",
+            "evidence": "Galaxy Defense App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $2.99~$19.99",
+          "Google Play 항목당 $0.99~$349.99",
+          "SVIP 월정액($9.99)·Ember Pass·Vanguard Pass 선택 칩 보상(Lv.30, 2026-01-10 v0.13.9)",
+          "일부 리뷰: 레벨 10·엘리트 5~6 이후 과금 없이는 클리어가 매우 어렵다는 주장"
+        ],
+        "unverified": "터렛·카드 확률 공시, 광고 시청 보상 구조와 비율, 스타터 팩 구성, 광고 제거 상품 여부는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 5M+(2026-10 페이지 확인, 내부 값 약 590만).",
+        "revenue": "센서타워 추정 미국 통합 주간 매출 정점 약 19.8만 달러(2025 Q3 8월 말, 타워 디펜스 카테고리).",
+        "rating": "App Store US 4.7(9,048건), KR 4.68(2,197건), Google Play 약 4.58(108,818건)",
+        "other": "공식 Discord 약 217,033명(온라인 약 12,431명, 2026-10-14 초대 API 조회). 센서타워 미국 통합 MAU 2025 Q3 말 약 8만."
+      },
+      "userFeedback": {
+        "positive": [
+          "보상이 충분한 좋은 TD 게임이라는 평가",
+          "로그라이크 업그레이드 선택이 재미있다는 리뷰"
+        ],
+        "negative": [
+          "레벨 10·엘리트 5~6 이후 난이도가 급등해 과금이 필요하다는 불만",
+          "초반 카드 선택에서 새 터렛만 나와 불리하다는 의견",
+          "초보자에게 어렵고 2배속이 구매 유도라는 주장"
+        ],
+        "basis": "App Store 미국 리뷰 일부(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "TD 자동 방어와 카드 선택(로그라이크)의 결합",
+          "신규 이벤트를 로그인 8일 후 해금해 신규 유저 목표 유지",
+          "길드 시즌 원정으로 중후반 리텐션 제공"
+        ],
+        "avoid": [
+          "특정 레벨 구간의 난이도 급등과 과금 연동이 만드는 이탈",
+          "카드 제시에서 업그레이드 카드가 보장되지 않는 초반 불만"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6740189002",
+          "title": "Galaxy Defense: Fortress TD App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.7(9,048건), 인앱 구입 10개, 설명, 업데이트 노트(0.12.3~1.0.1)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.cyberjoy.galaxydefense",
+          "title": "Galaxy Defense: Fortress TD Google Play",
+          "type": "스토어",
+          "note": "5M+ 설치, 평점 약 4.58(108,818건), 앱 내 구입 $0.99~$349.99, 2025-04-21 게시",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-unified-top-5-tower%20defense%20games-units-us-6012932d241bc16eb85e0db8",
+          "title": "2025 Q3 unified top 5 tower defense games units US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Galaxy Defense 주간 매출 정점 약 19.8만 달러(8월 말), 다운로드 12.7K, MAU 약 8만",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://discord.gg/qc4QdGEtzf",
+          "title": "Galaxy Defense 공식 Discord (초대 API 조회)",
+          "type": "공식",
+          "note": "Discord 약 217,033명(2026-10-14)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "slime-castle",
+      "name": "슬라임 성 (Slime Castle: Idle TD RTS Game)",
+      "originalName": "Slime Castle: Idle TD RTS Game",
+      "url": "https://apps.apple.com/us/app/id6480410032",
+      "developer": "Redtail Works(번들 ID·문의 이메일 기준)",
+      "publisher": "Azur Interactive Games Limited",
+      "origin": "미확인(퍼블리셔 azurgames.com, 법인 소재국은 로그에서 미확인)",
+      "release": "2024-05-03 (App Store·Google Play 공통)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치형 타워 디펜스 RTS + 슬라임 수집·장비 성장 + 길드전",
+      "businessModel": "무료 + IAP 중심(월정액 카드·패스·배속·광고 제거) + 광고",
+      "status": "서비스 중 (iOS 3.5.3, 2026-10-03 업데이트 확인)",
+      "description": "인간의 침공에 맞서 슬라임 왕국을 지키는 방치형 타워 디펜스로, 자동 전투 위에서 요새·장비·슬라임 스킬을 조합해 전략을 세운다. 업데이트가 잦은 라이브옵스 중심 운영이 특징이다.",
+      "coreLoop": [
+        "요새·슬라임·장비 구성",
+        "자동 전투로 적 웨이브 방어",
+        "전투 보상으로 장비·스킬 강화",
+        "원정·광산 운반·여행 모드 등 보조 콘텐츠 진행",
+        "길드전·이벤트 참여 후 반복"
+      ],
+      "features": [
+        "자동 전투와 단순 방치 클리커 플레이(스토어 설명)",
+        "다양한 맵과 스킬이 다른 적",
+        "슬라임 마을 건물, 원정(Expedition)·곡괭이 운반·여행 모드",
+        "아티팩트·SSS 속성 슬라임 추가 업데이트(2026-08~09)",
+        "5배속 상품과 광고 제거 상품"
+      ],
+      "progression": [
+        "장비 수집과 슬라임 레벨업",
+        "슬라임 스킬·모험 카드(Adventure Card) 해금",
+        "요새 업그레이드",
+        "챕터 진행(2026-08 Chapter 20 추가)",
+        "아티팩트 상자(Mythic 아티팩트, 2026-08-08)",
+        "탤런트·챕터·드래곤즈 레어 펀드(2026-09-01 추가)"
+      ],
+      "idleMechanics": "스토어 설명이 '자동 전투와 단순한 방치 클리커'를 명시하고 '풍부한 무료 보상'을 약속한다. 5배속(5x Speed, $6.29) 구매 가능. 오프라인 최대 누적 시간은 미확인.",
+      "socialAndLiveOps": [
+        "길드전(Guild War) 그룹 로직 개선과 아레나 실시간 전투력 표시(2026-08-08 v3.3.2)",
+        "미니게임 Dragon Orb Hoard 추가(2026-08-08)",
+        "2026-09-01 v3.4.1: 마을 건물 해금 마법 수정 비용 제거, 한정 슬라임 스페셜 팩, 기존 오토 배틀 카드 폐지·특권 카드를 슈퍼 월정액으로 통합",
+        "7일 한정 이벤트 상품과 시즌 아티팩트(2026-09-29 v3.5.2)",
+        "잦은 버전 갱신(2026-08-08~10-03 사이 7개 버전 기록)"
+      ],
+      "popularityFactors": [
+        "센서타워 유럽 통합 방치 RPG 매출 5위권(2025 Q1, 주간 정점 약 4.4만 달러)",
+        "높은 평점(App Store 4.9, KR 4.83)",
+        "슬라임 콘셉트와 단순 방치 루프(해석)",
+        "잦은 업데이트와 과금 상품 개편(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $2.49~$24.99 인앱 구입 10개가 있고, 광고 제거($16.49)·5배속($6.29)·월정액(Super Monthly Card $12.49)·울티메이트 패스($24.99)·챕터 팩 등 기능성 상품 비중이 높다. 2026-09-01 업데이트에서 월정액이 기존 특권 카드를 통합했다.",
+        "products": [
+          {
+            "name": "Ch.1 Pack",
+            "price": "$2.49",
+            "contents": "챕터 1 패키지",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Ch.2 Pack",
+            "price": "$3.90",
+            "contents": "챕터 2 패키지",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Newbie Pack",
+            "price": "$3.79",
+            "contents": "신규 유저 팩",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Mining Slime Special Offer",
+            "price": "$4.99",
+            "contents": "한정 슬라임 오퍼",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "5x Speed",
+            "price": "$6.29",
+            "contents": "5배속",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Seven-day Special Event",
+            "price": "$6.29",
+            "contents": "7일 이벤트 상품",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Super Monthly Card",
+            "price": "$12.49",
+            "contents": "월정액(2026-09-01에 광산·원정 특권 카드 혜택 통합)",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Remove Ads",
+            "price": "$16.49",
+            "contents": "광고 제거",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Electric Slime Special Offer",
+            "price": "$24.99",
+            "contents": "한정 슬라임 오퍼",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Ultimate Pass",
+            "price": "$24.99",
+            "contents": "패스",
+            "evidence": "Slime Castle App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $2.49~$24.99",
+          "Google Play 항목당 $0.99~$124.99",
+          "2026-09-01 v3.4.1: 광산·원정 특권 카드를 Super Monthly Card에 통합, Talent Fund·Chapter Fund·Dragon's Lair Fund 신설",
+          "광고 제거($16.49)와 5배속($6.29) 단독 상품 존재"
+        ],
+        "unverified": "슬라임·장비 뽑기 확률 공시, 광고 시청 보상 구조, 상품 구성 상세는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 1M+(2026-10 페이지 확인, 내부 값 약 359만). 센서타워 유럽 통합 주간 다운로드 25K → 11K(2025 Q1).",
+        "revenue": "센서타워 추정 유럽 통합 주간 매출 정점 약 4.4만 달러(2025 Q1 3월, 방치 RPG 5위권). 전 세계 매출은 확인하지 못했다.",
+        "rating": "App Store US 4.9(8,509건), KR 4.83(1,015건), Google Play 약 4.52(67,558건)",
+        "other": "센서타워 유럽 통합 MAU 약 8.5만(2025 Q1 말)"
+      },
+      "userFeedback": {
+        "positive": [
+          "높은 평점으로 반영된 슬라임 콘셉트와 자동 전투 만족도",
+          "무료 보상이 많다는 설명(스토어 설명, 리뷰 검증은 부족)"
+        ],
+        "negative": [
+          "성장에 많은 과금이 필요하다는 리뷰",
+          "개발자가 플레이어를 신경 쓰지 않는다는 이벤트 관련 불만 리뷰"
+        ],
+        "basis": "App Store 미국 리뷰 일부(표본, 일부 문장이 잘림)"
+      },
+      "takeaways": {
+        "borrow": [
+          "자동 전투 위에 슬라임 수집·장비 조합 전략을 올린 단순한 진입 장벽",
+          "배속·광고 제거·월정액 등 편의성 중심 상품 구성",
+          "잦은 업데이트와 한정 오퍼"
+        ],
+        "avoid": [
+          "카드·특권 폐지 등 과금 상품 개편이 반발을 부를 수 있다는 점(해석)",
+          "성장 과금 압박이 강하다는 리뷰"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6480410032",
+          "title": "Slime Castle: Idle TD RTS Game App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.9(8,509건), 인앱 구입 10개, 설명, 업데이트 기록(2.9.3~3.5.3)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.redtailworks.slimetd",
+          "title": "Slime Castle Google Play",
+          "type": "스토어",
+          "note": "1M+ 설치, 평점 약 4.52(67,558건), 앱 내 구입 $0.99~$124.99, 2024-05-03 출시",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q1-unified-top-5-idle%20rpg-revenue-europe-6040bbc2241bc16eb883a0cb",
+          "title": "2025 Q1 unified top 5 idle RPG revenue Europe (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Slime Castle 주간 매출 정점 약 4.4만 달러(3월), 다운로드 25K → 11K, MAU 약 8.5만",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "heroll",
+      "name": "용사님 돌았어요? (Heroll: Dice Roguelike)",
+      "originalName": "Heroll : Dice Roguelike",
+      "url": "https://apps.apple.com/us/app/id6737821799",
+      "developer": "111%",
+      "publisher": "111%(App Store 판매자: Crater Co., Ltd.)",
+      "origin": "한국(111%는 센서타워가 한국 퍼블리셔로 서술)",
+      "release": "2025-02-25 (미국 App Store 출시일) / Google Play 2025-02-20 게시",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "주사위 보드 로그라이크 액션 RPG + 방치 RPG식 장비·펫·탈것 성장",
+      "businessModel": "무료 + IAP 중심(VIP·패스·구독·성장 팩), 광고 보상 구조 미확인",
+      "status": "서비스 중 (iOS 2.0.3, 2026-08-25 업데이트 확인)",
+      "description": "주사위를 굴려 보드를 이동하며 전투·보상을 얻는 로그라이크 RPG로, 영웅이 알아서 싸우는 방치 RPG식 성장(장비·펫·탈것)을 결합했다. 운빨 디펜스로 알려진 111%의 후속 하이브리드 작품이다.",
+      "coreLoop": [
+        "주사위 굴림(자동 굴림 지원)으로 보드 이동",
+        "칸 효과에 따른 전투·보상·스킬 선택",
+        "보스 처치와 보상 획득",
+        "장비·펫·탈것으로 영구 성장",
+        "패트롤·레이드·아레나 등 보조 콘텐츠 후 반복"
+      ],
+      "features": [
+        "보드형 로그라이크와 방치 RPG식 장비 시스템 결합(스토어 설명)",
+        "펫·탈것 시스템",
+        "Auto-Roll(2026-06-02 v1.7.3)",
+        "패트롤(2025-11-26 v1.5.10)·일일 던전·레이드(2026-03-20)",
+        "스테이지 20까지 확장(2026-07-13 v1.7.7)"
+      ],
+      "progression": [
+        "장비 성장(S-Legendary 장비 추가, 2026-06)",
+        "펫 육성(Mythic 펫 Mini-Calibur 등)",
+        "탈것 패스",
+        "스테이지 클리어",
+        "아레나·Hall of Fame·시즌 이벤트 Dice Showdown(2025-10-29)"
+      ],
+      "idleMechanics": "스토어 설명이 '방치 RPG 성장(Gear up with idle RPG progression)'을 명시하고 패트롤 콘텐츠(2025-11)가 추가됐다. 오프라인 누적 한도 수치는 미확인.",
+      "socialAndLiveOps": [
+        "아레나 개편(2026-04-28 v1.7.0)",
+        "시즌 이벤트 Dice Showdown·Hall of Fame(2025-10-29)",
+        "계절 이벤트: 크리스마스(2025-12-19)·1주년(2026-02-13)·Summer Ride(2026-07-13)",
+        "레이드(2026-03-20), 복귀 유저 이벤트(2026-02-13)",
+        "버전 갱신 약 2~4주 간격(2026-04~08 사이 15개 이상 버전 기록)"
+      ],
+      "popularityFactors": [
+        "센서타워 미국 통합 방치 RPG 5위권(2025 Q4, 다운로드 기준 순위)",
+        "높은 평점(App Store 4.8)",
+        "주사위 + 로그라이크 + 방치 성장의 조합(해석)",
+        "111%의 장르 경험과 한국 시장 기반(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "미국 App Store에 $0.99~$19.99 인앱 구입 10개가 있고 VIP 패키지($14.99)·패스 4종(KnightRoad $9.99, myth_pet $4.99, mount $5.99, Arena $19.99)·구독(dopamine_subscription $6.99)이 확인된다. Google Play는 항목당 $0.99~$119.99다.",
+        "products": [
+          {
+            "name": "d3_Package_new",
+            "price": "$0.99",
+            "contents": "구성 미확인",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "D3 Package",
+            "price": "$1.99",
+            "contents": "구성 미확인",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "stageClearPackage_1",
+            "price": "$1.99",
+            "contents": "스테이지 클리어 패키지",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Newbie Package 1",
+            "price": "$2.99",
+            "contents": "신규 유저 패키지",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "myth_pet_Pass_premium",
+            "price": "$4.99",
+            "contents": "신화 펫 패스 유료 트랙",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "mount_Pass_premium",
+            "price": "$5.99",
+            "contents": "탈것 패스 유료 트랙",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "dopamine_subscription",
+            "price": "$6.99",
+            "contents": "구독(구성 미확인)",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "KnightRoadPass Premium",
+            "price": "$9.99",
+            "contents": "패스 유료 트랙",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Vip Package",
+            "price": "$14.99",
+            "contents": "VIP",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "ArenaPass Premium",
+            "price": "$19.99",
+            "contents": "아레나 패스 유료 트랙",
+            "evidence": "Heroll App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $0.99~$19.99(패스 4종·구독 1종·VIP 포함)",
+          "Google Play 항목당 $0.99~$119.99",
+          "구독 상품(dopamine_subscription $6.99) 존재"
+        ],
+        "unverified": "패스·구독의 구체 혜택과 주기, 확률형 요소 공시, 광고 구조, 상품 내부 구성은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 1M+(2026-10 페이지 확인, 내부 값 약 249만). 센서타워 미국 통합 주간 다운로드 18.3K → 정점 33.9K(2025 Q4).",
+        "revenue": "센서타워 추정 미국 통합 주간 매출 정점 약 4.86만 달러(2025 Q4 12월 말, 다운로드 기준 미국 방치 RPG 상위 5위권).",
+        "rating": "App Store US 4.8(15,041건), KR 4.46(1,453건), Google Play 약 4.57(77,748건)",
+        "other": "센서타워 미국 순위는 매출이 아닌 다운로드(units) 기준 상위 5위 목록"
+      },
+      "userFeedback": {
+        "positive": [
+          "평점이 높고(4.8) 주사위 로그라이크 조합이 신선하다는 평가(평점 기반)"
+        ],
+        "negative": [
+          "스토어 리뷰 세부는 로그에서 확인하지 못함(KR 평점 4.46으로 미국 대비 낮음)"
+        ],
+        "basis": "App Store·Google Play 평점 수치만 확인(리뷰 본문은 확인하지 못함)"
+      },
+      "takeaways": {
+        "borrow": [
+          "주사위 같은 직관적 도구로 로그라이크 선택 빈도를 낮춘 구조",
+          "방치 RPG식 영구 성장(장비·펫·탈것)과 패트롤 보상 병행",
+          "시즌 이벤트와 패스 다중화"
+        ],
+        "avoid": [
+          "패스를 4종 이상 병행해 복잡해지는 상점 구조(해석)",
+          "KR 평점이 미국보다 낮은 점은 현지화·밸런스 점검 필요(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6737821799",
+          "title": "Heroll: Dice Roguelike App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.8(15,041건), 인앱 구입 10개, 설명, 업데이트 기록(1.5.5~2.0.3)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.percent.aos.rollinghero",
+          "title": "Heroll: Dice Roguelike Google Play",
+          "type": "스토어",
+          "note": "1M+ 설치, 평점 약 4.57(77,748건), 앱 내 구입 $0.99~$119.99, 2025-02-20 게시",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idle-rpg-units-us-6040bbc2241bc16eb883a0cb",
+          "title": "2025 Q4 unified top 5 idle RPG units US (센서타워)",
+          "type": "데이터(추정)",
+          "note": "Heroll 주간 매출 정점 약 4.86만 달러(12월 말), 다운로드 18.3K → 33.9K",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "necromerger",
+      "name": "NecroMerger - Idle Merge Game",
+      "originalName": "NecroMerger - Idle Merge Game",
+      "url": "https://apps.apple.com/us/app/id1611769159",
+      "developer": "Grumpy Rhino Games LTD",
+      "publisher": "Grumpy Rhino Games LTD",
+      "origin": "미확인(로그에 국가 표기 없음)",
+      "release": "2022-08-30 (미국 App Store 출시일) / Google Play 2022-08-29 게시",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치 + 머지 + 자원 관리(프레스티지 순환)",
+      "businessModel": "무료 + IAP(젬·번들·광고 제거) + 선택형 광고",
+      "status": "서비스 중 (iOS 1.80, 2026-08-28 업데이트 확인)",
+      "description": "미니언을 소환해 합치고 먹보 데보우러에게 먹여 성장시키는 방치형 머지 게임으로, 챔피언·상인·이벤트와 프레스티지 구조가 결합된다. 스토어 설명은 오프라인에서도 자원이 생성된다고 밝힌다.",
+      "coreLoop": [
+        "미니언 소환(스테이션 사용)",
+        "같은 미니언을 머지해 상위 등급 생성",
+        "데보우러에게 먹여 성장·자원 획득",
+        "피트(Feat) 달성으로 새 스테이션·장비 해금",
+        "프레스티지(리셋) 후 더 강한 순환 반복"
+      ],
+      "features": [
+        "미니언 100종 이상 머지(Google Play 설명, App Store는 70종 이상 표기)",
+        "챔피언·상인·도둑 방문과 Craving 요청",
+        "이벤트(반복형·계절형)와 스킨·테마",
+        "프레스티지 메커니즘과 룬·릭 시스템",
+        "오프라인에서도 자원이 생성(Google Play 설명)"
+      ],
+      "progression": [
+        "미니언 합성 등급(Forgotten·Legendary 미니언)",
+        "피트 달성과 스테이션·장비 해금",
+        "스펠북(2026-02 6페이지 추가)",
+        "릭(Relic)과 Duo Relic(2026-06-01)",
+        "룬 큐브(2025-12-03), 사이즈 확장 상점"
+      ],
+      "idleMechanics": "Google Play 설명: 'Resources generate even when you're offline'. 오프라인 최대 한도와 수치는 미확인.",
+      "socialAndLiveOps": [
+        "반복 이벤트 쿨다운 10일 → 7일 단축(2026-04-01 v1.77)",
+        "신규 챔피언 Mech 추가(2026-02-19 v1.76)",
+        "Duo Relics·릭 잠금 개선(2026-06-01 v1.78)",
+        "한정 스킨 판매(Firework 스킨 2026-06-30)",
+        "버전 갱신 약 1~2개월 간격(2025-06~2026-08 사이 12개 버전 기록)"
+      ],
+      "popularityFactors": [
+        "스토어 평점 4.8(6,360건), Google Play 4.66(68,360건)",
+        "무과금 진행이 가능하고 광고가 선택적이라는 리뷰 평가",
+        "머지와 방치 자원 관리의 신선한 조합(해석)",
+        "유머러스한 톤과 완성도 있는 아트(리뷰 서술)"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "미국 App Store에 $1.99~$19.99 인앱 구입 10개가 있고 젬 팩 3종, 번들 5종, 광고 제거($9.99)가 확인된다. 리뷰는 모든 광고가 선택형이고 프리미엄 재화를 F2P로 얻을 수 있다고 평가한다.",
+        "products": [
+          {
+            "name": "75 Gems",
+            "price": "$1.99",
+            "contents": "젬 75개",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "200 Gems and 300 Gold",
+            "price": "$2.99",
+            "contents": "젬+골드",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "250 Gems",
+            "price": "$4.99",
+            "contents": "젬 250개",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "NectarMerger Boost Bundle",
+            "price": "$4.99",
+            "contents": "부스트 번들",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "600 Gems",
+            "price": "$9.99",
+            "contents": "젬 600개",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Weekly Bundle",
+            "price": "$9.99",
+            "contents": "주간 번들",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Rookie Bundle",
+            "price": "$9.99",
+            "contents": "신규 번들",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Remove Ads",
+            "price": "$9.99",
+            "contents": "광고 제거",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "All Golden Boosts",
+            "price": "$14.99",
+            "contents": "골든 부스트 전체",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          },
+          {
+            "name": "Monthly Bundle",
+            "price": "$19.99",
+            "contents": "월간 번들",
+            "evidence": "NecroMerger App Store (US) 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 앱 내 구입 10개, $1.99~$19.99(광고 제거 $9.99 포함)",
+          "Google Play 항목당 $1.99~$99.99",
+          "리뷰 서술: 모든 광고가 선택형이며 프리미엄 재화를 F2P로 획득 가능",
+          "Chicken rushing(가속)은 항상 젬 1개(2026-06-01 v1.78)"
+        ],
+        "unverified": "광고와 IAP 매출 비중, 번들 구성 상세, 확률형 요소 여부, 매출·다운로드 추정치는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 1M+(2026-10 페이지 확인, 내부 값 약 240만).",
+        "rating": "App Store US 4.8(6,360건), Google Play 약 4.66(68,360건)",
+        "other": "센서타워·AppMagic 매출/다운로드 추정치는 로그에서 확인하지 못함"
+      },
+      "userFeedback": {
+        "positive": [
+          "무과금으로도 충분히 진행되고 광고가 선택이라는 호평",
+          "짧은 체크인 방식으로 진행할 수 있다는 평가",
+          "유머와 아트 완성도 칭찬"
+        ],
+        "negative": [
+          "후반 반복 재건이 노동처럼 느껴진다는 리뷰",
+          "후반에는 현금 없이 재미를 되찾기 어렵다는 의견"
+        ],
+        "basis": "App Store 미국 리뷰 일부(표본)"
+      },
+      "takeaways": {
+        "borrow": [
+          "선택형 광고와 F2P 친화적 프리미엄 재화 획득",
+          "머지와 방치 자원 생산, 프레스티지를 결합한 순환",
+          "이벤트 쿨다운 단축 등 라이브옵스 조정"
+        ],
+        "avoid": [
+          "후반 반복 재건 구간의 피로(타임머신 도입에도 불평 존재)",
+          "스탯·콘텐츠가 100레벨 이상으로 커지면서 복잡해지는 점(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1611769159",
+          "title": "NecroMerger - Idle Merge Game App Store (US)",
+          "type": "스토어",
+          "note": "평점 4.8(6,360건), 인앱 구입 10개, 설명, 업데이트 기록(1.47~1.80), 리뷰",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.grumpyrhinogames.necromerger",
+          "title": "NecroMerger Google Play",
+          "type": "스토어",
+          "note": "1M+ 설치, 평점 약 4.66(68,360건), 앱 내 구입 $1.99~$99.99, 설명(오프라인 자원 생성)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://itunes.apple.com/lookup?id=1611769159&country=us",
+          "title": "iTunes Lookup API: NecroMerger",
+          "type": "스토어",
+          "note": "출시일 2022-08-30, 판매자 Grumpy Rhino Games LTD, 평점 4.83(6,360), 버전 1.80",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "scope": "방치형 성장 위에 로그라이크 선택, 타워 디펜스, 머지, 생존 슈터, 4X 같은 '판단' 요소를 결합한 모바일 게임을 다룬다. 방치형 RPG 전반(AFK형)·타이쿤·아케이드 아이들·국내 키우기류는 제외한다.",
+  "selectionBasis": "연구자 선정 목록이며 공식 순위가 아니다. 2025~2026년 센서타워 분기 방치 RPG·idler·타워 디펜스 미국·유럽 상위 5 진입 여부, 스토어 평점·설치 규모, 인앱 구입 목록 확인 가능 여부를 종합했다. 순서는 확인된 시장 지표의 규모와 근거 충실도 기준이며 매출 순위가 아니다. Survivor.io·Archero 2·Lucky Defense·Top Heroes 등은 방치 요소가 약하거나 데이터가 부족해 본 목록에서 제외하고 pipeline에 관찰 대상으로 적었다.",
+  "methodology": [
+    "2026-10-14 기준 App Store(US·KR)와 Google Play 상품 페이지, iTunes Lookup API, 공식 업데이트 노트를 직접 조회해 평점·인앱 구입 목록·버전 이력·설치 구간을 확인했다.",
+    "센서타워 분기 'Top 5' 블로그는 AI 작성 요약으로 주간 매출·다운로드·MAU를 서술한다. 지역(미국/유럽)·플랫폼(iOS/통합)·정점 주간 기준이 서로 달라 게임 간 직접 비교나 누적 매출 환산에 쓰지 않았다.",
+    "누적 매출·다운로드 추정(AppMagic, 센서타워)은 시점과 출처를 함께 적었고, 다운로드·매출·평점·MAU·Discord 인원은 서로 다른 지표로 합산하지 않았다.",
+    "App Store의 인앱 구입 목록은 10개까지만 보이며 상품 구성이 가격만 표기되는 경우가 많아, 확인된 범위만 products에 넣고 나머지는 unverified에 적었다.",
+    "팬 위키(MeowDB·Fandom)의 확률·보상 정보는 공식 공시가 아니라 보조 자료로만 인용했다. Habby 공식 사이트는 JS 렌더링 페이지라 본문을 확인하지 못했다.",
+    "새 웹 검색은 하지 않았고, 이미 수집된 조사 로그(2026-10-14)의 사실만 사용했다. 로그에 없는 항목은 '미확인'으로 두었다."
+  ],
+  "overview": "방치 하이브리드는 방치형 성장 위에 로그라이크 선택, 타워 디펜스, 머지, 생존, 4X 같은 판단 요소를 얹은 모바일 게임군이다. 센서타워는 하이브리드캐주얼 IAP 매출이 2024년 전년 대비 37% 늘었다고 밝혔고(State of Mobile Gaming 2025, 2025-03), Habby의 Capybara Go!는 전 세계 출시 3개월 이내인 2025-02-02에 AppMagic 추정 누적 1억 달러를 넘었다. 센서타워 한국 보고서는 2026년 2월 타워 디펜스가 한국 모바일 액션·전략 하위 장르 다운로드 1위에 처음 올랐고, 2024-03 이후 매출은 4X 전략에 이어 2위를 유지했다고 기록한다. 같은 시리즈는 2026년 1월 한국 4X 전략이 월 매출 7,000만 달러를 넘어 MMORPG를 처음 앞섰다고 밝혔다. 센서타워 미국 주간 추정으로 보면 Capybara Go!는 2025 Q1 정점(약 130만 달러)에서 Q2 말 약 38만 달러로 줄고 Q3 정점은 약 44만 달러여서, 흥행작도 출시 초기 정점 뒤 빠르게 안정화된다(해석). Deconstructor of Fun(2025-07)은 하이브리드캐주얼이 이미 기본 공식이 되어 선점 이점이 줄고 CPI 상승이 압박이라고 지적했다. 한편 The Tower·Gold and Goblins 같은 2020~2021년 출시 장수작이 2025년 센서타워 미국 iOS 방치(idler) 매출 5위권에 반복 등장해, 신작과 라이브옵스 중심 장수작이 함께 경쟁한다.",
+  "commonalities": [
+    "전투는 자동으로 진행하되 유저는 스킬 카드·터렛·영웅 조합 같은 선택 한 가지로 개입한다(Capybara Go!, Wittle Defender, Galaxy Defense, Heroll).",
+    "런·챕터 단위 성장과 영구 메타 성장(장비·워크숍·카드)을 이중으로 쌓는다(The Tower, Capybara Go!, Slime Castle).",
+    "에너지·랩 시간 같은 시간 게이팅을 두고 젬·광고로 가속하게 한다(The Tower 랩 러시, Capybara Go! 에너지, Wittle Defender 에너지, Slime Castle 5배속).",
+    "길드·동맹·시즌 이벤트로 소셜 루프를 더한다(Kingshot 동맹 대항전, High Seas Hero 얼라이언스, Wittle Defender 길드 레이스, Galaxy Defense 시즌 원정).",
+    "업데이트와 한정 이벤트가 상시 운영된다(10개 모두 2026-07~10 사이 버전 갱신 기록 확인).",
+    "인앱 구입은 젬 팩·스타터·패스·월정액·광고 제거 조합이며, 미국 App Store 상품 가격은 대부분 $0.99~$99.99 구간이다."
+  ],
+  "designPatterns": [
+    {
+      "name": "자동 전투 + 단일 선택 개입",
+      "detail": "전투는 자동이고 유저는 스킬 카드 3택1, 터렛·영웅 구성, 주사위 굴림처럼 한 가지 선택만 한다. 조작 부담을 줄이면서 빌드 다양성을 만든다.",
+      "examples": [
+        "Capybara Go!",
+        "Wittle Defender",
+        "Galaxy Defense",
+        "Heroll"
+      ]
+    },
+    {
+      "name": "런 성장 + 영구 메타 성장 이중 구조",
+      "detail": "한 판(런·챕터) 안에서는 임시 강화를 쌓고 판이 끝나면 코인·젬으로 영구 업그레이드(워크숍, 장비, 카드)를 한다. 짧은 판과 장기 목표를 분리한다.",
+      "examples": [
+        "The Tower",
+        "Capybara Go!",
+        "Slime Castle"
+      ]
+    },
+    {
+      "name": "시간·에너지 게이팅",
+      "detail": "랩 연구 시간, 챕터 시작 에너지 등으로 진행 속도를 조절하고 젬이나 광고로 가속하게 한다. 복귀 동기와 과금 지점을 겸한다.",
+      "examples": [
+        "The Tower",
+        "Capybara Go!",
+        "Wittle Defender"
+      ]
+    },
+    {
+      "name": "머지와 방치 자원 생산",
+      "detail": "유닛·미니언을 합쳐 등급을 올리며 방치 수익을 늘린다. 합성 단계가 곧 성장 표시가 되어 진척이 직관적이다.",
+      "examples": [
+        "Gold and Goblins",
+        "NecroMerger",
+        "Capybara Go!(장비 합성)"
+      ]
+    },
+    {
+      "name": "길드·동맹 이벤트 레이어",
+      "detail": "길드 레이스·동맹 대항전·시즌 원정 같은 주기 이벤트를 두어 중후반 리텐션과 매출 스파이크를 만든다.",
+      "examples": [
+        "Kingshot",
+        "High Seas Hero",
+        "Wittle Defender",
+        "Galaxy Defense",
+        "The Tower"
+      ]
+    },
+    {
+      "name": "신규 유저 해금 일수·챕터 게이팅",
+      "detail": "시스템을 챕터 클리어나 로그인 일수(8일)로 단계 공개해 초반 학습 부담을 낮추고 이벤트 대상을 신규 유저에게 맞춘다.",
+      "examples": [
+        "Capybara Go!(챕터 1 장비, 챕터 3 상자)",
+        "Galaxy Defense(이벤트 8일 로그인 해금)"
+      ]
+    },
+    {
+      "name": "이벤트 캘린더·한정 협업",
+      "detail": "연례 이벤트(설·낚시), 계절 이벤트, IP 협업(닌자 거북이·핑구)으로 상점 상품을 회전시킨다.",
+      "examples": [
+        "Capybara Go!",
+        "Heroll",
+        "Slime Castle"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "젬 팩 + 스타터·한정 오퍼",
+      "detail": "가격 단계가 있는 젬 팩에 신규·이벤트 한정 팩을 얹는다. 미국 App Store 목록 기준 대부분 $0.99~$99.99 범위다.",
+      "examples": [
+        "Gold and Goblins",
+        "The Tower",
+        "NecroMerger",
+        "Heroll"
+      ]
+    },
+    {
+      "name": "월정액·패스·펀드",
+      "detail": "월정액 카드, 마일스톤·배틀 패스, 챕터 펀드로 반복 결제를 설계한다. 2026-09-01 Slime Castle은 특권 카드를 월정액으로 통합하고 3종 펀드를 신설했다.",
+      "examples": [
+        "Slime Castle",
+        "Galaxy Defense",
+        "Capybara Go!",
+        "Heroll"
+      ]
+    },
+    {
+      "name": "광고 제거 + 선택형 보상 광고",
+      "detail": "광고 제거를 단독 상품($9.99~$16.49)으로 판매하고 광고는 선택 시청 보상으로 둔다. 리뷰에서 광고 빈도에 대한 호불호가 갈린다.",
+      "examples": [
+        "The Tower",
+        "Slime Castle",
+        "NecroMerger",
+        "Gold and Goblins"
+      ]
+    },
+    {
+      "name": "시간 가속·편의 상품",
+      "detail": "배속(5배속 $6.29), 랩 러시, 에너지 회복 등 진행 속도를 사는 상품이다. 시간 게이팅 설계와 짝을 이룬다.",
+      "examples": [
+        "Slime Castle",
+        "The Tower",
+        "Wittle Defender"
+      ]
+    },
+    {
+      "name": "상자·뽑기와 확정 장치",
+      "detail": "장비 상자·영웅 뽑기를 쓰고 재련 확정 카운터, 천장(팬 DB 기준 180+), 확률 표시를 병행한다. 공식 확률 공시 수치는 확인하지 못했다.",
+      "examples": [
+        "Capybara Go!",
+        "Wittle Defender",
+        "Kingshot"
+      ]
+    },
+    {
+      "name": "챕터·성장 단계 팩",
+      "detail": "챕터·스테이지 진척에 맞춘 단계형 팩(Ch.1·Ch.2 Pack, Growth Pack, Chain Pack)을 순차 판매한다.",
+      "examples": [
+        "High Seas Hero",
+        "Slime Castle",
+        "Wittle Defender",
+        "Capybara Go!"
+      ]
+    }
+  ],
+  "risks": [
+    "시장 포화와 CPI 상승: Deconstructor of Fun(2025-07)은 하이브리드캐주얼이 기본 공식이 되어 선점 이점이 줄고 CPI 상승·신호 손실이 압박이라고 지적했다. 후발 신작의 UA 비용 부담이 크다.",
+    "출시 후 MAU 급감: 센서타워 추정에서 High Seas Hero 미국 MAU가 2025 Q3에 63.7K에서 11.2K로, Wittle Defender가 100K 이상에서 약 14K로 줄었다. 초반 유입 대비 유지가 약점이다.",
+    "과금·진행 속도 불만: Wittle Defender·Galaxy Defense·Slime Castle 리뷰에 에너지 시스템, 난이도 벽, 성장 과금 압박에 대한 불만이 있다.",
+    "광고 소재와 실제 플레이의 괴리: Kingshot·High Seas Hero 리뷰에서 광고와 실제 게임이 다르다는 지적이 반복된다.",
+    "콘텐츠·이벤트 트레드밀: 선두 게임은 주~월 단위 업데이트와 한정 이벤트에 의존해 소규모 팀의 운영 부담이 크다(해석).",
+    "수치·추정 의존: 다운로드·매출은 센서타워/AppMagic 추정이며 확률 공시 등 공식 지표 확인이 어렵다."
+  ],
+  "pipeline": [
+    {
+      "name": "Dicero! (Habby)",
+      "note": "주사위 로그라이트, App Store 출시 2026-04-21, 평점 4.9(22,351건), Google Play 1M+(2026-10-14 확인). 출시 완료·관찰 대상."
+    },
+    {
+      "name": "Overgeared Hero: Merge RPG (5minlab)",
+      "note": "백팩 머지 로그라이크 오토 배틀, Google Play 2026-05-25 출시, 1M+ 설치, 평점 약 4.65(Google Play 2026-10-14 확인). 출시 완료·관찰 대상."
+    },
+    {
+      "name": "Lootfiend: Idle Dungeons (Megoo Games)",
+      "note": "2025-10-22 출시, 센서타워 2025 Q4 미국 통합 방치 RPG 매출 상위 5위권(주간 정점 약 44.5만 달러, 12월 말). 출시 완료·관찰 대상."
+    },
+    {
+      "name": "Lucky Defense (111%)",
+      "note": "2024-05 출시 랜덤 디펜스, 센서타워 2024-08: 누적 약 300만 다운로드·약 2천만 달러, 한국 비중 약 79%(매출). 출시 완료·관찰 대상."
+    },
+    {
+      "name": "Top Heroes: Kingdom Saga (RiverGame)",
+      "note": "4X 하이브리드, Google Play 10M+, 평점 약 4.65, 공식 Discord 약 274K(2026-10-14 확인). 방치 요소 근거가 약해 본 목록에서는 제외."
+    }
+  ],
+  "deepDive": {
+    "gameId": "capybara-go",
+    "title": "텍스트 로그라이크 한 판(60일)과 방치·메타 성장·이벤트 상점을 결합해 출시 3개월 내 AppMagic 추정 누적 1억 달러를 넘긴 하이브리드 대표작이라 구조를 해부한다.",
+    "summary": "Capybara Go!는 챕터마다 60일을 '다음 날' 버튼으로 넘기며 랜덤 이벤트와 자동 전투, 스킬 3택1을 반복하는 텍스트 로그라이크이고, 장비·펫·재능·탈것·유물 같은 메타 성장과 AFK 보상이 방치형 RPG 구조를 이룬다. 공식 스토어 설명은 승패가 선택과 운에 달린다고 밝히며, 상점은 챕터 팩·가치 선택·일/주/월 팩·충전과 이벤트 패스로 나뉜다. 센서타워는 한국에서 출시 첫 달 약 900만 달러를 추정했고 AppMagic은 출시 3개월 이내 누적 1억 달러를 추정했다. 반면 미국 주간 매출은 2025 Q1 정점 이후 낮아져 장기 운영은 이벤트·콘텐츠 업데이트에 의존한다(해석). 아래 내용 중 FTUE와 오프라인 한도는 공개 자료로 확인되는 범위만 적었다.",
+    "firstSession": [
+      "챕터 1 시작: 에너지 5를 쓰고 60일 생존을 목표로 삼는다(MuMuPlayer 가이드)",
+      "'다음 날' 버튼을 눌러 하루씩 진행하며 랜덤 이벤트(HP·ATK·DEF 변화, 오두막·야영지 회복, 악마 거래)가 발생한다",
+      "전투는 플레이어 조작 없이 진행되고 레벨업·이벤트 때 스킬 카드 3택1로 빌드를 만든다",
+      "엘리트(보스급) 전투에서 분노 스킬과 스킬 시너지가 중요해진다",
+      "챕터 1 클리어 후 장비 메뉴와 우편(보상 코드)이 해금되고 같은 장비 합성이 열린다",
+      "챕터 3 클리어 후 보물상자 시스템이 해금되어 점수 보상 상자를 받는다(AppGrowing)",
+      "이후 탑 오르기·아레나·재료 던전이 단계적으로 열린다(챕터 번호 미확인)"
+    ],
+    "coreLoop": [
+      {
+        "step": "챕터 시작",
+        "detail": "에너지를 소모해 챕터에 입장하고 60일 생존을 목표로 한다. 실패하면 처음부터 다시 시작하며 스킬을 다시 모은다."
+      },
+      {
+        "step": "하루 진행·이벤트 해결",
+        "detail": "'다음 날'로 하루를 넘기며 긍정·부정 효과의 랜덤 이벤트를 만난다. 전투는 자동이다."
+      },
+      {
+        "step": "스킬 카드 선택",
+        "detail": "레벨업·이벤트 때 3장 중 1장을 골라 로그라이크 빌드를 쌓는다(치명 숙련·부활·삼위일체 등 추천 스킬은 가이드 서술)."
+      },
+      {
+        "step": "챕터 보상 수령",
+        "detail": "클리어하면 장비·상자·재화를 받고, 상자는 점수 누적으로 추가 보상이 열린다."
+      },
+      {
+        "step": "메타 성장",
+        "detail": "장비 합성·펫 육성·재능 업그레이드·수집품 레벨업으로 다음 챕터의 전투력을 올린다."
+      },
+      {
+        "step": "에너지 회복·AFK 보상 수령",
+        "detail": "에너지가 시간으로 회복되고 AFK 보상을 받아 다음 챕터 반복. 정확한 방치 한도는 미확인."
+      }
+    ],
+    "currencies": [
+      {
+        "name": "젬",
+        "earn": "던전 다이브·AFK 보상·성장 이벤트(회당 1,000젬, 총 4회)·길드 보스·상자·월정액 등(팬 DB). 충전 구매 가능.",
+        "spend": "던전 다이브 챌린지 바우처·한정 비밀 상자·주간 휠·영웅/브랜드 위시·블랙마켓",
+        "paid": true
+      },
+      {
+        "name": "골드",
+        "earn": "길드 보급 상자·거래·블랙마켓 광고(1,250골드)",
+        "spend": "재능 업그레이드(첫 업그레이드 240골드)·장비 강화",
+        "paid": false
+      },
+      {
+        "name": "에너지(스태미나)",
+        "earn": "시간 회복(기본 24분당 1, 하루 60개). 재능·유물 부스트로 최대 13분 20초당 1(하루 108개, 팬 DB)",
+        "spend": "챕터 시작(5), 외계 광산 돌, 카피 거래",
+        "paid": false
+      },
+      {
+        "name": "키(Legendary·Gem·Secret Treasure)",
+        "earn": "Surprise Chest 등 상자 드롭",
+        "spend": "해당 등급 상자 개봉",
+        "paid": false
+      },
+      {
+        "name": "골드 호스슈·행운 은화",
+        "earn": "Surprise Chest·카피 거래(호스슈), 던전 다이브(은화)",
+        "spend": "블랙마켓(호스슈, 50%+ 할인 시), Capy Gacha(탈것·유물, 은화)",
+        "paid": false
+      },
+      {
+        "name": "던전 다이브 챌린지 바우처",
+        "earn": "매일 2개를 젬으로 구매",
+        "spend": "던전 다이브 입장",
+        "paid": false
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "장비",
+        "detail": "같은 장비 합성·레벨업(2024-11 v1.2.0에서 레벨 상한 100). 챕터 1 이후 해금.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "펫",
+        "detail": "알 부화·먹이 육성·펫 성장 시스템(2026-08 v1.9.1)",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "재능",
+        "detail": "Apprentice~Elite Legacy 등 단계, HP·ATK·DEF 각 레벨 10 상한, 골드 소모",
+        "monetized": "무료"
+      },
+      {
+        "name": "수집품",
+        "detail": "전투력·방치 보상 증가(예: Golden Hourglass)",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "탈것·유물",
+        "detail": "Capy Gacha·Refining Chest로 획득·강화(팬 DB)",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "모험가 공명·정점 재능",
+        "detail": "2025-07 v1.6.x 신규(상세 미확인)",
+        "monetized": "미확인"
+      },
+      {
+        "name": "길드",
+        "detail": "길드 보스·길드 패권·길드 거래(팬 DB)",
+        "monetized": "무료"
+      }
+    ],
+    "gacha": {
+      "pools": [
+        "장비 상자(Legendary Chest 등, 키 사용)",
+        "Surprise Chest",
+        "Guild Supply Chest",
+        "Captain's Furniture Chest",
+        "한정 비밀 상자(예: Angel Bow 배너)",
+        "영웅·브랜드 위시(Wishing Scroll)",
+        "Capy Gacha(탈것·유물, 행운 은화)",
+        "Kapi Machine"
+      ],
+      "rates": [
+        "Surprise Chest(팬 DB 수집): 젬 50개 20%, 젬 100개 15%, Divine Hammer 10개 15%, Gold Horseshoe 10개 15%, Meteoric Iron 10개 14.99%, Legendary Key 5%, Wishing Scroll 5%, Gem Key 5%, Secret Treasure Key 5%, 젬 10,000개 0.01%",
+        "Guild Supply Chest(팬 DB): Gold 100 25.13%, Pet Food 5 20%, Pet Egg 1 20%, Random Fine Gem Chest 20%, 하위 드롭은 젬 5,000개·Pet Armament Token 1,000개 0.01%",
+        "공식 공시 확률 수치는 확인하지 못했다. 업데이트 노트에 장비 상자 확률 표시 기능(2024-10-17 v1.0.6)과 Kapi Machine 대상 확률 표시 화면 수정(2025-10-30 v1.7.6)이 있어 인게임 표시는 존재한다."
+      ],
+      "pity": "공식 천장 수치는 미확인. 팬 DB 가이드는 한정 비밀 상자 천장을 180+ 수준으로 서술하며 젬을 모으라고 권한다.",
+      "source": "MeowDB 상자·선택 상자 카탈로그 및 젬 파밍·지출 가이드(팬 수집 데이터, 공식 확률 공시 아님)"
+    },
+    "offline": "AFK 보상(AFK Rewards)이 있으며 수집품 Golden Hourglass 업그레이드로 증가한다. 최대 누적 시간과 시간당 보상 수치는 로그에서 확인하지 못했다. 2024-10-19 v1.0.7에서 로밍 배수 증가, 2024-11-07 v1.0.10에서 스태미나 반환 장치가 추가됐다.",
+    "adPlacements": [
+      "블랙마켓 광고 시청 시 1,250골드(MuMuPlayer 가이드, 2025-01)",
+      "App Store 연령 고지에 Advertising 포함",
+      "그 외 광고 위치·일일 횟수는 로그에서 미확인(AppGrowing은 Habby의 IAP+IAA 하이브리드 모델이라고만 서술)"
+    ],
+    "storeStructure": [
+      "상점 탭: 장비 상점(챕터 팩·상자), 가치 선택(Little Elle·장비 강화 팩), 팩 상점(일/주/월), 충전(MuMuPlayer 가이드)",
+      "미국 App Store 인앱 구입 10개: $0.99, $2.99, $4.99(2), $9.99(2), $19.99(2), $29.99, $49.99(상품 구성 비공개)",
+      "한국 App Store 인앱 구입 10개: '선물 팩', ₩1,100~₩77,000 표기",
+      "월간·평생 패스: 하루 약 5,000젬(무과금 약 4,000젬), 가격은 미확인(팬 DB)",
+      "Guru Fund: 11구간 각 2,000젬 → 골드 1,400 + 키 150, 전체 22,000젬 → 골드 15,400 + 키 1,650(팬 DB)",
+      "Fisherman's Journey 패스: 무료 트랙 젬 약 1,200·미끼 약 500, 유료 트랙 젬 약 2,200과 희귀 낚싯대·UP 위시 레터 3개(팬 DB)",
+      "Joint Archaeology 일일 팩 5종 $1.99~$66.99(팬 DB)",
+      "Newcomer Special Offer(2026-01-24 기재): 14일 순환, 하루 500젬 지불로 선택 상자 1개 + 젬 600(팬 DB)"
+    ],
+    "liveOpsCadence": [
+      "2024-10-30 v1.0.9 할로윈 챌린지, 2024-11-25 v1.2.0 칠면조 축제(Turkey Feast)",
+      "2025-05-25 v1.5.14 Abyssal Secret Realm S1·새 모험가 Gagarin, 2025-06-19 v1.6.0 닌자 거북이 협업 1차·반년 기념 로그인 이벤트",
+      "2025-07-12~21 v1.6.2~1.6.3 모험가 공명·메인 스토리·정점 재능",
+      "2025-12-19 v1.7.11 신규 영웅·장비·크리스마스 이벤트",
+      "연례: Magic Celebration 1/26~2/4, Fisherman's Journey 2/9~2/18 등 약 10일 이벤트(팬 DB)",
+      "2026-05-18~06-01 핑구 협업(v1.8.13, 이벤트 전용 아이템 미복각)",
+      "2026-08-07 v1.9.1 신규 PvE 세계·펫 성장 시스템"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2024-10-23",
+        "event": "한국 출시(센서타워 서술)",
+        "value": "한국 App Store 출시일 2024-10-22(iTunes Lookup), Google Play 한국 일일 매출 상위 10위권 유지(10-31 이후)"
+      },
+      {
+        "date": "2024-11-23",
+        "event": "한국 첫 달 성과(센서타워)",
+        "value": "한국 누적 매출 약 900만 달러, 한국 다운로드 1위, 매출 6위(추정)"
+      },
+      {
+        "date": "2024-12-11",
+        "event": "해외 누적 매출(TechNode, 센서타워 인용)",
+        "value": "약 4,000만 달러"
+      },
+      {
+        "date": "2024-12",
+        "event": "12월 월 매출(AppMagic 추정, pocketgamer.biz)",
+        "value": "3,330만 달러 · 모바일인덱스 한국 월 매출 8위"
+      },
+      {
+        "date": "2025-01-24",
+        "event": "일 최고 매출(v1.5 업데이트 후)",
+        "value": "약 140만 달러(AppMagic 추정, 전일 85.3만 달러 대비 +64%)"
+      },
+      {
+        "date": "2025-02-02",
+        "event": "누적 1억 달러 돌파(AppMagic 추정)",
+        "value": "2025-02-10 약 1.09억 달러, 한국 28%·대만 17%·미국 15%"
+      },
+      {
+        "date": "2025-01",
+        "event": "미국 통합 주간 매출 정점(센서타워, 2025 Q1 1월 말)",
+        "value": "약 130만 달러 → 3월 말 약 100만 달러"
+      },
+      {
+        "date": "2025-06",
+        "event": "2025 Q2 말 미국 통합 주간 매출(센서타워)",
+        "value": "약 38.2만 달러(4월 초 약 100만 달러)"
+      },
+      {
+        "date": "2025-09",
+        "event": "2025 Q3 미국 통합 주간 매출 정점(센서타워, 9월 초)",
+        "value": "약 43.8만 달러"
+      },
+      {
+        "date": "2025-10",
+        "event": "2025 Q4 미국 통합 주간 매출 정점(센서타워, 10월 말)",
+        "value": "약 27.97만 달러"
+      },
+      {
+        "date": "2026-10-14",
+        "event": "스토어 지표 확인",
+        "value": "App Store US 4.9(63,999건)·KR 4.7(10,004건), Google Play 10M+·약 4.61(463,549건)"
+      }
+    ],
+    "strengths": [
+      "텍스트 이벤트와 스킬 선택을 한 판의 재미로, 메타 성장을 장기 목표로 분리했다.",
+      "챕터 해금 순서로 시스템을 점진 공개하고 상자·장비·펫 등 다층 성장 축을 제공한다.",
+      "출시 3개월 내 누적 1억 달러(AppMagic 추정)와 한국·대만·일본 시장 신속 확장(센서타워·AppMagic).",
+      "연례·계절·협업 이벤트와 대형 업데이트가 이어지는 라이브옵스(버전 기록).",
+      "배우 안재홍 광고 등 현지화한 UA 소재로 한국 Meta 광고주 1위(센서타워)."
+    ],
+    "weaknesses": [
+      "미국 주간 매출이 2025 Q1 정점 이후 하락해 이벤트 의존도가 높다(센서타워 추정, 해석).",
+      "상품 구성이 스토어 목록에 가격만 표기돼 투명성이 낮고 '양산형' 비판이 보도됐다(파이낸셜뉴스).",
+      "팬 DB가 '매우 비싼' 패키지와 높은 젬 저축 목표(32,000~50,000젬)를 권하는 등 후반 과금 압박이 있다(팬 DB 서술).",
+      "방치 보상·광고 보상 등 핵심 수치(최대 시간, 횟수)가 공식 자료에서 확인되지 않는다."
+    ],
+    "lessons": [
+      "텍스트·카드 선택 같은 낮은 제작 비용의 '판단' 요소를 한 판 안에 넣고 메타 성장과 방치 보상으로 장기 동기를 만든다.",
+      "시스템을 챕터 단위로 해금해 초반 학습 부담을 낮추고 상자·펫 같은 과금 지점도 같은 순서로 연다.",
+      "국가별 단계 출시로 지표를 검증하고 현지 광고 소재(배우·언어)를 맞춘다.",
+      "이벤트·협업 캘린더를 기획 초기부터 비용에 포함한다(운영 부담이 크다).",
+      "확률·상품 구성을 투명하게 공개해 '양산형·과금 압박' 인식을 줄인다(해석)."
+    ],
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/us/app/capybara-go/id6596787726",
+        "title": "Capybara Go! App Store (US)",
+        "type": "스토어",
+        "note": "평점 4.9(63,999건), 앱 내 구입 10개(US$0.99~49.99), 버전 1.9.3(2026-09-03), 연령 고지에 Loot Boxes·Advertising 포함",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://apps.apple.com/kr/app/capybara-go/id6596787726",
+        "title": "카피바라 Go! App Store (KR)",
+        "type": "스토어",
+        "note": "KR 평점 4.7(10,004건), 앱 내 구입 10개(₩1,100~₩77,000 표기, '선물 팩')",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=com.habby.capybara",
+        "title": "Capybara Go! Google Play",
+        "type": "스토어",
+        "note": "Google Play 10M+ 설치, 평점 약 4.61(463,549건), 앱 내 구입 $0.99~$299.99, 2024-11-17 게시, 2026-09-01 업데이트",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "http://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/",
+        "title": "Habby's Capybara Go surpasses $100M in gross player spending (pocketgamer.biz)",
+        "type": "보도",
+        "note": "AppMagic 추정 2025-02-02 누적 1억 달러 돌파, 2025-02-10 약 1.09억 달러, 12월 3,330만 달러·1월 3,210만 달러, 국가별 비중",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea",
+        "title": "카피바라 Go! 매출의 최대 기여 시장은 한국 (센서타워)",
+        "type": "데이터(추정)",
+        "note": "2024-10-23 출시, 한국 첫 달 매출 약 900만 달러, 국가별 매출 비중, Pathmatics 광고 분석",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/blog/2025-q1-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+        "title": "2025 Q1 unified top 5 idle RPG revenue US (센서타워)",
+        "type": "데이터(추정)",
+        "note": "미국 주간 매출 2025년 1월 말 약 130만 달러 정점, 3월 말 약 100만 달러",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/ko/blog/2H2024-mobile-games-recap-in-Korea",
+        "title": "2H2024 mobile games recap in Korea (센서타워)",
+        "type": "데이터(추정)",
+        "note": "2024년 하반기 한국 다운로드 성장 1위, 출시 초기 Meta 게임 광고주 1위",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/chests-and-selection-boxes-catalog",
+        "title": "MeowDB Capybara Go 상자·선택 상자 카탈로그",
+        "type": "위키/커뮤니티",
+        "note": "팬 수집 데이터 기반 상자 구성 확률(공식 공시 아님)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/misc-systems-reference",
+        "title": "MeowDB Capybara Go 기타 시스템 참조",
+        "type": "위키/커뮤니티",
+        "note": "스태미나 회복 24분당 1(기본 하루 60), Guru Fund 구간 보상(팬 DB)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/events-reference-guide",
+        "title": "MeowDB Capybara Go 이벤트 참조 가이드",
+        "type": "위키/커뮤니티",
+        "note": "연례 이벤트 일정·패스 구성(팬 DB, 2026-03 기준 서술)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/gem-farming-and-resource-hub",
+        "title": "MeowDB Capybara Go 젬 파밍·자원 허브",
+        "type": "위키/커뮤니티",
+        "note": "재화 획득·소비처, 방치 보상(Golden Hourglass), 하루 젬 4,000/5,000(팬 DB)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/gem-farming-spending-guide",
+        "title": "MeowDB Capybara Go 젬 파밍·지출 가이드",
+        "type": "위키/커뮤니티",
+        "note": "한정 비밀 상자 천장 180+ 서술, 젬 소비처(팬 DB)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://meowdb.com/db/capybara-go/capybara-go-top-up-prices-by-country",
+        "title": "MeowDB Capybara Go 충전 가격(국가별)",
+        "type": "위키/커뮤니티",
+        "note": "충전 패키지 6종 USD·KRW 가격(팬 DB, 날짜 미표기)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.mumuplayer.com/blog/capybara-go-beginners-guide.html",
+        "title": "MuMuPlayer Capybara Go! Beginner's Guide (2025-01-20)",
+        "type": "위키/커뮤니티",
+        "note": "챕터 60일·에너지 5, 상점 탭, 블랙마켓 광고 1,250골드(홍보성 가이드)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://appgrowing.net/blog/en/capybara/",
+        "title": "AppGrowing Capybara Go! 분석 (2024-11-05)",
+        "type": "보도",
+        "note": "게임 루프·상자 해금(챕터 3 이후)·IAP+IAA 서술, 단계적 출시",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://edgeone.ai/blog/details/capybara-go",
+        "title": "EdgeOne: Capybara Go 소개 (2024-12-11)",
+        "type": "보도",
+        "note": "챕터 구조·펫·서버 600개 서술(벤더 블로그)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.deconstructoroffun.com/blog/2025/7/31/habbys-hybridcasual-empire-the-template-that-built-a-powerhouse",
+        "title": "HABBY's Hybridcasual Empire (Deconstructor of Fun)",
+        "type": "보도",
+        "note": "Capybara Go! 월 1,900만 달러, Habby 하이브리드캐주얼 템플릿",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.fnnews.com/news/202501091414360663",
+        "title": "안방 차지한 외산 게임...中 게임 영향력은 더 커져 (파이낸셜뉴스, 2025-01-09)",
+        "type": "보도",
+        "note": "모바일인덱스 2024-12 한국 추정 매출 8위, '양산형' 비판",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "한철 로그(가칭)",
+      "pitch": "30일 시즌 동안 하루 한 번 사건 카드를 고르는 텍스트 로그라이크에, 오프라인으로 쌓이는 농장 자원과 영구 업그레이드를 붙인 방치 하이브리드.",
+      "target": "Capybara Go! 같은 텍스트 로그라이크 방치형을 즐기되 과금 압박에 지친 25~45세 캐주얼·미드코어 유저(한국·일본 우선)",
+      "platform": "iOS·Android(모바일 단일, 이후 지역 확장)",
+      "coreLoop": [
+        "하루 한 번 사건 카드 3택1(자원·위험 선택)",
+        "자동 전투·수확으로 결과 확정",
+        "30일 시즌 종료 시 보상과 영구 업그레이드",
+        "오프라인 중 농장·공방 자원 생산 후 다음 시즌 시작"
+      ],
+      "mvp": [
+        "30일 시즌 1종과 사건 카드 60장",
+        "영구 업그레이드 트리 약 20노드",
+        "오프라인 수령(최대 8시간) + 광고 2배 옵션",
+        "시즌 랭킹(비동기)과 일일 출석 보상",
+        "광고 제거·스타터 1종 IAP"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주 20시간 14~18주",
+      "monetization": "광고 제거(1회), 시즌 패스, 스타터 팩 1종으로 단순화하고 확률형 상자는 넣지 않는다. 광고는 선택 시청 보상(오프라인 2배)으로만 둔다.",
+      "why": "Capybara Go!는 60일 챕터·스킬 3택1·메타 성장 구조로 출시 3개월 내 AppMagic 추정 누적 1억 달러를 넘겼고, NecroMerger 리뷰는 선택형 광고와 F2P 친화 구조를 호평한다. 같은 판단 요소를 더 가벼운 범위와 투명한 과금으로 구현해 차별화한다.",
+      "risks": "콘텐츠 소모 속도, Capybara Go!와의 유사성 인식, 미국 시장에서 센서타워 주간 매출이 정점 후 낮아진 사례처럼 이벤트 의존 구조가 될 위험.",
+      "kpiGate": "제안 기준(업계 벤치마크가 아닌 가정): D1 40% 이상, D7 12% 이상, 사건 선택 완료율 70% 이상, 광고 옵트인율 25% 이상. 소프트런칭에서 4주 연속 하락 없는 D7 유지 여부를 본다.",
+      "buildNext": "사건 카드 20장과 7일 미니 시즌으로 프로토타입을 만들고 5~10명에게 플레이테스트해 하루 선택 몰입도를 확인한다."
+    },
+    {
+      "name": "등대 수비대(가칭)",
+      "pitch": "화면에 하나뿐인 타워를 영구 업그레이드로 키우고 주간 토너먼트로 경쟁하는 증분형 타워 디펜스를, 시간 게이팅을 줄이고 과금 구조를 단순화해 만든다.",
+      "target": "The Tower 같은 수치형 증분 디펜스를 즐기는 코어 유저와 영문권 방치 팬",
+      "platform": "iOS·Android(웹 결제 병행 검토)",
+      "coreLoop": [
+        "런: 타워가 웨이브를 자동 방어",
+        "코인으로 워크숍 영구 업그레이드",
+        "랩 연구(짧은 시간 단위)로 한도 확장",
+        "주간 토너먼트(비동기 30인 조) 참여와 보상"
+      ],
+      "mvp": [
+        "타워 1종·웨이브 자동 진행·티어 3개",
+        "워크숍 업그레이드 30종",
+        "랩 3개(시간 소모, 젬 없이도 진행 가능)",
+        "카드 10종과 직접 선택 구매",
+        "비동기 토너먼트(주 2회)와 리그 3단계"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주 20시간 16~20주",
+      "monetization": "광고 제거, 랩 슬롯 추가, 시즌 패스를 판매하고 랩 가속 의존을 낮춘다. 확률형 상품은 제외하고 카드는 선택 구매로 둔다.",
+      "why": "The Tower는 센서타워 추정 미국 통합 주간 매출 약 40만 달러(2025 Q4 12월 22일 주)까지 올랐고 토너먼트·워크숍·랩 구조가 장수 요인이다. 반면 리뷰에서 랩 대기와 젬 가속 의존에 대한 불만이 반복돼 공정성을 앞세운 대안 여지가 있다.",
+      "risks": "수치 복잡도로 대중성 한계, 밸런싱 비용, The Tower 대비 후발 인식. 토너먼트 인구가 부족하면 경쟁 루프가 약해진다.",
+      "kpiGate": "제안 기준(가정): D1 35% 이상, D30 8% 이상, 토너먼트 참여율 40% 이상(주간 활성 유저 기준), 랩 가속 구매 의존 없이 티어 3 도달 비율 확인.",
+      "buildNext": "단일 타워 웨이브 시뮬레이터와 워크숍 5종으로 숫자 밸런스를 검증하고 비동기 토너먼트 프로토타입을 만든다."
+    },
+    {
+      "name": "머지 요새(가칭)",
+      "pitch": "머지 보드에서 합성한 유닛으로 5분 오토 배틀 보스 런을 돌리고, 방치 광산 수익과 주간 길드 레이스로 장기 성장을 만드는 머지·디펜스 하이브리드.",
+      "target": "Gold and Goblins·NecroMerger 같은 머지 방치를 즐기고 길드 경쟁에도 흥미가 있는 캐주얼~미드코어 유저",
+      "platform": "iOS·Android",
+      "coreLoop": [
+        "머지 보드에서 유닛 합성(방치 수익 증가)",
+        "5분 오토 배틀 보스 런(유닛 구성 선택)",
+        "보상으로 영구 업그레이드와 광산 확장",
+        "주간 길드 레이스에 점수 기여"
+      ],
+      "mvp": [
+        "머지 보드 5x5와 유닛 12종",
+        "보스 런 10스테이지",
+        "오프라인 수익(최대 6시간)",
+        "비동기 길드 레이스(점수 합산)",
+        "광고 제거·월정액·시즌 패스"
+      ],
+      "difficulty": "높음",
+      "effort": "3인 팀 5~6개월",
+      "monetization": "광고 제거, 월정액, 시즌 패스, 챕터 단계 팩으로 구성하고 선택형 광고 2배를 병행한다. 확률 상품은 공시와 확정 장치를 넣는 경우에만 검토한다.",
+      "why": "Gold and Goblins는 센서타워 미국 통합 주간 매출 정점 약 42.9만 달러(2025 Q4)로 머지·광산 구조의 지속 매출을 보였고, Wittle Defender·Galaxy Defense는 길드 레이스·원정으로 중후반 목표를 만든다. 두 구조를 결합하면 방치 수익과 소셜 경쟁을 함께 얻는다.",
+      "risks": "머지 시장 포화, 길드 인구 부족 시 레이스 붕괴, 3인 팀의 라이브옵스 부담.",
+      "kpiGate": "제안 기준(가정): D1 40% 이상, D7 15% 이상, 길드 가입률 30% 이상(D7 기준), 광고 옵트인율 25% 이상.",
+      "buildNext": "머지 보드와 오토 배틀 1런을 프로토타입으로 만들어 한 런 5분 길이와 합성 재미를 검증한다."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://apps.apple.com/us/app/capybara-go/id6596787726",
+      "title": "Capybara Go! App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.9(63,999건), 앱 내 구입 10개(US$0.99~49.99), 버전 1.9.3(2026-09-03), 연령 고지에 Loot Boxes·Advertising 포함",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/capybara-go/id6596787726",
+      "title": "카피바라 Go! App Store (KR)",
+      "type": "스토어",
+      "note": "KR 평점 4.7(10,004건), 앱 내 구입 10개(₩1,100~₩77,000 표기, '선물 팩')",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.habby.capybara",
+      "title": "Capybara Go! Google Play",
+      "type": "스토어",
+      "note": "Google Play 10M+ 설치, 평점 약 4.61(463,549건), 앱 내 구입 $0.99~$299.99, 2024-11-17 게시, 2026-09-01 업데이트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "http://www.pocketgamer.biz/habbys-capybara-go-surpasses-100m-in-gross-player-spending/",
+      "title": "Habby's Capybara Go surpasses $100M in gross player spending (pocketgamer.biz)",
+      "type": "보도",
+      "note": "AppMagic 추정 2025-02-02 누적 1억 달러 돌파, 2025-02-10 약 1.09억 달러, 12월 3,330만 달러·1월 3,210만 달러, 국가별 비중",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/the-largest-contributing-market-to-Capybara-Go-revenue-is-Korea",
+      "title": "카피바라 Go! 매출의 최대 기여 시장은 한국 (센서타워)",
+      "type": "데이터(추정)",
+      "note": "2024-10-23 출시, 한국 첫 달 매출 약 900만 달러, 국가별 매출 비중, Pathmatics 광고 분석",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q1-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q1 unified top 5 idle RPG revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "미국 주간 매출 2025년 1월 말 약 130만 달러 정점, 3월 말 약 100만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/2H2024-mobile-games-recap-in-Korea",
+      "title": "2H2024 mobile games recap in Korea (센서타워)",
+      "type": "데이터(추정)",
+      "note": "2024년 하반기 한국 다운로드 성장 1위, 출시 초기 Meta 게임 광고주 1위",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/chests-and-selection-boxes-catalog",
+      "title": "MeowDB Capybara Go 상자·선택 상자 카탈로그",
+      "type": "위키/커뮤니티",
+      "note": "팬 수집 데이터 기반 상자 구성 확률(공식 공시 아님)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6739554056",
+      "title": "Kingshot App Store (US)",
+      "type": "스토어",
+      "note": "설명('idle medieval survival game'), 평점 4.6(230,072건), 앱 내 구입 10개, 업데이트 노트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.run.tower.defense",
+      "title": "Kingshot Google Play",
+      "type": "스토어",
+      "note": "50M+ 설치, 평점 약 4.35(1,618,069건), 앱 내 구입 $0.99~$99.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/Century-Games-Kingshot-ranks-3rd-in-mobile-strategy-game-revenue",
+      "title": "센추리 게임즈 킹샷, 모바일 전략 게임 매출 3위 (센서타워)",
+      "type": "데이터(추정)",
+      "note": "누적 다운로드 약 4천만 건, 누적 매출 약 4억 달러, 한국 RPD 22달러, 광고 전략, 동맹 이벤트와 매출 상승 시점",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/4X-strategy-emerges-as-the-top-grossing-mobile-game-genre-for-the-first-time",
+      "title": "4X strategy emerges as the top-grossing mobile game genre (센서타워 한국)",
+      "type": "데이터(추정)",
+      "note": "2026-01 한국 4X 월 매출 7,000만 달러 초과, 4X 광고 노출 점유 19%, Kingshot 21%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1529762599",
+      "title": "Gold and Goblins App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.4(42,019건), 인앱 구입 10개($1.99~$19.99), 버전 1.50.0(2026-07-10), 설명, 리뷰",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.redcell.goldandgoblins",
+      "title": "Gold and Goblins: Mining Games Google Play",
+      "type": "스토어",
+      "note": "50M+ 설치, 평점 약 3.96(495,039건), 앱 내 구입 $1.99~$119.99, 2020-09-16 출시, AppQuantum 게시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q3-ios-top-5-idler%20games-revenue-us-602ae7fb241bc16eb874f8e1",
+      "title": "2025 Q3 iOS top 5 idler games revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Gold and Goblins 주간 매출 정점 약 23.9만 달러(8월 말), The Tower 약 16.2만 달러(9월 중순)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q1-ios-top-5-idler%20games-revenue-us-602ae7fb241bc16eb874f8e1",
+      "title": "2025 Q1 iOS top 5 idler games revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Gold and Goblins 주간 매출 정점 약 31.1만 달러(2월 중순), 주간 다운로드 정점 약 35K",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idler-games-revenue-us-602ae7fb241bc16eb874f8e1",
+      "title": "2025 Q4 unified top 5 idler games revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Gold and Goblins 통합 주간 매출 정점 약 42.9만 달러(10월 말), The Tower 약 40만 달러(12월 22일 주)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://appquantum.com/cases/",
+      "title": "AppQuantum Cases",
+      "type": "공식",
+      "note": "Gold & Goblins: 계약 후 3개월 700만 달러 매출, 광고 컨셉 지출 1,200만 달러 이상(퍼블리셔 주장)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1575590830",
+      "title": "The Tower - Idle Tower Defense App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.2(19,975건), 인앱 구입 10개, v29 업데이트 노트(2026-08), 설명",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.TechTreeGames.TheTower",
+      "title": "The Tower Google Play",
+      "type": "스토어",
+      "note": "5M+ 설치, 평점 약 4.00(150,749건), 앱 내 구입 $1.99~$99.99, 2021-08-18 게시, 2026-10-06 업데이트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://store.techtreegames.com/thetower/",
+      "title": "The Tower Web Store",
+      "type": "공식",
+      "note": "웹 스토어 구성(Featured·Events·Packs·Gems·Stones·Pass), FastSpring 결제",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://the-tower-idle-tower-defense.fandom.com/wiki/Tournaments",
+      "title": "The Tower Wiki: Tournaments",
+      "type": "위키/커뮤니티",
+      "note": "토너먼트 주기·리그·보상(팬 위키, MediaWiki API 조회)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://the-tower-idle-tower-defense.fandom.com/wiki/Currency/Gems",
+      "title": "The Tower Wiki: Gems",
+      "type": "위키/커뮤니티",
+      "note": "젬 획득·소비처(팬 위키)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/wittle-defender/id6502815032",
+      "title": "Wittle Defender App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.5(3,305건), 인앱 구입 10개, 설명, 업데이트 기록(1.0~2.0.4)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.game.kingrush",
+      "title": "Wittle Defender Google Play",
+      "type": "스토어",
+      "note": "1M+ 설치, 평점 약 4.36(40,455건), 앱 내 구입 $0.29~$99.99, 2025-06-09 출시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q3-unified-top-5-tower%20defense%20games-revenue-us-6012932d241bc16eb85e0db8",
+      "title": "2025 Q3 unified top 5 tower defense games revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Wittle Defender 주간 매출 정점 약 20.1만 달러(8월 중순), 다운로드 38.5K(7월 말), MAU 감소",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.deconstructoroffun.com/blog/2025/7/31/habbys-hybridcasual-empire-the-template-that-built-a-powerhouse",
+      "title": "HABBY's Hybridcasual Empire (Deconstructor of Fun)",
+      "type": "보도",
+      "note": "Habby 포트폴리오와 하이브리드캐주얼 템플릿 분석(Wittle Defender 수치는 없음)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6621220868",
+      "title": "High Seas Hero: Dig & Build App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.8(34,319건), 인앱 구입 10개, 설명, 업데이트 노트(1.0.65~1.0.69)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://highseashero.centurygames.com/",
+      "title": "High Seas Hero 공식 사이트",
+      "type": "공식",
+      "note": "공식 Top-Up Store, 뉴스(2025/2/18 출시, 2025/1/9 사전등록)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.wwv.global",
+      "title": "High Seas Hero Google Play",
+      "type": "스토어",
+      "note": "1M+ 설치, 평점 약 4.52(110,599건), 앱 내 구입 $0.49~$299.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q2 unified top 5 idle RPG revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "High Seas Hero 주간 매출 약 39.3만 달러(5월 중순), 다운로드 79K(4월 중순)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q3-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q3 unified top 5 idle RPG revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "High Seas Hero 주간 매출 25.7만 → 12.2만 달러, MAU 63.7K → 11.2K",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6740189002",
+      "title": "Galaxy Defense: Fortress TD App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.7(9,048건), 인앱 구입 10개, 설명, 업데이트 노트(0.12.3~1.0.1)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.cyberjoy.galaxydefense",
+      "title": "Galaxy Defense: Fortress TD Google Play",
+      "type": "스토어",
+      "note": "5M+ 설치, 평점 약 4.58(108,818건), 앱 내 구입 $0.99~$349.99, 2025-04-21 게시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q3-unified-top-5-tower%20defense%20games-units-us-6012932d241bc16eb85e0db8",
+      "title": "2025 Q3 unified top 5 tower defense games units US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Galaxy Defense 주간 매출 정점 약 19.8만 달러(8월 말), 다운로드 12.7K, MAU 약 8만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://discord.gg/qc4QdGEtzf",
+      "title": "Galaxy Defense 공식 Discord (초대 API 조회)",
+      "type": "공식",
+      "note": "Discord 약 217,033명(2026-10-14)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6480410032",
+      "title": "Slime Castle: Idle TD RTS Game App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.9(8,509건), 인앱 구입 10개, 설명, 업데이트 기록(2.9.3~3.5.3)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.redtailworks.slimetd",
+      "title": "Slime Castle Google Play",
+      "type": "스토어",
+      "note": "1M+ 설치, 평점 약 4.52(67,558건), 앱 내 구입 $0.99~$124.99, 2024-05-03 출시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q1-unified-top-5-idle%20rpg-revenue-europe-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q1 unified top 5 idle RPG revenue Europe (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Slime Castle 주간 매출 정점 약 4.4만 달러(3월), 다운로드 25K → 11K, MAU 약 8.5만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6737821799",
+      "title": "Heroll: Dice Roguelike App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.8(15,041건), 인앱 구입 10개, 설명, 업데이트 기록(1.5.5~2.0.3)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.percent.aos.rollinghero",
+      "title": "Heroll: Dice Roguelike Google Play",
+      "type": "스토어",
+      "note": "1M+ 설치, 평점 약 4.57(77,748건), 앱 내 구입 $0.99~$119.99, 2025-02-20 게시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idle-rpg-units-us-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q4 unified top 5 idle RPG units US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Heroll 주간 매출 정점 약 4.86만 달러(12월 말), 다운로드 18.3K → 33.9K",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1611769159",
+      "title": "NecroMerger - Idle Merge Game App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.8(6,360건), 인앱 구입 10개, 설명, 업데이트 기록(1.47~1.80), 리뷰",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.grumpyrhinogames.necromerger",
+      "title": "NecroMerger Google Play",
+      "type": "스토어",
+      "note": "1M+ 설치, 평점 약 4.66(68,360건), 앱 내 구입 $1.99~$99.99, 설명(오프라인 자원 생성)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://itunes.apple.com/lookup?id=1611769159&country=us",
+      "title": "iTunes Lookup API: NecroMerger",
+      "type": "스토어",
+      "note": "출시일 2022-08-30, 판매자 Grumpy Rhino Games LTD, 평점 4.83(6,360), 버전 1.80",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/misc-systems-reference",
+      "title": "MeowDB Capybara Go 기타 시스템 참조",
+      "type": "위키/커뮤니티",
+      "note": "스태미나 회복 24분당 1(기본 하루 60), Guru Fund 구간 보상(팬 DB)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/events-reference-guide",
+      "title": "MeowDB Capybara Go 이벤트 참조 가이드",
+      "type": "위키/커뮤니티",
+      "note": "연례 이벤트 일정·패스 구성(팬 DB, 2026-03 기준 서술)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/gem-farming-and-resource-hub",
+      "title": "MeowDB Capybara Go 젬 파밍·자원 허브",
+      "type": "위키/커뮤니티",
+      "note": "재화 획득·소비처, 방치 보상(Golden Hourglass), 하루 젬 4,000/5,000(팬 DB)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/gem-farming-spending-guide",
+      "title": "MeowDB Capybara Go 젬 파밍·지출 가이드",
+      "type": "위키/커뮤니티",
+      "note": "한정 비밀 상자 천장 180+ 서술, 젬 소비처(팬 DB)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://meowdb.com/db/capybara-go/capybara-go-top-up-prices-by-country",
+      "title": "MeowDB Capybara Go 충전 가격(국가별)",
+      "type": "위키/커뮤니티",
+      "note": "충전 패키지 6종 USD·KRW 가격(팬 DB, 날짜 미표기)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.mumuplayer.com/blog/capybara-go-beginners-guide.html",
+      "title": "MuMuPlayer Capybara Go! Beginner's Guide (2025-01-20)",
+      "type": "위키/커뮤니티",
+      "note": "챕터 60일·에너지 5, 상점 탭, 블랙마켓 광고 1,250골드(홍보성 가이드)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://appgrowing.net/blog/en/capybara/",
+      "title": "AppGrowing Capybara Go! 분석 (2024-11-05)",
+      "type": "보도",
+      "note": "게임 루프·상자 해금(챕터 3 이후)·IAP+IAA 서술, 단계적 출시",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://edgeone.ai/blog/details/capybara-go",
+      "title": "EdgeOne: Capybara Go 소개 (2024-12-11)",
+      "type": "보도",
+      "note": "챕터 구조·펫·서버 600개 서술(벤더 블로그)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.fnnews.com/news/202501091414360663",
+      "title": "안방 차지한 외산 게임...中 게임 영향력은 더 커져 (파이낸셜뉴스, 2025-01-09)",
+      "type": "보도",
+      "note": "모바일인덱스 2024-12 한국 추정 매출 8위, '양산형' 비판",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/state-of-mobile-gaming-2025",
+      "title": "State of Mobile Gaming 2025 (센서타워)",
+      "type": "데이터(추정)",
+      "note": "2024년 하이브리드캐주얼 IAP 매출 전년 대비 +37%, 전체 모바일 게임 IAP 820억 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/tower-defense-becomes-the-top-downloaded-subgenre-in-february-for-the-first-ime",
+      "title": "타워 디펜스, 2월 다운로드 1위 하위 장르 (센서타워 한국, 2026-03)",
+      "type": "데이터(추정)",
+      "note": "한국 2026-02 타워 디펜스 다운로드 1위, 2024-03 이후 매출 2위(4X 다음)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/mobile-games-monetisation-2026-KR",
+      "title": "2026년 모바일 게임 수익화 트렌드 (센서타워, 2026-05)",
+      "type": "데이터(추정)",
+      "note": "하이브리드캐주얼은 광고 비중 확대·가챠 비중 감소, Archero 2 누적 매출 2.5억 달러(2026-01)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/Lucky-Defense-has-become-the-highest-grossing-Korean-strategy-game",
+      "title": "운빨존많겜 한국 최고 매출 전략 게임 (센서타워, 2024-08)",
+      "type": "데이터(추정)",
+      "note": "누적 약 300만 다운로드·약 2천만 달러, 한국 비중 매출 79.4%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/God-Goblin-Raising-ranks-No-1-in-idle-RPG-revenue",
+      "title": "갓깨비 키우기 방치형 RPG 매출 1위 (센서타워, 2025-06)",
+      "type": "데이터(추정)",
+      "note": "2025-04 방치형 RPG 글로벌 RPG 매출 비중 4위, 한국·일본 비중",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idle-rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "2025 Q4 unified top 5 idle RPG revenue US (센서타워)",
+      "type": "데이터(추정)",
+      "note": "Lootfiend: Idle Dungeons 주간 정점 약 44.5만 달러, Capybara Go! 약 27.97만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/dicero/id6740966864",
+      "title": "Dicero! App Store (US)",
+      "type": "스토어",
+      "note": "평점 4.9(22,351건), 앱 내 구입 10개, 출시 후 버전 이력",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.fiveminlab.overgeared.hero.backpack.merge",
+      "title": "Overgeared Hero: Merge RPG Google Play",
+      "type": "스토어",
+      "note": "2026-05-25 출시, 1M+ 설치, 평점 약 4.65",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.greenmushroom.boomblitz.gp",
+      "title": "Top Heroes: Kingdom Saga Google Play",
+      "type": "스토어",
+      "note": "10M+ 설치, 평점 약 4.65(232,480건), 앱 내 구입 $0.99~$499.99",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

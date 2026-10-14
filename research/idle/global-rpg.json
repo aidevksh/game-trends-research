@@ -1,0 +1,2490 @@
+{
+  "id": "global-rpg",
+  "region": "해외",
+  "platformGroup": "모바일",
+  "name": "해외 방치형 RPG · 영웅 수집형(AFK형)",
+  "asOf": "2026-10-14",
+  "scope": "한국 개발작을 제외한, 미국·일본·중화권 출해 등 해외 시장의 모바일 방치형 RPG와 영웅 수집형(AFK형) 게임. 오토배틀과 오프라인 방치 보상에 영웅 가챠·진영·길드·PvP를 결합한 작품과, 2026년 미국 시장에서 급부상한 방치+탐험 RPG를 포함한다.",
+  "selectionBasis": "연구자 선정 목록이며 공식 전체 순위가 아니다. 2026-10-14에 센서타워 앱 페이지(공개 API)에서 조회한 '직전 월 월매출 추정'(iOS+Android 합산, 반올림된 추정치)이 큰 순서로 정렬했다. 센서타워 2025~2026 분기별 'Top 5 Idle RPG' 블로그, AppMagic 인용 보도, 후보 목록(TASKS.md)을 함께 참고했다. 한국 개발작과 하이브리드/키우기류(Capybara Go!, Legend of Mushroom 등)는 제외했다.",
+  "methodology": [
+    "센서타워 앱 페이지 공개 API(2026-10-14 조회)의 '직전 월 월매출·다운로드 추정'은 반올림된 대략치이며 조회 시점의 월이 명시되지 않는다. 게임 간 비교용 순서 기준으로만 쓰고 확정 매출로 인용하지 않는다.",
+    "누적 매출·다운로드는 AppMagic 추정을 인용한 PocketGamer.biz 보도와 개발사 보도자료(GDEV)를 우선했고, 서로 다른 지표(총매출, 플레이어 지출, 예약매출)를 섞어 비교하지 않았다.",
+    "과금 상품은 App Store 미국·일본·한국 페이지의 '앱 내 구입' 목록(2026-10-14 조회)에서만 가져왔다. 상품명이 '$4.99 product'처럼 가격 표기뿐인 게임은 구성 내용을 확인하지 못했다.",
+    "가챠 확률·천장은 공식 확률 공시 페이지를 확인하지 못해 팬 위키(fandom)의 표를 보조 근거로 썼고 위키/커뮤니티로 표시했다. 센서타워 블로그 분기 리포트는 자동 생성 글(작성자 표기 'Timothy', AI)로 보여 수치 신뢰도가 낮아 보조로만 썼다.",
+    "유저 반응은 App Store 최근 리뷰 100건 평점 분포(2026-10-14 조회)와 일부 공개 리뷰 인용에 한정되며 본문 전수 분석은 하지 못했다.",
+    "조사 중 웹 검색 한도가 소진되어(조사 로그 [45][46]) 일부 확률 공시·최신 분기 실적은 확인하지 못했다."
+  ],
+  "overview": "AFK형 영웅 수집 방치 RPG는 2019년 4월 출시된 Lilith의 AFK Arena가 서구 시장에 자리 잡게 한 하위 장르로, 오토배틀 진행도에 비례한 방치 보상, 5인 파티와 진영 시너지, 길드·PvP를 결합한 구조가 표준이 되었다. AppMagic 추정으로 AFK Arena는 2026-04-09 기준 누적 플레이어 지출 15억 달러를 넘겼지만 PocketGamer.biz는 5년 연속 매출이 감소했다고 보도했다. 후속작 AFK Journey는 서구 2024-03-27, 아시아 2024-08-08에 출시되어 AppMagic 추정 누적 1억5,830만 달러(2024-09-21)를 거쳐 2025-09-18 기준 약 2억5천만 달러에 이르렀고, PocketGamer.biz는 2025년 매출이 AFK Arena의 거의 두 배였다고 전했다. 일본에서는 Bank of Innovation의 메멘토모리가 2025년 9월기 매출 123억6,600만 엔(전년 대비 9.2% 감소), 영업이익 21억5,400만 엔(62.0% 증가)을 기록해 광고비를 줄여도 매출이 소폭만 감소하는 장수 서비스 패턴을 보여 주었다. 미국 시장에서는 센서타워 분기 리포트 기준 2025년 Q4 미국 Idle RPG 매출 상위 5개 중 영웅 수집형은 AFK Journey 하나뿐이었고(주간 매출 정점 약 17.5만 달러), 상위권은 MapleStory: Idle RPG 등 다른 형태가 차지했다. 2026년에는 중국 Leiting의 Sword x Staff(서구판)가 2026년 5월 구미 출시 후 약 6주 만에 누적 2천만 달러를 넘기고 미국 비중 70%를 보이며 6월 미국 Idle RPG 매출 1위로 보도되었다(센서타워, 바이징 재게재). 반면 GDEV의 Hero Wars는 2025년 월 결제 유저가 18% 감소하고 상위 약 12.5만 명이 예약매출의 88%를 만든 것으로 공시되어 장르 포화와 과금 집중 위험을 보여 준다.",
+  "commonalities": [
+    "오토배틀 진행도에 비례해 쌓이는 방치 보상(골드·경험치·장비)과 보상형 즉시 수령(Instant AFK 등)이 핵심 리텐션 장치다.",
+    "영웅 가챠(진영·희귀도), 위시리스트·천장, 한정 배너 중심의 수집 구조를 갖고 있으며 중복 영웅은 승급 재화로 전환된다.",
+    "길드 보스·길드전, 아레나 PvP, 시즌/이벤트 콘텐츠로 방치 외의 일일 접속 동기를 만든다.",
+    "월정액·주간 구독(약 $0.99~$4.99)과 $0.99~$99.99 패키지 라인이 App Store 미국 페이지에서 공통으로 확인된다.",
+    "중국계 개발·퍼블리셔(Lilith/Farlight, DHGames, C4, Leiting/Boltray, XD, LTGAMES)가 해외 매출 상위를 주도한다."
+  ],
+  "designPatterns": [
+    {
+      "name": "진행도 연동 방치 보상",
+      "detail": "캠페인/스테이지 클리어 단계가 올라갈수록 시간당 방치 수익과 드랍 장비 등급이 올라가며, 일정 시간까지만 누적된다. 한 번에 받을 수 있는 시간 한도가 복귀 주기를 정한다.",
+      "examples": [
+        "AFK Arena",
+        "AFK Journey",
+        "Idle Heroes",
+        "MementoMori"
+      ]
+    },
+    {
+      "name": "즉시 방치 수령(Fast/Instant AFK)",
+      "detail": "정해진 분량(AFK Arena 120분, AFK Journey 2시간)의 방치 보상을 즉시 받는 기능으로, 무료 횟수 후 다이아로 추가 구매하게 해 재화 소비처를 만든다.",
+      "examples": [
+        "AFK Arena",
+        "AFK Journey"
+      ]
+    },
+    {
+      "name": "진영·5인 파티 오토배틀",
+      "detail": "영웅은 진영에 속하고 진영 조합 버프와 포지션이 승패를 좌우한다. 수동 조작은 궁극기 타이밍 정도로 제한된다.",
+      "examples": [
+        "AFK Arena",
+        "AFK Journey",
+        "Idle Heroes",
+        "放置少女"
+      ]
+    },
+    {
+      "name": "위시리스트·천장 가챠",
+      "detail": "희귀 영웅은 위시리스트 안에서만 나오고 60회 S급 확정, 10회 A급 이상 확정 같은 보정이 있다. 신규 유저용 특수 규칙으로 초반 확정 영웅을 준다.",
+      "examples": [
+        "AFK Journey",
+        "Watcher of Realms"
+      ]
+    },
+    {
+      "name": "시즌제 리셋 콘텐츠",
+      "detail": "AFK Journey는 4개월 주기로 시즌이 열리고 시즌 방치 스테이지가 리셋되며 길드·서버 단위 첫 클리어 보상과 단계 랭킹을 둔다.",
+      "examples": [
+        "AFK Journey"
+      ]
+    },
+    {
+      "name": "방치+개방형 탐험 결합",
+      "detail": "방치 진행을 유지하면서 지도 탐험·스킬 조합 같은 판단 요소를 더해 '기다리기만 하는' 방치와 차별화한다.",
+      "examples": [
+        "Sword x Staff",
+        "AFK Journey"
+      ]
+    },
+    {
+      "name": "IP 크로스오버·딤 영웅",
+      "detail": "외부 IP 캐릭터를 별도 진영 영웅으로 넣어 신규·복귀 유저를 끌어온다.",
+      "examples": [
+        "AFK Arena",
+        "AFK Journey",
+        "Hero Wars: Alliance"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "다이아 패키지 + 한정 패키지",
+      "detail": "앱 내 구입 목록이 $0.99~$99.99(일본 엔·한국 원 환산 병행)까지 다단계이며, 이벤트/일일/성장 패키지가 가격대별로 나뉜다.",
+      "examples": [
+        "AFK Journey",
+        "AFK Arena",
+        "Idle Heroes",
+        "Watcher of Realms"
+      ]
+    },
+    {
+      "name": "주간·월간 구독",
+      "detail": "AFK Arena는 주간 $0.99·월간 $2.99, Idle Heroes는 주간 $0.99, MementoMori는 월간 부스트 $5.99로 방치 골드 증가·편의 횟수를 판다(App Store 설명·구입 목록).",
+      "examples": [
+        "AFK Arena",
+        "Idle Heroes",
+        "MementoMori"
+      ]
+    },
+    {
+      "name": "VIP 레벨 누적 과금",
+      "detail": "과금액이 VIP 점수로 쌓여 방치 보상 시간·보너스를 영구 개방한다(AFK Journey 위키의 AFK 시간 해금 표, Idle Heroes 위키).",
+      "examples": [
+        "AFK Journey",
+        "Idle Heroes"
+      ]
+    },
+    {
+      "name": "한정 영웅 배너·고액 뽑기",
+      "detail": "AFK Journey 미국 리뷰에는 10연차 약 $50 가격에 대한 불만이 있고, 레이트업 배너는 10회 3,000 다이아로 위키에 표기된다.",
+      "examples": [
+        "AFK Journey"
+      ]
+    },
+    {
+      "name": "월정액 + 소액 데일리 팩",
+      "detail": "¥160~¥650 수준의 일일 팩과 월간 패키지로 소액 결제를 매일 유도한다(일본 App Store 구입 목록).",
+      "examples": [
+        "MementoMori",
+        "放置少女"
+      ]
+    }
+  ],
+  "risks": [
+    "장르 포화와 신규 유입 둔화: Hero Wars는 2025년 월 결제 유저 18% 감소, 예약매출 13% 감소(GDEV 20-F), AFK Arena는 5년 연속 매출 감소(PocketGamer.biz).",
+    "과금 집중도: GDEV는 상위 약 12.5만 명이 예약매출 88%를 만든다고 공시했고 월 결제 전환율은 3.3%다.",
+    "광고 효율 하락과 장수 서비스 의존: BOI는 광고비를 줄였지만 메멘토모리 단일 타이틀의 경년 매출 감소(-9.2%)를 막지 못했다.",
+    "서구 시장 상위권이 영웅 수집형이 아닌 방치+X(MapleStory Idle, Lootfiend 등)로 이동해 AFK형 신작의 서구 진입 여지가 불분명하다.",
+    "가챠 가격과 파워 격차 불만: AFK Journey 미국 리뷰의 10연차 약 $50 불만, Hero Wars 미국 최근 리뷰 100건 평균 2.29점 등 부정 반응이 있다.",
+    "대형 IP/시즌 콘텐츠 제작비 부담: 시즌 4개월 주기와 크로스오버 업데이트를 따라가려면 대형 라이브옵스 조직이 필요하다."
+  ],
+  "pipeline": [
+    {
+      "name": "Bank of Innovation 신규 대형 RPG(제목 미정)",
+      "note": "gamebusiness.jp 2025-10-09: 평생 예약매출 100억~200억 엔 목표, 사전등록 500만 명 목표로 개발 중이며 출시 시기 미정."
+    },
+    {
+      "name": "AFK Arena 컴패니언 서버 운영",
+      "note": "PocketGamer.biz 2026-09-23: 클래식 서버와 컴패니언 서버가 동시 운영되며 Kaiju No. 8 크로스오버가 2026-10-20까지 진행."
+    },
+    {
+      "name": "Sword x Staff 중화권·구미 확장",
+      "note": "센서타워 보도(2026-07-08)로 구미 2026-05 출시 후 6주 누적 2천만 달러 돌파 확인. 추가 지역 출시 계획은 미확인."
+    }
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "id": "sword-x-staff",
+      "name": "Sword x Staff (杖剑传说 서구판)",
+      "originalName": "Sword x Staff / 杖剑传说",
+      "url": "https://apps.apple.com/us/app/sword-x-staff/id6751270546",
+      "developer": "雷霆网络(Leiting, 중국판 CN App Store 판매자 Xiamen Leiting Interactive Network)",
+      "publisher": "Boltray Games(BOLTRAY PTE. LTD., 싱가포르; 공식 사이트는 ltgamesglobal.com 도메인)",
+      "origin": "중국",
+      "release": "2026-05 구미 출시(미국 App Store 2026-05-19, Android 스토어 등록일 2026-03-24) / 중국판 2025-05-26",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치 진행 + 개방형 월드 탐험 + 전사·마법사 스킬 조합 RPG('Third Way RPG')",
+      "businessModel": "부분유료(IAP 중심, 월정액형 'Monthly Benefits' 포함)",
+      "status": "서비스 중(앱 버전 1.0.41, 2026-09-15 갱신)",
+      "description": "방치 성장에 거대한 상호작용형 월드 지도 탐험과 200개 이상 스킬 조합을 결합한 'Third Way RPG'로, 2026년 5월 구미 출시 후 미국 Idle RPG 매출 1위로 보도되었다. 중국판 杖剑传说의 서구 버전이다.",
+      "coreLoop": [
+        "지도 안개를 걷고 지역을 탐험해 보물·동료를 얻는다",
+        "전사/마법사 이중 직업의 스킬을 조합해 자동 전투를 진행한다",
+        "방치(오프라인) 중 쌓인 자원을 접속해 수령한다",
+        "장비·스킬 카드를 강화하고 캐릭터를 성장시킨다",
+        "새 지역과 성수(Hieromon) 도전으로 넘어가 반복한다"
+      ],
+      "features": [
+        "App Store 설명: 전사·마법사 이중 직업에서 200개 이상 스킬 조합과 스킬 시전 순서·원소 빌드 변경",
+        "지역: Verdantglade, Cinder Ridge, Aqualis, Loong Haven 등 지도 지역별 보물과 동료",
+        "오프라인 중에도 자원이 쌓이고 떠돌이 상인이 희귀 물품을 가지고 방문",
+        "전설 몬스터 'Hieromon'과 대결, 'Staff and Sword Twins' 동료",
+        "App Store 설명이 '압박 없는' 플레이를 강조(고정 메타 없음)"
+      ],
+      "progression": [
+        "전사/마법사 이중 직업",
+        "스킬 카드와 에픽 장비 수집·강화",
+        "동료(Fellow) 성장",
+        "지도 지역 개방",
+        "오프라인 방치로 자원 누적과 캐릭터 성장"
+      ],
+      "idleMechanics": "App Store 설명에 따르면 오프라인 중에도 자원이 쌓이고 캐릭터가 성장하며 떠돌이 상인이 방문한다. 최대 누적 시간, 광고/유료 가속 방식은 미확인.",
+      "socialAndLiveOps": [
+        "앱 버전 1.0.41이 2026-09-15 갱신(센서타워 조회·App Store 조회)",
+        "중국판 杖剑传说은 2025-05-26 출시, 1.0.42가 2026-09-30 갱신(CN App Store)",
+        "길드·PvP·시즌 구조는 확인하지 못함"
+      ],
+      "popularityFactors": [
+        "방치 외에 지도 탐험과 스킬 조합이라는 판단 요소를 결합해 기존 방치와 차별화했다(해석)",
+        "미국 비중이 70%로 보도되어 서구 이용자의 방치+탐험 선호가 드러난다(해석)",
+        "App Store 미국 평점 4.86(43,496건)로 초반 평가가 높다"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국 페이지에 $0.99~$99.99의 다단계 패키지와 월간 혜택 상품이 있다. 상품명이 가격 표기뿐이어서 구성 내용은 확인하지 못했다.",
+        "products": [
+          {
+            "name": "$0.99 Product",
+            "price": "$0.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 'Sword x Staff' 앱 내 구입 목록"
+          },
+          {
+            "name": "$4.99 Product",
+            "price": "$4.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 'Sword x Staff' 앱 내 구입 목록"
+          },
+          {
+            "name": "Monthly Benefits",
+            "price": "$4.99",
+            "contents": "월간 혜택(세부 미확인)",
+            "evidence": "App Store 미국 'Sword x Staff' 앱 내 구입 목록"
+          },
+          {
+            "name": "$99.99 Product",
+            "price": "$99.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 'Sword x Staff' 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "App Store 미국 앱 내 구입 목록에 $0.99, $2.99, $4.99, $9.99, $14.99, $19.99, $29.99, $49.99, $99.99 상품과 Monthly Benefits $4.99가 있다(2026-10-14 조회)"
+        ],
+        "unverified": "상품별 구성 내용, 월간 혜택의 구체 효과, 보상형 광고 유무, 뽑기·확률 공시는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "revenue": "센서타워(바이징 2026-07-08 재게재): 구미 출시 약 6주 만에 누적 글로벌 매출 2천만 달러 초과, 미국 비중 70%, 6월 매출 전월 대비 60% 증가(추정)",
+        "chart": "센서타워: 2026-06 글로벌 Idle RPG 매출 성장 1위·미국 Idle RPG 매출 1위, 雷霆网络 최고 매출 제품",
+        "rating": "App Store 미국 4.86(43,496건), Google Play 4.61(131,066건, 센서타워 앱 페이지 2026-10-14)",
+        "downloads": "센서타워 앱 페이지 2026-10-14 직전 월 다운로드 추정: iOS 약 10만, Android 약 20만(반올림 추정)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 400만 달러, Android 약 500만 달러(반올림 추정), 상위 국가 US·FR·GB(iOS)"
+      },
+      "userFeedback": {
+        "positive": [
+          "App Store 미국 최근 리뷰 100건 중 63건이 5점",
+          "공개 평점 4.86으로 높은 편"
+        ],
+        "negative": [
+          "최근 100건 중 1점이 15건(15%)",
+          "Android 평점 4.61로 iOS보다 낮음"
+        ],
+        "basis": "App Store 미국 최근 리뷰 100건 평점 분포(2026-09-09~2026-10-12 평균 3.96, 1점 15·2점 6·3점 10·4점 6·5점 63). 리뷰 본문은 분석하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "방치 진행을 유지하면서 지도 탐험으로 '갈 곳'을 만드는 구조",
+          "전사/마법사 직업 전환과 스킬 조합으로 판단 요소를 낮은 진입장벽에 얹기"
+        ],
+        "avoid": [
+          "성수·지역 확장 속도를 못 따라가면 방치 외 요소가 부담이 되므로 콘텐츠 제작 속도 확인 필요",
+          "상품명을 가격 표기로만 두면 가치 전달이 약해지므로 구성 명시 권장"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/sword-x-staff/id6751270546",
+          "title": "Sword x Staff - App Store(미국)",
+          "type": "스토어",
+          "note": "설명(Third Way RPG, 오프라인 자원 누적, 200+ 스킬), 앱 내 구입 목록, 평점 4.86",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://swordxstaff.ltgamesglobal.com/",
+          "title": "Sword x Staff - A Third Way RPG 공식 사이트",
+          "type": "공식",
+          "note": "공식 사이트 타이틀과 App Store·Google Play 링크 확인",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.baijing.cn/article/55933",
+          "title": "센서타워 2026년 6월 중국 모바일게임 출해 분석(바이징 재게재)",
+          "type": "데이터(추정)",
+          "note": "구미 2026-05 출시, 6주 누적 2천만 달러, 미국 70%, 6월 매출 +60%, 미국 Idle RPG 1위",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/ios/apps/6751270546?country=US",
+          "title": "센서타워 앱 페이지(iOS 미국, 공개 API)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출·다운로드 반올림 추정, 상위 국가",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/cn/app/%E6%9D%96%E5%89%91%E4%BC%A0%E8%AF%B4/id6473333072",
+          "title": "杖剑传说 - App Store(중국)",
+          "type": "스토어",
+          "note": "중국판 출시 2025-05-26, 평점 4.82(115,695건)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "hero-wars-alliance",
+      "name": "Hero Wars: Alliance Adventure",
+      "originalName": "Hero Wars: Alliance (Google Play명 Hero Wars: Alliance RPG Legend)",
+      "url": "https://apps.apple.com/us/app/id1158967485",
+      "developer": "Nexters Global LTD (GDEV 그룹)",
+      "publisher": "Nexters Global LTD",
+      "origin": "키프로스",
+      "release": "2016-12-23(App Store 미국 등록일) / 글로벌 2017-01-04(센서타워 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "영웅 수집 퍼즐 RPG(5인 파티, 길드전·아레나 중심)",
+      "businessModel": "부분유료(IAP 중심 + 일부 광고)",
+      "status": "서비스 중(앱 버전 1.291.001, 2026-10-06 갱신)",
+      "description": "여섯 진영 80명 이상 영웅을 수집해 PvE 캠페인과 PvP 아레나, 길드전을 하는 Nexters의 장수 모바일 RPG. 누적 17억 달러 이상(개발사 발표)으로 이 장르 최대 규모 중 하나다.",
+      "coreLoop": [
+        "캠페인·원정 전투를 한다",
+        "영웅 승급·장비·아티팩트를 강화한다",
+        "일일 퀘스트와 원정(Expedition)을 수령한다",
+        "아레나·길드전에 도전해 랭킹 보상을 받는다",
+        "이벤트·신규 영웅에 맞춰 반복한다"
+      ],
+      "features": [
+        "Nexters 보도자료(2025-06-26): 80명 이상 영웅, 6개 진영, PvP 아레나",
+        "Lara Croft 게스트 영웅(한정 이벤트), Teenage Mutant Ninja Turtles 2024년 말 추가",
+        "원정(Expedition)은 하루 7슬롯, 6시간·1.5시간·10분 등 시간제 탐험으로 아티팩트 재료 획득(위키)",
+        "Valkyrie's Favor 주간 구독이 원정 슬롯 +2, 전투 5배속을 제공(위키)",
+        "VIP 레벨로 원정 슬롯 등 혜택 개방(위키)"
+      ],
+      "progression": [
+        "영웅 레벨·승급",
+        "아티팩트·장비",
+        "원정/탐험 보상 슬롯",
+        "팀 레벨",
+        "길드전·아레나 랭킹",
+        "VIP 레벨"
+      ],
+      "idleMechanics": "방치형이라기보다 시간제 원정(최대 6시간)으로 재료를 얻는 구조다(팬 위키). 오프라인 누적 한도·광고 가속은 미확인.",
+      "socialAndLiveOps": [
+        "길드전, 아레나 PvP",
+        "IP 콜라보(Lara Croft, TMNT)",
+        "App Store 앱 버전 1.291.001이 2026-10-06 갱신(검색 조회)"
+      ],
+      "popularityFactors": [
+        "오래된 영웅 풀과 콜라보 IP로 신규 영웅 투입 동기를 유지(해석)",
+        "미국 39%, 일본 15%, 독일 8% 등 서구 비중이 높다(GameWorldObserver 2024-07)",
+        "개발사 발표 누적 설치 1.85억(2025-06)으로 노출 기반이 크다"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국 앱 내 구입 목록에 'Treasure of Dominion' 계열이 $4.99~$29.99 범위로 반복되고 $99.99 에메랄드 상품이 있다. 주간 구독 'Valkyrie's Favor'는 $2.29로 확인된다.",
+        "products": [
+          {
+            "name": "Valkyrie's Favor",
+            "price": "$2.29",
+            "contents": "주간 구독: 매일 아티팩트 코인, 원정 +2, 5배속 전투(위키 기준)",
+            "evidence": "App Store 미국 'Hero Wars: Alliance Adventure' 앱 내 구입 목록 / Hero Wars Wiki"
+          },
+          {
+            "name": "Treasure of Dominion",
+            "price": "$4.99",
+            "contents": "구성 미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "Skin",
+            "price": "$14.99",
+            "contents": "스킨",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "56000 emeralds",
+            "price": "$99.99",
+            "contents": "에메랄드 56,000개",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "Treasure of Dominion이 $4.99, $5.79, $9.99, $16.49, $19.99, $29.99 등 다수 가격으로 존재(2026-10-14 조회)",
+          "GDEV 2025년 20-F: 월 결제 전환율 3.3%, 상위 약 12.5만 명이 예약매출 88%",
+          "2025년 인게임 구매가 매출의 95.0%"
+        ],
+        "unverified": "Treasure of Dominion의 구성 내용, 확률 공시, 광고 위치와 보상은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "revenue": "Nexters 보도자료(2025-06-26): 누적 매출 17억 달러 초과(개발사 발표, 출처 미표기). GDEV 2025 20-F: Hero Wars가 매출의 93%, 월 결제 유저 18% 감소",
+        "downloads": "Nexters 보도자료(2025-06-26): 안드로이드·iOS 누적 설치 1.85억. GameWorldObserver 2024-07: 1.5억 초과",
+        "chart": "Nexters 보도자료(2025-06-26): AppMagic 기준 전 세계 무료 RPG 4위, 매출 RPG 상위 20위",
+        "rating": "App Store 미국 4.55(217,653건), Google Play 4.54(1,788,136건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS·Android 각 약 300만 달러(반올림 추정), 직전 월 다운로드 iOS 약 40만·Android 약 100만. GDEV 2025년 지역 매출: 미국 33%, 유럽 33%, 아시아 19%"
+      },
+      "userFeedback": {
+        "positive": [
+          "누적 설치와 평점 누적 수가 크고 장기 서비스 중",
+          "최근 100건 중 5점 24건"
+        ],
+        "negative": [
+          "App Store 미국 최근 100건 중 1점이 56건으로 평균 2.29점",
+          "월 결제 유저 감소 공시와 일치하는 과금 압박 가능성(해석)"
+        ],
+        "basis": "App Store 미국 최근 리뷰 100건 평점 분포(2026-07-19~2026-10-11 평균 2.29, 1점 56·2점 9·3점 9·4점 2·5점 24). 리뷰 본문은 분석하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "IP 콜라보로 장기 서비스 중에도 신규 영웅 투입 동기를 유지",
+          "시간제 원정 슬롯과 구독 상품을 묶는 설계"
+        ],
+        "avoid": [
+          "상위 소수 결제자에 매출이 집중되는 구조(상위 약 12.5만 명이 88%)",
+          "평점 하락과 월 결제 유저 감소를 방치하는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1158967485",
+          "title": "Hero Wars: Alliance Adventure - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 목록(Valkyrie's Favor $2.29, Treasure of Dominion, 56000 emeralds $99.99), 평점 4.55",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.gamedeveloper.com/press-release/hero-wars-alliance-continues-it-s-ascent-with-over-1-7bn-revenue-185m-installs/",
+          "title": "Hero Wars: Alliance continues its ascent with over $1.7bn revenue, 185m installs",
+          "type": "공식",
+          "note": "2025-06-26 누적 매출 17억 달러, 설치 1.85억, 80+ 영웅, Lara Croft/TMNT",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://gameworldobserver.com/2024/07/24/hero-wars-alliance-revenue-1-5-billion-mobile",
+          "title": "Hero Wars: Alliance revenue 1.5 billion mobile",
+          "type": "보도",
+          "note": "2024-07 누적 15억 달러, 1.5억 다운로드, 미국 39%·일본 15%",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://stocktitan.net/sec-filings/GDEV/20-f-gdev-inc-files-annual-report-foreign-issuer-c1f4ec2cb4eb.html",
+          "title": "GDEV 2025 Form 20-F (StockTitan 요약)",
+          "type": "공식",
+          "note": "Hero Wars 매출 93%, 월 결제 유저 -18%, 전환율 3.3%, 상위 12.5만명 88%",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://hero-wars.fandom.com/wiki/Expeditions",
+          "title": "Hero Wars Wiki - Expeditions",
+          "type": "위키/커뮤니티",
+          "note": "원정 7슬롯, 6시간 등 시간제 구조",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "mementomori",
+      "name": "メメントモリ (MementoMori: AFKRPG)",
+      "originalName": "MementoMori: AFKRPG",
+      "url": "https://apps.apple.com/jp/app/id1611490041",
+      "developer": "Bank of Innovation",
+      "publisher": "Bank of Innovation",
+      "origin": "일본",
+      "release": "2022-10-18(일본 위키 기준 서비스 개시일, 사전등록 2021-08-20 개시)",
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC(DMM GAMES/Windows, 2024-07-23)"
+      ],
+      "subgenre": "방치형 오토배틀 영웅 수집 RPG(캐릭터 스토리 해방형)",
+      "businessModel": "부분유료(IAP 중심: 다이아 팩+월정액)",
+      "status": "서비스 중(앱 버전 5.0.0, 2026-10-13 갱신)",
+      "description": "수채화풍 그래픽과 캐릭터별 전용곡 '라멘트'를 내세운 일본 BOI의 방치형 RPG로, 캐릭터를 얻고 강화하면서 스토리가 열리는 구조다. 일본에서 장수하며 BOI 매출의 대부분을 차지한다.",
+      "coreLoop": [
+        "메인 퀘스트 오토배틀을 진행한다",
+        "최대 24시간 누적된 방치 보상을 수령한다",
+        "가챠로 캐릭터를 얻고 강화해 '메모리'(캐릭터 스토리)를 연다",
+        "시련(PvE)·배틀리그(PvP)·길드 콘텐츠에 도전한다",
+        "다시 방치 보상 수령으로 돌아간다"
+      ],
+      "features": [
+        "최대 24시간 방치 보상(일본어 위키)",
+        "시련: 시공의 동굴, 무궁의 탑, 기도의 샘(원정), 환영의 신전 협력전",
+        "PvP: 배틀리그, 상위자 한정 레전드리그",
+        "길드: 길드 레이드, 길드 배틀, 상위 길드 한정 그랜드 배틀",
+        "2023-11 Google Play 베스트 오브 2023 스토리·익사이팅 부문 등 세계 18개 국가/지역 수상(일본어 위키 인용)",
+        "스토리가 메인 퀘스트가 아니라 캐릭터 획득으로 개방되는 구조"
+      ],
+      "progression": [
+        "캐릭터 레벨·승급",
+        "메모리(캐릭터 스토리) 해방",
+        "메인 퀘스트 진행도",
+        "길드 전투력",
+        "배틀리그 랭킹"
+      ],
+      "idleMechanics": "퀘스트 진행도와 최대 24시간의 방치 시간에 비례해 보상이 누적된다(일본어 위키). 광고/유료 가속 방식은 확인하지 못했다.",
+      "socialAndLiveOps": [
+        "길드 레이드·길드 배틀·그랜드 배틀",
+        "배틀리그/레전드리그",
+        "2024-02 BOI 타 타이틀과 콜라보(위키)",
+        "2024-07-23 PC(Windows)판 출시",
+        "앱 버전 5.0.0이 2026-10-13 갱신(App Store 조회)"
+      ],
+      "popularityFactors": [
+        "수채화풍 아트·캐릭터 전용곡 등 감성 차별화(해석)",
+        "사전등록 123만 명과 월 10억 엔 이상 예약매출이 신작 비교 기준으로 인용됨(gamebusiness.jp)",
+        "스토리가 캐릭터 획득과 연결되어 가챠 동기를 만든다(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국/일본 구입 목록에 다이아 팩 A~G, 일일 팩, 달성 팩, 월간 부스트, 계약 특권 상품이 있다. 일본에서는 ¥160~¥11,800 범위로 확인된다.",
+        "products": [
+          {
+            "name": "ダイヤパックA",
+            "price": "¥160($0.99 미국)",
+            "contents": "다이아 팩(구성 수량 미확인)",
+            "evidence": "App Store 일본·미국 '메멘토모리' 앱 내 구입 목록"
+          },
+          {
+            "name": "月間ブースト(Monthly Boost)",
+            "price": "¥1,000($5.99 미국)",
+            "contents": "월간 혜택(세부 미확인)",
+            "evidence": "App Store 일본·미국 앱 내 구입 목록"
+          },
+          {
+            "name": "盟約特権(Right of Covenant)",
+            "price": "¥360($2.99 미국), 1주일권 ¥120",
+            "contents": "계약 특권(세부 미확인)",
+            "evidence": "App Store 일본·미국 앱 내 구입 목록"
+          },
+          {
+            "name": "達成パック1(Achievement Pack 1)",
+            "price": "¥3,000($18.99 미국)",
+            "contents": "달성 패키지(세부 미확인)",
+            "evidence": "App Store 일본·미국 앱 내 구입 목록"
+          },
+          {
+            "name": "ダイヤパックG",
+            "price": "¥11,800($74.99 미국)",
+            "contents": "최고가 다이아 팩",
+            "evidence": "App Store 일본·미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "일본 App Store: ダイヤパックA ¥160, B ¥650, C ¥1,000, G ¥11,800, デイリーパック1 ¥160, デイリーパック2 ¥650, 月間ブースト ¥1,000, 盟約特権 ¥360(1주일 ¥120), 達成パック1 ¥3,000(2026-10-14 조회)",
+          "미국 App Store: Diamond Pack A $0.99, B $3.99, C $5.99, D $8.99, E $18.99, G $74.99, Monthly Boost $5.99(2026-10-14 조회)"
+        ],
+        "unverified": "상품 구성 수량, 가챠 확률 공시와 천장, 보상형 광고 유무는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "revenue": "BOI 2025년 9월기: 매출 123억6,600만 엔(-9.2%), 영업이익 21억5,400만 엔(+62.0%), 순이익 13억5,100만 엔(+50.9%)(gamebiz 2025-11-14). 광고비 축소에도 감소폭은 소폭",
+        "downloads": "300만 DL 돌파(ファミ通App 2023-10-31 기사 제목, 일본어 위키 인용). 최신 누적 다운로드는 미확인",
+        "rating": "App Store 일본 4.44(44,410건), 미국 4.72(4,836건), Google Play 4.60(93,828건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS·Android 각 약 100만 달러(반올림 추정). gamebusiness.jp: 출시 직후 분기 매출 83억 엔, 사전등록 123만 명, 월 예약매출 10억 엔 이상"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 최근 100건 중 5점 57건(평균 3.99)",
+          "일본 평점 4.44로 장수 서비스 치고 높음"
+        ],
+        "negative": [
+          "일본 최근 100건 중 1점 22건(평균 3.66)",
+          "경년 매출 감소(-9.2%)가 보여 주듯 신규 유입이 둔화(해석)"
+        ],
+        "basis": "App Store 미국/일본 최근 리뷰 100건 평점 분포(미국 3.99: 1점 13·2점 3·3점 13·4점 14·5점 57, 2024-05-06~2026-09-25 / 일본 3.66: 1점 22·2점 7·3점 8·4점 9·5점 54, 2026-07-22~2026-10-10). 본문 미분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "캐릭터 획득과 스토리 해방을 연결해 가챠에 서사 동기를 부여",
+          "일일 소액 팩(¥160)과 월간 상품으로 일상 결제 흐름을 만들기"
+        ],
+        "avoid": [
+          "단일 타이틀 의존(신작 대형 RPG는 출시 시기 미정)",
+          "광고 투입 축소 후 경년 매출 하락을 방어할 후속 콘텐츠 부재"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/jp/app/id1611490041",
+          "title": "メメントモリ - App Store(일본)",
+          "type": "스토어",
+          "note": "일본 앱 내 구입 목록과 평점 4.44",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/us/app/id1611490041",
+          "title": "MementoMori: AFKRPG - App Store(미국)",
+          "type": "스토어",
+          "note": "미국 앱 내 구입 목록과 평점 4.72",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://gamebiz.jp/news/416066",
+          "title": "BOI 25年9月期決算",
+          "type": "보도",
+          "note": "2025년 9월기 매출·이익, 광고 축소, 메멘토모리 경년 영향",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.gamebusiness.jp/article/2025/10/09/25232.html",
+          "title": "広告費半減でも売上は微減 - BOI決算を読む",
+          "type": "보도",
+          "note": "분기 매출 추이, 사전등록 123만 명, 신작 전략",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://ja.wikipedia.org/wiki/メメントモリ_(ゲーム)",
+          "title": "メメントモリ (ゲーム) - Wikipedia",
+          "type": "위키/커뮤니티",
+          "note": "서비스 개시일, 최대 24시간 방치, 콘텐츠, Google Play 수상",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "houchi-shoujo",
+      "name": "放置少女〜百花繚乱の萌姫たち〜",
+      "originalName": "放置少女 (Idle Girls, 일본판)",
+      "url": "https://apps.apple.com/jp/app/id1211123727",
+      "developer": "c4games",
+      "publisher": "C4 CONNECT K.K.(2021-03-01부터 일본 운영)",
+      "origin": "중국(일본 서비스)",
+      "release": "2017-03-24(일본어 위키 기준)",
+      "platforms": [
+        "Android",
+        "iOS",
+        "웹(브라우저판 2022-04-13)"
+      ],
+      "subgenre": "미소녀 삼국지·전국시대 방치 오토배틀 RPG",
+      "businessModel": "부분유료(IAP 중심)",
+      "status": "서비스 중(앱 버전 1.0.49, 2026-09-29 갱신)",
+      "description": "삼국지·전국시대 무장을 미소녀로 그린 방치형 오토배틀 RPG로, 일본에서 장수하는 중국 출해 방치 RPG다. 자군을 설정한 뒤 방치하며 보상을 얻는 흐름이 중심이다.",
+      "coreLoop": [
+        "자군(주장·부장)을 편성한다",
+        "자동 전투로 적을 쓰러뜨려 보상을 얻는다",
+        "장비·신기·보석으로 부장을 강화한다",
+        "투기장·길드 콘텐츠에 도전한다",
+        "반복한다"
+      ],
+      "features": [
+        "부장은 위·촉·오·군·화·화(和)·양 등 7개 진영 중 하나에 소속(일본어 위키 표기)",
+        "무쌍신기·전설신기·보석 등 장비 강화 시스템",
+        "투기장·정상 경기장 등 PvP, 동맹 단위 지역 쟁탈전",
+        "혼인·결혼반지 등 캐릭터 육성 시스템과 성적 뉘앙스가 있는 의장 아이템 존재(위키 서술)",
+        "2022-04-13 브라우저판 출시"
+      ],
+      "progression": [
+        "부장 레벨·승급",
+        "신기(무쌍/전설)",
+        "보석 장착",
+        "진영 편성",
+        "동맹 전쟁 랭킹"
+      ],
+      "idleMechanics": "플레이 방법은 자군 설정 후 '방치'가 중심이라고 일본어 위키가 서술한다. 최대 누적 시간과 가속 상품은 확인하지 못했다.",
+      "socialAndLiveOps": [
+        "동맹(길드) 단위 전쟁 콘텐츠(傾国の戦い, 群雄争覇 등)",
+        "투기장·정상 경기장",
+        "2021-03-01 운영사가 C4games에서 C4Connect로 이관",
+        "앱 버전 1.0.49가 2026-09-29 갱신(App Store 조회)"
+      ],
+      "popularityFactors": [
+        "일본 미소녀 캐릭터 선호와 삼국지 소재의 결합(해석)",
+        "2017년 서비스 개시 이후 9년 이상 서비스 중",
+        "센서타워 앱 페이지 상위 국가가 JP·TW·KR로 일본 비중이 높다(추정)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "일본 App Store 구입 목록에 원보(元宝) 패키지가 ¥160~¥12,800, 월간 기프트 패키지 ¥1,000, 소액 서프라이즈/포카포카/해피 패키지가 ¥160으로 확인된다.",
+        "products": [
+          {
+            "name": "60元宝",
+            "price": "¥160",
+            "contents": "원보 60개",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          },
+          {
+            "name": "月のギフトパッケージ",
+            "price": "¥1,000",
+            "contents": "월간 패키지(세부 미확인)",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          },
+          {
+            "name": "305元宝",
+            "price": "¥800",
+            "contents": "원보 305개",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          },
+          {
+            "name": "490元宝",
+            "price": "¥1,200",
+            "contents": "원보 490개",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          },
+          {
+            "name": "5000元宝",
+            "price": "¥12,800",
+            "contents": "원보 5,000개",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "일본 App Store 구입 목록: 60元宝 ¥160, 305元宝 ¥800, 490元宝 ¥1,200, 5000元宝 ¥12,800, 月のギフトパッケージ ¥1,000, サプライズ/ほかほか/ハッピーパッケージ ¥160(2026-10-14 조회)"
+        ],
+        "unverified": "미국 App Store 페이지는 조회 시 404였고 한국 스토어는 조회하지 못했다. 가챠 확률, 패스류 상품, 광고 유무도 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "rating": "App Store 일본 4.3(99,756건), Google Play 4.15(98,729건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS·Android 각 약 100만 달러(반올림 추정), 상위 국가 JP·TW·KR(Android), Android 설치 구간 500만~1,000만"
+      },
+      "userFeedback": {
+        "positive": [
+          "일본 최근 100건 중 5점 15건",
+          "공개 평점 4.3으로 장수 서비스 대비 양호"
+        ],
+        "negative": [
+          "일본 최근 100건 중 1점이 59건으로 평균 2.11점",
+          "최근 리뷰에서 낮은 평점이 다수(과금·운영 불만 가능성, 해석)"
+        ],
+        "basis": "App Store 일본 최근 리뷰 100건 평점 분포(2025-03-18~2026-10-11 평균 2.11, 1점 59·2점 12·3점 3·4점 11·5점 15). 본문 미분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "일본 타깃 미소녀 IP와 방치 오토배틀의 조합",
+          "소액 ¥160 패키지로 진입 장벽을 낮추기"
+        ],
+        "avoid": [
+          "최근 리뷰 평점이 낮은 상태로 장기 서비스하는 것",
+          "성적 뉘앙스 의장 아이템에 의존한 연령 등급·심의 리스크"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/jp/app/id1211123727",
+          "title": "放置少女 - App Store(일본)",
+          "type": "스토어",
+          "note": "일본 앱 내 구입 목록, 평점 4.3",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://ja.wikipedia.org/wiki/放置少女",
+          "title": "放置少女〜百花繚乱の萌姫たち〜 - Wikipedia",
+          "type": "위키/커뮤니티",
+          "note": "서비스 개시일, 진영, 콘텐츠, 운영 이관",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/android/apps/jp.glee.girl?country=US",
+          "title": "센서타워 앱 페이지(Android 放置少女)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출 반올림 추정, 상위 국가, 설치 구간",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "afk-journey",
+      "name": "AFK Journey (AFK: 새로운 여정 / AFK：ジャーニー / 剑与远征：启程)",
+      "originalName": "AFK Journey",
+      "url": "https://apps.apple.com/us/app/afk-journey/id1628970855",
+      "developer": "Lilith Games",
+      "publisher": "Farlight Games(FARLIGHT PTE. LTD.)",
+      "origin": "중국",
+      "release": "2024-03-27(구미) / 2024-08-08(아시아) / 중국판 剑与远征：启程 App Store 2024-08-06",
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC(Windows, 위키 표기, 별도 출시일 미확인)"
+      ],
+      "subgenre": "방치 보상 + 오픈월드 + 타일 보드 오토배틀 영웅 수집 RPG(AFK Arena 후속)",
+      "businessModel": "부분유료(IAP 중심: 영웅 모집 가챠 + 패키지 + 월정액류)",
+      "status": "서비스 중(앱 버전 1.8.1.1, 2026-10-08 갱신)",
+      "description": "AFK Arena의 후속작으로 동화책풍 일러스트의 오픈월드 탐험과 4개월 주기 시즌을 결합한 영웅 수집 방치 RPG. 2024 App Store Awards 최고 게임을 수상했고 AppMagic 추정 누적 플레이어 지출 약 2억5천만 달러(2025-09)에 도달했다.",
+      "coreLoop": [
+        "AFK 스테이지를 진행해 방치 보상 한도를 올린다",
+        "쌓인 방치 보상(골드·영웅 에센스·훈련 매뉴얼 등)을 수령한다",
+        "영웅 모집(가챠)과 승급으로 6개 진영 파티를 구성한다",
+        "오픈월드 탐험·퍼즐·길드·아레나·시즌 콘텐츠를 한다",
+        "4개월 시즌 리셋에 맞춰 반복한다"
+      ],
+      "features": [
+        "6개 진영(Lightbearers, Wilders, Maulers, Graveborns, Celestials, Hypogeans)과 6개 직업(탱커, 전사, 사수, 마법사, 도적, 지원)(위키피디아)",
+        "타일 보드 자동 전투, 오픈월드 퍼즐·텔레포트 지점·길드",
+        "드림 렐름, 아레나, 슈프림 아레나, 레전드 트라이얼, 아케인 래비린스 등 모드",
+        "4개월마다 새 시즌 시작, 시즌별 AFK 스테이지 리셋(위키)",
+        "Fairy Tail 크로스오버(2025-05-01~, 첫 Dimensional 영웅 Natsu·Lucy), Digimon 콜라보"
+      ],
+      "progression": [
+        "AFK 스테이지 진행도(방치 보상 한도)",
+        "영웅 레벨·승급(진영 아코른)",
+        "소울 시길 중복 전환",
+        "미스틱 컬렉션(VIP·모집 횟수로 방치 시간 해금)",
+        "시즌 단계 랭킹과 길드·서버 첫 클리어 보상",
+        "장비(Equipment)·공명의 전당(Resonating Hall)"
+      ],
+      "idleMechanics": "위키 표 기준 기본 방치 시간 2시간 48분에 미스틱 컬렉션 조건별 +5~7시간이 더해진다(조건은 일일 퀘스트 상자 수령 횟수, 영웅 모집 횟수 60~150회, VIP 레벨 1~20 등). Instant AFK는 2시간분을 즉시 지급하며 기본 무료 2회·유료 1회(다이아 50)이고 VIP 레벨에 따라 유료 시도가 100/200/300 다이아로 추가된다. 미사용 시도는 7일간 저장된다(위키/커뮤니티, 2026-10-14 조회).",
+      "socialAndLiveOps": [
+        "시즌: Song of Strife(2024-05 보도), Waves of Intrigue(2024-09-19), Chains of Eternity(2024-12 보도) 등 4개월 주기(위키피디아)",
+        "Fairy Tail 크로스오버 2025-05-01 시작, Dimensional Factions 시리즈 첫 IP(PocketGamer.biz 2025-03-31)",
+        "시즌 AFK 스테이지 단계 랭킹: Top1~10 다이아 500 + 시간 정수 등 보상(위키)",
+        "길드·아레나·슈프림 아레나",
+        "앱 버전 1.8.1.1이 2026-10-08 갱신"
+      ],
+      "popularityFactors": [
+        "AFK Arena의 기존 커뮤니티가 초기 유입을 만들었다(Lilith 인터뷰)",
+        "동화책풍 아트와 오픈월드가 방치 장르 이미지를 넓혔다(해석)",
+        "아시아 출시 후 매출이 급증(2024-08-11 일 매출 336만 달러, AppMagic)",
+        "Lilith는 시즌 콘텐츠·오픈월드·MMO 요소로 안정적인 DAU·매출을 유지한다고 밝힘(2025-09-18 PocketGamer.biz)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국 구입 목록은 상품명이 '$0.99 product'처럼 가격 표기뿐이며 $0.99~$99.99의 10개 가격대가 있다. 가챠 모집은 다이아 300(1회)·2,700(10회)로 위키에 표기되고, 미국 리뷰는 10연차가 약 $50라는 불만을 제기했다.",
+        "products": [
+          {
+            "name": "$0.99 product",
+            "price": "$0.99(일본 ¥160, 한국 ₩1,500)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 'AFK Journey' 앱 내 구입 목록"
+          },
+          {
+            "name": "$4.99 product",
+            "price": "$4.99(일본 ¥800, 한국 ₩7,500)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 앱 내 구입 목록"
+          },
+          {
+            "name": "$14.99 Product",
+            "price": "$14.99(일본 ¥2,400, 한국 ₩23,000)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 앱 내 구입 목록"
+          },
+          {
+            "name": "$49.99 product",
+            "price": "$49.99(일본 ¥8,000, 한국 ₩79,000)",
+            "contents": "미확인(미국 리뷰가 10연차 약 $50로 언급)",
+            "evidence": "App Store 미국 구입 목록 / 2024-08-31 미국 리뷰"
+          },
+          {
+            "name": "$99.99 product",
+            "price": "$99.99(일본 ¥15,800, 한국 ₩149,000)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 가격대: $0.99, $2.99, $4.99, $6.99, $9.99, $14.99, $19.99, $29.99, $49.99, $99.99(2026-10-14 조회)",
+          "한국 App Store: ₩1,500~₩149,000, 일본: ¥160~¥15,800(2026-10-14 조회)",
+          "2024-08-31 미국 리뷰: '10연차 $50, 일부 번들은 $100까지', 'Classic Gazette(일 300 젬)만 가치 있음'",
+          "위키(커뮤니티): 올히어로 모집 1회 다이아 300/10회 2,700, 레이트업 모집 10회 3,000 다이아"
+        ],
+        "unverified": "상품명과 구성 내용(상품명이 가격 표기뿐), 월정액·패스의 정확한 가격, 공식 확률 공시 페이지는 확인하지 못했다. 확률 수치는 팬 위키에서만 확인.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "revenue": "AppMagic(PocketGamer.biz 2024-09-23): 누적 총매출 1억5,830만 달러(2024-09-21), 일 최고 336만 달러(2024-08-11). PocketGamer.biz 2025-09-18: 누적 플레이어 지출 약 2.5억 달러(Google Play+App Store, AppMagic 추정)",
+        "downloads": "Wikipedia: 2024-12 기준 누적 1,500만 초과(출처 표기 위키). 이후 수치 미확인",
+        "chart": "센서타워 2025 Q4 미국 Idle RPG 매출 상위 5위, 주간 매출 정점 약 17.5만 달러(2025-11 중순, 블로그 자동 생성 글)",
+        "rating": "App Store 미국 4.83(74,649건), 한국 4.86(21,866건), 일본 4.72(25,797건), 중국 4.85(160,227건), Google Play 4.53(300,870건)(2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS·Android 각 약 60만 달러, 직전 월 다운로드 iOS 약 5만·Android 약 4만(반올림 추정). 국가별 누적 매출 비중(AppMagic 2024-09): 미국 28%, 중국 22%, 한국 14%, 대만 6%, 일본 5%"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 리뷰: 아트 스타일·캐릭터 디자인 호평, 매일 접속",
+          "클래식 가제트(일 300 젬)는 가치가 있다는 평가",
+          "2024 App Store Awards 최고 게임 수상(위키피디아)"
+        ],
+        "negative": [
+          "가챠 10연차 약 $50, 번들 최대 $100로 과금이 비싸다는 불만(2024-08-31 미국 리뷰)",
+          "번역 누락·성별 표기 불일치(미국 리뷰)",
+          "미국 최근 100건 평균 3.22로 1점 31건"
+        ],
+        "basis": "센서타워 앱 페이지의 featured reviews(2024-08-31) 2건과 App Store 미국 최근 100건 평점 분포(2026-05-26~2026-10-10 평균 3.22: 1점 31·2점 9·3점 8·4점 11·5점 41)."
+      },
+      "takeaways": {
+        "borrow": [
+          "진행도·VIP로 방치 시간을 해금하는 구조와 Instant AFK 즉시 수령",
+          "4개월 시즌 + 시즌 단계 랭킹 + 길드 첫 클리어 보상",
+          "IP 크로스오버를 별도 Dimensional 진영으로 편입"
+        ],
+        "avoid": [
+          "10연차 약 $50 수준의 고가 모집에 대한 반발",
+          "상품명을 가격 표기로만 두는 상점 UX",
+          "시즌 리셋 시 번역·표기 오류 누적"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/afk-journey/id1628970855",
+          "title": "AFK Journey - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 가격대 10종, 평점 4.83(74,649건)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1628970855",
+          "title": "AFK: 새로운 여정 - App Store(한국)",
+          "type": "스토어",
+          "note": "한국 가격 ₩1,500~₩149,000, 평점 4.86",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id1628970855",
+          "title": "AFK：ジャーニー - App Store(일본)",
+          "type": "스토어",
+          "note": "일본 가격 ¥160~¥15,800, 평점 4.72",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/afk-journey-surpasses-150-million-with-asian-market-dominance/",
+          "title": "AFK Journey surpasses $150 million with Asian market dominance",
+          "type": "보도",
+          "note": "AppMagic: 누적 1억5,830만 달러, 일 최고 336만 달러, 국가별 비중",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/lilith-games-talks-chinas-comeback-market-maturity-and-one-year-of-afk-journey/",
+          "title": "Lilith Games talks China's comeback ... one year of AFK Journey",
+          "type": "보도",
+          "note": "2025-09-18 누적 약 2.5억 달러, 서구 2024-03-27·중국 2024-08-08, 안정적 DAU·매출 언급",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/AFK_Journey",
+          "title": "AFK Journey - Wikipedia",
+          "type": "위키/커뮤니티",
+          "note": "진영·직업, 시즌, 1,500만 다운로드, 수상",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://afk-journey.fandom.com/wiki/All-Hero_Recruitment",
+          "title": "AFK Journey Wiki - All-Hero Recruitment",
+          "type": "위키/커뮤니티",
+          "note": "모집 확률·천장·비용",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://afk-journey.fandom.com/wiki/AFK_Stage",
+          "title": "AFK Journey Wiki - AFK Stage",
+          "type": "위키/커뮤니티",
+          "note": "방치 시간 표, Instant AFK, 시즌 랭킹 보상",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "watcher-of-realms",
+      "name": "Watcher of Realms",
+      "originalName": "Watcher of Realms (미국판 'Watcher of Realms - US')",
+      "url": "https://apps.apple.com/us/app/id6741674823",
+      "developer": "Moonton(위키 표기)",
+      "publisher": "Skystone Games Pte. Ltd.(미국판 App Store 판매자), VIZTA PTE. LTD.(일본판)",
+      "origin": "중국(Moonton) / 싱가포르 퍼블리셔",
+      "release": "2023-07-06(Moonton, 위키 표기) / 미국판 App Store 2025-03-31, Android 2025-03-08(센서타워) / 일본 App Store 2024-03-27",
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC(위키 표기)"
+      ],
+      "subgenre": "영웅 수집 타워 디펜스형 RPG(위키 표기)",
+      "businessModel": "부분유료(IAP 중심: 소환 크리스탈 번들)",
+      "status": "서비스 중(앱 버전 1.6.38.829.1, 2026-09-22 갱신)",
+      "description": "Moonton이 2023년 7월 낸 타워 디펜스/RPG 하이브리드 영웅 수집 게임으로, 서구판은 Skystone 이름으로 2025년 재출시되었다. 소환(배너) 풀과 세 종류의 천장 규칙이 위키에 상세히 정리되어 있다.",
+      "coreLoop": [
+        "소환 크리스탈로 영웅을 소환한다",
+        "영웅을 성장·배치해 전투를 진행한다",
+        "이벤트·배너에 맞춰 재화를 모은다",
+        "다음 소환으로 이동한다"
+      ],
+      "features": [
+        "소환은 희귀도 판정 후 풀 내 영웅을 결정하는 2단계 RNG(위키)",
+        "Rare/Legendary/Ancient 3종 소환 크리스탈과 각각 별도 천장 트랙",
+        "한정 배너와 선택형(Select Your Hero) 배너",
+        "공명 포인트(Resonance Points) 시스템",
+        "서구판과 일본판이 다른 퍼블리셔로 운영"
+      ],
+      "progression": [
+        "영웅 소환 수집",
+        "영웅 레벨·진영",
+        "공명 포인트",
+        "스킨",
+        "이벤트 보상"
+      ],
+      "idleMechanics": "미확인(방치 보상 상세는 확인하지 못했다).",
+      "socialAndLiveOps": [
+        "신규 영웅 투입(Amelia Ainsworth, Galloway, Garroq, Rorkesh 등 위키 메인)",
+        "한정 배너·이벤트(Creed Dossier 등 위키 표기)",
+        "앱 버전 1.6.38.829.1이 2026-09-22 갱신(App Store 조회)"
+      ],
+      "popularityFactors": [
+        "센서타워 직전 월 매출 추정이 iOS 약 50만·Android 약 60만 달러로 신작급(반올림 추정)",
+        "상세한 천장 보정이 존재해 소환 신뢰도가 높다(해석)",
+        "미국판 평점 4.68(3,157건)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국에는 $0.99~$99.99의 'Bundle' 상품이 있고, 일본 App Store에서는 ¥180~¥12,100로 환산 표기된다. 소환 천장은 위키에 Rare 200회 확정, Legendary 20회 확정이 표기된다.",
+        "products": [
+          {
+            "name": "0.99 Bundle",
+            "price": "¥180(일본)",
+            "contents": "번들(구성 미확인)",
+            "evidence": "App Store 일본 앱 내 구입 목록"
+          },
+          {
+            "name": "9.99 Bundle",
+            "price": "$9.99(일본 ¥1,800)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본 앱 내 구입 목록"
+          },
+          {
+            "name": "49.99 Bundle",
+            "price": "$49.99(일본 ¥8,700)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본 앱 내 구입 목록"
+          },
+          {
+            "name": "99.99 Bundle",
+            "price": "$99.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store: $2.99, $4.99, $9.99, $14.99, $19.99, $29.99, $39.99, $49.99, $69.99, $99.99 Bundle(2026-10-14 조회)",
+          "일본 App Store: ¥180(0.99 Bundle)~¥12,100(69.99 Bundle)",
+          "위키: Rare 소환 180회 미출현 시 천장 발동, 200회 확정 / Legendary 12회 후 발동, 20회 확정 / Ancient 185회 후 발동, 200회 확정"
+        ],
+        "unverified": "번들 구성 내용, 공식 확률 공시, 월정액·패스 상품, 광고는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "rating": "App Store 미국 4.68(3,157건), 일본 4.39(1,133건), Google Play 4.56(7,031건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 50만·Android 약 60만 달러, 직전 월 다운로드 각 약 1만(반올림 추정), Android 설치 구간 10만~50만"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 App Store 평점 4.68",
+          "소환 천장이 다층으로 공개되어 있다는 점(해석)"
+        ],
+        "negative": [
+          "일본 평점 4.39로 미국보다 낮음",
+          "Android 평점 4.56으로 iOS보다 낮음"
+        ],
+        "basis": "App Store·Google Play 평점 수치만 확인. 리뷰 본문과 최근 분포는 조사하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "희귀도별 별도 천장 트랙과 공명 포인트처럼 다층 보정 구조",
+          "서구/일본 지역별 별도 퍼블리싱 판단"
+        ],
+        "avoid": [
+          "번들 상품명을 가격 표기로만 두는 것",
+          "방치 보상 구조가 불명확한 채 가챠 중심으로만 설계하는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6741674823",
+          "title": "Watcher of Realms - US - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 번들 목록, 평점 4.68",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id6470362045",
+          "title": "ウォッチャー・オブ・レルム - App Store(일본)",
+          "type": "스토어",
+          "note": "일본 가격 ¥180~¥12,100",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://watcher-of-realms.fandom.com/wiki/Summoning",
+          "title": "Watcher of Realms Wiki - Summoning",
+          "type": "위키/커뮤니티",
+          "note": "소환 2단계 RNG와 3종 천장",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://watcher-of-realms.fandom.com/wiki/Watcher_of_Realms_Wiki",
+          "title": "Watcher of Realms Wiki",
+          "type": "위키/커뮤니티",
+          "note": "Moonton 2023-07-06 출시 서술, 신규 영웅",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/ios/apps/6741674823?country=US",
+          "title": "센서타워 앱 페이지(Watcher of Realms - US)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출 반올림 추정, 출시일, 평점",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "idle-heroes",
+      "name": "Idle Heroes",
+      "originalName": "Idle Heroes - Idle Games",
+      "url": "https://apps.apple.com/us/app/id1153461915",
+      "developer": "DHGames Limited(DroidHang)",
+      "publisher": "DHGames Limited",
+      "origin": "중국",
+      "release": "2016-11-09(App Store 미국 등록일) / Android 2016-06-22(센서타워)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치형 영웅 수집 오토배틀 RPG(진영·길드전)",
+      "businessModel": "부분유료(IAP 중심 + 주간 구독)",
+      "status": "서비스 중(App Store 버전 1.39.3, 2025-11-26 이후 갱신 미확인)",
+      "description": "400명 이상 영웅과 진영, 방치 시스템, 길드전, 아레나를 갖춘 2016년작 방치 영웅 RPG. AFK형 장르의 선구 격으로 서구에서 장수한다.",
+      "coreLoop": [
+        "스테이지를 골라 오토배틀로 자원과 장비를 모은다",
+        "최대 8시간 누적된 보상을 수령한다",
+        "영웅을 소환·강화하고 진영 파티를 구성한다",
+        "길드전·아레나에 도전한다",
+        "이벤트 패키지에 맞춰 반복한다"
+      ],
+      "features": [
+        "App Store 설명: 400명 이상 영웅, 진영별 스킬, 영웅을 정령 재료로 변환해 진화",
+        "캠페인은 Normal·Nightmare·Hell·Death·Crazy 5단계 난이도(위키)",
+        "길드 보스전, 월드 아레나, 탑·던전(스토어 설명)",
+        "최근 업데이트: Fantasy Arcade - Heroic Breakout, Pioneers' Race, 손오공 영웅 추가(App Store 릴리스 노트)",
+        "주간 구독 'Subscription Extra Gold': 자동전투 골드 +100% 1주일"
+      ],
+      "progression": [
+        "영웅 레벨·진화(정령 변환)",
+        "캠페인 난이도 5단계",
+        "장비 단조",
+        "VIP 레벨(과금액이 VIP 점수로 누적)",
+        "길드·아레나 랭킹"
+      ],
+      "idleMechanics": "자동전투는 최대 8시간까지만 보상이 누적되며 그 시간 내 접속해 수령해야 한다. 보상은 5초 단위 수익으로 계산되고 VIP 레벨이 오르면 수입이 증가한다(위키). 주간 구독으로 골드 +100%(스토어 설명).",
+      "socialAndLiveOps": [
+        "길드전·길드 보스",
+        "월드 아레나 랭킹",
+        "이벤트: 환상 아케이드, 개척자 레이스 등(릴리스 노트)",
+        "마지막 앱 버전 갱신이 2025-11-26으로 확인됨"
+      ],
+      "popularityFactors": [
+        "출시 10년 가까이 유지되는 서구 방치 영웅 RPG로 누적 평점 수가 큼(106,578건)",
+        "주 단위 소액 구독($0.99)으로 진입 장벽이 낮다(해석)",
+        "지속적인 신규 영웅·이벤트(손오공 등)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국 구입 목록은 'event package'·'best value package'·'value package' 계열 $0.99~$99.99와 주간 특권 $0.99다. VIP 시스템이 누적 결제에 따른 영구 혜택을 제공한다.",
+        "products": [
+          {
+            "name": "Consecutive Weekly Privilege",
+            "price": "$0.99",
+            "contents": "주간 특권(구독 설명: 골드 +100%)",
+            "evidence": "App Store 미국 앱 내 구입 목록 / 앱 설명"
+          },
+          {
+            "name": "event package 1",
+            "price": "$4.99",
+            "contents": "이벤트 패키지(구성 미확인)",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "best value package 1",
+            "price": "$14.99",
+            "contents": "구성 미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "event package 5",
+            "price": "$49.99",
+            "contents": "구성 미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "event package 7",
+            "price": "$99.99",
+            "contents": "구성 미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 구입 목록: 주간 특권 $0.99, event package 1~7 $4.99~$99.99, best value package 1 $14.99·2 $4.99, value package m1 $4.99(2026-10-14 조회)",
+          "앱 설명: 주간 구독 $0.99, 자동전투 골드 +100% 1주일 + 황금 용 아바타",
+          "위키(커뮤니티): 1 USD 약 50젬 환산으로 VIP 13레벨은 약 20,000달러로 추정"
+        ],
+        "unverified": "패키지 구성, 소환 확률, 광고 유무는 확인하지 못했다. VIP 환산액은 팬 위키의 추정이다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "rating": "App Store 미국 4.76(106,578건), 일본 4.27(11,434건), 한국 4.51(5,423건), Google Play 4.65(1,073,005건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 60만·Android 약 30만 달러, 직전 월 다운로드 iOS 약 1만·Android 약 7만, Android 설치 구간 1,000만~5,000만(반올림 추정), 상위 국가 CN·US·GB(iOS)"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 최근 100건 중 5점 48건",
+          "평점 4.76으로 장수 서비스 대비 높음"
+        ],
+        "negative": [
+          "미국 최근 100건 중 1점 29건(평균 3.53)",
+          "마지막 앱 업데이트가 2025-11-26으로 확인되어 정체 인상(해석)"
+        ],
+        "basis": "App Store 미국 최근 리뷰 100건 평점 분포(2025-06-15~2026-10-11 평균 3.53: 1점 29·2점 1·3점 6·4점 16·5점 48). 본문 미분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "주간 $0.99 구독처럼 낮은 진입 가격의 반복 결제 상품",
+          "방치 시간 한도를 짧게(8시간) 두어 일 2~3회 접속 유도"
+        ],
+        "avoid": [
+          "VIP 누적 과금이 극단적으로 높은 구간을 만드는 설계",
+          "업데이트 주기가 길어지는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1153461915",
+          "title": "Idle Heroes - Idle Games - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 목록, 구독 설명, 릴리스 노트, 평점 4.76",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://idleheroes.fandom.com/wiki/Campaign",
+          "title": "Idle Heroes Wiki - Campaign",
+          "type": "위키/커뮤니티",
+          "note": "자동전투 최대 8시간, 5단계 난이도",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://idleheroes.fandom.com/wiki/VIP",
+          "title": "Idle Heroes Wiki - VIP",
+          "type": "위키/커뮤니티",
+          "note": "VIP 점수 구조와 추정 비용",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/ios/apps/1153461915?country=US",
+          "title": "센서타워 앱 페이지(Idle Heroes iOS)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출·다운로드 반올림 추정, 출시일",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "afk-arena",
+      "name": "AFK Arena (AFK 아레나 / AFK アリーナ / 剑与远征)",
+      "originalName": "AFK Arena",
+      "url": "https://apps.apple.com/us/app/afk-arena/id1375425432",
+      "developer": "Lilith Games",
+      "publisher": "Lilith Games(LilithGame Co., Ltd)",
+      "origin": "중국",
+      "release": "2019-04-09(App Store 미국 등록일) / Android 2018-06-21(센서타워 표기), 한국 2020-02, 일본 2020-06, 중국 2020-01-03",
+      "platforms": [
+        "Android",
+        "iOS",
+        "PC(Steam, PocketGamer.biz 언급)"
+      ],
+      "subgenre": "방치 보상 + 진영 5인 파티 오토배틀 영웅 수집 RPG(AFK형의 원형)",
+      "businessModel": "부분유료(IAP 중심 + 월/주간 구독 + 인게임 광고)",
+      "status": "서비스 중(클래식 서버 + 컴패니언 서버, 앱 버전 1.204.01, 2026-10-10 갱신)",
+      "description": "2019년 출시되어 방치 영웅 수집 RPG를 서구 시장에 정착시킨 Lilith의 원작. AppMagic 추정 누적 플레이어 지출 15억 달러 초과(2026-04)이나 5년 연속 매출이 감소 중이며 후속작 AFK Journey에 추월당했다.",
+      "coreLoop": [
+        "캠페인 스테이지를 클리어해 방치 보상 한도를 올린다",
+        "AFK 보상 상자(골드·영웅 에센스·경험치·장비)를 수령한다",
+        "노블 태번에서 영웅을 소환하고 진영 파티(5인)를 편성한다",
+        "킹스 타워·아케인 래비린스·아레나·길드 헌트를 한다",
+        "반복한다"
+      ],
+      "features": [
+        "5인 팀 자동 전투, 진영 시너지(8개 진영: Lightbearers, Maulers, Wilders, Graveborn, Celestials, Hypogeans, Dimensionals, Draconis)",
+        "바운티 보드: 영웅 파견 오프라인 의뢰",
+        "킹스 타워, 아케인 래비린스, 아레나 오브 히어로즈 PvP, 길드 협동",
+        "Companions 서버: 1,000회+ 소환, 'Get All Heroes' 이벤트, 친구 영웅 대여, 강화된 비스트 시스템(App Store 설명)",
+        "IP 콜라보: One-Punch Man, Solo Leveling, 슬라임, Kaiju No. 8"
+      ],
+      "progression": [
+        "캠페인 진행도(방치 보상 한도)",
+        "영웅 레벨·장비·아티팩트·시그니처 아이템",
+        "VIP 랭크(방치 보상 증가)",
+        "아레나 랭킹",
+        "길드 코인·래비린스 토큰"
+      ],
+      "idleMechanics": "AFK 보상 상자는 캠페인 진행과 VIP 랭크에 비례해 골드·영웅 에센스·경험치를 누적하며, 상자 외관은 10분·60분·360분·600분 이상에서 바뀐다(위키). Fast Rewards는 120분분 보상을 즉시 지급하며 하루 첫 사용은 무료이고 이후 다이아가 증가한다(위키). 최대 누적 시간은 위키에서 확인하지 못했다.",
+      "socialAndLiveOps": [
+        "7주년 업데이트(2026-04-07): Serennia, 낚시 모드 'Otherworld Fishing'(PocketGamer.biz 2026-04-09)",
+        "Kaiju No. 8 크로스오버 2026-09-23~2026-10-20, 클래식·컴패니언 서버 동시(PocketGamer.biz 2026-09-23)",
+        "App Store 릴리스 노트: Golden Frontier 시즌, Temporal Rift 등 이벤트, 길드 상점·길드 헌트 개선",
+        "길드 헌트, 아레나 2주 시즌(위키)"
+      ],
+      "popularityFactors": [
+        "서구 시장 장르 개척자 지위와 기존 영웅·커뮤니티 자산(해석)",
+        "중국 32%, 미국 24%, 한국 11%, 일본 10% 등 다지역 매출 구조(AppMagic)",
+        "IP 콜라보와 컴패니언 서버 같은 신규 서버 전략으로 복귀 유저 유입 시도"
+      ],
+      "monetization": {
+        "model": "혼합",
+        "summary": "App Store 미국 구입 목록은 '$4.99 Pack' 식의 가격 표기 패키지가 $0.99~$99.99로 있고, 구독은 월 $2.99(설명에 주 $0.99 구독도 명시)다. PocketGamer.biz는 가챠·구독·번들·인게임 광고를 과금 방식으로 서술한다.",
+        "products": [
+          {
+            "name": "$0.99 Pack",
+            "price": "$0.99(일본 ¥120, 한국 ₩1,200)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 'AFK Arena' 앱 내 구입 목록"
+          },
+          {
+            "name": "Subscription (Monthly)",
+            "price": "$2.99",
+            "contents": "팀 바운티 +1, AFK 보상 골드 +10%, 킹스 타워/진영 타워/캠페인 용병 +1, 길드 코인·래비린스 토큰 +10%",
+            "evidence": "App Store 미국 구독 설명"
+          },
+          {
+            "name": "Subscription (Weekly)",
+            "price": "$0.99",
+            "contents": "구독 혜택(설명상 동일 유형)",
+            "evidence": "App Store 미국 앱 설명"
+          },
+          {
+            "name": "$49.99 Pack",
+            "price": "$49.99(일본 ¥6,100, 한국 ₩65,000)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 앱 내 구입 목록"
+          },
+          {
+            "name": "$99.99 Pack",
+            "price": "$99.99(일본 ¥12,000, 한국 ₩119,000)",
+            "contents": "미확인",
+            "evidence": "App Store 미국·일본·한국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 가격대: $0.99, $1.99, $4.99, $9.99, $14.99, $19.99, $24.99, $49.99, $99.99 Pack 및 월 구독 $2.99(2026-10-14 조회)",
+          "일본: ¥120~¥12,000 + 360円購読パック / 한국: ₩1,200~₩119,000 + 3,900원 구독 패키지",
+          "구독 혜택 목록은 App Store 설명 기준(팀 바운티 +1, AFK 골드 +10% 등)",
+          "위키: 노블 태번 소환 1회 300 다이아, 10회 2,700 다이아"
+        ],
+        "unverified": "패키지 구성, 소환 확률 공시, 보상형 광고 위치와 보상은 확인하지 못했다. 설명의 월 구독 '주당 $2.99' 표기는 오기로 보여 월 $2.99로 정리했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "revenue": "AppMagic(PocketGamer.biz 2026-04-09): 누적 플레이어 지출 15억 달러 초과, 첫 달 1,210만·최고 월 1억540만(2020-01)·첫해 4.698억·둘째해 5.283억 달러. 6주년(2025-04) 이후 2,880만 달러 추가(그중 중국 420만). 5년 연속 감소",
+        "downloads": "Wikipedia: 4,500만 이상(시점 미표기), 2019-06 기준 660만 플레이어",
+        "rating": "App Store 미국 4.71(497,704건), 한국 4.58(124,720건), 일본 4.33(128,734건), 중국 4.64(613,207건), Google Play 4.50(3,694,407건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 30만·Android 약 50만 달러, 직전 월 다운로드 iOS 약 1만·Android 약 2만(반올림 추정), 누적 지출 국가 비중(AppMagic): 중국 32%, 미국 24%, 한국 11%, 일본 10%"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 최근 100건 중 5점 65건(평균 4.15)",
+          "20만 건 이상 누적 평점에서도 4.7대 유지"
+        ],
+        "negative": [
+          "미국 최근 100건 중 1점 12건",
+          "PocketGamer.biz: 5년 연속 매출 감소(서비스 노후화 시사, 해석)"
+        ],
+        "basis": "App Store 미국 최근 리뷰 100건 평점 분포(2026-06-23~2026-10-08 평균 4.15: 1점 12·2점 2·3점 10·4점 11·5점 65). 본문 미분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "Fast Rewards처럼 무료 1회 + 다이아 추가의 방치 즉시 수령",
+          "신규·복귀 유저용 별도 서버(컴패니언)와 대량 무료 소환",
+          "IP 콜라보를 서버 동시 진행"
+        ],
+        "avoid": [
+          "서비스 장기화 시 매출이 5년 연속 감소하는 노후화 위험",
+          "가격 표기뿐인 상품명"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/afk-arena/id1375425432",
+          "title": "AFK Arena - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 목록, 구독 설명, Companions 설명, 평점 4.71",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/jp/app/id1478872810",
+          "title": "AFK アリーナ - App Store(일본)",
+          "type": "스토어",
+          "note": "일본 가격 ¥120~¥12,000",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1475474300",
+          "title": "AFK 아레나 - App Store(한국)",
+          "type": "스토어",
+          "note": "한국 가격 ₩1,200~₩119,000",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/afk-arena-celebrates-seventh-anniversary-and-over-15bn-in-lifetime-earnings/",
+          "title": "AFK Arena celebrates seventh anniversary and over $1.5bn in lifetime earnings",
+          "type": "보도",
+          "note": "AppMagic 누적 15억 달러, 지역 비중, 5년 연속 감소, 7주년 업데이트",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/afk-arena-brings-kaiju-no-8-characters-in-game-with-crossover-starting-today/",
+          "title": "AFK Arena brings Kaiju No. 8 characters in-game",
+          "type": "보도",
+          "note": "2026-09-23 크로스오버, 클래식·컴패니언 서버",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/AFK_Arena",
+          "title": "AFK Arena - Wikipedia",
+          "type": "위키/커뮤니티",
+          "note": "진영, 모드, 4,500만 다운로드, 누적 약 10억 달러(Udonis 2023)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://afk-arena.fandom.com/wiki/AFK_rewards_chest",
+          "title": "AFK Arena Wiki - AFK rewards chest",
+          "type": "위키/커뮤니티",
+          "note": "AFK 상자 구조",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://afk-arena.fandom.com/wiki/Fast_Rewards",
+          "title": "AFK Arena Wiki - Fast Rewards",
+          "type": "위키/커뮤니티",
+          "note": "120분분 즉시 보상",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "overmortal",
+      "name": "Overmortal-Idle RPG",
+      "originalName": "Overmortal",
+      "url": "https://apps.apple.com/us/app/id6450879111",
+      "developer": "Hongkong Leiting Information Technology Co., Limited(App Store 판매자 표기)",
+      "publisher": "LTGAMES GLOBAL",
+      "origin": "중국",
+      "release": "2023-08-22(App Store 미국) / Android 2023-08-17(센서타워)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "텍스트 모험형 카드 RPG + 수선(修仙) 방치 성장",
+      "businessModel": "부분유료(IAP 중심)",
+      "status": "서비스 중(앱 버전 1.4.26091604, 2026-10-08 갱신)",
+      "description": "필멸자에서 불사자로 성장하는 수선 세계를 텍스트 선택지와 카드 스킬로 풀어낸 방치형 RPG. 센서타워 2025 Q2·Q3 미국 Idle RPG 매출 상위 5위에 올랐다.",
+      "coreLoop": [
+        "선택지가 있는 스토리·NPC 대화를 진행한다",
+        "스킬 카드를 조합해 보스를 도전한다",
+        "방치로 쌓인 성장을 수령해 강화한다",
+        "펫을 동료로 진화시키고 서버 랭킹에 도전한다",
+        "다음 영역(Realm)으로 넘어가 반복한다"
+      ],
+      "features": [
+        "App Store 설명: 텍스트 기반 모험 카드 RPG, 여러 Realm 탐험과 NPC 스토리 대화",
+        "펫을 인간형 동료로 진화, 스킬 조합과 서버 정상 도전",
+        "선택에 따라 어둠/밝음 경로 분기('Pick your own path')",
+        "다양한 월드 보스 도전",
+        "선택 부담 없이 흐름대로 진행 가능(설명)"
+      ],
+      "progression": [
+        "수선 경지(Realm) 돌파",
+        "스킬 카드 조합",
+        "펫·동료 진화",
+        "서버 랭킹",
+        "경로(어둠/밝음) 선택 보너스"
+      ],
+      "idleMechanics": "미확인(앱 이름은 Idle RPG이나 오프라인 누적 한도와 가속 방식은 확인하지 못했다).",
+      "socialAndLiveOps": [
+        "서버 단위 랭킹(설명의 'soaring to the top on your server')",
+        "앱 버전 1.4.26091604가 2026-10-08 갱신(App Store 조회)",
+        "이벤트·시즌 주기는 미확인"
+      ],
+      "popularityFactors": [
+        "텍스트 선택지와 카드 조합으로 방치 중에도 판단 요소를 제공(해석)",
+        "센서타워 Q3 2025 미국 주간 매출 정점 약 13.5만 달러(2025-08 중순, 블로그 자동 생성 글)",
+        "iOS 평점 4.76(16,373건)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국에 $0.99~$29.99의 팩과 일일 특별 팩, 'Cultivation Road Pack' 등이 확인된다. 구성 내용은 가격 표기형 상품명이어서 확인하지 못했다.",
+        "products": [
+          {
+            "name": "Special PackⅠ",
+            "price": "$0.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 'Overmortal-Idle RPG' 앱 내 구입 목록"
+          },
+          {
+            "name": "Daily Special Pack III",
+            "price": "$0.99",
+            "contents": "일일 특별 팩(세부 미확인)",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "Cultivation Road Pack",
+            "price": "$4.99",
+            "contents": "수선 성장 팩(세부 미확인)",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "$29.99 Pack",
+            "price": "$29.99",
+            "contents": "미확인",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store 가격대: $0.99, $1.99, $2.99, $4.99, $9.99, $14.99, $19.99, $29.99 Pack과 Special/Daily Special/Cultivation Road Pack(2026-10-14 조회, 목록은 상위 10개 표시)"
+        ],
+        "unverified": "구성 내용, 월정액·패스, 광고, 뽑기/카드 확률 공시는 확인하지 못했다. 구입 목록은 상위 10개만 조회됐다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "chart": "센서타워 미국 Idle RPG 매출 상위 5위: 2025 Q2(주간 정점 약 14.6만 달러, 3월; 6월 말 약 10.3만) 및 2025 Q3(주간 정점 약 13.48만 달러, 8월 중순)(블로그 자동 생성 글)",
+        "rating": "App Store 미국 4.76(16,373건), Google Play 4.26(28,353건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 20만·Android 약 30만 달러, 직전 월 다운로드 iOS 약 1만·Android 약 2만(반올림 추정), 상위 국가 US·GB·CA(iOS), Android 설치 구간 100만~500만"
+      },
+      "userFeedback": {
+        "positive": [
+          "미국 최근 100건 중 5점 30건",
+          "iOS 평점 4.76으로 높음"
+        ],
+        "negative": [
+          "미국 최근 100건 중 1점이 40건으로 평균 2.86점",
+          "Android 평점 4.26으로 iOS보다 낮음"
+        ],
+        "basis": "App Store 미국 최근 리뷰 100건 평점 분포(2025-07-30~2026-10-11 평균 2.86: 1점 40·2점 5·3점 14·4점 11·5점 30). 본문 미분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "텍스트 선택지와 카드 조합을 방치 성장에 얹는 저비용 연출",
+          "일일 특별 팩($0.99)과 성장 로드 팩을 묶는 소액 설계"
+        ],
+        "avoid": [
+          "최근 리뷰 1점 비중이 높은 구간의 운영 리스크",
+          "방치 보상 구조를 설명하지 않는 온보딩"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6450879111",
+          "title": "Overmortal-Idle RPG - App Store(미국)",
+          "type": "스토어",
+          "note": "앱 내 구입 목록, 설명, 평점 4.76",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q3-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+          "title": "센서타워 2025 Q3 미국 Top 5 Idle RPG(매출)",
+          "type": "데이터(추정)",
+          "note": "Overmortal 주간 매출 정점 약 13.48만 달러",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+          "title": "센서타워 2025 Q2 미국 Top 5 Idle RPG(매출)",
+          "type": "데이터(추정)",
+          "note": "Overmortal 주간 매출 정점 약 14.6만 달러",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/ios/apps/6450879111?country=US",
+          "title": "센서타워 앱 페이지(Overmortal iOS)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출·다운로드 반올림 추정, 상위 국가",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "ulala-idle-adventure",
+      "name": "Ulala: Idle Adventure",
+      "originalName": "Ulala: Idle Adventure",
+      "url": "https://apps.apple.com/us/app/id1473544990",
+      "developer": "X.D. Global(XD)",
+      "publisher": "X.D. Global Limited",
+      "origin": "중국",
+      "release": "2019-09-11(App Store 미국) / Android 2019-07-31(센서타워)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "방치형 MMORPG(석기시대 배경, 자동 레벨업)",
+      "businessModel": "부분유료(IAP 중심: 진주 재화 + 월/시즌 패스)",
+      "status": "서비스 중(앱 버전 1.218, 2026-10-09 갱신)",
+      "description": "석기시대 배경의 방치형 MMORPG로, 캐릭터와 펫이 자동으로 레벨업하고 파티 플레이를 지원한다. 시즌제 헌팅 이벤트와 월/시즌 패스로 7년 이상 운영 중이다.",
+      "coreLoop": [
+        "자동 전투로 캐릭터·펫이 자동 성장한다",
+        "스킬 카드·에픽 장비를 수집해 스킬 세트를 구성한다",
+        "친구와 파티를 구성해 협동 콘텐츠를 한다",
+        "시즌 헌팅 이벤트에 참여한다",
+        "반복한다"
+      ],
+      "features": [
+        "App Store 설명: 방치형 MMORPG, 캐릭터와 펫의 자동 업그레이드와 무한 레벨업",
+        "고정 직업이 없는 스킬 카드·장비 조합",
+        "시즌 'Hunting Horn' 이벤트와 티라노사우루스 탈것",
+        "파티 플레이로 보너스 획득",
+        "채팅·식사 중에도 즐길 수 있는 가벼운 플레이(설명)"
+      ],
+      "progression": [
+        "캐릭터·펫 자동 레벨업",
+        "에픽 장비 수집·강화",
+        "스킬 카드 해금·강화",
+        "시즌 랭킹/사냥꾼 칭호(시즌 이벤트)",
+        "패스 단계"
+      ],
+      "idleMechanics": "스토어 설명이 자동 업그레이드·무한 레벨업과 방치 플레이를 강조한다. 최대 누적 시간과 가속 상품 효과는 확인하지 못했다.",
+      "socialAndLiveOps": [
+        "시즌제 헌팅 이벤트(스토어 설명)",
+        "파티 협동 보너스",
+        "앱 버전 1.218이 2026-10-09 갱신(App Store 조회)"
+      ],
+      "popularityFactors": [
+        "MMORPG를 방치형으로 압축해 직장·통학 중에도 즐기게 설계(해석)",
+        "iOS 평점 4.76(45,216건), 7년 이상 운영",
+        "월/시즌 패스로 정기 결제 흐름 형성(해석)"
+      ],
+      "monetization": {
+        "model": "IAP 중심",
+        "summary": "App Store 미국에 '진주(Pearl)' 재화 $0.99~$99.99와 30일 월 패스 $4.99, 진주 축복 $4.99, 시즌 패스(90일) $12.99, 디럭스 패스 $14.99가 확인된다.",
+        "products": [
+          {
+            "name": "Pearlx60",
+            "price": "$0.99",
+            "contents": "진주 60개",
+            "evidence": "App Store 미국 'Ulala: Idle Adventure' 앱 내 구입 목록"
+          },
+          {
+            "name": "Monthly Pass(30 days)",
+            "price": "$4.99",
+            "contents": "30일 월 패스",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "Season Pass(90 days)",
+            "price": "$12.99",
+            "contents": "90일 시즌 패스",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "Deluxe Pass",
+            "price": "$14.99",
+            "contents": "디럭스 패스(세부 미확인)",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          },
+          {
+            "name": "Pearlx6000",
+            "price": "$99.99",
+            "contents": "진주 6,000개",
+            "evidence": "App Store 미국 앱 내 구입 목록"
+          }
+        ],
+        "verified": [
+          "미국 App Store: Pearlx60 $0.99, x300 $4.99, x600 $9.99, x1200 $19.99, x6000 $99.99, Monthly Pass $4.99, Pearl Blessing(30일) $4.99, Pearl Treasure(30일) $4.99, Season Pass(90일) $12.99, Deluxe Pass $14.99(2026-10-14 조회)"
+        ],
+        "unverified": "패스별 보상 구성, 광고 유무, 확률 공시는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "rating": "App Store 미국 4.76(45,216건), Google Play 3.89(155,556건, 센서타워 2026-10-14)",
+        "other": "센서타워 앱 페이지 2026-10-14 직전 월 매출 추정: iOS 약 20만·Android 약 9만 달러, 직전 월 다운로드 각 약 1천(반올림 추정), 상위 국가 US·JP·KR(iOS), Android 설치 구간 500만~1,000만"
+      },
+      "userFeedback": {
+        "positive": [
+          "iOS 평점 4.76으로 높음",
+          "누적 평점 수가 크고 장수 서비스"
+        ],
+        "negative": [
+          "Google Play 평점 3.89로 iOS와 격차가 큼",
+          "리뷰 본문과 최근 분포는 확인하지 못함"
+        ],
+        "basis": "스토어 평점 수치만 확인(센서타워 2026-10-14). 본문과 최근 분포는 조사하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "월/시즌/디럭스 패스를 기간별(30/90일)로 나눠 정기 결제 단계를 만드는 설계",
+          "고정 직업 없는 스킬 카드 조합"
+        ],
+        "avoid": [
+          "플랫폼별 평점 격차를 방치하는 것",
+          "방치 보상 상한을 불명확하게 두는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1473544990",
+          "title": "Ulala: Idle Adventure - App Store(미국)",
+          "type": "스토어",
+          "note": "설명, 앱 내 구입 목록, 평점 4.76",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/ios/apps/1473544990?country=US",
+          "title": "센서타워 앱 페이지(Ulala iOS)",
+          "type": "데이터(추정)",
+          "note": "직전 월 매출 반올림 추정, 상위 국가",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://app.sensortower.com/api/android/apps/com.xdg.and.wll?country=US",
+          "title": "센서타워 앱 페이지(Ulala Android)",
+          "type": "데이터(추정)",
+          "note": "Android 평점 3.89, 설치 구간 500만~1,000만",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "deepDive": {
+    "gameId": "afk-journey",
+    "title": "AFK Arena의 방치·영웅 수집 공식을 시즌제·오픈월드로 확장해 2024년 신작 매출 상위권에 오른 장르 대표 후속작이다.",
+    "summary": "AFK Journey는 AFK Arena의 방치 보상 구조를 이어받되 4개월 주기 시즌과 오픈월드 탐험, 시즌별 AFK 스테이지 리셋을 결합했다. 서구 2024-03-27, 아시아 2024-08-08 출시 후 AppMagic 추정으로 2024-09-21 누적 1억5,830만 달러, 2025-09 누적 약 2억5천만 달러에 이르렀다. 방치 시간은 VIP·모집 횟수에 묶인 '미스틱 컬렉션'으로 해금되고, Instant AFK는 무료 2회 후 다이아로 추가 구매되는 등 방치 보상 자체가 과금 가속 지점이다. 가챠 확률은 공식 공시를 확인하지 못해 팬 위키 수치를 썼다. 미국 리뷰는 10연차 약 $50 가격에 대한 불만을 보여 과금 설계의 위험도 함께 시사한다.",
+    "firstSession": [
+      "Esperia 세계에서 기억을 잃은 마법사 Merlin으로 시작해 동화책풍 세계에서 전략 카드 배틀을 한다(App Store 설명)",
+      "출시 이벤트 문구: 로그인해 런치 영웅을 모두 수령하고 꿈의 포메이션으로 시작한다(App Store 설명)",
+      "첫 10회 올히어로 모집 특수 규칙: 1회 A급 Fay, 2회 A급 Lucius, 3~10회 첫 S급은 Cecia 보장(위키)",
+      "11회째부터 20회 안에 S급 Hewynn·Rowan·Smokey & Meerky 중 하나 보장, 이후 40회 안에 S급 1개 이상(위키)",
+      "AFK 스테이지를 진행해 방치 보상을 시작한다. 영구 AFK 스테이지를 먼저 클리어해야 시즌 스테이지가 열린다(위키)",
+      "오픈월드의 퍼즐·텔레포트 지점과 길드 기능을 개방한다(위키피디아). 첫 10~30분의 시간별 FTUE 흐름은 직접 확인하지 못함"
+    ],
+    "coreLoop": [
+      {
+        "step": "AFK 스테이지를 진행한다",
+        "detail": "스테이지 진행도가 방치 보상 한도를 올리고 시즌 AFK 스테이지는 단계 랭킹과 연결된다(위키)."
+      },
+      {
+        "step": "방치 보상을 수령한다",
+        "detail": "골드·시즌 매뉴얼·영웅 에센스 등을 수령하고, Instant AFK로 2시간분을 즉시 받는다(위키)."
+      },
+      {
+        "step": "영웅을 모집·승급한다",
+        "detail": "올히어로·에픽·레이트업 모집으로 6개 진영 영웅을 얻고 진영 아코른으로 승급한다(위키)."
+      },
+      {
+        "step": "오픈월드·모드를 한다",
+        "detail": "탐험, 드림 렐름, 아레나, 길드 등으로 재화를 추가 획득한다(위키피디아)."
+      },
+      {
+        "step": "시즌 리셋에 대응한다",
+        "detail": "4개월마다 새 시즌이 열리고 시즌 AFK 스테이지가 리셋되어 같은 루프가 재시작된다(위키)."
+      }
+    ],
+    "currencies": [
+      {
+        "name": "Diamond(다이아)",
+        "earn": "시즌 AFK 단계 랭킹 보상(Top1~10 다이아 500, 최저 구간 200) 등. 현금 구매 가능(상점 상품)",
+        "spend": "모집(1회 300, 10회 2,700), 유료 Instant AFK 시도(50~300)",
+        "paid": true
+      },
+      {
+        "name": "Invite Letter(초대장)",
+        "earn": "획득처 세부 미확인(모집 보상 상점 연계 추정 불가)",
+        "spend": "올히어로 모집 1회당 1장(10장=10연차)",
+        "paid": false
+      },
+      {
+        "name": "Dolly Ticket",
+        "earn": "모집 1회당 5장(올히어로), 10장(에픽)",
+        "spend": "Recruitment Store 교환",
+        "paid": false
+      },
+      {
+        "name": "Faction Acorn",
+        "earn": "올히어로 모집 상금(1·4·30개 구간)",
+        "spend": "해당 진영 영웅 승급",
+        "paid": false
+      },
+      {
+        "name": "Soul Sigil",
+        "earn": "이미 보유한 영웅을 다시 모집하면 전환(레이트업 A급 모집 시 8개)",
+        "spend": "영웅 성장(세부 사용처 미확인)",
+        "paid": false
+      },
+      {
+        "name": "AFK 패시브 자원(골드·시즌 매뉴얼·시즌 에센스·영웅 에센스·훈련 매뉴얼)",
+        "earn": "AFK 스테이지 방치 누적",
+        "spend": "영웅 레벨업·시즌 성장",
+        "paid": false
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "AFK 스테이지 진행도",
+        "detail": "방치 보상량·드랍을 결정하며 시즌 단계 랭킹에도 반영된다.",
+        "monetized": "무료"
+      },
+      {
+        "name": "영웅 수집·승급",
+        "detail": "6개 진영 영웅을 모집하고 진영 아코른으로 승급한다.",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "미스틱 컬렉션(방치 시간 해금)",
+        "detail": "기본 2시간 48분에 일일 퀘스트 상자, 모집 횟수, 아레나 등급, VIP 레벨 조건으로 +5~7시간을 해금한다(위키 표).",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "시즌 단계 랭킹",
+        "detail": "길드·서버·구역 첫 클리어 보상과 단계별 다이아·시간 정수 보상.",
+        "monetized": "무료"
+      },
+      {
+        "name": "장비·공명의 전당",
+        "detail": "영웅 장비와 공명 시스템(세부 미확인).",
+        "monetized": "유료 가속"
+      }
+    ],
+    "gacha": {
+      "pools": [
+        "올히어로 모집(16명 풀, S급 8·A급 8)",
+        "에픽 모집(위시리스트 5명 지정)",
+        "스타게이즈 스테이션",
+        "레이트업 모집(한정)",
+        "디멘셔널 콜(한정)",
+        "리터너 모집"
+      ],
+      "rates": [
+        "올히어로: S급(위시리스트) 통합 확률 2.05%(기본 0.72%), A급 22.5%(기본 20.68%) — 위키",
+        "레이트업: 레이트업 영웅 통합 3.0%(기본 0.97%), A급 위시리스트 10.0% — 위키",
+        "에픽: 10회마다 A급 이상 보장, 기본 A급 96.57%·에픽 3.43% — 위키"
+      ],
+      "pity": "올히어로: 10회마다 A급 이상, 60회마다 S급 보장(올히어로 모집 위키). 레이트업: 40회마다 레이트업 영웅 보장. 에픽: 30회 보장(위키 인포박스). 신규 유저 특수 규칙으로 첫 10회와 11~20회 안에 S급 보장.",
+      "source": "AFK Journey Wiki(fandom) All-Hero/Rate Up/Epic Recruitment 페이지(공식 확률 공시는 확인하지 못함)"
+    },
+    "offline": "위키 표 기준 기본 방치 시간 2시간 48분에 미스틱 컬렉션 조건별 +5~7시간이 합산되며, 최대 합계는 조건 해금 수에 따라 달라진다. 방치 자원은 골드·시즌 매뉴얼·시즌 에센스·영웅 에센스·훈련 매뉴얼과 무작위 영웅 장비이며 AFK 스테이지·미스틱 컬렉션 진행도로 상한이 정해진다. Instant AFK는 2시간분을 즉시 지급하며 기본 무료 2회·유료 1회(다이아 50), 일일 상한을 넘지 않는다. 미사용 시도는 7일 저장 후 소멸한다.",
+    "adPlacements": [
+      "보상형 광고의 위치와 보상은 조사 범위에서 확인하지 못했다."
+    ],
+    "storeStructure": [
+      "미국 App Store 구입 목록 10개 가격대: $0.99, $2.99, $4.99, $6.99, $9.99, $14.99, $19.99, $29.99, $49.99, $99.99(상품명은 'product' 표기)",
+      "한국 ₩1,500~₩149,000, 일본 ¥160~¥15,800(App Store 환산 표기)",
+      "Recruitment Store: 모집 시 Dolly Ticket으로 보상 교환(위키)",
+      "클래식 가제트(일 300 젬)가 가치 있다는 2024-08-31 미국 리뷰(월정액형 상품으로 추정되나 정식 상품명·가격은 미확인)",
+      "VIP 레벨이 방치 시간·유료 Instant AFK 시도를 해금(위키)"
+    ],
+    "liveOpsCadence": [
+      "4개월 주기 시즌: Song of Strife(2024-05 보도), Waves of Intrigue(2024-09-19), Chains of Eternity(2024-12-30 보도) 등(위키피디아)",
+      "Fairy Tail 크로스오버: 2025-03-31 발표, 2025-05-01 시작, Dimensional Factions 시리즈 첫 IP(PocketGamer.biz)",
+      "Digimon 콜라보 진행(PocketGamer.biz 2026-09-23 기사 언급)",
+      "앱 버전: 1.7.1.1(2026-06-08), 1.7.2.1(2026-07-09), 1.7.3.1(2026-08-18), 1.7.4.1(2026-09-14), 1.8.1.1(2026-10-08) — 약 1개월 간격 업데이트(센서타워 앱 페이지)"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2024-03-27",
+        "event": "구미 출시",
+        "value": "AppMagic: 서구 단독 기간 약 7,100만 달러(아시아 출시 전, PocketGamer.biz 2024-09-23)"
+      },
+      {
+        "date": "2024-04-14",
+        "event": "서구 출시 후 일 매출 기록",
+        "value": "130만 달러(AppMagic)"
+      },
+      {
+        "date": "2024-08-08",
+        "event": "아시아 출시(중국 포함)",
+        "value": "중국 첫 5일 약 510만 달러, 글로벌 5일 약 1,260만 달러(PocketGamer.biz 2024-08-13)"
+      },
+      {
+        "date": "2024-08-11",
+        "event": "일 매출 최고",
+        "value": "336만 달러(AppMagic)"
+      },
+      {
+        "date": "2024-09-21",
+        "event": "누적 총매출",
+        "value": "1억5,830만 달러(AppMagic, 국가 비중 미국 28%·중국 22%·한국 14%)"
+      },
+      {
+        "date": "2024-12",
+        "event": "누적 다운로드",
+        "value": "1,500만 초과(Wikipedia 표기)"
+      },
+      {
+        "date": "2025-09-18",
+        "event": "1주년 인터뷰",
+        "value": "누적 플레이어 지출 약 2.5억 달러(AppMagic 추정, Google Play+App Store)"
+      },
+      {
+        "date": "2025-Q4",
+        "event": "센서타워 미국 Idle RPG 매출 5위",
+        "value": "주간 매출 정점 약 17.5만 달러(2025-11 중순, 블로그 자동 생성 글)"
+      },
+      {
+        "date": "2026-04-09",
+        "event": "PocketGamer.biz 7주년 기사",
+        "value": "AFK Journey가 출시 이후 AFK Arena를 앞섰고 2025년 매출이 거의 두 배라고 서술(수치 없음)"
+      },
+      {
+        "date": "2026-10-14",
+        "event": "센서타워 앱 페이지 조회",
+        "value": "직전 월 매출 iOS·Android 각 약 60만 달러, 다운로드 iOS 약 5만·Android 약 4만(반올림 추정)"
+      }
+    ],
+    "strengths": [
+      "AFK Arena에서 이어받은 커뮤니티와 방치 보상 공식으로 초기 유입을 확보했다.",
+      "4개월 시즌과 시즌 AFK 스테이지 리셋으로 반복 접속 동기와 콘텐츠 주기를 만들었다.",
+      "방치 시간 해금이 VIP·모집 횟수에 묶여 방치 보상 자체가 수익화 지점이 되었다.",
+      "미국 4.83, 한국 4.86, 중국 4.85의 높은 스토어 평점과 App Store Awards 수상으로 브랜드 신뢰를 얻었다."
+    ],
+    "weaknesses": [
+      "10연차 약 $50 등 고가 모집에 대한 미국 리뷰 불만이 있다.",
+      "미국 최근 100건 평균 3.22로 최근 리뷰가 양극화되어 있다(1점 31, 5점 41).",
+      "공식 확률 공시 페이지를 확인하지 못해 확률 신뢰도 검증이 어렵다.",
+      "번역 누락·성별 표기 불일치 등 현지화 품질 문제가 지적되었다(2024 미국 리뷰)."
+    ],
+    "lessons": [
+      "방치 보상 한도를 진행도와 소액 구독/VIP로 단계 해금하고, 즉시 수령 횟수를 무료·유료로 나눠 재화 소비처를 만든다.",
+      "시즌 4개월 주기와 시즌 단계 랭킹·길드 첫 클리어 보상을 초기에 설계해 콘텐츠 제작 주기를 고정한다.",
+      "신규 유저 전용 확정 영웅(첫 10회·20회 보정)을 설계해 초반 이탈을 줄인다.",
+      "가챠 가격 구간(10연차 $50)과 번들 상한($100)을 정할 때 서구 이용자 반응을 소프트런칭에서 검증한다.",
+      "공식 확률 공시와 상품명(구성 표기)을 투명하게 노출해 신뢰 리스크를 낮춘다."
+    ],
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/us/app/afk-journey/id1628970855",
+        "title": "AFK Journey - App Store(미국)",
+        "type": "스토어",
+        "note": "설명, 구입 가격대 10종, 평점",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://app.sensortower.com/api/ios/apps/1628970855?country=US",
+        "title": "센서타워 앱 페이지(AFK Journey iOS)",
+        "type": "데이터(추정)",
+        "note": "featured reviews, 버전 이력, 직전 월 매출 추정",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/afk-journey-surpasses-150-million-with-asian-market-dominance/",
+        "title": "AFK Journey surpasses $150 million",
+        "type": "보도",
+        "note": "AppMagic 누적·일 최고·국가 비중",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/china-spends-51-million-on-liliths-afk-journey-in-first-five-days/",
+        "title": "China spends $5.1 million on AFK Journey in first five days",
+        "type": "보도",
+        "note": "중국 첫 5일 510만 달러, 서구 매출",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/lilith-games-talks-chinas-comeback-market-maturity-and-one-year-of-afk-journey/",
+        "title": "Lilith Games talks ... one year of AFK Journey",
+        "type": "보도",
+        "note": "누적 약 2.5억 달러, 안정적 DAU·매출",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://www.pocketgamer.biz/afk-journey-crossover-with-fairy-tail-incoming-as-first-of-many-ip-collaborations/",
+        "title": "AFK Journey crossover with Fairy Tail incoming",
+        "type": "보도",
+        "note": "2025-05-01 Fairy Tail 크로스오버",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/AFK_Journey",
+        "title": "AFK Journey - Wikipedia",
+        "type": "위키/커뮤니티",
+        "note": "시즌 목록, 진영·직업, 다운로드, 수상",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://afk-journey.fandom.com/wiki/All-Hero_Recruitment",
+        "title": "AFK Journey Wiki - All-Hero Recruitment",
+        "type": "위키/커뮤니티",
+        "note": "확률 표와 천장, 첫 10회 규칙",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://afk-journey.fandom.com/wiki/Rate_Up_Recruitment",
+        "title": "AFK Journey Wiki - Rate Up Recruitment",
+        "type": "위키/커뮤니티",
+        "note": "레이트업 확률과 40회 천장",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://afk-journey.fandom.com/wiki/AFK_Stage",
+        "title": "AFK Journey Wiki - AFK Stage",
+        "type": "위키/커뮤니티",
+        "note": "방치 시간 표, Instant AFK, 시즌 랭킹",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "별빛 여관 원정록(가칭)",
+      "pitch": "방치 진행을 유지하면서 지도 안개를 걷는 탐험과 소수 영웅 조합을 결합한 서구 타깃 방치 RPG.",
+      "target": "미국·유럽의 캐주얼~미드코어 방치 RPG 이용자(Sword x Staff 미국 비중 70% 사례 근거)",
+      "platform": "모바일(iOS·Android)",
+      "coreLoop": [
+        "지도 구역을 탐험해 보물·동료를 얻는다",
+        "동료 4~6명의 스킬 조합을 바꿔 자동 전투를 한다",
+        "오프라인 중 쌓인 자원을 수령한다",
+        "새 구역을 개방해 반복한다"
+      ],
+      "mvp": [
+        "지역 3개와 지도 안개 탐험",
+        "동료 12명과 스킬 카드 40장",
+        "오프라인 8시간 누적과 즉시 수령 2회",
+        "월간 혜택 1종과 소액 패키지 5종",
+        "일일 퀘스트·주간 보스"
+      ],
+      "difficulty": "중간",
+      "effort": "3인 팀 4~6개월",
+      "monetization": "소액 패키지($0.99~$9.99) 중심, 월간 혜택 1종, 가챠 없이 동료는 탐험·조각 수집으로 획득하고 한정 스킨만 판매",
+      "why": "Sword x Staff가 방치+탐험으로 구미 출시 6주 만에 누적 2천만 달러(미국 70%)를 기록해 AFK형이 아닌 형태가 서구 상위권을 차지하는 흐름과 맞는다. 센서타워 2025 Q4 미국 상위 5개 중 영웅 수집형은 AFK Journey 하나였다.",
+      "risks": "지도·구역 콘텐츠 제작 속도 부족, 가챠 없이는 수익 천장이 낮을 수 있음, Sword x Staff와의 차별화 부족",
+      "kpiGate": "소프트런칭(가설 기준): D1 리텐션 40% 이상, D7 12% 이상, 결제 전환율 3% 이상, 구역 3개 완료율 50% 이상",
+      "buildNext": "탐험 지도 1개 구역과 방치 수령 루프의 플레이 가능한 프로토타입을 만들고 20명 플레이테스트"
+    },
+    {
+      "name": "주간 한 장(가칭)",
+      "pitch": "방치 시간 8시간, 주 $0.99 구독, 진영 1개 소규모 영웅 풀로 만든 라이트 영웅 수집 방치 RPG.",
+      "target": "일 2~3회 짧게 접속하는 서구 방치 이용자",
+      "platform": "모바일(iOS·Android)",
+      "coreLoop": [
+        "스테이지 진행으로 방치 수익을 올린다",
+        "최대 8시간 누적 보상을 수령한다",
+        "영웅 12명을 선택 소환·진화한다",
+        "주간 보스와 길드 합산 목표에 참여한다"
+      ],
+      "mvp": [
+        "영웅 12명과 진화 5단계",
+        "방치 8시간 한도와 즉시 수령 1회 무료",
+        "주간 구독 1종($0.99)",
+        "주간 길드 합산 보스",
+        "이벤트 3종"
+      ],
+      "difficulty": "낮음",
+      "effort": "1인+AI 주20시간 12~16주",
+      "monetization": "주간 $0.99 구독과 $0.99 일일 팩, 선택 소환(천장 확정)은 소액 패키지, VIP 누적은 상한 낮게",
+      "why": "Idle Heroes는 자동전투 8시간 한도와 주간 $0.99 구독을 쓰며 10년 가까이 운영 중이고, 미국 App Store 평점 4.76을 유지한다. AFK Arena 구독도 주 $0.99·월 $2.99다.",
+      "risks": "기존 장수 작품과 차별화 부족, 유입 비용, 영웅 풀이 작아 장기 콘텐츠가 부족",
+      "kpiGate": "소프트런칭(가설 기준): D1 리텐션 38% 이상, D7 10% 이상, 구독 전환 2% 이상, 방치 수령 일 2회 이상 유저 50%",
+      "buildNext": "방치 8시간 누적 로직과 영웅 4명으로 1주일치 진행을 시뮬레이션한 수치표를 작성"
+    },
+    {
+      "name": "시즌 길드 원정대(가칭)",
+      "pitch": "4개월 시즌 리셋과 길드 단위 첫 클리어 보상을 중심으로 한 협동형 방치 RPG.",
+      "target": "길드 활동을 선호하는 미드코어 방치·영웅 수집 이용자(일본·미국)",
+      "platform": "모바일(iOS·Android), 이후 PC 확장 검토",
+      "coreLoop": [
+        "시즌 방치 스테이지를 진행한다",
+        "방치 보상을 수령하고 영웅을 강화한다",
+        "길드 합산 목표로 길드 첫 클리어 보상을 노린다",
+        "시즌 종료 후 리셋하고 새 시즌으로 간다"
+      ],
+      "mvp": [
+        "시즌 스테이지 300개와 단계 랭킹",
+        "영웅 20명과 승급",
+        "길드 생성·합산 목표·길드 보스",
+        "시즌 패스 1종",
+        "시즌 종료 보상 우편"
+      ],
+      "difficulty": "높음",
+      "effort": "3인 팀 4~6개월(1시즌 콘텐츠), 이후 시즌당 2개월 제작",
+      "monetization": "시즌 패스와 방치 시간 해금(구독·VIP 상한 낮게), 영웅 모집은 확정 선택권 중심",
+      "why": "AFK Journey는 4개월 시즌, 시즌 AFK 스테이지 리셋, 길드·서버 첫 클리어 보상으로 누적 약 2.5억 달러(2025-09)를 만들었다. BOI의 메멘토모리도 길드 레이드·길드 배틀 구조로 장수 서비스 중이다.",
+      "risks": "시즌 콘텐츠 제작 속도, 길드 활성 임계 규모, 시즌 리셋 시 이탈",
+      "kpiGate": "소프트런칭(가설 기준): D7 리텐션 12% 이상, 길드 가입률 40% 이상, 시즌 2개월차 결제자 유지율 60% 이상",
+      "buildNext": "시즌 스테이지 50개와 길드 합산 목표 UI를 만들어 시즌 1개분 콘텐츠 제작 시간을 측정"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://apps.apple.com/us/app/sword-x-staff/id6751270546",
+      "title": "Sword x Staff - App Store(미국)",
+      "type": "스토어",
+      "note": "설명(Third Way RPG, 오프라인 자원 누적, 200+ 스킬), 앱 내 구입 목록, 평점 4.86",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://swordxstaff.ltgamesglobal.com/",
+      "title": "Sword x Staff - A Third Way RPG 공식 사이트",
+      "type": "공식",
+      "note": "공식 사이트 타이틀과 App Store·Google Play 링크 확인",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.baijing.cn/article/55933",
+      "title": "센서타워 2026년 6월 중국 모바일게임 출해 분석(바이징 재게재)",
+      "type": "데이터(추정)",
+      "note": "구미 2026-05 출시, 6주 누적 2천만 달러, 미국 70%, 6월 매출 +60%, 미국 Idle RPG 1위",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/6751270546?country=US",
+      "title": "센서타워 앱 페이지(iOS 미국, 공개 API)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출·다운로드 반올림 추정, 상위 국가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/cn/app/%E6%9D%96%E5%89%91%E4%BC%A0%E8%AF%B4/id6473333072",
+      "title": "杖剑传说 - App Store(중국)",
+      "type": "스토어",
+      "note": "중국판 출시 2025-05-26, 평점 4.82(115,695건)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1158967485",
+      "title": "Hero Wars: Alliance Adventure - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 목록(Valkyrie's Favor $2.29, Treasure of Dominion, 56000 emeralds $99.99), 평점 4.55",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/press-release/hero-wars-alliance-continues-it-s-ascent-with-over-1-7bn-revenue-185m-installs/",
+      "title": "Hero Wars: Alliance continues its ascent with over $1.7bn revenue, 185m installs",
+      "type": "공식",
+      "note": "2025-06-26 누적 매출 17억 달러, 설치 1.85억, 80+ 영웅, Lara Croft/TMNT",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gameworldobserver.com/2024/07/24/hero-wars-alliance-revenue-1-5-billion-mobile",
+      "title": "Hero Wars: Alliance revenue 1.5 billion mobile",
+      "type": "보도",
+      "note": "2024-07 누적 15억 달러, 1.5억 다운로드, 미국 39%·일본 15%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://stocktitan.net/sec-filings/GDEV/20-f-gdev-inc-files-annual-report-foreign-issuer-c1f4ec2cb4eb.html",
+      "title": "GDEV 2025 Form 20-F (StockTitan 요약)",
+      "type": "공식",
+      "note": "Hero Wars 매출 93%, 월 결제 유저 -18%, 전환율 3.3%, 상위 12.5만명 88%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://hero-wars.fandom.com/wiki/Expeditions",
+      "title": "Hero Wars Wiki - Expeditions",
+      "type": "위키/커뮤니티",
+      "note": "원정 7슬롯, 6시간 등 시간제 구조",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/jp/app/id1611490041",
+      "title": "メメントモリ - App Store(일본)",
+      "type": "스토어",
+      "note": "일본 앱 내 구입 목록과 평점 4.44",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1611490041",
+      "title": "MementoMori: AFKRPG - App Store(미국)",
+      "type": "스토어",
+      "note": "미국 앱 내 구입 목록과 평점 4.72",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamebiz.jp/news/416066",
+      "title": "BOI 25年9月期決算",
+      "type": "보도",
+      "note": "2025년 9월기 매출·이익, 광고 축소, 메멘토모리 경년 영향",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamebusiness.jp/article/2025/10/09/25232.html",
+      "title": "広告費半減でも売上は微減 - BOI決算を読む",
+      "type": "보도",
+      "note": "분기 매출 추이, 사전등록 123만 명, 신작 전략",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://ja.wikipedia.org/wiki/メメントモリ_(ゲーム)",
+      "title": "メメントモリ (ゲーム) - Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "서비스 개시일, 최대 24시간 방치, 콘텐츠, Google Play 수상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/jp/app/id1211123727",
+      "title": "放置少女 - App Store(일본)",
+      "type": "스토어",
+      "note": "일본 앱 내 구입 목록, 평점 4.3",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://ja.wikipedia.org/wiki/放置少女",
+      "title": "放置少女〜百花繚乱の萌姫たち〜 - Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "서비스 개시일, 진영, 콘텐츠, 운영 이관",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/android/apps/jp.glee.girl?country=US",
+      "title": "센서타워 앱 페이지(Android 放置少女)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출 반올림 추정, 상위 국가, 설치 구간",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/afk-journey/id1628970855",
+      "title": "AFK Journey - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 가격대 10종, 평점 4.83(74,649건)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1628970855",
+      "title": "AFK: 새로운 여정 - App Store(한국)",
+      "type": "스토어",
+      "note": "한국 가격 ₩1,500~₩149,000, 평점 4.86",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/jp/app/id1628970855",
+      "title": "AFK：ジャーニー - App Store(일본)",
+      "type": "스토어",
+      "note": "일본 가격 ¥160~¥15,800, 평점 4.72",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/afk-journey-surpasses-150-million-with-asian-market-dominance/",
+      "title": "AFK Journey surpasses $150 million with Asian market dominance",
+      "type": "보도",
+      "note": "AppMagic: 누적 1억5,830만 달러, 일 최고 336만 달러, 국가별 비중",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/lilith-games-talks-chinas-comeback-market-maturity-and-one-year-of-afk-journey/",
+      "title": "Lilith Games talks China's comeback ... one year of AFK Journey",
+      "type": "보도",
+      "note": "2025-09-18 누적 약 2.5억 달러, 서구 2024-03-27·중국 2024-08-08, 안정적 DAU·매출 언급",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AFK_Journey",
+      "title": "AFK Journey - Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "진영·직업, 시즌, 1,500만 다운로드, 수상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://afk-journey.fandom.com/wiki/All-Hero_Recruitment",
+      "title": "AFK Journey Wiki - All-Hero Recruitment",
+      "type": "위키/커뮤니티",
+      "note": "모집 확률·천장·비용",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://afk-journey.fandom.com/wiki/AFK_Stage",
+      "title": "AFK Journey Wiki - AFK Stage",
+      "type": "위키/커뮤니티",
+      "note": "방치 시간 표, Instant AFK, 시즌 랭킹 보상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6741674823",
+      "title": "Watcher of Realms - US - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 번들 목록, 평점 4.68",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/jp/app/id6470362045",
+      "title": "ウォッチャー・オブ・レルム - App Store(일본)",
+      "type": "스토어",
+      "note": "일본 가격 ¥180~¥12,100",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://watcher-of-realms.fandom.com/wiki/Summoning",
+      "title": "Watcher of Realms Wiki - Summoning",
+      "type": "위키/커뮤니티",
+      "note": "소환 2단계 RNG와 3종 천장",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://watcher-of-realms.fandom.com/wiki/Watcher_of_Realms_Wiki",
+      "title": "Watcher of Realms Wiki",
+      "type": "위키/커뮤니티",
+      "note": "Moonton 2023-07-06 출시 서술, 신규 영웅",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/6741674823?country=US",
+      "title": "센서타워 앱 페이지(Watcher of Realms - US)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출 반올림 추정, 출시일, 평점",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1153461915",
+      "title": "Idle Heroes - Idle Games - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 목록, 구독 설명, 릴리스 노트, 평점 4.76",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://idleheroes.fandom.com/wiki/Campaign",
+      "title": "Idle Heroes Wiki - Campaign",
+      "type": "위키/커뮤니티",
+      "note": "자동전투 최대 8시간, 5단계 난이도",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://idleheroes.fandom.com/wiki/VIP",
+      "title": "Idle Heroes Wiki - VIP",
+      "type": "위키/커뮤니티",
+      "note": "VIP 점수 구조와 추정 비용",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/1153461915?country=US",
+      "title": "센서타워 앱 페이지(Idle Heroes iOS)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출·다운로드 반올림 추정, 출시일",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/afk-arena/id1375425432",
+      "title": "AFK Arena - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 목록, 구독 설명, Companions 설명, 평점 4.71",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/jp/app/id1478872810",
+      "title": "AFK アリーナ - App Store(일본)",
+      "type": "스토어",
+      "note": "일본 가격 ¥120~¥12,000",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1475474300",
+      "title": "AFK 아레나 - App Store(한국)",
+      "type": "스토어",
+      "note": "한국 가격 ₩1,200~₩119,000",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/afk-arena-celebrates-seventh-anniversary-and-over-15bn-in-lifetime-earnings/",
+      "title": "AFK Arena celebrates seventh anniversary and over $1.5bn in lifetime earnings",
+      "type": "보도",
+      "note": "AppMagic 누적 15억 달러, 지역 비중, 5년 연속 감소, 7주년 업데이트",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/afk-arena-brings-kaiju-no-8-characters-in-game-with-crossover-starting-today/",
+      "title": "AFK Arena brings Kaiju No. 8 characters in-game",
+      "type": "보도",
+      "note": "2026-09-23 크로스오버, 클래식·컴패니언 서버",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AFK_Arena",
+      "title": "AFK Arena - Wikipedia",
+      "type": "위키/커뮤니티",
+      "note": "진영, 모드, 4,500만 다운로드, 누적 약 10억 달러(Udonis 2023)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://afk-arena.fandom.com/wiki/AFK_rewards_chest",
+      "title": "AFK Arena Wiki - AFK rewards chest",
+      "type": "위키/커뮤니티",
+      "note": "AFK 상자 구조",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://afk-arena.fandom.com/wiki/Fast_Rewards",
+      "title": "AFK Arena Wiki - Fast Rewards",
+      "type": "위키/커뮤니티",
+      "note": "120분분 즉시 보상",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6450879111",
+      "title": "Overmortal-Idle RPG - App Store(미국)",
+      "type": "스토어",
+      "note": "앱 내 구입 목록, 설명, 평점 4.76",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q3-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "센서타워 2025 Q3 미국 Top 5 Idle RPG(매출)",
+      "type": "데이터(추정)",
+      "note": "Overmortal 주간 매출 정점 약 13.48만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q2-unified-top-5-idle%20rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "센서타워 2025 Q2 미국 Top 5 Idle RPG(매출)",
+      "type": "데이터(추정)",
+      "note": "Overmortal 주간 매출 정점 약 14.6만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/6450879111?country=US",
+      "title": "센서타워 앱 페이지(Overmortal iOS)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출·다운로드 반올림 추정, 상위 국가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1473544990",
+      "title": "Ulala: Idle Adventure - App Store(미국)",
+      "type": "스토어",
+      "note": "설명, 앱 내 구입 목록, 평점 4.76",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/1473544990?country=US",
+      "title": "센서타워 앱 페이지(Ulala iOS)",
+      "type": "데이터(추정)",
+      "note": "직전 월 매출 반올림 추정, 상위 국가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/android/apps/com.xdg.and.wll?country=US",
+      "title": "센서타워 앱 페이지(Ulala Android)",
+      "type": "데이터(추정)",
+      "note": "Android 평점 3.89, 설치 구간 500만~1,000만",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://app.sensortower.com/api/ios/apps/1628970855?country=US",
+      "title": "센서타워 앱 페이지(AFK Journey iOS)",
+      "type": "데이터(추정)",
+      "note": "featured reviews, 버전 이력, 직전 월 매출 추정",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/china-spends-51-million-on-liliths-afk-journey-in-first-five-days/",
+      "title": "China spends $5.1 million on AFK Journey in first five days",
+      "type": "보도",
+      "note": "중국 첫 5일 510만 달러, 서구 매출",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/afk-journey-crossover-with-fairy-tail-incoming-as-first-of-many-ip-collaborations/",
+      "title": "AFK Journey crossover with Fairy Tail incoming",
+      "type": "보도",
+      "note": "2025-05-01 Fairy Tail 크로스오버",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://afk-journey.fandom.com/wiki/Rate_Up_Recruitment",
+      "title": "AFK Journey Wiki - Rate Up Recruitment",
+      "type": "위키/커뮤니티",
+      "note": "레이트업 확률과 40회 천장",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/blog/2025-q4-unified-top-5-idle-rpg-revenue-us-6040bbc2241bc16eb883a0cb",
+      "title": "센서타워 2025 Q4 미국 Top 5 Idle RPG(매출)",
+      "type": "데이터(추정)",
+      "note": "MapleStory: Idle RPG, Lootfiend, Capybara Go!, Legend of Elements, AFK Journey(주간 정점 17.5만 달러)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://wnhub.io/news/finance/item-50299",
+      "title": "Sharp Increase in Profits — and More from GDEV's Annual Report",
+      "type": "보도",
+      "note": "GDEV 2025 매출 4.043억 달러(-4%), 예약매출 3.51억 달러(-13%), 순이익 6,930만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamebiz.jp/news/405596",
+      "title": "BOI 2025년 3월 중간 결산",
+      "type": "보도",
+      "note": "2025년 상반기 매출 65억8,400만 엔(-15.7%)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.baijing.cn/article/56656",
+      "title": "센서타워 2026년 8월 중국 모바일게임 출해 분석(바이징 재게재)",
+      "type": "데이터(추정)",
+      "note": "Lilith 8월 글로벌 매출 +23%, Clash of Critters",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/company/16465/lilith-games/",
+      "title": "PocketGamer.biz - Lilith Games 기사 목록",
+      "type": "보도",
+      "note": "AFK Arena·AFK Journey 2025~2026 기사 목록",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

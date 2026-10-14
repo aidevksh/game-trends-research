@@ -1,0 +1,2649 @@
+{
+  "asOf": "2026-10-14",
+  "status": "partial",
+  "todo": [
+    "1차 출처 재확인: 메이플 키우기 사과(2026-01-26)·전액 환불(2026-01-28) 공지 원문(공식 홈페이지가 JS 렌더링이라 미확인, 현재 나무위키 근거), 국가법령정보센터 조문 원문(JS 로딩으로 미확인, 나무위키 조문 전재본 사용), 연합뉴스 AKR20241231117800017(접근 차단).",
+    "국내 키우기류 오프라인 보상 '통상 최대 시간'(세븐나이츠 키우기·버섯커 키우기·레전드 오브 슬라임 등) 공식 공지 근거 확보 — 현재 메이플 키우기 효율(분당 51/76마리, 온라인 대비 약 50%)만 확인.",
+    "Habby(카피바라 GO!)·Game Hive(탭 타이탄 2)·Hyper Hippo의 공개 수익화 발표·포스트모템 확보(사이트 JS 렌더링·웹 검색 한도 소진으로 미확보).",
+    "GDC 2015/2016·Rise and Rise 슬라이드의 정량 차트(리텐션·ARPU·광고 opt-in 비율) 수치 추출 — 이미지라 미추출, GDC Vault 본편은 회원 전용.",
+    "'(일반적 설계 관행, 근거 약함)' 표시 항목 근거 보강: FTUE 30초/5분/30분 목표, 오프라인 상한-접속 리듬 매핑, A/B 테스트 대상 목록, 팝업 빈도 기준, 큰 수 직렬화, 치명 피해 곱연산 가정.",
+    "기기 시간 조작(타임 치트) 대응을 다룬 공식 문서(플랫폼 무결성 API 등) 확보.",
+    "나무위키 기반 수치(메이플 키우기 소환 단가·소환 레벨·패스·잠재 확률/천장·스타포스, 세븐나이츠 키우기 월정액 구성·확률표)를 공식 확률 정보·공지와 교차 검증.",
+    "Mind Studios의 출처 미인용 수치(광고 60~70%/IAP 30~40%, 상위 25% D1 42%, Burger Please! 광고 80% 보상형)를 대체할 시장 데이터(Sensor Tower 등) 확보.",
+    "아케이드 아이들·하이브리드 대표작(My Perfect Hotel, Burger Please!, Capybara Go!) 공식/보도 근거 추가."
+  ],
+  "summary": [
+    "비용은 지수, 생산은 선형×배수가 방치형 경제의 엔진이다. cost = b×r^k(r≈1.07~1.15)는 결국 선형 생산을 추월해 '벽'을 만들고, 마일스톤 배수·프레스티지가 이를 일시적으로 뒤집는다(Pecorella Part I, AdCap·Cookie Clicker 위키).",
+    "프레스티지 통화는 분수 지수로 설계한다(AdCap 150√(E/10^15), Cookie Clicker ∛(E/10^12), 구 Egg Inc. (E/10^6)^0.14). 지수 α가 '프레스티지 2배에 필요한 수익 배수 2^(1/α)'(4배·8배·약 128~141배)를 결정하므로 α로 리셋 주기를 조절한다(Part III).",
+    "페이싱의 기본 단위는 '다음 구매까지 시간'과 회수 기간이다. t_wait = max(0, cost−bank)/income, PP = t_wait + cost/Δincome으로 모든 구매를 비교·시뮬레이션하고, 최적 구매가 항상 최상위 티어로 쏠리면 밸런스 문제로 본다(Cookie Monster, Quest for Progress).",
+    "큰 수는 설계 초기에 라이브러리로 해결한다. double 상한 1.7976931348623157e308·안전 정수 2^53−1·float 3.4e38을 전제로 break_infinity.js(≈1e9e15)·BreakInfinity.cs BigDouble·break_eternity.js(10^^1e308)를 택하고, 표기법(접미사·알파벳·과학적)은 설정으로 바꿀 수 있게 한다.",
+    "오프라인 상한과 효율은 접속 리듬이자 BM 레버다(Egg Inc. 실로 1~30시간·Pro Permit 오프라인 2배, 메이플 키우기 월 정기권 1.5배). 다만 과도한 제한은 '방치형인데 방치가 안 된다'는 불만으로 이어진다(Pecorella: 'Why punish offline play?').",
+    "한국형 '키우기' 표준 스택은 골드 스탯 강화 + 소환 레벨형 가챠(보유 효과·장착 효과) + 일일 성장 던전(열쇠 누적) + 길드·월드보스·아레나 + 패스·월정액(광고 제거 결합)이다. 방치형 RPG는 2024년 국내 모바일 시장의 16%(센서타워, 비즈니스워치 보도)이며 대형 IP·중국산 경쟁이 치열하다.",
+    "확률과 표기의 정합성은 생존 문제다. 2024-03-22부터 확률형 아이템 종류·확률 표시가 의무, 2025-08-01부터 고의 위반 시 최대 3배 배상·입증책임 전환. 메이플 키우기의 '최대 수치 미등장'·'공속 표기 불일치'는 전액 환불로 이어졌다 → 확률표·서버 테이블 자동 대조 테스트가 필수.",
+    "광고는 선택형 가속으로 쓴다. '광고 시청 2배·4시간'(Kongregate 표준), 오프라인 2배 수령, 소량 프리미엄 통화·무료 뽑기 같은 opt-in 보상형을 기본으로 하고, 광고 제거·구독 구매자에게는 영구 2배·광고 보상 자동 지급처럼 손해 없는 대체 가치를 준다. 광고 수익은 결제를 대체하지 않는다(Idle Chatter).",
+    "작게 만들고 D1으로 검증한다. Kolibri는 5인·8주 MVP를 D1 중심으로 소프트런칭(IMT·IFT D1 75%)했다. 이후 진행·재화 수지·광고·결제 텔레메트리와 Remote Config A/B 테스트로 곡선을 재보정한다.",
+    "소규모 팀은 콘텐츠 볼륨 경쟁 대신 플랫폼·루프 차별화가 유리하다. 1인 개발 Rusty's Retirement(55만 장), 2인 개발 트리니티 가디언즈, 3일 프로토타입에서 출발한 Grow a Garden 같은 사례가 있으며, 수집형 AFK RPG처럼 아트·캐릭터 공급이 핵심인 장르는 불리하다."
+  ],
+  "taxonomy": [
+    {
+      "name": "클리커/인크리멘탈",
+      "definition": "클릭·자동화로 자원을 점점 더 빠르게(흔히 지수적으로) 쌓아 가는 장르. 클릭 입력이 중심이면 클리커, 최소한의 상호작용으로 자동 진행되면 아이들(방치)로 부르며 둘을 섞은 게임이 많다.",
+      "coreLoop": "클릭/자동 생산 → 생성기 구매(비용 지수 증가) → 배수 업그레이드·업적 → 벽 → 프레스티지 리셋 → 더 빠른 재진행(→ 다층 프레스티지)",
+      "monetization": "웹은 무료·후원 중심. 모바일은 즉시 재화(현재 수익률의 일정 비율)·타임워프·영구 배수·즉시 프레스티지·가챠·이벤트 통화 IAP와 소량 보상형 광고. PC는 유료 판매(Cookie Clicker Steam 2021).",
+      "examples": [
+        "Cookie Clicker",
+        "Clicker Heroes",
+        "AdVenture Capitalist",
+        "Antimatter Dimensions",
+        "Realm Grinder",
+        "Universal Paperclips"
+      ],
+      "smallTeamFit": "상",
+      "fitReason": "수학·UI 중심이라 아트 부담이 작고 웹/Steam 배포가 쉽다. 다만 진입이 쉬워 양산작이 많고(나무위키는 '인디 개발자의 무덤'으로 표현) 모바일 F2P 수익화는 별도 설계가 필요하다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Incremental_game",
+        "title": "Incremental game - Wikipedia",
+        "type": "위키",
+        "note": "클리커/아이들 정의, 과학적 표기·접미사·명명 표기, 프레스티지, AdCap이 개척한 타임워프·영구 배수·즉시 프레스티지·가챠·이벤트 통화와 광고 보상 유형.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "방치형 RPG(한국형 '키우기')",
+      "definition": "캐릭터가 자동 사냥으로 스테이지를 진행하고 골드·재화로 스탯/장비/동료/스킬/유물을 강화하는 RPG. 국내 'xx 키우기'는 대체로 클리커 계열로 분류되며, 방치는 막힌 구간을 넘는 사다리 역할을 한다.",
+      "coreLoop": "자동 사냥 → 골드·경험치·소환권 → 골드 스탯 강화·소환(소환 레벨 상승) → 보스 도전·스테이지 돌파 → 막히면 일일 성장 던전·패스·패키지로 돌파 → 전직/진화 → 길드·레이드·아레나",
+      "monetization": "소환형 가챠(소환 레벨·픽업·천장), 소환/성장 패스, 월정액(광고 제거·오프라인 효율 결합), 첫 결제·단계별·핫딜 패키지, 선택형 보상형 광고(버프·무료 재화).",
+      "examples": [
+        "메이플 키우기",
+        "세븐나이츠 키우기",
+        "버섯커 키우기",
+        "레전드 오브 슬라임",
+        "소울 스트라이크",
+        "뮤: 포켓 나이츠",
+        "트리니티 가디언즈"
+      ],
+      "smallTeamFit": "중",
+      "fitReason": "시스템 템플릿이 정형화되어 2인 개발작(트리니티 가디언즈)도 나왔지만, 대형 IP(메이플·세븐나이츠)와 중국산(버섯커)의 UA 경쟁, 확률 공시·3배 배상 법규, 2주 단위 라이브 업데이트 부담이 크다.",
+      "source": {
+        "url": "https://v.daum.net/v/20251105163302399",
+        "title": "[기획] '바쁘다 바빠 현대생활' 주목할 만한 방치형 게임은? (게임동아)",
+        "type": "보도",
+        "note": "2025-11-05. 메이플 키우기, 뮤: 포켓 나이츠(전직·날개·유물 뽑기), 트리니티 가디언즈(개발자 2명) 소개, 개발 기간 짧고 수익성 좋아 인디 진입·대형/중국사 과열.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "AFK형 수집 RPG",
+      "definition": "여러 영웅을 수집·편성해 자동 전투로 스테이지/탑을 진행하고, 접속하지 않아도 자원과 경험치가 쌓이는(AFK) 수집형 RPG.",
+      "coreLoop": "영웅 뽑기 → 편성(포지션·시너지) → 자동 전투로 스테이지/탑 → AFK 보상 수령 → 레벨업·승급(중복 영웅 소모) → PvP·길드·이벤트",
+      "monetization": "영웅 가챠(픽업·천장), 월정액·배틀패스, 단계별 패키지. 세븐나이츠 키우기는 소환 레벨로 영웅 풀을 확장하고 픽업을 일정 횟수 후 해금하며 광고 제거 월정액을 판다.",
+      "examples": [
+        "AFK Arena",
+        "AFK Journey",
+        "세븐나이츠 키우기(방치+수집형 CCG)"
+      ],
+      "smallTeamFit": "하",
+      "fitReason": "캐릭터 일러스트·스킬 연출·밸런스 갱신량이 매출을 좌우한다(세븐나이츠 키우기 출시 136종, 월 2~8종 추가·2주 밸런스 계획). 소규모 팀에는 콘텐츠 공급 부담이 과도하다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/AFK_Arena",
+        "title": "AFK Arena - Wikipedia",
+        "type": "위키",
+        "note": "Lilith Games, 2019년 4월. 비접속 중 자원·경험치 획득, 5인 자동 전투. 후속작 AFK Journey(2024-03).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "타이쿤(방치 경영)",
+      "definition": "사업장·생산 라인을 사고 업그레이드하며 매니저로 자동화해 수익을 키우는 경영형 방치 게임. 운반·창고 등 병목 업그레이드가 핵심 의사결정이다.",
+      "coreLoop": "생산 시설 구매 → 매니저 고용(자동화·오프라인 수익) → 병목 업그레이드 → 새 지역/대륙 해금 → 프레스티지(엔젤 등)",
+      "monetization": "프리미엄 통화(Super Cash·골드), 타임워프, 영구 배수, 부스트(2배~2,000배), 2배 보상형 광고, 오프라인 확장(Egg Inc. Pro Permit), 월 구독(Egg Inc. ULTRA).",
+      "examples": [
+        "AdVenture Capitalist",
+        "Idle Miner Tycoon",
+        "Egg, Inc.",
+        "Idle Factory Tycoon"
+      ],
+      "smallTeamFit": "상",
+      "fitReason": "Idle Miner Tycoon은 학생 창업팀이 8주 만에 출시해 1억 다운로드를 넘겼고, Kolibri는 5인 8주 MVP로 신작을 검증한다. 2D/아이소메트릭으로 소규모 제작이 가능하나 성숙 장르라 테마·병목 구조의 차별화가 필요하다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Kolibri_Games",
+        "title": "Kolibri Games - Wikipedia",
+        "type": "위키",
+        "note": "Idle Miner Tycoon 2016-07 출시(개발 8주), 1억 다운로드, 2020-02 Ubisoft가 지분 75% 인수(기업가치 1억6천만 유로).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "아케이드 아이들",
+      "definition": "캐릭터를 직접 움직여 손님 응대·운반을 하다가 직원·설비를 사서 점차 방치로 전환하는 3D 캐주얼(GameAnalytics가 꼽은 '아케이드' 메카닉).",
+      "coreLoop": "이동·운반으로 수익 → 설비 확장·직원 고용 → 자동화 → 새 매장/구역 해금 → 반복",
+      "monetization": "보상형 광고 비중이 높고 인터스티셜은 신규 유저에게 숨겼다가 점증(Mind Studios 사례), 광고 제거·부스터 IAP. 'Burger, Please! 광고의 약 80%가 보상형'이라는 수치는 출처 미인용(근거 약함).",
+      "examples": [
+        "Burger, Please!",
+        "My Perfect Hotel",
+        "My Fish Mart"
+      ],
+      "smallTeamFit": "중",
+      "fitReason": "루프는 단순하지만 3D 캐릭터·애니메이션과 하이퍼캐주얼식 UA(CPI 테스트) 역량이 필요하고 광고 수익 의존도가 높아 리텐션 관리가 관건이다.",
+      "source": {
+        "url": "https://www.gameanalytics.com/blog/how-to-make-an-idle-game-adjust",
+        "title": "How to Make an Idle game: Everything You Need to Know About Incremental Mobile Games (GameAnalytics)",
+        "type": "블로그",
+        "note": "David Hartery, 2025-03-17 갱신. 메카닉(클리커·시뮬레이션·아케이드·머지), 아이들 스티키니스 18%(하이퍼캐주얼 10.5%), 평균 세션 8분, 소프트런칭에서 광고 배치·빈도 테스트.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "하이브리드(로그라이트·디펜스·머지 결합)",
+      "definition": "방치 성장 메타 위에 머지·퍼즐, 로그라이트 런, 디펜스 웨이브 같은 별도 액티브 루프를 얹은 장르. 방치 루프가 정체될 때 2차 루프가 리텐션을 받친다('fading pendulum' 대응).",
+      "coreLoop": "방치 수익·성장 → 액티브 루프(머지 퍼즐·런·웨이브) → 보상으로 방치 성장 가속 → 이벤트·시즌",
+      "monetization": "주로 IAP: 배틀패스(보물찾기 프리미엄 보상), 일일 제한 자원(삽) 판매, 언락용 희귀 카드, 이벤트 상점. Gold & Goblins는 2023년 4,800만 달러, 2024년 말까지 6,000만 달러+.",
+      "examples": [
+        "Gold & Goblins(방치+머지/퍼즐)",
+        "버섯커 키우기(램프 소환 방치+정원·가문 등 SLG 요소)",
+        "Capybara Go!(로그라이트+방치, 공식 근거 미확인)"
+      ],
+      "smallTeamFit": "중",
+      "fitReason": "두 루프를 모두 완성도 있게 만들어야 하고 이벤트·LiveOps가 필수다(Gold & Goblins는 이벤트 없이 출시 후 추가). 대신 기존 방치 장르보다 차별화 여지가 크다.",
+      "source": {
+        "url": "https://www.pocketgamer.biz/the-ins-and-outs-of-retention-in-an-idle-game-with-merge-and-puzzle-elements/",
+        "title": "The ins and outs of retention in an idle game with merge and puzzle elements (PocketGamer.biz)",
+        "type": "보도",
+        "note": "2025-09-04 기고(Oleg Nalimov, AppQuantum). Gold & Goblins: D1 56%, 2023년 4,800만 달러·2024년 말 6,000만 달러+, 첫날 튜토리얼 5~10레벨, 레벨 7 전후 이벤트 해금, 'fading pendulum'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "데스크톱 방치",
+      "definition": "바탕화면 하단 바·오버레이 형태로 떠 있어 다른 작업과 병행하는 PC 방치 게임.",
+      "coreLoop": "작업 중 화면 일부에서 자동 생산 → 가끔 클릭해 업그레이드·자동화 → 새 작물·구역·일꾼 해금",
+      "monetization": "Steam 유료 판매(프리미엄)와 DLC·사운드트랙. 광고·가챠는 거의 없다.",
+      "examples": [
+        "Rusty's Retirement"
+      ],
+      "smallTeamFit": "상",
+      "fitReason": "1인 개발(Unity) Rusty's Retirement가 첫 주 10만, 2025년 7월까지 55만 장을 팔았고 2025년 방치 테마 Steam Next Fest의 계기가 됐다. 범위가 작고 프리미엄 판매라 라이브 운영·BM 부담이 적다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Rusty%27s_Retirement",
+        "title": "Rusty's Retirement - Wikipedia",
+        "type": "위키",
+        "note": "1인 개발(Mister Morris Games, Unity), 2024-04-26 출시, 바탕화면 오버레이 방치 농장, 첫 주 10만·2025년 7월까지 55만 장, 2025년 방치 테마 Steam Next Fest 계기.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "코지 방치",
+      "definition": "실패·경쟁 압박 없이 관람·수집·꾸미기 중심으로 느긋하게 진행하는 방치 게임. 극단적으로는 관람용에 가까운 '완전 방치형'(네코아츠메)도 있다.",
+      "coreLoop": "배치·심기 → 시간 경과로 방문·성장 → 수집·도감·꾸미기 → 공간 확장",
+      "monetization": "프리미엄 판매 또는 코스메틱·편의 IAP, 소량 광고(일반적 설계 관행, 근거 약함).",
+      "examples": [
+        "네코아츠메",
+        "Rusty's Retirement",
+        "Grow a Garden(Roblox 파밍 방치)"
+      ],
+      "smallTeamFit": "상",
+      "fitReason": "수치 밸런스 부담이 작고 아트·톤으로 차별화한다. 강한 과금 레버가 없으므로 낮은 운영비와 프리미엄/코스메틱 중심 BM을 전제로 해야 한다.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B0%A9%EC%B9%98%ED%98%95%20%EA%B2%8C%EC%9E%84",
+        "title": "방치형 게임 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 'xx 키우기'는 대체로 클리커 계열, '육성 제한 게임' 비판, 국내 방치형의 짧은 오프라인/낮은 자원 비판, 기기 수명 단축, 네코아츠메 등 관람형.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "로블록스형 방치·타이쿤",
+      "definition": "Roblox에서 패시브 수입 오브젝트(작물·캐릭터·생성기), 리버스(rebirth), 훔치기·거래 같은 플레이어 간 상호작용을 결합한 멀티플레이 방치·타이쿤.",
+      "coreLoop": "패시브 수입 오브젝트 구매/수집 → 오프라인에도 성장 → 희귀 재고·주간 한정 아이템(접속 필요) → 훔치기/방어 → 리버스로 영구 보너스",
+      "monetization": "Robux 게임 패스·개발자 상품(대기 단축·특전·훔치기), 펫 루트박스, 한정 이벤트. 과도한 수익화 비판과 13세 미만 비중(Grow a Garden 약 35%) 리스크.",
+      "examples": [
+        "Grow a Garden",
+        "Steal a Brainrot",
+        "Pet Simulator 99"
+      ],
+      "smallTeamFit": "상",
+      "fitReason": "Grow a Garden 초기 버전은 3일 만에 만들어졌고 플랫폼 추천만으로 동접 2,230만까지 성장했다. 다만 주간 업데이트 경쟁(이벤트 전담 2팀)과 미성년자 보호·수익화 비판 리스크가 있다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+        "title": "Grow a Garden - Wikipedia",
+        "type": "위키",
+        "note": "Roblox 2025-03-26 출시 방치 파밍, 초기 버전 3일 제작, 최고 동접 2,230만(2025-08-23), 약 35%가 13세 미만, 과도한 수익화 비판, Robux로 대기 단축·훔치기.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "name": "단일 구매 비용(지수 비용 곡선)",
+      "formula": "cost_next = b × r^k   (b: 기본 비용, r: 증가율, k: 현재 보유 수)",
+      "explanation": "보유 수가 하나 늘 때마다 다음 비용이 r배가 되는 표준 곡선. 생산이 선형이면 결국 비용이 생산을 추월해 '벽'이 생기고, 이 벽을 배수·프레스티지로 넘게 만드는 것이 방치형 진행의 골격이다.",
+      "typicalValues": "r ≈ 1.07~1.15. AdCap 사업체 1.07~1.15(상위 티어일수록 낮게), Cookie Clicker 건물 1.15, Clicker Heroes 영웅 레벨 1.07(에이스 스카우트 1.22).",
+      "examples": "AdCap 레모네이드: b=3.738(첫 개 무료라 4/1.07), r=1.07, 10개 보유 시 다음 비용 ≈ 7.87. Cookie Clicker: Price = Base × 1.15^(M−F) (F: 무료 지급분).",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-i",
+        "title": "The Math of Idle Games, Part I (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Kongregate 개발자 블로그 원문(2016-10-13)을 Game Developer에 재게재. 단일/대량 구매 비용·최대 구매 수·생산 공식, AdCap 레모네이드 수치. 원문 blog.kongregate.com 주소는 조회일 기준 404.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "대량 구매(×10/×100/MAX) 합계",
+      "formula": "cost(n) = b × r^k × (r^n − 1) / (r − 1)",
+      "explanation": "k개 보유 상태에서 n개를 연속 구매하는 비용(등비수열 합). 비용 증가가 순수 지수일 때만 성립하므로 중간에 계수가 바뀌는 구간이 있으면 구간별로 합산한다.",
+      "typicalValues": "Cookie Clicker(r=1.15): 10개 묶음 = 현재가 × 20.303718238, 100개 = 현재가 × 7,828,749.671335256.",
+      "examples": "b=4, r=1.07, k=10, n=10 → 약 108.72.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-i",
+        "title": "The Math of Idle Games, Part I (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Kongregate 개발자 블로그 원문(2016-10-13)을 Game Developer에 재게재. 단일/대량 구매 비용·최대 구매 수·생산 공식, AdCap 레모네이드 수치. 원문 blog.kongregate.com 주소는 조회일 기준 404.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "최대 구매 가능 수",
+      "formula": "n_max = floor( log_r( c × (r − 1) / (b × r^k) + 1 ) ) = floor( ln( c(r − 1)/(b·r^k) + 1 ) / ln r )",
+      "explanation": "보유 재화 c로 살 수 있는 최대 개수. 'MAX 구매' 버튼, 오프라인 복귀 후 자동 구매 계산에 쓴다.",
+      "typicalValues": "—",
+      "examples": "b=4, r=1.07, k=10, c=1,000 → 33개(33개 합계 935.84, 34개는 1,009.22로 초과).",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-i",
+        "title": "The Math of Idle Games, Part I (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Kongregate 개발자 블로그 원문(2016-10-13)을 Game Developer에 재게재. 단일/대량 구매 비용·최대 구매 수·생산 공식, AdCap 레모네이드 수치. 원문 blog.kongregate.com 주소는 조회일 기준 404.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "생산량(선형 × 배수)",
+      "formula": "production_total = (production_base × owned) × multipliers",
+      "explanation": "생성기 1개의 생산은 일정하고 보유 수에 비례(선형)하며, 업그레이드·마일스톤·프레스티지 배수가 곱해진다. 지수 비용 대비 생산이 뒤처지는 것이 의도된 구조다.",
+      "typicalValues": "AdCap 레모네이드 1.67/초(0.6초마다 1달러), 석유회사 초기 사이클 36,864초.",
+      "examples": "레모네이드 10개 → 16.7/초.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-i",
+        "title": "The Math of Idle Games, Part I (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Kongregate 개발자 블로그 원문(2016-10-13)을 Game Developer에 재게재. 단일/대량 구매 비용·최대 구매 수·생산 공식, AdCap 레모네이드 수치. 원문 blog.kongregate.com 주소는 조회일 기준 404.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "마일스톤(보유 수 달성) 배수",
+      "formula": "M_milestone = Π_i m_i   (보유 수 ≥ T_i 이면 배수 m_i 적용)",
+      "explanation": "일정 보유 수마다 ×2(후반 ×4·×5)를 주어 지수 비용을 잠시 따라잡게 하는 '범프와 로컬 승리'. 다음 마일스톤까지의 거리가 곧 단기 목표가 된다.",
+      "typicalValues": "AdCap 레모네이드: 25·50·100·200·300·400개 속도 2배, 500~900개 수익 ×4, 1,000개 ×5, 2,000개 ×5 등. Clicker Heroes: 생성기 25개마다 ×4(Quest for Progress).",
+      "examples": "r=1.07이면 25개마다 비용이 ×5.43이므로 ×2 마일스톤은 상승분의 일부만 상쇄 → 다음 배수까지의 대기가 점점 길어진다.",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Unlocks_(Earth)",
+        "title": "Unlocks (Earth) - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "레모네이드 25·50·100·200·300·400개 속도 2배, 500~900개 수익 ×4, 1000개 ×5 등 마일스톤.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "비용 2배 주기(증가율 감각화)",
+      "formula": "n_double = ln 2 / ln r ;  25개당 비용 배수 = r^25 ;  50개당 = r^50",
+      "explanation": "증가율 r을 '몇 개 살 때마다 가격이 2배가 되는가'로 바꿔 직관적으로 비교한다. 마일스톤 간격(예: 25개)과 비교해 배수 크기를 정하는 데 쓴다.",
+      "typicalValues": "r=1.07 → 10.24개(25개당 ×5.43), r=1.10 → 7.27개(×10.8), r=1.12 → 6.12개, r=1.15 → 4.96개(50개당 ×1,083.7), r=1.22 → 3.49개.",
+      "examples": "Cookie Clicker 위키: '대략 5개마다 2배, 50개마다 1,000배'. Clicker Heroes 위키: 1.07^25 ≈ 5.427.",
+      "source": {
+        "url": "https://cookieclicker.wiki.gg/wiki/Buildings",
+        "title": "Buildings - Cookie Clicker Wiki (wiki.gg)",
+        "type": "위키",
+        "note": "Price = Base × 1.15^(M−F), 10개 묶음 ×20.303718238, 100개 ×7,828,749.67, '약 5개마다 2배·50개마다 1,000배'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "다음 구매까지 시간 & 회수 기간(Payback Period)",
+      "formula": "t_wait = max(cost − bank, 0) / income ;  PP = max(cost − bank, 0)/cps + cost/Δcps",
+      "explanation": "t_wait는 다음 구매까지의 대기, PP는 대기 + 투자 회수 시간. 모든 구매 옵션(1/10/100개, 업그레이드) 중 PP 최소를 고르는 탐욕 정책으로 '최적 플레이'를 시뮬레이션해 구매 간격·벽 위치를 측정한다.",
+      "typicalValues": "구간별 목표 구매 간격(예: 초반 수 초 → 중반 수 분 → 벽 직전 수십 분)은 장르마다 정한다(일반적 설계 관행, 근거 약함).",
+      "examples": "Cookie Monster는 건물·업그레이드의 PP를 계산해 최적·상위 10/20/30위를 색으로 표시하고, 업적 연쇄로 인한 간접 효과까지 반영한다.",
+      "source": {
+        "url": "https://github.com/CookieMonsterTeam/CookieMonster",
+        "title": "Cookie Monster (Cookie Clicker 애드온) README",
+        "type": "공식",
+        "note": "애드온 공식 저장소. Payback Period = max(cost − bank, 0)/cps + cost/Δcps, 1/10/100개 구매 옵션 비교.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "파생(생성기가 생성기를 생산) 성장",
+      "formula": "n단계 체인의 재화(t) ≈ t^n / n! ;  1 + t + t²/2 + t³/6 + … + t^n/n! → e^t",
+      "explanation": "상위 생성기가 하위 생성기를 만들면 t, t²/2, t³/6…의 다항 성장이 겹쳐 지수에 근접하지만, 유한 단계에서는 항상 진짜 지수보다 느리다 → 지수 비용과 '아슬아슬하게' 균형을 이룬다.",
+      "typicalValues": "Derivative Clicker 고교생 비용 5 × 1.1^n, 1티어 건물 1개당 1티어 생산 +0.05% 부스트.",
+      "examples": "4단계 체인 재화 ≈ t^4/24 (t=100이면 약 4.17×10^6). 하위 티어를 살리려면 구매 수 기반 비용·티어 부스트를 둔다.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/disciplines/the-math-of-idle-games-part-ii",
+        "title": "The Math of Idle Games, Part II (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "2016-12-14 재게재. 생성기가 생성기를 만드는 파생(미분) 성장, t^n/n!과 e^x 테일러 급수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "프레스티지 통화 일반형과 '2배 필요 수익 배수'",
+      "formula": "p = k × (E / E0)^α   →  p를 2배로 하려면 E를 2^(1/α)배",
+      "explanation": "대부분의 프레스티지는 로그가 아니라 분수 지수(√, ∛)를 쓰며(Clicker Heroes는 로그형에 가까움), α가 작을수록 프레스티지 성장이 느려져 런이 길어진다. 프레스티지는 '사다리 오르기' 효과와 숫자 관리 두 역할을 한다.",
+      "typicalValues": "α=1/2(AdCap) → 4배(글에서는 3~4배), α=1/3(Cookie Clicker) → 8배, α=0.14(구 Egg Inc.) → 약 128~141배, 현행 Egg Inc. 최상위 구간 α=0.21 → 약 27배.",
+      "examples": "Realm Grinder는 최대 보유 재화 기반이라 같은 지점에서 리셋하면 추가 획득 0, 2배에 약 4배 수익이 필요하다.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-iii",
+        "title": "The Math of Idle Games, Part III (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Game Developer 재게재일 2017-02-01(시리즈는 2016년 시작). Realm Grinder·AdCap·Cookie Clicker·Egg Inc. 프레스티지 공식과 '2배에 필요한 수익 배수'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "리셋 시점 경험칙",
+      "formula": "Δp / p ∈ [0.5, 2.0] 이면 리셋   (Δp: 이번 리셋으로 얻을 프레스티지 통화, p: 현재 보유량)",
+      "explanation": "이번 리셋으로 보유 프레스티지 통화가 +50%~+200% 늘어날 때 리셋하는 것이 흔한 경험칙. 사이클이 지나치게 느려지면 메타 프레스티지를 추가한다.",
+      "typicalValues": "+50%~+200%.",
+      "examples": "Cookie Clicker 위키 전략: 첫 승천 365 천상의 칩, 이후 2,185(누적 2,550) 등 핵심 천상 업그레이드 단위로 승천. Egg Inc. 위키: '게임이 느려지면 프레스티지'.",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/quest-for-progress-gdc-europe-2016/65405507",
+        "title": "Quest for Progress (GDC Europe 2016) 슬라이드",
+        "type": "강연",
+        "note": "비용·생산·파생 성장 공식, '+50~200% 획득 시 리셋' 경험칙, 활성 스킬 쿨다운 5분~수 시간, Egg Inc. 2시간 오프라인 상한을 '실수'로 평가, 최고 티어만 최적이면 밸런스 문제.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "오프라인 수익(상한·효율)",
+      "formula": "Offline = income_rate × min(t_away, T_cap) × η   (T_cap: 오프라인 상한, η: 오프라인 효율). Egg Inc.: T_cap = 실로 수 × (60 + 6 × 실로 용량 연구 레벨)분, η = 0.5(스탠다드) / 1.0(프로 퍼밋)",
+      "explanation": "T_cap은 접속 리듬을, η는 온라인 대비 방치 가치를 정한다. 상한 확장·효율 상승은 진행 보상이나 상품(Pro Permit, 월정액)이 될 수 있다.",
+      "typicalValues": "Egg Inc. 실로 1개=1시간, 연구 최대 시 실로당 3시간·10실로 30시간. Cookie Clicker PC 모든 업그레이드 시 91%·7일 8시간, 모바일 100%·무제한. 메이플 키우기 오프라인 경험치 온라인 대비 약 50%, 월 정기권 1.5배(분당 51→76마리).",
+      "examples": "income 1,000/초, 8시간 이탈, 상한 6시간, η=0.5 → 1,000 × 21,600 × 0.5 = 1.08×10^7.",
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Grain_Silos",
+        "title": "Grain Silos - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "실로 1개=오프라인 1시간, 용량 연구 +6분×20레벨, 최대 10실로×3시간=30시간, 스탠다드 2실로·효율 50%, 프로 10실로·100%, 비용 C_n=100,000×(n−1)^(n+14).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "스테이지 체력·보상 곡선(Clicker Heroes)",
+      "formula": "HP(L ≤ 140) = ceil(10 × (L − 1 + 1.55^(L−1)) × [보스면 ×10]) ;  HP(141 ≤ L ≤ 500) = ceil(10 × (139 + 1.55^139 × 1.145^(L−140)) × [보스면 ×10]) ;  골드 ≈ 140존까지 존당 ×1.60255, 이후 4.717×10^28 × 1.15^(L−140)",
+      "explanation": "초반은 1.55배 고성장으로 빠르게 벽을 만들고 140 이후 1.145배로 완화한다. 후반 골드(1.15)가 HP(1.145)보다 약간 빠르게 늘어 '노력하면 따라잡는' 벽이 된다. 키우기류 스테이지 곡선 설계의 기준 사례.",
+      "typicalValues": "보스 타이머 30 − 2×floor(Z/500)초, 존당 몬스터 10 + 0.1×floor(Z/500), 보스 HP는 일반 몬스터 10 + 0.2×floor(Z/500)마리분.",
+      "examples": "L=100 HP ≈ 6.96×10^19, L=140 ≈ 2.86×10^27, L=200 ≈ 9.65×10^30.",
+      "source": {
+        "url": "https://clickerheroes.fandom.com/wiki/Formulas",
+        "title": "Formulas - Clicker Heroes Wiki",
+        "type": "위키",
+        "note": "몬스터 HP(1.55→1.145), 골드(×1.60255→1.15), 보스 타이머 30−2·floor(Z/500)초, 존당 몬스터 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "레벨업(스탯 강화) 비용(Clicker Heroes)",
+      "formula": "cost(level) = floor( floor(BaseCost × 1.07^level) × CostReduction )",
+      "explanation": "레벨당 7% 증가(10레벨마다 약 2배). 키우기류 '골드 스탯 강화' 비용 곡선의 원형이며, 비용 감소 효과는 곱으로 적용한다.",
+      "typicalValues": "일반 1.07, 에이스 스카우트 1.22(5레벨마다 2배 이상).",
+      "examples": "트리비스트 114→115레벨 = floor(50 × 1.07^114) = 111,871, Dogcog 7레벨(−6.69%) 적용 시 104,386.",
+      "source": {
+        "url": "https://clickerheroes.fandom.com/wiki/Heroes",
+        "title": "Heroes - Clicker Heroes Wiki",
+        "type": "위키",
+        "note": "레벨 비용 floor(floor(BaseCost×1.07^level)×CostReduction), 에이스 스카우트 1.22, 1.07^25≈5.427.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "가챠 확률·천장 기대값",
+      "formula": "P(n회 안에 1회 이상) = 1 − (1 − p)^n ;  E[시도 수 | 확정 천장 N] = (1 − (1 − p)^N) / p ;  P(천장 도달) = (1 − p)^(N−1)",
+      "explanation": "천장이 있을 때의 평균 시도 수와 천장 도달 확률(수학적 유도). 공시 확률·천장으로 기대 비용을 안내하고, 서버 테이블 QA의 기준선으로 쓴다.",
+      "typicalValues": "메이플 키우기 잠재 옵션 등급업: 노말→레어 6%·33회, 레어→에픽 3.333%·60회, 에픽→유니크 1.67%·120회, 유니크→레전드리 0.6%·333회, 레전드리→미스틱 0.21%·714회 천장.",
+      "examples": "0.21%·714회 → 평균 약 370회, 천장 도달 확률 약 22.3%(천장 없으면 평균 476회). 0.6%·333회 → 평균 약 144회, 천장 도달 약 13.6%.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "강화 기대 비용(실패 누적 천장 포함)",
+      "formula": "E[비용, 0→n단계] = Σ_{i=1}^{n} c_i / p_i  (실패 시 단계 유지) ;  실패 포인트 K에서 확정 성공이면 E[시도_i] = (1 − (1 − p_i)^K) / p_i",
+      "explanation": "단계별 비용 c_i·성공률 p_i로 기대 소모량을 계산한다(수학적 유도). 하락·파괴가 있으면 마르코프 체인이나 몬테카를로로 계산해야 한다.",
+      "typicalValues": "메이플 키우기 스타포스: 최대 30성, 11성부터 확률이 약 1/3 수준으로 하락, 20→21성 파괴·21→22성 하락 가능, 12성부터 실패 시 강화 포인트 누적(최대치 도달 시 확정 성공, 하락·파괴 시 포인트 2·4).",
+      "examples": "p=0.3, c=100이면 단계당 기대 333. 포인트 천장 K=5면 (1 − 0.7^5)/0.3 ≈ 2.77회 → 기대 277.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "치명타 기대 DPS(골드 스탯 가치 비교)",
+      "formula": "DPS = ATK × APS × (1 + p_crit × (d_crit − 1))   (p_crit ≤ 1, d_crit: 치명 피해 배율)",
+      "explanation": "공격력·공격 속도·치명 확률·치명 피해 같은 골드 스탯의 한계효용을 비교하는 기대값 모델(치명 피해가 곱으로 적용된다는 가정은 일반적 설계 관행, 근거 약함). 실제로는 공속 상한·프레임 단위 판정으로 비선형이 될 수 있어 표기값과 실효값을 검증해야 한다(메이플 키우기 공속 임계값 논란).",
+      "typicalValues": "레전드 오브 슬라임 골드 능력치 10종: 공격력·체력·체력 회복·공격 속도·치명타 확률·치명타 피해·더블샷(공속 Lv200 해금)·트리플샷(더블샷 Lv1001 해금)·상급 공격력·일반 적 피해.",
+      "examples": "p_crit=30%, d_crit=250% → 기대 배율 ×1.45.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A0%88%EC%A0%84%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%8A%AC%EB%9D%BC%EC%9E%84%3A%20%EB%B0%A9%EC%B9%98%ED%98%95%20RPG",
+        "title": "레전드 오브 슬라임: 방치형 RPG - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 로드컴플릿 개발. 골드 능력치 10종(더블샷 공속 Lv200·트리플샷 더블샷 Lv1001 해금), 던전 6종·09시 열쇠 2개, 보스 러시 보석 500+(난이도−1)×10, 첫 결제·패스·이벤트 상점 슬라임.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "경험치 곡선 불일치(의도된 벽 vs 방치 불가)",
+      "formula": "레벨업 소요 시간 비율 ≈ (1 + g_req)^ΔL / (1 + g_mob)^ΔS   (g_req: 레벨당 필요 경험치 증가율, g_mob: 스테이지당 몬스터 경험치 증가율)",
+      "explanation": "필요 경험치 증가율이 몬스터 경험치 증가율보다 크면 스테이지를 돌파하지 못하는 한 레벨업이 급격히 느려진다. 의도된 벽이 될 수도, '방치로는 진행 불가' 불만의 원인이 될 수도 있다.",
+      "typicalValues": "메이플 키우기(나무위키 평가): 스테이지당 몬스터 경험치 +10%(13지역부터 +5%), 레벨당 필요 경험치 +25%.",
+      "examples": "1레벨·1스테이지씩 진행한다고 근사하면 소요 시간이 1.25/1.10 ≈ 1.136배씩 늘어난다.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%ED%8F%89%EA%B0%80",
+        "title": "메이플 키우기/평가 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 경험치 곡선(스테이지 +10% vs 레벨 +25%), 오프라인 경험치 온라인 대비 약 50%·12,000원 월 정기권 1.5배, P2W 비판.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "초지수 비용(오프라인 상한 시설)",
+      "formula": "C_n = 100,000 × (n − 1)^(n + 14)   (n ≥ 2, Egg Inc. n번째 실로)",
+      "explanation": "오프라인 상한을 늘리는 시설에 지수보다 빠른 비용을 걸어 상한 확장을 장기 목표로 만든 사례(버전 1.9에서 변경).",
+      "typicalValues": "2번째 100,000, 3번째 1.311×10^10, 5번째 2.749×10^16, 10번째 7.977×10^27.",
+      "examples": "상한 확장은 연구(실로 용량)·시설·IAP(Pro Permit: 실로 2→10개) 세 경로로 분산.",
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Grain_Silos",
+        "title": "Grain Silos - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "실로 1개=오프라인 1시간, 용량 연구 +6분×20레벨, 최대 10실로×3시간=30시간, 스탠다드 2실로·효율 50%, 프로 10실로·100%, 비용 C_n=100,000×(n−1)^(n+14).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "저금통(누적형 상품) 보너스·상한",
+      "formula": "보너스: 1레벨 +2%, 2레벨 +25%, 이후 (10n + 10)%  ⇒  수령량 = 내용물 × (n + 11)/10 ;  상한 = 10,000n − 2,500 (n < 10), 45,000 + 5,000n (n ≥ 10) ;  상한 도달 시 총 수령 = 500(n² + 20n + 99) (n ≥ 10)",
+      "explanation": "플레이할수록 골든에그가 차오르고 고정가로 깨는 '점진적 수익화'(Kongregate 표현). 깰수록 레벨 보너스가 커져 반복 구매 동기가 생긴다.",
+      "typicalValues": "깨기 가격 $5.99(이벤트 시 $3.99), 구독(ULTRA) 시 +25%/+40%.",
+      "examples": "6레벨 보너스 +70%.",
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Piggy_Bank",
+        "title": "Piggy Bank - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "구매·업그레이드마다 골든에그 적립, $5.99로 깨기, 레벨 보너스와 상한식.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "name": "타임워프(시간 스킵) 환산",
+      "formula": "d = x / (1.21y + 1)   (x: 타임워프 일수, y: 플럭스 커패시터 수, d: 실제 지급되는 '일' 수익)",
+      "explanation": "현재 수익률 × 기간을 즉시 지급하되 속도 업그레이드를 보정하는 AdCap 식. 수익률 비례라 진행 단계와 무관하게 가치가 유지된다.",
+      "typicalValues": "1일 10골드, 7일 25골드, 14일 40골드(장기 워프일수록 일당 가격 대폭 할인), 익스프레스 3시간 × 10회 50골드(3회 무료).",
+      "examples": "플럭스 커패시터 0개면 d = x(그대로 x일치).",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Time_Warps",
+        "title": "Time Warps - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "1일 10골드·7일 25골드·14일 40골드, 익스프레스 3시간×10회 50골드, 환산식 d = x/(1.21y+1).",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "prestige": [
+    {
+      "game": "AdVenture Capitalist",
+      "currency": "엔젤 투자자(Angel Investors)",
+      "formula": "누적 엔젤 = floor(150 × √(LE / 10^15)) = floor(√(LE / (4×10^11 / 9)))  (LE: 생애 누적 수익) ; 리셋 시 획득 = 누적 엔젤 − 이전까지 획득분(희생분 보정) ; 화성은 1000억/9 기준(= 300 × √(LE/10^15))",
+      "effect": "엔젤 1명당 전 사업 수익 +2%(가산, 업그레이드로 증가): 50명 = +100%(×2), 1,000명 = ×21. 엔젤을 소모해 업그레이드를 살 수 있으나 그만큼 보너스가 줄어든다. 첫 엔젤은 누적 약 444.4억 달러, 10^15에서 150명, 10^18에서 4,743명.",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Angel_Investors",
+        "title": "Angel Investors - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "엔젤 1명당 +2%(가산), 획득식 √(LE/(4000억/9)) = 150√(LE/10^15), 화성은 1000억/9, 내림 처리.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Cookie Clicker(현행)",
+      "currency": "프레스티지 레벨 / 천상의 칩(Heavenly Chips)",
+      "formula": "prestige = ∛(전 기간 누적 쿠키 / 10^12) ; 이번 승천 획득 = 새 prestige − 기존 prestige ; 천상의 칩 = 획득 프레스티지 레벨(1:1)",
+      "effect": "프레스티지 레벨당 CpS +1%(가산). 단 Heavenly chip secret(5%) → Heavenly cookie stand(25%) → Heavenly bakery(50%) → Heavenly confectionery(75%) → Heavenly key(100%)로 잠재력을 해금해야 전부 적용된다. 천상의 칩으로 영구 천상 업그레이드를 산다. 첫 승천 권장 365칩 ≈ 4.86×10^19 쿠키.",
+      "source": {
+        "url": "https://cookieclicker.wiki.gg/wiki/Ascension",
+        "title": "Ascension - Cookie Clicker Wiki (wiki.gg)",
+        "type": "위키",
+        "note": "현행: 승천 시 ∛(전 기간 누적 쿠키/1조) − 기존 프레스티지, 레벨당 CpS +1%(가산), 천상의 칩 1:1. PC 오프라인 최대 91%·7일 8시간, 모바일 100%·무제한. 첫 승천 365칩 권장.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Clicker Heroes",
+      "currency": "영웅 영혼(Hero Souls)",
+      "formula": "영혼 = floor(Σ 영웅 레벨 / 2000) + Σ 프라이멀 보스 영혼 ;  프라이멀 보스(레벨 L) = floor(((L − 80) / 25)^1.3 × Ponyboy 배수)  (100레벨 이상 보스에서 기본 25% 확률·Atman으로 최대 100%, 100~1000의 100단위 보스는 항상 프라이멀)",
+      "effect": "영혼 1개당 DPS·클릭 피해 +10%, 고대신(Ancients) 소환·레벨업 통화. 트랜센던스 이후 '초월 파워'가 프라이멀 영혼을 보스마다 지수적으로 늘린다. Frostleaf 무렵 승천 시 레벨 기반 영혼은 약 7개.",
+      "source": {
+        "url": "https://clickerheroes.fandom.com/wiki/Hero_Souls",
+        "title": "Hero Souls - Clicker Heroes Wiki",
+        "type": "위키",
+        "note": "영웅 레벨 2000당 1개 + 프라이멀 보스 영혼 floor(((L−80)/25)^1.3×Ponyboy), 영혼 1개당 DPS +10%, 버전별 공식 변천.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Egg, Inc.",
+      "currency": "소울 에그(SE) · 예언의 알(PE) · 진실의 알(EoT)",
+      "formula": "EB(%) = SE × (10 + Soul Food 레벨 + 소울 스톤) × (1.05 + 0.01 × Prophecy Bonus 레벨 + 바산의 책 + 예언 스톤)^PE × 1.01^EoT ;  SE 획득(프레스티지 수익 x < 10^60) = 연구·이벤트 배수 × Σ_i max(0, (10^−6 × min(x, 상한_i))^α_i − 기준_i), α_i = 0.15, 0.16, …, 0.21 ;  (2017년 구식: Δp = (c_R / 10^6)^0.14)",
+      "effect": "소울 에그 1개당 수익 +10%(Soul Food 140레벨 시 +150%), 예언의 알 1개당 소울 에그 효과 ×1.05(Prophecy Bonus 최대 ×1.10) 복리. 이번 런 수익만으로 계산해 런마다 독립적이며, 수익이 커질수록 획득률이 둔화돼 잦은 프레스티지를 유도한다. 골든에그·에픽 연구·Pro Permit은 유지된다.",
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Earnings_Bonus",
+        "title": "Earnings Bonus - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "EB = SE×(10+Soul Food+소울 스톤)×(1.05+0.01×Prophecy Bonus+바산의 책+예언 스톤)^PE×1.01^EoT. Soul Food 최대 140레벨, Prophecy Bonus 최대 1.10.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Realm Grinder",
+      "currency": "젬(최대 보유 재화 기반)",
+      "formula": "p = (√(1 + 8 × c_M / 10^12) − 1) / 2   (c_M: 최대 보유 재화)",
+      "effect": "같은 지점에서 리셋하면 추가 획득이 0이라 매번 더 멀리 가야 한다. 프레스티지 2배에 약 4배 수익이 필요하며, 퇴위·환생·승천의 다층 프레스티지를 갖는다.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-iii",
+        "title": "The Math of Idle Games, Part III (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Game Developer 재게재일 2017-02-01(시리즈는 2016년 시작). Realm Grinder·AdCap·Cookie Clicker·Egg Inc. 프레스티지 공식과 '2배에 필요한 수익 배수'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Antimatter Dimensions",
+      "currency": "무한 포인트(Infinity Points, Big Crunch)",
+      "formula": "반물질 ≥ 2^1024(≈1.79769×10^308) 도달 시 Big Crunch → 최초 1 IP(2배 IP 업그레이드 등으로 증가)",
+      "effect": "차원·은하·차원 부스트를 초기화하고 IP로 무한 업그레이드를 산다. double 상한을 '설계된 벽'으로 쓰다가 이후 Break Infinity로 넘어서며, 이를 위해 break_infinity.js를 사용한다.",
+      "source": {
+        "url": "https://antimatter-dimensions.fandom.com/wiki/Infinity",
+        "title": "Infinity - Antimatter Dimensions Wiki",
+        "type": "위키",
+        "note": "2^1024(≈1.79769e308) 도달 시 Big Crunch(무한) → 무한 포인트, break_infinity.js 사용.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "Steal a Brainrot(Roblox)",
+      "currency": "리버스(rebirth)",
+      "formula": "공개 공식 없음 — 진행을 초기화하는 대가로 능력치 향상·추가 재화",
+      "effect": "패시브 수입형 로블록스 게임의 표준 프레스티지. 훔치기·방어 같은 멀티플레이 요소와 결합돼 리셋 후 재성장 동기를 준다.",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Steal_a_Brainrot",
+        "title": "Steal a Brainrot - Wikipedia",
+        "type": "위키",
+        "note": "Roblox 2025. 패시브 수입 캐릭터 구매·훔치기, 리버스(초기화 대가 영구 강화), Robux 장비, 동접 2,500만 돌파.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "game": "버섯커 키우기 / 메이플 키우기(비리셋형 관문)",
+      "currency": "진화·전직(리셋 없음)",
+      "formula": "리셋 공식 없음 — 레벨 관문 도달 시 영구 강화: 버섯커 진화 15·30·50·70·100·110레벨(110은 각성 인장 6개), 메이플 키우기 1~4차 전직 Lv10·30·60·100(시점에 따라 변경 가능)",
+      "effect": "한국형 키우기는 서양 인크리멘탈의 리셋형 프레스티지 대신 비리셋형 관문(전직·진화·승급)으로 '사다리' 효과를 주고, 재화 인플레는 스테이지·던전 단계 상승으로 흡수하는 경우가 많다.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "버섯커 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. Joy Nice Games 2023-12-22 출시, 램프 장비 소환 루프, 진화 레벨, 1원=1스타이아, 허위·표절 광고 비판, 한국 매출 1위.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "bigNumbers": [
+    {
+      "topic": "IEEE 754 double의 상한(1.79e308)",
+      "detail": "JavaScript Number.MAX_VALUE = 2^1024 − 2^971 ≈ 1.7976931348623157×10^308이며 이를 넘는 값은 Infinity가 된다. C# Double.MaxValue도 같은 값이고 초과 연산 결과는 PositiveInfinity다. 방치형은 수 시간~수 주 만에 이 한계에 닿을 수 있다.",
+      "source": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE",
+        "title": "Number.MAX_VALUE - MDN",
+        "type": "공식",
+        "note": "2^1024 − 2^971 ≈ 1.7976931348623157E+308, 초과 값은 Infinity.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "정밀도 한계(2^53)와 '흡수' 현상",
+      "detail": "Number.MAX_SAFE_INTEGER = 9,007,199,254,740,991(2^53 − 1)을 넘으면 연속 정수를 정확히 표현하지 못한다(유효 15~17자리). 큰 잔고에 작은 수입을 더하면 사라지므로, 보유 수·레벨 같은 카운터는 정수형으로 분리하고 재화는 유효숫자 기준으로 표시한다.",
+      "source": {
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER",
+        "title": "Number.MAX_SAFE_INTEGER - MDN",
+        "type": "공식",
+        "note": "9,007,199,254,740,991 = 2^53 − 1, 이를 넘으면 정수 정확성 상실.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "C#/Unity 수치형 선택",
+      "detail": "float ±3.4×10^38·약 6~9자리, double ±1.7×10^308·약 15~17자리, decimal ±7.9228×10^28·28~29자리(4/8/16바이트). 경제 수치에 float을 쓰면 3.4e38에서 오버플로하고 정밀도가 부족하므로 double 또는 BigDouble을 쓴다.",
+      "source": {
+        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types",
+        "title": "Floating-point numeric types - C# reference (Microsoft Learn)",
+        "type": "공식",
+        "note": "float ±3.4e38·6~9자리, double ±1.7e308·15~17자리, decimal ±7.9228e28·28~29자리.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "Roblox(Luau) 숫자",
+      "detail": "Luau number는 64비트 double로 ±1.7×10^308, 약 15자리 정밀도이며 정수와 실수를 구분하지 않는다. API의 int 속성은 32비트라 큰 값 대입 시 반올림·오류에 주의. 로블록스형 방치 게임도 1e308 이후는 별도 표현이 필요하다.",
+      "source": {
+        "url": "https://create.roblox.com/docs/luau/numbers",
+        "title": "Numbers - Roblox Creator Documentation (Luau)",
+        "type": "공식",
+        "note": "Luau number = 64비트 double, ±1.7×10^308, 약 15자리 정밀도, int 속성은 32비트.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "break_infinity.js",
+      "detail": "decimal.js를 대체하는 증분 게임용 라이브러리로 1e308 초과 약 1e9e15까지 다루며 정확도보다 속도를 우선한다. decimal.js 대비 2.5~442배 빠른 벤치마크, Antimatter Dimensions 스크립트 시간 4.5배 개선. CDN·npm 제공, decimal.js API와 호환.",
+      "source": {
+        "url": "https://github.com/Patashu/break_infinity.js",
+        "title": "break_infinity.js README (Patashu)",
+        "type": "공식",
+        "note": "decimal.js 대체, 1e308 초과~약 1e9e15, 속도 우선, 벤치마크 2.5~442배, Antimatter Dimensions 스크립트 시간 4.5배 개선.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "break_eternity.js",
+      "detail": "10^^1e308(테트레이션)까지와 10^-(10^^1e308) 같은 아주 작은 수를 지원. 내부 표현은 (sign, layer, mag)로 mag가 9e15를 넘으면 log10을 취하고 layer를 올린다. break_infinity와 같은 인터페이스·0.5~2배 속도이나 log/log10/ln이 Number가 아닌 Decimal을 반환하므로 이전 시 표시·파싱 코드를 점검해야 한다.",
+      "source": {
+        "url": "https://github.com/Patashu/break_eternity.js",
+        "title": "break_eternity.js README (Patashu)",
+        "type": "공식",
+        "note": "10^^1e308까지, (sign, layer, mag) 표현, break_infinity와 동일 인터페이스·0.5~2배 속도, log 계열이 Decimal 반환.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "BreakInfinity.cs(BigDouble) — Unity",
+      "detail": "break_infinity.js의 C# 포트. BigDouble.cs 파일 하나를 Scripts 폴더에 넣고 double 대신 BigDouble을 쓰면 약 1e(9e15)까지 다룬다. ToString은 일반(G)·지수(E)·고정(F) 포맷을 지원한다.",
+      "source": {
+        "url": "https://github.com/Razenpok/BreakInfinity.cs",
+        "title": "BreakInfinity.cs README (Razenpok)",
+        "type": "공식",
+        "note": "break_infinity의 C# 포트, BigDouble.cs 한 파일을 Unity Scripts에 넣고 double 대신 사용, ToString G/E/F 포맷.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "표기법 라이브러리와 설정",
+      "detail": "@antimatter-dimensions/notations는 Scientific·Engineering·Letters·Standard·Mixed Scientific/Engineering·Logarithm·Brackets 등 표기 클래스를 제공하고 format(value, places, placesUnder1000)로 포맷한다. 지수 쉼표 표시 범위·'Infinite' 판정 함수를 설정할 수 있고 Notation 클래스를 상속해 커스텀 표기를 만든다.",
+      "source": {
+        "url": "https://github.com/antimatter-dimensions/notations",
+        "title": "Antimatter Dimensions Notations README",
+        "type": "공식",
+        "note": "Scientific·Engineering·Letters·Standard·Mixed·Logarithm 등 표기 클래스, format(value, places, placesUnder1000), 지수 쉼표·무한 판정 설정.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "표기 관례(K/M/B/T → aa/ab, 과학적 표기)",
+      "detail": "증분 게임은 과학적 표기(1×10^34), 접미사(1M, 1T), 명명 체계(duoquadragintillion)를 쓴다. T(조) 이후 aa·ab·ac… 알파벳 단위는 게임마다 규칙(1,000배/100배 등)이 달라 표준이 없으므로 단위표·과학적 표기 전환 옵션을 함께 제공한다(일반적 설계 관행, 근거 약함). 국내 키우기류도 알파벳 단위를 쓴다(예: 레전드 오브 슬라임 골드 던전 '22.4A').",
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Incremental_game",
+        "title": "Incremental game - Wikipedia",
+        "type": "위키",
+        "note": "클리커/아이들 정의, 과학적 표기·접미사·명명 표기, 프레스티지, AdCap이 개척한 타임워프·영구 배수·즉시 프레스티지·가챠·이벤트 통화와 광고 보상 유형.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "저장 타입이 콘텐츠 상한을 만든다(AdCap 사례)",
+      "detail": "AdCap 사업체 보유 수 상한은 32비트 정수 최댓값 2,147,483,647이며, 가격이 2^1024(약 179.769 uncentillion)를 넘으면 '무한 가격'이 되어 레모네이드 약 10,470개 등에서 더 살 수 없다. 카운터·가격의 타입을 처음부터 상한을 고려해 정해야 한다.",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Businesses",
+        "title": "Businesses - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "지구 사업체 초기 비용·증가 계수(1.07~1.15)·사이클 시간·수익 표, 보유 수 상한 2,147,483,647(int32), 2^1024 초과 시 무한 가격.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "1.79e308을 '설계된 벽'으로 쓰기",
+      "detail": "Antimatter Dimensions는 2^1024 도달을 첫 프레스티지(Big Crunch, 무한)로 삼고, 그 전에는 초과 값을 'Infinite'로 표시한다. 이후 Break Infinity 업그레이드로 라이브러리 범위까지 확장한다 — 기술 한계를 콘텐츠 이정표로 전환한 사례.",
+      "source": {
+        "url": "https://antimatter-dimensions.fandom.com/wiki/Infinity",
+        "title": "Infinity - Antimatter Dimensions Wiki",
+        "type": "위키",
+        "note": "2^1024(≈1.79769e308) 도달 시 Big Crunch(무한) → 무한 포인트, break_infinity.js 사용.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "직렬화·서버 검증",
+      "detail": "큰 수는 (가수, 지수) 또는 (sign, layer, mag) 구조로 직렬화해 저장하고, 서버 보상 검증·랭킹 비교도 클라이언트와 동일한 라이브러리 로직을 써야 반올림 차이로 인한 불일치를 막는다(일반적 설계 관행, 근거 약함). break_eternity는 Decimal.fromComponents(sign, layer, mag)로 구성 요소 단위 생성을 지원한다.",
+      "source": {
+        "url": "https://github.com/Patashu/break_eternity.js",
+        "title": "break_eternity.js README (Patashu)",
+        "type": "공식",
+        "note": "10^^1e308까지, (sign, layer, mag) 표현, break_infinity와 동일 인터페이스·0.5~2배 속도, log 계열이 Decimal 반환.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "pacing": [
+    {
+      "topic": "FTUE 첫 30초",
+      "guideline": "첫 탭에 즉시 재화를 주고 30초 안에 첫 구매·첫 업그레이드의 숫자 상승을 체감시킨다. 버튼·메뉴는 필요해질 때까지 숨기고 초반 보상을 촘촘히 둔다. AdCap은 레모네이드 1개를 무료로 줘 첫 탭부터 수익이 난다. (30초라는 목표치 자체는 일반적 설계 관행, 근거 약함)",
+      "rationale": "빠른 진입·직관적 UI·초반 보상이 FTUE의 핵심이며(Mind Studios), 방치형의 매력은 '성장을 느끼는 것'이다(Quest for Progress: 'Make players feel power growth').",
+      "source": {
+        "url": "https://games.themindstudios.com/post/idle-clicker-game-design-and-monetization/",
+        "title": "Idle Clicker Games: Best Practices for Idle Game Design and Monetization (Mind Studios Games)",
+        "type": "블로그",
+        "note": "2024-04-19(04-22 갱신) 외주 개발사 블로그. 광고 60~70%/IAP 30~40%, 상위 25% D1 42%, Burger Please! 광고 80% 보상형 등 수치는 출처 미인용 → 근거 약함으로 취급.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "FTUE 5분",
+      "guideline": "5분 안에 첫 자동화(매니저·자동 사냥)와 첫 마일스톤 배수를 경험시켜 '켜 두지 않아도 늘어난다'를 학습시킨다. AdCap 레모네이드 매니저는 1,000달러, 25개 보유 시 속도 2배. (5분 목표치는 일반적 설계 관행, 근거 약함)",
+      "rationale": "매니저가 접속 종료 중에도 사이클을 돌려 방치 플레이를 가능하게 하는 장르 정체성의 핵심이며, 배수는 '범프와 로컬 승리'를 준다.",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Managers",
+        "title": "Managers - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "매니저가 사이클을 자동 재시작(접속 종료 중에도) → 방치 플레이를 가능케 함. 레모네이드 매니저 1,000.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "FTUE 30분~첫날",
+      "guideline": "튜토리얼성 레벨 5~10개를 첫날 안에 끝내게 하고, 이벤트·2차 루프는 레벨 7 전후로 해금한다. 첫 세션이 끝나기 전에 '돌아올 이유'(오프라인 보상, 던전 열쇠 충전, 타이머)를 보여 준다.",
+      "rationale": "Gold & Goblins는 첫날 튜토리얼 5~10레벨·레벨 7 전후 이벤트 해금으로 D1 56%를 기록했고, Kolibri는 MVP 소프트런칭을 'D1을 적은 노력으로 올릴 수 있는가'로 판정했다(IMT·IFT D1 75%).",
+      "source": {
+        "url": "https://www.pocketgamer.biz/the-ins-and-outs-of-retention-in-an-idle-game-with-merge-and-puzzle-elements/",
+        "title": "The ins and outs of retention in an idle game with merge and puzzle elements (PocketGamer.biz)",
+        "type": "보도",
+        "note": "2025-09-04 기고(Oleg Nalimov, AppQuantum). Gold & Goblins: D1 56%, 2023년 4,800만 달러·2024년 말 6,000만 달러+, 첫날 튜토리얼 5~10레벨, 레벨 7 전후 이벤트 해금, 'fading pendulum'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "첫 프레스티지까지 시간",
+      "guideline": "첫 리셋은 첫 '벽'이 체감된 직후에 열고 리셋 직후 '훨씬 빠른 재진행'을 보장한다. 리셋 판단은 +50~200% 경험칙을 UI로 안내한다. 기준점: AdCap 첫 엔젤 누적 약 444억 달러, Cookie Clicker 첫 승천 권장 365칩(≈4.86×10^19 쿠키). 첫 프레스티지까지의 절대 시간(수십 분~수 시간)은 장르별로 정한다(일반적 설계 관행, 근거 약함).",
+      "rationale": "프레스티지는 비용 곡선을 더 멀리 가게 하는 '사다리'이자 숫자를 관리 가능한 범위로 되돌리는 장치다. 리셋 후 이전 구간을 빠르게 지나는 경험이 재몰입을 만든다.",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-iii",
+        "title": "The Math of Idle Games, Part III (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Game Developer 재게재일 2017-02-01(시리즈는 2016년 시작). Realm Grinder·AdCap·Cookie Clicker·Egg Inc. 프레스티지 공식과 '2배에 필요한 수익 배수'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "프레스티지 주기 설계",
+      "guideline": "α(분수 지수)로 '프레스티지 2배에 필요한 수익 배수'를 정하고 사이클이 빨라질지 느려질지를 의도적으로 설계한다. 느려지면 메타 프레스티지(다층 리셋)를 추가한다.",
+      "rationale": "사이클이 빨라지면 플레이어를 훨씬 높은 지점까지 밀어 올리고, 느려지면 지루해질 수 있어 메타 프레스티지가 필요하다(Quest for Progress).",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/quest-for-progress-gdc-europe-2016/65405507",
+        "title": "Quest for Progress (GDC Europe 2016) 슬라이드",
+        "type": "강연",
+        "note": "비용·생산·파생 성장 공식, '+50~200% 획득 시 리셋' 경험칙, 활성 스킬 쿨다운 5분~수 시간, Egg Inc. 2시간 오프라인 상한을 '실수'로 평가, 최고 티어만 최적이면 밸런스 문제.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "세션 길이·하루 접속 횟수",
+      "guideline": "평균 세션 5~8분, 하루 다회 접속을 전제로 '접속 → 쌓인 재화 전부 소비 → 종료 → 몇 시간 후 복귀' 루프를 설계한다. 엔드게임 유저는 하루 9세션 수준까지 늘어날 수 있다. 키우기류는 하루 총 플레이 30~40분 목표 사례(세븐나이츠 키우기 개발진)가 있다.",
+      "rationale": "GameAnalytics: 아이들 평균 세션 8분, 스티키니스 18%(다른 하이퍼캐주얼 10.5%), 하루 세션 수가 많음. Kolibri: IMT 세션 약 7분(카테고리 평균 5.5분), 엔드게임 하루 약 9세션. Kongregate: '로그인→전부 소비→로그아웃→몇 시간 후 복귀'.",
+      "source": {
+        "url": "https://www.gameanalytics.com/blog/how-to-make-an-idle-game-adjust",
+        "title": "How to Make an Idle game: Everything You Need to Know About Incremental Mobile Games (GameAnalytics)",
+        "type": "블로그",
+        "note": "David Hartery, 2025-03-17 갱신. 메카닉(클리커·시뮬레이션·아케이드·머지), 아이들 스티키니스 18%(하이퍼캐주얼 10.5%), 평균 세션 8분, 소프트런칭에서 광고 배치·빈도 테스트.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "오프라인 상한 선택(4h/8h/12h/24h)",
+      "guideline": "상한은 목표 접속 리듬에 맞춘다: 4시간=근무·수업 중 재접속, 8시간=수면 또는 근무 1회, 12시간=아침·저녁 2회, 24시간=하루 1회(매핑은 일반적 설계 관행, 근거 약함). 상한 확장은 진행 보상(연구)과 상품(Pro Permit·월정액)으로 나눠 제공하고, 상한 도달을 알림으로 알린다.",
+      "rationale": "제한은 '더 많은 오프라인 수익'을 파는 수익화 포인트와 '활동 압박'을 만들지만, 무제한은 장기 이탈 후 복귀의 흥분과 '릴리스 밸브' 효과를 줄인다(Rise and Rise). 반대로 Pecorella는 초기 Egg Inc.의 2시간 상한을 '실수'로 봤고, Cookie Clicker 모바일은 100%·무제한이다.",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/the-rise-and-rise-of-idle-games-68916528/68916528",
+        "title": "The Rise and Rise of Idle Games (Kongregate/Pecorella 슬라이드)",
+        "type": "강연",
+        "note": "행사·일자 미표기. '광고 시청 2배·4시간'이 표준, Double Return, 저금통='점진적 수익화', 장기 타임워프 대폭 할인, 오프라인 제한 장단점, 저 ARPDAU·고 DAU.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "오프라인 효율(온라인 대비 비율)",
+      "guideline": "오프라인 효율 η를 온라인 대비 과도하게 낮추지 않는다. 대안으로 오프라인을 온라인과 같은 식으로 계산하거나, 지수 성장 수학 자체를 소프트 상한으로 쓰거나, 온·오프라인 플레이 방식을 선택하게 한다. 메이플 키우기는 오프라인 경험치가 온라인의 약 50%, 월 정기권 1.5배, 앱 완전 종료 5분 후부터 적용된다(나무위키).",
+      "rationale": "Kongregate는 'Why punish offline play?'라며 타이머·비율 제한 없이도 리텐션이 좋은 사례를 제시했고, 국내 방치형은 '꺼도 되는 시간'이 짧거나 자원이 낮아 불만이 크다(나무위키 '방치형 게임').",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/idle-chatter-gdc-2016-59734260/59734260",
+        "title": "Idle Chatter: What We Can Learn From Self-Playing Games (GDC 2016 슬라이드)",
+        "type": "강연",
+        "note": "Pecorella GDC 2016. 리텐션·ARPU 상위, 타임워프·영구 배수·프레스티지 청구·가챠, opt-in 광고 유형, 'Why punish offline play?', 오토클리커는 설계 오류. 수치 차트는 이미지라 미추출.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "일일 리셋·입장권 충전",
+      "guideline": "일일 던전 입장권을 '하루 3회 보충, 최대 10회 누적'처럼 누적 상한을 두면 매일 접속하지 않는 유저의 손실이 줄어든다. 도전 실패 시 입장권을 소모하지 않아 좌절을 줄인다. 무료 소환·열쇠 충전 시각을 고정(예: 09시)해 접속 습관을 만든다.",
+      "rationale": "메이플 키우기 성장 던전(일 3회·최대 10회·실패 미소모), 레전드 오브 슬라임(매일 09시 열쇠 2개), 소울 스트라이크(무료 소환 5회 시작·하루 3회씩 늘어 최대 30회) 사례.",
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "벽 설계와 보스 타이머",
+      "guideline": "보스 타이머(예: 30초)와 HP 성장률(1.55→1.145)·보상 성장률(1.15)의 차이로 '노력하면 넘을 수 있는 벽'을 만들고, 각 벽에 해법(배수 업그레이드·던전·리셋)을 연결한다. 곡선을 일부러 울퉁불퉁하게 만든다.",
+      "rationale": "Clicker Heroes 공식은 후반 보상 성장률을 HP보다 약간 높게 둔다. Idle Chatter: '매끈한 곡선은 지루하고 놀라움이 없다'.",
+      "source": {
+        "url": "https://clickerheroes.fandom.com/wiki/Formulas",
+        "title": "Formulas - Clicker Heroes Wiki",
+        "type": "위키",
+        "note": "몬스터 HP(1.55→1.145), 골드(×1.60255→1.15), 보스 타이머 30−2·floor(Z/500)초, 존당 몬스터 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "활성 스킬·부스트 지속 시간",
+      "guideline": "활성 스킬 쿨다운은 5분~수 시간, 보상형 광고 부스트는 2~4시간(진행으로 최대 8시간)으로 세션 간격과 동기화한다. 짧은 버스트는 '고비 넘기기'용으로 쓴다.",
+      "rationale": "Quest for Progress: 활성 스킬 쿨다운 5분~수 시간, 플레이어 주체성 증가·고비 돌파. Egg Inc.: 영상 2배 부스트 2시간(Video Doubler Time 연구로 8시간). Kongregate 표준: 2배·4시간.",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/quest-for-progress-gdc-europe-2016/65405507",
+        "title": "Quest for Progress (GDC Europe 2016) 슬라이드",
+        "type": "강연",
+        "note": "비용·생산·파생 성장 공식, '+50~200% 획득 시 리셋' 경험칙, 활성 스킬 쿨다운 5분~수 시간, Egg Inc. 2시간 오프라인 상한을 '실수'로 평가, 최고 티어만 최적이면 밸런스 문제.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "topic": "푸시 알림",
+      "guideline": "오프라인 상한 도달·던전 열쇠 가득·이벤트 시작 같은 '보상 사건'에만 보내고, 권한은 첫 실행 직후가 아니라 가치를 이해한 뒤 맥락적으로 요청한다(예: 3~4번째 실행, 알림 버튼 탭). 광고성 푸시는 명시적 동의, 오후 9시~오전 8시는 별도 동의가 필요하다(정보통신망법 제50조).",
+      "rationale": "Android 13+는 신규 설치 시 알림이 기본 꺼짐(POST_NOTIFICATIONS 런타임 권한), iOS 가이드라인 4.5.4는 마케팅 푸시에 옵트인·옵트아웃을 요구한다. Mind Studios도 보상·이벤트에 연동하고 과다 발송을 피하라고 권한다.",
+      "source": {
+        "url": "https://developer.android.com/develop/ui/views/notifications/notification-permission",
+        "title": "Notification runtime permission - Android Developers",
+        "type": "공식",
+        "note": "Android 13+ POST_NOTIFICATIONS, 신규 설치 시 알림 기본 꺼짐, 가치 인지 후 맥락적으로 요청(예: 3~4번째 실행).",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "krIdleRpgSystems": [
+    {
+      "system": "스테이지/챕터 진행",
+      "detail": "지역(챕터)마다 1~10(후반 15·20) 스테이지로 구성. 1~9 스테이지는 잡몹 웨이브 후 미니보스, 10 스테이지는 단일 보스 타임어택(메이플 키우기 47지역, 2026-09 기준). 세븐나이츠 키우기는 육성 후 보스를 소환해 이기면 다음 스테이지로 가며 20스테이지 무렵 성장이 부족하면 정체된다(아이뉴스24). 막히면 이전 구간에서 자동 사냥으로 파밍한다.",
+      "monetization": "스테이지 돌파 보상(다이아·소환권), 스테이지/성장 패스, 막힌 시점의 패키지 노출(마지막 항목은 일반적 설계 관행, 근거 약함).",
+      "examples": [
+        "메이플 키우기",
+        "세븐나이츠 키우기",
+        "버섯커 키우기(일반~오의 난이도)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "골드 스탯 강화(능력치 훈련)",
+      "detail": "골드로 공격력·체력·체력 회복·공격 속도·치명타 확률·치명타 피해·더블샷·트리플샷·상급 공격력·일반 적 피해 10종을 강화(레전드 오브 슬라임; 더블샷은 공속 Lv200, 트리플샷은 더블샷 Lv1001, 일반 적 피해는 상급 공격력 Lv150에서 해금). 세븐나이츠 키우기는 골드로 기사단 전체 공격력·방어력·생명력을 올리는 '영향력'을 둔다(블루스택). 비용은 레벨 지수 곡선(예: 1.07^L).",
+      "monetization": "골드 획득 증가 버프(세븐나이츠 키우기는 경험치·금화 증가 음식을 광고 시청으로 획득), 골드 던전, 골드 부스트 패키지.",
+      "examples": [
+        "레전드 오브 슬라임",
+        "세븐나이츠 키우기",
+        "소울 스트라이크(훈련)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A0%88%EC%A0%84%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%8A%AC%EB%9D%BC%EC%9E%84%3A%20%EB%B0%A9%EC%B9%98%ED%98%95%20RPG",
+        "title": "레전드 오브 슬라임: 방치형 RPG - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 로드컴플릿 개발. 골드 능력치 10종(더블샷 공속 Lv200·트리플샷 더블샷 Lv1001 해금), 던전 6종·09시 열쇠 2개, 보스 러시 보석 500+(난이도−1)×10, 첫 결제·패스·이벤트 상점 슬라임.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "레벨·능력치 포인트·등급",
+      "detail": "메이플 키우기: 레벨업 시 주 스탯·방어력·최대 HP 등을 직접 배분(능력치별 상한), 모든 능력치를 상한까지 올리면 '메이플 등급'이 올라 공격 속도·크리티컬 확률·데미지 배율 등 특수 능력치를 강화. 나무위키 기준 레벨당 5포인트, 25포인트마다 등급 상승.",
+      "monetization": "경험치 버프·경험치 던전, 월 정기권(오프라인 경험치 1.5배).",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://www.bluestacks.com/ko/blog/game-guides/maplestory-idle-rpg/mpsir-beginner-guide-ko.html",
+        "title": "메이플 키우기 초보자 가이드 (블루스택 블로그)",
+        "type": "블로그",
+        "note": "2025-12-11, 프로모션 성격. 능력치 배분·메이플 등급, 사냥→분해→소환 레벨업 루프, 액티브 스킬 6개, 오프라인 보상은 최대치 도달 전까지 감소 없음(최대치 미공개).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "무기/장비 소환과 소환 레벨",
+      "detail": "메이플 키우기 무기는 소환권 또는 레드 다이아 20개/회로 소환. 누적 소환 수에 따라 소환 레벨이 올라 상위 등급 확률이 늘며(최고 18레벨, 총 212,050회), 무기는 획득만 해도 적용되는 '보유 효과'와 '장착 효과'를 가진다. 중복으로 각성(5성, 최대 레벨 200), 5성 + 동일 5개로 상위 등급 승급.",
+      "monetization": "다이아 판매, 무기 소환 패스 1~6(누적 2만~25.9만 회 목표, 유료 트랙 시 최대 5,360 소환권+무기 추가), 소환권 패키지.",
+      "examples": [
+        "메이플 키우기",
+        "소울 스트라이크(직업·스킬·동료·유물·펫 소환)",
+        "세븐나이츠 키우기(소환 레벨로 영웅 풀 확장)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "장비 파밍·분해·소환 레벨(비가챠 장비 루프)",
+      "detail": "버섯커 키우기: 자동으로 차는 '램프'로 장비를 소환하고, 불필요한 장비를 팔아 골드·경험치를 얻으며, 골드로 램프를 업그레이드해 희귀 등급 확률을 높인다(램프 24레벨 골든·28레벨 영원 등급 해금). 메이플 키우기 방어구는 몬스터 포인트로 엘리트 몬스터를 소환해 얻고, 분해로 얻은 아머 스톤으로 엘리트 소환 레벨을 올린다(19~20레벨 유니크, 21레벨 레전드리 하급).",
+      "monetization": "램프·소환 가속, 소환 재화 패키지, 초반 '핫딜' 장비.",
+      "examples": [
+        "버섯커 키우기",
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "버섯커 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. Joy Nice Games 2023-12-22 출시, 램프 장비 소환 루프, 진화 레벨, 1원=1스타이아, 허위·표절 광고 비판, 한국 매출 1위.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "동료/영웅 수집·승급",
+      "detail": "메이플 키우기 동료: 레드 다이아 50개/회, 동료 소환 레벨 최고 13(총 45,800회), 메인 동료는 30초간 소환돼 캐릭터 공격력의 일정 비율로 싸우고 서브 동료는 장착 효과만 제공(소환 레벨 8에 슬롯 전부 개방), 중복으로 레벨업, 미보유 동료도 보유 효과 때문에 수집 필요. 세븐나이츠 키우기: 같은 영웅으로 승급, 덱 최대 10명, 출시 136종·월 2~8종 추가 계획(패드앤팝콘).",
+      "monetization": "동료 소환 패스 1~3(무기 패스보다 고가), 픽업 소환, 영웅 판매 상품, 광고 시청으로 영웅 획득.",
+      "examples": [
+        "메이플 키우기",
+        "세븐나이츠 키우기",
+        "소울 스트라이크"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "스킬 소환·장착",
+      "detail": "소울 스트라이크: 스킬도 소환으로 획득(1일 무료 소환 5회에서 시작해 하루 3회씩 늘어 최대 30회), 스킬 소환 Lv6에 픽업 소환 해금, 모든 소환물에 보유 효과가 있어 고르게 레벨업하는 것이 효율적. 레전드 오브 슬라임 스킬 등급은 커먼~고대 8단계, 메이플 키우기 액티브 스킬 최대 6개(마스터리 해금에 레드 다이아).",
+      "monetization": "스킬 소환 재화 판매, 픽업 소환(주기 교체).",
+      "examples": [
+        "소울 스트라이크",
+        "레전드 오브 슬라임",
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EC%86%8C%EC%9A%B8%20%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC",
+        "title": "소울 스트라이크 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 컴투스홀딩스·티키타카스튜디오 2024-01-17, 직업·스킬·동료·유물·펫 소환(7등급), 무료 소환 5→30회, 픽업 Lv6 해금, 보유 효과, 4개월 누적 매출 200억(게임메카 인용).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "유물",
+      "detail": "메이플 키우기: 유물 상자로 획득, 장착 효과(+유물 잠재)와 보유 효과, 동일 유물로 최대 5☆ 각성(잠재 옵션 해금) 후 중복은 상위 유물 합성 재료. 총 각성 수 10·30·50 이상에서 동시 착용 2·3·4개, 레전드리 확률 1%. 뮤: 포켓 나이츠도 뽑기 기반 유물로 공격력·방어력·관통·생명력·공격 속도를 올린다(게임동아).",
+      "monetization": "유물 상자, 레전드리 첫 획득 시 1각 '핫딜', 아레나 상점 유물.",
+      "examples": [
+        "메이플 키우기",
+        "뮤: 포켓 나이츠",
+        "세븐나이츠 키우기(타입별 유물)",
+        "버섯커 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "펫·탈것·코스튬(외형 + 스탯)",
+      "detail": "세븐나이츠 키우기 펫 25종·코스튬 170여 종(얼리 액세스 기준), 버섯커 키우기 탈것(서버 오픈 3일차 해금)·펫·코스튬·칭호·프로필 프레임, 소울 스트라이크 외형 아이템 999종. 외형에 보유 스탯을 붙여 수집 동기를 준다.",
+      "monetization": "코스튬 패키지, 이벤트 한정 외형, 첫 결제 보상 캐릭터(레전드 오브 슬라임 SS 슬라임 '코발로스').",
+      "examples": [
+        "세븐나이츠 키우기",
+        "버섯커 키우기",
+        "소울 스트라이크",
+        "레전드 오브 슬라임"
+      ],
+      "source": {
+        "url": "https://www.bluestacks.com/ko/blog/game-guides/raising-seven-knights/how-to-play-rsk-on-pc-mac-ko.html",
+        "title": "세븐나이츠 키우기 PC 플레이 가이드 (블루스택 블로그)",
+        "type": "블로그",
+        "note": "2023-07-24(얼리 액세스 기준). 영웅 약 130명, 펫 25종, 코스튬 170여 종, 덱 최대 10명, 기사단 영향력(골드)·특성·유물.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "강화 확률·천장(슬롯 강화)",
+      "detail": "메이플 키우기는 장비가 아닌 '슬롯'을 강화해 장비를 바꿔도 유지된다. 주문서(슬롯당 10회), 스타포스(최대 30성, 20→21성 파괴·21→22성 하락, 12성부터 실패 시 강화 포인트 누적·최대치에서 확정 성공), 잠재 옵션 등급업 확률과 천장(노말→레어 6%/33회 … 레전드리→미스틱 0.21%/714회).",
+      "monetization": "큐브·주문서·스타포스 주문서 판매(레드 다이아·월드보스 코인), 파괴 방지 옵션 시 재료 추가 소모, 파괴 복구 비용.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "전직·진화·환생",
+      "detail": "버섯커 키우기 진화 15·30·50·70·100·110레벨(110은 각성 인장 6개, 100레벨부터 인간형 외형), 메이플 키우기 1~4차 전직(Lv10·30·60·100, 나무위키 / 블루스택은 5레벨 1차 전직으로 서술 — 버전 차이). 키우기류는 리셋형 프레스티지 대신 비리셋형 관문을 주로 쓰고, 서양 인크리멘탈·로블록스형은 리버스(리셋)를 쓴다.",
+      "monetization": "각성석·인장(랭크전 상점 등), 전직·진화 기념 패키지(일반적 설계 관행, 근거 약함).",
+      "examples": [
+        "버섯커 키우기",
+        "메이플 키우기",
+        "Steal a Brainrot(리버스)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "버섯커 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. Joy Nice Games 2023-12-22 출시, 램프 장비 소환 루프, 진화 레벨, 1원=1스타이아, 허위·표절 광고 비판, 한국 매출 1위.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "성장 던전(골드·강화석·경험치·보스 러시)",
+      "detail": "레전드 오브 슬라임 던전 6종: 보스 러시(10보스 연속, 보석 500 + (난이도 − 1) × 10), 골드 던전(도망가는 마차), 마을 침략(포크), 드워프의 왕(점수형), 돌격! 슬라임(반지 커스터마이즈), 비밀의 언데드방. 열쇠는 매일 09시 2개 충전. 메이플 키우기 성장 던전 5종(무기: 소환권 최대 50·강화석 / 경험치 / 장비 / 용사의 수련장 / 강화)은 열쇠 하루 3회 보충·최대 10회 누적, 실패 시 미소모, 10단계마다 첫 클리어 대보상(나무위키 '메이플 키우기/시스템').",
+      "monetization": "입장권 추가 구매(메이플 키우기는 용사의 수련장 열쇠만 블루 다이아로 판매), 소탕.",
+      "examples": [
+        "레전드 오브 슬라임",
+        "메이플 키우기",
+        "소울 스트라이크",
+        "버섯커 키우기(램프던전 등)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A0%88%EC%A0%84%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%8A%AC%EB%9D%BC%EC%9E%84%3A%20%EB%B0%A9%EC%B9%98%ED%98%95%20RPG",
+        "title": "레전드 오브 슬라임: 방치형 RPG - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 로드컴플릿 개발. 골드 능력치 10종(더블샷 공속 Lv200·트리플샷 더블샷 Lv1001 해금), 던전 6종·09시 열쇠 2개, 보스 러시 보석 500+(난이도−1)×10, 첫 결제·패스·이벤트 상점 슬라임.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "길드·레이드·월드보스",
+      "detail": "메이플 키우기 길드: 길드원 스킬(개인 연구, 이적해도 유지)·마스터리 스킬(간부 연구, 시간 가속권·블루 다이아로 가속), 주간 토벌전(길드 전체 버프)·대항전(순위 보상), 길드 레이드(자쿰 12분 제한). 월드보스 20단계·랭킹 보상. 보스 레이드는 주 2회 + 공용 입장권 주 2장, 추가 입장 레드 다이아 2,000/3,000/5,000/5,000 또는 블루 다이아 3,000(주 3회·월 15회).",
+      "monetization": "입장권 판매, 길드 연구 가속, 랭킹 보상 경쟁.",
+      "examples": [
+        "메이플 키우기",
+        "버섯커 키우기(가문)",
+        "소울 스트라이크(정복자 10단계 후 길드)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "PvP 아레나·랭킹",
+      "detail": "메이플 키우기 아레나: 유저 더미와의 비동기 전투, 일일·주간 보상과 승/패 코인, 1.5·2배속, 전투력 5배 이상 차이 시 '빠른 전투'. 주간+일일을 꾸준히 하면 3~4천위도 핵심 보상(스타포스+유물)을 살 수 있게 설계. 세븐나이츠 키우기 결투장·리그·서버별 세나컵, 버섯커 키우기 통합 랭크전.",
+      "monetization": "입장 티켓(레드 다이아), 시즌 랭킹 보상 → 고과금 경쟁 유도.",
+      "examples": [
+        "메이플 키우기",
+        "세븐나이츠 키우기",
+        "버섯커 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "오프라인(방치) 보상",
+      "detail": "메이플 키우기: 오프라인 시 최고 지역에서 분당 51마리(멤버십 76마리) 처치 기준 경험치·재화 지급, 앱을 완전히 종료한 뒤 5분 후부터 적용, 오프라인 경험치는 온라인의 약 50%(나무위키 평가). 블루스택 FAQ는 '누적 시간이 최대치에 도달하기 전까지 감소하지 않는다'고만 하며 최대치는 미공개. 국내 키우기류의 '통상 최대 시간'은 공식 근거를 확인하지 못했다.",
+      "monetization": "월 정기권(오프라인 효율 1.5배), 오프라인 보상 2배 광고(일반 패턴), 오프라인 시간 확장 상품.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "보상형 광고(버프·추가 보상·무료 재화)",
+      "detail": "세븐나이츠 키우기는 경험치·금화 획득량을 높이는 음식 아이템을 광고 시청으로 지급하고(아이뉴스24), 광고로 영웅도 얻을 수 있으며 개발진은 강제 시청 없는 선택형 배치를 표방했다(패드앤팝콘). 반면 무료 재화 광고 권유가 잦다는 지적도 있다(뉴스토마토).",
+      "monetization": "광고 제거와 월정액 결합(28일 동안 광고 없이 보상 + 매일 루비).",
+      "examples": [
+        "세븐나이츠 키우기",
+        "Egg, Inc.(2배 부스트 2→8시간)"
+      ],
+      "source": {
+        "url": "https://www.inews24.com/view/1630868",
+        "title": "[겜별사] 넷마블표 방치형 RPG '세븐나이츠 키우기' (아이뉴스24)",
+        "type": "보도",
+        "note": "2023-09-09. 골드로 공·방·체 강화, 영웅 레벨·승급, 보스 소환 진행, 20스테이지 정체, 경험치·금화 음식 아이템은 광고 시청, 28일 월정액(광고 없이 보상+일일 루비), '1777 뽑기' 마케팅.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "성장·소환·프리미엄 패스",
+      "detail": "메이플 키우기 무기 소환 패스 1~6(누적 20,000·45,000·70,000·115,000·170,000·259,000회, 무료 완료 시 1,170~1,400 소환권, 유료 추가 시 최대 5,360 소환권+무기), 동료 패스 1~3(6,500·20,000·35,000회), 이전 패스 완료 시 다음 개방. 레전드 오브 슬라임은 프리미엄 패스 보상 슬라임을 패스 종료 후 복각 패키지로 판매.",
+      "monetization": "진행형 가치 상품(패스), 복각 판매.",
+      "examples": [
+        "메이플 키우기",
+        "레전드 오브 슬라임",
+        "Gold & Goblins(보물찾기 배틀패스)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+        "title": "메이플 키우기/시스템 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "월정액·멤버십",
+      "detail": "세븐나이츠 키우기: 9,900원·28일 상품으로 광고 시청 없이 보상 + 즉시 루비 9,900 + 매일 4,000 루비(1원=1루비 교환비), 28일제라 연 13회 결제 구조라는 비판(나무위키). 메이플 키우기: 12,000원 월 정기권으로 오프라인 경험치 1.5배(나무위키 평가).",
+      "monetization": "정액 구독(광고 제거·일일 재화·방치 효율 결합).",
+      "examples": [
+        "세븐나이츠 키우기",
+        "메이플 키우기",
+        "Egg, Inc. ULTRA($3.99/$7.99)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EC%84%B8%EB%B8%90%EB%82%98%EC%9D%B4%EC%B8%A0%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "세븐나이츠 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 9,900원·28일 기간제 광고 제거 월정액(즉시 루비 9,900 + 일 4,000), 1원=1루비, 픽업 0.075% 등 확률·릴레이 뽑기 비판, 광고 소재 비판.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "첫 결제·단계별·핫딜 패키지와 재화 구조",
+      "detail": "레전드 오브 슬라임: 첫 결제 보상 SS 슬라임(코발로스), 7일 출석 S 슬라임, 1만 젬 구매 슬라임, 프리미엄 패스·이벤트 한정 상점 슬라임. 메이플 키우기: 레전드리 유물 첫 획득 시 1각 핫딜, 월드보스 8단계·아레나 그랜드마스터 첫 달성 핫딜(나무위키). 버섯커 키우기: 충전 선물·7일 시련·7일 접속. 재화는 1원=1 유료재화(스타이아·루비) 교환비와 무료/유료 다이아 분리(메이플 레드/블루 다이아)가 흔하다.",
+      "monetization": "첫 결제 전환, 진행 이벤트 트리거형 한정 상품.",
+      "examples": [
+        "레전드 오브 슬라임",
+        "메이플 키우기",
+        "버섯커 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A0%88%EC%A0%84%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%8A%AC%EB%9D%BC%EC%9E%84%3A%20%EB%B0%A9%EC%B9%98%ED%98%95%20RPG",
+        "title": "레전드 오브 슬라임: 방치형 RPG - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 로드컴플릿 개발. 골드 능력치 10종(더블샷 공속 Lv200·트리플샷 더블샷 Lv1001 해금), 던전 6종·09시 열쇠 2개, 보스 러시 보석 500+(난이도−1)×10, 첫 결제·패스·이벤트 상점 슬라임.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "확률 공시(법적 의무)",
+      "detail": "게임산업법 제33조②: 확률형 아이템의 종류와 종류별 공급 확률정보를 게임물·홈페이지·광고선전물마다 표시(2023-02-27 국회 통과, 2024-03-22 시행; 유상+무상 결합 아이템 포함). 제33조의2: 미표시·거짓 표시로 손해 시 배상, 고의·과실이 없음을 사업자가 입증, 고의면 손해액의 3배 이내(2025-08-01 시행), 게임물관리위원회 신고·피해구제센터. 세븐나이츠 키우기처럼 소환 레벨별 확률(Lv1 노멀 70%/레어 20%/에픽 10% → Lv10 레전드 0.15%)을 레벨마다 공개해야 한다. 앱스토어 3.1.1·구글 플레이 결제 정책도 사전 확률 공개를 요구한다.",
+      "monetization": "컴플라이언스: 확률표와 서버 테이블의 일치 검증, 변경 이력 공지.",
+      "examples": [
+        "메이플 키우기(확률 오류 → 전액 환불)",
+        "세븐나이츠 키우기"
+      ],
+      "source": {
+        "url": "https://www.ceoscoredaily.com/page/view/2025080415181654698",
+        "title": "'확률형 아이템 위반, 쪽박 찬다'…'1호 위반' 누가 될까 '초비상' (CEO스코어데일리)",
+        "type": "보도",
+        "note": "2025-08-04. 2025-08-01 시행 개정 게임산업법: 고의 시 최대 3배 징벌적 손해배상, 입증책임 전환, 게임물관리위원회 신고·피해구제센터, 정액제·시즌패스 등 예측 가능한 BM 전환.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "system": "절전 모드·저사양 최적화",
+      "detail": "장시간 켜 두는 장르라 발열·배터리·기기 수명 문제가 지적된다(나무위키 '방치형 게임'). 버섯커 키우기는 '절전' 메뉴를 두고, 세븐나이츠 키우기 개발진은 '수년 뒤에도 저사양·저용량·최적화 유지'를 목표로 했다(얼리 액세스 약 800MB). 메이플 키우기는 발열 저감용 프레임 상한이 공속 표기 논란의 원인이 됐다.",
+      "monetization": "직접 BM은 없음(리텐션·리뷰 평점 기반).",
+      "examples": [
+        "버섯커 키우기",
+        "세븐나이츠 키우기",
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://v.daum.net/v/2Pv8Xu2me6",
+        "title": "세븐나이츠 키우기 6일 출시 '수년 뒤에도 저사양, 저용량, 최적화 유지' (패드앤팝콘)",
+        "type": "보도",
+        "note": "2023-09 출시 전 인터뷰. 장비 개념 제거, 소환 레벨로 영웅 풀 확장·픽업 해금(리세마라 방지), 영웅 136종·월 2~8종 추가, 2주 밸런스, 하루 30~40분, 천장, 선택형 광고, 약 800MB.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "monetizationDesign": [
+    {
+      "pattern": "보상형 광고: 2배 수익 부스트",
+      "detail": "광고 1회 시청으로 일정 시간 수익 2배. Kongregate는 '2배·4시간'을 표준으로 제시했다. Egg Inc.는 2시간(Video Doubler Time 연구로 최대 8시간)이고, 광고를 끈 유저에게도 탭할 때마다 1시간 무료 부스트를 준다.",
+      "bestPractice": "지속 시간을 세션 간격(2~4시간)과 맞추고 연장은 진행(연구)으로 해금한다. 광고를 거부·비활성화한 유저에게도 느린 대체 경로를 준다.",
+      "risk": "부스트가 사실상 필수가 되면 '광고 시청 노동'이 되고, 지속 시간이 너무 짧으면 시청 피로가 쌓인다.",
+      "examples": [
+        "Egg, Inc.",
+        "AdVenture Capitalist"
+      ],
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/the-rise-and-rise-of-idle-games-68916528/68916528",
+        "title": "The Rise and Rise of Idle Games (Kongregate/Pecorella 슬라이드)",
+        "type": "강연",
+        "note": "행사·일자 미표기. '광고 시청 2배·4시간'이 표준, Double Return, 저금통='점진적 수익화', 장기 타임워프 대폭 할인, 오프라인 제한 장단점, 저 ARPDAU·고 DAU.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "보상형 광고: 오프라인 보상 2배(더블 리턴)",
+      "detail": "복귀 화면에서 쌓인 방치 수익을 광고 시청으로 2배 수령. 'Double Return' 방식은 예측 가능하고 좋은 거래로 인식되며, 랜덤 오퍼도 전부-아니면-0 대신 2배형이 흔하다(Kongregate). 위키백과도 '오프라인 수익 2배'를 대표 광고 보상으로 꼽는다.",
+      "bestPractice": "복귀 시 1회만 제안하고 거절해도 기본 보상은 그대로 준다. 오프라인 상한·효율과 함께 설계한다.",
+      "risk": "기본 오프라인 효율을 일부러 낮춰 광고를 강요하면 '방치형인데 손해'라는 불만이 생긴다.",
+      "examples": [
+        "Double Return Gold(Kongregate 사례)",
+        "키우기류 방치 보상 2배"
+      ],
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/the-rise-and-rise-of-idle-games-68916528/68916528",
+        "title": "The Rise and Rise of Idle Games (Kongregate/Pecorella 슬라이드)",
+        "type": "강연",
+        "note": "행사·일자 미표기. '광고 시청 2배·4시간'이 표준, Double Return, 저금통='점진적 수익화', 장기 타임워프 대폭 할인, 오프라인 제한 장단점, 저 ARPDAU·고 DAU.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "보상형 광고: 무료 재화·무료 뽑기·즉시 보상",
+      "detail": "소량 프리미엄 통화, 즉시 현금, 상자, 무료 소환을 광고로 지급. Egg Inc.는 2~5분마다 영상 알림을 띄우고 골든에그 48/96/360/720 등을 준다. 세븐나이츠 키우기는 광고로 영웅·음식 버프를 준다. Kongregate는 게임이 제안하는 방식과 플레이어가 원할 때 보는 방식을 구분했다.",
+      "bestPractice": "하루 상한·쿨다운으로 가치를 유지하고, 결제자에게도 매력적인 보상(배수·타임워프)을 섞는다 — '소량의 하드 커런시는 결제자에게 매력이 없지만 배수나 타임워프는 다르다'.",
+      "risk": "무분별한 재화 지급은 유료 재화 가치를 떨어뜨리고, 광고 빈도가 높으면 이탈한다.",
+      "examples": [
+        "Egg, Inc.",
+        "세븐나이츠 키우기",
+        "소울 스트라이크(무료 소환)"
+      ],
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/idle-chatter-gdc-2016-59734260/59734260",
+        "title": "Idle Chatter: What We Can Learn From Self-Playing Games (GDC 2016 슬라이드)",
+        "type": "강연",
+        "note": "Pecorella GDC 2016. 리텐션·ARPU 상위, 타임워프·영구 배수·프레스티지 청구·가챠, opt-in 광고 유형, 'Why punish offline play?', 오토클리커는 설계 오류. 수치 차트는 이미지라 미추출.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "광고 제거 IAP(영구 vs 기간제)",
+      "detail": "세븐나이츠 키우기는 9,900원·28일 기간제 광고 제거를 루비 지급과 묶었다 — '광고 영구 제거가 거의 기본'인 관행을 깼다는 비판(나무위키), 광고 제거와 월정액 결합은 드문 사례라는 평가(아이뉴스24). Egg Inc. ULTRA Pro는 구독 안에 '광고 없음 + 광고로 받던 선물을 ULTRA 선물로 자동 지급 + 영구 2배'를 넣었다.",
+      "bestPractice": "광고 제거 구매자가 광고 보상을 잃지 않게 자동 지급하고, 영구 상품과 구독 상품을 명확히 구분해 표기한다.",
+      "risk": "기간제 광고 제거 + 광고 의존 보상 구조는 '광고 없이 하려면 매달 결제해야 한다'는 인식을 만든다(뉴스토마토).",
+      "examples": [
+        "세븐나이츠 키우기",
+        "Egg, Inc. ULTRA Pro"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EC%84%B8%EB%B8%90%EB%82%98%EC%9D%B4%EC%B8%A0%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "세븐나이츠 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 9,900원·28일 기간제 광고 제거 월정액(즉시 루비 9,900 + 일 4,000), 1원=1루비, 픽업 0.075% 등 확률·릴레이 뽑기 비판, 광고 소재 비판.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "시간 스킵·타임워프",
+      "detail": "현재 수익률 × 기간을 즉시 지급. AdCap은 1일 10골드·7일 25골드·14일 40골드, 3시간×10회 익스프레스 50골드. 위키백과는 '즉시 재화 투입(현재 수익률의 비율)·타임워프'를 AdCap이 개척한 대표 상품으로 본다. Kongregate는 장기 워프를 대폭 할인해 가격을 매길 수 있다고 설명했다.",
+      "bestPractice": "수익률 비례로 자동 스케일되게 하고, 장기 워프에 할인을 적용하며, 프레스티지 직전처럼 효율이 높은 순간을 안내한다.",
+      "risk": "프레스티지 루프를 건너뛰게 해 진행 체감이 빨리 소진되고, PvP가 있으면 P2W 논란이 생긴다.",
+      "examples": [
+        "AdVenture Capitalist",
+        "Idle Miner Tycoon(부스트 2배~2,000배)"
+      ],
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Time_Warps",
+        "title": "Time Warps - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "1일 10골드·7일 25골드·14일 40골드, 익스프레스 3시간×10회 50골드, 환산식 d = x/(1.21y+1).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "영구 배수(프리미엄 통화)",
+      "detail": "AdCap 골드 업그레이드: ×3(20골드)·×12(50)·×27(100) 영구 배수가 일반 리셋·하드 리셋에도 유지되며 중첩(가산)된다. 엔젤 즉시 청구(20골드)도 판매. Kongregate는 '영구·중첩되는 속도 배수'를 대표 IAP 유형으로 분류했다.",
+      "bestPractice": "1회 결제의 가치가 장기적으로 보이도록 '영구'를 명시하고, 배수 크기는 진행을 몇 프레스티지 앞당기는 수준으로 제한한다.",
+      "risk": "배수 인플레로 무과금과의 격차가 벌어지고, 이벤트·PvP 밸런스가 무너진다.",
+      "examples": [
+        "AdVenture Capitalist",
+        "Egg, Inc.(ULTRA Pro 영구 2배)"
+      ],
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Gold_Upgrades",
+        "title": "Gold Upgrades - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "영구 배수 ×3(20골드)·×12(50)·×27(100), 엔젤 즉시 청구(20), 리셋·하드 리셋에도 유지.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "프리미엄 통화와 가격 사다리",
+      "detail": "AdCap 골드: $4.99=55, $9.99=115, $19.99=240, $49.99=625, $94.99=1,300(대량 묶음일수록 보너스). Kolibri: 소프트 커런시(Idle Cash)는 현금으로 못 사고, 하드 커런시(Super Cash)는 구매 외에 진행·일일·원정·이벤트 보상으로 무료 지급해 가치를 학습시킨다. 대부분 유저는 하드 커런시를 저축하고 고참일수록 더 쓴다. 국내는 1원=1 유료재화 교환비가 흔하다.",
+      "bestPractice": "무료 하드 커런시로 소비 경험을 먼저 주고 유료 전환을 유도한다. '돈이 계속 순환할 때 경제가 건강하다'는 원칙으로 싱크를 설계한다.",
+      "risk": "재화 종류가 많아지면 가치가 혼란스럽고, 무료/유료 재화 구분이 불명확하면 환불·분쟁이 생긴다.",
+      "examples": [
+        "AdVenture Capitalist",
+        "Idle Miner Tycoon",
+        "버섯커 키우기(스타이아)",
+        "메이플 키우기(레드/블루 다이아)"
+      ],
+      "source": {
+        "url": "https://www.kolibrigames.com/blog/economy-in-free-to-play-mobile-games-part-2/",
+        "title": "Economy In Free-to-Play Mobile Games, Part 2: Follow the Money (Kolibri Games)",
+        "type": "블로그",
+        "note": "2020-09-21. 소프트(Idle Cash)·하드(Super Cash) 커런시 정의, 무료 하드 커런시로 가치 학습, 부스트 2배~2,000배·절반 이상 원정 보상, 대부분 저축 성향.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "패스(성장·소환·시즌·배틀패스)",
+      "detail": "누적 행동(소환 횟수·스테이지)에 따라 보상이 열리고 유료 트랙이 추가 보상을 준다: 메이플 키우기 무기 패스 6단계·동료 패스 3단계, 레전드 오브 슬라임 프리미엄 패스(종료 후 복각 판매), Gold & Goblins 보물찾기 프리미엄 보상(미수령 프리미엄 보상은 만료되지만 무료 경로는 유지). 2025-08 3배 배상 시행 이후 국내사는 정액제·시즌패스·배틀패스 등 예측 가능한 BM으로 전환을 가속하고 있다(CEO스코어데일리).",
+      "bestPractice": "무료 트랙에도 실질 보상을 두고 진행을 시각화하며, 복각·만료 정책을 미리 공지한다.",
+      "risk": "패스가 여러 겹이면 '패스 피로'와 월 지출 상승, 보상 지급 버그 시 신뢰 하락(메이플 키우기 패스 보상 버그).",
+      "examples": [
+        "메이플 키우기",
+        "레전드 오브 슬라임",
+        "Gold & Goblins"
+      ],
+      "source": {
+        "url": "https://www.ceoscoredaily.com/page/view/2025080415181654698",
+        "title": "'확률형 아이템 위반, 쪽박 찬다'…'1호 위반' 누가 될까 '초비상' (CEO스코어데일리)",
+        "type": "보도",
+        "note": "2025-08-04. 2025-08-01 시행 개정 게임산업법: 고의 시 최대 3배 징벌적 손해배상, 입증책임 전환, 게임물관리위원회 신고·피해구제센터, 정액제·시즌패스 등 예측 가능한 BM 전환.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "구독·월정액",
+      "detail": "Egg Inc. ULTRA(2023-07 발표): Standard $3.99/월(주간 추가 레거시 예언 계약, 저금통 +25%, 전용 이벤트), Pro $7.99/월(광고 없음, 영구 2배 수익, 저금통 +40%). 메이플 키우기 12,000원 월 정기권(오프라인 경험치 1.5배), 세븐나이츠 키우기 9,900원·28일. 애플 3.1.2는 자동 갱신 구독에 지속 가치와 최소 7일을 요구하고 구독에 재화 포함을 허용한다.",
+      "bestPractice": "매일 출석해야만 받는 구조보다 즉시+지속 가치를 주고, 플랫폼 구독 정책(모든 기기에서 동작, 추가 행동 요구 금지)을 지킨다.",
+      "risk": "기본 경험을 일부러 불편하게 만들어 구독을 강요하면 반발한다.",
+      "examples": [
+        "Egg, Inc. ULTRA",
+        "메이플 키우기",
+        "세븐나이츠 키우기"
+      ],
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Egg,_Inc._Ultra",
+        "title": "Egg, Inc. Ultra - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "2023년 7월 발표 월 구독: Standard $3.99, Pro $7.99(광고 없음·영상 선물→ULTRA 선물·영구 2배 수익).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "오프라인 확장·편의 IAP",
+      "detail": "Egg Inc. Pro Permit($9.99, 과거 $4.99→$7.99): 실로 2→10개, 오프라인 수익 2배(고품질 실로), 동시 부스트 2→5개, 유물 2→4개. Kongregate는 오프라인 제한이 '더 많은 오프라인 수익'을 파는 수익화 포인트가 된다고 분석했다.",
+      "bestPractice": "1회성 고가치 상품으로 가격을 고정하고, 무과금 경로(연구로 상한 연장)를 함께 둔다.",
+      "risk": "기본 상한이 너무 짧으면 '처벌'로 느껴진다(Pecorella는 초기 Egg Inc. 2시간 상한을 실수로 평가).",
+      "examples": [
+        "Egg, Inc.",
+        "메이플 키우기(멤버십)"
+      ],
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Permit",
+        "title": "Permit - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "Pro Permit $9.99(과거 $4.99→$7.99): 실로 10개·오프라인 수익 2배·동시 부스트 5개·유물 4개.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "누적형 가치 상품(저금통)",
+      "detail": "Egg Inc. 저금통은 구매·업그레이드할 때마다 골든에그가 쌓이고 $5.99에 깬다. 깰수록 레벨 보너스가 커지고(6레벨 +70%) 상한이 있다. Kongregate는 이를 '점진적 수익화(Incremental monetization)'라고 불렀다.",
+      "bestPractice": "플레이할수록 가치가 오르는 것을 보여 주고, 가격은 고정하며, 상한·보너스를 투명하게 표기한다.",
+      "risk": "상한 도달 후 방치하면 낭비감이 생기고, 상한 근처에서만 구매가 몰린다.",
+      "examples": [
+        "Egg, Inc."
+      ],
+      "source": {
+        "url": "https://egg-inc.fandom.com/wiki/Piggy_Bank",
+        "title": "Piggy Bank - Egg, Inc. Wiki",
+        "type": "위키",
+        "note": "구매·업그레이드마다 골든에그 적립, $5.99로 깨기, 레벨 보너스와 상한식.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "가챠(소환 레벨·픽업·천장)",
+      "detail": "세븐나이츠 키우기: 소환 레벨이 올라야 영웅 풀이 넓어지고 픽업은 일정 횟수 후 해금(리세마라 방지·플레이 흐름 연장), 천장을 두고 소환 재화를 넉넉히 지급한다고 개발진이 설명. 메이플 키우기 무기 소환 레벨 18(총 212,050회). Kongregate는 가챠형 랜덤 업그레이드 뽑기도 방치형 IAP 유형으로 분류했다.",
+      "bestPractice": "레벨별 확률을 모두 공시하고 천장·기대 시도 수를 안내하며, 확률 테이블 자동 검증 테스트를 CI에 둔다.",
+      "risk": "극저확률(픽업 0.075%)과 수천~수만 회 릴레이 목표는 반감을 사고, 표시와 실제가 다르면 고의 시 3배 배상 책임이 생긴다.",
+      "examples": [
+        "세븐나이츠 키우기",
+        "메이플 키우기",
+        "소울 스트라이크"
+      ],
+      "source": {
+        "url": "https://v.daum.net/v/2Pv8Xu2me6",
+        "title": "세븐나이츠 키우기 6일 출시 '수년 뒤에도 저사양, 저용량, 최적화 유지' (패드앤팝콘)",
+        "type": "보도",
+        "note": "2023-09 출시 전 인터뷰. 장비 개념 제거, 소환 레벨로 영웅 풀 확장·픽업 해금(리세마라 방지), 영웅 136종·월 2~8종 추가, 2주 밸런스, 하루 30~40분, 천장, 선택형 광고, 약 800MB.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "이벤트 상점·한정 판매",
+      "detail": "레전드 오브 슬라임 이벤트 한정 상점 슬라임은 종료 후 연금술로 제작 가능, Grow a Garden은 접속해야 받는 주간 독점 아이템과 재고 순환으로 리텐션을 끌어올린다. AdCap은 이벤트별 행성·통화와 메가벅스를 운영한다. 위키백과는 이벤트 통화를 방치형 대표 수익화 요소로 꼽는다.",
+      "bestPractice": "한정 상품의 사후 획득 경로(복각·제작)를 마련하고 이벤트 통화 잔액 처리 규칙을 공지한다.",
+      "risk": "FOMO 과다, 판매 누락 사고(레전드 오브 슬라임 일부 유저 상점 미판매 → 보상 코드 지급).",
+      "examples": [
+        "레전드 오브 슬라임",
+        "Grow a Garden",
+        "AdVenture Capitalist"
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+        "title": "Grow a Garden - Wikipedia",
+        "type": "위키",
+        "note": "Roblox 2025-03-26 출시 방치 파밍, 초기 버전 3일 제작, 최고 동접 2,230만(2025-08-23), 약 35%가 13세 미만, 과도한 수익화 비판, Robux로 대기 단축·훔치기.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "하이브리드(광고 + IAP) 균형",
+      "detail": "성공 모바일 방치형 5종 모두 IAP, 4종이 광고를 병행했다(PUC-Rio 2022). Kongregate: 방치형은 저 ARPDAU·고 DAU·높은 리텐션이라 광고가 '가벼운 일일 수익화'를 맡지만 광고 수익이 결제를 대체하지는 않는다. Kolibri: 방치 카테고리 결제 전환율 0.5%. Gold & Goblins는 IAP 중심으로 2023년 4,800만 달러. Mind Studios는 전통 방치형 매출을 광고 60~70%·IAP 30~40%로 주장하나 출처 미인용(근거 약함).",
+      "bestPractice": "신규 유저에게는 인터스티셜을 보이지 않다가 점증하고, 보상형 광고를 유료 상품의 단기 대체재로 설계한다(예: 광고 5분 2배 vs 유료 24시간 2배). 결제자에게는 광고 면제 혜택을 준다.",
+      "risk": "광고 과다는 리텐션 하락, IAP 과다는 P2W 인식으로 이어진다.",
+      "examples": [
+        "Idle Miner Tycoon",
+        "Egg, Inc.",
+        "Gold & Goblins",
+        "세븐나이츠 키우기"
+      ],
+      "source": {
+        "url": "https://www.maxwell.vrac.puc-rio.br/62190/62190.PDF",
+        "title": "Metodologias de Monetização e Retenção em Jogos Idle para a plataforma Mobile (Pedro Santos Azevedo, PUC-Rio, 2022)",
+        "type": "논문",
+        "note": "학부 졸업논문(2022-11). 성공 모바일 방치형 5종 모두 IAP, 4종이 광고 병행, 수익화가 리텐션 전략보다 성숙.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "pattern": "고래·중과금·소과금 구조",
+      "detail": "Kongregate 방치형에는 1,000달러 이상 쓴 유저가 많았다(GDC 2015 보도). 메이플 키우기는 소과금 체감이 약해 블루 다이아를 대량 결제하는 고과금 중심 P2W라는 비판을 받았고(나무위키 평가), 세븐나이츠 키우기는 월정액/개별 구매 비율을 '대외비'로 공개하지 않았다(뉴스토마토). Kolibri는 'IMT is not pay-to-win'이라며 끝없는 진행 속 시간 단축 판매를 정당화했다.",
+      "bestPractice": "소과금(월정액·패스)의 체감 가치를 확실히 하고, 고과금에는 수집·코스메틱·편의 같은 상한 없는 소비처를 주며, PvP 격차는 프레스티지 통화·매칭으로 관리한다(Kongregate: 큰 수는 PvP 밸런싱이 어려움).",
+      "risk": "랭킹 보상이 고과금에 독점되면 중간층이 이탈하고, 서버 통합 등 운영 결정이 격차를 키운다.",
+      "examples": [
+        "메이플 키우기",
+        "Idle Miner Tycoon",
+        "AdVenture Capitalist"
+      ],
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-rise-of-games-you-mostly-don-t-play",
+        "title": "The rise of games you mostly don't play (GDC 2015 강연 보도, Simon Parkin)",
+        "type": "보도",
+        "note": "2015-03-03 GDC 강연 보도: Kongregate 월간 최다 플레이 10위 중 3개가 방치형, 1,000달러 이상 지출 유저 다수, '에너지 통화 없는 자연스러운 에너지 시스템'.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "antiPatterns": [
+    {
+      "issue": "확률 오류·조작과 공지 없는 수정",
+      "why": "메이플 키우기에서는 출시일(2025-11-06)부터 12-02까지 어빌리티 옵션 최대 수치가 나오지 않았고('이하'가 '미만'으로 설정된 오류), 공지 없이 수정됐다는 의혹이 확산됐다. 2026-01-26 대표 명의 사과, 01-28 출시 이후 전 결제 전액 환불(신청자, 환불 계정 이용 정지) 발표, 본부장 보직 해임으로 이어졌다. 2024년 확률 공시 의무화 직후에도 다수 게임에서 확률 불일치가 드러났다.",
+      "fix": "공시 확률표와 서버 테이블의 자동 대조 테스트, 경계값(이하/미만) 단위 테스트, 수백만 회 시뮬레이션 분포 검증을 배포 파이프라인에 넣는다. 오류 발견 시 즉시 공지·보상하고, 외주·공동개발 시 퍼블리셔가 확률 검수 절차를 갖는다.",
+      "examples": [
+        "메이플 키우기",
+        "라그나로크 온라인(법 시행 직전 확률표 152건 수정, 나무위키 '확률형 아이템 규제 법안')"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "메이플 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-10-06 수정본). 어빌리티 최대치 미등장·공속 임계값 논란, 2026-01-26 사과·01-28 전액 환불 공지, 매크로·무고밴, 2차 서버 통합. 공식 공지 원문은 JS 페이지라 미확인.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "표기 스탯과 실제 효과의 불일치",
+      "why": "메이플 키우기 공격 속도는 30fps 기준 3프레임(100ms) 단위로 판정돼 0·11.11·25·42.86·66.67·100% 임계값에서만 실제로 빨라졌다. 등장 확률 2.5%인 상위 옵션을 판매하면서 효과가 구간화돼 있어 기만 논란이 일었고, 넥슨은 2026-01-20 '발열·성능 저하를 줄이기 위한 프레임 상한' 때문이라고 해명하고 보정 패치를 약속했다.",
+      "fix": "수치형 옵션은 실효값을 UI에 표기하고(구간형이면 구간을 공개), 프레임 의존 판정 대신 누적 타이머로 구현한다. 성능 최적화 사양을 밸런스 사양과 함께 검토한다.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "메이플 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-10-06 수정본). 어빌리티 최대치 미등장·공속 임계값 논란, 2026-01-26 사과·01-28 전액 환불 공지, 매크로·무고밴, 2차 서버 통합. 공식 공지 원문은 JS 페이지라 미확인.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "광고 과다·사실상 강제 광고와 기간제 광고 제거",
+      "why": "세븐나이츠 키우기는 무료 재화를 얻으려면 광고 시청을 권유받는 경우가 잦고 광고 없이 하려면 사실상 월 결제가 필요하다는 지적을 받았다(뉴스토마토). 9,900원·28일 기간제 광고 제거는 '광고 영구 제거' 관행을 깬다는 비판을 받았다(나무위키).",
+      "fix": "신규 유저에게는 인터스티셜을 보이지 않다가 점증하고, 보상형 위주로 일일 상한을 둔다. 광고 제거 구매 시 광고 보상을 자동 지급하고(Egg Inc. ULTRA 선물), 영구 광고 제거 옵션을 별도로 판다.",
+      "examples": [
+        "세븐나이츠 키우기"
+      ],
+      "source": {
+        "url": "https://www.newstomato.com/ReadNews.aspx?no=1203785",
+        "title": "넷마블 '순한 맛 자동사냥' 통했다···장기흥행 요소는 과제 (뉴스토마토)",
+        "type": "보도",
+        "note": "2023-10-10. 세븐나이츠 키우기 구글 2위·애플 1위, 광고 없이 하려면 사실상 월 결제 필요, 무료 재화 광고 권유 잦음, 월정액 비율 비공개.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "허위·과장·표절 광고",
+      "why": "버섯커 키우기는 인게임에 없는 캐릭터·무기 특성, '1MB로 즐길 수 있다'(실제 445MB) 같은 허위 광고와 타 IP 무단 도용·AI 생성 이미지로 비판받았다. 게임산업법 제34조는 등급받은 게임물의 내용과 다른 광고를 금지한다.",
+      "fix": "광고 소재를 실제 인게임 화면 기반으로 만들고 사전 검수한다. 협업 IP 라이선스를 확인하고 매체·스토어 광고 정책을 준수한다.",
+      "examples": [
+        "버섯커 키우기",
+        "세븐나이츠 키우기(양산형 광고 모방 비판)"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "버섯커 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. Joy Nice Games 2023-12-22 출시, 램프 장비 소환 루프, 진화 레벨, 1원=1스타이아, 허위·표절 광고 비판, 한국 매출 1위.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "'방치형'인데 방치로는 진행이 안 되는 페이월성 레벨 디자인",
+      "why": "메이플 키우기는 스테이지당 몬스터 경험치 +10% 대비 레벨당 필요 경험치 +25% 구조라 단순 방치로는 정상 진행이 불가하다는 평가를 받았다. 나무위키는 다수 방치형이 실제로는 '재화 관리형'·'육성 제한 게임'이라고 비판한다.",
+      "fix": "방치 진행의 하한선(최소 진척 속도)을 보장하고, 벽마다 무과금 해법(던전·리셋·연구)을 연결한다. 스테이지 실패율·체류 시간 텔레메트리로 정체 구간을 감시한다.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%ED%8F%89%EA%B0%80",
+        "title": "메이플 키우기/평가 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 경험치 곡선(스테이지 +10% vs 레벨 +25%), 오프라인 경험치 온라인 대비 약 50%·12,000원 월 정기권 1.5배, P2W 비판.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "오프라인 '처벌'(너무 짧은 상한·낮은 효율)",
+      "why": "Kongregate는 'Why punish offline play?'라며 타이머·비율 제한 없이도 잘 유지되는 사례를 들었고, Pecorella는 초기 Egg Inc.의 2시간 상한을 실수로 봤다. 국내 방치형은 꺼도 되는 시간을 짧게 잡거나 자원을 턱없이 낮게 줘 '방치형이라는 문구에 속았다'는 불만을 산다(나무위키).",
+      "fix": "상한을 목표 접속 리듬(최소 8~12시간 이상 권장, 근거 약함)에 맞추고 진행으로 확장한다. 오프라인을 온라인과 같은 식으로 계산하거나 지수 성장 수학을 소프트 상한으로 쓰고, 상한 도달을 알린다.",
+      "examples": [
+        "Egg, Inc.(초기)",
+        "국내 키우기류 전반"
+      ],
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/idle-chatter-gdc-2016-59734260/59734260",
+        "title": "Idle Chatter: What We Can Learn From Self-Playing Games (GDC 2016 슬라이드)",
+        "type": "강연",
+        "note": "Pecorella GDC 2016. 리텐션·ARPU 상위, 타임워프·영구 배수·프레스티지 청구·가챠, opt-in 광고 유형, 'Why punish offline play?', 오토클리커는 설계 오류. 수치 차트는 이미지라 미추출.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "파워 인플레·서버 격차·기습 서버 통합",
+      "why": "메이플 키우기는 2026-09-15 공지 후 09-22에 서버를 3~11개씩 묶는 2차 통합을 했다. 오픈 1달도 안 된 83서버 등 후열 서버는 길드 대항전·월드보스·아레나에서 하위 보상만 받게 됐고, 운영사는 환불과 격차 보정을 거부했다.",
+      "fix": "통합 기준(서버 나이·전투력 분포)을 공개하고, 통합 후 캐치업 버프와 보상 테이블 재조정, 시즌제 랭킹을 도입한다.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "메이플 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-10-06 수정본). 어빌리티 최대치 미등장·공속 임계값 논란, 2026-01-26 사과·01-28 전액 환불 공지, 매크로·무고밴, 2차 서버 통합. 공식 공지 원문은 JS 페이지라 미확인.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "매크로·버그 악용과 클라이언트 신뢰",
+      "why": "메이플 키우기에서는 챕터를 반복 이동해 사냥 수를 1.5~2배로 늘리는 매크로가 2026-02 수정 공지 후에도 남아 04월 확산됐고, 스펙 미달로 챕터를 통과시키는 버그, 핵과 무고 제재가 겹쳐 신뢰가 무너졌다. Kongregate는 오토클리커를 치트가 아닌 '설계 오류'로 보고 탭-홀드 등 설계로 해결하라고 제안했다.",
+      "fix": "진행·보상을 서버가 검증하고(Server-authoritative), 비정상 획득률을 텔레메트리로 탐지한다. 수동 반복이 최적해가 되지 않게 설계하고, 제재 이의제기 절차를 둔다.",
+      "examples": [
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+        "title": "메이플 키우기 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키(2026-10-06 수정본). 어빌리티 최대치 미등장·공속 임계값 논란, 2026-01-26 사과·01-28 전액 환불 공지, 매크로·무고밴, 2차 서버 통합. 공식 공지 원문은 JS 페이지라 미확인.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "기기 시간 조작·광고 보상 위조",
+      "why": "오프라인 수익·충전·쿨다운을 기기 시계에 의존하면 시간 변경으로 보상을 반복 획득할 수 있고(일반적 설계 관행, 근거 약함 — 시계 조작을 다룬 공식 문서는 확인 못 함), 클라이언트 측 광고 보상 콜백은 위조될 수 있다.",
+      "fix": "경과 시간은 로그인 시 서버 타임스탬프 기준으로 계산하고 큰 시간 점프는 상한 처리한다. 보상형 광고 지급은 AdMob SSV(ECDSA 서명·transaction_id·timestamp 검증)로 확정하고, 화폐에 영향을 주는 보상은 서버 콜백 이후 지급한다.",
+      "examples": [],
+      "source": {
+        "url": "https://developers.google.com/admob/android/ssv",
+        "title": "Validate server-side verification (SSV) callbacks - Google AdMob",
+        "type": "공식",
+        "note": "클라이언트 보상 콜백 위조 방지용 서버 검증(서명·transaction_id·timestamp 등).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "발열·배터리 소모와 성능 대책의 부작용",
+      "why": "켜 두는 방치형은 과부하로 기기 수명을 줄인다는 비판을 받는다(나무위키). 반대로 성능 저감 조치(프레임 상한)가 밸런스 문제를 낳기도 한다(메이플 키우기 공속 논란).",
+      "fix": "절전 모드(버섯커 키우기), 오프라인 계산으로 화면을 켜 둘 필요를 없애기, 저사양·저용량 유지 목표(세븐나이츠 키우기). 성능 옵션이 전투 수치에 영향을 주지 않게 시뮬레이션과 렌더링을 분리한다.",
+      "examples": [
+        "버섯커 키우기",
+        "세븐나이츠 키우기",
+        "메이플 키우기"
+      ],
+      "source": {
+        "url": "https://namu.wiki/w/%EB%B0%A9%EC%B9%98%ED%98%95%20%EA%B2%8C%EC%9E%84",
+        "title": "방치형 게임 - 나무위키",
+        "type": "위키",
+        "note": "사용자 편집 위키. 'xx 키우기'는 대체로 클리커 계열, '육성 제한 게임' 비판, 국내 방치형의 짧은 오프라인/낮은 자원 비판, 기기 수명 단축, 네코아츠메 등 관람형.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "팝업 상점·푸시 남발",
+      "why": "첫 실행 직후의 권한 요청과 마케팅 푸시는 거부를 부르고 정책 위반 소지가 있다(Android 13 알림 기본 꺼짐, iOS 4.5.4 마케팅 푸시 옵트인, 정보통신망법 제50조 야간 별도 동의). 팝업 상점의 과다 노출은 상점 피로를 만든다(팝업 빈도 기준은 일반적 설계 관행, 근거 약함).",
+      "fix": "가치를 이해한 뒤 맥락적으로 권한을 요청하고 보상 사건 중심으로 알린다. 상점 팝업은 일일 상한과 트리거(첫 막힘·레벨업) 기반으로 1회만 띄운다.",
+      "examples": [],
+      "source": {
+        "url": "https://developer.apple.com/app-store/review/guidelines/",
+        "title": "App Store Review Guidelines (Apple)",
+        "type": "공식",
+        "note": "3.1.1 루트박스 확률 사전 공개, 3.1.2 자동갱신 구독은 지속 가치·최소 7일, 3.2.2(x) 광고 시청 인센티브 허용, 4.5.4 마케팅 푸시는 옵트인·옵트아웃 필수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "issue": "미성년자 비중이 높은 게임의 과도한 수익화",
+      "why": "Grow a Garden은 플레이어 약 35%가 13세 미만이고 과도한 수익화로 비판받았다. 미국 FTC는 2025-01 원신 퍼블리셔에 과징금과 미성년자 루트박스 판매 제한을 결정했다(나무위키 '확률형 아이템').",
+      "fix": "연령 기반 결제 한도·확률형 판매 제한, 보호자 통제 안내, 명확한 가격·확률 표기를 적용한다.",
+      "examples": [
+        "Grow a Garden"
+      ],
+      "source": {
+        "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+        "title": "Grow a Garden - Wikipedia",
+        "type": "위키",
+        "note": "Roblox 2025-03-26 출시 방치 파밍, 초기 버전 3일 제작, 최고 동접 2,230만(2025-08-23), 약 35%가 13세 미만, 과도한 수익화 비판, Robux로 대기 단축·훔치기.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "balancing": [
+    {
+      "step": "1. 목표 경험 곡선 정의",
+      "detail": "세션 길이(5~8분)·하루 접속 횟수·첫 벽/첫 프레스티지 시점·프레스티지 주기(α로 2배 필요 배수)를 먼저 숫자로 정하고 파라미터를 역산한다. '매끈한 곡선은 지루하다'는 원칙으로 마일스톤·벽 같은 굴곡을 의도적으로 배치한다.",
+      "tools": "스프레드시트(Google Sheets/Excel), 목표 곡선 차트",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/idle-chatter-gdc-2016-59734260/59734260",
+        "title": "Idle Chatter: What We Can Learn From Self-Playing Games (GDC 2016 슬라이드)",
+        "type": "강연",
+        "note": "Pecorella GDC 2016. 리텐션·ARPU 상위, 타임워프·영구 배수·프레스티지 청구·가챠, opt-in 광고 유형, 'Why punish offline play?', 오토클리커는 설계 오류. 수치 차트는 이미지라 미추출.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "2. 파라미터 테이블 작성",
+      "detail": "생성기·스탯별 기본 비용 b, 증가율 r, 기본 생산, 사이클 시간, 마일스톤 배수를 표로 만든다. 레퍼런스: AdCap 레모네이드 3.738/1.07/0.6초/1달러 … 석유회사 25,798,901,760/1.07/36,864초, Cookie Clicker 1.15. 상위 티어일수록 r을 낮추고 사이클을 길게 한다.",
+      "tools": "스프레드시트, Kongregate 공개 아이들 수학 시트(kon.gg/idle-math-spreadsheets)",
+      "source": {
+        "url": "https://adventure-capitalist.fandom.com/wiki/Businesses",
+        "title": "Businesses - AdVenture Capitalist Wiki",
+        "type": "위키",
+        "note": "지구 사업체 초기 비용·증가 계수(1.07~1.15)·사이클 시간·수익 표, 보유 수 상한 2,147,483,647(int32), 2^1024 초과 시 무한 가격.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "3. 최적 구매 시뮬레이션",
+      "detail": "PP 최소 구매(탐욕)·'MAX 구매' 정책으로 시간축 시뮬레이션을 돌려 구매 간격·벽 위치·티어별 구매 비중을 측정한다. 최적이 항상 최상위 티어면 밸런스 문제다. 하위 티어를 살려야 하면 공격적 배수·보유 기반 보너스·프레스티지 연동을 쓴다.",
+      "tools": "Python(numpy/pandas) 이산 시간 시뮬레이터, Cookie Monster식 PP 지표",
+      "source": {
+        "url": "https://www.slideshare.net/slideshow/quest-for-progress-gdc-europe-2016/65405507",
+        "title": "Quest for Progress (GDC Europe 2016) 슬라이드",
+        "type": "강연",
+        "note": "비용·생산·파생 성장 공식, '+50~200% 획득 시 리셋' 경험칙, 활성 스킬 쿨다운 5분~수 시간, Egg Inc. 2시간 오프라인 상한을 '실수'로 평가, 최고 티어만 최적이면 밸런스 문제.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "4. 프레스티지 루프 시뮬레이션",
+      "detail": "리셋 규칙(+50~200%)으로 수십 회 루프를 돌려 런 길이 추이(빨라짐/느려짐), 누적 배수, 메타 프레스티지가 필요한 시점을 확인한다. Kongregate의 3a 시트처럼 하되 시뮬레이션은 실제 플레이어 행동과 다르다는 점을 감안한다.",
+      "tools": "Python 시뮬레이터, Kongregate 시트 3a",
+      "source": {
+        "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-iii",
+        "title": "The Math of Idle Games, Part III (Anthony Pecorella)",
+        "type": "블로그",
+        "note": "Game Developer 재게재일 2017-02-01(시리즈는 2016년 시작). Realm Grinder·AdCap·Cookie Clicker·Egg Inc. 프레스티지 공식과 '2배에 필요한 수익 배수'.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "5. 스테이지·전투 곡선 검증(키우기)",
+      "detail": "적 HP 성장률, 골드·경험치 보상 성장률, 스탯 비용 성장률을 맞춰 TTK(= HP/DPS)와 보스 타이머(예: 30초) 대비 돌파 가능 시점을 표로 만든다. Clicker Heroes(HP 1.55→1.145, 골드 1.15)를 기준 사례로, 메이플 키우기의 경험치 10% vs 25% 불일치를 반면교사로 삼는다.",
+      "tools": "Python DPS/TTK 시뮬레이터(기대 DPS 식), 스테이지별 TTK 테이블",
+      "source": {
+        "url": "https://clickerheroes.fandom.com/wiki/Formulas",
+        "title": "Formulas - Clicker Heroes Wiki",
+        "type": "위키",
+        "note": "몬스터 HP(1.55→1.145), 골드(×1.60255→1.15), 보스 타이머 30−2·floor(Z/500)초, 존당 몬스터 수.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "6. 재화 수지(소스/싱크) 모델링",
+      "detail": "모든 재화의 획득처(던전·광고·패스·결제)와 소비처(강화·소환)를 일/주 단위 흐름으로 모델링하고 무과금·소과금·고과금 페르소나별 잔고 추이를 비교한다. Kolibri는 무료 하드 커런시로 가치를 학습시키고, 부스트의 절반 이상이 원정 보상에서 나오며, 유저 대부분이 저축 성향임을 관측했다.",
+      "tools": "스프레드시트·Python, 경제 다이어그램 도구(예: Machinations — 일반적 설계 관행, 근거 약함), GameAnalytics 리소스 이벤트",
+      "source": {
+        "url": "https://www.kolibrigames.com/blog/economy-in-free-to-play-mobile-games-part-2/",
+        "title": "Economy In Free-to-Play Mobile Games, Part 2: Follow the Money (Kolibri Games)",
+        "type": "블로그",
+        "note": "2020-09-21. 소프트(Idle Cash)·하드(Super Cash) 커런시 정의, 무료 하드 커런시로 가치 학습, 부스트 2배~2,000배·절반 이상 원정 보상, 대부분 저축 성향.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "7. 확률·강화 시뮬레이션과 공시 대조",
+      "detail": "소환 레벨별 확률표와 강화 체인(하락·파괴·실패 포인트 천장)을 몬테카를로로 수백만 회 돌려 기대 비용·분산·천장 도달률을 산출하고, 공시값과 서버 테이블을 경계 조건까지 자동 대조한다. 법(제33조②·제33조의2)이 표시 의무와 3배 배상을 규정한다.",
+      "tools": "Python(numpy random), CI 단위 테스트, 적합도 검정(카이제곱 등)",
+      "source": {
+        "url": "https://namu.wiki/w/%EA%B2%8C%EC%9E%84%EC%82%B0%EC%97%85%EC%A7%84%ED%9D%A5%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0",
+        "title": "게임산업진흥에 관한 법률 - 나무위키(조문 전재)",
+        "type": "위키",
+        "note": "법률 조문 전재본. 제2조 11호(확률형 아이템 정의), 제33조②(종류·확률 표시 의무), 제33조의2(입증책임·고의 시 3배 이내 배상), 제34조(등급 내용과 다른 광고 금지). 국가법령정보센터 원문은 JS 로딩으로 직접 확인 못 함.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "8. MVP 프로토타입·소프트런칭 게이트",
+      "detail": "Kolibri는 PM·엔지니어·디자이너·아티스트·QA 5인이 8주 동안 MVP를 만들고, 후반 콘텐츠·소셜·IAP·클라우드 세이브를 빼고 D1 리텐션 중심으로 소프트런칭한다. 적은 노력으로 D1을 올릴 수 있으면 팀을 키우고 UA를 시작한다(IMT·IFT D1 75%).",
+      "tools": "Unity(MVC: 순수 C# 모델·컨트롤러로 씬 없이 단위 테스트), 소프트런칭 국가 선택",
+      "source": {
+        "url": "https://www.kolibrigames.com/blog/making-games-the-lean-way-part-1/",
+        "title": "Making Games the Lean Way, Part 1 (Kolibri Games)",
+        "type": "블로그",
+        "note": "2019-02-11. 5인(PM·엔지니어·디자이너·아티스트·QA) 8주 MVP, D1 중심 소프트런칭, IMT·IFT D1 75%, Unity MVC 구조.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "9. 텔레메트리 기반 재보정",
+      "detail": "진행(스테이지 시작/실패/완료), 재화 소스/싱크, 광고(show/failed_show/reward_received), 결제 이벤트로 정체 구간·인플레·광고 피로를 감시하고, 밸런스 테이블을 원격 설정으로 바꿔 핫픽스 없이 조정한다. Kolibri는 시간당 100억 개 이상 아이템 이벤트를 추적한다.",
+      "tools": "GameAnalytics, Google Analytics 4/Firebase, BigQuery, Remote Config",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "step": "10. A/B 테스트",
+      "detail": "Remote Config 실험으로 오프라인 상한, 부스트 지속 시간, 비용 증가율 r, 첫 결제 상품 가격·구성, 광고 빈도·배치, 튜토리얼 길이, 푸시 문구를 시험한다(대상 목록은 일반적 설계 관행, 근거 약함; 광고 배치·빈도는 GameAnalytics가 소프트런칭 테스트 항목으로 권장). 목표는 Analytics 이벤트·퍼널, 보조 지표는 리텐션·매출·크래시이며 소수 비율로 시작해 확대한다.",
+      "tools": "Firebase A/B Testing + Remote Config",
+      "source": {
+        "url": "https://firebase.google.com/docs/ab-testing",
+        "title": "Firebase A/B Testing",
+        "type": "공식",
+        "note": "Remote Config·알림 실험, 목표는 Analytics 이벤트/퍼널, 보조 지표(크래시·리텐션·매출), 소수 비율로 시작해 확대.",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "telemetry": [
+    {
+      "event": "session_start / session_end",
+      "purpose": "세션 길이·하루 세션 수·복귀 간격(오프라인 시간) 측정, 접속 리듬과 오프라인 상한 적정성 판단",
+      "keyParams": "session_id, server_ts_start, server_ts_end, offline_seconds, app_version, device_tier",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "tutorial_begin / tutorial_step / tutorial_complete",
+      "purpose": "FTUE 퍼널(첫 30초·5분·30분) 이탈 지점 파악",
+      "keyParams": "step_id, step_index, elapsed_sec_since_install",
+      "source": {
+        "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+        "title": "Recommended events reference - Google Analytics 4",
+        "type": "공식",
+        "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "level_start / level_end (스테이지·보스)",
+      "purpose": "스테이지 실패율·벽 위치·재도전 횟수로 정체 구간 감시",
+      "keyParams": "level_name(챕터-스테이지), success, attempt_no, power_rating, required_power, duration_sec",
+      "source": {
+        "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+        "title": "Recommended events reference - Google Analytics 4",
+        "type": "공식",
+        "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "progression (GameAnalytics)",
+      "purpose": "월드/레벨/변형 3단계 계층 진행 추적(start/complete/fail)",
+      "keyParams": "progression01, progression02, progression03, progressionStatus, value(시간·점수 같은 동적 값은 value에)",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/progression-events",
+        "title": "Progression Events - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "progression01/02/03 계층, progressionStatus(start/complete/fail), 동적 값은 value 필드.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "earn_virtual_currency / spend_virtual_currency",
+      "purpose": "재화 소스·싱크 수지와 인플레 감지, 페르소나별 잔고 추이",
+      "keyParams": "virtual_currency_name, value, item_name, source/sink 구분, balance_after",
+      "source": {
+        "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+        "title": "Recommended events reference - Google Analytics 4",
+        "type": "공식",
+        "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "resource (GameAnalytics)",
+      "purpose": "재화 흐름 모델링·경제 불균형 탐지",
+      "keyParams": "flow_type(source/sink), resource_currency(최대 50종), item_type(최대 20종), item_id, amount",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/resource-events",
+        "title": "Resource Events - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "flow_type(source/sink), resource_currency(최대 50), item_type(최대 20), item_id, amount.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "ad (show / failed_show / reward_received / clicked)",
+      "purpose": "배치별 보상형 광고 시청률·실패율·피로도, 광고-리텐션 관계",
+      "keyParams": "ad_type(rewarded_video/interstitial/banner), ad_action, ad_placement(≤64자), ad_sdk_name, ad_fail_show_reason, ad_duration, ad_first",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/ad-events",
+        "title": "Ad Events - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "ad_type, ad_action(clicked/show/failed_show/reward_received), ad_placement(≤64자), ad_sdk_name, ad_fail_show_reason, ad_duration, ad_first.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "purchase (business)",
+      "purpose": "결제 퍼널·첫 결제 상품·ARPPU·영수증 검증",
+      "keyParams": "transaction_id, value, currency, items(item_id, price, quantity), first_purchase, receipt_validated",
+      "source": {
+        "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+        "title": "Recommended events reference - Google Analytics 4",
+        "type": "공식",
+        "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "view_promotion / offer_shown / offer_click",
+      "purpose": "상점·팝업 오퍼 퍼널과 팝업 피로 측정",
+      "keyParams": "promotion_id, promotion_name, creative_slot, trigger(stage_fail/level_up 등), price_tier, shown_count_today",
+      "source": {
+        "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+        "title": "Recommended events reference - Google Analytics 4",
+        "type": "공식",
+        "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "gacha_pull (커스텀 디자인 이벤트)",
+      "purpose": "확률 공시값 대비 실측 분포 검증, 천장 도달률·기대 소모 모니터링(법적 대응 근거)",
+      "keyParams": "banner_id, summon_level, pull_count, currency_type, currency_spent, result_grade, item_id, pity_counter_before/after",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "prestige_reset / class_advance (커스텀)",
+      "purpose": "리셋 주기·획득량·리셋 직전 정체 시간으로 프레스티지 곡선 검증",
+      "keyParams": "prestige_currency_gained, total_after, run_duration_sec, highest_stage, gain_ratio(Δp/p)",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "offline_reward_claim (커스텀)",
+      "purpose": "오프라인 상한 도달 비율·2배 광고 전환·멤버십 효과 측정",
+      "keyParams": "offline_seconds, cap_seconds, capped(bool), base_reward, multiplier(1/2/3), ad_used, membership",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "boost_activate (커스텀)",
+      "purpose": "부스트 출처(광고/IAP/무료)별 사용과 세션 간격 동기화 확인",
+      "keyParams": "boost_type, source(ad/iap/free), duration_sec, multiplier, stacked",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "notification_permission / push_open",
+      "purpose": "알림 권한 허용률(요청 맥락별)과 푸시 오픈율·복귀 효과",
+      "keyParams": "permission_state, prompt_context, launch_count, notif_type, sent_ts, open_ts",
+      "source": {
+        "url": "https://developer.android.com/develop/ui/views/notifications/notification-permission",
+        "title": "Notification runtime permission - Android Developers",
+        "type": "공식",
+        "note": "Android 13+ POST_NOTIFICATIONS, 신규 설치 시 알림 기본 꺼짐, 가치 인지 후 맥락적으로 요청(예: 3~4번째 실행).",
+        "accessed": "2026-10-14"
+      }
+    },
+    {
+      "event": "performance / error",
+      "purpose": "장시간 실행 시 FPS·메모리·크래시로 발열·최적화 문제 감시",
+      "keyParams": "fps_avg, memory_mb, power_save_mode, crash_signature",
+      "source": {
+        "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+        "title": "Event Types - GameAnalytics Documentation",
+        "type": "공식",
+        "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+        "accessed": "2026-10-14"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.slideshare.net/slideshow/idle-chatter-gdc-2016-59734260/59734260",
+      "title": "Idle Chatter: What We Can Learn From Self-Playing Games (GDC 2016 슬라이드)",
+      "type": "강연",
+      "note": "Pecorella GDC 2016. 리텐션·ARPU 상위, 타임워프·영구 배수·프레스티지 청구·가챠, opt-in 광고 유형, 'Why punish offline play?', 오토클리커는 설계 오류. 수치 차트는 이미지라 미추출.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gdcvault.com/play/1022065/Idle-Games-The-Mechanics-and",
+      "title": "Idle Games: The Mechanics and Monetization of Self-Playing Games (GDC 2015, Free to Play Summit)",
+      "type": "강연",
+      "note": "Anthony Pecorella(Kongregate). Vault 개요: 코어·메타 루프, 높은 리텐션, F2P 수익원으로서의 가능성, Kongregate 지표. 본편은 회원 전용.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.slideshare.net/slideshow/quest-for-progress-gdc-europe-2016/65405507",
+      "title": "Quest for Progress (GDC Europe 2016) 슬라이드",
+      "type": "강연",
+      "note": "비용·생산·파생 성장 공식, '+50~200% 획득 시 리셋' 경험칙, 활성 스킬 쿨다운 5분~수 시간, Egg Inc. 2시간 오프라인 상한을 '실수'로 평가, 최고 티어만 최적이면 밸런스 문제.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gdcvault.com/play/1023863",
+      "title": "Quest for Progress: The Math and Design of Idle Games (GDC Europe 2016)",
+      "type": "강연",
+      "note": "시리즈 세 번째 강연의 Vault 페이지(Design 트랙).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.slideshare.net/slideshow/the-rise-and-rise-of-idle-games-68916528/68916528",
+      "title": "The Rise and Rise of Idle Games (Kongregate/Pecorella 슬라이드)",
+      "type": "강연",
+      "note": "행사·일자 미표기. '광고 시청 2배·4시간'이 표준, Double Return, 저금통='점진적 수익화', 장기 타임워프 대폭 할인, 오프라인 제한 장단점, 저 ARPDAU·고 DAU.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kolibrigames.com/blog/playing-is-engaging/",
+      "title": "Economy In Free-to-Play Mobile Games, Part 1: Playing is Engaging (Kolibri Games)",
+      "type": "블로그",
+      "note": "2020-08-24. IMT 세션 약 7분(카테고리 5.5분), 엔드게임 하루 약 9세션, 방치 카테고리 결제 전환율 0.5%, 1억 설치, 'not pay-to-win'.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kolibrigames.com/blog/economy-in-free-to-play-mobile-games-part-2/",
+      "title": "Economy In Free-to-Play Mobile Games, Part 2: Follow the Money (Kolibri Games)",
+      "type": "블로그",
+      "note": "2020-09-21. 소프트(Idle Cash)·하드(Super Cash) 커런시 정의, 무료 하드 커런시로 가치 학습, 부스트 2배~2,000배·절반 이상 원정 보상, 대부분 저축 성향.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gameanalytics.com/blog/how-to-make-an-idle-game-adjust",
+      "title": "How to Make an Idle game: Everything You Need to Know About Incremental Mobile Games (GameAnalytics)",
+      "type": "블로그",
+      "note": "David Hartery, 2025-03-17 갱신. 메카닉(클리커·시뮬레이션·아케이드·머지), 아이들 스티키니스 18%(하이퍼캐주얼 10.5%), 평균 세션 8분, 소프트런칭에서 광고 배치·빈도 테스트.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://games.themindstudios.com/post/idle-clicker-game-design-and-monetization/",
+      "title": "Idle Clicker Games: Best Practices for Idle Game Design and Monetization (Mind Studios Games)",
+      "type": "블로그",
+      "note": "2024-04-19(04-22 갱신) 외주 개발사 블로그. 광고 60~70%/IAP 30~40%, 상위 25% D1 42%, Burger Please! 광고 80% 보상형 등 수치는 출처 미인용 → 근거 약함으로 취급.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kolibrigames.com/blog/making-games-the-lean-way-part-1/",
+      "title": "Making Games the Lean Way, Part 1 (Kolibri Games)",
+      "type": "블로그",
+      "note": "2019-02-11. 5인(PM·엔지니어·디자이너·아티스트·QA) 8주 MVP, D1 중심 소프트런칭, IMT·IFT D1 75%, Unity MVC 구조.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-i",
+      "title": "The Math of Idle Games, Part I (Anthony Pecorella)",
+      "type": "블로그",
+      "note": "Kongregate 개발자 블로그 원문(2016-10-13)을 Game Developer에 재게재. 단일/대량 구매 비용·최대 구매 수·생산 공식, AdCap 레모네이드 수치. 원문 blog.kongregate.com 주소는 조회일 기준 404.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/disciplines/the-math-of-idle-games-part-ii",
+      "title": "The Math of Idle Games, Part II (Anthony Pecorella)",
+      "type": "블로그",
+      "note": "2016-12-14 재게재. 생성기가 생성기를 만드는 파생(미분) 성장, t^n/n!과 e^x 테일러 급수.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/design/the-math-of-idle-games-part-iii",
+      "title": "The Math of Idle Games, Part III (Anthony Pecorella)",
+      "type": "블로그",
+      "note": "Game Developer 재게재일 2017-02-01(시리즈는 2016년 시작). Realm Grinder·AdCap·Cookie Clicker·Egg Inc. 프레스티지 공식과 '2배에 필요한 수익 배수'.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kolibrigames.com/blog/what-happens-in-one-hour-of-idle-miner-tycoon/",
+      "title": "What Happens in One Hour of Idle Miner Tycoon? (Kolibri Games)",
+      "type": "블로그",
+      "note": "2020-07-06. 시간당 부스트 316개·상자 100개·젬 561,785개, 시간당 102억여 개 아이템 이벤트 추적.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.bluestacks.com/ko/blog/game-guides/maplestory-idle-rpg/mpsir-beginner-guide-ko.html",
+      "title": "메이플 키우기 초보자 가이드 (블루스택 블로그)",
+      "type": "블로그",
+      "note": "2025-12-11, 프로모션 성격. 능력치 배분·메이플 등급, 사냥→분해→소환 레벨업 루프, 액티브 스킬 6개, 오프라인 보상은 최대치 도달 전까지 감소 없음(최대치 미공개).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.bluestacks.com/ko/blog/game-guides/raising-seven-knights/how-to-play-rsk-on-pc-mac-ko.html",
+      "title": "세븐나이츠 키우기 PC 플레이 가이드 (블루스택 블로그)",
+      "type": "블로그",
+      "note": "2023-07-24(얼리 액세스 기준). 영웅 약 130명, 펫 25종, 코스튬 170여 종, 덱 최대 10명, 기사단 영향력(골드)·특성·유물.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.maxwell.vrac.puc-rio.br/62190/62190.PDF",
+      "title": "Metodologias de Monetização e Retenção em Jogos Idle para a plataforma Mobile (Pedro Santos Azevedo, PUC-Rio, 2022)",
+      "type": "논문",
+      "note": "학부 졸업논문(2022-11). 성공 모바일 방치형 5종 모두 IAP, 4종이 광고 병행, 수익화가 리텐션 전략보다 성숙.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/ad-events",
+      "title": "Ad Events - GameAnalytics Documentation",
+      "type": "공식",
+      "note": "ad_type, ad_action(clicked/show/failed_show/reward_received), ad_placement(≤64자), ad_sdk_name, ad_fail_show_reason, ad_duration, ad_first.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://github.com/antimatter-dimensions/notations",
+      "title": "Antimatter Dimensions Notations README",
+      "type": "공식",
+      "note": "Scientific·Engineering·Letters·Standard·Mixed·Logarithm 등 표기 클래스, format(value, places, placesUnder1000), 지수 쉼표·무한 판정 설정.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developer.apple.com/app-store/review/guidelines/",
+      "title": "App Store Review Guidelines (Apple)",
+      "type": "공식",
+      "note": "3.1.1 루트박스 확률 사전 공개, 3.1.2 자동갱신 구독은 지속 가치·최소 7일, 3.2.2(x) 광고 시청 인센티브 허용, 4.5.4 마케팅 푸시는 옵트인·옵트아웃 필수.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://github.com/Razenpok/BreakInfinity.cs",
+      "title": "BreakInfinity.cs README (Razenpok)",
+      "type": "공식",
+      "note": "break_infinity의 C# 포트, BigDouble.cs 한 파일을 Unity Scripts에 넣고 double 대신 사용, ToString G/E/F 포맷.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://github.com/CookieMonsterTeam/CookieMonster",
+      "title": "Cookie Monster (Cookie Clicker 애드온) README",
+      "type": "공식",
+      "note": "애드온 공식 저장소. Payback Period = max(cost − bank, 0)/cps + cost/Δcps, 1/10/100개 구매 옵션 비교.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.double.maxvalue",
+      "title": "Double.MaxValue Field (Microsoft Learn)",
+      "type": "공식",
+      "note": "1.7976931348623157E+308, 초과 연산 결과는 PositiveInfinity.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/event-types-introduction",
+      "title": "Event Types - GameAnalytics Documentation",
+      "type": "공식",
+      "note": "Ad·Business·Design·Progression·Resource·Error(수동), Impression·Performance(FPS·메모리)·SDK Init·Session start/end(자동).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://firebase.google.com/docs/ab-testing",
+      "title": "Firebase A/B Testing",
+      "type": "공식",
+      "note": "Remote Config·알림 실험, 목표는 Analytics 이벤트/퍼널, 보조 지표(크래시·리텐션·매출), 소수 비율로 시작해 확대.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types",
+      "title": "Floating-point numeric types - C# reference (Microsoft Learn)",
+      "type": "공식",
+      "note": "float ±3.4e38·6~9자리, double ±1.7e308·15~17자리, decimal ±7.9228e28·28~29자리.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://kon.gg/idle-math-spreadsheets",
+      "title": "Kongregate Idle Math Spreadsheets (공개 Google Drive 폴더)",
+      "type": "공식",
+      "note": "Quest for Progress 슬라이드가 링크한 공개 시트(Google Sheets/xls). 조회 시 Google Drive 폴더로 리디렉션됨을 확인.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developer.android.com/develop/ui/views/notifications/notification-permission",
+      "title": "Notification runtime permission - Android Developers",
+      "type": "공식",
+      "note": "Android 13+ POST_NOTIFICATIONS, 신규 설치 시 알림 기본 꺼짐, 가치 인지 후 맥락적으로 요청(예: 3~4번째 실행).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER",
+      "title": "Number.MAX_SAFE_INTEGER - MDN",
+      "type": "공식",
+      "note": "9,007,199,254,740,991 = 2^53 − 1, 이를 넘으면 정수 정확성 상실.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE",
+      "title": "Number.MAX_VALUE - MDN",
+      "type": "공식",
+      "note": "2^1024 − 2^971 ≈ 1.7976931348623157E+308, 초과 값은 Infinity.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://create.roblox.com/docs/luau/numbers",
+      "title": "Numbers - Roblox Creator Documentation (Luau)",
+      "type": "공식",
+      "note": "Luau number = 64비트 double, ±1.7×10^308, 약 15자리 정밀도, int 속성은 32비트.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://support.google.com/googleplay/android-developer/answer/9858738",
+      "title": "Payments policy - Play Console Help (Google Play)",
+      "type": "공식",
+      "note": "랜덤 아이템(루트박스) 확률을 구매 전·구매 시점에 근접해 명확히 공개, 인앱 가격·조건 고지.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/progression-events",
+      "title": "Progression Events - GameAnalytics Documentation",
+      "type": "공식",
+      "note": "progression01/02/03 계층, progressionStatus(start/complete/fail), 동적 값은 value 필드.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+      "title": "Recommended events reference - Google Analytics 4",
+      "type": "공식",
+      "note": "earn/spend_virtual_currency, tutorial_begin/complete, level_start/level_end/level_up, post_score, unlock_achievement, purchase, view_promotion 파라미터.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://docs.gameanalytics.com/events-metrics-and-filtering/event-types/resource-events",
+      "title": "Resource Events - GameAnalytics Documentation",
+      "type": "공식",
+      "note": "flow_type(source/sink), resource_currency(최대 50), item_type(최대 20), item_id, amount.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://developers.google.com/admob/android/ssv",
+      "title": "Validate server-side verification (SSV) callbacks - Google AdMob",
+      "type": "공식",
+      "note": "클라이언트 보상 콜백 위조 방지용 서버 검증(서명·transaction_id·timestamp 등).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://github.com/Patashu/break_eternity.js",
+      "title": "break_eternity.js README (Patashu)",
+      "type": "공식",
+      "note": "10^^1e308까지, (sign, layer, mag) 표현, break_infinity와 동일 인터페이스·0.5~2배 속도, log 계열이 Decimal 반환.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://github.com/Patashu/break_infinity.js",
+      "title": "break_infinity.js README (Patashu)",
+      "type": "공식",
+      "note": "decimal.js 대체, 1e308 초과~약 1e9e15, 속도 우선, 벤치마크 2.5~442배, Antimatter Dimensions 스크립트 시간 4.5배 개선.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AFK_Arena",
+      "title": "AFK Arena - Wikipedia",
+      "type": "위키",
+      "note": "Lilith Games, 2019년 4월. 비접속 중 자원·경험치 획득, 5인 자동 전투. 후속작 AFK Journey(2024-03).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AdVenture_Capitalist",
+      "title": "AdVenture Capitalist - Wikipedia",
+      "type": "위키",
+      "note": "Hyper Hippo, 2014 브라우저·Android → 2015 iOS(Kongregate 퍼블리싱) 등. 매니저로 오프라인 방치, 엔젤 투자자 리셋.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Angel_Investors",
+      "title": "Angel Investors - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "엔젤 1명당 +2%(가산), 획득식 √(LE/(4000억/9)) = 150√(LE/10^15), 화성은 1000억/9, 내림 처리.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://cookieclicker.wiki.gg/wiki/Ascension",
+      "title": "Ascension - Cookie Clicker Wiki (wiki.gg)",
+      "type": "위키",
+      "note": "현행: 승천 시 ∛(전 기간 누적 쿠키/1조) − 기존 프레스티지, 레벨당 CpS +1%(가산), 천상의 칩 1:1. PC 오프라인 최대 91%·7일 8시간, 모바일 100%·무제한. 첫 승천 365칩 권장.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://cookieclicker.wiki.gg/wiki/Buildings",
+      "title": "Buildings - Cookie Clicker Wiki (wiki.gg)",
+      "type": "위키",
+      "note": "Price = Base × 1.15^(M−F), 10개 묶음 ×20.303718238, 100개 ×7,828,749.67, '약 5개마다 2배·50개마다 1,000배'.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Businesses",
+      "title": "Businesses - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "지구 사업체 초기 비용·증가 계수(1.07~1.15)·사이클 시간·수익 표, 보유 수 상한 2,147,483,647(int32), 2^1024 초과 시 무한 가격.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Clicker_Heroes",
+      "title": "Clicker Heroes - Wikipedia",
+      "type": "위키",
+      "note": "Playsaurus 2014. 루비(프리미엄 통화)는 진행에 필수 아님, 10마리/레벨, 5레벨마다 보스 타이머.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cookie_Clicker",
+      "title": "Cookie Clicker - Wikipedia",
+      "type": "위키",
+      "note": "2013 Orteil, 건물 가격 15%씩 증가, 승천, 2021-09-01 Steam 유료 출시(Playsaurus) 동접 6만+.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Earnings_Bonus",
+      "title": "Earnings Bonus - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "EB = SE×(10+Soul Food+소울 스톤)×(1.05+0.01×Prophecy Bonus+바산의 책+예언 스톤)^PE×1.01^EoT. Soul Food 최대 140레벨, Prophecy Bonus 최대 1.10.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Egg,_Inc.",
+      "title": "Egg, Inc. - Wikipedia",
+      "type": "위키",
+      "note": "Auxbrain 2016. 실로로 무인 운영 시간 확장, 영구 에픽 연구, 광고 영상 보상, 골든에그 프리미엄 통화.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Egg,_Inc._Ultra",
+      "title": "Egg, Inc. Ultra - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "2023년 7월 발표 월 구독: Standard $3.99, Pro $7.99(광고 없음·영상 선물→ULTRA 선물·영구 2배 수익).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://clickerheroes.fandom.com/wiki/Formulas",
+      "title": "Formulas - Clicker Heroes Wiki",
+      "type": "위키",
+      "note": "몬스터 HP(1.55→1.145), 골드(×1.60255→1.15), 보스 타이머 30−2·floor(Z/500)초, 존당 몬스터 수.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Gold",
+      "title": "Gold - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "프리미엄 통화 골드 가격표($4.99=55 … $94.99=1,300), 진행에 필수 아님.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Gold_Upgrades",
+      "title": "Gold Upgrades - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "영구 배수 ×3(20골드)·×12(50)·×27(100), 엔젤 즉시 청구(20), 리셋·하드 리셋에도 유지.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Grain_Silos",
+      "title": "Grain Silos - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "실로 1개=오프라인 1시간, 용량 연구 +6분×20레벨, 최대 10실로×3시간=30시간, 스탠다드 2실로·효율 50%, 프로 10실로·100%, 비용 C_n=100,000×(n−1)^(n+14).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+      "title": "Grow a Garden - Wikipedia",
+      "type": "위키",
+      "note": "Roblox 2025-03-26 출시 방치 파밍, 초기 버전 3일 제작, 최고 동접 2,230만(2025-08-23), 약 35%가 13세 미만, 과도한 수익화 비판, Robux로 대기 단축·훔치기.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://clickerheroes.fandom.com/wiki/Hero_Souls",
+      "title": "Hero Souls - Clicker Heroes Wiki",
+      "type": "위키",
+      "note": "영웅 레벨 2000당 1개 + 프라이멀 보스 영혼 floor(((L−80)/25)^1.3×Ponyboy), 영혼 1개당 DPS +10%, 버전별 공식 변천.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://clickerheroes.fandom.com/wiki/Heroes",
+      "title": "Heroes - Clicker Heroes Wiki",
+      "type": "위키",
+      "note": "레벨 비용 floor(floor(BaseCost×1.07^level)×CostReduction), 에이스 스카우트 1.22, 1.07^25≈5.427.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Incremental_game",
+      "title": "Incremental game - Wikipedia",
+      "type": "위키",
+      "note": "클리커/아이들 정의, 과학적 표기·접미사·명명 표기, 프레스티지, AdCap이 개척한 타임워프·영구 배수·즉시 프레스티지·가챠·이벤트 통화와 광고 보상 유형.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://antimatter-dimensions.fandom.com/wiki/Infinity",
+      "title": "Infinity - Antimatter Dimensions Wiki",
+      "type": "위키",
+      "note": "2^1024(≈1.79769e308) 도달 시 Big Crunch(무한) → 무한 포인트, break_infinity.js 사용.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kolibri_Games",
+      "title": "Kolibri Games - Wikipedia",
+      "type": "위키",
+      "note": "Idle Miner Tycoon 2016-07 출시(개발 8주), 1억 다운로드, 2020-02 Ubisoft가 지분 75% 인수(기업가치 1억6천만 유로).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Managers",
+      "title": "Managers - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "매니저가 사이클을 자동 재시작(접속 종료 중에도) → 방치 플레이를 가능케 함. 레모네이드 매니저 1,000.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Mega_Bucks",
+      "title": "Mega Bucks - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "첫 메가벅스 1 decillion, 지구는 다음 가격 ×999(달 808, 화성 1200).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Permit",
+      "title": "Permit - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "Pro Permit $9.99(과거 $4.99→$7.99): 실로 10개·오프라인 수익 2배·동시 부스트 5개·유물 4개.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Piggy_Bank",
+      "title": "Piggy Bank - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "구매·업그레이드마다 골든에그 적립, $5.99로 깨기, 레벨 보너스와 상한식.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Prestige",
+      "title": "Prestige - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "프레스티지 시 초기화/유지 항목, '게임이 느려지면 프레스티지' 경험칙, 부스트 프리로드 전략.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rusty%27s_Retirement",
+      "title": "Rusty's Retirement - Wikipedia",
+      "type": "위키",
+      "note": "1인 개발(Mister Morris Games, Unity), 2024-04-26 출시, 바탕화면 오버레이 방치 농장, 첫 주 10만·2025년 7월까지 55만 장, 2025년 방치 테마 Steam Next Fest 계기.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Earnings_Bonus/Soul_Eggs",
+      "title": "Soul Eggs - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "소울 에그 1개당 +10%, 프레스티지 수익 x 기반 구간별 분수 지수(0.15~0.21) 합으로 획득, 수익이 클수록 획득률 둔화.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Steal_a_Brainrot",
+      "title": "Steal a Brainrot - Wikipedia",
+      "type": "위키",
+      "note": "Roblox 2025. 패시브 수입 캐릭터 구매·훔치기, 리버스(초기화 대가 영구 강화), Robux 장비, 동접 2,500만 돌파.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Time_Warps",
+      "title": "Time Warps - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "1일 10골드·7일 25골드·14일 40골드, 익스프레스 3시간×10회 50골드, 환산식 d = x/(1.21y+1).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://adventure-capitalist.fandom.com/wiki/Unlocks_(Earth)",
+      "title": "Unlocks (Earth) - AdVenture Capitalist Wiki",
+      "type": "위키",
+      "note": "레모네이드 25·50·100·200·300·400개 속도 2배, 500~900개 수익 ×4, 1000개 ×5 등 마일스톤.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://cookieclicker.wiki.gg/wiki/Upgrades",
+      "title": "Upgrades - Cookie Clicker Wiki (wiki.gg)",
+      "type": "위키",
+      "note": "Heavenly chip secret 5% → cookie stand 25% → bakery 50% → confectionery 75% → Heavenly key 100%로 프레스티지 잠재력 해금.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://egg-inc.fandom.com/wiki/Videos",
+      "title": "Videos - Egg, Inc. Wiki",
+      "type": "위키",
+      "note": "광고 영상 알림 2~5분 간격, 보상(현금·골든에그·부스트), 2배 부스트 2시간(연구로 8시간), 광고를 끄면 탭당 1시간 무료 부스트.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EA%B2%8C%EC%9E%84%EC%82%B0%EC%97%85%EC%A7%84%ED%9D%A5%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0",
+      "title": "게임산업진흥에 관한 법률 - 나무위키(조문 전재)",
+      "type": "위키",
+      "note": "법률 조문 전재본. 제2조 11호(확률형 아이템 정의), 제33조②(종류·확률 표시 의무), 제33조의2(입증책임·고의 시 3배 이내 배상), 제34조(등급 내용과 다른 광고 금지). 국가법령정보센터 원문은 JS 로딩으로 직접 확인 못 함.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%A0%88%EC%A0%84%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%8A%AC%EB%9D%BC%EC%9E%84%3A%20%EB%B0%A9%EC%B9%98%ED%98%95%20RPG",
+      "title": "레전드 오브 슬라임: 방치형 RPG - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 로드컴플릿 개발. 골드 능력치 10종(더블샷 공속 Lv200·트리플샷 더블샷 Lv1001 해금), 던전 6종·09시 열쇠 2개, 보스 러시 보석 500+(난이도−1)×10, 첫 결제·패스·이벤트 상점 슬라임.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+      "title": "메이플 키우기 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키(2026-10-06 수정본). 어빌리티 최대치 미등장·공속 임계값 논란, 2026-01-26 사과·01-28 전액 환불 공지, 매크로·무고밴, 2차 서버 통합. 공식 공지 원문은 JS 페이지라 미확인.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%8B%9C%EC%8A%A4%ED%85%9C",
+      "title": "메이플 키우기/시스템 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키(2026-09 기준 서술). 전직 레벨, 무기·동료 소환(다이아 단가·소환 레벨·패스), 스타포스·잠재 옵션 확률과 천장, 유물, 챕터, 성장 던전, 길드·레이드·아레나, 오프라인 분당 처치 수.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%ED%8F%89%EA%B0%80",
+      "title": "메이플 키우기/평가 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 경험치 곡선(스테이지 +10% vs 레벨 +25%), 오프라인 경험치 온라인 대비 약 50%·12,000원 월 정기권 1.5배, P2W 비판.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%B0%A9%EC%B9%98%ED%98%95%20%EA%B2%8C%EC%9E%84",
+      "title": "방치형 게임 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 'xx 키우기'는 대체로 클리커 계열, '육성 제한 게임' 비판, 국내 방치형의 짧은 오프라인/낮은 자원 비판, 기기 수명 단축, 네코아츠메 등 관람형.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+      "title": "버섯커 키우기 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. Joy Nice Games 2023-12-22 출시, 램프 장비 소환 루프, 진화 레벨, 1원=1스타이아, 허위·표절 광고 비판, 한국 매출 1위.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EB%B2%84%EC%84%AF%EC%BB%A4%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EA%B5%AC%EC%84%B1%20%EC%9A%94%EC%86%8C",
+      "title": "버섯커 키우기/구성 요소 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 장비 등급(램프 24·28레벨 해금), 탈것(서버 3일차), 신물·유물·펫·소울, 던전 6종, 정원, 가문, 충전 선물·7일 시련, 절전 모드.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EC%84%B8%EB%B8%90%EB%82%98%EC%9D%B4%EC%B8%A0%20%ED%82%A4%EC%9A%B0%EA%B8%B0",
+      "title": "세븐나이츠 키우기 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 9,900원·28일 기간제 광고 제거 월정액(즉시 루비 9,900 + 일 4,000), 1원=1루비, 픽업 0.075% 등 확률·릴레이 뽑기 비판, 광고 소재 비판.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EC%84%B8%EB%B8%90%EB%82%98%EC%9D%B4%EC%B8%A0%20%ED%82%A4%EC%9A%B0%EA%B8%B0/%EC%98%81%EC%9B%85",
+      "title": "세븐나이츠 키우기/영웅 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 소환 레벨 1~10별 등급 확률표(Lv1 노멀 70% → Lv10 레전드 0.15%), 2주 간격 업데이트.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EC%86%8C%EC%9A%B8%20%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC",
+      "title": "소울 스트라이크 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 컴투스홀딩스·티키타카스튜디오 2024-01-17, 직업·스킬·동료·유물·펫 소환(7등급), 무료 소환 5→30회, 픽업 Lv6 해금, 보유 효과, 4개월 누적 매출 200억(게임메카 인용).",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%A7%9D%20%EC%9D%B4%EC%9A%A9%EC%B4%89%EC%A7%84%20%EB%B0%8F%20%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0",
+      "title": "정보통신망법 - 나무위키(조문 전재)",
+      "type": "위키",
+      "note": "제50조: 영리목적 광고성 정보 전송은 명시적 사전 동의, 오후 9시~오전 8시는 별도 사전 동의, 전송자 정보·수신거부 방법 명시.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://namu.wiki/w/%ED%99%95%EB%A5%A0%ED%98%95%20%EC%95%84%EC%9D%B4%ED%85%9C%20%EA%B7%9C%EC%A0%9C%20%EB%B2%95%EC%95%88",
+      "title": "확률형 아이템 규제 법안 - 나무위키",
+      "type": "위키",
+      "note": "사용자 편집 위키. 2023-02-27 국회 통과, 2024-03-22 시행, 2018년 공정위 제재 사례, 시행 직전 확률표 대거 수정 사례, 후속 3배 배상 법안.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.ceoscoredaily.com/page/view/2025080415181654698",
+      "title": "'확률형 아이템 위반, 쪽박 찬다'…'1호 위반' 누가 될까 '초비상' (CEO스코어데일리)",
+      "type": "보도",
+      "note": "2025-08-04. 2025-08-01 시행 개정 게임산업법: 고의 시 최대 3배 징벌적 손해배상, 입증책임 전환, 게임물관리위원회 신고·피해구제센터, 정액제·시즌패스 등 예측 가능한 BM 전환.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/the-ins-and-outs-of-retention-in-an-idle-game-with-merge-and-puzzle-elements/",
+      "title": "The ins and outs of retention in an idle game with merge and puzzle elements (PocketGamer.biz)",
+      "type": "보도",
+      "note": "2025-09-04 기고(Oleg Nalimov, AppQuantum). Gold & Goblins: D1 56%, 2023년 4,800만 달러·2024년 말 6,000만 달러+, 첫날 튜토리얼 5~10레벨, 레벨 7 전후 이벤트 해금, 'fading pendulum'.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.gamedeveloper.com/design/the-rise-of-games-you-mostly-don-t-play",
+      "title": "The rise of games you mostly don't play (GDC 2015 강연 보도, Simon Parkin)",
+      "type": "보도",
+      "note": "2015-03-03 GDC 강연 보도: Kongregate 월간 최다 플레이 10위 중 3개가 방치형, 1,000달러 이상 지출 유저 다수, '에너지 통화 없는 자연스러운 에너지 시스템'.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.inews24.com/view/1630868",
+      "title": "[겜별사] 넷마블표 방치형 RPG '세븐나이츠 키우기' (아이뉴스24)",
+      "type": "보도",
+      "note": "2023-09-09. 골드로 공·방·체 강화, 영웅 레벨·승급, 보스 소환 진행, 20스테이지 정체, 경험치·금화 음식 아이템은 광고 시청, 28일 월정액(광고 없이 보상+일일 루비), '1777 뽑기' 마케팅.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://v.daum.net/v/20251105163302399",
+      "title": "[기획] '바쁘다 바빠 현대생활' 주목할 만한 방치형 게임은? (게임동아)",
+      "type": "보도",
+      "note": "2025-11-05. 메이플 키우기, 뮤: 포켓 나이츠(전직·날개·유물 뽑기), 트리니티 가디언즈(개발자 2명) 소개, 개발 기간 짧고 수익성 좋아 인디 진입·대형/중국사 과열.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://byline.network/2026/01/7-385/",
+      "title": "넥슨 메이플 키우기, 전세계 누적 사용자 300만명 돌파 (바이라인네트워크)",
+      "type": "보도",
+      "note": "2026-01-07. 출시 첫 달 최고 DAU 약 57만·최고 동접 약 14만, 양대 마켓 매출 1위, 구글 전 세계 매출 10위권.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.dailian.co.kr/news/view/1565778/%EB%84%A5%EC%8A%A8-%EB%B0%A9%EC%B9%98%ED%98%95-RPG-%EC%8B%A0%EC%9E%91-%EB%A9%94%EC%9D%B4%ED%94%8C-%ED%82%A4%EC%9A%B0-2025",
+      "title": "넥슨, 방치형 RPG 신작 '메이플 키우기' 11월 6일 출시 (데일리안)",
+      "type": "보도",
+      "note": "2025-10-29. 넥슨·에이블게임즈 공동 개발, '누구나 부담없이 수직 성장' 목표, 사전등록 보상 레드 다이아 3,000.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1203785",
+      "title": "넷마블 '순한 맛 자동사냥' 통했다···장기흥행 요소는 과제 (뉴스토마토)",
+      "type": "보도",
+      "note": "2023-10-10. 세븐나이츠 키우기 구글 2위·애플 1위, 광고 없이 하려면 사실상 월 결제 필요, 무료 재화 광고 권유 잦음, 월정액 비율 비공개.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://news.bizwatch.co.kr/article/mobile/2025/12/15/0022",
+      "title": "방치형 RPG에 꽂힌 게임사…이유는 (비즈니스워치)",
+      "type": "보도",
+      "note": "2025-12-16. 센서타워 기준 방치형 RPG가 2024년 국내 모바일 게임 시장의 16%, 메이플 키우기 출시 8일 만에 매출 1위, 세븐나이츠 키우기 45일 누적 4,000만 달러.",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://v.daum.net/v/2Pv8Xu2me6",
+      "title": "세븐나이츠 키우기 6일 출시 '수년 뒤에도 저사양, 저용량, 최적화 유지' (패드앤팝콘)",
+      "type": "보도",
+      "note": "2023-09 출시 전 인터뷰. 장비 개념 제거, 소환 레벨로 영웅 풀 확장·픽업 해금(리세마라 방지), 영웅 136종·월 2~8종 추가, 2주 밸런스, 하루 30~40분, 천장, 선택형 광고, 약 800MB.",
+      "accessed": "2026-10-14"
+    }
+  ]
+}

@@ -1,0 +1,2950 @@
+{
+  "id": "arcade-idle",
+  "region": "글로벌",
+  "platformGroup": "모바일",
+  "name": "아케이드 아이들 · 하이브리드 캐주얼",
+  "asOf": "2026-10-14",
+  "scope": "캐릭터를 직접 움직여 재료를 나르고 손님을 응대하며, 직원을 고용해 자동화하는 arcade idle(스태킹·운반형) 모바일 게임. 광고 중심 하이퍼/하이브리드 캐주얼 퍼블리셔(Supercent, SayGames, Supersonic, Homa 등)의 작품을 다룬다.",
+  "selectionBasis": "연구자 선정 목록이며 공식 전체 순위가 아니다. 로그에서 확인된 누적·연간 다운로드 근거(센서타워·AppMagic 추정, 구글 플레이 설치 구간)가 강한 순서와 장르 대표성을 함께 고려해 배열했다. Farm Land·Aquarium Land·Bus Arrival 3D는 arcade idle 적합도가 다소 불확실해 하단에 두었다. 제외: 버튼형 타이쿤, 로블록스 타이쿤, Capybara Go!.",
+  "methodology": [
+    "App Store(미국·한국) 상점 페이지의 '앱 내 구입' 목록과 iTunes lookup, Google Play 상점 페이지(설치 구간·평점·인앱 가격 범위)를 2026-10-14 기준으로 확인했다.",
+    "다운로드·매출은 센서타워(Sensor Tower)·AppMagic 추정이며 지표(연간·누적·월간·일간)와 기간이 출처마다 달라 섞어 비교하지 않았다. 센서타워가 2026-05 AppMagic 인수를 발표해 두 출처는 같은 회사 계열이 되었다.",
+    "과금 상품은 스토어 '앱 내 구입' 목록에 노출된 상품명·가격만 기재했으며 상품 구성(내용물)은 상품명이 설명을 포함한 경우 외에는 확인하지 못했다. 보상형 광고 보상량·전면광고 빈도는 공식 수치가 없고 매체·리뷰 서술에 의존했다.",
+    "슈퍼센트 공식 보도자료는 Notion 페이지 일부만 확인했고, 슈퍼센트의 순위·'1위' 표현은 회사 발표 또는 인용 수치임을 표시했다. Burger Please 이후 신규 테마 라인업, 잡플래닛 인터뷰 본문은 접근 불가(403)로 확인하지 못했다.",
+    "유저 반응은 App Store 미국 페이지에 노출된 리뷰 일부 발췌에 기반하며 표본이 작다. Prison Life·Bus Arrival 3D는 리뷰 본문을 충분히 확인하지 못했다.",
+    "신규 웹 검색 예산이 소진되어 일부 게임(Farm Land·Aquarium Land·Bus Arrival 3D·My Little Universe)의 다운로드·매출 수치는 센서타워 공개 앱 페이지의 '지난달 추정' 외에는 확인하지 못했다."
+  ],
+  "overview": "arcade idle은 조이스틱으로 캐릭터를 움직이며 물건을 쌓아 나르는 조작과 직원 고용 자동화를 결합한 하이브리드 캐주얼의 대표 하위 장르다. 센서타워·Homa 자료(2022-09)에 따르면 2021년 arcade idle 다운로드는 4,730만이었고 2022년 1분기 다운로드는 전년 동기 대비 294.3% 늘었다. 2023년 이후에는 Burger Please(2023-02), Outlets Rush(2023-06), Pizza Ready(2023-07)처럼 슈퍼센트 계열이 다운로드 규모에서 두각을 나타냈다. Pizza Ready는 AppMagic 추정으로 2024년 171m(보도별로 178m 표기도 있음), 2025년 166m 다운로드로 전 세계 5위였고, 센서타워 2026년 3월 월간 다운로드 순위에서도 5위에 올랐다. 슈퍼센트는 센서타워 퍼블리셔 다운로드 순위 7위(2025년, 한국 게임사 최초 10위권)를 기록했다. 시장 전체로는 센서타워가 하이브리드 캐주얼 IAP 매출이 2024년 +37%, 2025년 +20% 증가했다고 보도되었으나, 이 장르의 과금은 여전히 '광고 제거' 상품이 핵심이며 광고 과다가 가장 큰 리뷰 불만이다. 다운로드는 인도·인도네시아·브라질 등 신흥 시장 비중이 높다(Pizza Ready 2025년 인도 24%, 센서타워 추정).",
+  "commonalities": [
+    "조이스틱 이동과 아이템 스태킹(들고 나르기)이 핵심 조작이며 텍스트 없이 화살표로 안내하는 짧은 튜토리얼을 쓴다(Burger Please·My Mini Mart 분석 기사 근거).",
+    "매장·호텔·농장 등 단일 사업장에서 시작해 설비 해금, 직원 고용(운반·계산·청소 자동화), 새 구역·새 지점으로 확장하는 구조다.",
+    "수익은 전면·보상형·배너 광고가 기반이고 IAP는 광고 제거·스타터 팩·주간 VIP·영구 2배 부스트·스킨 중심이다(스토어 상품 목록 근거).",
+    "표본 10개 모두 App Store 미국 상점에서 무료·앱 내 구입으로 제공되며 Google Play 상품 가격대는 $0.49~$119.99 범위에 분포한다.",
+    "다운로드 중 유료 UA 비중이 높고 신흥 시장 의존도가 크다(Pizza Ready 다운로드 약 70% 유료 채널, 센서타워 2024-04).",
+    "리뷰 불만이 광고 빈도에 집중되고, 광고 제거를 판 뒤에도 배너·보상형 광고가 남는다는 지적이 있다(My Mini Mart 리뷰 2025-08)."
+  ],
+  "designPatterns": [
+    {
+      "name": "조이스틱+스태킹 운반 루프",
+      "detail": "플레이어가 재료를 직접 집어 쌓고 이동해 납품·판매한다. 첫 사이클의 이동 거리를 짧게(첫 사이클 이동 2초 이내 권장, Azur Games 분석) 유지하고 수집·포장·결제 애니메이션을 강조한다.",
+      "examples": [
+        "Burger Please!",
+        "My Mini Mart",
+        "Pizza Ready!"
+      ]
+    },
+    {
+      "name": "직원 고용을 통한 단계적 자동화",
+      "detail": "진열 직원 → 계산원 → 청소·서빙 로봇 순으로 반복 노동을 대체하고 플레이어는 병목 구간에 투입된다. 직원 속도·적재량 업그레이드가 HR 사무실류 화면에 모인다.",
+      "examples": [
+        "Burger Please!",
+        "My Perfect Hotel",
+        "Pizza Ready!"
+      ]
+    },
+    {
+      "name": "구매 지점 시각 안내(가격표·카메라 이동)",
+      "detail": "다음에 살 수 있는 지점에 가격표를 띄우고 카메라가 신규 지점·이벤트로 이동해 목표를 제시한다. 필요 시점에 맞춰 쓰레기통 등을 신규 지역에서만 등장시킨다.",
+      "examples": [
+        "My Mini Mart",
+        "Burger Please!"
+      ]
+    },
+    {
+      "name": "다중 지점·새 마켓 해금",
+      "detail": "한 사업장을 일정 수준까지 키우면 재료를 재사용한 새 매장·호텔·마켓으로 넘어간다. My Mini Mart는 약 30~40분 뒤 새 마켓에 도달(광고·결제 가속 여부에 따라 변동).",
+      "examples": [
+        "My Mini Mart",
+        "My Perfect Hotel",
+        "Outlets Rush"
+      ]
+    },
+    {
+      "name": "광고 가속과 영구 부스트 IAP",
+      "detail": "보상형 광고로 머니백·속도/적재 부스트를 주고, 같은 부스트의 영구판(예: 수익 2배)을 IAP로 판다. 보상형 광고는 튜토리얼 단계에서 소개된다.",
+      "examples": [
+        "Burger Please!",
+        "Pizza Ready!",
+        "My Mini Mart"
+      ]
+    },
+    {
+      "name": "코스메틱·펫·스킨 판매와 이벤트",
+      "detail": "스킨·펫·직원 스킨 팩이 IAP 목록에 다수 있고, Pizza Ready는 출석 보상 스킨 4종·주간 푸드 콘테스트 스킨 5종을 업데이트로 추가했다.",
+      "examples": [
+        "Prison Life: Idle Game",
+        "Aquarium Land",
+        "Pizza Ready!"
+      ]
+    },
+    {
+      "name": "배틀패스·오퍼 시스템 도입",
+      "detail": "초기에는 광고 제거·재화 팩 위주였다가 오퍼 시스템(Burger Please 0.38.0, 2023-11-06)과 배틀패스(2024-01-20)를 추가해 과금 지점을 늘렸다.",
+      "examples": [
+        "Burger Please!",
+        "My Perfect Hotel"
+      ]
+    }
+  ],
+  "monetizationPatterns": [
+    {
+      "name": "광고 제거 팩(핵심 IAP)",
+      "detail": "Pizza Ready $3.99, Burger Please $3.99/$9.99, My Perfect Hotel $9.99, My Mini Mart $4.99처럼 미국 스토어에 영구 광고 제거 상품이 있다. 일부는 15~50% 할인 변형을 별도 상품으로 둔다.",
+      "examples": [
+        "Pizza Ready!",
+        "Burger Please!",
+        "My Perfect Hotel",
+        "My Mini Mart"
+      ]
+    },
+    {
+      "name": "주간 VIP·월간 VIP",
+      "detail": "Weekly VIP $5.99(Farm Land·Aquarium Land·Pizza Ready 계열 주간 팩), Monthly VIP $19.99(Aquarium Land) 등 소액 정기 상품이 확인된다. 구독형(자동 갱신) 여부는 미확인.",
+      "examples": [
+        "Farm Land",
+        "Aquarium Land",
+        "Burger Please!"
+      ]
+    },
+    {
+      "name": "스타터·성장 오퍼 번들",
+      "detail": "Starter Pack $2.99~$9.99, growthoffer $9.99, 프리미엄 팩 $19.99 등 첫 구매·성장 단계 번들. Burger Please 프리미엄 번들은 $12.99에 스킨·탈것·광고 제거·2배 수익/속도/적재를 묶는다(Udonis).",
+      "examples": [
+        "Burger Please!",
+        "Pizza Ready!",
+        "Outlets Rush"
+      ]
+    },
+    {
+      "name": "재화(젬·티켓·캐시) 팩과 광고 스킵 티켓",
+      "detail": "Gem Pack $1.99~$9.99, 40000 Cash $7.99, Ad Ticket Pack, Skip Ticket 10 $1.99~$2.99 등 소액 재화와 보상형 광고 대체 상품이 있다.",
+      "examples": [
+        "My Mini Mart",
+        "Burger Please!",
+        "Bus Arrival 3D"
+      ]
+    },
+    {
+      "name": "캐릭터·직원 코스메틱 팩",
+      "detail": "Prison Life는 스킨 팩 $5.99/$9.99 8종을 판매하고 Aquarium Land·Farm Land는 펫(개·고양이·물개) 단품을 $3.99~$4.99에 판다.",
+      "examples": [
+        "Prison Life: Idle Game",
+        "Aquarium Land",
+        "Farm Land"
+      ]
+    }
+  ],
+  "risks": [
+    "광고 과다와 광고 의존 진행이 리뷰 불만의 1순위이며, 광고 제거 구매자도 배너·보상형 광고에 불만을 제기한다(My Mini Mart 리뷰 2025-08). 신작도 같은 평판 리스크를 진다.",
+    "조작·테마가 빠르게 복제되는 장르다. 슈퍼센트는 같은 구조에 커피·도넛 등 다른 테마를 순차 출시해 데이터로 선별했다고 밝혔고, 후발이 같은 방식으로 경쟁하면 UA 단가 싸움이 된다.",
+    "다운로드 대부분이 인도·인도네시아·브라질 등 저ARPU 시장에서 나오고 유료 UA 의존도가 높아(Pizza Ready 약 70% 유료 채널) 매출화가 어렵다. Pizza Ready 누적 IAP 매출은 약 830만 달러에 그쳤다(센서타워 추정).",
+    "Udonis는 Burger Please가 빠르게 반복적으로 느껴지고 보상형 광고 보상이 커서 초반이 너무 쉬워진다고 지적했다. 장기 리텐션 설계(이벤트·퀘스트·소셜)가 없으면 단기 다운로드 후 이탈할 수 있다.",
+    "상위권 게임은 대규모 UA 예산과 AI·데이터 퍼블리싱 체계를 갖춘 퍼블리셔 소속이다. 1인 개발이 순수 광고 모델로 이를 따라잡기는 어렵고, 2022년 기준 상위 20개 게임의 D7 리텐션이 7~13%에 그쳐 낮은 리텐션이 일반적이다.",
+    "플랫폼 정책·데이터 지표(ATT 등)와 광고 네트워크 변화에 따른 수익 변동성이 크다. SayGames는 하이퍼캐주얼 광고 모델에서 IAP 병행으로 전환했다(2022년 IAP 3,750만 달러)."
+  ],
+  "pipeline": [
+    {
+      "name": "XP 히어로 (슈퍼센트, 하이브리드 RPG)",
+      "note": "2026년 상반기 소프트런칭 예정으로 보도(디스이즈게임 2026-02-26, 슈퍼센트 발표). arcade idle은 아니며 출시 여부는 미확인."
+    },
+    {
+      "name": "SayGames 하이브리드 투자 프로그램",
+      "note": "2024-11-13 발표, 3년간 최대 3천만 달러, 이미 5개 스튜디오에 1,000만 달러 배정(SayGames 공식)."
+    },
+    {
+      "name": "Supersonic의 Tripledot Studios 합류",
+      "note": "2026-08-06 공식 블로그, 퍼블리싱 사업과 개발사 네트워크가 Tripledot 그룹에 합류(조건 미공개)."
+    }
+  ],
+  "games": [
+    {
+      "rank": 1,
+      "id": "pizza-ready",
+      "name": "Pizza Ready!",
+      "url": "https://apps.apple.com/us/app/id6450917563",
+      "developer": "Supercent, Inc.",
+      "publisher": "Supercent, Inc.",
+      "origin": "대한민국(서울)",
+      "release": "2023-07 (iOS 미국 2023-07-06, Google Play 2023-07-04 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "피자 가게 운영 arcade idle 시뮬레이션(하이브리드 캐주얼)",
+      "businessModel": "부분유료: 전면·보상형·배너 광고 + IAP(광고 제거 $3.99 등)",
+      "status": "서비스 중(iOS 60.3.0, 2026-10-02 업데이트)",
+      "description": "한 개 가게에서 시작해 손님 주문을 받아 피자를 만들고 서빙하며 주방·직원·지점을 확장하는 비즈니스 매니저 시뮬레이터. 센서타워 기준 2025년 하이브리드 캐주얼 다운로드 1위로 보도되었다.",
+      "coreLoop": [
+        "주문 받기·재료 조리·서빙으로 돈 벌기(스토어 설명)",
+        "번 돈으로 주방 설비·스테이션 업그레이드와 직원(요리사·계산원) 고용",
+        "광고 시청 또는 결제로 부스트·속도 가속",
+        "새 지점(위치) 해금 후 같은 루프를 더 큰 규모로 반복"
+      ],
+      "features": [
+        "스토어 설명상 오프라인에서도 직원이 수익을 낸다고 안내하나 지도 열기 등은 네트워크가 필요하다는 리뷰가 있다(리뷰 2024-11-04).",
+        "2025-11-25 업데이트(51.3.0)에서 픽업 테이블이 서비스 테이블로 바뀌어 직원이 직접 음식을 서빙하고 청소 로봇이 서비스 로봇으로 개편되었다.",
+        "출석 시스템(스킨 4종, 58.1.0)과 주간 푸드 콘테스트(스킨 5종)를 추가했다(2026-06 업데이트 노트).",
+        "크리스마스 이벤트(눈송이 수집·트리 완성·산타 캐릭터 해금, 54.2.0)를 진행했다(2026-01).",
+        "연령 등급 4+, 미국 스토어 기준 언어는 영어."
+      ],
+      "progression": [
+        "주방 설비·오븐·스테이션 업그레이드",
+        "재료·레시피(요리) 업그레이드",
+        "직원 고용(요리사·계산원)과 속도 훈련",
+        "가게 확장과 새 지점 해금",
+        "스킨·캐릭터 수집(이벤트·출석)"
+      ],
+      "idleMechanics": "스토어 설명은 '직원이 있으면 오프라인에서도 수익을 낸다'고 안내한다. 최대 누적 시간·광고 2배 여부 등 상세 수치는 미확인.",
+      "socialAndLiveOps": [
+        "주간 푸드 콘테스트(경쟁형 이벤트, 스킨 5종 보상) 2026-06",
+        "출석 체크 보상(스킨 4종) 2026-06",
+        "시즌 이벤트(크리스마스) 2026-01",
+        "콘텐츠 업데이트: 서비스 테이블·서비스 로봇 개편 2025-11-25",
+        "소규모 업데이트 빈번(55.5.0 2026-03-13 ~ 60.3.0 2026-10-02)"
+      ],
+      "popularityFactors": [
+        "인도 24%(센서타워 추정 2025) 등 신흥 시장에서 유료 UA 비중이 높고, 현지화 문구·플레이어블 광고 소재를 사용(센서타워 2024-04)",
+        "상위 하이퍼캐주얼 중 평균 세션 시간이 가장 길었다는 센서타워 분석(2024-04)으로 몰입도가 높은 편(해석)",
+        "첫 광고를 약 3분 13초 뒤에 노출해 초반 이탈을 줄이려는 설계(센서타워 2025-11·TechNode, 해석)",
+        "슈퍼센트 게임 간 오디언스 중복(Outlets Rush·Burger Please)이 커 교차 유입이 있었다(센서타워 2024-04)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "App Store 미국 상점에 앱 내 구입 10종이 노출되고 가장 낮은 상품은 $1.99(video1), 가장 높은 상품은 $19.99(prpro)다. 'No Ads' $3.99가 광고 제거 상품이며 한국 스토어 가격은 ₩6,600이다. 센서타워는 누적 IAP 매출이 830만 달러이고 40%가 2025년에 발생했다고 추정했다.",
+        "products": [
+          {
+            "name": "No Ads",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "광고 제거(상품명 기준, 배너·보상형 포함 여부 미확인)",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "s6gem1_2.99",
+            "price": "$2.99",
+            "contents": "젬 팩 추정(상품 ID)",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "s6gem2_4.99",
+            "price": "$4.99",
+            "contents": "젬 팩 추정(상품 ID)",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "prmpackweekly_5.99",
+            "price": "$5.99",
+            "contents": "주간 프리미엄 팩 추정(상품 ID)",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "usmgrpack_5.99",
+            "price": "$5.99",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "afpack_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "광고 제거 팩 추정(상품 ID 'af')",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "afpackoff15_8.99",
+            "price": "$8.99 (한국 ₩15,000)",
+            "contents": "15% 할인 변형 추정",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "growthoffer_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "성장 오퍼 추정",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "prpro_19.99",
+            "price": "$19.99 (한국 ₩33,000)",
+            "contents": "프로 팩 추정",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          },
+          {
+            "name": "video1_1.99",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "미확인(광고 관련 상품 추정)",
+            "evidence": "App Store(미국) — Pizza Ready!"
+          }
+        ],
+        "verified": [
+          "App Store 미국 앱 내 구입 10종($1.99~$19.99)과 한국 스토어 가격(No Ads ₩6,600)을 확인했다.",
+          "Google Play는 'Contains ads' 표기, 인앱 상품 $0.99~$49.99 범위(상품명 미확인).",
+          "센서타워 추정 누적 IAP 매출 830만 달러(2025-11 기준), 누적의 40%가 2025년.",
+          "일부 리뷰어가 광고 제거 약 $10를 합리적이라고 언급했으나(2025-01-29) 스토어 목록의 No Ads는 $3.99이므로 상품 ID 기준으로 기재했다."
+        ],
+        "unverified": "상품 구성(젬 수량·주간 팩 내용), Google Play 개별 상품명과 가격, 광고 제거가 보상형·배너까지 제거하는지, 보상형 광고 보상량·전면광고 빈도, 광고 대 IAP 매출 비중은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "AppMagic 추정 2024년 171m(Mobilegamer 2025-01; 같은 매체 2026-01 기사는 178m로 표기), 2025년 166m(Mobilegamer) 또는 161m(PocketGamer, 2025-01-01~12-22). 센서타워 추정 2025년 1.5억·누적 약 4억(2025-11), 2026-03 월간 전 세계 다운로드 5위(센서타워).",
+        "revenue": "센서타워 추정 누적 IAP 830만 달러(2025-11), 40%가 2025년. 광고 매출은 확인 못함.",
+        "chart": "App Store 미국 시뮬레이션 #33(2026-10 조회 페이지), 한국 시뮬레이션 #60, Google Play 미국 '인기 무료 시뮬레이션' #9(조회 시점)",
+        "rating": "App Store 미국 4.57(344,772건, iTunes lookup 2026-10), Google Play 4.4(2,741,489건)",
+        "players": "Google Play 설치 100,000,000+",
+        "other": "센서타워 2024-04: 2024-01-01 일 다운로드 약 50만, 2024-04-06 약 110만(출시 후 최고), 2024년 약 4개월에 누적의 약 70% 발생, 다운로드 약 70% 유료 채널, 누적 IAP의 약 45% 미국. 센서타워 공개 앱 페이지 지난달 추정(Android 미국, 범위 불명): 다운로드 7m·매출 $20k."
+      },
+      "userFeedback": {
+        "positive": [
+          "훌륭한 시간 때우기용 타이쿤이라는 평가(App Store 리뷰 2024-11-04 'Great concept')",
+          "광고를 제외하면 콘셉트·재미는 인정하는 리뷰(리뷰 2025-01-29)"
+        ],
+        "negative": [
+          "광고가 너무 자주 나오며 업그레이드 버튼을 덮는 '무료' 광고 버튼과 지연 스킵 구매 화면이 불쾌하다는 리뷰(2024-11-04)",
+          "5분 안에 광고 3회가 나와 삭제했다는 리뷰(2025-01-29)",
+          "지도를 열려면 네트워크가 필요한 점에 대한 불만(2024-11-04)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 리뷰 일부 발췌(평점 4.6, 345K). 표본이 작고 부정 리뷰 중심으로 노출될 수 있음."
+      },
+      "takeaways": {
+        "borrow": [
+          "첫 광고 노출을 3분 이상 뒤로 미뤄 초반 몰입 확보(센서타워 2025-11)",
+          "직원 서빙·로봇 등 자동화 단계를 업데이트로 확장해 업그레이드 선택지를 늘리기",
+          "출석·주간 콘테스트로 스킨을 주는 가벼운 라이브옵스"
+        ],
+        "avoid": [
+          "업그레이드 버튼을 덮는 광고 버튼·지연 스킵 오퍼 같은 UI(리뷰 불만)",
+          "오프라인 플레이를 내세우면서 핵심 화면에 네트워크를 요구하는 설계"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6450917563",
+          "title": "App Store(미국) — Pizza Ready!",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2023-07-06, 평점 4.57(344,772), 앱 내 구입 10종($1.99~$19.99), 최신 60.3.0(2026-10-02), 업데이트 노트(서비스 테이블·출석·푸드 콘테스트)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=io.supercent.pizzaidle",
+          "title": "Google Play — Pizza Ready!",
+          "type": "스토어",
+          "note": "Contains ads, 설치 100,000,000+, 평점 4.4(2,741,489), 인앱 $0.99~$49.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/supercent-inc/app/pizza-ready/io.supercent.pizzaidle/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Pizza Ready!",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지의 지난달 추정: 다운로드 7m·매출 $20k(Android 미국 페이지, 범위 불명)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026",
+          "title": "Sensor Tower — Top 10 Worldwide Mobile Games by Revenue and Downloads in March 2026",
+          "type": "데이터(추정)",
+          "note": "2026년 3월 전 세계 게임 다운로드 상위 5위로 Pizza Ready!를 명시(텍스트로는 1~5위만 확인, 세부 수치 없음)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/Pizza-Ready-ranks-6th-globally-among-mobile-casual-games",
+          "title": "센서타워 — 《피자 레디》 전 세계 모바일 캐주얼 게임 다운로드 6위 (2024-04)",
+          "type": "데이터(추정)",
+          "note": "2024-01-01 일 다운로드 약 50만, 2024-04-06 약 110만(출시 후 최고), 다운로드 약 70% 유료 채널, 누적 다운로드 인도 17.3%, 누적 IAP 약 45% 미국, 상위 하이퍼캐주얼 중 평균 세션 시간 최장",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/Supercent-rises-to-7th-place-globally-in-publisher-downloads",
+          "title": "센서타워 — 슈퍼센트, 전 세계 게임 퍼블리셔 다운로드 7위 (2025-11)",
+          "type": "데이터(추정)",
+          "note": "Pizza Ready 누적 약 4억, 2025년 1.5억, 인도 24%, 누적 IAP 830만 달러(40%가 2025년), 첫 광고 3분 13초 이후",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://mobilegamer.biz/the-top-mobile-game-downloads-of-2025/",
+          "title": "Mobilegamer.biz — 2025's top mobile game downloads (2026-01-13, AppMagic 추정)",
+          "type": "보도",
+          "note": "Pizza Ready 2025년 166m(전 세계 5위), 2024년 178m, 인도·인도네시아·브라질 순",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://supercent.notion.site/15f93b2d2573802e8389eef5c2e95cea",
+          "title": "Supercent 보도자료 — 7천만 달러 수출의 탑 (2024-12-05)",
+          "type": "공식",
+          "note": "해외 매출 97%, Pizza Ready 2024-05 AppMagic 전 세계 다운로드 1위·누적 1.5억, 하이브리드 캐주얼 진출",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "burger-please",
+      "name": "Burger Please!",
+      "url": "https://apps.apple.com/us/app/id1668713081",
+      "developer": "Supercent, Inc.",
+      "publisher": "Supercent, Inc.",
+      "origin": "대한민국(서울)",
+      "release": "2023-02 (iOS 미국 2023-02-09, Google Play 2023-02-07 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "버거 가게 운영 타이쿤형 arcade idle",
+      "businessModel": "부분유료: 전면·보상형·배너 광고 + IAP(광고 제거 $3.99/$9.99 등), 2024-01 배틀패스 추가",
+      "status": "서비스 중(iOS 31.7.0, 2026-08-27 업데이트)",
+      "description": "버거 가게를 열고 장비 구매·직원 고용으로 프랜차이즈로 키우는 arcade idle 타이쿤. 센서타워는 2023-02-19~04-30 전 세계 모바일 타이쿤 다운로드 1위로 집계했다.",
+      "coreLoop": [
+        "조이스틱으로 이동해 버거를 쌓아 계산대·손님에게 전달",
+        "번 돈으로 장비 구매와 직원 고용(운반·응대·쓰레기·드라이브스루)",
+        "HR 사무실에서 직원·아바타 속도/적재량과 수익 업그레이드",
+        "새 구역·프랜차이즈 매장 해금 후 반복"
+      ],
+      "features": [
+        "단일 가상 조이스틱과 스태킹 메카닉, 빨간 화살표가 이끄는 단계별 튜토리얼(Udonis 2025-05-28).",
+        "광고는 하단 배너, 5초 후 스킵 가능한 전면광고, 튜토리얼에서 소개되는 보상형(머니백 등).",
+        "2023-11-06(0.38.0)에 신규 인앱 상품·오퍼 시스템 추가, 2024-01-20(1.6.0)에 배틀패스 및 신규 시설 추가.",
+        "크리스마스(2023-12-26) 등 시즌 업데이트와 주기적 콘텐츠 추가.",
+        "연령 등급 4+."
+      ],
+      "progression": [
+        "가게 장비(스토브 등) 업그레이드",
+        "직원 수·속도·적재량 업그레이드(HR 사무실)",
+        "아바타 속도·적재량·수익 업그레이드",
+        "새 구역·프랜차이즈 지점 해금",
+        "스킨·탈것 수집(IAP 번들 구성)"
+      ],
+      "idleMechanics": "리뷰(2023-08-14)에 오프라인으로 플레이해 광고가 없었다는 서술이 있으나 오프라인 누적 보상의 상한·광고 2배는 미확인.",
+      "socialAndLiveOps": [
+        "배틀패스 2024-01-20",
+        "오퍼 시스템·신규 IAP 2023-11-06",
+        "시즌 이벤트(크리스마스 2023-12-26)",
+        "신규 콘텐츠 업데이트(2024-03-18, 2024-10-28, 2024-12-03, 2025-02-17 등)",
+        "이후 31.x대 버전은 대부분 '버그 수정'으로 표기"
+      ],
+      "popularityFactors": [
+        "'버거'가 미국에서 가장 많이 검색되는 단어라는 이유로 테마를 선정했다는 CEO 발언(KED 2024-03-13)",
+        "스태킹을 몰입 요소로 삼고 튜토리얼 없이도 즐길 수 있는 단순성을 강조(슈퍼센트 인터뷰 2023-09-08)",
+        "같은 구조에 커피·도넛 등 다른 테마 빌드를 순차 출시해 데이터로 선별(슈퍼센트 인터뷰)",
+        "센서타워 2023-02-19~04-30 타이쿤 다운로드 1위로 초기 순위 상승이 빨랐다(센서타워 2023-05)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "미국 App Store에 광고 제거·스타터 팩·주간 VIP 등 앱 내 구입 10종이 노출되며 센서타워 분석상 최상위 IAP는 '광고 제거(No Ads)'였다. Udonis는 IAP가 영구 부스트와 일부 코스메틱이고 전면광고가 비교적 자주 나온다고 서술했다.",
+        "products": [
+          {
+            "name": "No Ads_3.99",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "광고 제거",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "adsfreepack_9.99 / s7adsfreepack_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "광고 제거 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "off15adsfreepack_8.99",
+            "price": "$8.99 (한국 ₩15,000)",
+            "contents": "광고 제거 팩 15% 할인 변형(상품명 기준)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "vippackweekly2_5.99",
+            "price": "$5.99 (한국 ₩8,800)",
+            "contents": "주간 VIP 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "s7allinoneweek_5.99",
+            "price": "$5.99 (한국 ₩8,800)",
+            "contents": "미확인(주간 올인원 추정)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "Starter Pack 2",
+            "price": "$5.99 (한국 ₩9,900)",
+            "contents": "스타터 팩",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "s7gem25_2.99",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "젬 25 추정(상품 ID)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "adskipticket10_2.99",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "광고 스킵 티켓 10개 추정(상품 ID)",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "RV Skip Ticket 10_1.99",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "보상형 광고(RV) 스킵 티켓 10개 추정",
+            "evidence": "App Store(미국) — Burger Please!"
+          },
+          {
+            "name": "프리미엄 번들(상품명 미확인)",
+            "price": "$12.99",
+            "contents": "스킨·탈것·광고 제거·2배 수익/속도/적재",
+            "evidence": "Udonis — Can Burger Please Compete with Arcade Idle Leaders? (2025-05-28)"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($1.99~$9.99)과 한국 가격을 확인했다.",
+          "센서타워: 상위 IAP는 'No Ads', 출시 약 2개월 누적 소비자 지출 9만 달러(2023-02-19~04-30).",
+          "Udonis가 서술한 $12.99 프리미엄 번들은 현재 미국 스토어 목록에 보이지 않아 과거 또는 다른 지역 상품일 수 있다.",
+          "Google Play 인앱 $0.49~$49.99 범위."
+        ],
+        "unverified": "현재 스토어에 노출되지 않는 $12.99 번들의 판매 여부, 상품 구성 수량, 배틀패스 가격, 광고 빈도·보상량, IAP 대 광고 매출 비중은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "센서타워 추정 2023-02-19~04-30 누적 1,500만+(타이쿤 1위). AppMagic: 2023-07 설치 14m+(Mobilegamer 2023-08-03), 누적 83.81M(KED 2024-03-13). 슈퍼센트 인터뷰: 2023-08 기준 출시 4개월 5천만 다운로드(회사 발표).",
+        "revenue": "센서타워: 약 2개월 누적 소비자 지출 9만 달러(2023-02-19~04-30). 슈퍼센트는 누적 300억 원 이상을 전망(2023-09, 회사 전망치).",
+        "chart": "App Store 미국 롤플레잉 #8(조회 페이지), 한국 롤플레잉 #79",
+        "rating": "App Store 미국 4.66(136,693건, iTunes lookup 2026-10), Google Play 4.4(628,551건)",
+        "players": "Google Play 설치 100,000,000+; 센서타워: 2023-03 타이쿤 DAU 8위·MAU 5위",
+        "other": "센서타워 2023-05 국가 비중: 인도네시아 10.7%, 브라질 8.2%, 인도 7.8%, 미국 4.7%. 공개 앱 페이지 지난달 추정(US 페이지): Android 다운로드 300k."
+      },
+      "userFeedback": {
+        "positive": [
+          "중독성이 있고 여행 중 오프라인으로 즐기기 좋다는 평가(리뷰 2023-07-20, 2023-08-14)",
+          "광고를 빼면 게임 자체는 재미있다는 평가(리뷰 2025-01-10)"
+        ],
+        "negative": [
+          "광고가 1분마다 나오고 길다는 불만(2023-07-20, 2025-01-10)",
+          "직원이 버거를 너무 높이 쌓아 대기하는 버그 제보(2023-08-14)",
+          "좋은 업그레이드가 젬을 요구해 광고 시청이나 결제를 유도한다는 불만(2025-01-10)"
+        ],
+        "basis": "App Store 미국 페이지 노출 리뷰 일부 발췌와 Udonis 분석 기사(2025-05-28)."
+      },
+      "takeaways": {
+        "borrow": [
+          "단일 조이스틱+스태킹의 즉시 이해 가능한 조작과 화살표 튜토리얼",
+          "같은 구조에 여러 테마를 빠르게 출시해 지표로 승자를 고르는 개발 방식(슈퍼센트 인터뷰)",
+          "오퍼·배틀패스를 출시 후 단계적으로 추가해 과금 지점을 늘리기"
+        ],
+        "avoid": [
+          "초반 보상형 광고 보상이 과해 게임이 너무 쉬워지는 설계(Udonis 비판)",
+          "광고 빈도가 높아 이탈하는 구조"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1668713081",
+          "title": "App Store(미국) — Burger Please!",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2023-02-09, 평점 4.66(136,693), 앱 내 구입 10종($1.99~$9.99), 업데이트 노트(배틀패스 2024-01-20 등)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=io.supercent.burgeridle",
+          "title": "Google Play — Burger Please!",
+          "type": "스토어",
+          "note": "설치 100,000,000+, 평점 4.4(628,551), 인앱 $0.49~$49.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/supercent-inc/app/burger-please/io.supercent.burgeridle/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Burger Please!",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 300k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/Burger-Please-becomes-the-1-downloaded-mobile-tycoon-game-with-over-15M-downloads",
+          "title": "센서타워 — 《버거 플리즈!》 타이쿤 다운로드 1위, 1,500만 돌파 (2023-05)",
+          "type": "데이터(추정)",
+          "note": "2023-02-19~04-30 타이쿤 다운로드 1위, 누적 1,500만+, 인도네시아 10.7%, 최상위 IAP는 광고 제거, 약 2개월 누적 소비자 지출 9만 달러",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://mobilegamer.biz/julys-top-mobile-game-downloads-worldwide/",
+          "title": "Mobilegamer.biz — July's top mobile game downloads worldwide (2023-08-03, AppMagic)",
+          "type": "보도",
+          "note": "Burger Please 2023-07 설치 14m 이상(6월의 약 2배), 상위 5개 시장 US·인도·브라질·멕시코·인도네시아",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.blog.udonis.co/mobile-marketing/mobile-games/burger-please",
+          "title": "Udonis — Can Burger Please Compete with Arcade Idle Leaders? (2025-05-28)",
+          "type": "보도",
+          "note": "조이스틱+스태킹, 배너·전면·보상형 광고, IAP는 영구 부스트 중심, 프리미엄 번들 $12.99(스킨·탈것·광고 제거·2배 수익/속도/적재), 저자의 반복성·광고 과다 비판",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.kedglobal.com/korean-games/newsView/ked202403130006",
+          "title": "KED Global — Supercent (2024-03-13)",
+          "type": "보도",
+          "note": "Burger Please 누적 83.81M(AppMagic), '버거'가 미국 최다 검색어라는 이유로 테마 선정, 하이퍼캐주얼은 게임당 약 3개월 개발",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://supercent.notion.site/70aafc58bcac49a1a75d2253a24469e1",
+          "title": "Supercent 인터뷰 — Burger Please 이후 하이퍼캐주얼에 대한 시각 (2023-09-08)",
+          "type": "인터뷰",
+          "note": "Burger Please 초기 3인·출시 한 달, 커피·도넛 등 같은 구조 다른 테마 빌드를 순차 출시해 데이터로 선별, 스태킹을 몰입 요소로",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "my-perfect-hotel",
+      "name": "My Perfect Hotel",
+      "url": "https://apps.apple.com/us/app/id1635760774",
+      "developer": "Redux Games(키프로스)",
+      "publisher": "SayGames LTD",
+      "origin": "키프로스(Redux Games, SayGames 보도자료 기준)",
+      "release": "2022-08 글로벌 출시(SayGames 2023-08 보도, iOS 미국 2022-07-29)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "호텔 운영 arcade idle 시뮬레이션(하이브리드 캐주얼)",
+      "businessModel": "부분유료: 강제 전면광고·보상형 광고 + IAP(No Ads $9.99, Hotel Pass, 재화 팩)",
+      "status": "서비스 중(iOS 1.38.0, 2026-10-07 업데이트)",
+      "description": "벨보이로 시작해 객실 청소·접수·결제를 직접 수행하다 직원을 고용하고 호텔을 키워 새 호텔로 승진하는 호텔 경영 arcade idle. SayGames는 2023-08 기준 5천만 다운로드와 50개국 이상 무료 1위를 발표했다.",
+      "coreLoop": [
+        "직접 객실 청소·손님 접수·결제·팁 수금·화장실 비품 보충",
+        "번 돈으로 객실·시설 업그레이드와 직원 고용",
+        "에이전트(자동화 직원) 구매로 보충·주차·체크인 자동화",
+        "충분히 키운 호텔에서 승진해 새롭고 더 큰 호텔로 이동 후 반복"
+      ],
+      "features": [
+        "여러 호텔을 순차 확장하며 호텔마다 수십 개의 고유 업그레이드가 있다고 스토어 설명에 기재.",
+        "Hotel Pass(Pro·Elite 단계, 배틀패스형)가 추가 재화 보상과 강제·배너 광고 제거를 제공한다(Udonis 2025-02-28).",
+        "일일 과제와 시즌 이벤트 포함.",
+        "App Store 설명상 '오프라인으로 호텔 제국을 키운다'를 내세운다(부제 Grow Your Hotel Empire Offline).",
+        "전 세계 18개 언어 이상 지원(미국 스토어 '+18 More')."
+      ],
+      "progression": [
+        "객실·시설 업그레이드와 층·편의시설 해금",
+        "직원 고용 및 직원 훈련",
+        "에이전트(자동화 직원) 구매",
+        "새 호텔 해금(승진)",
+        "스킨·펫 수집(IAP 목록에 펫·VIP 팩)"
+      ],
+      "idleMechanics": "Udonis는 '적극 플레이가 진행을 앞당기고 방치 시에는 백그라운드로 진행된다'고 서술했다. 오프라인 누적 상한·광고 2배 수치는 미확인.",
+      "socialAndLiveOps": [
+        "일일 과제",
+        "시즌 이벤트(Udonis 서술, 구체 일정 미확인)",
+        "Hotel Pass(Pro/Elite) 시즌형 보상",
+        "SayGames 포트폴리오 교차 프로모션으로 UA·LTV 보강(Udonis)",
+        "최근 버전 1.38.0(2026-10-07)까지 유지보수 중"
+      ],
+      "popularityFactors": [
+        "2023-08-14경부터 급등해 50개국 이상에서 무료 1위, 정점에 하루 약 100만 플레이어가 유입(SayGames 2023-08-18, GameMakers)",
+        "광고 진행 구조를 포함한 SayGames의 UA·수익화 반복 개선(SayGames 인용, Udonis)",
+        "플레이어가 직접 청소·접수하다 직원 구매로 자동화하는 능동성(Udonis는 전통적 idle과 달리 적극 응대가 필요하다고 서술)",
+        "상위 다운로드 순위에서 2023년 86.9M(센서타워 하이브리드 캐주얼 리포트 보도)로 비교적 짧은 기간에 대규모 성과(해석)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP(혼합)",
+        "summary": "미국 App Store에 No ads pack($9.99, '영원히 광고 제거+일일 보상')을 포함한 앱 내 구입이 노출된다. Udonis는 No Ads(약 $10)가 가장 인기 있는 IAP이며 첫 몇 분 안에 노출된다고 서술했다. SayGames는 My Perfect Hotel 매출이 1억 달러를 넘었다고 발표했다(기간 미명시).",
+        "products": [
+          {
+            "name": "No ads pack",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "영원히 광고를 제거하고 일일 보상 제공",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "No Ads 20%",
+            "price": "$7.99 (한국 ₩12,000)",
+            "contents": "광고 제거 20% 할인 변형",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Handful of Gems",
+            "price": "$1.99",
+            "contents": "젬 소형 팩(수량 미확인)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Pile of Gems",
+            "price": "$4.99",
+            "contents": "젬 팩(수량 미확인)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Stash of Gems",
+            "price": "$6.99",
+            "contents": "젬 팩(수량 미확인)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Bag of Gems",
+            "price": "$9.99",
+            "contents": "젬 팩(수량 미확인)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Candy Offer (Medium Pack)",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Get a Pet Forever!",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "펫 영구 보유(상품명 기준)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "Daily Endless Offer 1-2",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "일일 오퍼(구성 미확인)",
+            "evidence": "App Store(미국) — My Perfect Hotel"
+          },
+          {
+            "name": "VIP Pack / VIP Offer",
+            "price": "한국 ₩33,000 (미국 가격 미확인)",
+            "contents": "VIP(구성 미확인)",
+            "evidence": "App Store(한국) 앱 내 구입 목록 — My Perfect Hotel(로그 한국 스토어 조회)"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($1.99~$9.99)과 한국 가격(VIP Pack ₩33,000 등)을 확인했다.",
+          "Hotel Pass(Pro·Elite)는 Udonis가 존재를 서술했지만 스토어 목록에서 가격은 확인하지 못했다.",
+          "SayGames: 누적 매출 1억 달러 초과(2024-11-13 발표, 기간 미명시).",
+          "Google Play 인앱 $0.99~$99.99 범위."
+        ],
+        "unverified": "Hotel Pass 가격·구성, 젬 수량, VIP Pack의 미국 가격, 광고 빈도·보상 수치, IAP 대 광고 비중은 확인하지 못했다. Udonis의 '8월 매출 40만 달러' 서술은 SayGames 누적 1억 달러 발표와 규모 차이가 커 사용하지 않았다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "SayGames 2023-08-18: 누적 5천만(보도자료). 센서타워 하이브리드 캐주얼 2023 리포트(WN Hub 보도): 2023년 86.9M, 상위 5위. Udonis: 2023-08 월간 6M+(AppMagic 인용).",
+        "revenue": "SayGames 발표: 누적 매출 1억 달러 초과(2024-11-13, 기간 미명시).",
+        "chart": "App Store 미국 시뮬레이션 #26, 한국 시뮬레이션 #69(조회 페이지)",
+        "rating": "App Store 미국 4.72(707,250건, iTunes lookup 2026-10), Google Play 4.5(1,652,535건)",
+        "players": "Google Play 설치 100,000,000+; SayGames: 정점 하루 약 100만 신규 플레이어(2023-08)",
+        "other": "개발사 Redux.Games 누적 3억 다운로드(SayGames 퍼블리싱 페이지)."
+      },
+      "userFeedback": {
+        "positive": [
+          "중독성이 있고 아바타·스킨·호텔 업그레이드가 풍부하다는 평가(리뷰 2024-01-20)",
+          "재미·도전성은 높게 평가(리뷰 2024-03-06)"
+        ],
+        "negative": [
+          "객실 하나 업그레이드에 7만~8만이 필요해 비싸고 광고 시청이나 대기에 의존한다는 불만(2024-03-06)",
+          "호텔 전체 업그레이드 선택 시 위험을 경고하는 리뷰(2024-01-20)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 리뷰 일부 발췌(평점 4.7, 707K)와 GameMakers·Udonis 분석."
+      },
+      "takeaways": {
+        "borrow": [
+          "직접 수행하던 일(청소·접수)을 에이전트 구매로 단계 자동화하는 구조",
+          "광고 제거 상품을 첫 몇 분 안에 노출(Udonis)",
+          "Hotel Pass로 정기 과금 지점 추가"
+        ],
+        "avoid": [
+          "후반 업그레이드 단가 급등으로 광고 의존이 심해지는 곡선(리뷰 2024-03-06)",
+          "광고 경험이 진행 속도에 내재되어 광고를 거부하면 진행이 막히는 설계(GameMakers)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1635760774",
+          "title": "App Store(미국) — My Perfect Hotel",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2022-07-29, 평점 4.72(707,250), 앱 내 구입 목록(No ads pack $9.99 등), 최신 1.38.0(2026-10-07), © Redux Games",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.master.hotelmaster",
+          "title": "Google Play — My Perfect Hotel",
+          "type": "스토어",
+          "note": "설치 100,000,000+, 평점 4.5(1,652,535), 인앱 $0.99~$99.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://say.games/news/my-perfect-hotel-hits-fifty-million-downloads/",
+          "title": "SayGames — My Perfect Hotel hits 50 million downloads (2023-08-18)",
+          "type": "공식",
+          "note": "2022-08 글로벌 출시, 개발 Redux Games(키프로스), 누적 5천만, 50개국+ 무료 1위, 정점 하루 약 100만 플레이어 추가",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://say.games/news/hybrid-invest/",
+          "title": "SayGames — Hybrid casual investment program (2024-11-13)",
+          "type": "공식",
+          "note": "My Perfect Hotel 매출 1억 달러 초과(기간 미명시), 투자 최대 3천만 달러/3년",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://blog.udonis.co/mobile-marketing/mobile-games/my-perfect-hotel",
+          "title": "Udonis — My Perfect Hotel (2025-02-28)",
+          "type": "보도",
+          "note": "강제 전면광고·보상형 광고, No Ads 약 $10가 최다 IAP이며 첫 몇 분 안에 노출, Hotel Pass(Pro·Elite) 존재, 가격 미기재",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://gamemakers.beehiiv.com/p/marketwire-say-hello-1-downloads-perfect-hotel",
+          "title": "GameMakers MarketWire — Say hello to #1 downloads, My Perfect Hotel (2023-09-09)",
+          "type": "보도",
+          "note": "2023-08-14경 급등, 광고가 진행 속도에 내재, 에이전트 구매로 휴지 보충·주차·체크인 자동화",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://wnhub.io/news/finance/item-43070",
+          "title": "WN Hub — Sensor Tower 하이브리드 캐주얼 2023 리포트 (2024-03-12)",
+          "type": "보도",
+          "note": "2023년 하이브리드 캐주얼 매출 약 15억 달러, 다운로드 상위 5위에 My Perfect Hotel 86.9M",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1635760774",
+          "title": "App Store(한국) — My Perfect Hotel",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 목록과 원화 가격(VIP Pack ₩33,000, No Ads 50% ₩7,700 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "my-mini-mart",
+      "name": "My Mini Mart",
+      "url": "https://apps.apple.com/us/app/id1592004814",
+      "developer": "Supersonic Studios(보도 표기; Android 패키지명 KisekiGames)",
+      "publisher": "Supersonic Studios LTD",
+      "origin": "미확인",
+      "release": "2021-12 (iOS 미국 2021-12-14, Google Play 2021-12-12 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "편의점 운영 arcade idle(자원 체인형)",
+      "businessModel": "광고 중심(분당 수 회 전면광고) + IAP(광고 제거·캐시 팩·한정 오퍼)",
+      "status": "서비스 중(iOS 1.89.5, 2026-09-30 업데이트)",
+      "description": "토마토·달걀 같은 자원 체인을 직접 키우고 진열해 판매하며 직원을 고용해 자동화하고 새 마켓으로 이동하는 arcade idle. Azur Games는 2022년 설치 기준 최대 idle arcade라고 평가했다.",
+      "coreLoop": [
+        "첫 사이클(약 20~30초)에서 계산대·토마토 진열대·모종 순으로 구매",
+        "작물→달걀→케첩 등 자원 체인을 직접 수집·가공·진열",
+        "진열 직원→계산원 순으로 자동화",
+        "돈이 모이면 확장 또는 새 마켓으로 이동(약 30~40분 뒤), 반복"
+      ],
+      "features": [
+        "무텍스트 튜토리얼과 화살표 안내, 첫 사이클 이동은 2초 이내(Azur Games 분석).",
+        "가격표가 다음 과제를 강조하고 카메라가 신규 직원·강도 이벤트 등을 비춘다.",
+        "쓰레기통은 새 지점에서 필요할 때 처음 등장.",
+        "자원 체인은 약 3개 제품 수준이 적정하다고 분석가가 권고.",
+        "2026-03~06 업데이트 노트에 '광고 빈도 감소'가 반복 기재."
+      ],
+      "progression": [
+        "새 진열대·작물·동물(달걀) 구매",
+        "직원(진열·계산) 고용과 업그레이드",
+        "기계(블렌더 등) 해금",
+        "새 마켓 해금(초기 자원 재사용, 화면 리셋)",
+        "하드 재화(쿠폰)로 업그레이드·부스트 구매"
+      ],
+      "idleMechanics": "미확인(오프라인 보상 상세는 확인하지 못함).",
+      "socialAndLiveOps": [
+        "연말 시즌 장식 업데이트(2025-01-12 '메리 크리스마스' 업데이트)",
+        "수시 버그 수정 업데이트(2024-11~2026-09)",
+        "2025-03 Sushi Mart 진행 차단 이슈 수정",
+        "2026-03-29·03-30·06-09·06-13 '광고 빈도 감소' 업데이트",
+        "소셜·랭킹 기능은 확인 못함"
+      ],
+      "popularityFactors": [
+        "짧은 첫 사이클과 수집·포장·수익 애니메이션이 주는 만족감(Azur Games 분석, 해석)",
+        "약 3개의 자원 체인으로 깊이와 단순성을 맞춘 설계(Azur Games 분석)",
+        "마켓·오퍼·부스터를 방해가 아닌 가치 있는 선택으로 제시하는 상점 설계(Azur Games 서술)",
+        "2022년 설치 기준 최대 idle arcade라는 평가와 7천만+ 다운로드(Azur Games 기고)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "미국 App Store에 Remove Ads $4.99, Remove Pop Up Ads $2.99, 캐시 팩과 한정 오퍼가 노출된다. Azur Games 분석은 전면광고가 분당 수 회 나오며 광고 제거 IAP가 별도로 있다고 서술했고, 하드 재화(쿠폰)는 IAP나 보상형 광고로 얻는다. 2023년 초 월 10만 달러+ 매출이라는 추정이 있다.",
+        "products": [
+          {
+            "name": "Remove Ads",
+            "price": "$4.99 (한국 ₩7,700)",
+            "contents": "광고 제거",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Remove Pop Up Ads",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "팝업(전면) 광고 제거",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Money Offer",
+            "price": "$4.99 / $6.99",
+            "contents": "머니 오퍼(수량 미확인)",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "40000 Cash",
+            "price": "$7.99 (한국 ₩12,000)",
+            "contents": "현금 40,000",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "25000 Cash",
+            "price": "$5.99",
+            "contents": "현금 25,000",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Big Bucks Bundle $2.99",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Limited Offer First Time",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "첫 구매 한정 오퍼(구성 미확인)",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Limited Offer Marketplace",
+            "price": "$9.99",
+            "contents": "마켓 한정 오퍼(구성 미확인)",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "Super Pack",
+            "price": "$4.99 (한국 ₩7,700 / ₩17,000 두 상품)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — My Mini Mart"
+          },
+          {
+            "name": "No Ads Pack $7.99",
+            "price": "한국 ₩12,000",
+            "contents": "광고 제거 팩(한국 스토어 표기)",
+            "evidence": "App Store(한국) 앱 내 구입 목록 — My Mini Mart"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($2.99~$9.99)과 한국 가격을 확인했다.",
+          "Google Play 인앱 $0.99~$54.99 범위.",
+          "Azur Games(2023): 전면광고가 분당 수 회, 하드 재화(쿠폰)는 IAP·보상형으로 획득, 마켓·오퍼·부스터는 필수 광고처럼 보이지 않게 노출.",
+          "2026 업데이트 노트에서 '광고 빈도 감소'를 여러 차례 공지."
+        ],
+        "unverified": "상품 구성 수량, 보상형 광고 보상량, 전면광고 정확한 빈도(분당 횟수 외), 광고 대 IAP 비중, 개발사 국가는 확인하지 못했다. 광고 제거 구매 후에도 배너가 남는다는 리뷰(2025-08)는 개별 증언이다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Azur Games 기고(PocketGamer.biz 2023-04-13): 누적 7천만+, 2023년 초 월 약 300만. 추정치 출처 AppMagic 여부는 기사에 미명시.",
+        "revenue": "Azur Games 기고: 누적 매출 200만 달러 초과, 2023년 초 월 10만 달러+(추정).",
+        "chart": "미확인",
+        "rating": "App Store 미국 4.6(126,045건, iTunes lookup 2026-10), Google Play 3.9(655,581건)",
+        "players": "Google Play 설치 100,000,000+",
+        "other": "센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android 다운로드 40k·매출 <$5k, iOS <5k·<$5k. 최근 지표는 크게 둔화됐을 가능성이 있으나 범위 불명."
+      },
+      "userFeedback": {
+        "positive": [
+          "귀엽고 재미있으며 여러 마트를 해금하는 재미가 있다는 평가(리뷰 2022-03-08)",
+          "가볍게 짬짬이 즐기기 좋은 시간 때우기 게임이라는 평가(리뷰 2025-08-24)"
+        ],
+        "negative": [
+          "같은 광고가 반복 노출되고 가끔 게임에서 튕긴다는 불만(2022-05-04, 개발사가 2024-05-13에 광고 최적화 검토를 답변)",
+          "직원을 구매해도 반영되지 않아 재구매해야 하는 등 버그 제보(2025-05-07)",
+          "광고 제거 팩 구매 후에도 하단 배너가 남고 광고 전환 때 렉이 생긴다는 불만(2025-08-24)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 리뷰 일부 발췌(평점 4.6, 126K)와 개발사 답변."
+      },
+      "takeaways": {
+        "borrow": [
+          "첫 사이클을 20~30초·이동 2초 이내로 짧게 하고 가격표·카메라로 다음 목표를 지시",
+          "쓰레기통처럼 필요한 요소를 필요한 시점에 등장시켜 UI 복잡도 억제",
+          "3개 정도의 자원 체인으로 깊이와 단순성을 균형"
+        ],
+        "avoid": [
+          "분당 수 회의 전면광고(Azur Games)와 광고 제거 후에도 남는 배너(리뷰)",
+          "누적 시간이 지나며 구매 반영 오류 등 안정성 이슈가 쌓이는 유지보수"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1592004814",
+          "title": "App Store(미국) — My Mini Mart",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2021-12-14, 평점 4.6(126,045), 앱 내 구입 목록($2.99~$9.99), 광고 빈도 감소 업데이트 노트(2026)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.KisekiGames.smart",
+          "title": "Google Play — My Mini Mart",
+          "type": "스토어",
+          "note": "설치 100,000,000+, 평점 3.9(655,581), 인앱 $0.99~$54.99, 개발자 표기 Supersonic Studios LTD",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/supersonic-studios-ltd/app/my-mini-mart/com.KisekiGames.smart/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — My Mini Mart(Android)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 40k·매출 <$5k, iOS <5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/feature/81292/under-the-hood-deconstructing-the-top-hypercasual-games/",
+          "title": "PocketGamer.biz — Under the hood: Deconstructing one of the top idle arcade games (2023-04-13, Azur Games 기고)",
+          "type": "보도",
+          "note": "My Mini Mart 7천만+ 다운로드, 누적 매출 200만 달러 초과, 2023년 초 월 약 300만 다운로드·월 10만 달러+ 매출, 30~40분 뒤 새 마켓",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://wnhub.io/news/game-design/item-40717",
+          "title": "WN Hub — My Mini Mart 분해(Azur Games, 2023-06-07)",
+          "type": "보도",
+          "note": "무텍스트 튜토리얼, 첫 사이클 20~30초, 자동화 단계(진열 직원→계산원), 전면광고 분당 수 회, 광고 제거 IAP·쿠폰(하드 재화)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1592004814",
+          "title": "App Store(한국) — My Mini Mart",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 목록(No Ads Pack $7.99 ₩12,000 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "outlets-rush",
+      "name": "Outlets Rush",
+      "url": "https://apps.apple.com/us/app/id6448794532",
+      "developer": "Core Games(튀르키예)",
+      "publisher": "Supercent, Inc.",
+      "origin": "튀르키예(개발사 Core Games, Mobidictum 보도)",
+      "release": "2023-06 (iOS 미국 2023-06-22, Google Play 2023-06-21 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "스포츠 의류·신발 매장에서 아울렛 쇼핑몰로 확장하는 arcade idle",
+      "businessModel": "광고 중심 + IAP(광고 제거·VIP·스타터·젬 팩)",
+      "status": "서비스 중(iOS 3.8.0, 2026-08-07 업데이트)",
+      "description": "작은 프랜차이즈 신발 매장을 거대한 아울렛 쇼핑센터로 키우는 arcade idle. 센서타워는 2024년 4월 전 세계 모바일 캐주얼 다운로드 15위로 집계했다.",
+      "coreLoop": [
+        "매장에서 상품을 진열·계산하며 손님 응대",
+        "수익으로 새 매대·직원·청소 설비 해금",
+        "다른 브랜드 매장(새 스토어)을 순차 해금",
+        "광고 시청 또는 결제로 속도·수익 가속 후 반복"
+      ],
+      "features": [
+        "스토어 설명: 'Build a mega shopping outlets' / 'Be the boss of mega shoes mart'.",
+        "리뷰상 2023-12~2024-03 사이 8개 이상 매장이 있었고 신규 매장이 추가되었다(리뷰 2024-03-30).",
+        "슈퍼센트 게임 중 Pizza Ready와의 오디언스 중복이 매우 높다(센서타워 2024-04).",
+        "개발은 튀르키예 Core Games, 퍼블리싱은 슈퍼센트(Mobidictum).",
+        "연령 등급 9+(미국 스토어)."
+      ],
+      "progression": [
+        "매대·상품 확장",
+        "직원 고용과 업그레이드",
+        "청소 설비(cleaningpack 상품명 근거)",
+        "새 스토어 해금",
+        "VIP·스타터 팩으로 가속"
+      ],
+      "idleMechanics": "미확인(리뷰 2024-03-30에서 매장이 쌓은 돈을 접속해 수령한다는 서술이 있으나 상한·광고 2배 수치는 확인하지 못함).",
+      "socialAndLiveOps": [
+        "신규 스토어 추가 업데이트(리뷰 2024-03-30)",
+        "정기 버전 업데이트 3.8.0(2026-08-07)까지 유지",
+        "소셜·랭킹 기능은 확인 못함"
+      ],
+      "popularityFactors": [
+        "출시 후 일주일 내 모바일 게임 카테고리 최상위(Mobidictum 2023-12-19)",
+        "Pizza Ready 오디언스가 Outlets Rush를 플레이할 가능성이 4,772% 높다는 센서타워 분석으로 슈퍼센트 게임 간 교차 유입이 큼(센서타워 2024-04, 해석)",
+        "인도(21%)·미국(11%) 중심 다운로드(maf.ad/AppMagic 인용, 검색 요약)",
+        "쇼핑몰 확장이라는 익숙한 테마와 단순 조작(해석)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "미국 App Store에 noadspack_9.99($9.99)와 할인 변형(15%·30%), 주간 VIP, 스타터 팩, 젬 팩 4종 등 10종이 노출된다. 한국 스토어에는 premiumpack_19.99·vippack_19.99(₩33,000)도 있다.",
+        "products": [
+          {
+            "name": "noadspack_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "광고 제거 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "noadspackoff15_8.99",
+            "price": "$8.99 (한국 ₩15,000)",
+            "contents": "광고 제거 15% 할인 변형(상품명 기준)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "noadspackoff30_6.99",
+            "price": "$6.99 (한국 ₩11,000)",
+            "contents": "광고 제거 30% 할인 변형(상품명 기준)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "vippackweekly_5.99",
+            "price": "$5.99 (한국 ₩8,800)",
+            "contents": "주간 VIP 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "cleaningpack_6.99",
+            "price": "$6.99 (한국 ₩11,000)",
+            "contents": "청소 팩(상품명 기준, 구성 미확인)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "starterpack_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "스타터 팩",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "gems20_1.99",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "젬 20 추정(상품 ID)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "gems60_4.99",
+            "price": "$4.99 (한국 ₩7,700)",
+            "contents": "젬 60 추정(상품 ID)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "gems95_6.99",
+            "price": "$6.99",
+            "contents": "젬 95 추정(상품 ID)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "gems150_9.99",
+            "price": "$9.99",
+            "contents": "젬 150 추정(상품 ID)",
+            "evidence": "App Store(미국) — Outlets Rush"
+          },
+          {
+            "name": "premiumpack_19.99 / vippack_19.99",
+            "price": "$19.99 상품 ID (한국 ₩33,000)",
+            "contents": "프리미엄·VIP 팩(구성 미확인)",
+            "evidence": "App Store(한국) — Outlets Rush"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종과 한국 스토어 추가 상품(₩33,000 두 종)을 확인했다.",
+          "Google Play 인앱 $1.99~$29.99 범위.",
+          "광고 제거에 15%·30% 할인 변형을 별도 상품으로 운영한다."
+        ],
+        "unverified": "상품 구성 수량, 보상형 광고 보상, 전면광고 빈도, 광고 대 IAP 비중, 미국 스토어 $19.99 상품의 정확한 구성은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Mobidictum 2023-12-19: 개발사 발표 1,000만, AppMagic 1,200만+. maf.ad(검색 요약, 날짜 미확인): 2,000만+, 인도 21%·미국 11%(AppMagic). 슈퍼센트 보도자료 요약: 출시 한 달 내 2,000만(회사 주장, 검색 요약).",
+        "revenue": "미확인. 센서타워 공개 앱 페이지 지난달 추정(US 페이지): iOS 매출 <$5k.",
+        "chart": "센서타워 2024-04: 전 세계 모바일 캐주얼 다운로드 15위(2024년 기준). App Store 미국 롤플레잉 #147(조회 페이지)",
+        "rating": "App Store 미국 4.6(123,125건, iTunes lookup 2026-10), Google Play 4.3(296,773건)",
+        "players": "Google Play 설치 50,000,000+",
+        "other": "센서타워 2024-04: Pizza Ready 오디언스가 Outlets Rush를 플레이할 가능성 +4,772%(전체 앱 중 2번째)."
+      },
+      "userFeedback": {
+        "positive": [
+          "스트레스 해소용으로 즐긴다는 평가와 광고가 과하지 않다는 평가(리뷰 2023-12-27)",
+          "광고 영상을 보고 5분 만에 빠져 설치했다는 평가(리뷰 2023-12-27)"
+        ],
+        "negative": [
+          "정확히 20초 플레이 후 최소 30초 스킵 불가 팝업 광고가 나온다는 불만(리뷰 2024-03-04)",
+          "모든 스토어를 완료한 뒤 신규 스토어 추가 때 오류(글리치)를 겪었다는 제보(리뷰 2024-03-30)",
+          "실제 브랜드를 쓰지 못해 모방 브랜드를 쓴다는 지적(리뷰 2024-03-04)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 리뷰 일부 발췌(평점 4.6, 123K). 표본이 작음."
+      },
+      "takeaways": {
+        "borrow": [
+          "쇼핑몰처럼 개별 매장을 순차 해금하는 모듈형 콘텐츠로 업데이트에서 신규 매장 추가",
+          "광고 제거에 할인 변형을 별도 상품으로 두어 가격 테스트",
+          "슈퍼센트 포트폴리오 교차 프로모션으로 낮은 CPI 확보(센서타워 오디언스 중복)"
+        ],
+        "avoid": [
+          "고정 시간 간격으로 강제되는 팝업 광고(리뷰 2024-03-04)",
+          "모든 콘텐츠를 소진한 유저가 신규 콘텐츠에서 오류를 겪는 업데이트 품질"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6448794532",
+          "title": "App Store(미국) — Outlets Rush",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2023-06-22, 평점 4.6(123,125), 앱 내 구입 10종($1.99~$9.99), 최신 3.8.0(2026-08-07)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.corestudios.storemanagementidle",
+          "title": "Google Play — Outlets Rush",
+          "type": "스토어",
+          "note": "설치 50,000,000+, 평점 4.3(296,773), 인앱 $1.99~$29.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/supercent-inc/app/outlets-rush/com.corestudios.storemanagementidle/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Outlets Rush(Android)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 600k, iOS 70k·매출 <$5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://mobidictum.com/outlets-rush-achieves-10-million-downloads/",
+          "title": "Mobidictum — Outlets Rush achieves 10 million downloads (2023-12-19)",
+          "type": "보도",
+          "note": "개발 Core Games(튀르키예), 퍼블리싱 Supercent, 개발사 발표 1천만 다운로드·AppMagic 1,200만+",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ko/blog/Pizza-Ready-ranks-6th-globally-among-mobile-casual-games",
+          "title": "센서타워 — 《피자 레디》 전 세계 모바일 캐주얼 게임 다운로드 6위 (2024-04)",
+          "type": "데이터(추정)",
+          "note": "2024-01-01 일 다운로드 약 50만, 2024-04-06 약 110만(출시 후 최고), 다운로드 약 70% 유료 채널, 누적 다운로드 인도 17.3%, 누적 IAP 약 45% 미국, 상위 하이퍼캐주얼 중 평균 세션 시간 최장",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://maf.ad/en/blog/outlets-rush-arcade-idle/",
+          "title": "maf.ad — Outlets Rush arcade idle (직접 열람 실패, 웹 검색 결과 요약만 확인)",
+          "type": "보도",
+          "note": "2,000만+ 다운로드, 인도 21%·미국 11%(AppMagic 인용) — 검색 요약 기준이라 보조 근거",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://supercent.notion.site/2024-01-16-Supercent-Achieved-No-1-in-Downloads-Among-Korean-App-Publishers-in-2023-f3b0324340f64b3a855659396be3c6ef",
+          "title": "Supercent 보도자료 — 2023년 한국 앱 퍼블리셔 다운로드 1위 (2024-01-16)",
+          "type": "공식",
+          "note": "2023년 약 2억 다운로드, Burger Please와 Outlets Rush가 성과 주도(본문 일부만 확인, 출시 한 달 2,000만은 검색 요약)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id6448794532",
+          "title": "App Store(한국) — Outlets Rush",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 목록(premiumpack_19.99, vippack_19.99 ₩33,000 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "prison-life",
+      "name": "Prison Life: Idle Game",
+      "url": "https://apps.apple.com/us/app/id6472412918",
+      "developer": "Supercent, Inc.",
+      "publisher": "Supercent, Inc.",
+      "origin": "대한민국(서울)",
+      "release": "2023-11 (iOS 미국 2023-11-17, Google Play 2023-11-17 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "교도소 운영 arcade idle(탈옥 관리)",
+      "businessModel": "광고 중심 + IAP(광고 제거 $3.99/$6.99, 직원·플레이어 스킨 팩)",
+      "status": "서비스 중(iOS 45.8.0, 2026-08-18 업데이트)",
+      "description": "부제 'Rule Chaos, Manage Escapes'가 말하듯 교도소를 운영하고 탈출을 막는 슈퍼센트의 idle 게임. 상세 게임 규칙은 스토어 설명을 수집하지 못했다.",
+      "coreLoop": [
+        "(추정) 죄수·교도관을 관리하며 시설 운영(부제 기준)",
+        "(추정) 수익으로 시설 확장·직원 업그레이드",
+        "(추정) 탈출 사건 대응",
+        "(추정) 새 구역 해금 후 반복"
+      ],
+      "features": [
+        "스토어 부제: Rule Chaos, Manage Escapes(혼란을 다스리고 탈출을 막으세요).",
+        "Officer 스킨 팩 4종과 Player 스킨 팩 4종을 IAP로 판매.",
+        "연령 등급 4+(미국 스토어), 앱 크기 423.1MB(한국 스토어).",
+        "iOS 최신 45.8.0까지 빠른 업데이트 주기.",
+        "상세 기능은 미확인."
+      ],
+      "progression": [
+        "미확인(상세 시스템 정보를 수집하지 못함)",
+        "IAP 구성상 직원(Officer)·플레이어 스킨 수집 요소 존재"
+      ],
+      "idleMechanics": "미확인.",
+      "socialAndLiveOps": [
+        "iOS 45.8.0(2026-08-18)까지 지속 업데이트",
+        "소셜·랭킹·이벤트 정보는 확인 못함"
+      ],
+      "popularityFactors": [
+        "슈퍼센트의 UA 체계와 포트폴리오 교차 유입(해석)",
+        "교도소라는 대중적 테마와 hybrid casual 구조(해석)",
+        "Google Play 설치 5천만+로 확인되는 규모(스토어 표기)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "미국 App Store에 광고 제거(noads $3.99, noadspremium $6.99)와 스킨 팩 8종(Player $5.99, Officer $9.99)만 노출되어 다른 게임보다 상품 구성이 단순하다.",
+        "products": [
+          {
+            "name": "noads_3.99",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "광고 제거(상품명 기준)",
+            "evidence": "App Store(미국) — Prison Life: Idle Game"
+          },
+          {
+            "name": "noadspremium_6.99",
+            "price": "$6.99 (한국 ₩11,000)",
+            "contents": "프리미엄 광고 제거(상품명 기준)",
+            "evidence": "App Store(미국) — Prison Life: Idle Game"
+          },
+          {
+            "name": "playerskinpack1~4_5.99",
+            "price": "$5.99 (한국 ₩9,900)",
+            "contents": "플레이어 스킨 팩 4종",
+            "evidence": "App Store(미국) — Prison Life: Idle Game"
+          },
+          {
+            "name": "officerskinpack1~4_9.99",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "교도관(Officer) 스킨 팩 4종",
+            "evidence": "App Store(미국) — Prison Life: Idle Game"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종(광고 제거 2종·스킨 팩 8종)과 한국 가격을 확인했다.",
+          "Google Play 인앱 $0.99~$99.99 범위(상품명 미확인)."
+        ],
+        "unverified": "Google Play 개별 상품, 보상형 광고 구조, 전면광고 빈도, 매출, 상품 구성 상세, 게임 내 재화는 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 설치 50,000,000+(스토어 표기). 서드파티 Apppricinglab은 Google Play 10.0M(2026-02-13 갱신, 스토어 구간과 불일치, 참고만).",
+        "revenue": "미확인. 센서타워 공개 앱 페이지 지난달 추정(US 페이지): iOS <$5k. Apppricinglab: 2026-03-10 롤플레잉 매출 순위 #20(서드파티).",
+        "chart": "미확인",
+        "rating": "App Store 미국 4.37(3,981건, iTunes lookup 2026-10), Google Play 4.0(103,229건)",
+        "players": "Google Play 설치 50,000,000+"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인(리뷰 본문 미수집)"
+        ],
+        "negative": [
+          "Google Play 평점 4.0으로 Pizza Ready 4.4·Burger Please 4.4보다 낮음(평점 수치만 확인)"
+        ],
+        "basis": "리뷰 본문은 수집하지 못하고 평점 수치만 확인함."
+      },
+      "takeaways": {
+        "borrow": [
+          "광고 제거 2단계(기본·프리미엄)와 캐릭터 스킨 팩 중심의 단순한 상점",
+          "슈퍼센트의 빠른 소규모 업데이트 주기"
+        ],
+        "avoid": [
+          "스토어 평점이 상대적으로 낮은 작품의 원인(리뷰 미확인)을 파악하지 못한 채 같은 구조를 따르기"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6472412918",
+          "title": "App Store(미국) — Prison Life: Idle Game",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2023-11-17, 평점 4.37(3,981), 앱 내 구입 10종($3.99~$9.99, 스킨 팩 8종), 최신 45.8.0(2026-08-18), 부제 'Rule Chaos, Manage Escapes'",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=io.supercent.prison",
+          "title": "Google Play — Prison Life: Idle Game",
+          "type": "스토어",
+          "note": "설치 50,000,000+, 평점 4.0(103,229), 인앱 $0.99~$99.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/supercent-inc/app/prison-life-idle-game/io.supercent.prison/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Prison Life: Idle Game(Android)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 1m, iOS 70k·매출 <$5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://supercent.io/about",
+          "title": "Supercent — About",
+          "type": "공식",
+          "note": "누적 다운로드 1.5B+, 누적 매출 $380M+, 게임 퍼블리셔 순위 #7, 앱 퍼블리셔 #16, MAU 100M+",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id6472412918",
+          "title": "App Store(한국) — Prison Life: Idle Game",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 원화 가격(스킨 팩 ₩9,900/₩17,000 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "farm-land",
+      "name": "Farm Land: Farming Life Game",
+      "originalName": "Farm Land - Farming life game",
+      "url": "https://apps.apple.com/us/app/id1563700162",
+      "developer": "LolTap (Homa 페이지 'With LolTap')",
+      "publisher": "Homa Games",
+      "origin": "미확인(퍼블리셔 Homa는 La French Tech Next40 선정, Homa 2025 결산 기준)",
+      "release": "2021-04 (iOS 미국 2021-04-23, Google Play 2021-03-11 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "농장 수확·마을 확장 arcade idle(아바타 직접 수확+고용)",
+      "businessModel": "광고 + IAP(주간 VIP·스타터·펫·젬·Unlimited Power)",
+      "status": "서비스 중(iOS 3.28.13, 2026-10-02 업데이트)",
+      "description": "아바타를 직접 움직여 농작물을 수확하고 땅을 사서 마을을 키우며 일꾼을 고용하는 농장 시뮬레이션. arcade idle 적합도는 리뷰 서술 기준이며 스토어 분류는 어드벤처다.",
+      "coreLoop": [
+        "아바타로 작물 심고 수확해 판매(리뷰 서술)",
+        "번 돈으로 땅·헛간 등 새 구역 구매(리뷰 2021-07-28)",
+        "일꾼 고용으로 반복 작업 자동화(리뷰 2021-07-25)",
+        "새 구역 확장과 새 요소 해금 후 반복"
+      ],
+      "features": [
+        "스토어 부제 'Build and harvest your city!', 'Create the best farming city!'.",
+        "리뷰에 따르면 새 땅을 사면 심을 자리와 헛간 등 새 요소가 열린다(2021-07-28).",
+        "2021-10 업데이트로 피기뱅크·다이아몬드·캐릭터 변경이 추가되어 일부 이용자가 반발(리뷰 2021-10-27).",
+        "연령 등급 4+, 크기 373.4MB.",
+        "2024-06~07에 아이콘·최적화 업데이트 반복(3.3.0~3.6.1)."
+      ],
+      "progression": [
+        "땅(구역) 구매와 확장",
+        "일꾼 고용",
+        "Unlimited Power 등 영구 부스트(IAP)",
+        "펫(고양이·개) 수집(IAP)",
+        "VIP"
+      ],
+      "idleMechanics": "미확인.",
+      "socialAndLiveOps": [
+        "2024-07 아이콘·최적화 연속 업데이트(3.3.0~3.6.1)",
+        "2025~2026 대부분 '버그 수정·성능 개선' 업데이트(3.20.x→3.28.13)",
+        "소셜·이벤트 정보는 확인 못함"
+      ],
+      "popularityFactors": [
+        "아름다운 그래픽과 새 요소가 계속 열리는 구조라는 리뷰(2021-07-13, 2021-07-28)",
+        "Homa 퍼블리싱·운영(LolTap 개발)로 2021년부터 장기 서비스(Homa 게임 페이지)",
+        "Google Play 설치 1억+·평점 4.5(스토어 표기)",
+        "단순 조작과 점진적 확장(해석)"
+      ],
+      "monetization": {
+        "model": "광고 + IAP(혼합)",
+        "summary": "미국 App Store에 Weekly VIP $5.99, Free Rain $3.99, Starter Pack $2.99, Break the Piggy Bank $2.99, Unlimited Power $14.99(2종), 펫과 다이아몬드 팩 등이 노출된다. Google Play 인앱 가격 범위가 $1.49~$119.99로 넓다.",
+        "products": [
+          {
+            "name": "Weekly VIP",
+            "price": "$5.99 (한국 ₩7,500)",
+            "contents": "주간 VIP(구성 미확인)",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Free Rain",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Starter Pack",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "스타터 팩",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Super Bundle",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Break the Piggy Bank",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "피기뱅크 해제",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Unlimited Power",
+            "price": "$14.99 (한국 ₩25,000, 2종)",
+            "contents": "미확인(영구 파워 계열 추정)",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Small Diamond Pack",
+            "price": "$1.99 (한국 ₩3,300)",
+            "contents": "다이아몬드 소형 팩",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Medium Diamond Pack",
+            "price": "한국 ₩7,700 (미국 가격 미확인)",
+            "contents": "다이아몬드 중형 팩",
+            "evidence": "App Store(한국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Cat",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "펫 고양이",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          },
+          {
+            "name": "Dog",
+            "price": "$4.99",
+            "contents": "펫 개",
+            "evidence": "App Store(미국) — Farm Land: Farming Life Game"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종 내외($1.99~$14.99)와 한국 가격을 확인했다.",
+          "Google Play 인앱 $1.49~$119.99 범위(고가 상품명 미확인).",
+          "목록에 '광고 제거' 명칭 상품이 없다(확인한 범위에서)."
+        ],
+        "unverified": "광고 제거 상품 여부, 상품 구성, 광고 빈도·보상량, 매출, 광고 대 IAP 비중은 확인하지 못했다. Homa 사이트의 IAP 비중 수치는 이 게임에 대해 없다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 설치 100,000,000+(스토어 표기). 센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android 1m, iOS 6k.",
+        "revenue": "센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android·iOS 모두 <$5k.",
+        "chart": "미확인",
+        "rating": "App Store 미국 4.77(94,745건, iTunes lookup 2026-10), Google Play 4.5(778,142건)",
+        "players": "Google Play 설치 100,000,000+"
+      },
+      "userFeedback": {
+        "positive": [
+          "그래픽이 아름답고 새 요소가 끊임없이 열린다는 평가(리뷰 2021-07-13, 2021-07-28)",
+          "일꾼을 고용해 함께 일하는 점이 좋다는 평가(리뷰 2021-07-25)"
+        ],
+        "negative": [
+          "2021-10 업데이트의 피기뱅크·다이아몬드·캐릭터 추가가 이득 없이 몰입을 깬다는 불만(리뷰 2021-10-27)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 2021년 리뷰 일부 발췌. 최근 리뷰는 확인하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "새 땅 구매마다 새 요소가 열리는 점진적 확장",
+          "펫 등 코스메틱을 개별 상품으로 판매"
+        ],
+        "avoid": [
+          "초기 팬이 좋아하던 흐름을 바꾸는 캐릭터·재화 시스템 추가(리뷰 2021-10-27)",
+          "장르 정의가 모호하면 마케팅·스토어 카테고리에서 혼선이 생길 수 있음(스토어 분류 어드벤처)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1563700162",
+          "title": "App Store(미국) — Farm Land: Farming Life Game",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2021-04-23, 평점 4.77(94,745), 앱 내 구입 목록($1.99~$14.99 등), 최신 3.28.13(2026-10-02), © Homa Games",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.loltap.farmland",
+          "title": "Google Play — Farm Land - Farming life game",
+          "type": "스토어",
+          "note": "설치 100,000,000+, 평점 4.5(778,142), 인앱 $1.49~$119.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/homa/app/farm-land-farming-life-game/com.loltap.farmland/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Farm Land(Android)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 1m·매출 <$5k, iOS 6k·<$5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.homagames.com/games",
+          "title": "Homa — Games",
+          "type": "공식",
+          "note": "Farm Land는 'With LolTap', Aquarium Land는 'With Turquoise Games'로 표기(수치 없음)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1563700162",
+          "title": "App Store(한국) — Farm Land: Farming Life Game",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 원화 가격(Medium Diamond Pack ₩7,700 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "aquarium-land",
+      "name": "Aquarium Land - Fishbowl World",
+      "url": "https://apps.apple.com/us/app/id1613175018",
+      "developer": "Turquoise Games (Homa 페이지 'With Turquoise Games')",
+      "publisher": "Homa Games",
+      "origin": "미확인",
+      "release": "2022-03 (iOS 미국 2022-03-08, Google Play 2022-02-22 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "낚시·수족관 운영 arcade idle",
+      "businessModel": "광고 + IAP(광고 제거·VIP·스타터·펫)",
+      "status": "서비스 중(iOS 2.14.0, 2026-03-31 업데이트)",
+      "description": "물고기를 잡아 수족관을 채우고 판매하는 낚시·수족관 운영 게임. 부제 'My mini ocean fish universe!'.",
+      "coreLoop": [
+        "물고기를 직접 잡아 수족관에 채우고 손님에게 판매(리뷰 2023-07-02)",
+        "수익으로 낚시 장비·수족관 업그레이드",
+        "광고·VIP로 가속, 펫 추가(IAP)",
+        "리더보드·새 업그레이드로 반복(2024-11 개편)"
+      ],
+      "features": [
+        "2024-11 업데이트(2.1.0/2.4.0)에서 진행 개편, 리더보드 재설계, 신규 업그레이드 옵션.",
+        "스토어 부제 'My mini ocean fish universe!'.",
+        "Homa 사이트에 Turquoise Game의 IAP 매출을 크게 끌어올린 사례 페이지가 있으나 수치는 확인하지 못함.",
+        "연령 등급 4+, 크기 619.8MB.",
+        "지속적인 주간 버그 수정(2024-07~10)."
+      ],
+      "progression": [
+        "낚시 장비·수족관 업그레이드",
+        "신규 업그레이드 옵션(2024-11 추가)",
+        "리더보드 순위",
+        "펫 수집(개·물개·앵무새 등)",
+        "Fisherman Pack 등 코스메틱"
+      ],
+      "idleMechanics": "미확인.",
+      "socialAndLiveOps": [
+        "리더보드(2024-11 재설계)",
+        "2024-11-12·11-26 진행 개편 업데이트",
+        "2024-07~10 주간 업데이트",
+        "2025~2026 소규모 업데이트(2.6.x→2.14.0)"
+      ],
+      "popularityFactors": [
+        "귀여운 물고기·생물과 편안한 분위기라는 리뷰(2025-06-22)",
+        "Homa의 퍼블리싱·IAP 최적화 지원(Homa 게임 페이지 사례, 수치 없음)",
+        "Google Play 설치 5천만+·iOS 평점 4.73(스토어 표기)",
+        "광고 제거 상품이 $2.99로 저렴(스토어 목록, 해석)"
+      ],
+      "monetization": {
+        "model": "광고 + IAP(혼합)",
+        "summary": "미국 App Store에 Remove Ads $2.99, Weekly VIP $5.99, Monthly VIP $19.99, Starter Pack $9.99, Fisherman Pack $19.99 등이 노출된다. 평점 4.73에도 광고 빈도 불만 리뷰가 있다.",
+        "products": [
+          {
+            "name": "Remove Ads",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "광고 제거",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Weekly VIP",
+            "price": "$5.99 (한국 ₩8,500)",
+            "contents": "주간 VIP(구성 미확인)",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Monthly VIP",
+            "price": "$19.99 (한국 ₩25,000)",
+            "contents": "월간 VIP(구성 미확인)",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Starter Pack",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "스타터 팩",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Fisherman Pack",
+            "price": "$19.99 (한국 ₩33,000)",
+            "contents": "낚시꾼 팩(구성 미확인)",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Small Gem Pack",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "젬 소형 팩",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Medium Gem Pack",
+            "price": "$9.99",
+            "contents": "젬 중형 팩",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Fishy Bank",
+            "price": "$4.99 (한국 ₩7,700)",
+            "contents": "물고기 은행(피기뱅크류)",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Dog",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "펫 개",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          },
+          {
+            "name": "Seal",
+            "price": "$4.99 (한국 ₩7,700)",
+            "contents": "펫 물개",
+            "evidence": "App Store(미국) — Aquarium Land - Fishbowl World"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($2.99~$19.99)과 한국 가격을 확인했다.",
+          "Google Play 인앱 $0.99~$99.99 범위.",
+          "VIP가 주간·월간 두 단계로 존재한다(구독 여부 미확인)."
+        ],
+        "unverified": "상품 구성, 광고 빈도·보상량, 매출 및 IAP 비중(Homa 사례 페이지는 수치 없음)은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 설치 50,000,000+(스토어 표기). 센서타워 공개 앱 페이지 지난달 추정(US 페이지): iOS 80k, Android 800k.",
+        "revenue": "센서타워 공개 앱 페이지 지난달 추정(US 페이지): iOS $7k, Android <$5k.",
+        "chart": "미확인",
+        "rating": "App Store 미국 4.73(314,390건, iTunes lookup 2026-10), Google Play 4.3(102,877건)",
+        "players": "Google Play 설치 50,000,000+"
+      },
+      "userFeedback": {
+        "positive": [
+          "귀여운 물고기·생물이 많고 편안한 게임이라는 평가(리뷰 2025-06-22)",
+          "좋아하는 게임 중 하나라는 평가(리뷰 2025-06-22)"
+        ],
+        "negative": [
+          "광고가 10~15초마다 나온다는 불만(리뷰 2025-06-22)",
+          "광고와 레벨업 요구가 낚시 재미를 방해한다는 불만(리뷰 2026-07-31)",
+          "물고기를 판매하는 설정에 대한 거부감(리뷰 2023-07-02)"
+        ],
+        "basis": "App Store 미국 페이지에 노출된 리뷰 일부 발췌(평점 4.7, 314K). 극단적 표현의 리뷰가 포함됨."
+      },
+      "takeaways": {
+        "borrow": [
+          "편안한 분위기의 수집형 테마와 펫 단품 판매",
+          "리더보드·진행 개편 등 중기 개편 업데이트로 장기 서비스"
+        ],
+        "avoid": [
+          "10~15초마다의 광고 노출(리뷰)",
+          "테마 설정(생물 판매)이 일부 이용자에게 거부감을 줄 수 있는 점"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1613175018",
+          "title": "App Store(미국) — Aquarium Land - Fishbowl World",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2022-03-08, 평점 4.73(314,390), 앱 내 구입 목록($2.99~$19.99), 최신 2.14.0(2026-03-31), 업데이트 노트(2.1.0/2.4.0 진행 개편·리더보드 개편)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.happykamp.aquariumland",
+          "title": "Google Play — Aquarium Land — Fishbowl World",
+          "type": "스토어",
+          "note": "설치 50,000,000+, 평점 4.3(102,877), 인앱 $0.99~$99.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ios/us/homa-games/app/aquarium-land-fishbowl-world/1613175018/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Aquarium Land(iOS)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: iOS 다운로드 80k·매출 $7k, Android 800k·<$5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.homagames.com/games",
+          "title": "Homa — Games",
+          "type": "공식",
+          "note": "Farm Land는 'With LolTap', Aquarium Land는 'With Turquoise Games'로 표기(수치 없음)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1613175018",
+          "title": "App Store(한국) — Aquarium Land - Fishbowl World",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 원화 가격(Monthly VIP ₩25,000 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "bus-arrival-3d",
+      "name": "Bus Arrival 3D",
+      "originalName": "Bus Arrival (Google Play)",
+      "url": "https://apps.apple.com/us/app/id6443757482",
+      "developer": "Xiamen Sixcube Information Technology Co., Ltd.",
+      "publisher": "Xiamen Sixcube Information Technology Co., Ltd.",
+      "origin": "중국(샤먼, 개발사 표기 기준)",
+      "release": "2022-10 (iOS 미국 2022-10-13, Google Play 2022-05-26 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "버스·테마파크 운영 idle+레이싱 캐주얼(arcade idle 적합도 불확실)",
+      "businessModel": "광고 중심 + IAP(광고 제거·젬·광고 티켓·슈퍼팩)",
+      "status": "서비스 중(iOS 4.0.3, 2026-08-18 업데이트)",
+      "description": "부제 'Theme park idle&racing casual'의 하이브리드 캐주얼 게임. 스토어 분류는 레이싱이며 상세 규칙은 스토어 설명을 수집하지 못했다.",
+      "coreLoop": [
+        "(추정) 버스·탈것을 운영하며 승객 수송(게임명 기준)",
+        "(추정) 수익으로 업그레이드와 테마파크 확장(Park CEO Pack 상품명 근거)",
+        "(추정) 광고 티켓·젬으로 가속",
+        "(추정) 반복"
+      ],
+      "features": [
+        "부제 'Theme park idle&racing casual'.",
+        "iOS 상점 언어 영어 외 14개 이상, 크기 약 180MB.",
+        "App Store 레이싱 카테고리 #142(조회 페이지).",
+        "Park CEO Pack, Ad Ticket Pack 등 광고 스킵·테마 상품 존재.",
+        "상세 기능은 미확인."
+      ],
+      "progression": [
+        "미확인",
+        "Park CEO Pack 상품명 근거로 테마파크 확장 요소 존재 추정"
+      ],
+      "idleMechanics": "미확인.",
+      "socialAndLiveOps": [
+        "iOS 4.0.3(2026-08-18)까지 유지",
+        "소셜·이벤트 정보 확인 못함"
+      ],
+      "popularityFactors": [
+        "Google Play 설치 1억+(스토어 표기)로 확인되는 규모",
+        "iOS 평점 4.61, Google Play 평점 4.5로 스토어 평가가 양호(스토어 표기)",
+        "레이싱+idle 결합이라는 하이브리드 소재(부제 근거, 해석)"
+      ],
+      "monetization": {
+        "model": "광고 중심 + IAP",
+        "summary": "미국 App Store에 RemoveAds $2.99, No Ads $3.99, No Ads Pack $9.99, 할인 변형, 젬 팩, Ad Ticket Pack, Park CEO Pack 등 10종이 노출된다. 광고 제거 상품이 3단계다.",
+        "products": [
+          {
+            "name": "RemoveAds",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "광고 제거",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "No Ads",
+            "price": "$3.99 (한국 ₩6,600)",
+            "contents": "광고 제거",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "No Ads Pack",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "광고 제거 팩",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "No Ads Pack Sale 20%",
+            "price": "$7.99 (한국 ₩12,000)",
+            "contents": "광고 제거 팩 20% 할인",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Gem Package 1",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "젬 팩 1",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Gem Package 2",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "젬 팩 2",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Super Pack",
+            "price": "$7.99 (한국 ₩12,000)",
+            "contents": "미확인",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Ad Ticket Pack 2",
+            "price": "$3.99",
+            "contents": "광고 티켓 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Ad Ticket Pack 3",
+            "price": "$7.99",
+            "contents": "광고 티켓 팩(상품명 기준)",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          },
+          {
+            "name": "Park CEO Pack",
+            "price": "$9.99",
+            "contents": "테마파크 CEO 팩(구성 미확인)",
+            "evidence": "App Store(미국) — Bus Arrival 3D"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($2.99~$9.99)과 한국 가격을 확인했다.",
+          "한국 스토어에는 Gem Package 3 ₩33,000, Super Pack V2 ₩25,000 등 더 높은 가격 상품이 보인다.",
+          "Google Play 인앱 $0.49~$99.99 범위."
+        ],
+        "unverified": "게임 규칙, 상품 구성, 광고 빈도·보상량, 매출, 광고 대 IAP 비중은 확인하지 못했다. arcade idle 적합도는 부제와 상품명에 근거한 추정이다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 설치 100,000,000+(스토어 표기). 센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android 2m, iOS 20k.",
+        "revenue": "센서타워 공개 앱 페이지 지난달 추정(US 페이지): iOS·Android 모두 <$5k.",
+        "chart": "App Store 미국 레이싱 #142(조회 페이지)",
+        "rating": "App Store 미국 4.61(4,279건, iTunes lookup 2026-10), Google Play 4.5(346,872건)",
+        "players": "Google Play 설치 100,000,000+"
+      },
+      "userFeedback": {
+        "positive": [
+          "재미있고 쌓아 올리며 뭔가 이룬다는 느낌이 있다는 평가(리뷰 2024-04-06, 본문 일부)"
+        ],
+        "negative": [
+          "미확인(리뷰 본문 미수집)"
+        ],
+        "basis": "App Store 미국 리뷰의 일부 발췌만 확인."
+      },
+      "takeaways": {
+        "borrow": [
+          "광고 제거를 3단계 가격(2.99/3.99/9.99)으로 제공하고 할인 변형을 병행",
+          "광고 티켓 상품으로 보상형 광고를 대체"
+        ],
+        "avoid": [
+          "장르 정의가 모호한 작품(레이싱 분류)의 지표를 arcade idle 기준 벤치마크로 쓰는 것"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id6443757482",
+          "title": "App Store(미국) — Bus Arrival 3D",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2022-10-13, 평점 4.61(4,279), 앱 내 구입 10종($2.99~$9.99), 부제 'Theme park idle&racing casual', 최신 4.0.3(2026-08-18)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.games.bus.arrival",
+          "title": "Google Play — Bus Arrival",
+          "type": "스토어",
+          "note": "설치 100,000,000+, 평점 4.5(346,872), 인앱 $0.49~$99.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/ios/us/xiamen-sixcube-information-technology-co-ltd/app/bus-arrival-3d/6443757482/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — Bus Arrival 3D(iOS)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: iOS 다운로드 20k·매출 <$5k, Android 다운로드 2m·<$5k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id6443757482",
+          "title": "App Store(한국) — Bus Arrival 3D",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 원화 가격(Gem Package 3 ₩33,000, Super Pack V2 ₩25,000 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "my-little-universe",
+      "name": "My Little Universe",
+      "url": "https://apps.apple.com/us/app/id1586304393",
+      "developer": "Estoty (App Store 저작권 표기)",
+      "publisher": "SayGames LTD",
+      "origin": "미확인",
+      "release": "2021-09 (iOS 미국 2021-09-30, Google Play 2021-08-05 표기)",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "subgenre": "행성 채굴·건설 arcade idle(IAP 비중이 큰 초기 하이브리드 사례)",
+      "businessModel": "광고 + IAP(광고 제거·티켓·스타터·VIP)",
+      "status": "서비스 중(iOS 2.18.0, 2026-08-19 업데이트)",
+      "description": "자신의 행성을 채굴하고 건설하는 SayGames 퍼블리싱 arcade idle. SayGames는 2021년 출시작 My Little Universe가 2022년 IAP 매출 성장에 기여했다고 밝혔다.",
+      "coreLoop": [
+        "(스토어 부제 기준) 행성에서 자원 채굴",
+        "자원으로 건설·제작(Mine and Craft)",
+        "티켓(재화)으로 가속·구매",
+        "새 영역 확장 후 반복"
+      ],
+      "features": [
+        "부제 'Mine and Craft your own planet'.",
+        "No-Ads Offer·Pirates Pack·Adventurers Pack 등 테마 팩과 티켓 재화 상품.",
+        "iOS 상점 언어 영어 외 18개 이상.",
+        "크기 약 693.5MB.",
+        "SayGames 하이브리드 전환 시기의 IAP 성장 사례로 소개됨."
+      ],
+      "progression": [
+        "미확인",
+        "티켓 재화와 스타터·테마 팩 구성상 구매형 가속 요소 존재"
+      ],
+      "idleMechanics": "미확인.",
+      "socialAndLiveOps": [
+        "iOS 2.18.0(2026-08-19)까지 유지",
+        "소셜·이벤트 정보 확인 못함"
+      ],
+      "popularityFactors": [
+        "SayGames 퍼블리싱과 live-ops 전환 효과(SayGames 2023-02)",
+        "Azur Games가 My Mini Mart보다 매출이 컸다고 서술(Azur Games 2023)",
+        "iOS 평점 4.77, Google Play 평점 4.4(스토어 표기)"
+      ],
+      "monetization": {
+        "model": "광고 + IAP(혼합)",
+        "summary": "미국 App Store에 No-Ads Offer $5.99, Small Ticket Pack $2.99, Medium Ticket Pack $9.99, Starter Pack $9.99, 테마 팩이 노출된다. SayGames는 2021년 출시작 My Little Universe가 2022년 IAP 매출 3,750만 달러(전년 1,100만) 달성에 기여했다고 밝혔다.",
+        "products": [
+          {
+            "name": "No-Ads Offer",
+            "price": "$5.99 (한국 광고 제거 팩 ₩9,900)",
+            "contents": "광고 제거('Banish ads for maximum fun with this pack')",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Small Ticket Pack",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "추가 재화(티켓)",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Medium Ticket Pack",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "추가 재화(티켓) 더 큰 팩",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Starter Pack / Starter Pack #1",
+            "price": "$9.99 (한국 ₩17,000)",
+            "contents": "스타터 팩",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Pirates Pack / Pirates Pack #1",
+            "price": "$9.99",
+            "contents": "테마 팩('A real pirate's choice')",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Adventurers Pack #1",
+            "price": "$9.99",
+            "contents": "테마 팩",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "VIP 7 Day Pack",
+            "price": "$4.99 (한국 ₩7,700)",
+            "contents": "7일 VIP",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Offer Pack #3",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "오퍼 팩(구성 미확인)",
+            "evidence": "App Store(미국) — My Little Universe"
+          },
+          {
+            "name": "Reward Ticket Pack",
+            "price": "$2.99 (한국 ₩4,400)",
+            "contents": "보상 티켓 팩",
+            "evidence": "App Store(미국) — My Little Universe"
+          }
+        ],
+        "verified": [
+          "미국 앱 내 구입 10종($2.99~$9.99)과 한국 가격을 확인했다.",
+          "SayGames: 2022년 IAP 매출 3,750만 달러(전년 1,100만, +350%)이며 My Little Universe는 기여 사례 중 하나(게임별 금액 미공개).",
+          "Google Play 인앱 $0.99~$119.99 범위."
+        ],
+        "unverified": "게임별 매출·다운로드, 광고 빈도·보상량, 상품 구성 수량, 광고 대 IAP 비중은 확인하지 못했다.",
+        "productEvidence": true
+      },
+      "metrics": {
+        "downloads": "Google Play 설치 10,000,000+(스토어 표기). 센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android 200k, iOS 60k.",
+        "revenue": "센서타워 공개 앱 페이지 지난달 추정(US 페이지): Android $40k, iOS $60k. Azur Games(2023): My Mini Mart보다 매출이 크다고 서술(수치 미공개).",
+        "chart": "미확인",
+        "rating": "App Store 미국 4.77(181,183건, iTunes lookup 2026-10), Google Play 4.4(635,944건)",
+        "players": "Google Play 설치 10,000,000+"
+      },
+      "userFeedback": {
+        "positive": [
+          "미확인(리뷰 본문 미수집, iOS 평점 4.77만 확인)"
+        ],
+        "negative": [
+          "미확인(리뷰 본문 미수집)"
+        ],
+        "basis": "평점 수치만 확인했고 리뷰 본문은 수집하지 못함."
+      },
+      "takeaways": {
+        "borrow": [
+          "광고 제거·티켓 재화·스타터·테마 팩을 가격 3~4단계로 단순 구성",
+          "테마 팩(Pirates, Adventurers)으로 세계관 확장과 함께 판매"
+        ],
+        "avoid": [
+          "하이퍼캐주얼 광고 모델에서 IAP 병행으로 전환할 때 기존 광고 의존 이용자의 반발에 대한 대비 부재(해석)"
+        ]
+      },
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/us/app/id1586304393",
+          "title": "App Store(미국) — My Little Universe",
+          "type": "스토어",
+          "note": "iOS 미국 출시 2021-09-30, 평점 4.77(181,183), 앱 내 구입 10종($2.99~$9.99), 부제 'Mine and Craft your own planet', 최신 2.18.0(2026-08-19), © Estoty",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.savetheworld.game",
+          "title": "Google Play — My Little Universe",
+          "type": "스토어",
+          "note": "설치 10,000,000+, 평점 4.4(635,944), 인앱 $0.99~$119.99",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://sensortower.com/android/us/saygames-ltd/app/my-little-universe/com.savetheworld.game/overview",
+          "title": "Sensor Tower 공개 앱 페이지 — My Little Universe(Android)",
+          "type": "데이터(추정)",
+          "note": "공개 앱 페이지 지난달 추정: Android 다운로드 200k·매출 $40k, iOS 60k·$60k(US 페이지)",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://blog.say.games/posts/publisher-saygames-hits-4-billion-downloads-successfully-transitions-to-hybrid-monetization-model",
+          "title": "SayGames 블로그 — 4 billion downloads, hybrid monetization 전환 (2023-02-07)",
+          "type": "공식",
+          "note": "2022년 IAP 매출 3,750만 달러(전년 1,100만), 2021년 출시작 My Little Universe(Estoty)가 IAP 성장에 기여",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://www.pocketgamer.biz/feature/81292/under-the-hood-deconstructing-the-top-hypercasual-games/",
+          "title": "PocketGamer.biz — Under the hood: Deconstructing one of the top idle arcade games (2023-04-13, Azur Games 기고)",
+          "type": "보도",
+          "note": "My Mini Mart 7천만+ 다운로드, 누적 매출 200만 달러 초과, 2023년 초 월 약 300만 다운로드·월 10만 달러+ 매출, 30~40분 뒤 새 마켓",
+          "accessed": "2026-10-14"
+        },
+        {
+          "url": "https://apps.apple.com/kr/app/id1586304393",
+          "title": "App Store(한국) — My Little Universe",
+          "type": "스토어",
+          "note": "한국 스토어 앱 내 구입 원화 가격(광고 제거 팩 ₩9,900 등)",
+          "accessed": "2026-10-14"
+        }
+      ]
+    }
+  ],
+  "deepDive": {
+    "gameId": "pizza-ready",
+    "title": "다운로드 규모(2025년 전 세계 5위)와 광고 3분 지연·직원 자동화 개편 등 공개 근거가 가장 풍부한 arcade idle 대표작",
+    "summary": "Pizza Ready!는 2023-07 출시 후 2024-04 정점(일 약 110만 다운로드, 센서타워 추정)을 찍고 2024년 171m, 2025년 166m 다운로드(AppMagic 추정)를 기록했다. 센서타워는 첫 광고를 약 3분 13초 뒤에 노출하고 상위 하이퍼캐주얼 중 평균 세션 시간이 가장 길다고 분석했다. 반면 누적 IAP 매출은 약 830만 달러에 그쳐(센서타워 추정) 다운로드 대비 매출 규모가 작다. 2025-11 서비스 테이블·서비스 로봇 개편과 2026-06 출석·주간 푸드 콘테스트처럼 직원 자동화와 코스메틱 이벤트를 꾸준히 추가하며, 광고 과다·지연 스킵 구매 화면은 반복되는 불만이다.",
+    "firstSession": [
+      "한 개 가게에서 시작해 손님 주문을 직접 받음(스토어 설명)",
+      "재료를 조리하고 서빙해 첫 수익 확보(스토어 설명)",
+      "번 돈으로 주방 설비·스테이션을 구매하고 직원(요리사·계산원) 고용(스토어 설명)",
+      "첫 광고는 약 3분 13초 이후 노출(센서타워 2025-11, Hole.io 1분 33초·Extreme Car Driving 41초와 비교)",
+      "광고 시청 부스트·구매 오퍼 팝업과 'No Ads $3.99' 노출(리뷰·스토어 상품; 노출 시점은 미확인)",
+      "FTUE 10~30분의 구체 순서·시간은 확인하지 못했다"
+    ],
+    "coreLoop": [
+      {
+        "step": "주문 받고 조리·서빙",
+        "detail": "스토어 설명: 주문을 받고 주방에서 요리해 줄이 길어지기 전에 서빙한다. 2025-11 이후 직원이 직접 서빙하는 서비스 테이블이 도입되었다."
+      },
+      {
+        "step": "수익으로 설비·직원 업그레이드",
+        "detail": "오븐·스테이션·레시피 업그레이드와 요리사·계산원 고용, 속도 훈련으로 주문 처리량을 늘린다."
+      },
+      {
+        "step": "광고·결제로 가속",
+        "detail": "보상형 광고로 부스트를 얻고 업그레이드 버튼 옆의 무료 광고 버튼이 나온다(리뷰). 광고 제거 등은 IAP."
+      },
+      {
+        "step": "새 지점 해금",
+        "detail": "가게를 확장하고 새 위치에서 같은 루프를 반복한다. 오프라인에서도 직원이 수익을 낸다고 스토어가 안내한다."
+      }
+    ],
+    "currencies": [
+      {
+        "name": "현금(게임 머니)",
+        "earn": "주문 처리 수익, 오프라인 직원 수익(스토어 설명)",
+        "spend": "설비·직원·지점 업그레이드(스토어 설명)",
+        "paid": false
+      },
+      {
+        "name": "젬(추정)",
+        "earn": "미확인(리뷰에서 '광고 1개를 건너뛸 젬을 받았다' 서술)",
+        "spend": "광고 스킵 등(리뷰 2025-01-29), 상품 ID s6gem1·s6gem2로 판매",
+        "paid": true
+      },
+      {
+        "name": "스킨·이벤트 아이템",
+        "earn": "출석, 주간 푸드 콘테스트, 크리스마스 이벤트(눈송이)",
+        "spend": "스킨 해금",
+        "paid": false
+      }
+    ],
+    "growthAxes": [
+      {
+        "name": "주방 설비·스테이션",
+        "detail": "오븐·스테이션·재료·레시피 업그레이드로 처리량 증가",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "직원(요리사·계산원·서비스 로봇)",
+        "detail": "속도·서빙 자동화, 2025-11 서비스 테이블·서비스 로봇 개편",
+        "monetized": "유료 가속"
+      },
+      {
+        "name": "지점 확장",
+        "detail": "새 위치 해금으로 장기 목표 제시",
+        "monetized": "무료"
+      },
+      {
+        "name": "코스메틱(스킨)",
+        "detail": "출석 4종, 주간 푸드 콘테스트 5종, 크리스마스 캐릭터",
+        "monetized": "무료"
+      },
+      {
+        "name": "프리미엄 팩",
+        "detail": "prpro $19.99, growthoffer $9.99, 주간 팩 $5.99 등(구성 미확인)",
+        "monetized": "유료 전용"
+      }
+    ],
+    "gacha": null,
+    "offline": "스토어 설명은 '직원이 있으면 오프라인에서도 수익을 낸다'와 'idle progress online or offline'을 안내한다. 최대 누적 시간, 오프라인 광고 2배 여부, 복귀 보상은 확인하지 못했다. 리뷰(2024-11-04)에는 지도 열기에 네트워크가 필요하다는 불만이 있다.",
+    "adPlacements": [
+      "첫 광고는 약 3분 13초 이후(센서타워 2025-11)",
+      "플레이 중 팝업(전면) 광고(리뷰 2025-01-29: 5분 안에 3회, 일부는 1분 이상)",
+      "업그레이드 버튼을 덮는 '무료' 광고 버튼(리뷰 2024-11-04)",
+      "부스트 선택 시 지연 스킵 구매 오퍼 화면(리뷰 2024-11-04)",
+      "테이블 업그레이드 등 진행에 광고 시청 필요(리뷰 2024-11-04; 광고 1회 12~30초)"
+    ],
+    "storeStructure": [
+      "광고 제거: No Ads $3.99, afpack_9.99 $9.99, afpackoff15_8.99 $8.99(App Store 미국)",
+      "주간 팩: prmpackweekly_5.99 $5.99",
+      "성장·프로 팩: growthoffer_9.99 $9.99, prpro_19.99 $19.99, usmgrpack_5.99 $5.99",
+      "젬 팩: s6gem1_2.99 $2.99, s6gem2_4.99 $4.99, video1_1.99 $1.99",
+      "한국 가격 예: No Ads ₩6,600, prpro ₩33,000",
+      "배틀패스·월정액·확률형 상품은 확인하지 못했다"
+    ],
+    "liveOpsCadence": [
+      "2025-11-08 51.2.0, 2025-11-25 51.3.0(서비스 테이블·서비스 로봇 개편)",
+      "2025-12-29 54.1.0, 2026-01-14 54.2.0(크리스마스 이벤트: 눈송이 수집·트리 완성·산타 캐릭터)",
+      "2026-03-13 55.5.0, 2026-05-22 57.0.0, 2026-06-08 58.0.0",
+      "2026-06-29 58.1.0(출석 시스템 스킨 4종, 주간 푸드 콘테스트 스킨 5종)",
+      "2026-08-11 58.2.0, 2026-08-19 59.1.0, 2026-09-16 59.2.0, 2026-10-02 60.3.0(버그 수정 중심, 약 2~4주 간격)"
+    ],
+    "metricsTimeline": [
+      {
+        "date": "2023-07",
+        "event": "출시",
+        "value": "iOS 미국 2023-07-06, Google Play 2023-07-04 표기(스토어)"
+      },
+      {
+        "date": "2023-12-13",
+        "event": "일 다운로드 급증 시작",
+        "value": "2024-01-01 일 약 50만, 2023-12 중순 대비 8배(센서타워 추정)"
+      },
+      {
+        "date": "2024-04-06",
+        "event": "일 다운로드 정점",
+        "value": "약 110만, 출시 후 최고(센서타워 추정), 2024-04 전 세계 모바일 캐주얼 다운로드 6위"
+      },
+      {
+        "date": "2024-05",
+        "event": "AppMagic 기준 전 세계 모바일 게임 다운로드 1위",
+        "value": "누적 1.5억 돌파(슈퍼센트 보도자료 2024-12-05, 회사 인용)"
+      },
+      {
+        "date": "2024-12",
+        "event": "2024년 연간",
+        "value": "171m(Mobilegamer 2025-01, AppMagic 추정), 2024-08~12 월 10~12m"
+      },
+      {
+        "date": "2025-12",
+        "event": "2025년 연간",
+        "value": "166m(Mobilegamer 2026-01) / 161m(PocketGamer 2025-12-23, 12-22까지), 전 세계 5위"
+      },
+      {
+        "date": "2025-11",
+        "event": "누적·IAP",
+        "value": "누적 약 4억, 2025년 1.5억, 인도 24%, 누적 IAP 830만 달러(40%가 2025년)(센서타워 추정)"
+      },
+      {
+        "date": "2026-03",
+        "event": "월간 전 세계 다운로드 5위",
+        "value": "센서타워 2026-03 월간 리포트(수치 미기재)"
+      }
+    ],
+    "strengths": [
+      "대규모 유료 UA와 현지화·플레이어블 광고로 인도 등에서 다운로드 정점 확보(센서타워)",
+      "첫 광고 3분 지연과 긴 평균 세션 시간(센서타워)",
+      "직원 서빙·로봇 등 자동화 시스템을 꾸준히 개편(업데이트 노트)",
+      "같은 퍼블리셔 게임 간 높은 오디언스 중복으로 교차 UA 효율(센서타워 2024-04)",
+      "2024~2025년 연속 150m 이상 다운로드를 유지한 안정적 신규 유입(Mobilegamer)"
+    ],
+    "weaknesses": [
+      "광고 과다·지연 스킵 오퍼 UI로 스토어 부정 리뷰 집중(리뷰)",
+      "누적 IAP 약 830만 달러로 다운로드 대비 매출 비중이 낮음(센서타워 추정)",
+      "인도·인도네시아·브라질 중심의 저ARPU 시장 의존(Mobilegamer·센서타워)",
+      "다운로드 감소 조짐: 2024년 171~178m에서 2025년 161~166m(AppMagic 추정)"
+    ],
+    "lessons": [
+      "첫 광고는 3분 이상 뒤에 두어 FTUE 몰입을 확보한다.",
+      "직원 자동화 단계를 업데이트로 확장해 업그레이드 선택지를 계속 늘린다.",
+      "광고 제거는 $3.99 단일 상품과 변형으로 시작하고, 성장·프로 팩은 가격 단계를 나눈다.",
+      "다운로드만 보지 말고 IAP·광고 매출 비중을 소프트런칭에서 함께 측정한다.",
+      "출석·주간 콘테스트 같은 가벼운 이벤트로 스킨을 주어 광고 의존 없이 재방문 이유를 만든다."
+    ],
+    "evidence": [
+      {
+        "url": "https://apps.apple.com/us/app/id6450917563",
+        "title": "App Store(미국) — Pizza Ready!",
+        "type": "스토어",
+        "note": "iOS 미국 출시 2023-07-06, 평점 4.57(344,772), 앱 내 구입 10종($1.99~$19.99), 최신 60.3.0(2026-10-02), 업데이트 노트(서비스 테이블·출석·푸드 콘테스트)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=io.supercent.pizzaidle",
+        "title": "Google Play — Pizza Ready!",
+        "type": "스토어",
+        "note": "Contains ads, 설치 100,000,000+, 평점 4.4(2,741,489), 인앱 $0.99~$49.99",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026",
+        "title": "Sensor Tower — Top 10 Worldwide Mobile Games by Revenue and Downloads in March 2026",
+        "type": "데이터(추정)",
+        "note": "2026년 3월 전 세계 게임 다운로드 상위 5위로 Pizza Ready!를 명시(텍스트로는 1~5위만 확인, 세부 수치 없음)",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/ko/blog/Pizza-Ready-ranks-6th-globally-among-mobile-casual-games",
+        "title": "센서타워 — 《피자 레디》 전 세계 모바일 캐주얼 게임 다운로드 6위 (2024-04)",
+        "type": "데이터(추정)",
+        "note": "2024-01-01 일 다운로드 약 50만, 2024-04-06 약 110만(출시 후 최고), 다운로드 약 70% 유료 채널, 누적 다운로드 인도 17.3%, 누적 IAP 약 45% 미국, 상위 하이퍼캐주얼 중 평균 세션 시간 최장",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://sensortower.com/ko/blog/Supercent-rises-to-7th-place-globally-in-publisher-downloads",
+        "title": "센서타워 — 슈퍼센트, 전 세계 게임 퍼블리셔 다운로드 7위 (2025-11)",
+        "type": "데이터(추정)",
+        "note": "Pizza Ready 누적 약 4억, 2025년 1.5억, 인도 24%, 누적 IAP 830만 달러(40%가 2025년), 첫 광고 3분 13초 이후",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://technode.global/prnasia/supercent-breaks-into-the-global-top-10-mobile-game-publishers-at-7th-a-first-for-south-korea/",
+        "title": "TechNode(PR Asia) — Supercent breaks into the global top 10 mobile game publishers at 7th (2025-12-05)",
+        "type": "보도",
+        "note": "Pizza Ready 2025년 1.5억/누적 4억, 광고를 약 3분 뒤부터 노출, Snake Clash는 광고 대신 IAP 중심",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://mobilegamer.biz/the-top-mobile-game-downloads-of-2024/",
+        "title": "Mobilegamer.biz — The top mobile game downloads of 2024 (2025-01-06, AppMagic 추정)",
+        "type": "보도",
+        "note": "Pizza Ready 2024년 171m, 2023-07 출시·2024-04 정점, 2024-08~12 월 10~12m",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://mobilegamer.biz/the-top-mobile-game-downloads-of-2025/",
+        "title": "Mobilegamer.biz — 2025's top mobile game downloads (2026-01-13, AppMagic 추정)",
+        "type": "보도",
+        "note": "Pizza Ready 2025년 166m(전 세계 5위), 2024년 178m, 인도·인도네시아·브라질 순",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "http://www.pocketgamer.biz/the-most-downloaded-mobile-games-of-2025/",
+        "title": "PocketGamer.biz — The most downloaded mobile games of 2025 (2025-12-23, AppMagic)",
+        "type": "보도",
+        "note": "Pizza Ready 2025-01-01~12-22 설치 161m, 5위",
+        "accessed": "2026-10-14"
+      },
+      {
+        "url": "https://supercent.notion.site/15f93b2d2573802e8389eef5c2e95cea",
+        "title": "Supercent 보도자료 — 7천만 달러 수출의 탑 (2024-12-05)",
+        "type": "공식",
+        "note": "해외 매출 97%, Pizza Ready 2024-05 AppMagic 전 세계 다운로드 1위·누적 1.5억, 하이브리드 캐주얼 진출",
+        "accessed": "2026-10-14"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "name": "가칭 Noodle Row (다중 테마 병렬 테스트형 arcade idle)",
+      "pitch": "조이스틱·스태킹 루프를 공통 엔진으로 두고 국수·커피·도넛 등 3개 테마를 빠르게 출시해 지표가 가장 좋은 하나만 키운다.",
+      "target": "인도·인도네시아·브라질·미국 캐주얼 이용자(Pizza Ready·Burger Please 다운로드 상위 시장)",
+      "platform": "Android 우선 소프트런칭 후 iOS",
+      "coreLoop": [
+        "이동·스태킹으로 재료 운반·서빙",
+        "수익으로 설비·직원 고용",
+        "병목 구간 자동화",
+        "새 구역 해금 후 반복"
+      ],
+      "mvp": [
+        "공통 코어 엔진과 테마 교체 가능한 에셋",
+        "첫 사이클 20~30초·이동 2초 이내 튜토리얼",
+        "직원 3단계 자동화(운반·계산·청소)",
+        "광고 제거 상품과 스타터 팩 각 1종",
+        "광고는 3분 이후 첫 노출"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 12~16주(코어 엔진 6주+테마 3종 6~8주)",
+      "monetization": "배너·전면·보상형 광고 기반. IAP는 광고 제거($2.99~$3.99대)와 영구 2배 부스트, 스킨. 결제 이용자 광고 빈도 감소(Supersonic 지침).",
+      "why": "Burger Please는 같은 구조에 커피·도넛 등 다른 테마를 순차 출시해 데이터로 선별했고(슈퍼센트 인터뷰), Pizza Ready는 첫 광고 3분 지연으로 세션이 길다(센서타워).",
+      "risks": "복제 경쟁으로 UA 단가가 높고 슈퍼센트급 UA 예산이 없으면 소프트런칭에서 CPI가 목표를 넘을 수 있다.",
+      "kpiGate": "CPI 1달러 미만(Homa 하이브리드 캐주얼 테스트 기준), D1 48% 이상(센서타워·Homa 2022: 상위 20 D1 48~52%), D7 10% 이상(같은 자료 7~13% 중간값, 설계자 설정)",
+      "buildNext": "코어 루프 프로토타입(1개 사업장)을 2주 내 제작하고 Homa식 CPI 테스트 지표(CPI·D1·D3)를 측정할 크리에이티브 3종 준비"
+    },
+    {
+      "name": "가칭 Laundry Lane (데코+진행 이중 루프 하이브리드 sim)",
+      "pitch": "세탁소를 운영하는 arcade idle에 매장 꾸미기 루프를 더해 IAP와 광고 비중을 50/50에 가깝게 설계한다.",
+      "target": "미국·일본·서유럽의 25~44세 캐주얼 시뮬레이션 이용자와 일부 신흥 시장",
+      "platform": "iOS·Android 동시 소프트런칭",
+      "coreLoop": [
+        "세탁물 운반·세탁·배달",
+        "수익으로 설비와 직원 고용",
+        "별(스타) 획득으로 매장 꾸미기 해금",
+        "테마 이벤트 가구 팩으로 재방문"
+      ],
+      "mvp": [
+        "아케이드 운반 루프 1개 매장",
+        "데코 시스템(가구 20종) 및 별 재화",
+        "주간 이벤트 1종과 테마 가구 IAP",
+        "광고 제거·스타터·주간 VIP 3종",
+        "보상형 광고는 선택형 부스트만"
+      ],
+      "difficulty": "중간",
+      "effort": "3인 팀 4~6개월",
+      "monetization": "광고 제거 $3.99대, 스타터 $2.99~$9.99, 주간 VIP $5.99, 테마 가구 팩. 보상형 광고는 1회 제공 후 영구 IAP로 판매.",
+      "why": "Supersonic은 데코+진행 이중 루프와 테마 가구 팩으로 D7/D14 ROAS +15%, IAP:IAA 50/50을 얻은 사례를 공개했고(Supersonic 2026-03), 하이브리드 캐주얼 IAP는 2025년 +20% 성장했다(센서타워). My Perfect Hotel도 에이전트 구매 자동화로 장기 과금 지점을 늘렸다.",
+      "risks": "루프가 둘이라 FTUE 복잡도가 올라가고 데코 콘텐츠 제작 비용이 크다.",
+      "kpiGate": "D1 48% 이상, D7 10% 이상, 소프트런칭 지역 IAP 결제 전환율은 목표 미확인(내부 기준 설정 필요), CPI 1달러 미만(Homa 하이브리드 기준)",
+      "buildNext": "한 개 매장 + 가구 5종 프로토타입으로 이중 재화(현금·별) 곡선 검증"
+    },
+    {
+      "name": "가칭 Festival Stall Week (주간 콘테스트·스킨 중심 라이브옵스 arcade idle)",
+      "pitch": "광고 의존을 낮추기 위해 주간 콘테스트와 출석 스킨으로 재방문을 만들고 스킨·VIP를 주 수익으로 한다.",
+      "target": "광고 과다에 이탈하던 아케이드 아이들 이용자와 신규 하이브리드 캐주얼 이용자",
+      "platform": "모바일(Android 우선)",
+      "coreLoop": [
+        "노점에서 음식 준비·서빙",
+        "수익으로 직원 고용과 자동화",
+        "주간 콘테스트 참가로 스킨 획득",
+        "출석·시즌 이벤트로 재방문"
+      ],
+      "mvp": [
+        "핵심 운반 루프",
+        "주간 콘테스트(랭킹 5구간 보상)",
+        "출석 보상 스킨 4종",
+        "스킨·VIP IAP와 광고 제거 1종",
+        "광고 지연(3분)과 빈도 상한"
+      ],
+      "difficulty": "중간",
+      "effort": "1인+AI 주20시간 16~20주",
+      "monetization": "스킨 팩($5.99/$9.99 가격대, Prison Life 사례), 주간 VIP, 광고 제거. 보상형 광고는 선택형만.",
+      "why": "Pizza Ready는 출석 스킨 4종·주간 푸드 콘테스트 스킨 5종을 업데이트로 추가했고(2026-06), Prison Life는 스킨 팩 8종 중심 상점이다. 리뷰 불만 1순위가 광고라는 점에서 차별화 여지가 있다.",
+      "risks": "광고 수익을 줄이면 UA 회수가 늦어지고, 스킨 매출이 다운로드 규모에 비해 작을 수 있다. 센서타워 추정 Pizza Ready 누적 IAP가 830만 달러에 그친 점이 경고 신호다.",
+      "kpiGate": "D1 48% 이상, D7 10% 이상, 콘테스트 참여율 목표 미확인(내부 설정), CPI 1달러 미만(Homa 하이브리드 기준)",
+      "buildNext": "콘테스트 규칙·보상 구간을 설계하고 스킨 4종을 포함한 2주 프로토타입 제작"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-march-2026",
+      "title": "Sensor Tower — Top 10 Worldwide Mobile Games by Revenue and Downloads in March 2026",
+      "type": "데이터(추정)",
+      "note": "2026년 3월 전 세계 게임 다운로드 상위 5위로 Pizza Ready!를 명시(텍스트로는 1~5위만 확인, 세부 수치 없음)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/Pizza-Ready-ranks-6th-globally-among-mobile-casual-games",
+      "title": "센서타워 — 《피자 레디》 전 세계 모바일 캐주얼 게임 다운로드 6위 (2024-04)",
+      "type": "데이터(추정)",
+      "note": "2024-01-01 일 다운로드 약 50만, 2024-04-06 약 110만(출시 후 최고), 다운로드 약 70% 유료 채널, 누적 다운로드 인도 17.3%, 누적 IAP 약 45% 미국, 상위 하이퍼캐주얼 중 평균 세션 시간 최장",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/Supercent-rises-to-7th-place-globally-in-publisher-downloads",
+      "title": "센서타워 — 슈퍼센트, 전 세계 게임 퍼블리셔 다운로드 7위 (2025-11)",
+      "type": "데이터(추정)",
+      "note": "Pizza Ready 누적 약 4억, 2025년 1.5억, 인도 24%, 누적 IAP 830만 달러(40%가 2025년), 첫 광고 3분 13초 이후",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/Burger-Please-becomes-the-1-downloaded-mobile-tycoon-game-with-over-15M-downloads",
+      "title": "센서타워 — 《버거 플리즈!》 타이쿤 다운로드 1위, 1,500만 돌파 (2023-05)",
+      "type": "데이터(추정)",
+      "note": "2023-02-19~04-30 타이쿤 다운로드 1위, 누적 1,500만+, 인도네시아 10.7%, 최상위 IAP는 광고 제거, 약 2개월 누적 소비자 지출 9만 달러",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://technode.global/prnasia/supercent-breaks-into-the-global-top-10-mobile-game-publishers-at-7th-a-first-for-south-korea/",
+      "title": "TechNode(PR Asia) — Supercent breaks into the global top 10 mobile game publishers at 7th (2025-12-05)",
+      "type": "보도",
+      "note": "Pizza Ready 2025년 1.5억/누적 4억, 광고를 약 3분 뒤부터 노출, Snake Clash는 광고 대신 IAP 중심",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://mobilegamer.biz/the-top-mobile-game-downloads-of-2025/",
+      "title": "Mobilegamer.biz — 2025's top mobile game downloads (2026-01-13, AppMagic 추정)",
+      "type": "보도",
+      "note": "Pizza Ready 2025년 166m(전 세계 5위), 2024년 178m, 인도·인도네시아·브라질 순",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://mobilegamer.biz/the-top-mobile-game-downloads-of-2024/",
+      "title": "Mobilegamer.biz — The top mobile game downloads of 2024 (2025-01-06, AppMagic 추정)",
+      "type": "보도",
+      "note": "Pizza Ready 2024년 171m, 2023-07 출시·2024-04 정점, 2024-08~12 월 10~12m",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://mobilegamer.biz/julys-top-mobile-game-downloads-worldwide/",
+      "title": "Mobilegamer.biz — July's top mobile game downloads worldwide (2023-08-03, AppMagic)",
+      "type": "보도",
+      "note": "Burger Please 2023-07 설치 14m 이상(6월의 약 2배), 상위 5개 시장 US·인도·브라질·멕시코·인도네시아",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "http://www.pocketgamer.biz/the-most-downloaded-mobile-games-of-2025/",
+      "title": "PocketGamer.biz — The most downloaded mobile games of 2025 (2025-12-23, AppMagic)",
+      "type": "보도",
+      "note": "Pizza Ready 2025-01-01~12-22 설치 161m, 5위",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://say.games/news/my-perfect-hotel-hits-fifty-million-downloads/",
+      "title": "SayGames — My Perfect Hotel hits 50 million downloads (2023-08-18)",
+      "type": "공식",
+      "note": "2022-08 글로벌 출시, 개발 Redux Games(키프로스), 누적 5천만, 50개국+ 무료 1위, 정점 하루 약 100만 플레이어 추가",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://say.games/news/hybrid-invest/",
+      "title": "SayGames — Hybrid casual investment program (2024-11-13)",
+      "type": "공식",
+      "note": "My Perfect Hotel 매출 1억 달러 초과(기간 미명시), 투자 최대 3천만 달러/3년",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://blog.say.games/posts/publisher-saygames-hits-4-billion-downloads-successfully-transitions-to-hybrid-monetization-model",
+      "title": "SayGames 블로그 — 4 billion downloads, hybrid monetization 전환 (2023-02-07)",
+      "type": "공식",
+      "note": "2022년 IAP 매출 3,750만 달러(전년 1,100만), 2021년 출시작 My Little Universe(Estoty)가 IAP 성장에 기여",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://say.games/publishing",
+      "title": "SayGames — Publishing",
+      "type": "공식",
+      "note": "hybrid monetization 모델·IAP 게임 파트너 탐색, My Perfect Hotel 매출 1억 달러, Redux.Games 누적 3억 다운로드",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.blog.udonis.co/mobile-marketing/mobile-games/burger-please",
+      "title": "Udonis — Can Burger Please Compete with Arcade Idle Leaders? (2025-05-28)",
+      "type": "보도",
+      "note": "조이스틱+스태킹, 배너·전면·보상형 광고, IAP는 영구 부스트 중심, 프리미엄 번들 $12.99(스킨·탈것·광고 제거·2배 수익/속도/적재), 저자의 반복성·광고 과다 비판",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://blog.udonis.co/mobile-marketing/mobile-games/my-perfect-hotel",
+      "title": "Udonis — My Perfect Hotel (2025-02-28)",
+      "type": "보도",
+      "note": "강제 전면광고·보상형 광고, No Ads 약 $10가 최다 IAP이며 첫 몇 분 안에 노출, Hotel Pass(Pro·Elite) 존재, 가격 미기재",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamemakers.beehiiv.com/p/marketwire-say-hello-1-downloads-perfect-hotel",
+      "title": "GameMakers MarketWire — Say hello to #1 downloads, My Perfect Hotel (2023-09-09)",
+      "type": "보도",
+      "note": "2023-08-14경 급등, 광고가 진행 속도에 내재, 에이전트 구매로 휴지 보충·주차·체크인 자동화",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://wnhub.io/news/finance/item-43070",
+      "title": "WN Hub — Sensor Tower 하이브리드 캐주얼 2023 리포트 (2024-03-12)",
+      "type": "보도",
+      "note": "2023년 하이브리드 캐주얼 매출 약 15억 달러, 다운로드 상위 5위에 My Perfect Hotel 86.9M",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.pocketgamer.biz/feature/81292/under-the-hood-deconstructing-the-top-hypercasual-games/",
+      "title": "PocketGamer.biz — Under the hood: Deconstructing one of the top idle arcade games (2023-04-13, Azur Games 기고)",
+      "type": "보도",
+      "note": "My Mini Mart 7천만+ 다운로드, 누적 매출 200만 달러 초과, 2023년 초 월 약 300만 다운로드·월 10만 달러+ 매출, 30~40분 뒤 새 마켓",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://wnhub.io/news/game-design/item-40717",
+      "title": "WN Hub — My Mini Mart 분해(Azur Games, 2023-06-07)",
+      "type": "보도",
+      "note": "무텍스트 튜토리얼, 첫 사이클 20~30초, 자동화 단계(진열 직원→계산원), 전면광고 분당 수 회, 광고 제거 IAP·쿠폰(하드 재화)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://mobidictum.com/outlets-rush-achieves-10-million-downloads/",
+      "title": "Mobidictum — Outlets Rush achieves 10 million downloads (2023-12-19)",
+      "type": "보도",
+      "note": "개발 Core Games(튀르키예), 퍼블리싱 Supercent, 개발사 발표 1천만 다운로드·AppMagic 1,200만+",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.homagames.com/games",
+      "title": "Homa — Games",
+      "type": "공식",
+      "note": "Farm Land는 'With LolTap', Aquarium Land는 'With Turquoise Games'로 표기(수치 없음)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://homagames.notion.site/eb88d17984d848b3917e78aa82b4d31f",
+      "title": "Homa Lab — How to read the results of a test",
+      "type": "공식",
+      "note": "CPI 테스트 목표: 하이퍼캐주얼 CPI<$0.4·D1>35%·D3>15%, 하이브리드 캐주얼 CPI<$1.0·5000s CPTD3·게임 완료율 20%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supercent.io/about",
+      "title": "Supercent — About",
+      "type": "공식",
+      "note": "누적 다운로드 1.5B+, 누적 매출 $380M+, 게임 퍼블리셔 순위 #7, 앱 퍼블리셔 #16, MAU 100M+",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supercent.notion.site/15f93b2d2573802e8389eef5c2e95cea",
+      "title": "Supercent 보도자료 — 7천만 달러 수출의 탑 (2024-12-05)",
+      "type": "공식",
+      "note": "해외 매출 97%, Pizza Ready 2024-05 AppMagic 전 세계 다운로드 1위·누적 1.5억, 하이브리드 캐주얼 진출",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supercent.notion.site/70aafc58bcac49a1a75d2253a24469e1",
+      "title": "Supercent 인터뷰 — Burger Please 이후 하이퍼캐주얼에 대한 시각 (2023-09-08)",
+      "type": "인터뷰",
+      "note": "Burger Please 초기 3인·출시 한 달, 커피·도넛 등 같은 구조 다른 테마 빌드를 순차 출시해 데이터로 선별, 스태킹을 몰입 요소로",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supercent.notion.site/2023-07-28-Hyper-casual-game-company-Supercent-aims-to-hit-30-billion-won-in-revenue-this-year-734aa8f6b5584a79b063685d3cd72b9d",
+      "title": "Supercent 보도자료 — 2023 매출 300억 원 목표 (2023-07/08)",
+      "type": "공식",
+      "note": "Burger Please 2023-02 출시, 4천만+ 다운로드, 시장성 소재 발굴·빠른 빌드·광고 수익화 전략",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.kedglobal.com/korean-games/newsView/ked202403130006",
+      "title": "KED Global — Supercent (2024-03-13)",
+      "type": "보도",
+      "note": "Burger Please 누적 83.81M(AppMagic), '버거'가 미국 최다 검색어라는 이유로 테마 선정, 하이퍼캐주얼은 게임당 약 3개월 개발",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.thisisgame.com/articles/415465",
+      "title": "디스이즈게임 — 슈퍼센트 '스네이크 클래시' 센서타워 APAC 어워즈 2025 (2026-02-26, 슈퍼센트 자료)",
+      "type": "보도",
+      "note": "Pizza Ready 2025 하이브리드 캐주얼 1위·누적 4억(슈퍼센트 발표), XP 히어로 2026 상반기 소프트런칭 예정",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/p/sensor-tower-and-homa-games-arcade",
+      "title": "GameDev Reports — Sensor Tower & Homa Games: Arcade Idle (2022-09-19)",
+      "type": "보도",
+      "note": "2021년 arcade idle 4,730만 다운로드, 2022 Q1 전년 대비 +294.3%, 상위 20 D1 48~52%·D7 7~13%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://gamedevreports.substack.com/p/sensor-tower-state-of-gaming-2026",
+      "title": "GameDev Reports — Sensor Tower State of Gaming 2026 (2026-03-19)",
+      "type": "보도",
+      "note": "2025 하이브리드 캐주얼 IAP 매출 +20% YoY, 상위 하이브리드 캐주얼 D7이 캐주얼 상위 25 추월, 하이퍼캐주얼 유료 트래픽 50.6%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ko/blog/state-of-mobile-gaming-2025-KR",
+      "title": "센서타워 — 2025년 모바일 게임 현황 (2025-04)",
+      "type": "데이터(추정)",
+      "note": "2024년 하이브리드 캐주얼 IAP 매출 전년 대비 +37%",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supersonic.com/publishing/",
+      "title": "Supersonic — Publishing",
+      "type": "공식",
+      "note": "3단계(마케팅성·리텐션 테스트→코어 메카닉 개선→CPI 절감 크리에이티브), 6.6B+ 설치(AppsFlyer, 2020-02 이후), 130+ 게임",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supersonic.com/learn/blog/the-dos-and-donts-of-hybrid-casual-monetization-how-to-create-a-profitable-hit/",
+      "title": "Supersonic — Do's and don'ts of hybrid casual monetization (2026-05-03)",
+      "type": "공식",
+      "note": "IAP 비중 사례 50/50·70/30·60/40, 보상형 광고로 1회 제공 후 IAP로 영구 판매, 결제 이용자에게는 광고 빈도를 낮추라는 지침",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supersonic.com/learn/blog/supersonic-joins-tripledot-studios/",
+      "title": "Supersonic — Supersonic joins Tripledot Studios (2026-08-06)",
+      "type": "공식",
+      "note": "Supersonic 퍼블리싱 사업이 Tripledot 그룹에 합류(거래 조건 미공개)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://voodoo.io/publishing",
+      "title": "Voodoo — Publishing",
+      "type": "공식",
+      "note": "프로토타입→반복→출시→확장 4단계, CPI·리텐션 목표 수치는 미공개",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://www.homagames.com/blog/2025-wrap-up-preparing-to-play-a-bigger-game",
+      "title": "Homa — 2025 Wrap Up (2025-12-31)",
+      "type": "공식",
+      "note": "하이퍼캐주얼 실험에서 'forever franchises' 구축으로 전략 전환",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6450917563",
+      "title": "App Store(미국) — Pizza Ready!",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2023-07-06, 평점 4.57(344,772), 앱 내 구입 10종($1.99~$19.99), 최신 60.3.0(2026-10-02), 업데이트 노트(서비스 테이블·출석·푸드 콘테스트)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=io.supercent.pizzaidle",
+      "title": "Google Play — Pizza Ready!",
+      "type": "스토어",
+      "note": "Contains ads, 설치 100,000,000+, 평점 4.4(2,741,489), 인앱 $0.99~$49.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/supercent-inc/app/pizza-ready/io.supercent.pizzaidle/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Pizza Ready!",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지의 지난달 추정: 다운로드 7m·매출 $20k(Android 미국 페이지, 범위 불명)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1668713081",
+      "title": "App Store(미국) — Burger Please!",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2023-02-09, 평점 4.66(136,693), 앱 내 구입 10종($1.99~$9.99), 업데이트 노트(배틀패스 2024-01-20 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=io.supercent.burgeridle",
+      "title": "Google Play — Burger Please!",
+      "type": "스토어",
+      "note": "설치 100,000,000+, 평점 4.4(628,551), 인앱 $0.49~$49.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/supercent-inc/app/burger-please/io.supercent.burgeridle/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Burger Please!",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 300k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1635760774",
+      "title": "App Store(미국) — My Perfect Hotel",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2022-07-29, 평점 4.72(707,250), 앱 내 구입 목록(No ads pack $9.99 등), 최신 1.38.0(2026-10-07), © Redux Games",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.master.hotelmaster",
+      "title": "Google Play — My Perfect Hotel",
+      "type": "스토어",
+      "note": "설치 100,000,000+, 평점 4.5(1,652,535), 인앱 $0.99~$99.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ios/us/saygames-ltd/app/my-perfect-hotel/1635760774/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — My Perfect Hotel(iOS)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: iOS 다운로드 600k·매출 $400k, Android 다운로드 1m·매출 $100k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1635760774",
+      "title": "App Store(한국) — My Perfect Hotel",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 목록과 원화 가격(VIP Pack ₩33,000, No Ads 50% ₩7,700 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1592004814",
+      "title": "App Store(미국) — My Mini Mart",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2021-12-14, 평점 4.6(126,045), 앱 내 구입 목록($2.99~$9.99), 광고 빈도 감소 업데이트 노트(2026)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.KisekiGames.smart",
+      "title": "Google Play — My Mini Mart",
+      "type": "스토어",
+      "note": "설치 100,000,000+, 평점 3.9(655,581), 인앱 $0.99~$54.99, 개발자 표기 Supersonic Studios LTD",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/supersonic-studios-ltd/app/my-mini-mart/com.KisekiGames.smart/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — My Mini Mart(Android)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 40k·매출 <$5k, iOS <5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1592004814",
+      "title": "App Store(한국) — My Mini Mart",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 목록(No Ads Pack $7.99 ₩12,000 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6448794532",
+      "title": "App Store(미국) — Outlets Rush",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2023-06-22, 평점 4.6(123,125), 앱 내 구입 10종($1.99~$9.99), 최신 3.8.0(2026-08-07)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.corestudios.storemanagementidle",
+      "title": "Google Play — Outlets Rush",
+      "type": "스토어",
+      "note": "설치 50,000,000+, 평점 4.3(296,773), 인앱 $1.99~$29.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/supercent-inc/app/outlets-rush/com.corestudios.storemanagementidle/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Outlets Rush(Android)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 600k, iOS 70k·매출 <$5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://maf.ad/en/blog/outlets-rush-arcade-idle/",
+      "title": "maf.ad — Outlets Rush arcade idle (직접 열람 실패, 웹 검색 결과 요약만 확인)",
+      "type": "보도",
+      "note": "2,000만+ 다운로드, 인도 21%·미국 11%(AppMagic 인용) — 검색 요약 기준이라 보조 근거",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://supercent.notion.site/2024-01-16-Supercent-Achieved-No-1-in-Downloads-Among-Korean-App-Publishers-in-2023-f3b0324340f64b3a855659396be3c6ef",
+      "title": "Supercent 보도자료 — 2023년 한국 앱 퍼블리셔 다운로드 1위 (2024-01-16)",
+      "type": "공식",
+      "note": "2023년 약 2억 다운로드, Burger Please와 Outlets Rush가 성과 주도(본문 일부만 확인, 출시 한 달 2,000만은 검색 요약)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id6448794532",
+      "title": "App Store(한국) — Outlets Rush",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 목록(premiumpack_19.99, vippack_19.99 ₩33,000 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6472412918",
+      "title": "App Store(미국) — Prison Life: Idle Game",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2023-11-17, 평점 4.37(3,981), 앱 내 구입 10종($3.99~$9.99, 스킨 팩 8종), 최신 45.8.0(2026-08-18), 부제 'Rule Chaos, Manage Escapes'",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=io.supercent.prison",
+      "title": "Google Play — Prison Life: Idle Game",
+      "type": "스토어",
+      "note": "설치 50,000,000+, 평점 4.0(103,229), 인앱 $0.99~$99.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/supercent-inc/app/prison-life-idle-game/io.supercent.prison/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Prison Life: Idle Game(Android)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 1m, iOS 70k·매출 <$5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id6472412918",
+      "title": "App Store(한국) — Prison Life: Idle Game",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 원화 가격(스킨 팩 ₩9,900/₩17,000 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1563700162",
+      "title": "App Store(미국) — Farm Land: Farming Life Game",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2021-04-23, 평점 4.77(94,745), 앱 내 구입 목록($1.99~$14.99 등), 최신 3.28.13(2026-10-02), © Homa Games",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.loltap.farmland",
+      "title": "Google Play — Farm Land - Farming life game",
+      "type": "스토어",
+      "note": "설치 100,000,000+, 평점 4.5(778,142), 인앱 $1.49~$119.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/homa/app/farm-land-farming-life-game/com.loltap.farmland/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Farm Land(Android)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 1m·매출 <$5k, iOS 6k·<$5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1563700162",
+      "title": "App Store(한국) — Farm Land: Farming Life Game",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 원화 가격(Medium Diamond Pack ₩7,700 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1613175018",
+      "title": "App Store(미국) — Aquarium Land - Fishbowl World",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2022-03-08, 평점 4.73(314,390), 앱 내 구입 목록($2.99~$19.99), 최신 2.14.0(2026-03-31), 업데이트 노트(2.1.0/2.4.0 진행 개편·리더보드 개편)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.happykamp.aquariumland",
+      "title": "Google Play — Aquarium Land — Fishbowl World",
+      "type": "스토어",
+      "note": "설치 50,000,000+, 평점 4.3(102,877), 인앱 $0.99~$99.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ios/us/homa-games/app/aquarium-land-fishbowl-world/1613175018/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Aquarium Land(iOS)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: iOS 다운로드 80k·매출 $7k, Android 800k·<$5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1613175018",
+      "title": "App Store(한국) — Aquarium Land - Fishbowl World",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 원화 가격(Monthly VIP ₩25,000 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id6443757482",
+      "title": "App Store(미국) — Bus Arrival 3D",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2022-10-13, 평점 4.61(4,279), 앱 내 구입 10종($2.99~$9.99), 부제 'Theme park idle&racing casual', 최신 4.0.3(2026-08-18)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.games.bus.arrival",
+      "title": "Google Play — Bus Arrival",
+      "type": "스토어",
+      "note": "설치 100,000,000+, 평점 4.5(346,872), 인앱 $0.49~$99.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/ios/us/xiamen-sixcube-information-technology-co-ltd/app/bus-arrival-3d/6443757482/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — Bus Arrival 3D(iOS)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: iOS 다운로드 20k·매출 <$5k, Android 다운로드 2m·<$5k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id6443757482",
+      "title": "App Store(한국) — Bus Arrival 3D",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 원화 가격(Gem Package 3 ₩33,000, Super Pack V2 ₩25,000 등)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1586304393",
+      "title": "App Store(미국) — My Little Universe",
+      "type": "스토어",
+      "note": "iOS 미국 출시 2021-09-30, 평점 4.77(181,183), 앱 내 구입 10종($2.99~$9.99), 부제 'Mine and Craft your own planet', 최신 2.18.0(2026-08-19), © Estoty",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.savetheworld.game",
+      "title": "Google Play — My Little Universe",
+      "type": "스토어",
+      "note": "설치 10,000,000+, 평점 4.4(635,944), 인앱 $0.99~$119.99",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://sensortower.com/android/us/saygames-ltd/app/my-little-universe/com.savetheworld.game/overview",
+      "title": "Sensor Tower 공개 앱 페이지 — My Little Universe(Android)",
+      "type": "데이터(추정)",
+      "note": "공개 앱 페이지 지난달 추정: Android 다운로드 200k·매출 $40k, iOS 60k·$60k(US 페이지)",
+      "accessed": "2026-10-14"
+    },
+    {
+      "url": "https://apps.apple.com/kr/app/id1586304393",
+      "title": "App Store(한국) — My Little Universe",
+      "type": "스토어",
+      "note": "한국 스토어 앱 내 구입 원화 가격(광고 제거 팩 ₩9,900 등)",
+      "accessed": "2026-10-14"
+    }
+  ]
+}
